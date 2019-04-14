@@ -4,6 +4,19 @@ Here my home assistant configuration and a few notes to go along with it. This m
 ## Hardware / Devices
 List of all my device, that make house smart:
 
+### Hue
+| Device  | Quantity | Notes |
+| ------------- | :---: | ------------- | 
+| Hue Hub | 1 | ------------- | 
+
+### Lights
+| Device  | Quantity | Notes |
+| ------------- | :---: | ------------- | 
+| Philips Hue White and Color Ambiance | 6 | ------------- | 
+| Philips Hue White Ambiance | 4 | ------------- | 
+| Philips Hue White and Color Ambiance Light Strip | 2 | ------------- | 
+| DIY: 39inch RGB LED Light | 1 | ------------- | 
+
 ## Automation
 List of all my automation, that make house smart. 
 
