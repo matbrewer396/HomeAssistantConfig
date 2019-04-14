@@ -1,0 +1,8 @@
+## Door bell mqtt
+  - platform: mqtt
+    name: "Doorbell"
+    state_topic: "doorbell"
+    expire_after: 10 
+    availability_topic: "availability/doorbellMCU"
+    payload_available: "online"
+    payload_not_available: "offline"
