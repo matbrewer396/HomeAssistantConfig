@@ -1,0 +1,27 @@
+
+
+#secrets
+secrets.yaml
+known_devices.yaml
+includes/zone.yaml
+
+#HA Stuff
+home-assistant.log
+home-assistant_v2.db
+.ios.conf
+.storage/auth
+.storage/
+.cloud/
+deps/
+.uuid
+
+#Custom Stuff / Addons
+**.pickle
+life360.conf
+custom_components/
+www/
+
+
+
+node-red/
+esphome/
