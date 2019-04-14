@@ -1,0 +1,946 @@
+{
+    "data": {
+        "config": {
+            "resources": [
+                {
+                    "type": "js",
+                    "url": "/local/custom_ui/vertical-stack-in-card.js?v=0.0.2"
+                },
+                {
+                    "type": "js",
+                    "url": "/local/custom_ui/tracker-card.js?v=0"
+                },
+                {
+                    "type": "js",
+                    "url": "/local/custom_ui/gauge-card.js?v=0"
+                }
+            ],
+            "title": "Matt and Danni Home",
+            "views": [
+                {
+                    "cards": [
+                        {
+                            "entities": [
+                                "device_tracker.life360_matt",
+                                "device_tracker.life360_danni",
+                                {
+                                    "entity": "input_boolean.goodnight",
+                                    "tap_action": {
+                                        "action": "toggle",
+                                        "goodnight": null,
+                                        "icon": "mdi:weather-night",
+                                        "initial": "off",
+                                        "name": "Good Night"
+                                    }
+                                },
+                                {
+                                    "entity": "light.living_room_lights",
+                                    "icon": "mdi:sofa",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    }
+                                },
+                                {
+                                    "entity": "light.library_lights",
+                                    "icon": "mdi:deathly-hallows",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    }
+                                },
+                                {
+                                    "entity": "switch.51268403dc4f2233b115",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    }
+                                },
+                                {
+                                    "entity": "group.office",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    }
+                                },
+                                {
+                                    "entity": "input_boolean.bathtime",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    }
+                                }
+                            ],
+                            "title": "Home",
+                            "type": "glance"
+                        },
+                        {
+                            "entity": "sensor.home_avg_temperature",
+                            "name": "Home Temperature (Avg)",
+                            "type": "sensor"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "timer.autonight"
+                                }
+                            ],
+                            "title": "Timer",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "input_select.set_scenes"
+                            ],
+                            "show_header_toggle": false,
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "weather.dark_sky",
+                            "name": "Newbury",
+                            "type": "weather-forecast"
+                        },
+                        {
+                            "cards": [
+                                {
+                                    "aspect_ratio": "50%",
+                                    "elements": [
+                                        {
+                                            "entity": "sensor.harmony_remote_activity",
+                                            "image": "/local/icons/media_icons/power-logo.png",
+                                            "service": "script.toggle_tv",
+                                            "state_image": {
+                                                "PowerOff": "/local/icons/media_icons/power-logo_active.png"
+                                            },
+                                            "style": {
+                                                "background-color": "rgb(255, 255, 255, 0.0)",
+                                                "border-radius": "4px",
+                                                "filter": "invert(0.20)",
+                                                "height": "54px",
+                                                "left": "10%",
+                                                "top": "10em",
+                                                "width": "54px",
+                                                "z-index": 2
+                                            },
+                                            "tap_action": {
+                                                "action": "call-service"
+                                            },
+                                            "type": "image"
+                                        },
+                                        {
+                                            "image": "/local/icons/media_icons/vol_-.png",
+                                            "style": {
+                                                "background-color": "rgb(255, 255, 255, 0.0)",
+                                                "border-radius": "4px",
+                                                "filter": "invert(0.20)",
+                                                "height": "54px",
+                                                "left": "85%",
+                                                "top": "12em",
+                                                "width": "54px",
+                                                "z-index": 2
+                                            },
+                                            "tap_action": {
+                                                "action": "call-service",
+                                                "service": "script.volume_down"
+                                            },
+                                            "type": "image"
+                                        },
+                                        {
+                                            "image": "/local/icons/media_icons/vol_+.png",
+                                            "style": {
+                                                "background-color": "rgb(255, 255, 255, 0.0)",
+                                                "border-radius": "4px",
+                                                "filter": "invert(0.20)",
+                                                "height": "54px",
+                                                "left": "85%",
+                                                "top": "8em",
+                                                "width": "54px",
+                                                "z-index": 2
+                                            },
+                                            "tap_action": {
+                                                "action": "call-service",
+                                                "service": "script.volume_up"
+                                            },
+                                            "type": "image"
+                                        },
+                                        {
+                                            "image": "/local/icons/media_icons/vol_btn_border.png",
+                                            "style": {
+                                                "border-radius": "4px",
+                                                "filter": "invert(0.20)",
+                                                "height": "155px",
+                                                "left": "85%",
+                                                "top": "11em",
+                                                "width": "69px",
+                                                "z-index": 1
+                                            },
+                                            "type": "image"
+                                        },
+                                        {
+                                            "image": "/local/icons/media_icons/horizontal_Rule.png",
+                                            "style": {
+                                                "border-radius": "4px",
+                                                "filter": "invert(0.20)",
+                                                "height": "2px",
+                                                "left": "40%",
+                                                "top": "13em",
+                                                "width": "70%",
+                                                "z-index": 1
+                                            },
+                                            "type": "image"
+                                        }
+                                    ],
+                                    "image": "/local/icons/media_icons/LHarmonyBG.jpg",
+                                    "type": "picture-elements"
+                                },
+                                {
+                                    "entities": [
+                                        "input_number.tv_volume_change"
+                                    ],
+                                    "type": "entities"
+                                }
+                            ],
+                            "type": "custom:vertical-stack-in-card"
+                        },
+                        {
+                            "entity": "alarm_control_panel.home_alarm",
+                            "name": "House Alarm",
+                            "type": "alarm-panel"
+                        },
+                        {
+                            "title": "Movies / Tv Shows to watch",
+                            "type": "shopping-list"
+                        },
+                        {
+                            "title": "Shopping",
+                            "type": "shopping-list"
+                        }
+                    ],
+                    "icon": "mdi:home",
+                    "title": "Home"
+                },
+                {
+                    "cards": [
+                        {
+                            "cards": [
+                                {
+                                    "aspect_ratio": "50%",
+                                    "elements": [
+                                        {
+                                            "entity": "sensor.harmony_remote_activity",
+                                            "image": "/local/icons/media_icons/power-logo.png",
+                                            "state_image": {
+                                                "PowerOff": "/local/icons/media_icons/power-logo_active.png"
+                                            },
+                                            "style": {
+                                                "background-color": "rgb(255, 255, 255, 0.0)",
+                                                "border-radius": "4px",
+                                                "filter": "invert(0.20)",
+                                                "height": "54px",
+                                                "left": "10%",
+                                                "top": "10em",
+                                                "width": "54px",
+                                                "z-index": 2
+                                            },
+                                            "tap_action": {
+                                                "action": "call-service",
+                                                "service": "script.toggle_tv"
+                                            },
+                                            "type": "image"
+                                        },
+                                        {
+                                            "image": "/local/icons/media_icons/vol_-.png",
+                                            "style": {
+                                                "background-color": "rgb(255, 255, 255, 0.0)",
+                                                "border-radius": "4px",
+                                                "filter": "invert(0.20)",
+                                                "height": "54px",
+                                                "left": "85%",
+                                                "top": "12em",
+                                                "width": "54px",
+                                                "z-index": 2
+                                            },
+                                            "tap_action": {
+                                                "action": "call-service",
+                                                "service": "script.volume_down"
+                                            },
+                                            "type": "image"
+                                        },
+                                        {
+                                            "image": "/local/icons/media_icons/vol_+.png",
+                                            "style": {
+                                                "background-color": "rgb(255, 255, 255, 0.0)",
+                                                "border-radius": "4px",
+                                                "filter": "invert(0.20)",
+                                                "height": "54px",
+                                                "left": "85%",
+                                                "top": "8em",
+                                                "width": "54px",
+                                                "z-index": 2
+                                            },
+                                            "tap_action": {
+                                                "action": "call-service",
+                                                "service": "script.volume_up"
+                                            },
+                                            "type": "image"
+                                        },
+                                        {
+                                            "image": "/local/icons/media_icons/vol_btn_border.png",
+                                            "style": {
+                                                "border-radius": "4px",
+                                                "filter": "invert(0.20)",
+                                                "height": "155px",
+                                                "left": "85%",
+                                                "top": "11em",
+                                                "width": "69px",
+                                                "z-index": 1
+                                            },
+                                            "type": "image"
+                                        },
+                                        {
+                                            "image": "/local/icons/media_icons/horizontal_Rule.png",
+                                            "style": {
+                                                "border-radius": "4px",
+                                                "filter": "invert(0.20)",
+                                                "height": "2px",
+                                                "left": "40%",
+                                                "top": "13em",
+                                                "width": "70%",
+                                                "z-index": 1
+                                            },
+                                            "type": "image"
+                                        }
+                                    ],
+                                    "image": "/local/icons/media_icons/LHarmonyBG.jpg",
+                                    "type": "picture-elements"
+                                },
+                                {
+                                    "entities": [
+                                        "input_number.tv_volume_change"
+                                    ],
+                                    "type": "entities"
+                                }
+                            ],
+                            "type": "custom:vertical-stack-in-card"
+                        },
+                        {
+                            "camera_image": "camera.living_room",
+                            "entities": [
+                                "switch.1274756684f3ebb8900b",
+                                "switch.tv"
+                            ],
+                            "title": "Living room",
+                            "type": "picture-glance"
+                        },
+                        {
+                            "camera_image": "camera.living_room_cam",
+                            "entity": "camera.living_room_cam",
+                            "show_info": true,
+                            "title": "Living Room Cam",
+                            "type": "picture-entity"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "switch.1274756684f3ebb8900b"
+                                },
+                                {
+                                    "entity": "switch.tv"
+                                },
+                                {
+                                    "entity": "light.living_room_lights"
+                                },
+                                {
+                                    "entity": "light.living_room_light_1"
+                                },
+                                {
+                                    "entity": "light.living_room_light_2"
+                                },
+                                {
+                                    "entity": "light.living_room_light_3"
+                                },
+                                {
+                                    "entity": "binary_sensor.living_room_pir"
+                                },
+                                {
+                                    "entity": "input_boolean.motionlivingroom"
+                                },
+                                {
+                                    "entity": "binary_sensor.font_door"
+                                }
+                            ],
+                            "show_header_toggle": true,
+                            "title": "Living Room",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "sensor.living_room_senor_temperature",
+                            "name": "Temperature",
+                            "type": "sensor"
+                        },
+                        {
+                            "entity": "sensor.living_room_senor_humidity",
+                            "name": "Humidity",
+                            "type": "sensor"
+                        }
+                    ],
+                    "icon": "mdi:sofa",
+                    "title": "Living Room"
+                },
+                {
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entity": "group.office"
+                                },
+                                {
+                                    "entity": "light.office_light"
+                                },
+                                {
+                                    "entity": "light.office_light_rgb"
+                                },
+                                {
+                                    "entity": "light.hue_lightstrip_plus_1_2"
+                                },
+                                {
+                                    "entity": "switch.mattpc"
+                                },
+                                {
+                                    "entity": "switch.12747566807d3a494165"
+                                },
+                                {
+                                    "entity": "switch.51268403dc4f2233b115"
+                                }
+                            ],
+                            "title": "Office",
+                            "type": "glance"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.office_humidity"
+                                },
+                                {
+                                    "entity": "sensor.office_temperature"
+                                },
+                                {
+                                    "entity": "binary_sensor.office_door"
+                                },
+                                {
+                                    "entity": "sensor.speedtest_ping"
+                                },
+                                {
+                                    "entity": "sensor.speedtest_upload"
+                                },
+                                {
+                                    "entity": "sensor.speedtest_download"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Sensors",
+                            "type": "entities"
+                        },
+                        {
+                            "detail": 10,
+                            "entity": "sensor.office_temperature",
+                            "graph": "line",
+                            "hours_to_show": 6,
+                            "name": "Temperature (6 hours)",
+                            "theme": "default",
+                            "type": "sensor"
+                        },
+                        {
+                            "entity": "sensor.office_humidity",
+                            "graph": "line",
+                            "hours_to_show": 6,
+                            "name": "Humidity (6 hours)",
+                            "type": "sensor"
+                        },
+                        {
+                            "entity": "media_player.bedroom",
+                            "type": "media-control"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "device_tracker.fridgemcu"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Node NCU Status",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.octoprint_current_state"
+                                },
+                                {
+                                    "entity": "sensor.octoprint_job_percentage"
+                                },
+                                {
+                                    "entity": "sensor.octoprint_actual_bed_temp"
+                                },
+                                {
+                                    "entity": "sensor.octoprint_actual_tool0_temp"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Printer",
+                            "type": "entities"
+                        },
+                        {
+                            "content": " Living Room Cam: http://192.168.1.203/\nGrafana: https://192.168.1.253:3000/login\nNode Red: https://192.168.1.253:1880/",
+                            "title": "Links",
+                            "type": "markdown"
+                        }
+                    ],
+                    "icon": "mdi:desktop-classic",
+                    "title": "Office"
+                },
+                {
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entity": "light.library_lights",
+                                    "name": "Lumos"
+                                },
+                                {
+                                    "entity": "switch.0682373584f3eb675aab",
+                                    "name": "Plug"
+                                }
+                            ],
+                            "title": "Magic Room",
+                            "type": "glance"
+                        },
+                        {
+                            "entities": [
+                                "light.library_lights",
+                                {
+                                    "type": "divider"
+                                },
+                                "light.hue_white_lamp_1",
+                                "light.hue_white_lamp_2"
+                            ],
+                            "show_header_toggle": true,
+                            "title": "Library",
+                            "type": "entities"
+                        }
+                    ],
+                    "icon": "mdi:deathly-hallows",
+                    "title": "Library"
+                },
+                {
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entity": "light.bed_room_lamp"
+                                },
+                                {
+                                    "entity": "light.bed_room_light"
+                                },
+                                {
+                                    "entity": "light.hue_lightstrip_plus_1"
+                                }
+                            ],
+                            "show_header_toggle": true,
+                            "title": "Bed Room",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.bedroom_temperature"
+                                },
+                                {
+                                    "entity": "sensor.bedroom_humidity"
+                                },
+                                {
+                                    "entity": "binary_sensor.bedroom_window"
+                                },
+                                {
+                                    "entity": "sensor.bedroom_light_level"
+                                },
+                                {
+                                    "entity": "sensor.bed_weight_senor"
+                                },
+                                {
+                                    "entity": "sensor.danni_in_bed"
+                                },
+                                {
+                                    "entity": "sensor.matt_in_bed"
+                                },
+                                {
+                                    "entity": "sensor.num_in_master_bed"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Bedroom Senor",
+                            "type": "entities"
+                        }
+                    ],
+                    "icon": "mdi:hotel",
+                    "title": "Bed Room"
+                },
+                {
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entity": "binary_sensor.hallway_motion_sensor"
+                                },
+                                {
+                                    "entity": "sensor.hallway_temperature"
+                                },
+                                {
+                                    "entity": "sensor.hallway_lux"
+                                },
+                                {
+                                    "entity": "light.hallway_light"
+                                }
+                            ],
+                            "show_header_toggle": true,
+                            "title": "Hallway",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "light.bathroom_light"
+                                },
+                                {
+                                    "entity": "binary_sensor.bathroom_motion_sensor"
+                                },
+                                {
+                                    "entity": "sensor.bathroom_lux"
+                                },
+                                {
+                                    "entity": "sensor.bathroom_temperature"
+                                },
+                                {
+                                    "entity": "input_boolean.bathtime"
+                                },
+                                {
+                                    "entity": "binary_sensor.bathroom_door"
+                                },
+                                {
+                                    "entity": "sensor.bath_room_humidity"
+                                },
+                                {
+                                    "entity": "sensor.bath_room_temperature"
+                                }
+                            ],
+                            "show_header_toggle": true,
+                            "title": "BathRoom",
+                            "type": "entities"
+                        }
+                    ],
+                    "title": "Other"
+                },
+                {
+                    "cards": [
+                        {
+                            "title": null,
+                            "trackers": [
+                                "sensor.custom_card_tracker",
+                                "sensor.custom_component_tracker"
+                            ],
+                            "type": "custom:tracker-card"
+                        },
+                        {
+                            "entities": [
+                                "script.annoydanni",
+                                "script.test_push"
+                            ],
+                            "show_header_toggle": true,
+                            "title": "all scripts",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "switch.0682373584f3eb675aab",
+                                "switch.51268403dc4f2233b115",
+                                "switch.1274756684f3ebb8900b",
+                                "switch.12747566807d3a494165"
+                            ],
+                            "show_header_toggle": true,
+                            "title": "all switches",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "light.bathroom_light",
+                                "light.bed_room_lamp",
+                                "light.bed_room_light",
+                                "light.hallway_light",
+                                "light.living_room_light_1",
+                                "light.living_room_light_2",
+                                "light.living_room_light_3",
+                                "light.office_light",
+                                "light.office_light_rgb"
+                            ],
+                            "show_header_toggle": true,
+                            "title": "all lights",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "device_tracker.bt_matt_iphone",
+                                "device_tracker.bt_danni_iphone",
+                                "device_tracker.desktoprkr057t"
+                            ],
+                            "show_header_toggle": true,
+                            "title": "all devices",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "media_player.unnamed_device",
+                            "type": "media-control"
+                        }
+                    ],
+                    "icon": "mdi:settings",
+                    "title": "Settings"
+                },
+                {
+                    "badges": [
+                        "device_tracker.esp_cb0053",
+                        "device_tracker.esp_494165",
+                        "device_tracker.esp_33b115",
+                        "device_tracker.esp_b8900b",
+                        "device_tracker.mattsipad",
+                        "device_tracker.rmmini18694a",
+                        "device_tracker.amazon43c4f7038",
+                        "device_tracker.amazon379a38ab7",
+                        "device_tracker.amazon46e341c54",
+                        "device_tracker.amazon5cbc14c10",
+                        "device_tracker.amazon737fbd200",
+                        "device_tracker.life360_matt",
+                        "device_tracker.life360_danni",
+                        "device_tracker.matthewsiphone",
+                        "device_tracker.amazone3195c4f3",
+                        "device_tracker.desktoprkr057t",
+                        "device_tracker.esp_16a058",
+                        "device_tracker.iphone",
+                        "device_tracker.hassio",
+                        "device_tracker.unknown001788",
+                        "device_tracker.desktopl8nv1rh",
+                        "device_tracker.daniellesipad",
+                        "device_tracker.iphone_2",
+                        "device_tracker.unknown501ac5",
+                        "device_tracker.desktoprkr057t_2",
+                        "device_tracker.daniellesiphone",
+                        "device_tracker.desktopl8nv1rh_2",
+                        "device_tracker.echo9k2",
+                        "device_tracker.echo6um",
+                        "device_tracker.rachaelsiphone",
+                        "device_tracker.versa",
+                        "device_tracker.lpc685",
+                        "sensor.home_avg_temperature",
+                        "sensor.hallway_lux",
+                        "sensor.bathroom_temperature",
+                        "sensor.hallway_temperature",
+                        "sensor.bathroom_lux",
+                        "sensor.uptime",
+                        "sensor.yr_symbol",
+                        "sensor.office_temperature",
+                        "sensor.bathroom_motion_sensor",
+                        "sensor.office_humidity",
+                        "sensor.hallway_motion_sensor",
+                        "sensor.node_red_watch_dog",
+                        "sensor.speedtest_upload",
+                        "sensor.speedtest_download",
+                        "sensor.speedtest_ping",
+                        "sensor.last_boot",
+                        "sensor.doorbell",
+                        "sensor.processor_use",
+                        "sensor.disk_use_percent_",
+                        "sensor.memory_use_percent",
+                        "sensor.living_room_senor_humidity",
+                        "sensor.living_room_senor_temperature",
+                        "sensor.iphone_battery_level_5",
+                        "sensor.iphone_battery_state_4",
+                        "sensor.iphone_battery_state_5",
+                        "sensor.iphone_battery_level_4",
+                        "sun.sun"
+                    ],
+                    "cards": [
+                        {
+                            "entities": [
+                                "light.office_light",
+                                "switch.12747566807d3a494165"
+                            ],
+                            "title": "Office",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "light.bed_room_lamp",
+                                "light.bed_room_light",
+                                "switch.0682373584f3eb675aab"
+                            ],
+                            "title": "Bed Room",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "light.hallway_light"
+                            ],
+                            "title": "Hallway",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "light.living_room_light_1",
+                                "light.living_room_light_2",
+                                "light.living_room_light_3",
+                                "switch.tv"
+                            ],
+                            "title": "Living Room",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "media_player.living_room_xbox_one",
+                            "type": "media-control"
+                        },
+                        {
+                            "entities": [
+                                "light.bathroom_light"
+                            ],
+                            "title": "BathRoom",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "automation.restart_node_red"
+                            ],
+                            "title": "Automation",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "camera.living_room_cam"
+                            ],
+                            "title": "Camera",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "input_boolean.takenbinout",
+                                "input_boolean.goodnight",
+                                "input_boolean.isanyonehome",
+                                "input_boolean.node_red",
+                                "input_boolean.testrednode",
+                                "input_boolean.guestmode",
+                                "input_boolean.holidaymode",
+                                "input_boolean.bathtime"
+                            ],
+                            "title": "Input boolean",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "input_number.tv_volume_change"
+                            ],
+                            "title": "Input number",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "light.living_room_lights",
+                                "light.hue_lightstrip_plus_1"
+                            ],
+                            "title": "Light",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "media_player.mats_2nd_echo_dot",
+                            "type": "media-control"
+                        },
+                        {
+                            "entity": "media_player.mats_alexa_apps",
+                            "type": "media-control"
+                        },
+                        {
+                            "entity": "media_player.downstairs",
+                            "type": "media-control"
+                        },
+                        {
+                            "entity": "media_player.barthroom",
+                            "type": "media-control"
+                        },
+                        {
+                            "entity": "media_player.upstairs",
+                            "type": "media-control"
+                        },
+                        {
+                            "entity": "media_player.this_device",
+                            "type": "media-control"
+                        },
+                        {
+                            "entity": "media_player.living_room",
+                            "type": "media-control"
+                        },
+                        {
+                            "entity": "media_player.mats_echo_dot",
+                            "type": "media-control"
+                        },
+                        {
+                            "entity": "media_player.bedroom",
+                            "type": "media-control"
+                        },
+                        {
+                            "entity": "media_player.mats_3rd_echo_dot",
+                            "type": "media-control"
+                        },
+                        {
+                            "entity": "media_player.this_device_2",
+                            "type": "media-control"
+                        },
+                        {
+                            "entity": "media_player.mats_fire_tv",
+                            "type": "media-control"
+                        },
+                        {
+                            "entity": "media_player.everywhere",
+                            "type": "media-control"
+                        },
+                        {
+                            "entity": "media_player.mats_4th_echo_dot",
+                            "type": "media-control"
+                        },
+                        {
+                            "entities": [
+                                "script.test_push",
+                                "script.toggle_tv",
+                                "script.volume_down",
+                                "script.annoydanni",
+                                "script.volume_up"
+                            ],
+                            "title": "Script",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "switch.mattpc",
+                                "switch.mattpc_off",
+                                "switch.mattpc_on",
+                                "switch.xbox_select",
+                                "switch.tv_volume",
+                                "switch.xbox_play",
+                                "switch.1274756684f3ebb8900b",
+                                "switch.51268403dc4f2233b115"
+                            ],
+                            "title": "Switch",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "weather.dark_sky",
+                            "type": "weather-forecast"
+                        }
+                    ],
+                    "title": "EveryThing"
+                }
+            ]
+        }
+    },
+    "key": "lovelace",
+    "version": 1
+}

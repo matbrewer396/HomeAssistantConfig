@@ -10,7 +10,8 @@ home-assistant.log
 home-assistant_v2.db
 .ios.conf
 .storage/auth
-.storage/
+.storage/*
+!.storage/lovelace
 .cloud/
 deps/
 .uuid
@@ -21,6 +22,7 @@ life360.conf
 custom_components/
 www/
 
+node-red/*
 !node-red/flows.json
 
 esphome/
