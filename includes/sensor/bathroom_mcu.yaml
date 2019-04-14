@@ -1,0 +1,20 @@
+  - platform: mqtt
+    name: "Bath Room Temperature"
+    state_topic: "bathroom/senorarray"
+    unit_of_measurement: '°C'
+    value_template: "{{ value_json.temperature }}"
+    expire_after : 180
+    device_class: temperature
+    availability_topic: "availability/bathroomMCU"
+    payload_available: "online"
+    payload_not_available: "offline"
+  - platform: mqtt
+    name: "Bath Room Humidity"
+    state_topic: "bathroom/senorarray"
+    unit_of_measurement: '%'
+    value_template: "{{ value_json.humidity }}"
+    expire_after : 180
+    device_class: humidity
+    availability_topic: "availability/bathroomMCU"
+    payload_available: "online"
+    payload_not_available: "offline"
