@@ -1,0 +1,12 @@
+
+  node_red_offline:
+    name: Node Red Is Down
+    done_message: Node Red Is Online
+    entity_id: input_boolean.node_red
+    state: 'unknown'
+    repeat: 
+      - 15
+      - 30
+      - 60
+    notifiers:
+      - ios_mattiphone

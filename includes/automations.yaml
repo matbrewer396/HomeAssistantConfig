@@ -1,0 +1,12 @@
+- id: '1542052478367'
+  alias: Restart Node Red
+  trigger:
+  - entity_id: sensor.node_red_watch_dog
+    from: ok
+    platform: state
+    to: unknown
+  condition: []
+  action:
+  - data:
+      addon: a0d7b954_nodered
+    service: hassio.addon_restart
