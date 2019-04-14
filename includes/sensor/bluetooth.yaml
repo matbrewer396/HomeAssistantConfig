@@ -1,0 +1,16 @@
+  - platform: mqtt
+    state_topic: 'btmonitor/livingroom/matt'
+    value_template: '{{ value_json.confidence }}'
+    unit_of_measurement: '%'
+    name: 'Matt Living Room'
+    availability_topic: "availability/bluetoothtracker"
+    payload_available: "online"
+    payload_not_available: "offline"
+  - platform: mqtt
+    state_topic: 'btmonitor/livingroom/danni'
+    value_template: '{{ value_json.confidence }}'
+    unit_of_measurement: '%'
+    name: 'Danni Living Room'
+    availability_topic: "availability/bluetoothtracker"
+    payload_available: "online"
+    payload_not_available: "offline"
