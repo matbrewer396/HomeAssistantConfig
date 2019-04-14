@@ -21,7 +21,6 @@ life360.conf
 custom_components/
 www/
 
+!node-red/flows.json
 
-
-node-red/
 esphome/
