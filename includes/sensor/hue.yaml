@@ -1,0 +1,21 @@
+
+
+  - platform: template
+    sensors:
+      hallway_temperature:
+        friendly_name: 'Hallway Temperature'
+        unit_of_measurement: °C
+        value_template: '{{ states.binary_sensor.hallway_motion_sensor.attributes.temperature }}'
+      bathroom_temperature:
+        friendly_name: 'Bathroom Temperature'
+        unit_of_measurement: °C
+        value_template: '{{ states.binary_sensor.bathroom_motion_sensor.attributes.temperature }}'
+      hallway_lux:
+        friendly_name: 'Hallway Lux'
+        unit_of_measurement: Lux
+        value_template: '{{ states.binary_sensor.hallway_motion_sensor.attributes.light_level }}'
+      bathroom_lux:
+        friendly_name: 'Bathroom Lux'
+        unit_of_measurement: Lux
+        value_template: '{{ states.binary_sensor.bathroom_motion_sensor.attributes.light_level }}'
+  - platform: huesensor
