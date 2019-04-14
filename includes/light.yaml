@@ -1,0 +1,33 @@
+  - platform: mqtt
+
+    name: "Office Light RGB"
+    state_topic: "office/rgb1/light/status"
+    command_topic: "office/rgb1/light/switch"
+    brightness_state_topic: "office/rgb1/brightness/status"
+    brightness_command_topic: "office/rgb1/brightness/set"
+    rgb_state_topic: "office/rgb1/rgb/status"
+    rgb_command_topic: "office/rgb1/rgb/set"
+    state_value_template: "{{ value_json.state }}"
+    brightness_value_template: "{{ value_json.brightness }}"
+    rgb_value_template: "{{ value_json.rgb | join(',') }}"
+    qos: 0
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+    availability_topic: "availability/OfficeMCU"
+    payload_available: "online"
+    payload_not_available: "offline"
+
+
+
+  - platform: group
+    name: Living Room Lights
+    entities:
+      - light.living_room_light_1
+      - light.living_room_light_2
+      - light.living_room_light_3
+  - platform: group
+    name: Library Lights
+    entities:
+      - light.hue_white_lamp_1
+      - light.hue_white_lamp_2
