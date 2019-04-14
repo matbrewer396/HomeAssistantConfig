@@ -1,0 +1,37 @@
+test_push:
+  alias: 'test_push'
+  sequence:
+    - service: notify.mattiphone_iphone10smax
+      data:
+        message: 'This is a test!'
+
+volume_up:
+  alias: 'Volume Up'
+  sequence:
+    - service: switch.turn_on
+      data:
+        entity_id: switch.tv_volume
+
+volume_down:
+  alias: 'Volume Down'
+  sequence:
+    - service: switch.turn_off
+      data:
+        entity_id: switch.tv_volume
+
+toggle_tv:
+  alias: 'TV On / Off'
+  sequence:
+    - service: switch.toggle
+      data:
+        entity_id: switch.tv
+motionlivingroom:
+  alias: motionlivingroom
+  sequence:
+  - data:
+      entity_id: input_boolean.motionlivingroom
+    service: input_boolean.turn_on
+  - delay: 00:01:00
+  - data:
+      entity_id: input_boolean.motionlivingroom
+    service: input_boolean.turn_off
