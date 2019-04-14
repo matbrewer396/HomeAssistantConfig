@@ -2081,7 +2081,7 @@
                 "69a40cbb.df3674"
             ],
             [
-                "b4bcf0ef.3f114"
+                "33d67a23.de0b26"
             ],
             [
                 "99df83ab.46e3b"
@@ -12362,7 +12362,7 @@
         "y": 440,
         "wires": [
             [
-                "b4bcf0ef.3f114"
+                "33d67a23.de0b26"
             ]
         ]
     },
@@ -12390,7 +12390,7 @@
         "type": "subflow:c9b308f8.01ef68",
         "z": "d73100a9.0d64d",
         "name": "",
-        "x": 2550,
+        "x": 2750,
         "y": 440,
         "wires": []
     },
@@ -13644,9 +13644,9 @@
         "id": "80b968a4.750978",
         "type": "comment",
         "z": "21d6efde.d0943",
-        "name": "Someone got into to bed",
+        "name": "Someone got into to bed and bed was empty",
         "info": "",
-        "x": 984,
+        "x": 1044,
         "y": 480,
         "wires": []
     },
@@ -14005,5 +14005,60 @@
         "x": 130,
         "y": 720,
         "wires": []
+    },
+    {
+        "id": "6986a0d4.bf4d6",
+        "type": "change",
+        "z": "d73100a9.0d64d",
+        "name": "Set LightLevel = FAST_LOW",
+        "rules": [
+            {
+                "t": "set",
+                "p": "LightLevel",
+                "pt": "msg",
+                "to": "FAST_LOW",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2800,
+        "y": 480,
+        "wires": [
+            [
+                "f7a7ad4c.e1887"
+            ]
+        ]
+    },
+    {
+        "id": "f7a7ad4c.e1887",
+        "type": "subflow:7df159d5.618c58",
+        "z": "d73100a9.0d64d",
+        "name": "",
+        "x": 3040,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "33d67a23.de0b26",
+        "type": "function",
+        "z": "d73100a9.0d64d",
+        "name": "-",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 2570,
+        "y": 440,
+        "wires": [
+            [
+                "b4bcf0ef.3f114",
+                "6986a0d4.bf4d6"
+            ]
+        ]
     }
 ]
