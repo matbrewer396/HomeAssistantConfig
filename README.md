@@ -44,6 +44,8 @@ List of all my device, that make house smart:
 | Philips Hue Smart Motion Sensor | 2 | Temperature / Light Level. Connected via hue hub |
 
 ### Load Sensor
+| Device  | Quantity | Notes |
+| ------------- | :---: | ------------- | 
 | DIY: HX711 + 4x Load Cells | 1 | Connect via Node NCU |
 
 
