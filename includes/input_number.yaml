@@ -1,0 +1,7 @@
+  tv_volume_change:
+    name: Change TV Volume
+    icon: mdi:volume-medium
+    initial: 20
+    min: 0
+    max: 40
+    step: 1
