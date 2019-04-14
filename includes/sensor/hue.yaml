@@ -19,3 +19,7 @@
         unit_of_measurement: Lux
         value_template: '{{ states.binary_sensor.bathroom_motion_sensor.attributes.light_level }}'
   - platform: huesensor
+  # - platform: huesensor
+  #   ip_address: 192.168.1.201
+  #   token: Q8s4NlWsJBPP3dNxXxUeSfWBa2qYtKqMrm2h1Ac8
+

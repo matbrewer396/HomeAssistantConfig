@@ -486,7 +486,7 @@
                             "type": "entities"
                         },
                         {
-                            "content": " Living Room Cam: http://192.168.1.203/\nGrafana: https://192.168.1.253:3000/login\nNode Red: https://192.168.1.253:1880/",
+                            "content": " Living Room Cam: http://192.168.1.203/\nGrafana: https://192.168.1.253:3000/login\nNode Red: https://192.168.1.253:1880/\nInfluxDB: http://192.168.1.253:8888\nOldUi: https://192.168.1.253/states",
                             "title": "Links",
                             "type": "markdown"
                         }
