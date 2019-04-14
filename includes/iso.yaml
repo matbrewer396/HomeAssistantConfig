@@ -1,0 +1,88 @@
+  push:
+    categories:
+      - name: Alarm
+        identifier: 'alarm'
+        actions:
+          - identifier: 'SOUND_ALARM'
+            title: 'Sound Alarm'
+            activationMode: 'background'
+            authenticationRequired: yes
+            destructive: yes
+            behavior: 'default'
+          - identifier: 'SILENCE_ALARM'
+            title: 'Silence Alarm'
+            activationMode: 'background'
+            authenticationRequired: yes
+            destructive: no
+            behavior: 'default'
+      - name: Good Night
+        identifier: 'goodnight'
+        actions:
+          - identifier: 'STILL_AWAKE_30'
+            title: 'Wait 30 Minutes'
+            activationMode: 'background'
+            authenticationRequired: no
+            destructive: no
+            behavior: 'default'
+          - identifier: 'STILL_AWAKE_60'
+            title: 'Wait An Hour'
+            activationMode: 'background'
+            authenticationRequired: no
+            destructive: no
+            behavior: 'default'
+          - identifier: 'STILL_AWAKE_180'
+            title: 'Wait 3 Hour'
+            activationMode: 'background'
+            authenticationRequired: no
+            destructive: no
+            behavior: 'default'
+          - identifier: 'GOOD_NIGHT_NOW'
+            title: 'Good Night'
+            activationMode: 'background'
+            authenticationRequired: no
+            destructive: yes
+          - identifier: 'DISABLE_AUTO_NIGHT'
+            title: 'Disabled Auto Good Night - (for tonight)'
+            activationMode: 'background'
+            authenticationRequired: no
+            destructive: yes
+      - name: No One Home? Turning off 2 minutes...
+        identifier: 'noonehome'
+        actions:
+          - identifier: 'NO_ONE_HOME'
+            title: 'Go Ahead'
+            activationMode: 'background'
+            authenticationRequired: no
+            destructive: no
+          - identifier: 'NO_ONE_HOME_GUESTMODE'
+            title: 'We have guest - Active Guest Mode'
+            activationMode: 'background'
+            authenticationRequired: no
+            destructive: no
+          - identifier: 'DISABLE_GOOD_BYE'
+            title: 'Disabled Auto No One Home'
+            activationMode: 'background'
+            authenticationRequired: no
+            destructive: yes
+      - name: I miss you! Activing holiday mode
+        identifier: 'missyou'
+        actions:
+          - identifier: 'MISS_YOU_TOO'
+            title: 'Miss you too!'
+            activationMode: 'background'
+            authenticationRequired: no
+            destructive: no
+      - name: Have you put the bin out?
+        identifier: 'bincheck'
+        actions:
+          - identifier: 'BIN_WAIT_30'
+            title: 'Wait 30 Minutes'
+            activationMode: 'background'
+            authenticationRequired: no
+            destructive: no
+            behavior: 'default'
+          - identifier: 'BIN_ARE_OUT'
+            title: 'Yes, bin are out'
+            activationMode: 'background'
+            authenticationRequired: no
+            destructive: yes
