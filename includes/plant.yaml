@@ -1,0 +1,9 @@
+
+  office_aloe_vera:
+    sensors:
+      moisture: sensor.office_aloe_vera_moisture
+      battery: sensor.office_aloe_vera_battery_level
+      temperature: sensor.office_aloe_vera_temperature
+      conductivity: sensor.office_aloe_vera_soil_conductivity
+      brightness: sensor.office_aloe_vera_illuminance
+    min_moisture: 20

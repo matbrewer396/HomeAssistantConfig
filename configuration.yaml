@@ -51,6 +51,7 @@ camera: !include includes/camera.yaml
 ios: !include includes/iso.yaml
 light: !include includes/light.yaml
 input_select: !include includes/input_select.yaml
+plant: !include includes/plant.yaml
 
 
 weather:

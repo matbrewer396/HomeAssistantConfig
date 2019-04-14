@@ -76,15 +76,6 @@
                         },
                         {
                             "entities": [
-                                {
-                                    "entity": "timer.autonight"
-                                }
-                            ],
-                            "title": "Timer",
-                            "type": "entities"
-                        },
-                        {
-                            "entities": [
                                 "input_select.set_scenes"
                             ],
                             "show_header_toggle": false,
@@ -453,7 +444,7 @@
                             "type": "sensor"
                         },
                         {
-                            "entity": "media_player.bedroom",
+                            "entity": "media_player.office",
                             "type": "media-control"
                         },
                         {
@@ -489,6 +480,11 @@
                             "content": " Living Room Cam: http://192.168.1.203/\nGrafana: https://192.168.1.253:3000/login\nNode Red: https://192.168.1.253:1880/\nInfluxDB: http://192.168.1.253:8888\nOldUi: https://192.168.1.253/states",
                             "title": "Links",
                             "type": "markdown"
+                        },
+                        {
+                            "entity": "plant.office_aloe_vera",
+                            "name": "Alloe Vera (Office)",
+                            "type": "plant-status"
                         }
                     ],
                     "icon": "mdi:desktop-classic",
