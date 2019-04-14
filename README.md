@@ -108,4 +108,6 @@ Nothing yet!
 * When someone get out of bed, bath room light turns on (dimmed of course if night)
 * On sunrise strip lights turn off
 
-
+### Bath Room
+* On Motion & Door senors trigger light on. Turn off a few minutes later
+* Input boolean on HA ui, for bath time - force the light to turn of for 1 hour
