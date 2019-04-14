@@ -1,0 +1,27 @@
+  office:
+    name: Office
+    entities:
+      - light.office_light
+      - switch.12747566807d3a494165
+  bedroom:
+    name: Bed Room
+    entities:
+      - light.bed_room_lamp
+      - light.bed_room_light
+      - switch.0682373584f3eb675aab
+  hallway:
+    name: Hallway
+    entities:
+      - light.hallway_light
+  livingroom:
+    name: Living Room
+    entities:
+      - light.living_room_light_1
+      - light.living_room_light_2
+      - light.living_room_light_3
+      - media_player.living_room_xbox_one
+      - switch.tv
+  bathroom:
+    name: BathRoom
+    entities:
+      - light.bathroom_light
