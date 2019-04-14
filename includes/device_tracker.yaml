@@ -1,0 +1,20 @@
+
+
+  - platform: bt_home_hub_5
+  
+  - platform: life360
+    username: !secret life360_username
+    password: !secret life360_password
+    prefix: life360
+    show_as_state: driving, moving, places
+    driving_speed: 18
+    max_gps_accuracy: 200
+    max_update_wait:
+      minutes: 45
+
+  - platform: mqtt
+    qos: 2
+    devices:
+      matt: 'location/matt'
+      danni: 'location/danni'
+  - platform: huesensor
