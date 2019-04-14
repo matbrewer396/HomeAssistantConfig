@@ -1,0 +1,6 @@
+'1542539988077':
+  alias: Volume
+  sequence:
+  - data:
+      entity_id: switch.tv_volume
+    service: switch.turn_on
