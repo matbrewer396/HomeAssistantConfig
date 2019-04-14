@@ -1,0 +1,11 @@
+  set_scenes:
+    name: Set a scence / action
+    options:
+     - Living Room - Natural
+     - Bed Room - Night 
+     - Autonight - Wait 30 Minutes
+     - Autonight - Wait An Hour
+     - Autonight - Wait 3 Hour
+     - None
+    initial: None
+    icon: mdi:all-inclusive
