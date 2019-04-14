@@ -4,18 +4,63 @@ Here my home assistant configuration and a few notes to go along with it. This m
 ## Hardware / Devices
 List of all my device, that make house smart:
 
-### Hue
+### Hue / Controllers / Pi
 | Device  | Quantity | Notes |
 | ------------- | :---: | ------------- | 
-| Hue Hub | 1 | ------------- | 
+| Hue Hub | 1 |  | 
+| PI3b | 1 | Runs HASSIO | 
+| PI Zero | 1 | Bluetooth Tracker |
+| PI Zero | 1 | Octo print |
+| PI Zero | 1 | Monition Eye |
+| Broadlink IR home hub | 1 | Monition Eye |
+| 1byone Easy Chime Wireless Doorbell | 1 | with a nodemcu to connect to HA |
 
 ### Lights
 | Device  | Quantity | Notes |
 | ------------- | :---: | ------------- | 
-| Philips Hue White and Color Ambiance | 6 | ------------- | 
-| Philips Hue White Ambiance | 4 | ------------- | 
-| Philips Hue White and Color Ambiance Light Strip | 2 | ------------- | 
-| DIY: 39inch RGB LED Light | 1 | ------------- | 
+| Philips Hue White and Color Ambiance | 6 | Connected via hue hub | 
+| Philips Hue White Ambiance | 4 | Connected via hue hub | 
+| Philips Hue White and Color Ambiance Light Strip | 2 | Connected via hue hub | 
+| DIY: 39inch RGB LED Light | 1 | Connect to nodemcu, controlled via MQTT | 
+
+### Motion Detector
+| Device  | Quantity | Notes |
+| ------------- | :---: | ------------- | 
+| Philips Hue Smart Motion Sensor | 2 | Connected via hue hub |
+| DIY: PIR Motion Detector | 1 | Connect to Pi | 
+
+### Door / Window Senor
+| Device  | Quantity | Notes |
+| ------------- | :---: | ------------- | 
+| DIY: Door / Window Magnetic Contact Reed Switch | 4 | Connect to nodemcu, pushes to MQTT | 
+
+### Temperature / Humidity / Light Level
+| Device  | Quantity | Notes |
+| ------------- | :---: | ------------- | 
+| DIY: DHT11 | 1 | Temperature & Humidity. Connect to nodemcu, pushes to MQTT | 
+| DIY: DHT11 | 1 | Temperature & Humidity. Connect to Pi |
+| DIY: DHT22 | 2 | Temperature & Humidity. Connect to nodemcu, pushes to MQTT | 
+| DIY: LDR | 1 | Light Level. Connect to nodemcu, pushes to MQTT | 
+| Philips Hue Smart Motion Sensor | 2 | Temperature / Light Level. Connected via hue hub |
+
+### Load Sensor
+| DIY: HX711 + 4x Load Cells | 1 | Connect via Node NCU |
+
+
+### Plugs
+| Device  | Quantity | Notes |
+| ------------- | :---: | ------------- | 
+| Teckin WI-FI Plug | 6 |  | 
+| Eve Elgato Plug | 2 | BLE - Cant find a way to connect to HA, so there more use for odd task like restarting PI | 
+
+
+### Alexas
+| Device  | Quantity | Notes |
+| ------------- | :---: | ------------- | 
+| Echo dot 2nd gen | 1 |  | 
+| Echo dot 3rd gen | 3 |  | 
+| Echo | 2 |  | 
+| Fire TV 4k | 1 |  | 
 
 ## Automation
 List of all my automation, that make house smart. 
