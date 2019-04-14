@@ -1,0 +1,23 @@
+## Local senor
+  - platform: dht
+    sensor: DHT11
+    pin: 4
+    name: "Living Room Senor"
+    monitored_conditions:
+      - temperature
+      - humidity
+  - platform: speedtestdotnet
+    scan_interval:
+      minutes: 10
+    monitored_conditions:
+      - ping
+      - download
+      - upload
+  - platform: uptime
+  - platform: systemmonitor
+    resources:
+      - type: memory_use_percent
+      - type: processor_use
+      - type: disk_use_percent
+        arg: /
+      - type: last_boot
