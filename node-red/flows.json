@@ -328,15 +328,15 @@
                 "y": 80,
                 "wires": [
                     {
-                        "id": "2e287d01.0a12d2"
+                        "id": "e890483e.ef37a8"
                     }
                 ]
             }
         ],
         "out": [
             {
-                "x": 840,
-                "y": 80,
+                "x": 1020,
+                "y": 60,
                 "wires": [
                     {
                         "id": "54664ccd.b262b4",
@@ -12963,8 +12963,12 @@
         "entityidfilter": "sensor.num_in_master_bed",
         "entityidfiltertype": "substring",
         "outputinitially": false,
+        "state_type": "str",
         "haltifstate": "",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
         "outputs": 1,
+        "output_only_on_state_change": false,
         "x": 173,
         "y": 380,
         "wires": [
@@ -13445,16 +13449,6 @@
         "wires": []
     },
     {
-        "id": "ffbd43d0.7ad8c",
-        "type": "comment",
-        "z": "21d6efde.d0943",
-        "name": "Automation based on bed sensor",
-        "info": "",
-        "x": 193,
-        "y": 160,
-        "wires": []
-    },
-    {
         "id": "7dad6fcb.83973",
         "type": "catch",
         "z": "21d6efde.d0943",
@@ -13499,12 +13493,10 @@
         "mergecontext": "",
         "output_location": "payload",
         "output_location_type": "msg",
-        "x": 550,
-        "y": 100,
+        "x": 730,
+        "y": 80,
         "wires": [
-            [
-                "8255ff1e.6b28f"
-            ]
+            []
         ]
     },
     {
@@ -13617,15 +13609,14 @@
         "type": "function",
         "z": "7df159d5.618c58",
         "name": "Build Command",
-        "func": "if (msg.LightLevel == \"DIMMED\") {\n    msg.payload = { \"domain\" : \"light\",\n    \"service\" : \"turn_on\",\n     \"data\" : \n        { \n            \"entity_id\" : \"light.hue_lightstrip_plus_1\",\n            \"brightness_pct\": \"50\",\n            \"transition\":\"5\"\n        } \n    }\n} else if (msg.LightLevel == \"SLOW_LOW\") {\n    msg.payload = { \"domain\" : \"light\",\n    \"service\" : \"turn_on\",\n     \"data\" : \n        { \n            \"entity_id\" : \"light.hue_lightstrip_plus_1\",\n            \"brightness_pct\": \"10\",\n            \"transition\":\"30\"\n        } \n    }\n}else if (msg.LightLevel == \"FAST_LOW\") {\n    msg.payload = { \"domain\" : \"light\",\n    \"service\" : \"turn_on\",\n     \"data\" : \n        { \n            \"entity_id\" : \"light.hue_lightstrip_plus_1\",\n            \"brightness_pct\": \"10\",\n            \"transition\":\"5\"\n        } \n    }\n} else if (msg.LightLevel == \"HIGH\") {\n    msg.payload = { \"domain\" : \"light\",\n    \"service\" : \"turn_on\",\n     \"data\" : \n        { \n            \"entity_id\" : \"light.hue_lightstrip_plus_1\",\n            \"brightness_pct\": \"100\",\n            \"transition\":\"5\"\n        } \n    }\n}\nreturn msg;",
+        "func": "var rgb_color;\nvar mattColor = [72,255,118] // greeb\nvar danniColor = [75,164,255] // blue\nvar fullBed = [201,40,255] // dark pink\nvar emtpyBed = [255,182,109] // oragne\n\nif (msg.payload.NumberInBed == \"0\") {\n    rgb_color = emtpyBed; \n} else if (msg.payload.NumberInBed == \"2\") {\n   rgb_color = fullBed;\n} else if (msg.payload.DanniInBed == \"True\") {\n    rgb_color = danniColor;\n} else if (msg.payload.MattInBed == \"True\") {\n    rgb_color = mattColor;\n} else {\n    rgb_color = [255,43,0]; // Error this should happen\n}\n\n\n\nif (msg.LightLevel == \"DIMMED\") {\n    msg.payload = { \"domain\" : \"light\",\n    \"service\" : \"turn_on\",\n     \"data\" : \n        { \n            \"entity_id\" : \"light.hue_lightstrip_plus_1\",\n            \"brightness_pct\": \"50\",\n            \"transition\":\"5\",\n            \"rgb_color\": rgb_color\n        } \n    }\n} else if (msg.LightLevel == \"SLOW_LOW\") {\n    msg.payload = { \"domain\" : \"light\",\n    \"service\" : \"turn_on\",\n     \"data\" : \n        { \n            \"entity_id\" : \"light.hue_lightstrip_plus_1\",\n            \"brightness_pct\": \"10\",\n            \"transition\":\"30\",\n            \"rgb_color\": rgb_color\n        } \n    }\n}else if (msg.LightLevel == \"FAST_LOW\") {\n    msg.payload = { \"domain\" : \"light\",\n    \"service\" : \"turn_on\",\n     \"data\" : \n        { \n            \"entity_id\" : \"light.hue_lightstrip_plus_1\",\n            \"brightness_pct\": \"10\",\n            \"transition\":\"5\",\n            \"rgb_color\": rgb_color\n        } \n    }\n} else if (msg.LightLevel == \"HIGH\") {\n    msg.payload = { \"domain\" : \"light\",\n    \"service\" : \"turn_on\",\n     \"data\" : \n        { \n            \"entity_id\" : \"light.hue_lightstrip_plus_1\",\n            \"brightness_pct\": \"100\",\n            \"transition\":\"5\",\n            \"rgb_color\": rgb_color\n        } \n    }\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 300,
-        "y": 100,
+        "x": 480,
+        "y": 80,
         "wires": [
             [
-                "54664ccd.b262b4",
-                "da50e670.471898"
+                "54664ccd.b262b4"
             ]
         ]
     },
@@ -13740,36 +13731,6 @@
                 "b339899d.9350e8"
             ]
         ]
-    },
-    {
-        "id": "da50e670.471898",
-        "type": "debug",
-        "z": "7df159d5.618c58",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "x": 490,
-        "y": 200,
-        "wires": []
-    },
-    {
-        "id": "8255ff1e.6b28f",
-        "type": "debug",
-        "z": "7df159d5.618c58",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "x": 910,
-        "y": 200,
-        "wires": []
     },
     {
         "id": "c184b274.473dd",
@@ -14009,5 +13970,40 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "e890483e.ef37a8",
+        "type": "api-render-template",
+        "z": "7df159d5.618c58",
+        "name": "GetState",
+        "server": "5ee4d578.f7736c",
+        "template": "{\n  \"MattInBed\": \"{{ states(\"sensor.matt_in_bed\") }}\",\n  \"DanniInBed\": \"{{ states(\"sensor.danni_in_bed\") }}\",\n  \"NumberInBed\": \"{{ states(\"sensor.num_in_master_bed\") }}\"\n}",
+        "x": 260,
+        "y": 80,
+        "wires": [
+            [
+                "2e287d01.0a12d2"
+            ]
+        ]
+    },
+    {
+        "id": "ffbd43d0.7ad8c",
+        "type": "comment",
+        "z": "21d6efde.d0943",
+        "name": "Automation based on bed sensor",
+        "info": "",
+        "x": 193,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "cd442f93.a7434",
+        "type": "comment",
+        "z": "21d6efde.d0943",
+        "name": "Testing",
+        "info": "",
+        "x": 130,
+        "y": 720,
+        "wires": []
     }
 ]
