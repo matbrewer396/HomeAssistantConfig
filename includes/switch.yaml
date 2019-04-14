@@ -1,0 +1,46 @@
+ 
+  - platform: broadlink
+    host: 192.168.1.202
+    mac: '78:0f:77:18:69:4a'
+    timeout: 15
+    type: rm_mini
+    switches:
+      tv_volume:
+        friendly_name: "TV Volume"
+        command_on: 'JgCUAAABJpISEhQRExETNxISFBESExISFDUTNxI3ExISNxI3FDUUNhM2EjcUERMRFBESExMRFDUTEhMSEzYUNRM2EzcSNhQSEgABaQkADKEAASaSFBESEhMSEjcUERISExIUERI3EjcUNhMREzYTNxM2EjcUNRM3EhITEhQRExETEhI3FBESEhM3EzYSNxM2EzcSEhMADQUAAAAA=='
+        command_off: 'JgBIAAABJ5EVEBETEhMTNhITERMSExITETgSNxM2ERQVNBI4EjcROBITFDUSNxITExIRExITEzYROBMSERQROBM2ETgRORISEgANBQ=='
+      tv:
+        friendly_name: "TV"
+        command_on: 'JgBYAAABJpISExETEhMROBMSERMSExITETgROBI3ExISNxM3ETgSNxI3EjgSNxITETgRExI4EjcSExISEhMROBITETgSExETEgAFFwABJUoSAAw9AAEmSRIADQU=='
+        command_off: 'JgBYAAABJpISExETEhMROBMSERMSExITETgROBI3ExISNxM3ETgSNxI3EjgSNxITETgRExI4EjcSExISEhMROBITETgSExETEgAFFwABJUoSAAw9AAEmSRIADQU=='
+      xbox_play:
+        friendly_name: "XBOX Play"
+        command_on: 'JgBoAAABJJARExMREhMRExMREhMRExI2EhMRExISEjcTNRMSEjcRNxITERMRExITETcRNxM2EhMRNxI3ETcSNxISEhISExI3EQAFjAABI0gUAAwzAAEkRhUADDMAASNHFAAMMwABI0gTAA0F=='
+        command_off: 'JgBoAAABJJARExMREhMRExMREhMRExI2EhMRExISEjcTNRMSEjcRNxITERMRExITETcRNxM2EhMRNxI3ETcSNxISEhISExI3EQAFjAABI0gUAAwzAAEkRhUADDMAASNHFAAMMwABI0gTAA0F=='
+      xbox_select:
+        friendly_name: "XBOX Select"
+        command_on: 'JgBgAAABI5AUERMSExETERMRFBERExQ1ExETERQREzUTNRQREjYSNxQREzUTERQRExETNRQRExETNhQQEzYUNRM1ERMUNRM1EgAFjAABJEcTAAw0AAEhSRQADDQAASNHEQANBQAAAAAAAAAA=='
+        command_off: 'JgBgAAABI5AUERMSExETERMRFBERExQ1ExETERQREzUTNRQREjYSNxQREzUTERQRExETNRQRExETNhQQEzYUNRM1ERMUNRM1EgAFjAABJEcTAAw0AAEhSRQADDQAASNHEQANBQAAAAAAAAAA=='
+  
+  - platform: command_line
+    switches:
+      mattpc_off:
+        command_off: 'curl http://192.168.1.250:5001/271191/hibernate'
+        friendly_name: Hibernate Matt PC
+  - platform: wake_on_lan
+    name: mattpc_on
+    host: 192.168.1.250
+    mac_address: 1c:1b:0d:e2:38:61
+  
+  - platform: template
+    switches:
+      mattpc:
+        friendly_name: Matt PC
+        value_template: '{% if states.device_tracker.desktopl8nv1rh %}on{% else %}off{% endif %}'
+        turn_on:
+          service: switch.turn_on
+          entity_id: switch.mattpc_on
+        turn_off:
+          service: switch.turn_off
+          entity_id: switch.mattpc_off
+          
