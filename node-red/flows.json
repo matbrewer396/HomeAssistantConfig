@@ -140,6 +140,13 @@
         "info": ""
     },
     {
+        "id": "bc8cd397.4e834",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "a83e69e1.4b2ab8",
         "type": "subflow",
         "name": "Alert Matt",
@@ -669,14 +676,15 @@
         "type": "function",
         "z": "47bc2d66.1132e4",
         "name": "Build Data",
-        "func": "msg.payload = { \"data\" : { \"message\": msg.say, \"entity_id\": msg.pri_alexa } }\nreturn msg;",
+        "func": "msg.payload = {\n    \"data\":\n        { \"message\": msg.say, \"entity_id\": msg.pri_alexa }\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "x": 770,
         "y": 60,
         "wires": [
             [
-                "275d0587.9c0bba"
+                "a0d4b70a.0641f8",
+                "ebab3cd6.89d6d"
             ]
         ]
     },
@@ -690,7 +698,7 @@
         "service": "alexa_tts",
         "data": "{\"entity_id\":\"{{payload.entity_id}}\"}",
         "mergecontext": "",
-        "x": 1120,
+        "x": 1200,
         "y": 60,
         "wires": [
             []
@@ -2273,7 +2281,7 @@
         "links": [
             "5d68af75.25cde"
         ],
-        "x": 1615,
+        "x": 1755,
         "y": 420,
         "wires": [
             [
@@ -4735,7 +4743,7 @@
                 "t": "set",
                 "p": "say",
                 "pt": "msg",
-                "to": "I'll be turning everyoff in 3 minutes",
+                "to": "I'll be turning everything off in 3 minutes",
                 "tot": "str"
             },
             {
@@ -7885,7 +7893,7 @@
         "z": "c9b308f8.01ef68",
         "name": "",
         "pauseType": "delay",
-        "timeout": "30",
+        "timeout": "60",
         "timeoutUnits": "seconds",
         "rate": "1",
         "nbRateUnits": "1",
@@ -10351,8 +10359,8 @@
         "reset": "",
         "bytopic": "all",
         "name": "",
-        "x": 750,
-        "y": 740,
+        "x": 770,
+        "y": 940,
         "wires": [
             [
                 "52c7bf3f.bee33",
@@ -10371,8 +10379,8 @@
         "outputinitially": false,
         "haltifstate": "",
         "outputs": 1,
-        "x": 140,
-        "y": 760,
+        "x": 160,
+        "y": 960,
         "wires": [
             [
                 "bc8fc4c1.1f1378"
@@ -10401,8 +10409,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 350,
-        "y": 880,
+        "x": 370,
+        "y": 1080,
         "wires": [
             [
                 "9a49fe8e.6bfee"
@@ -10425,8 +10433,8 @@
         "mergecontext": "",
         "output_location": "payload",
         "output_location_type": "msg",
-        "x": 1370,
-        "y": 880,
+        "x": 1390,
+        "y": 1080,
         "wires": [
             []
         ]
@@ -10443,8 +10451,8 @@
         "mergecontext": "",
         "output_location": "payload",
         "output_location_type": "msg",
-        "x": 950,
-        "y": 780,
+        "x": 970,
+        "y": 980,
         "wires": [
             []
         ]
@@ -10463,8 +10471,8 @@
         "reset": "",
         "bytopic": "all",
         "name": "",
-        "x": 1030,
-        "y": 740,
+        "x": 1050,
+        "y": 940,
         "wires": [
             [
                 "8b85e6e3.f5e478"
@@ -10526,8 +10534,8 @@
             "90fde8f7.a26cb8",
             "d320a708.e46708"
         ],
-        "x": 135,
-        "y": 380,
+        "x": 155,
+        "y": 580,
         "wires": [
             [
                 "43f0cbfb.ff1114"
@@ -10556,13 +10564,14 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 430,
-        "y": 380,
+        "x": 450,
+        "y": 580,
         "wires": [
             [
                 "95a4dd4.cece52",
                 "1df00caa.c88d63",
-                "78facd5e.ed58b4"
+                "78facd5e.ed58b4",
+                "dfbfea55.092c18"
             ],
             [
                 "a43cb31c.bbb2a",
@@ -10585,8 +10594,8 @@
         "reset": "",
         "bytopic": "all",
         "name": "Assume Failure After 40 Minutes",
-        "x": 950,
-        "y": 320,
+        "x": 970,
+        "y": 520,
         "wires": [
             [
                 "63f156bc.aed608"
@@ -10612,8 +10621,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 660,
-        "y": 280,
+        "x": 680,
+        "y": 480,
         "wires": [
             [
                 "95a4dd4.cece52"
@@ -10634,8 +10643,8 @@
         "reset": "",
         "bytopic": "all",
         "name": "",
-        "x": 890,
-        "y": 380,
+        "x": 910,
+        "y": 580,
         "wires": [
             [
                 "35d5239.16e63dc"
@@ -10661,8 +10670,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 640,
-        "y": 440,
+        "x": 660,
+        "y": 640,
         "wires": [
             [
                 "bc7a046f.08cac8",
@@ -10680,8 +10689,8 @@
         "start": "",
         "inout": "out",
         "property": "payload",
-        "x": 270,
-        "y": 380,
+        "x": 290,
+        "y": 580,
         "wires": [
             [
                 "9edcd817.aed998"
@@ -10700,8 +10709,8 @@
         "mergecontext": "",
         "output_location": "",
         "output_location_type": "none",
-        "x": 1710,
-        "y": 380,
+        "x": 1730,
+        "y": 580,
         "wires": [
             [
                 "4a2e8ced.86f9d4"
@@ -10722,8 +10731,8 @@
         "reset": "",
         "bytopic": "all",
         "name": "",
-        "x": 1910,
-        "y": 380,
+        "x": 1930,
+        "y": 580,
         "wires": [
             [
                 "7cd2befd.6212"
@@ -10742,8 +10751,8 @@
         "mergecontext": "",
         "output_location": "",
         "output_location_type": "none",
-        "x": 2120,
-        "y": 380,
+        "x": 2140,
+        "y": 580,
         "wires": [
             []
         ]
@@ -10765,8 +10774,8 @@
         "override_payload": "msg",
         "entity_location": "data",
         "override_data": "msg",
-        "x": 1170,
-        "y": 380,
+        "x": 1210,
+        "y": 580,
         "wires": [
             [
                 "5c8e616a.83de2"
@@ -10793,8 +10802,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1430,
-        "y": 380,
+        "x": 1450,
+        "y": 580,
         "wires": [
             [],
             [
@@ -10814,8 +10823,8 @@
         "mergecontext": "",
         "output_location": "",
         "output_location_type": "none",
-        "x": 1150,
-        "y": 240,
+        "x": 1170,
+        "y": 440,
         "wires": [
             []
         ]
@@ -10831,8 +10840,8 @@
         "endTime": "22:00",
         "startOffset": 0,
         "endOffset": 0,
-        "x": 930,
-        "y": 220,
+        "x": 950,
+        "y": 420,
         "wires": [
             [
                 "221d531d.195e8c"
@@ -10858,8 +10867,8 @@
         "mergecontext": "",
         "output_location": "",
         "output_location_type": "none",
-        "x": 1350,
-        "y": 180,
+        "x": 1370,
+        "y": 380,
         "wires": [
             []
         ]
@@ -10883,8 +10892,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 520,
-        "y": 740,
+        "x": 540,
+        "y": 940,
         "wires": [
             [
                 "9a49fe8e.6bfee"
@@ -10997,7 +11006,9 @@
         "z": "a068bd5.28a8d4",
         "name": "Hallway Motion",
         "links": [
-            "c215726b.e66d5"
+            "c215726b.e66d5",
+            "a2f7cd26.7ec92",
+            "c3e890f4.9c742"
         ],
         "x": 355,
         "y": 440,
@@ -11347,8 +11358,8 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 630,
-        "y": 400,
+        "x": 650,
+        "y": 600,
         "wires": [
             [
                 "bc7a046f.08cac8"
@@ -11361,8 +11372,8 @@
         "z": "a0cdc0f9.a362b",
         "name": "TODO: is dark? - record when bathroom goes to dark: flase for first time",
         "info": "",
-        "x": 1070,
-        "y": 100,
+        "x": 1350,
+        "y": 340,
         "wires": []
     },
     {
@@ -11781,8 +11792,8 @@
         "endTime": "18:00",
         "startOffset": 0,
         "endOffset": 0,
-        "x": 1150,
-        "y": 180,
+        "x": 1170,
+        "y": 380,
         "wires": [
             [],
             [
@@ -12338,7 +12349,8 @@
         "type": "subflow:47bc2d66.1132e4",
         "z": "d73100a9.0d64d",
         "name": "",
-        "x": 2742,
+        "env": [],
+        "x": 2770,
         "y": 400,
         "wires": [
             []
@@ -12865,8 +12877,8 @@
         "customoutputs": [],
         "outputinitially": false,
         "state_type": "str",
-        "x": 120,
-        "y": 320,
+        "x": 140,
+        "y": 460,
         "wires": [
             [
                 "11cc7991.aa98f6"
@@ -12893,8 +12905,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 340,
-        "y": 320,
+        "x": 200,
+        "y": 520,
         "wires": [
             [
                 "9edcd817.aed998"
@@ -13123,8 +13135,8 @@
         "override_payload": "msg",
         "entity_location": "data",
         "override_data": "msg",
-        "x": 954,
-        "y": 520,
+        "x": 960,
+        "y": 580,
         "wires": [
             [
                 "3e8b67b.d67e898"
@@ -13153,8 +13165,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1110,
-        "y": 520,
+        "x": 1116,
+        "y": 580,
         "wires": [
             [],
             [
@@ -13332,7 +13344,8 @@
             [
                 "ad898ac9.92eed8",
                 "77cd270e.473e68",
-                "bf1745aa.99ae38"
+                "bf1745aa.99ae38",
+                "85de34f9.89a238"
             ]
         ]
     },
@@ -13511,8 +13524,8 @@
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "x": 160,
-        "y": 820,
+        "x": 140,
+        "y": 1220,
         "wires": [
             [
                 "b1b009eb.b78008"
@@ -13538,8 +13551,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 430,
-        "y": 820,
+        "x": 410,
+        "y": 1220,
         "wires": [
             [
                 "b339899d.9350e8"
@@ -13551,8 +13564,8 @@
         "type": "subflow:7df159d5.618c58",
         "z": "21d6efde.d0943",
         "name": "",
-        "x": 740,
-        "y": 820,
+        "x": 720,
+        "y": 1220,
         "wires": [
             []
         ]
@@ -13576,8 +13589,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 400,
-        "y": 860,
+        "x": 380,
+        "y": 1260,
         "wires": [
             [
                 "b339899d.9350e8"
@@ -13596,8 +13609,8 @@
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "x": 160,
-        "y": 860,
+        "x": 140,
+        "y": 1260,
         "wires": [
             [
                 "8fb12ce9.36e89"
@@ -13609,7 +13622,7 @@
         "type": "function",
         "z": "7df159d5.618c58",
         "name": "Build Command",
-        "func": "var rgb_color;\nvar mattColor = [72,255,118] // greeb\nvar danniColor = [75,164,255] // blue\nvar fullBed = [201,40,255] // dark pink\nvar emtpyBed = [255,182,109] // oragne\n\nif (msg.payload.NumberInBed == \"0\") {\n    rgb_color = emtpyBed; \n} else if (msg.payload.NumberInBed == \"2\") {\n   rgb_color = fullBed;\n} else if (msg.payload.DanniInBed == \"True\") {\n    rgb_color = danniColor;\n} else if (msg.payload.MattInBed == \"True\") {\n    rgb_color = mattColor;\n} else {\n    rgb_color = [255,43,0]; // Error this should happen\n}\n\n\n\nif (msg.LightLevel == \"DIMMED\") {\n    msg.payload = { \"domain\" : \"light\",\n    \"service\" : \"turn_on\",\n     \"data\" : \n        { \n            \"entity_id\" : \"light.hue_lightstrip_plus_1\",\n            \"brightness_pct\": \"50\",\n            \"transition\":\"5\",\n            \"rgb_color\": rgb_color\n        } \n    }\n} else if (msg.LightLevel == \"SLOW_LOW\") {\n    msg.payload = { \"domain\" : \"light\",\n    \"service\" : \"turn_on\",\n     \"data\" : \n        { \n            \"entity_id\" : \"light.hue_lightstrip_plus_1\",\n            \"brightness_pct\": \"10\",\n            \"transition\":\"30\",\n            \"rgb_color\": rgb_color\n        } \n    }\n}else if (msg.LightLevel == \"FAST_LOW\") {\n    msg.payload = { \"domain\" : \"light\",\n    \"service\" : \"turn_on\",\n     \"data\" : \n        { \n            \"entity_id\" : \"light.hue_lightstrip_plus_1\",\n            \"brightness_pct\": \"10\",\n            \"transition\":\"5\",\n            \"rgb_color\": rgb_color\n        } \n    }\n} else if (msg.LightLevel == \"HIGH\") {\n    msg.payload = { \"domain\" : \"light\",\n    \"service\" : \"turn_on\",\n     \"data\" : \n        { \n            \"entity_id\" : \"light.hue_lightstrip_plus_1\",\n            \"brightness_pct\": \"100\",\n            \"transition\":\"5\",\n            \"rgb_color\": rgb_color\n        } \n    }\n}\nreturn msg;",
+        "func": "var rgb_color;\nvar mattColor = [72,255,118] // greeb\nvar danniColor = [75,164,255] // blue\nvar fullBed = [201,40,255] // dark pink\nvar emtpyBed = [255,182,109] // oragne\n\nif (msg.payload.NumberInBed == \"0\") {\n    rgb_color = emtpyBed; \n} else if (msg.payload.NumberInBed == \"2\") {\n   rgb_color = fullBed;\n} else if (msg.payload.DanniInBed == \"True\") {\n    rgb_color = danniColor;\n} else if (msg.payload.MattInBed == \"True\") {\n    rgb_color = mattColor;\n} else {\n    rgb_color = [255,43,0]; // Error this should happen\n}\n\n\n\nif (msg.LightLevel == \"DIMMED\") {\n    msg.payload = { \"domain\" : \"light\",\n    \"service\" : \"turn_on\",\n     \"data\" : \n        { \n            \"entity_id\" : \"light.hue_lightstrip_plus_1\",\n            \"brightness_pct\": \"50\",\n            \"transition\":\"5\",\n            \"rgb_color\": rgb_color\n        } \n    }\n} else if (msg.LightLevel == \"SLOW_LOW\") {\n    msg.payload = { \"domain\" : \"light\",\n    \"service\" : \"turn_on\",\n     \"data\" : \n        { \n            \"entity_id\" : \"light.hue_lightstrip_plus_1\",\n            \"brightness_pct\": \"10\",\n            \"transition\":\"30\",\n            \"rgb_color\": rgb_color\n        } \n    }\n}else if (msg.LightLevel == \"FAST_LOW\") {\n    msg.payload = { \"domain\" : \"light\",\n    \"service\" : \"turn_on\",\n     \"data\" : \n        { \n            \"entity_id\" : \"light.hue_lightstrip_plus_1\",\n            \"brightness_pct\": \"10\",\n            \"transition\":\"5\",\n            \"rgb_color\": rgb_color\n        } \n    }\n} else if (msg.LightLevel == \"HIGH\") {\n    msg.payload = { \"domain\" : \"light\",\n    \"service\" : \"turn_on\",\n     \"data\" : \n        { \n            \"entity_id\" : \"light.hue_lightstrip_plus_1\",\n            \"brightness_pct\": \"100\",\n            \"transition\":\"2\",\n            \"rgb_color\": rgb_color\n        } \n    }\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "x": 480,
@@ -13646,8 +13659,8 @@
         "z": "21d6efde.d0943",
         "name": "Someone got into to bed and bed was empty",
         "info": "",
-        "x": 1044,
-        "y": 480,
+        "x": 1050,
+        "y": 540,
         "wires": []
     },
     {
@@ -13697,8 +13710,8 @@
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "x": 160,
-        "y": 780,
+        "x": 140,
+        "y": 1180,
         "wires": [
             [
                 "c91f466e.75eec8"
@@ -13724,8 +13737,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 420,
-        "y": 780,
+        "x": 400,
+        "y": 1180,
         "wires": [
             [
                 "b339899d.9350e8"
@@ -13867,8 +13880,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 410,
-        "y": 900,
+        "x": 390,
+        "y": 1300,
         "wires": [
             [
                 "b339899d.9350e8"
@@ -13887,8 +13900,8 @@
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "x": 160,
-        "y": 900,
+        "x": 140,
+        "y": 1300,
         "wires": [
             [
                 "9908c87d.751788"
@@ -13927,6 +13940,7 @@
         "type": "subflow:7df159d5.618c58",
         "z": "21d6efde.d0943",
         "name": "",
+        "env": [],
         "x": 1940,
         "y": 540,
         "wires": [
@@ -14002,8 +14016,8 @@
         "z": "21d6efde.d0943",
         "name": "Testing",
         "info": "",
-        "x": 130,
-        "y": 720,
+        "x": 110,
+        "y": 1120,
         "wires": []
     },
     {
@@ -14058,6 +14072,368 @@
             [
                 "b4bcf0ef.3f114",
                 "6986a0d4.bf4d6"
+            ]
+        ]
+    },
+    {
+        "id": "9b34c3e2.dbad",
+        "type": "inject",
+        "z": "d73100a9.0d64d",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 2360,
+        "y": 360,
+        "wires": [
+            [
+                "ff31cac4.b7b148"
+            ]
+        ]
+    },
+    {
+        "id": "a0d4b70a.0641f8",
+        "type": "delay",
+        "z": "47bc2d66.1132e4",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "200",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 970,
+        "y": 60,
+        "wires": [
+            [
+                "275d0587.9c0bba"
+            ]
+        ]
+    },
+    {
+        "id": "ebab3cd6.89d6d",
+        "type": "function",
+        "z": "47bc2d66.1132e4",
+        "name": "Build Data",
+        "func": "msg.payload = {\n    \"data\":\n        { \"message\": \" \", \"entity_id\": msg.pri_alexa }\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 970,
+        "y": 100,
+        "wires": [
+            [
+                "275d0587.9c0bba"
+            ]
+        ]
+    },
+    {
+        "id": "a2f7cd26.7ec92",
+        "type": "link in",
+        "z": "21d6efde.d0943",
+        "name": "Hallway Motion - Action",
+        "links": [
+            "e04902ac.5849e"
+        ],
+        "x": 75,
+        "y": 780,
+        "wires": [
+            [
+                "4a31153c.c3f34c"
+            ]
+        ]
+    },
+    {
+        "id": "85de34f9.89a238",
+        "type": "ha-wait-until",
+        "z": "21d6efde.d0943",
+        "name": "",
+        "server": "5ee4d578.f7736c",
+        "outputs": 2,
+        "entityId": "sensor.num_in_master_bed",
+        "property": "state",
+        "comparator": "gte",
+        "value": "1",
+        "valueType": "num",
+        "timeout": "3",
+        "timeoutUnits": "minutes",
+        "entityLocation": "",
+        "entityLocationType": "none",
+        "checkCurrentState": true,
+        "x": 900,
+        "y": 820,
+        "wires": [
+            [],
+            [
+                "b37727b7.7328c8"
+            ]
+        ]
+    },
+    {
+        "id": "8a4277a0.b55188",
+        "type": "subflow:7df159d5.618c58",
+        "z": "21d6efde.d0943",
+        "name": "",
+        "env": [],
+        "x": 1160,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f1950263.27857",
+        "type": "change",
+        "z": "21d6efde.d0943",
+        "name": "Set LightLevel = HIGH",
+        "rules": [
+            {
+                "t": "set",
+                "p": "LightLevel",
+                "pt": "msg",
+                "to": "HIGH",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 940,
+        "y": 780,
+        "wires": [
+            [
+                "8a4277a0.b55188"
+            ]
+        ]
+    },
+    {
+        "id": "54dcaa5e.c2e7e4",
+        "type": "switch",
+        "z": "21d6efde.d0943",
+        "name": "Is Drak?",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lt",
+                "v": "10",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 614,
+        "y": 780,
+        "wires": [
+            [
+                "f1950263.27857",
+                "85de34f9.89a238"
+            ]
+        ]
+    },
+    {
+        "id": "65fba381.feb66c",
+        "type": "api-current-state",
+        "z": "21d6efde.d0943",
+        "name": "Get Light Level",
+        "server": "5ee4d578.f7736c",
+        "outputs": 1,
+        "halt_if": "",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "override_topic": true,
+        "entity_id": "sensor.bedroom_light_level",
+        "state_type": "str",
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 414,
+        "y": 780,
+        "wires": [
+            [
+                "54dcaa5e.c2e7e4"
+            ]
+        ],
+        "icon": "node-red/mongodb.png"
+    },
+    {
+        "id": "7ed0494c.0f48f8",
+        "type": "comment",
+        "z": "21d6efde.d0943",
+        "name": "Hallway motion",
+        "info": "",
+        "x": 140,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "b37727b7.7328c8",
+        "type": "api-call-service",
+        "z": "21d6efde.d0943",
+        "name": "Turn Off Light Strip",
+        "server": "eef5a84.da24f58",
+        "service_domain": "light",
+        "service": "turn_off",
+        "data": "{\"entity_id\":\"light.hue_lightstrip_plus_1\"}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 1170,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4a31153c.c3f34c",
+        "type": "switch",
+        "z": "21d6efde.d0943",
+        "name": "Triggered?",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 210,
+        "y": 780,
+        "wires": [
+            [
+                "65fba381.feb66c",
+                "cac0fa9c.057558"
+            ]
+        ]
+    },
+    {
+        "id": "cac0fa9c.057558",
+        "type": "debug",
+        "z": "21d6efde.d0943",
+        "name": "hallway ",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 390,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "c3e890f4.9c742",
+        "type": "link in",
+        "z": "a0cdc0f9.a362b",
+        "name": "Hallway Motion - Action",
+        "links": [
+            "e04902ac.5849e"
+        ],
+        "x": 55,
+        "y": 360,
+        "wires": [
+            [
+                "6d9dc6b3.422258"
+            ]
+        ]
+    },
+    {
+        "id": "6d9dc6b3.422258",
+        "type": "switch",
+        "z": "a0cdc0f9.a362b",
+        "name": "Triggered?",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 190,
+        "y": 360,
+        "wires": [
+            [
+                "c6403382.59d75",
+                "78facd5e.ed58b4"
+            ]
+        ]
+    },
+    {
+        "id": "be46a4b4.32eef8",
+        "type": "comment",
+        "z": "a0cdc0f9.a362b",
+        "name": "Hallway motion",
+        "info": "",
+        "x": 120,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "c6403382.59d75",
+        "type": "trigger",
+        "z": "a0cdc0f9.a362b",
+        "op1": "",
+        "op2": "",
+        "op1type": "nul",
+        "op2type": "pay",
+        "duration": "2",
+        "extend": false,
+        "units": "min",
+        "reset": "",
+        "bytopic": "all",
+        "name": "",
+        "x": 650,
+        "y": 680,
+        "wires": [
+            [
+                "63f156bc.aed608"
+            ]
+        ]
+    },
+    {
+        "id": "dfbfea55.092c18",
+        "type": "change",
+        "z": "a0cdc0f9.a362b",
+        "name": "Someone Entered Bathroom",
+        "rules": [
+            {
+                "t": "set",
+                "p": "reset",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 420,
+        "y": 680,
+        "wires": [
+            [
+                "c6403382.59d75"
             ]
         ]
     }
