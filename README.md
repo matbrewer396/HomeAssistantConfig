@@ -64,6 +64,9 @@ List of all my device, that make house smart:
 | Echo | 2 |  | 
 | Fire TV 4k | 1 |  | 
 
+
+
+
 ## Automation
 List of all my automation, that make house smart. 
 
@@ -80,6 +83,11 @@ This is really just a big annoying show to scare off anyone
 * All lights flash red
 * All alexs playing message
 * Send everyone notication, with of a disable option
+
+### Good Night / Good Bye
+Pretty much the same
+* Turn off everything
+* Send hibrate command to pc using https://github.com/karpach/remote-shutdown-pc/releases
 
 ### Living Room
 * On font door open and is dark, main light turn on
