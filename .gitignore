@@ -15,6 +15,7 @@ home-assistant_v2.db
 .cloud/
 deps/
 .uuid
+emulated_hue_ids.json
 
 #Custom Stuff / Addons
 **.pickle
