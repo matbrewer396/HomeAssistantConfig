@@ -287,6 +287,9 @@
                     },
                     {
                         "id": "9c8404e9.34ba08"
+                    },
+                    {
+                        "id": "367929a4.b81d46"
                     }
                 ]
             }
@@ -1457,8 +1460,8 @@
         "mergecontext": "",
         "output_location": "payload",
         "output_location_type": "msg",
-        "x": 1060,
-        "y": 200,
+        "x": 1040,
+        "y": 160,
         "wires": [
             []
         ]
@@ -1478,8 +1481,8 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 750,
-        "y": 200,
+        "x": 790,
+        "y": 160,
         "wires": [
             [
                 "7bfe7445.6fe4ec"
@@ -1619,7 +1622,8 @@
             [
                 "626c9c60.30cf24",
                 "a961f727.8da2a8",
-                "6125c1be.4d871"
+                "6125c1be.4d871",
+                "8f9c705.d69fb9"
             ]
         ]
     },
@@ -1678,7 +1682,6 @@
         "y": 380,
         "wires": [
             [
-                "12b04a79.bc5196",
                 "9567c19f.3fa0b"
             ]
         ]
@@ -2130,7 +2133,7 @@
         "start": "",
         "inout": "out",
         "property": "payload",
-        "x": 430,
+        "x": 490,
         "y": 400,
         "wires": [
             [
@@ -2155,8 +2158,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 580,
-        "y": 400,
+        "x": 680,
+        "y": 280,
         "wires": [
             [
                 "e259c26a.e4ce5"
@@ -2285,7 +2288,7 @@
         "y": 420,
         "wires": [
             [
-                "a9818634.355818"
+                "eb0ba936.3f4e18"
             ]
         ]
     },
@@ -2403,8 +2406,8 @@
         "override_payload": "msg",
         "entity_location": "data",
         "override_data": "msg",
-        "x": 780,
-        "y": 400,
+        "x": 680,
+        "y": 340,
         "wires": [
             [
                 "79ee0fe4.ad1bd"
@@ -2431,12 +2434,12 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 950,
-        "y": 400,
+        "x": 850,
+        "y": 340,
         "wires": [
             [],
             [
-                "8cbf3f8d.84749"
+                "6ea9b8b4.f2d438"
             ]
         ]
     },
@@ -2659,9 +2662,7 @@
         "type": "link in",
         "z": "d73100a9.0d64d",
         "name": "Good Night Triggered",
-        "links": [
-            "12b04a79.bc5196"
-        ],
+        "links": [],
         "x": 55,
         "y": 472,
         "wires": [
@@ -2706,18 +2707,6 @@
         "info": "",
         "x": 130,
         "y": 412,
-        "wires": []
-    },
-    {
-        "id": "12b04a79.bc5196",
-        "type": "link out",
-        "z": "1e454935.091dd7",
-        "name": "",
-        "links": [
-            "3b5bbfbe.77c1d"
-        ],
-        "x": 415,
-        "y": 420,
         "wires": []
     },
     {
@@ -2906,8 +2895,8 @@
         "mergecontext": "",
         "output_location": "payload",
         "output_location_type": "msg",
-        "x": 1100,
-        "y": 260,
+        "x": 840,
+        "y": 300,
         "wires": [
             []
         ]
@@ -4647,7 +4636,8 @@
         "y": 726,
         "wires": [
             [
-                "6a34c1de.08787"
+                "6a34c1de.08787",
+                "1c6435f7.2b5b4a"
             ]
         ]
     },
@@ -5941,7 +5931,7 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 720,
+        "x": 700,
         "y": 100,
         "wires": [
             [
@@ -7934,8 +7924,10 @@
         "server": "5ee4d578.f7736c",
         "service_domain": "input_boolean",
         "service": "turn_on",
-        "data": "{   \"entity_id\": \"input_boolean.goodnight_beentriggered\" }",
+        "data": "{\"entity_id\":\"input_boolean.goodnight_beentriggered\"}",
         "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
         "x": 900,
         "y": 140,
         "wires": [
@@ -8587,8 +8579,8 @@
         "z": "d73100a9.0d64d",
         "name": "Wait for us to both be in bed",
         "info": "",
-        "x": 580,
-        "y": 300,
+        "x": 1120,
+        "y": 160,
         "wires": []
     },
     {
@@ -10184,7 +10176,8 @@
         "wires": [
             [],
             [
-                "912e1c7f.de2ae"
+                "912e1c7f.de2ae",
+                "d6eda8a.8082c58"
             ]
         ]
     },
@@ -10986,12 +10979,12 @@
         "name": "",
         "lat": "",
         "lon": "",
-        "startTime": "05:00",
+        "startTime": "03:00",
         "endTime": "08:00",
         "startOffset": 0,
         "endOffset": 0,
-        "x": 790,
-        "y": 1920,
+        "x": 770,
+        "y": 1880,
         "wires": [
             [
                 "f05be72e.898218",
@@ -12340,7 +12333,7 @@
                 "84c10841.1b4a18"
             ],
             [
-                "a9818634.355818"
+                "eb0ba936.3f4e18"
             ]
         ]
     },
@@ -12375,25 +12368,6 @@
         "wires": [
             [
                 "33d67a23.de0b26"
-            ]
-        ]
-    },
-    {
-        "id": "a9818634.355818",
-        "type": "function",
-        "z": "d73100a9.0d64d",
-        "name": "Trigger Goodnight 5 minutes",
-        "func": "\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 1960,
-        "y": 400,
-        "wires": [
-            [
-                "ae6893c1.6ec56",
-                "6e45a7ed.2c8728",
-                "57928c17.67f954",
-                "d86727e.3a6cfd8"
             ]
         ]
     },
@@ -12455,7 +12429,7 @@
         "y": 340,
         "wires": [
             [
-                "a9818634.355818"
+                "eb0ba936.3f4e18"
             ],
             [
                 "8cbf3f8d.84749"
@@ -12470,7 +12444,7 @@
         "op2": "on",
         "op1type": "nul",
         "op2type": "str",
-        "duration": "3",
+        "duration": "2",
         "extend": false,
         "units": "min",
         "reset": "",
@@ -12720,26 +12694,6 @@
         "wires": [
             [
                 "22eeb88e.7e8268"
-            ]
-        ]
-    },
-    {
-        "id": "cf9c7018.533b1",
-        "type": "inject",
-        "z": "d73100a9.0d64d",
-        "name": "",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "x": 200,
-        "y": 300,
-        "wires": [
-            [
-                "e259c26a.e4ce5"
             ]
         ]
     },
@@ -13694,7 +13648,8 @@
             [
                 "73c4653f.fa065c",
                 "406dc049.8d9a9",
-                "b72e15a1.166368"
+                "b72e15a1.166368",
+                "60ccf4c9.3b230c"
             ]
         ]
     },
@@ -14076,26 +14031,6 @@
         ]
     },
     {
-        "id": "9b34c3e2.dbad",
-        "type": "inject",
-        "z": "d73100a9.0d64d",
-        "name": "",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "x": 2360,
-        "y": 360,
-        "wires": [
-            [
-                "ff31cac4.b7b148"
-            ]
-        ]
-    },
-    {
         "id": "a0d4b70a.0641f8",
         "type": "delay",
         "z": "47bc2d66.1132e4",
@@ -14434,6 +14369,192 @@
         "wires": [
             [
                 "c6403382.59d75"
+            ]
+        ]
+    },
+    {
+        "id": "d6eda8a.8082c58",
+        "type": "change",
+        "z": "dceb45d8.425368",
+        "name": "SET LunchTime Var",
+        "rules": [
+            {
+                "t": "set",
+                "p": "LunchTime",
+                "pt": "global",
+                "to": "Triggered",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "60ccf4c9.3b230c",
+        "type": "link out",
+        "z": "21d6efde.d0943",
+        "name": "Both In Bed",
+        "links": [
+            "5a8e5309.e00ddc"
+        ],
+        "x": 895,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "5a8e5309.e00ddc",
+        "type": "link in",
+        "z": "a0cdc0f9.a362b",
+        "name": "Bathroom disable timer",
+        "links": [
+            "60ccf4c9.3b230c"
+        ],
+        "x": 420,
+        "y": 640,
+        "wires": [
+            [
+                "1df00caa.c88d63"
+            ]
+        ]
+    },
+    {
+        "id": "367929a4.b81d46",
+        "type": "change",
+        "z": "c9b308f8.01ef68",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "hasGoodNightBeenTriggered",
+                "pt": "global",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 980,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8f9c705.d69fb9",
+        "type": "change",
+        "z": "99d64a3d.f4e418",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "hasGoodNightBeenTriggered",
+                "pt": "global",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 880,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6ea9b8b4.f2d438",
+        "type": "switch",
+        "z": "d73100a9.0d64d",
+        "name": "Has triggered",
+        "property": "hasGoodNightBeenTriggered",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 700,
+        "y": 400,
+        "wires": [
+            [
+                "8cbf3f8d.84749"
+            ]
+        ]
+    },
+    {
+        "id": "eb0ba936.3f4e18",
+        "type": "switch",
+        "z": "d73100a9.0d64d",
+        "name": "Has triggered",
+        "property": "hasGoodNightBeenTriggered",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2000,
+        "y": 380,
+        "wires": [
+            [
+                "d86727e.3a6cfd8",
+                "57928c17.67f954",
+                "6e45a7ed.2c8728",
+                "ae6893c1.6ec56"
+            ]
+        ]
+    },
+    {
+        "id": "c6eba40a.366198",
+        "type": "api-call-service",
+        "z": "a0a4859f.5a2a48",
+        "name": "Lett Matt Know",
+        "server": "eef5a84.da24f58",
+        "service_domain": "notify",
+        "service": "mattiphone",
+        "data": "{}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 1000,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1c6435f7.2b5b4a",
+        "type": "function",
+        "z": "a0a4859f.5a2a48",
+        "name": "Data",
+        "func": "msg.payload = \n{\n  \"data\": \n  {\n    \"message\": \"Alarm still going off disable light show\",\n  }\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 750,
+        "y": 760,
+        "wires": [
+            [
+                "c6eba40a.366198"
             ]
         ]
     }
