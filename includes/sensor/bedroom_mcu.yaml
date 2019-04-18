@@ -45,14 +45,14 @@
       danni_in_bed:
         friendly_name: "Danni in Bed"
         value_template: >
-          {{((states("sensor.bed_weight_senor")|float >= 2800000 and states("sensor.bed_weight_senor")|float <= 3700000)) or (states("sensor.bed_weight_senor")|float >= 4400000) }}
+          {{((states("sensor.bed_weight_senor")|float >= 3100000 and states("sensor.bed_weight_senor")|float <= 3700000)) or (states("sensor.bed_weight_senor")|float >= 4400000) }}
       num_in_master_bed:
         friendly_name: "Number of People in Bed"
         unit_of_measurement: 'people'
         value_template: >-
           {% if  states("sensor.bed_weight_senor")|float >= 4400000 %}
               2
-          {% elif states("sensor.bed_weight_senor")|float >= 2800000 %}
+          {% elif states("sensor.bed_weight_senor")|float >= 3100000 %}
               1
           {% else %}
               0
