@@ -70,6 +70,11 @@
                             "type": "glance"
                         },
                         {
+                            "entity": "alarm_control_panel.home_alarm",
+                            "name": "House Alarm",
+                            "type": "alarm-panel"
+                        },
+                        {
                             "entity": "sensor.home_avg_temperature",
                             "name": "Home Temperature (Avg)",
                             "type": "sensor"
@@ -187,19 +192,6 @@
                                 }
                             ],
                             "type": "custom:vertical-stack-in-card"
-                        },
-                        {
-                            "entity": "alarm_control_panel.home_alarm",
-                            "name": "House Alarm",
-                            "type": "alarm-panel"
-                        },
-                        {
-                            "title": "Movies / Tv Shows to watch",
-                            "type": "shopping-list"
-                        },
-                        {
-                            "title": "Shopping",
-                            "type": "shopping-list"
                         }
                     ],
                     "icon": "mdi:home",
@@ -694,6 +686,66 @@
                     ],
                     "icon": "mdi:settings",
                     "title": "Settings"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.bath_room_temperature"
+                                },
+                                {
+                                    "entity": "sensor.bathroom_temperature"
+                                },
+                                {
+                                    "entity": "sensor.office_temperature"
+                                },
+                                {
+                                    "entity": "sensor.bedroom_temperature"
+                                },
+                                {
+                                    "entity": "sensor.hallway_temperature"
+                                },
+                                {
+                                    "entity": "sensor.living_room_senor_temperature"
+                                },
+                                {
+                                    "entity": "sensor.office_aloe_vera_temperature"
+                                },
+                                {
+                                    "entity": "sensor.home_avg_temperature"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Temperature",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.bath_room_humidity"
+                                },
+                                {
+                                    "entity": "sensor.bedroom_humidity"
+                                },
+                                {
+                                    "entity": "sensor.living_room_senor_humidity"
+                                },
+                                {
+                                    "entity": "sensor.office_humidity"
+                                }
+                            ],
+                            "title": "Humidity",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "weather.dark_sky",
+                            "name": "Newbury",
+                            "type": "weather-forecast"
+                        }
+                    ],
+                    "title": "Temperature"
                 },
                 {
                     "badges": [
