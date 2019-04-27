@@ -12032,18 +12032,8 @@
         "server": "5ee4d578.f7736c",
         "entityid": "light.hue_lightstrip_plus_1_2",
         "entityidfiltertype": "exact",
-        "debugenabled": true,
+        "debugenabled": false,
         "constraints": [
-            {
-                "id": "93twnlh2kwf",
-                "targetType": "this_entity",
-                "targetValue": "",
-                "propertyType": "previous_state",
-                "propertyValue": "old_state.state",
-                "comparatorType": "is",
-                "comparatorValueDatatype": "str",
-                "comparatorValue": "unavailable"
-            },
             {
                 "id": "yrj9xgqsli",
                 "targetType": "this_entity",
@@ -12051,6 +12041,16 @@
                 "propertyType": "current_state",
                 "propertyValue": "new_state.state",
                 "comparatorType": "is",
+                "comparatorValueDatatype": "str",
+                "comparatorValue": "on"
+            },
+            {
+                "id": "awav1i06gke",
+                "targetType": "this_entity",
+                "targetValue": "",
+                "propertyType": "previous_state",
+                "propertyValue": "old_state.state",
+                "comparatorType": "is_not",
                 "comparatorValueDatatype": "str",
                 "comparatorValue": "on"
             }
@@ -15504,6 +15504,27 @@
         "y": 320,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "430cb417.cb4e7c",
+        "type": "inject",
+        "z": "acf12371.2c1ae",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 480,
+        "y": 300,
+        "wires": [
+            [
+                "305f853b.a9109a",
+                "69f941cc.67b3d"
+            ]
         ]
     }
 ]
