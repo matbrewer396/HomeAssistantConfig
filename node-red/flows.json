@@ -1257,10 +1257,11 @@
         "y": 588,
         "wires": [
             [
-                "634ad6f8.7dd188"
+                "634ad6f8.7dd188",
+                "883e0b57.4516a8"
             ],
             [
-                "f4d0131e.967c4"
+                "6ee79555.3f313c"
             ]
         ]
     },
@@ -1341,8 +1342,8 @@
             "1614fe61.738122",
             "2eee0fe3.6615e"
         ],
-        "x": 2956,
-        "y": 559,
+        "x": 2995,
+        "y": 500,
         "wires": [],
         "inputLabels": [
             "Home"
@@ -1485,8 +1486,8 @@
         "links": [
             "cf6185e1.eca748"
         ],
-        "x": 2956,
-        "y": 619,
+        "x": 3475,
+        "y": 660,
         "wires": [],
         "inputLabels": [
             "NoOneHome"
@@ -14832,7 +14833,7 @@
         "type": "function",
         "z": "cdbc6ec6.2e0ec",
         "name": "Any on home?",
-        "func": "\nif (msg.payload[0] > 10 || msg.payload[0] > 10) {\n   return [msg, null];\n} else if (msg.payload[0] == 0 || msg.payload[0] == 0)  {\n    return [null, msg];\n} else {\n    return [null, null];\n}",
+        "func": "\nif (msg.payload[0] > 10 || msg.payload[1] > 10) {\n   return [msg, null];\n} else if (msg.payload[0] == 0 && msg.payload[1] == 0)  {\n    return [null, msg];\n} else {\n    return [null, null];\n}",
         "outputs": 2,
         "noerr": 0,
         "x": 680,
@@ -15526,5 +15527,80 @@
                 "69f941cc.67b3d"
             ]
         ]
+    },
+    {
+        "id": "6ee79555.3f313c",
+        "type": "subflow:cdbc6ec6.2e0ec",
+        "z": "a3158433.9d1f78",
+        "name": "",
+        "x": 3050,
+        "y": 620,
+        "wires": [
+            [
+                "45eeaa29.0cf7c4"
+            ],
+            [
+                "f4d0131e.967c4"
+            ]
+        ]
+    },
+    {
+        "id": "45eeaa29.0cf7c4",
+        "type": "trigger",
+        "z": "a3158433.9d1f78",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "10",
+        "extend": false,
+        "units": "min",
+        "reset": "",
+        "bytopic": "all",
+        "name": "",
+        "x": 3330,
+        "y": 600,
+        "wires": [
+            [
+                "f4d0131e.967c4"
+            ]
+        ]
+    },
+    {
+        "id": "883e0b57.4516a8",
+        "type": "change",
+        "z": "a3158433.9d1f78",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "reset",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 3040,
+        "y": 580,
+        "wires": [
+            [
+                "45eeaa29.0cf7c4"
+            ]
+        ]
+    },
+    {
+        "id": "9622b30d.8b1b6",
+        "type": "comment",
+        "z": "a3158433.9d1f78",
+        "name": "Allow 10 minute delay",
+        "info": "",
+        "x": 3060,
+        "y": 540,
+        "wires": []
     }
 ]
