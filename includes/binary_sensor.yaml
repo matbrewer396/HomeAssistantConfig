@@ -42,3 +42,43 @@
     ports:
       17: Living Room PIR
   - platform: huesensor
+
+
+#availability
+##############################################################
+  - platform: mqtt
+    name: "Office MCU Status"
+    state_topic: "availability/OfficeMCU"
+    payload_on: "online"
+    payload_off: "offline"
+  - platform: mqtt
+    name: "BedRoom MCU Status"
+    state_topic: "availability/bedroomMCU"
+    payload_on: "online"
+    payload_off: "offline"
+  - platform: mqtt
+    name: "DoorBell MCU Status"
+    state_topic: "availability/doorbellMCU"
+    payload_on: "online"
+    payload_off: "offline"
+  - platform: mqtt
+    name: "Bluetooth Traker MCU Status"
+    state_topic: "availability/bluetoothtracker"
+    payload_on: "online"
+    payload_off: "offline"
+  - platform: mqtt
+    name: "Bath MCU Status"
+    state_topic: "availability/bathroomMCU"
+    payload_on: "online"
+    payload_off: "offline"
+  - platform: mqtt
+    name: "RM Mini Status"
+    state_topic: "availability/rmMini"
+    payload_on: "online"
+    payload_off: "offline"
+  - platform: mqtt
+    name: "Living Room Cam Status"
+    state_topic: "availability/livingroomcam"
+    payload_on: "online"
+    payload_off: "offline"
+
