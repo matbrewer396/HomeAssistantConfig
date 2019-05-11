@@ -557,6 +557,53 @@
         ]
     },
     {
+        "id": "85970b46.61e358",
+        "type": "subflow",
+        "name": "Allow Notication",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 50,
+                "y": 30,
+                "wires": [
+                    {
+                        "id": "b4c7c6f4.4d91b8"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1020,
+                "y": 20,
+                "wires": [
+                    {
+                        "id": "9488063b.727978",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 1020,
+                "y": 60,
+                "wires": [
+                    {
+                        "id": "9488063b.727978",
+                        "port": 1
+                    }
+                ]
+            }
+        ],
+        "env": [
+            {
+                "name": "NoteType",
+                "type": "str",
+                "value": "NOTHING"
+            }
+        ]
+    },
+    {
         "id": "5ee4d578.f7736c",
         "type": "server",
         "z": "",
@@ -2968,8 +3015,7 @@
         "y": 400,
         "wires": [
             [
-                "64a723bb.a421cc",
-                "724c4f65.5265a"
+                "64a723bb.a421cc"
             ]
         ]
     },
@@ -3029,9 +3075,7 @@
         "x": 440,
         "y": 578,
         "wires": [
-            [
-                "9e478c97.728cd"
-            ]
+            []
         ]
     },
     {
@@ -3164,6 +3208,7 @@
         "console": false,
         "tostatus": false,
         "complete": "true",
+        "targetType": "full",
         "x": 1620,
         "y": 900,
         "wires": []
@@ -5427,7 +5472,8 @@
         "wires": [
             [
                 "64a723bb.a421cc",
-                "f6396294.e81f6"
+                "f6396294.e81f6",
+                "f4e9b89.fd1c548"
             ]
         ]
     },
@@ -5509,7 +5555,7 @@
         "override_payload": "msg",
         "entity_location": "data",
         "override_data": "msg",
-        "x": 1160,
+        "x": 1180,
         "y": 640,
         "wires": [
             [
@@ -5532,105 +5578,14 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1505,
-        "y": 638,
+        "x": 1480,
+        "y": 640,
         "wires": [
             [
-                "3749a9c5.6b8cd6",
                 "f214d51b.258148",
                 "259dae36.504b82",
                 "f052224f.c6133"
             ]
-        ]
-    },
-    {
-        "id": "3749a9c5.6b8cd6",
-        "type": "trigger",
-        "z": "a068bd5.28a8d4",
-        "op1": "",
-        "op2": "0",
-        "op1type": "pay",
-        "op2type": "str",
-        "duration": "8",
-        "extend": false,
-        "units": "min",
-        "reset": "",
-        "bytopic": "all",
-        "name": "",
-        "x": 1695,
-        "y": 598,
-        "wires": [
-            [
-                "cd33901b.d8ea"
-            ]
-        ]
-    },
-    {
-        "id": "724c4f65.5265a",
-        "type": "switch",
-        "z": "a068bd5.28a8d4",
-        "name": "Triggered?",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "on",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 1115,
-        "y": 598,
-        "wires": [
-            [
-                "b2acb1ef.a03ef"
-            ]
-        ]
-    },
-    {
-        "id": "b2acb1ef.a03ef",
-        "type": "change",
-        "z": "a068bd5.28a8d4",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "reset",
-                "pt": "msg",
-                "to": "unauthorised access detected. notifying police, uploading real-time camera footage to remote server",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1400,
-        "y": 598,
-        "wires": [
-            [
-                "3749a9c5.6b8cd6"
-            ]
-        ]
-    },
-    {
-        "id": "cd33901b.d8ea",
-        "type": "api-call-service",
-        "z": "a068bd5.28a8d4",
-        "name": "",
-        "server": "5ee4d578.f7736c",
-        "service_domain": "light",
-        "service": "turn_off",
-        "data": "{\"entity_id\":\"light.hallway_light\"}",
-        "mergecontext": "",
-        "x": 1915,
-        "y": 598,
-        "wires": [
-            []
         ]
     },
     {
@@ -5643,6 +5598,8 @@
         "service": "turn_on",
         "data": "{\"entity_id\":\"light.hallway_light\"}",
         "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
         "x": 1715,
         "y": 638,
         "wires": [
@@ -5659,8 +5616,10 @@
         "service": "turn_on",
         "data": "{\"entity_id\":\"light.living_room_lights\",\"rgb_color\":[255,213,170],\"brightness_pct\":\"70\",\"transition\":\"10\"}",
         "mergecontext": "",
-        "x": 1715,
-        "y": 678,
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 1750,
+        "y": 500,
         "wires": [
             []
         ]
@@ -5674,13 +5633,13 @@
         "op1type": "pay",
         "op2type": "str",
         "duration": "8",
-        "extend": false,
+        "extend": true,
         "units": "min",
         "reset": "",
         "bytopic": "all",
         "name": "",
         "x": 1730,
-        "y": 758,
+        "y": 760,
         "wires": [
             [
                 "1e5a6c60.ce90f4"
@@ -5722,7 +5681,7 @@
                 "t": "set",
                 "p": "reset",
                 "pt": "msg",
-                "to": "unauthorised access detected. notifying police, uploading real-time camera footage to remote server",
+                "to": "",
                 "tot": "str"
             }
         ],
@@ -5732,7 +5691,7 @@
         "to": "",
         "reg": false,
         "x": 1440,
-        "y": 758,
+        "y": 760,
         "wires": [
             [
                 "f052224f.c6133"
@@ -5749,6 +5708,8 @@
         "service": "turn_off",
         "data": "{\"entity_id\":\"light.living_room_lights\"}",
         "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
         "x": 1940,
         "y": 758,
         "wires": [
@@ -5756,23 +5717,13 @@
         ]
     },
     {
-        "id": "7ec1d59f.62175c",
-        "type": "comment",
-        "z": "a068bd5.28a8d4",
-        "name": "Turn off hallway if no motion has been detected after",
-        "info": "",
-        "x": 1235,
-        "y": 558,
-        "wires": []
-    },
-    {
         "id": "a7e0ed6.c09071",
         "type": "comment",
         "z": "a068bd5.28a8d4",
         "name": "Todo - disable if camera is offline",
         "info": "",
-        "x": 1790,
-        "y": 798,
+        "x": 1670,
+        "y": 860,
         "wires": []
     },
     {
@@ -6600,7 +6551,7 @@
         "y": 240,
         "wires": [
             [
-                "ca7402bc.ba7c8"
+                "275e27be.7bb5e8"
             ]
         ]
     },
@@ -6622,7 +6573,7 @@
         "type": "subflow:a0cc6149.1f76e",
         "z": "48ba348c.61270c",
         "name": "",
-        "x": 550,
+        "x": 750,
         "y": 240,
         "wires": []
     },
@@ -7126,8 +7077,8 @@
         "qos": "0",
         "retain": "false",
         "broker": "1b6bc4ba.56ff4b",
-        "x": 1140,
-        "y": 678,
+        "x": 1160,
+        "y": 680,
         "wires": []
     },
     {
@@ -7926,8 +7877,8 @@
         "wires": [
             [
                 "c7b3c2cc.794f6",
-                "be55b0fe.1cdef",
-                "ddf2b558.0a23f8"
+                "ddf2b558.0a23f8",
+                "18bb5523.688fcb"
             ]
         ]
     },
@@ -7990,7 +7941,7 @@
         "mergecontext": "",
         "output_location": "payload",
         "output_location_type": "msg",
-        "x": 740,
+        "x": 980,
         "y": 620,
         "wires": [
             []
@@ -8042,8 +7993,8 @@
         "wires": [
             [
                 "a1464cf1.f62f5",
-                "cad6c4a0.0570e8",
-                "c8b5465c.584e48"
+                "c8b5465c.584e48",
+                "a8227300.13432"
             ]
         ]
     },
@@ -8106,7 +8057,7 @@
         "mergecontext": "",
         "output_location": "payload",
         "output_location_type": "msg",
-        "x": 740,
+        "x": 960,
         "y": 780,
         "wires": [
             []
@@ -8158,8 +8109,8 @@
         "wires": [
             [
                 "7164f4a4.e5a42c",
-                "ac6c25a0.3f1b98",
-                "b0bc999f.9ff708"
+                "b0bc999f.9ff708",
+                "21d9c69d.9f8e7a"
             ]
         ]
     },
@@ -8222,7 +8173,7 @@
         "mergecontext": "",
         "output_location": "payload",
         "output_location_type": "msg",
-        "x": 740,
+        "x": 960,
         "y": 920,
         "wires": [
             []
@@ -9048,8 +8999,8 @@
         "wires": [
             [
                 "96e20405.870f58",
-                "cbb5e819.633268",
-                "80752034.8088"
+                "80752034.8088",
+                "38de4a13.9e07c6"
             ]
         ]
     },
@@ -9105,7 +9056,7 @@
         "mergecontext": "",
         "output_location": "payload",
         "output_location_type": "msg",
-        "x": 1020,
+        "x": 1260,
         "y": 1100,
         "wires": [
             []
@@ -9211,9 +9162,9 @@
         "id": "2c5e4896.5acbd8",
         "type": "comment",
         "z": "48ba348c.61270c",
-        "name": "Bluetooth Tracker Availability",
+        "name": "RM Mini Availability",
         "info": "",
-        "x": 180,
+        "x": 150,
         "y": 1240,
         "wires": []
     },
@@ -9235,8 +9186,9 @@
         "y": 1260,
         "wires": [
             [
-                "4b56562a.e13668",
-                "a5e82cce.9e94c"
+                "a5e82cce.9e94c",
+                "d8742850.a3fb68",
+                "8d22476.bf1ffb8"
             ]
         ]
     },
@@ -9262,7 +9214,9 @@
         "x": 690,
         "y": 1300,
         "wires": [
-            []
+            [
+                "8d22476.bf1ffb8"
+            ]
         ]
     },
     {
@@ -9277,7 +9231,7 @@
         "mergecontext": "",
         "output_location": "payload",
         "output_location_type": "msg",
-        "x": 1020,
+        "x": 1240,
         "y": 1280,
         "wires": [
             []
@@ -9383,7 +9337,7 @@
         "id": "f1f04b2f.da4be8",
         "type": "comment",
         "z": "48ba348c.61270c",
-        "name": "Bluetooth Tracker Availability",
+        "name": "Living Room Cam Availability",
         "info": "",
         "x": 180,
         "y": 1380,
@@ -9407,8 +9361,8 @@
         "y": 1400,
         "wires": [
             [
-                "3fc21522.ece32a",
-                "7777aa85.124f64"
+                "7777aa85.124f64",
+                "e9c109a5.b4ce18"
             ]
         ]
     },
@@ -9434,7 +9388,9 @@
         "x": 690,
         "y": 1440,
         "wires": [
-            []
+            [
+                "141d4bb.57eb4b4"
+            ]
         ]
     },
     {
@@ -9449,7 +9405,7 @@
         "mergecontext": "",
         "output_location": "payload",
         "output_location_type": "msg",
-        "x": 1020,
+        "x": 1240,
         "y": 1420,
         "wires": [
             []
@@ -9514,7 +9470,7 @@
         "z": "48ba348c.61270c",
         "name": "Check Living Room Cam On Every 2 Minutes",
         "host": "192.168.1.203",
-        "timer": "120",
+        "timer": "5",
         "x": 230,
         "y": 1440,
         "wires": [
@@ -10853,7 +10809,8 @@
         "y": 280,
         "wires": [
             [
-                "64a723bb.a421cc"
+                "64a723bb.a421cc",
+                "9e478c97.728cd"
             ]
         ]
     },
@@ -11055,7 +11012,7 @@
         "name": "BathRoom Availability",
         "info": "",
         "x": 160,
-        "y": 1500,
+        "y": 1540,
         "wires": []
     },
     {
@@ -11065,9 +11022,10 @@
         "name": "",
         "topic": "checkIn/bathroomMCU",
         "qos": "2",
+        "datatype": "auto",
         "broker": "1b6bc4ba.56ff4b",
         "x": 160,
-        "y": 1540,
+        "y": 1580,
         "wires": [
             [
                 "1c55810f.6df78f",
@@ -11090,12 +11048,12 @@
         "bytopic": "all",
         "name": "",
         "x": 430,
-        "y": 1520,
+        "y": 1560,
         "wires": [
             [
                 "de82ca98.6d5598",
-                "d6c5ee0b.dd471",
-                "49e35126.2d4f"
+                "49e35126.2d4f",
+                "a119708f.86aad"
             ]
         ]
     },
@@ -11109,7 +11067,7 @@
         "retain": "true",
         "broker": "1b6bc4ba.56ff4b",
         "x": 770,
-        "y": 1580,
+        "y": 1620,
         "wires": []
     },
     {
@@ -11139,7 +11097,7 @@
         "to": "",
         "reg": false,
         "x": 410,
-        "y": 1560,
+        "y": 1600,
         "wires": [
             [
                 "de82ca98.6d5598"
@@ -11158,8 +11116,8 @@
         "mergecontext": "",
         "output_location": "payload",
         "output_location_type": "msg",
-        "x": 740,
-        "y": 1540,
+        "x": 1040,
+        "y": 1580,
         "wires": [
             []
         ]
@@ -11205,7 +11163,7 @@
         "to": "",
         "reg": false,
         "x": 730,
-        "y": 1500,
+        "y": 1540,
         "wires": [
             [
                 "f6daaed4.01e24"
@@ -11221,7 +11179,7 @@
             "c6717092.75d4b"
         ],
         "x": 935,
-        "y": 1500,
+        "y": 1540,
         "wires": []
     },
     {
@@ -11724,7 +11682,7 @@
         "override_payload": "msg",
         "entity_location": "data",
         "override_data": "msg",
-        "x": 380,
+        "x": 400,
         "y": 1740,
         "wires": [
             [
@@ -11749,7 +11707,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 610,
+        "x": 630,
         "y": 1740,
         "wires": [
             [
@@ -11774,7 +11732,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1030,
+        "x": 1050,
         "y": 1740,
         "wires": [
             [
@@ -11791,7 +11749,7 @@
         "func": "var startTime = new Date(msg.data.last_changed); \nvar endTime = new Date(Date.now());\nvar difference = endTime.getTime() - startTime.getTime(); // This will give difference in milliseconds\nvar resultInMinutes = Math.round(difference / 60000);\nmsg.payload = resultInMinutes\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 820,
+        "x": 840,
         "y": 1740,
         "wires": [
             [
@@ -11832,7 +11790,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1190,
+        "x": 1210,
         "y": 1740,
         "wires": [
             [
@@ -11848,7 +11806,7 @@
         "links": [
             "c6717092.75d4b"
         ],
-        "x": 1335,
+        "x": 1355,
         "y": 1740,
         "wires": []
     },
@@ -11864,7 +11822,7 @@
         "crontab": "",
         "once": true,
         "onceDelay": "60",
-        "x": 130,
+        "x": 150,
         "y": 1740,
         "wires": [
             [
@@ -11878,7 +11836,7 @@
         "z": "48ba348c.61270c",
         "name": "BathRoom Light",
         "info": "",
-        "x": 120,
+        "x": 140,
         "y": 1680,
         "wires": []
     },
@@ -11894,7 +11852,7 @@
         "mergecontext": "",
         "output_location": "payload",
         "output_location_type": "msg",
-        "x": 1230,
+        "x": 1250,
         "y": 1800,
         "wires": [
             []
@@ -14571,7 +14529,9 @@
         "x": 510,
         "y": 120,
         "wires": [
-            []
+            [
+                "ef5eac6b.9761a"
+            ]
         ]
     },
     {
@@ -14623,6 +14583,7 @@
         "type": "subflow:2aff94ce.fdbbdc",
         "z": "80866e71.966c6",
         "name": "",
+        "env": [],
         "x": 500,
         "y": 780,
         "wires": [
@@ -15034,7 +14995,9 @@
         "x": 250,
         "y": 80,
         "wires": [
-            []
+            [
+                "ef5eac6b.9761a"
+            ]
         ]
     },
     {
@@ -15601,6 +15564,390 @@
         "info": "",
         "x": 3060,
         "y": 540,
+        "wires": []
+    },
+    {
+        "id": "9488063b.727978",
+        "type": "time-range-switch",
+        "z": "85970b46.61e358",
+        "name": "",
+        "lat": "",
+        "lon": "",
+        "startTime": "07:00",
+        "endTime": "goldenHour",
+        "startOffset": "20:00",
+        "endOffset": 0,
+        "x": 670,
+        "y": 40,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "b4c7c6f4.4d91b8",
+        "type": "change",
+        "z": "85970b46.61e358",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "NoteType",
+                "tot": "env"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 40,
+        "wires": [
+            [
+                "9488063b.727978"
+            ]
+        ]
+    },
+    {
+        "id": "a119708f.86aad",
+        "type": "subflow:85970b46.61e358",
+        "z": "48ba348c.61270c",
+        "name": "",
+        "env": [
+            {
+                "name": "NoteType",
+                "type": "str",
+                "value": "FAULT_DETECTION"
+            }
+        ],
+        "x": 740,
+        "y": 1580,
+        "wires": [
+            [
+                "d6c5ee0b.dd471"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "e9c109a5.b4ce18",
+        "type": "subflow:85970b46.61e358",
+        "z": "48ba348c.61270c",
+        "name": "",
+        "env": [
+            {
+                "name": "NoteType",
+                "type": "str",
+                "value": "FAULT_DETECTION"
+            }
+        ],
+        "x": 1020,
+        "y": 1420,
+        "wires": [
+            [
+                "3fc21522.ece32a"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "d8742850.a3fb68",
+        "type": "subflow:85970b46.61e358",
+        "z": "48ba348c.61270c",
+        "name": "",
+        "env": [
+            {
+                "name": "NoteType",
+                "type": "str",
+                "value": "FAULT_DETECTION"
+            }
+        ],
+        "x": 1020,
+        "y": 1280,
+        "wires": [
+            [
+                "4b56562a.e13668"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "38de4a13.9e07c6",
+        "type": "subflow:85970b46.61e358",
+        "z": "48ba348c.61270c",
+        "name": "",
+        "env": [
+            {
+                "name": "NoteType",
+                "type": "str",
+                "value": "FAULT_DETECTION"
+            }
+        ],
+        "x": 1020,
+        "y": 1100,
+        "wires": [
+            [
+                "cbb5e819.633268"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "21d9c69d.9f8e7a",
+        "type": "subflow:85970b46.61e358",
+        "z": "48ba348c.61270c",
+        "name": "",
+        "env": [
+            {
+                "name": "NoteType",
+                "type": "str",
+                "value": "FAULT_DETECTION"
+            }
+        ],
+        "x": 740,
+        "y": 920,
+        "wires": [
+            [
+                "ac6c25a0.3f1b98"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "a8227300.13432",
+        "type": "subflow:85970b46.61e358",
+        "z": "48ba348c.61270c",
+        "name": "",
+        "env": [
+            {
+                "name": "NoteType",
+                "type": "str",
+                "value": "FAULT_DETECTION"
+            }
+        ],
+        "x": 740,
+        "y": 780,
+        "wires": [
+            [
+                "cad6c4a0.0570e8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "18bb5523.688fcb",
+        "type": "subflow:85970b46.61e358",
+        "z": "48ba348c.61270c",
+        "name": "",
+        "env": [
+            {
+                "name": "NoteType",
+                "type": "str",
+                "value": "FAULT_DETECTION"
+            }
+        ],
+        "x": 740,
+        "y": 620,
+        "wires": [
+            [
+                "be55b0fe.1cdef"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "f4e9b89.fd1c548",
+        "type": "subflow:85970b46.61e358",
+        "z": "a068bd5.28a8d4",
+        "name": "",
+        "x": 1060,
+        "y": 600,
+        "wires": [
+            [
+                "408d5f52.6ad53"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "27a0c65e.2a12da",
+        "type": "api-call-service",
+        "z": "a068bd5.28a8d4",
+        "name": "Lett Matt Know",
+        "server": "eef5a84.da24f58",
+        "service_domain": "notify",
+        "service": "mattiphone",
+        "data": "{}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 1460,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "408d5f52.6ad53",
+        "type": "function",
+        "z": "a068bd5.28a8d4",
+        "name": "Data",
+        "func": "msg.payload = \n{\n  \"data\": \n  {\n    \"message\": msg.location,\n    \"data\": \n    {\n      \"push\": {\n            \"badge\": 5,\n            \"category\": \"alarm\"\n        },\"attachment\": \n      {\n        \"url\": msg.image,\n        \"content-type\": \"jpeg\",\n        \"hide-thumbnail\": false\n      }\n    }\n  }\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1250,
+        "y": 600,
+        "wires": [
+            [
+                "27a0c65e.2a12da"
+            ]
+        ]
+    },
+    {
+        "id": "275e27be.7bb5e8",
+        "type": "subflow:85970b46.61e358",
+        "z": "48ba348c.61270c",
+        "name": "",
+        "env": [
+            {
+                "name": "NoteType",
+                "type": "str",
+                "value": "FAULT_DETECTION"
+            }
+        ],
+        "x": 500,
+        "y": 240,
+        "wires": [
+            [
+                "ca7402bc.ba7c8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "a863c63d.9565a8",
+        "type": "inject",
+        "z": "80866e71.966c6",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 240,
+        "y": 800,
+        "wires": [
+            [
+                "3ea7da73.2df6c6"
+            ]
+        ]
+    },
+    {
+        "id": "ef5eac6b.9761a",
+        "type": "debug",
+        "z": "2aff94ce.fdbbdc",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 770,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "24753368.d0e28c",
+        "type": "inject",
+        "z": "48ba348c.61270c",
+        "name": "10 Second After Start up",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "10",
+        "x": 170,
+        "y": 1160,
+        "wires": [
+            [
+                "124b807c.ce19b",
+                "51c0fbb2.abfe34"
+            ]
+        ]
+    },
+    {
+        "id": "84157fba.07d2",
+        "type": "inject",
+        "z": "48ba348c.61270c",
+        "name": "10 Second After Start up",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "10",
+        "x": 170,
+        "y": 1340,
+        "wires": [
+            [
+                "24f7770e.b891b8",
+                "899c25f0.69a088"
+            ]
+        ]
+    },
+    {
+        "id": "8d22476.bf1ffb8",
+        "type": "mqtt out",
+        "z": "48ba348c.61270c",
+        "name": "availability/rmMini",
+        "topic": "availability/rmMini",
+        "qos": "2",
+        "retain": "true",
+        "broker": "1b6bc4ba.56ff4b",
+        "x": 1030,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "299c3b08.68c174",
+        "type": "inject",
+        "z": "48ba348c.61270c",
+        "name": "10 Second After Start up",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "10",
+        "x": 170,
+        "y": 1480,
+        "wires": [
+            [
+                "8ea47506.ccd558",
+                "af146bf.3df0b98"
+            ]
+        ]
+    },
+    {
+        "id": "141d4bb.57eb4b4",
+        "type": "mqtt out",
+        "z": "48ba348c.61270c",
+        "name": "availability/livingroomcam",
+        "topic": "availability/livingroomcam",
+        "qos": "2",
+        "retain": "true",
+        "broker": "1b6bc4ba.56ff4b",
+        "x": 1050,
+        "y": 1460,
         "wires": []
     }
 ]
