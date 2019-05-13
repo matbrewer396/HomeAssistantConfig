@@ -746,6 +746,48 @@
                         }
                     ],
                     "title": "Temperature"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entity": "binary_sensor.bath_mcu_status"
+                                },
+                                {
+                                    "entity": "binary_sensor.bedroom_mcu_status"
+                                },
+                                {
+                                    "entity": "binary_sensor.bluetooth_traker_mcu_status"
+                                },
+                                {
+                                    "entity": "binary_sensor.doorbell_mcu_status"
+                                },
+                                {
+                                    "entity": "binary_sensor.living_room_cam_status"
+                                },
+                                {
+                                    "entity": "binary_sensor.office_mcu_status"
+                                },
+                                {
+                                    "entity": "binary_sensor.rm_mini_status"
+                                }
+                            ],
+                            "title": "Device Status",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.debug_bath_room_light"
+                                }
+                            ],
+                            "title": "Debug Messages",
+                            "type": "entities"
+                        }
+                    ],
+                    "icon": "mdi:ladybug"
                 }
             ]
         }
