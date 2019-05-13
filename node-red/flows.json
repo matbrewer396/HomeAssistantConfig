@@ -10432,8 +10432,8 @@
             [
                 "95a4dd4.cece52",
                 "1df00caa.c88d63",
-                "78facd5e.ed58b4",
-                "dfbfea55.092c18"
+                "dfbfea55.092c18",
+                "f49bd1bf.ad501"
             ],
             [
                 "a43cb31c.bbb2a",
@@ -10457,10 +10457,10 @@
         "bytopic": "all",
         "name": "Assume Failure After 40 Minutes",
         "x": 970,
-        "y": 520,
+        "y": 480,
         "wires": [
             [
-                "63f156bc.aed608"
+                "44b62be6.846c34"
             ]
         ]
     },
@@ -10571,8 +10571,8 @@
         "mergecontext": "",
         "output_location": "",
         "output_location_type": "none",
-        "x": 1730,
-        "y": 580,
+        "x": 2410,
+        "y": 420,
         "wires": [
             [
                 "4a2e8ced.86f9d4"
@@ -10593,11 +10593,12 @@
         "reset": "",
         "bytopic": "all",
         "name": "",
-        "x": 1930,
+        "x": 2670,
         "y": 580,
         "wires": [
             [
-                "7cd2befd.6212"
+                "7cd2befd.6212",
+                "a43cb31c.bbb2a"
             ]
         ]
     },
@@ -10613,8 +10614,8 @@
         "mergecontext": "",
         "output_location": "",
         "output_location_type": "none",
-        "x": 2140,
-        "y": 580,
+        "x": 2920,
+        "y": 560,
         "wires": [
             []
         ]
@@ -10669,7 +10670,7 @@
         "wires": [
             [],
             [
-                "63f156bc.aed608"
+                "44b62be6.846c34"
             ]
         ]
     },
@@ -10685,8 +10686,8 @@
         "mergecontext": "",
         "output_location": "",
         "output_location_type": "none",
-        "x": 1170,
-        "y": 440,
+        "x": 1370,
+        "y": 360,
         "wires": [
             []
         ]
@@ -10702,8 +10703,8 @@
         "endTime": "22:00",
         "startOffset": 0,
         "endOffset": 0,
-        "x": 950,
-        "y": 420,
+        "x": 1150,
+        "y": 340,
         "wires": [
             [
                 "221d531d.195e8c"
@@ -10729,8 +10730,8 @@
         "mergecontext": "",
         "output_location": "",
         "output_location_type": "none",
-        "x": 1370,
-        "y": 380,
+        "x": 1570,
+        "y": 300,
         "wires": [
             []
         ]
@@ -10758,7 +10759,8 @@
         "y": 940,
         "wires": [
             [
-                "9a49fe8e.6bfee"
+                "9a49fe8e.6bfee",
+                "a43cb31c.bbb2a"
             ]
         ]
     },
@@ -11236,8 +11238,8 @@
         "z": "a0cdc0f9.a362b",
         "name": "TODO: is dark? - record when bathroom goes to dark: flase for first time",
         "info": "",
-        "x": 1350,
-        "y": 340,
+        "x": 1550,
+        "y": 260,
         "wires": []
     },
     {
@@ -11656,8 +11658,8 @@
         "endTime": "18:00",
         "startOffset": 0,
         "endOffset": 0,
-        "x": 1170,
-        "y": 380,
+        "x": 1370,
+        "y": 300,
         "wires": [
             [],
             [
@@ -13998,8 +14000,8 @@
         "y": 360,
         "wires": [
             [
-                "78facd5e.ed58b4",
-                "a930f15f.b431d"
+                "a930f15f.b431d",
+                "f49bd1bf.ad501"
             ]
         ]
     },
@@ -14031,7 +14033,7 @@
         "y": 820,
         "wires": [
             [
-                "63f156bc.aed608"
+                "44b62be6.846c34"
             ]
         ]
     },
@@ -15949,5 +15951,84 @@
         "x": 1050,
         "y": 1460,
         "wires": []
+    },
+    {
+        "id": "f49bd1bf.ad501",
+        "type": "subflow:56368b94.f11494",
+        "z": "a0cdc0f9.a362b",
+        "name": "",
+        "env": [],
+        "x": 820,
+        "y": 340,
+        "wires": [
+            [
+                "78facd5e.ed58b4"
+            ],
+            [],
+            [
+                "78facd5e.ed58b4"
+            ]
+        ]
+    },
+    {
+        "id": "44b62be6.846c34",
+        "type": "subflow:56368b94.f11494",
+        "z": "a0cdc0f9.a362b",
+        "name": "",
+        "env": [],
+        "x": 1820,
+        "y": 420,
+        "wires": [
+            [
+                "918f0fb5.9a267"
+            ],
+            [],
+            [
+                "918f0fb5.9a267"
+            ]
+        ]
+    },
+    {
+        "id": "918f0fb5.9a267",
+        "type": "api-current-state",
+        "z": "a0cdc0f9.a362b",
+        "name": "Light On",
+        "server": "5ee4d578.f7736c",
+        "outputs": 1,
+        "halt_if": "",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "override_topic": false,
+        "entity_id": "light.bathroom_light",
+        "state_type": "str",
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 2000,
+        "y": 420,
+        "wires": [
+            [
+                "770e1c17.c8aae4"
+            ]
+        ]
+    },
+    {
+        "id": "770e1c17.c8aae4",
+        "type": "subflow:fec14295.8a46d",
+        "z": "a0cdc0f9.a362b",
+        "name": "",
+        "env": [],
+        "x": 2180,
+        "y": 420,
+        "wires": [
+            [
+                "63f156bc.aed608"
+            ],
+            [],
+            [
+                "63f156bc.aed608"
+            ]
+        ]
     }
 ]
