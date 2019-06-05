@@ -27,6 +27,8 @@
       mattpc_off:
         command_off: 'curl http://192.168.1.250:5001/271191/hibernate'
         friendly_name: Hibernate Matt PC
+
+        
   - platform: wake_on_lan
     name: mattpc_on
     host: 192.168.1.250
@@ -36,7 +38,7 @@
     switches:
       mattpc:
         friendly_name: Matt PC
-        value_template: '{% if states.device_tracker.desktopl8nv1rh %}on{% else %}off{% endif %}'
+        value_template: '{% if states.binary_sensor.mattpc_ping %}on{% else %}off{% endif %}'
         turn_on:
           service: switch.turn_on
           entity_id: switch.mattpc_on
