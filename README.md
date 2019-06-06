@@ -42,6 +42,7 @@ List of all my device, that make house smart:
 | DIY: DHT22 | 2 | Temperature & Humidity. Connect to nodemcu, pushes to MQTT | 
 | DIY: LDR | 1 | Light Level. Connect to nodemcu, pushes to MQTT | 
 | Philips Hue Smart Motion Sensor | 2 | Temperature / Light Level. Connected via hue hub |
+| Shelly H&T | 2 | Temperature & Humidity |
 
 ### Load Sensor
 | Device  | Quantity | Notes |

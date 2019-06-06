@@ -1,0 +1,29 @@
+  - platform: mqtt
+    name: "Fridge Temperature"
+    state_topic: "shellies/shellyht-E00E22/sensor/temperature"
+    unit_of_measurement: '°C'
+    expire_after : 10800
+  - platform: mqtt
+    name: "Fridge Humidity"
+    state_topic: "shellies/shellyht-E00E22/sensor/humidity"
+    unit_of_measurement: '%'
+    expire_after : 10800
+  - platform: mqtt
+    name: "Fridge Temperature Shelly HT Battery"
+    state_topic: "shellies/shellyht-E00E22/sensor/battery"
+    unit_of_measurement: '%'
+    expire_after : 10800
+  - platform: mqtt
+    name: "Freezer Temperature"
+    state_topic: "shellies/shellyht-E00E0F/sensor/temperature"
+    unit_of_measurement: '°C'
+    expire_after : 10800
+  - platform: mqtt
+    name: "Freezer Humidity"
+    state_topic: "shellies/shellyht-E00E0F/sensor/humidity"
+    unit_of_measurement: '%'
+  - platform: mqtt
+    name: "Freezer Temperature Shelly HT Battery"
+    state_topic: "shellies/shellyht-E00E0F/sensor/battery"
+    unit_of_measurement: '%'
+    expire_after : 10800

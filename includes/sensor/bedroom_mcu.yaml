@@ -36,6 +36,7 @@
     payload_available: "online"
     payload_not_available: "offline"
     expire_after : 180
+    unit_of_measurement: 'Weight'
   - platform: template
     sensors:
       matt_in_bed:
