@@ -303,6 +303,7 @@
                         },
                         {
                             "camera_image": "camera.living_room",
+                            "camera_view": "live",
                             "entities": [
                                 "switch.1274756684f3ebb8900b",
                                 "switch.tv"
@@ -360,6 +361,10 @@
                             "entity": "sensor.living_room_senor_humidity",
                             "name": "Humidity",
                             "type": "sensor"
+                        },
+                        {
+                            "entity": "media_player.living_room_2",
+                            "type": "media-control"
                         }
                     ],
                     "icon": "mdi:sofa",
@@ -469,7 +474,7 @@
                             "type": "entities"
                         },
                         {
-                            "content": " Living Room Cam: http://192.168.1.203/\nGrafana: https://192.168.1.253:3000/login\nNode Red: https://192.168.1.253:1880/\nInfluxDB: http://192.168.1.253:8888\nOldUi: https://192.168.1.253/states",
+                            "content": "Printer http://192.168.1.204/\nLiving Room Cam: http://192.168.1.203/\nGrafana: https://192.168.1.253:3000/login\nNode Red: https://192.168.1.253:1880/\nInfluxDB: http://192.168.1.253:8888\nOldUi: https://192.168.1.253/states\nESP Home: http://192.168.1.253:6052",
                             "title": "Links",
                             "type": "markdown"
                         },
@@ -510,6 +515,10 @@
                             "show_header_toggle": true,
                             "title": "Library",
                             "type": "entities"
+                        },
+                        {
+                            "entity": "media_player.mat_s_3rd_echo_dot",
+                            "type": "media-control"
                         }
                     ],
                     "icon": "mdi:deathly-hallows",
@@ -805,10 +814,10 @@
                         {
                             "entities": [
                                 {
-                                    "entity": "sensor.fridge_humidity_2"
+                                    "entity": "sensor.fridge_humidity"
                                 },
                                 {
-                                    "entity": "sensor.fridge_temperature_2"
+                                    "entity": "sensor.fridge_temperature"
                                 },
                                 {
                                     "entity": "sensor.fridge_temperature_shelly_ht_battery"
@@ -833,9 +842,28 @@
                             "show_header_toggle": false,
                             "title": "Freezer",
                             "type": "entities"
+                        },
+                        {
+                            "entity": "media_player.kitten",
+                            "type": "media-control"
                         }
                     ],
                     "icon": "mdi:stove"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "camera_image": "camera.my_camera",
+                            "entities": [
+                                "switch.decorative_lights",
+                                "light.ceiling_lights"
+                            ],
+                            "title": "Living room",
+                            "type": "picture-glance"
+                        }
+                    ],
+                    "title": "test"
                 }
             ]
         }

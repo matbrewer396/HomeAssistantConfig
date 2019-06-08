@@ -140,6 +140,13 @@
         "info": ""
     },
     {
+        "id": "84ed1066.f22de",
+        "type": "tab",
+        "label": "Fridge / Freezer",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "a83e69e1.4b2ab8",
         "type": "subflow",
         "name": "Alert Matt",
@@ -5664,7 +5671,7 @@
         "type": "light-scheduler",
         "z": "dceb45d8.425368",
         "settings": "525afe76.43e05",
-        "events": "[{\"start\":{\"dow\":1,\"mod\":705},\"end\":{\"dow\":1,\"mod\":900}},{\"start\":{\"dow\":2,\"mod\":705},\"end\":{\"dow\":2,\"mod\":900}},{\"start\":{\"dow\":3,\"mod\":705},\"end\":{\"dow\":3,\"mod\":900}},{\"start\":{\"dow\":4,\"mod\":705},\"end\":{\"dow\":4,\"mod\":900}},{\"start\":{\"dow\":5,\"mod\":705},\"end\":{\"dow\":5,\"mod\":900}},{\"start\":{\"dow\":1,\"mod\":660},\"end\":{\"dow\":1,\"mod\":675}},{\"start\":{\"dow\":1,\"mod\":690},\"end\":{\"dow\":1,\"mod\":705}},{\"start\":{\"dow\":1,\"mod\":675},\"end\":{\"dow\":1,\"mod\":690}},{\"start\":{\"dow\":2,\"mod\":660},\"end\":{\"dow\":2,\"mod\":705}},{\"start\":{\"dow\":3,\"mod\":660},\"end\":{\"dow\":3,\"mod\":705}},{\"start\":{\"dow\":4,\"mod\":660},\"end\":{\"dow\":4,\"mod\":705}},{\"start\":{\"dow\":5,\"mod\":660},\"end\":{\"dow\":5,\"mod\":705}}]",
+        "events": "[{\"start\":{\"dow\":1,\"mod\":705},\"end\":{\"dow\":1,\"mod\":900}},{\"start\":{\"dow\":2,\"mod\":705},\"end\":{\"dow\":2,\"mod\":900}},{\"start\":{\"dow\":3,\"mod\":705},\"end\":{\"dow\":3,\"mod\":900}},{\"start\":{\"dow\":4,\"mod\":705},\"end\":{\"dow\":4,\"mod\":900}},{\"start\":{\"dow\":5,\"mod\":705},\"end\":{\"dow\":5,\"mod\":900}},{\"start\":{\"dow\":3,\"mod\":660},\"end\":{\"dow\":3,\"mod\":705}},{\"start\":{\"dow\":4,\"mod\":660},\"end\":{\"dow\":4,\"mod\":705}},{\"start\":{\"dow\":5,\"mod\":660},\"end\":{\"dow\":5,\"mod\":705}},{\"start\":{\"dow\":2,\"mod\":600},\"end\":{\"dow\":2,\"mod\":705}},{\"start\":{\"dow\":1,\"mod\":600},\"end\":{\"dow\":1,\"mod\":705}},{\"start\":{\"dow\":3,\"mod\":600},\"end\":{\"dow\":3,\"mod\":660}},{\"start\":{\"dow\":4,\"mod\":600},\"end\":{\"dow\":4,\"mod\":660}},{\"start\":{\"dow\":5,\"mod\":600},\"end\":{\"dow\":5,\"mod\":660}}]",
         "topic": "",
         "name": "Lunch Time",
         "onPayload": "On",
@@ -6391,7 +6398,9 @@
             "b32e27f7.8449f8",
             "f6daaed4.01e24",
             "ab9413e4.3c106",
-            "3a06d91d.c9d8a6"
+            "3a06d91d.c9d8a6",
+            "51f52cc1.b9deb4",
+            "748d8b68.2ac2f4"
         ],
         "x": 75,
         "y": 240,
@@ -17106,6 +17115,908 @@
             [
                 "e28df683.3ce3d8"
             ]
+        ]
+    },
+    {
+        "id": "a16d7201.bd4a3",
+        "type": "mqtt in",
+        "z": "84ed1066.f22de",
+        "name": "",
+        "topic": "shellies/shellyht-E00E22/sensor/temperature",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "1b6bc4ba.56ff4b",
+        "x": 230,
+        "y": 180,
+        "wires": [
+            [
+                "e5beba83.142648",
+                "e22c7f3e.a84ad",
+                "5973e3f4.6edb9c"
+            ]
+        ]
+    },
+    {
+        "id": "e5beba83.142648",
+        "type": "switch",
+        "z": "84ed1066.f22de",
+        "name": "Warmer Then 6C",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "6",
+                "vt": "num"
+            },
+            {
+                "t": "lt",
+                "v": "6",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 570,
+        "y": 200,
+        "wires": [
+            [
+                "af9fa763.602c18"
+            ],
+            [
+                "6dae2581.18d8fc"
+            ]
+        ]
+    },
+    {
+        "id": "b89a4f68.e80b4",
+        "type": "api-call-service",
+        "z": "84ed1066.f22de",
+        "name": "Lett Matt Know",
+        "server": "eef5a84.da24f58",
+        "service_domain": "notify",
+        "service": "mattiphone",
+        "data": "{\"message\":\"Warning! Frigde is greater then 6°C\"}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 1420,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5dd0e20c.1b737c",
+        "type": "api-call-service",
+        "z": "84ed1066.f22de",
+        "name": "Lett Matt Know",
+        "server": "eef5a84.da24f58",
+        "service_domain": "notify",
+        "service": "mattiphone",
+        "data": "{\"message\":\"Frigde temperature restored\"}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 1420,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "818a6a7a.bf8988",
+        "type": "mqtt out",
+        "z": "84ed1066.f22de",
+        "name": "",
+        "topic": "Fridge/Status",
+        "qos": "2",
+        "retain": "true",
+        "broker": "1b6bc4ba.56ff4b",
+        "x": 1030,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "af9fa763.602c18",
+        "type": "change",
+        "z": "84ed1066.f22de",
+        "name": "To Hot",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "To Hot",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 770,
+        "y": 180,
+        "wires": [
+            [
+                "818a6a7a.bf8988",
+                "5c381bb1.1c40b4"
+            ]
+        ]
+    },
+    {
+        "id": "6dae2581.18d8fc",
+        "type": "change",
+        "z": "84ed1066.f22de",
+        "name": "Good",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Good",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 770,
+        "y": 220,
+        "wires": [
+            [
+                "818a6a7a.bf8988",
+                "5c381bb1.1c40b4"
+            ]
+        ]
+    },
+    {
+        "id": "5c381bb1.1c40b4",
+        "type": "rbe",
+        "z": "84ed1066.f22de",
+        "name": "",
+        "func": "rbei",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 1010,
+        "y": 200,
+        "wires": [
+            [
+                "ca1972ac.01e52"
+            ]
+        ]
+    },
+    {
+        "id": "ca1972ac.01e52",
+        "type": "switch",
+        "z": "84ed1066.f22de",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "To Hot",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Good",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1170,
+        "y": 200,
+        "wires": [
+            [
+                "b89a4f68.e80b4"
+            ],
+            [
+                "5dd0e20c.1b737c"
+            ]
+        ]
+    },
+    {
+        "id": "5973e3f4.6edb9c",
+        "type": "trigger",
+        "z": "84ed1066.f22de",
+        "op1": "",
+        "op2": "offline",
+        "op1type": "nul",
+        "op2type": "str",
+        "duration": "4",
+        "extend": true,
+        "units": "hr",
+        "reset": "",
+        "bytopic": "all",
+        "name": "",
+        "x": 545,
+        "y": 360,
+        "wires": [
+            [
+                "241a99d9.e13a76",
+                "fd4bf7a6.bc1f68",
+                "47c93fd7.a79cb"
+            ]
+        ]
+    },
+    {
+        "id": "241a99d9.e13a76",
+        "type": "mqtt out",
+        "z": "84ed1066.f22de",
+        "name": "availability/fridgeshelly",
+        "topic": "availability/fridgeshelly",
+        "qos": "2",
+        "retain": "true",
+        "broker": "1b6bc4ba.56ff4b",
+        "x": 875,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "e22c7f3e.a84ad",
+        "type": "change",
+        "z": "84ed1066.f22de",
+        "name": "online",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "online",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "devicecheckin.bedroom",
+                "pt": "global",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 525,
+        "y": 400,
+        "wires": [
+            [
+                "241a99d9.e13a76"
+            ]
+        ]
+    },
+    {
+        "id": "cc3b2a14.4f2478",
+        "type": "api-call-service",
+        "z": "84ed1066.f22de",
+        "name": "Lett Matt Know",
+        "server": "eef5a84.da24f58",
+        "service_domain": "notify",
+        "service": "mattiphone",
+        "data": "{\"message\":\"Fridge Shelly - Offline\"}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 1155,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fd4bf7a6.bc1f68",
+        "type": "change",
+        "z": "84ed1066.f22de",
+        "name": "Fault Details",
+        "rules": [
+            {
+                "t": "set",
+                "p": "fault.name",
+                "pt": "msg",
+                "to": "Fridge has not posted an update in the last 4 hours",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "fault.item",
+                "pt": "msg",
+                "to": "Frigde Shell HT",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "fault.actiontofix",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 845,
+        "y": 340,
+        "wires": [
+            [
+                "51f52cc1.b9deb4"
+            ]
+        ]
+    },
+    {
+        "id": "51f52cc1.b9deb4",
+        "type": "link out",
+        "z": "84ed1066.f22de",
+        "name": "Fault Detected",
+        "links": [
+            "c6717092.75d4b"
+        ],
+        "x": 1050,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "47c93fd7.a79cb",
+        "type": "subflow:85970b46.61e358",
+        "z": "84ed1066.f22de",
+        "name": "",
+        "env": [
+            {
+                "name": "NoteType",
+                "type": "str",
+                "value": "FAULT_DETECTION"
+            }
+        ],
+        "x": 855,
+        "y": 380,
+        "wires": [
+            [
+                "cc3b2a14.4f2478"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "4199bfba.1277",
+        "type": "comment",
+        "z": "84ed1066.f22de",
+        "name": "Check Temp",
+        "info": "",
+        "x": 550,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "fc766fed.708d3",
+        "type": "comment",
+        "z": "84ed1066.f22de",
+        "name": "Check for check in",
+        "info": "",
+        "x": 570,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "38dec50a.659a9a",
+        "type": "mqtt in",
+        "z": "84ed1066.f22de",
+        "name": "",
+        "topic": "shellies/shellyht-E00E22/sensor/battery",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "1b6bc4ba.56ff4b",
+        "x": 210,
+        "y": 560,
+        "wires": [
+            [
+                "21a98a7.149a476"
+            ]
+        ]
+    },
+    {
+        "id": "21a98a7.149a476",
+        "type": "switch",
+        "z": "84ed1066.f22de",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lt",
+                "v": "20",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 480,
+        "y": 560,
+        "wires": [
+            [
+                "44bd4ee1.98529"
+            ]
+        ]
+    },
+    {
+        "id": "44bd4ee1.98529",
+        "type": "api-call-service",
+        "z": "84ed1066.f22de",
+        "name": "Lett Matt Know",
+        "server": "eef5a84.da24f58",
+        "service_domain": "notify",
+        "service": "mattiphone",
+        "data": "{\"message\":\"Frigde shelly has less then 20% battery!\"}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 780,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1f592428.b2c4ac",
+        "type": "mqtt in",
+        "z": "84ed1066.f22de",
+        "name": "",
+        "topic": "shellies/shellyht-E00E0F/sensor/temperature",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "1b6bc4ba.56ff4b",
+        "x": 230,
+        "y": 920,
+        "wires": [
+            [
+                "de75af60.1d9fc",
+                "f6e6db82.702fe8",
+                "ef5c0f7b.2f341"
+            ]
+        ]
+    },
+    {
+        "id": "de75af60.1d9fc",
+        "type": "switch",
+        "z": "84ed1066.f22de",
+        "name": "Warmer Then -20C",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "-20",
+                "vt": "num"
+            },
+            {
+                "t": "lt",
+                "v": "-20",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 570,
+        "y": 940,
+        "wires": [
+            [
+                "16a78b98.5ad494"
+            ],
+            [
+                "fc7c3b76.11baa8"
+            ]
+        ]
+    },
+    {
+        "id": "cb576c15.2bb82",
+        "type": "api-call-service",
+        "z": "84ed1066.f22de",
+        "name": "Lett Matt Know",
+        "server": "eef5a84.da24f58",
+        "service_domain": "notify",
+        "service": "mattiphone",
+        "data": "{\"message\":\"Warning! Frigde is greater then 6°C\"}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 1420,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8cc3d334.3571e",
+        "type": "api-call-service",
+        "z": "84ed1066.f22de",
+        "name": "Lett Matt Know",
+        "server": "eef5a84.da24f58",
+        "service_domain": "notify",
+        "service": "mattiphone",
+        "data": "{\"message\":\"Frigde temperature restored\"}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 1420,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "51dc882d.3e4d38",
+        "type": "mqtt out",
+        "z": "84ed1066.f22de",
+        "name": "",
+        "topic": "Freezer/Status",
+        "qos": "2",
+        "retain": "true",
+        "broker": "1b6bc4ba.56ff4b",
+        "x": 1040,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "16a78b98.5ad494",
+        "type": "change",
+        "z": "84ed1066.f22de",
+        "name": "To Hot",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "To Hot",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 770,
+        "y": 920,
+        "wires": [
+            [
+                "51dc882d.3e4d38",
+                "4725cb5c.b4f804"
+            ]
+        ]
+    },
+    {
+        "id": "fc7c3b76.11baa8",
+        "type": "change",
+        "z": "84ed1066.f22de",
+        "name": "Good",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Good",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 770,
+        "y": 960,
+        "wires": [
+            [
+                "51dc882d.3e4d38",
+                "4725cb5c.b4f804"
+            ]
+        ]
+    },
+    {
+        "id": "4725cb5c.b4f804",
+        "type": "rbe",
+        "z": "84ed1066.f22de",
+        "name": "",
+        "func": "rbei",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload",
+        "x": 1010,
+        "y": 940,
+        "wires": [
+            [
+                "15f6a55e.481aeb"
+            ]
+        ]
+    },
+    {
+        "id": "15f6a55e.481aeb",
+        "type": "switch",
+        "z": "84ed1066.f22de",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "To Hot",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Good",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1170,
+        "y": 940,
+        "wires": [
+            [
+                "cb576c15.2bb82"
+            ],
+            [
+                "8cc3d334.3571e"
+            ]
+        ]
+    },
+    {
+        "id": "ef5c0f7b.2f341",
+        "type": "trigger",
+        "z": "84ed1066.f22de",
+        "op1": "",
+        "op2": "offline",
+        "op1type": "nul",
+        "op2type": "str",
+        "duration": "4",
+        "extend": true,
+        "units": "hr",
+        "reset": "",
+        "bytopic": "all",
+        "name": "",
+        "x": 545,
+        "y": 1100,
+        "wires": [
+            [
+                "d8894444.6e9cc8",
+                "8a1eb863.bf6f18",
+                "3eb28781.04e518"
+            ]
+        ]
+    },
+    {
+        "id": "d8894444.6e9cc8",
+        "type": "mqtt out",
+        "z": "84ed1066.f22de",
+        "name": "availability/freezershelly",
+        "topic": "availability/fridgeshelly",
+        "qos": "2",
+        "retain": "true",
+        "broker": "1b6bc4ba.56ff4b",
+        "x": 885,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "f6e6db82.702fe8",
+        "type": "change",
+        "z": "84ed1066.f22de",
+        "name": "online",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "online",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "devicecheckin.bedroom",
+                "pt": "global",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 525,
+        "y": 1140,
+        "wires": [
+            [
+                "d8894444.6e9cc8"
+            ]
+        ]
+    },
+    {
+        "id": "4d5cf8c7.198318",
+        "type": "api-call-service",
+        "z": "84ed1066.f22de",
+        "name": "Lett Matt Know",
+        "server": "eef5a84.da24f58",
+        "service_domain": "notify",
+        "service": "mattiphone",
+        "data": "{\"message\":\"Fridge Shelly - Offline\"}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 1155,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8a1eb863.bf6f18",
+        "type": "change",
+        "z": "84ed1066.f22de",
+        "name": "Fault Details",
+        "rules": [
+            {
+                "t": "set",
+                "p": "fault.name",
+                "pt": "msg",
+                "to": "Freezer has not posted an update in the last 4 hours",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "fault.item",
+                "pt": "msg",
+                "to": "Freezer Shell HT",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "fault.actiontofix",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 845,
+        "y": 1080,
+        "wires": [
+            [
+                "748d8b68.2ac2f4"
+            ]
+        ]
+    },
+    {
+        "id": "748d8b68.2ac2f4",
+        "type": "link out",
+        "z": "84ed1066.f22de",
+        "name": "Fault Detected",
+        "links": [
+            "c6717092.75d4b"
+        ],
+        "x": 1050,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "3eb28781.04e518",
+        "type": "subflow:85970b46.61e358",
+        "z": "84ed1066.f22de",
+        "name": "",
+        "env": [
+            {
+                "name": "NoteType",
+                "type": "str",
+                "value": "FAULT_DETECTION"
+            }
+        ],
+        "x": 855,
+        "y": 1120,
+        "wires": [
+            [
+                "4d5cf8c7.198318"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "fdc1e76f.ffdb48",
+        "type": "comment",
+        "z": "84ed1066.f22de",
+        "name": "Check Temp",
+        "info": "",
+        "x": 550,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "8cf7e29f.7cd",
+        "type": "comment",
+        "z": "84ed1066.f22de",
+        "name": "Check for check in",
+        "info": "",
+        "x": 570,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "5162fe41.58231",
+        "type": "mqtt in",
+        "z": "84ed1066.f22de",
+        "name": "",
+        "topic": "shellies/shellyht-E00E0F/sensor/battery",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "1b6bc4ba.56ff4b",
+        "x": 210,
+        "y": 1300,
+        "wires": [
+            [
+                "6e1c0d67.a4e2b4"
+            ]
+        ]
+    },
+    {
+        "id": "6e1c0d67.a4e2b4",
+        "type": "switch",
+        "z": "84ed1066.f22de",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lt",
+                "v": "20",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 530,
+        "y": 1300,
+        "wires": [
+            [
+                "f6fb7193.143eb"
+            ]
+        ]
+    },
+    {
+        "id": "f6fb7193.143eb",
+        "type": "api-call-service",
+        "z": "84ed1066.f22de",
+        "name": "Lett Matt Know",
+        "server": "eef5a84.da24f58",
+        "service_domain": "notify",
+        "service": "mattiphone",
+        "data": "{\"message\":\"Frigde shelly has less then 20% battery!\"}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 780,
+        "y": 1300,
+        "wires": [
+            []
         ]
     }
 ]

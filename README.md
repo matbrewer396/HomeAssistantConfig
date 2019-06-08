@@ -98,7 +98,8 @@ Pretty much the same
 * Voice control - "Alexa Turn On Living Room Plug" - we have extention lead that runs under sofa for thing phone / laptops charger etc
 
 ### Kitchen
-Nothing yet! 
+* Fridge/ Freezer - when the temperature drops below target trigger a notification (door might be open). - Testing!  assuming no false postive going hookup to alexa aka wake me up before food go bad!
+
 
 ### Office (aka my room)
 * On door open and dark, lights turn on 
