@@ -1,7 +1,7 @@
 
 
   - platform: bt_home_hub_5
-  
+
   - platform: life360
     username: !secret life360_username
     password: !secret life360_password
@@ -10,16 +10,16 @@
     driving_speed: 18
     max_gps_accuracy: 200
     max_update_wait:
-      minutes: 45
+      minutes: 15
 
   - platform: mqtt
     qos: 2
     devices:
       matt: 'location/matt'
       danni: 'location/danni'
-  - platform: huesensor
+  # - platform: huesensor
 
-  
+
   - platform: ping
     hosts:
       mattpc_ping: 192.168.1.250

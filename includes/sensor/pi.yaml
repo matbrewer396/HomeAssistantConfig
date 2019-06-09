@@ -6,13 +6,6 @@
     monitored_conditions:
       - temperature
       - humidity
-  - platform: speedtestdotnet
-    scan_interval:
-      minutes: 10
-    monitored_conditions:
-      - ping
-      - download
-      - upload
   - platform: uptime
   - platform: systemmonitor
     resources:
