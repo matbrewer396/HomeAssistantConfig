@@ -16,6 +16,8 @@ home-assistant_v2.db
 deps/
 .uuid
 emulated_hue_ids.json
+home-assistant_v2.db-shm
+home-assistant_v2.db-wal
 
 #Custom Stuff / Addons
 **.pickle

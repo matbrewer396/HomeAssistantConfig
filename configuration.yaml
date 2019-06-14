@@ -79,7 +79,7 @@ mqtt:
   broker: '192.168.1.253'
   username: !secret mqtt_username
   password: !secret mqtt_password
-  discovery: false
+  discovery: true
   discovery_prefix: homeassistant
 
 tuya:
@@ -140,3 +140,13 @@ speedtestdotnet:
     - ping
     - download
     - upload
+
+camera:
+  - platform: generic
+    name: Kitchen Cam
+    username: !secret kitchen_cam_user
+    password: !secret kitchen_cam_password
+    authentication: basic
+    still_image_url: https://192.168.1.212/cgi-bin/currentpic.cgi
+    verify_ssl: false
+    scan_interval: 5

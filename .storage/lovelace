@@ -447,16 +447,6 @@
                         {
                             "entities": [
                                 {
-                                    "entity": "device_tracker.fridgemcu"
-                                }
-                            ],
-                            "show_header_toggle": false,
-                            "title": "Node NCU Status",
-                            "type": "entities"
-                        },
-                        {
-                            "entities": [
-                                {
                                     "entity": "sensor.octoprint_current_state"
                                 },
                                 {
@@ -576,6 +566,57 @@
                     ],
                     "icon": "mdi:hotel",
                     "title": "Bed Room"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.fridge_humidity"
+                                },
+                                {
+                                    "entity": "sensor.fridge_temperature"
+                                },
+                                {
+                                    "entity": "sensor.fridge_temperature_shelly_ht_battery"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Fridge",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.freezer_humidity"
+                                },
+                                {
+                                    "entity": "sensor.freezer_temperature"
+                                },
+                                {
+                                    "entity": "sensor.freezer_temperature_shelly_ht_battery"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Freezer",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "media_player.kitten",
+                            "type": "media-control"
+                        },
+                        {
+                            "camera_image": "camera.kitchen_cam",
+                            "entities": [
+                                "switch.decorative_lights",
+                                "light.ceiling_lights"
+                            ],
+                            "title": "Kitchen",
+                            "type": "picture-glance"
+                        }
+                    ],
+                    "icon": "mdi:stove"
                 },
                 {
                     "cards": [
@@ -807,48 +848,6 @@
                         }
                     ],
                     "icon": "mdi:ladybug"
-                },
-                {
-                    "badges": [],
-                    "cards": [
-                        {
-                            "entities": [
-                                {
-                                    "entity": "sensor.fridge_humidity"
-                                },
-                                {
-                                    "entity": "sensor.fridge_temperature"
-                                },
-                                {
-                                    "entity": "sensor.fridge_temperature_shelly_ht_battery"
-                                }
-                            ],
-                            "show_header_toggle": false,
-                            "title": "Fridge",
-                            "type": "entities"
-                        },
-                        {
-                            "entities": [
-                                {
-                                    "entity": "sensor.freezer_humidity"
-                                },
-                                {
-                                    "entity": "sensor.freezer_temperature"
-                                },
-                                {
-                                    "entity": "sensor.freezer_temperature_shelly_ht_battery"
-                                }
-                            ],
-                            "show_header_toggle": false,
-                            "title": "Freezer",
-                            "type": "entities"
-                        },
-                        {
-                            "entity": "media_player.kitten",
-                            "type": "media-control"
-                        }
-                    ],
-                    "icon": "mdi:stove"
                 },
                 {
                     "badges": [],

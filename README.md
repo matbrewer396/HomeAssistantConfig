@@ -65,7 +65,10 @@ List of all my device, that make house smart:
 | Echo | 2 |  | 
 | Fire TV 4k | 1 |  | 
 
-
+### Camera
+| Device  | Quantity | Notes |
+| ------------- | :---: | ------------- | 
+| Neos SmartCam | 1 | flashed to https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks | 
 
 
 ## Automation
