@@ -5,3 +5,25 @@
     min: 0
     max: 40
     step: 1
+
+
+  danni_bed_weight:
+    name: Danni Bed Weight
+    initial: 3100000
+    min: 2000000
+    max: 5000000
+    step: 1000
+  
+  matt_bed_weight:
+    name: Matt Bed Weight
+    initial: 4000000
+    min: 2000000
+    max: 5000000
+    step: 1000
+
+  both_in_bed_weight:
+    name: Both Bed Weight
+    initial: 4500000
+    min: 2000000
+    max: 5000000
+    step: 1000

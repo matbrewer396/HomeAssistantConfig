@@ -1915,9 +1915,8 @@
         "wires": [
             [
                 "626c9c60.30cf24",
-                "a961f727.8da2a8",
                 "6125c1be.4d871",
-                "8f9c705.d69fb9"
+                "7186346f.4ab48c"
             ]
         ]
     },
@@ -2673,7 +2672,7 @@
         "outputs": 1,
         "output_only_on_state_change": false,
         "x": 130,
-        "y": 480,
+        "y": 560,
         "wires": [
             [
                 "8d007ed4.b4b9",
@@ -2699,7 +2698,7 @@
         "repair": false,
         "outputs": 1,
         "x": 870,
-        "y": 460,
+        "y": 660,
         "wires": [
             [
                 "297e3f11.045a3"
@@ -2864,7 +2863,7 @@
         "haltifstate": "",
         "outputs": 1,
         "x": 130,
-        "y": 578,
+        "y": 778,
         "wires": [
             [
                 "2c51c6d4.5f6e0a",
@@ -2926,7 +2925,7 @@
         "to": "",
         "reg": false,
         "x": 460,
-        "y": 480,
+        "y": 560,
         "wires": [
             [
                 "64a723bb.a421cc"
@@ -2960,7 +2959,7 @@
         "to": "",
         "reg": false,
         "x": 440,
-        "y": 578,
+        "y": 778,
         "wires": [
             []
         ]
@@ -2978,7 +2977,7 @@
         "override_payload": true,
         "override_data": true,
         "x": 680,
-        "y": 900,
+        "y": 1100,
         "wires": [
             [
                 "59366fbb.88318"
@@ -2998,7 +2997,7 @@
         "override_payload": true,
         "override_data": true,
         "x": 1150,
-        "y": 900,
+        "y": 1100,
         "wires": [
             [
                 "805e34e0.934a48"
@@ -3017,8 +3016,8 @@
         "mergecontext": "",
         "output_location": "payload",
         "output_location_type": "msg",
-        "x": 840,
-        "y": 300,
+        "x": 1140,
+        "y": 320,
         "wires": [
             []
         ]
@@ -3046,7 +3045,7 @@
         "repair": false,
         "outputs": 2,
         "x": 880,
-        "y": 900,
+        "y": 1100,
         "wires": [
             [
                 "17dd0169.527b5f"
@@ -3077,7 +3076,7 @@
         "repair": false,
         "outputs": 2,
         "x": 1400,
-        "y": 900,
+        "y": 1100,
         "wires": [
             [
                 "dee4af6a.215dc"
@@ -3097,7 +3096,7 @@
         "complete": "true",
         "targetType": "full",
         "x": 1620,
-        "y": 900,
+        "y": 1100,
         "wires": []
     },
     {
@@ -3391,6 +3390,8 @@
         "service": "alexa_tts",
         "data": "{\"entity_id\":\"media_player.bedroom\",\"message\":\"test\"}",
         "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
         "x": 880,
         "y": 1060,
         "wires": [
@@ -3455,6 +3456,8 @@
         "service": "alexa_tts",
         "data": "{\"entity_id\":\"media_player.bedroom\"}",
         "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
         "x": 960,
         "y": 860,
         "wires": [
@@ -3578,6 +3581,8 @@
         "service": "alexa_tts",
         "data": "{\"entity_id\":\"{{payload.entity_id}}\"}",
         "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
         "x": 940,
         "y": 1180,
         "wires": [
@@ -3995,7 +4000,7 @@
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "x": 170,
+        "x": 148,
         "y": 2400,
         "wires": [
             [
@@ -4015,7 +4020,7 @@
         "mergecontext": "",
         "output_location": "payload",
         "output_location_type": "msg",
-        "x": 510,
+        "x": 488,
         "y": 2400,
         "wires": [
             []
@@ -4361,7 +4366,7 @@
             "7f31a2c4.2e726c"
         ],
         "x": 1035,
-        "y": 460,
+        "y": 660,
         "wires": []
     },
     {
@@ -5264,7 +5269,7 @@
         "outputs": 1,
         "output_only_on_state_change": false,
         "x": 140,
-        "y": 1160,
+        "y": 1360,
         "wires": [
             [
                 "5f4591ce.85447",
@@ -5279,7 +5284,7 @@
         "name": "Office Door",
         "info": "",
         "x": 110,
-        "y": 1120,
+        "y": 1320,
         "wires": []
     },
     {
@@ -5289,7 +5294,7 @@
         "name": "Trun on Lving Room Light ",
         "info": "",
         "x": 690,
-        "y": 860,
+        "y": 1060,
         "wires": []
     },
     {
@@ -5312,7 +5317,7 @@
         "to": "",
         "reg": false,
         "x": 430,
-        "y": 740,
+        "y": 940,
         "wires": [
             [
                 "64a723bb.a421cc"
@@ -5331,7 +5336,7 @@
         "haltifstate": "",
         "outputs": 1,
         "x": 120,
-        "y": 638,
+        "y": 838,
         "wires": [
             [
                 "9c585f5f.3d0d4",
@@ -5359,7 +5364,7 @@
         "to": "",
         "reg": false,
         "x": 420,
-        "y": 638,
+        "y": 838,
         "wires": [
             [
                 "64a723bb.a421cc",
@@ -5413,7 +5418,7 @@
         "repair": false,
         "outputs": 2,
         "x": 850,
-        "y": 638,
+        "y": 838,
         "wires": [
             [
                 "227f7678.7fa0aa",
@@ -5447,7 +5452,7 @@
         "entity_location": "data",
         "override_data": "msg",
         "x": 1180,
-        "y": 640,
+        "y": 840,
         "wires": [
             [
                 "f767de46.4bd93"
@@ -5470,7 +5475,7 @@
         "repair": false,
         "outputs": 1,
         "x": 1480,
-        "y": 640,
+        "y": 840,
         "wires": [
             [
                 "f214d51b.258148",
@@ -5492,7 +5497,7 @@
         "output_location": "payload",
         "output_location_type": "msg",
         "x": 1750,
-        "y": 640,
+        "y": 840,
         "wires": [
             []
         ]
@@ -5510,7 +5515,7 @@
         "output_location": "payload",
         "output_location_type": "msg",
         "x": 1750,
-        "y": 500,
+        "y": 700,
         "wires": [
             []
         ]
@@ -5530,7 +5535,7 @@
         "bytopic": "all",
         "name": "",
         "x": 1730,
-        "y": 760,
+        "y": 960,
         "wires": [
             [
                 "1e5a6c60.ce90f4"
@@ -5555,7 +5560,7 @@
         "repair": false,
         "outputs": 1,
         "x": 1150,
-        "y": 758,
+        "y": 958,
         "wires": [
             [
                 "afeb8d84.4c3d5"
@@ -5582,7 +5587,7 @@
         "to": "",
         "reg": false,
         "x": 1440,
-        "y": 760,
+        "y": 960,
         "wires": [
             [
                 "f052224f.c6133"
@@ -5614,7 +5619,7 @@
         "name": "Todo - disable if camera is offline",
         "info": "",
         "x": 1670,
-        "y": 860,
+        "y": 1060,
         "wires": []
     },
     {
@@ -5647,7 +5652,7 @@
             "564fc868.c06818"
         ],
         "x": 1095,
-        "y": 718,
+        "y": 918,
         "wires": []
     },
     {
@@ -6127,7 +6132,7 @@
             "ba0cbec6.deb3e"
         ],
         "x": 975,
-        "y": 800,
+        "y": 1000,
         "wires": []
     },
     {
@@ -6400,7 +6405,10 @@
             "ab9413e4.3c106",
             "3a06d91d.c9d8a6",
             "51f52cc1.b9deb4",
-            "748d8b68.2ac2f4"
+            "748d8b68.2ac2f4",
+            "856f0f59.ec59e",
+            "e81c2f88.73a11",
+            "6d9e86a4.e66318"
         ],
         "x": 75,
         "y": 240,
@@ -6959,7 +6967,7 @@
         "retain": "false",
         "broker": "1b6bc4ba.56ff4b",
         "x": 1160,
-        "y": 680,
+        "y": 880,
         "wires": []
     },
     {
@@ -8407,39 +8415,6 @@
         "wires": [
             []
         ]
-    },
-    {
-        "id": "31858c57.244154",
-        "type": "server-state-changed",
-        "z": "1f9e3480.5be75c",
-        "name": "",
-        "server": "5ee4d578.f7736c",
-        "entityidfilter": "sensor.last_alexa",
-        "entityidfiltertype": "exact",
-        "outputinitially": false,
-        "haltifstate": "",
-        "outputs": 1,
-        "x": 270,
-        "y": 3240,
-        "wires": [
-            [
-                "ec8196ab.c45288"
-            ]
-        ]
-    },
-    {
-        "id": "ec8196ab.c45288",
-        "type": "debug",
-        "z": "1f9e3480.5be75c",
-        "name": "Last Alexa State Changed",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "x": 630,
-        "y": 3240,
-        "wires": []
     },
     {
         "id": "415a0565.3a3dac",
@@ -9942,7 +9917,7 @@
         "to": "",
         "reg": false,
         "x": 860,
-        "y": 380,
+        "y": 440,
         "wires": [
             []
         ]
@@ -10255,7 +10230,7 @@
             "4fe3f102.783b3"
         ],
         "x": 355,
-        "y": 520,
+        "y": 600,
         "wires": []
     },
     {
@@ -10266,7 +10241,9 @@
         "links": [
             "89bff1d4.a33a9",
             "90fde8f7.a26cb8",
-            "d320a708.e46708"
+            "d320a708.e46708",
+            "6f485fb3.adf71",
+            "f8efe1fe.a4a0e"
         ],
         "x": 155,
         "y": 580,
@@ -11543,7 +11520,7 @@
         "id": "f2f81d70.02f45",
         "type": "api-current-state",
         "z": "48ba348c.61270c",
-        "name": "",
+        "name": "Bathroom Light",
         "server": "5ee4d578.f7736c",
         "outputs": 1,
         "halt_if": "",
@@ -11688,7 +11665,7 @@
         "id": "a8b7b552.c40c58",
         "type": "inject",
         "z": "48ba348c.61270c",
-        "name": "",
+        "name": "Every 5 Minutes",
         "topic": "",
         "payload": "",
         "payloadType": "date",
@@ -14034,8 +14011,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 880,
-        "y": 340,
+        "x": 1180,
+        "y": 360,
         "wires": [
             []
         ]
@@ -14291,7 +14268,7 @@
             "79d508d7.4f2b68"
         ],
         "x": 355,
-        "y": 1160,
+        "y": 1360,
         "wires": []
     },
     {
@@ -15252,7 +15229,7 @@
         "to": "",
         "reg": false,
         "x": 450,
-        "y": 680,
+        "y": 880,
         "wires": [
             []
         ]
@@ -15640,7 +15617,7 @@
         "z": "a068bd5.28a8d4",
         "name": "",
         "x": 1040,
-        "y": 540,
+        "y": 740,
         "wires": [
             [
                 "408d5f52.6ad53"
@@ -15661,7 +15638,7 @@
         "output_location": "payload",
         "output_location_type": "msg",
         "x": 1440,
-        "y": 540,
+        "y": 740,
         "wires": [
             []
         ]
@@ -15675,7 +15652,7 @@
         "outputs": 1,
         "noerr": 0,
         "x": 1230,
-        "y": 540,
+        "y": 740,
         "wires": [
             [
                 "27a0c65e.2a12da"
@@ -17177,12 +17154,12 @@
         "server": "eef5a84.da24f58",
         "service_domain": "notify",
         "service": "mattiphone",
-        "data": "{\"message\":\"Warning! Frigde is greater then 6°C\"}",
+        "data": "{    \"message\": \"Warning! Frigde is greater then 6°C\"}",
         "mergecontext": "",
         "output_location": "payload",
         "output_location_type": "msg",
-        "x": 1700,
-        "y": 140,
+        "x": 1680,
+        "y": 80,
         "wires": [
             []
         ]
@@ -17199,8 +17176,8 @@
         "mergecontext": "",
         "output_location": "payload",
         "output_location_type": "msg",
-        "x": 1700,
-        "y": 180,
+        "x": 1680,
+        "y": 220,
         "wires": [
             []
         ]
@@ -17319,10 +17296,12 @@
         "y": 180,
         "wires": [
             [
-                "b89a4f68.e80b4"
+                "b89a4f68.e80b4",
+                "6d31ab7b.eb7514"
             ],
             [
-                "5dd0e20c.1b737c"
+                "5dd0e20c.1b737c",
+                "4fc7334b.b81cac"
             ]
         ]
     },
@@ -17629,12 +17608,12 @@
         "server": "eef5a84.da24f58",
         "service_domain": "notify",
         "service": "mattiphone",
-        "data": "{\"message\":\"Warning! Frigde is greater then 6°C\"}",
+        "data": "{\"message\":\"Warning! Feezer is greater then -20°C\"}",
         "mergecontext": "",
         "output_location": "payload",
         "output_location_type": "msg",
         "x": 1420,
-        "y": 900,
+        "y": 840,
         "wires": [
             []
         ]
@@ -17647,12 +17626,12 @@
         "server": "eef5a84.da24f58",
         "service_domain": "notify",
         "service": "mattiphone",
-        "data": "{\"message\":\"Frigde temperature restored\"}",
+        "data": "{\"message\":\"Freezer temperature restored\"}",
         "mergecontext": "",
         "output_location": "payload",
         "output_location_type": "msg",
         "x": 1420,
-        "y": 940,
+        "y": 980,
         "wires": [
             []
         ]
@@ -17770,7 +17749,9 @@
         "y": 940,
         "wires": [
             [
-                "cb576c15.2bb82"
+                "cb576c15.2bb82",
+                "46a1164f.bc0e28",
+                "3d5bb7f0.7d5888"
             ],
             [
                 "8cc3d334.3571e"
@@ -17806,7 +17787,7 @@
         "type": "mqtt out",
         "z": "84ed1066.f22de",
         "name": "availability/freezershelly",
-        "topic": "availability/fridgeshelly",
+        "topic": "availability/freezershelly",
         "qos": "2",
         "retain": "true",
         "broker": "1b6bc4ba.56ff4b",
@@ -18028,7 +18009,7 @@
         "op2": "",
         "op1type": "nul",
         "op2type": "pay",
-        "duration": "20",
+        "duration": "40",
         "extend": false,
         "units": "min",
         "reset": "",
@@ -18066,6 +18047,1211 @@
         "wires": [
             [
                 "dffc412b.555e2"
+            ]
+        ]
+    },
+    {
+        "id": "2e01df80.788d4",
+        "type": "inject",
+        "z": "1f9e3480.5be75c",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 150,
+        "y": 2680,
+        "wires": [
+            [
+                "482adf50.d5a9b"
+            ]
+        ]
+    },
+    {
+        "id": "482adf50.d5a9b",
+        "type": "api-call-service",
+        "z": "1f9e3480.5be75c",
+        "name": "",
+        "server": "5ee4d578.f7736c",
+        "service_domain": "media_player",
+        "service": "alexa_tts",
+        "data": "{\"entity_id\":\"media_player.office\",\"media_content_id\":\"spotify:playlist:Matt Awesomeness\",\"media_content_type\":\"SPOTIFY\"}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 480,
+        "y": 2680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4e651081.a3f9d",
+        "type": "api-call-service",
+        "z": "1f9e3480.5be75c",
+        "name": "",
+        "server": "eef5a84.da24f58",
+        "service_domain": "media_player",
+        "service": "alexa_tts",
+        "data": "{\"entity_id\":\"media_player.office\",\"message\":\"test\",\"type\":\"announce\"}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 620,
+        "y": 3380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c0d4f9e5.21d478",
+        "type": "inject",
+        "z": "1f9e3480.5be75c",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 260,
+        "y": 3380,
+        "wires": [
+            [
+                "4e651081.a3f9d"
+            ]
+        ]
+    },
+    {
+        "id": "d72255a3.a81358",
+        "type": "api-call-service",
+        "z": "1f9e3480.5be75c",
+        "name": "",
+        "server": "eef5a84.da24f58",
+        "service_domain": "notify",
+        "service": "alexa_media_office",
+        "data": "{    \"message\": \"test\"    ,\"data\":{\"type\":\"announce\", \"method\":\"speak\"}}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 630,
+        "y": 3500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "15af48c.64eaeb7",
+        "type": "inject",
+        "z": "1f9e3480.5be75c",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 260,
+        "y": 3500,
+        "wires": [
+            [
+                "d72255a3.a81358"
+            ]
+        ]
+    },
+    {
+        "id": "227c52a.611f8ae",
+        "type": "comment",
+        "z": "1f9e3480.5be75c",
+        "name": "working announce",
+        "info": "",
+        "x": 270,
+        "y": 3460,
+        "wires": []
+    },
+    {
+        "id": "ad0df8c3.8338f8",
+        "type": "api-call-service",
+        "z": "1f9e3480.5be75c",
+        "name": "",
+        "server": "eef5a84.da24f58",
+        "service_domain": "notify",
+        "service": "alexa_media_office",
+        "data": "{    \"message\": \"<amazon:effect name='whispered'>hello</amazon:effect>\",    \"data\": {        \"type\": \"announce\",        \"method\": \"speak\"    }}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 630,
+        "y": 3620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "52d3d825.33e748",
+        "type": "inject",
+        "z": "1f9e3480.5be75c",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 260,
+        "y": 3620,
+        "wires": [
+            [
+                "ad0df8c3.8338f8"
+            ]
+        ]
+    },
+    {
+        "id": "e5ddff.761fe2",
+        "type": "comment",
+        "z": "1f9e3480.5be75c",
+        "name": "working announce wisper",
+        "info": "",
+        "x": 290,
+        "y": 3580,
+        "wires": []
+    },
+    {
+        "id": "514977ec.00c9e8",
+        "type": "api-call-service",
+        "z": "1f9e3480.5be75c",
+        "name": "",
+        "server": "eef5a84.da24f58",
+        "service_domain": "notify",
+        "service": "alexa_media_danielle_s_echo_dot",
+        "data": "{    \"message\": \"<amazon:effect name='whispered'>love you!!</amazon:effect>\",    \"data\": {        \"type\": \"tts\",        \"method\": \"speak\"    }}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 670,
+        "y": 3760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5ef43786.725918",
+        "type": "inject",
+        "z": "1f9e3480.5be75c",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 260,
+        "y": 3760,
+        "wires": [
+            [
+                "514977ec.00c9e8"
+            ]
+        ]
+    },
+    {
+        "id": "db5147a9.fcaec8",
+        "type": "comment",
+        "z": "1f9e3480.5be75c",
+        "name": "working announce",
+        "info": "",
+        "x": 270,
+        "y": 3720,
+        "wires": []
+    },
+    {
+        "id": "786ad735.4c75c8",
+        "type": "api-call-service",
+        "z": "1f9e3480.5be75c",
+        "name": "",
+        "server": "eef5a84.da24f58",
+        "service_domain": "notify",
+        "service": "alexa_media_office",
+        "data": "{    \"message\": \"<amazon:effect name='whispered'>love you</amazon:effect>\",    \"data\": {        \"type\": \"announce\",        \"method\": \"speak\"    }}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 650,
+        "y": 3900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5bb45e59.7d733",
+        "type": "inject",
+        "z": "1f9e3480.5be75c",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 260,
+        "y": 3900,
+        "wires": [
+            [
+                "786ad735.4c75c8"
+            ]
+        ]
+    },
+    {
+        "id": "92fc2547.287d18",
+        "type": "api-call-service",
+        "z": "1f9e3480.5be75c",
+        "name": "",
+        "server": "eef5a84.da24f58",
+        "service_domain": "notify",
+        "service": "alexa_media_danielle_s_echo_dot",
+        "data": "{    \"message\": \"<amazon:effect name='whispered'>love you</amazon:effect>\",    \"data\": {        \"type\": \"announce\",        \"method\": \"speak\"    }}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 670,
+        "y": 3840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6018e4ec.eb39bc",
+        "type": "inject",
+        "z": "1f9e3480.5be75c",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 240,
+        "y": 3840,
+        "wires": [
+            [
+                "92fc2547.287d18"
+            ]
+        ]
+    },
+    {
+        "id": "42aa8b7f.0e86c4",
+        "type": "alexa-home",
+        "z": "1f9e3480.5be75c",
+        "conf": "3fa4c0fe.0f3ed",
+        "device": "55337",
+        "acknoledge": true,
+        "name": "Test Alexa",
+        "topic": "",
+        "x": 220,
+        "y": 4240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9b450a1d.dbec08",
+        "type": "debug",
+        "z": "1f9e3480.5be75c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 470,
+        "y": 4240,
+        "wires": []
+    },
+    {
+        "id": "cb412e26.b7636",
+        "type": "api-call-service",
+        "z": "1f9e3480.5be75c",
+        "name": "",
+        "server": "eef5a84.da24f58",
+        "service_domain": "media_player",
+        "service": "play_media",
+        "data": "{\"entity_id\":\"media_player.office\",\"media_content_id\":\"test hass\",\"media_content_type\":\"routine\"}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 550,
+        "y": 4180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1142b998.0c38a6",
+        "type": "inject",
+        "z": "1f9e3480.5be75c",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 220,
+        "y": 4180,
+        "wires": [
+            [
+                "cb412e26.b7636"
+            ]
+        ]
+    },
+    {
+        "id": "43eefc64.84b834",
+        "type": "comment",
+        "z": "1f9e3480.5be75c",
+        "name": "routine",
+        "info": "routine",
+        "x": 210,
+        "y": 4100,
+        "wires": []
+    },
+    {
+        "id": "fc85022.e94dc",
+        "type": "alexa-home",
+        "z": "48ba348c.61270c",
+        "conf": "3fa4c0fe.0f3ed",
+        "device": "55337",
+        "acknoledge": true,
+        "name": "Test Alexa",
+        "topic": "",
+        "x": 140,
+        "y": 2160,
+        "wires": [
+            [
+                "133788d9.3c7a57",
+                "7de9701c.ad9a5",
+                "19c4a6bc.fc0209"
+            ]
+        ]
+    },
+    {
+        "id": "badd92c3.692f9",
+        "type": "api-call-service",
+        "z": "48ba348c.61270c",
+        "name": "Call Routine",
+        "server": "eef5a84.da24f58",
+        "service_domain": "media_player",
+        "service": "play_media",
+        "data": "{\"entity_id\":\"media_player.office\",\"media_content_id\":\"test hass\",\"media_content_type\":\"routine\"}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 410,
+        "y": 2100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "41fcb984.0bf2d8",
+        "type": "comment",
+        "z": "48ba348c.61270c",
+        "name": "Alexa Inbound",
+        "info": "",
+        "x": 150,
+        "y": 2040,
+        "wires": []
+    },
+    {
+        "id": "b7739156.649f8",
+        "type": "inject",
+        "z": "48ba348c.61270c",
+        "name": "Every 4 Minutes",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "240",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "60",
+        "x": 170,
+        "y": 2100,
+        "wires": [
+            [
+                "badd92c3.692f9"
+            ]
+        ]
+    },
+    {
+        "id": "133788d9.3c7a57",
+        "type": "trigger",
+        "z": "48ba348c.61270c",
+        "op1": "",
+        "op2": "offline",
+        "op1type": "nul",
+        "op2type": "str",
+        "duration": "17",
+        "extend": true,
+        "units": "min",
+        "reset": "",
+        "bytopic": "all",
+        "name": "",
+        "x": 430,
+        "y": 2160,
+        "wires": [
+            [
+                "60cb00c7.59c35",
+                "e59d24a3.cbfcd8",
+                "e271efdf.ff522"
+            ]
+        ]
+    },
+    {
+        "id": "60cb00c7.59c35",
+        "type": "mqtt out",
+        "z": "48ba348c.61270c",
+        "name": "availability/alexaInbound",
+        "topic": "availability/alexaInbound",
+        "qos": "0",
+        "retain": "true",
+        "broker": "1b6bc4ba.56ff4b",
+        "x": 770,
+        "y": 2220,
+        "wires": []
+    },
+    {
+        "id": "7de9701c.ad9a5",
+        "type": "change",
+        "z": "48ba348c.61270c",
+        "name": "online",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "online",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "devicecheckin.bedroom",
+                "pt": "global",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 490,
+        "y": 2220,
+        "wires": [
+            [
+                "60cb00c7.59c35"
+            ]
+        ]
+    },
+    {
+        "id": "c9acc3a9.53cf3",
+        "type": "api-call-service",
+        "z": "48ba348c.61270c",
+        "name": "Lett Matt Know",
+        "server": "eef5a84.da24f58",
+        "service_domain": "notify",
+        "service": "mattiphone",
+        "data": "{\"message\":\"Alexa Inbound - Offline\"}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 1040,
+        "y": 2180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e59d24a3.cbfcd8",
+        "type": "change",
+        "z": "48ba348c.61270c",
+        "name": "Fault Details",
+        "rules": [
+            {
+                "t": "set",
+                "p": "fault.name",
+                "pt": "msg",
+                "to": "Alexa Inbound Command Failure ",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "fault.item",
+                "pt": "msg",
+                "to": "Alex inbound polling failed",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "fault.actiontofix",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 730,
+        "y": 2140,
+        "wires": [
+            [
+                "e81c2f88.73a11"
+            ]
+        ]
+    },
+    {
+        "id": "e81c2f88.73a11",
+        "type": "link out",
+        "z": "48ba348c.61270c",
+        "name": "Fault Detected",
+        "links": [
+            "c6717092.75d4b"
+        ],
+        "x": 935,
+        "y": 2140,
+        "wires": []
+    },
+    {
+        "id": "e271efdf.ff522",
+        "type": "subflow:85970b46.61e358",
+        "z": "48ba348c.61270c",
+        "name": "",
+        "env": [
+            {
+                "name": "NoteType",
+                "type": "str",
+                "value": "FAULT_DETECTION"
+            }
+        ],
+        "x": 740,
+        "y": 2180,
+        "wires": [
+            [
+                "c9acc3a9.53cf3"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "da9d8fb4.7e958",
+        "type": "inject",
+        "z": "48ba348c.61270c",
+        "name": "10 Second After Start up",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "10",
+        "x": 190,
+        "y": 2220,
+        "wires": [
+            [
+                "133788d9.3c7a57",
+                "7de9701c.ad9a5"
+            ]
+        ]
+    },
+    {
+        "id": "11760a49.5ca496",
+        "type": "trigger-state",
+        "z": "48ba348c.61270c",
+        "name": "",
+        "server": "5ee4d578.f7736c",
+        "entityid": "media_player.office",
+        "entityidfiltertype": "exact",
+        "debugenabled": false,
+        "constraints": [
+            {
+                "id": "76ay3wjv4kf",
+                "targetType": "this_entity",
+                "targetValue": "",
+                "propertyType": "property",
+                "propertyValue": "old_state.attributes.available",
+                "comparatorType": "is",
+                "comparatorValueDatatype": "bool",
+                "comparatorValue": "true"
+            },
+            {
+                "id": "7ol1px424bo",
+                "targetType": "this_entity",
+                "targetValue": "",
+                "propertyType": "property",
+                "propertyValue": "new_state.attributes.available",
+                "comparatorType": "is",
+                "comparatorValueDatatype": "bool",
+                "comparatorValue": "false"
+            }
+        ],
+        "constraintsmustmatch": "all",
+        "outputs": 2,
+        "customoutputs": [],
+        "outputinitially": false,
+        "state_type": "str",
+        "x": 210,
+        "y": 2400,
+        "wires": [
+            [
+                "9a239d2.5a0a66"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "b339803c.71f92",
+        "type": "api-call-service",
+        "z": "48ba348c.61270c",
+        "name": "Lett Matt Know",
+        "server": "eef5a84.da24f58",
+        "service_domain": "notify",
+        "service": "mattiphone",
+        "data": "{\"message\":\"Echo Office - Offline\"}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 720,
+        "y": 2400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9a239d2.5a0a66",
+        "type": "subflow:85970b46.61e358",
+        "z": "48ba348c.61270c",
+        "name": "",
+        "env": [
+            {
+                "name": "NoteType",
+                "type": "str",
+                "value": "FAULT_DETECTION"
+            }
+        ],
+        "x": 480,
+        "y": 2400,
+        "wires": [
+            [
+                "b339803c.71f92"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "1d8854f0.d579fb",
+        "type": "api-call-service",
+        "z": "1f9e3480.5be75c",
+        "name": "",
+        "server": "5ee4d578.f7736c",
+        "service_domain": "media_player",
+        "service": "play_media",
+        "data": "{\"entity_id\":\"media_player.office\",\"media_content_id\":\"spotify:song\",\"media_content_type\":\"SPOTIFY\"}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 530,
+        "y": 4480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4617748e.27d67c",
+        "type": "inject",
+        "z": "1f9e3480.5be75c",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 190,
+        "y": 4480,
+        "wires": [
+            [
+                "1d8854f0.d579fb"
+            ]
+        ]
+    },
+    {
+        "id": "b4eafbdf.3701c8",
+        "type": "comment",
+        "z": "1f9e3480.5be75c",
+        "name": "play my musise",
+        "info": "routine",
+        "x": 220,
+        "y": 4420,
+        "wires": []
+    },
+    {
+        "id": "ab73663a.33f708",
+        "type": "api-call-service",
+        "z": "1f9e3480.5be75c",
+        "name": "",
+        "server": "5ee4d578.f7736c",
+        "service_domain": "media_player",
+        "service": "play_media",
+        "data": "{\"entity_id\":\"media_player.office\",\"media_content_id\":\"spotify:tracks\",\"media_content_type\":\"SPOTIFY\"}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 530,
+        "y": 4540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fa722fb9.2311d",
+        "type": "inject",
+        "z": "1f9e3480.5be75c",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 190,
+        "y": 4540,
+        "wires": [
+            [
+                "ab73663a.33f708"
+            ]
+        ]
+    },
+    {
+        "id": "8ffe3f9.cb0b8c",
+        "type": "api-call-service",
+        "z": "a0cdc0f9.a362b",
+        "name": "Alexa Shower Time - Routine",
+        "server": "eef5a84.da24f58",
+        "service_domain": "media_player",
+        "service": "play_media",
+        "data": "{\"entity_id\":\"media_player.office\",\"media_content_id\":\"shower time\",\"media_content_type\":\"routine\"}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 720,
+        "y": 1380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6c3320de.22c4",
+        "type": "comment",
+        "z": "a0cdc0f9.a362b",
+        "name": "Shower Time",
+        "info": "",
+        "x": 150,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "8fa41eed.e0746",
+        "type": "link in",
+        "z": "a0cdc0f9.a362b",
+        "name": "",
+        "links": [],
+        "x": 100,
+        "y": 1380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "402e1b88.8e6d14",
+        "type": "server-state-changed",
+        "z": "a068bd5.28a8d4",
+        "name": "Bath Room Door",
+        "server": "5ee4d578.f7736c",
+        "entityidfilter": "binary_sensor.bathroom_door",
+        "entityidfiltertype": "substring",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 1,
+        "output_only_on_state_change": false,
+        "x": 120,
+        "y": 480,
+        "wires": [
+            [
+                "f6e880d3.d5189",
+                "6f485fb3.adf71"
+            ]
+        ]
+    },
+    {
+        "id": "f6e880d3.d5189",
+        "type": "change",
+        "z": "a068bd5.28a8d4",
+        "name": "Bathroom Door Open",
+        "rules": [
+            {
+                "t": "set",
+                "p": "location",
+                "pt": "msg",
+                "to": "Bathroom Door Open",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 440,
+        "y": 480,
+        "wires": [
+            [
+                "64a723bb.a421cc"
+            ]
+        ]
+    },
+    {
+        "id": "6f485fb3.adf71",
+        "type": "link out",
+        "z": "a068bd5.28a8d4",
+        "name": "Bathroom Door",
+        "links": [
+            "4fe3f102.783b3"
+        ],
+        "x": 355,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "d96fd86e.a642e8",
+        "type": "server-state-changed",
+        "z": "a068bd5.28a8d4",
+        "name": "Kitchen Cam",
+        "server": "5ee4d578.f7736c",
+        "entityidfilter": "binary_sensor.kitchencam_motion_sensor",
+        "entityidfiltertype": "substring",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 1,
+        "output_only_on_state_change": false,
+        "x": 110,
+        "y": 640,
+        "wires": [
+            [
+                "decef216.64021",
+                "f8efe1fe.a4a0e"
+            ]
+        ]
+    },
+    {
+        "id": "decef216.64021",
+        "type": "change",
+        "z": "a068bd5.28a8d4",
+        "name": "Kitchen Cam Motion Detected",
+        "rules": [
+            {
+                "t": "set",
+                "p": "location",
+                "pt": "msg",
+                "to": "Kitchen Cam Motion Detected",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 470,
+        "y": 640,
+        "wires": [
+            [
+                "64a723bb.a421cc"
+            ]
+        ]
+    },
+    {
+        "id": "f8efe1fe.a4a0e",
+        "type": "link out",
+        "z": "a068bd5.28a8d4",
+        "name": "Kitchen cam Motion Detected",
+        "links": [
+            "4fe3f102.783b3"
+        ],
+        "x": 355,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "7a16963d.9235c8",
+        "type": "server-state-changed",
+        "z": "1f9e3480.5be75c",
+        "name": "",
+        "server": "5ee4d578.f7736c",
+        "entityidfilter": "sensor.last_alexa",
+        "entityidfiltertype": "exact",
+        "outputinitially": false,
+        "haltifstate": "",
+        "outputs": 1,
+        "x": 250,
+        "y": 4800,
+        "wires": [
+            [
+                "c8f6ce16.1e173"
+            ]
+        ]
+    },
+    {
+        "id": "c8f6ce16.1e173",
+        "type": "debug",
+        "z": "1f9e3480.5be75c",
+        "name": "Last Alexa State Changed",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 610,
+        "y": 4800,
+        "wires": []
+    },
+    {
+        "id": "b3fa2d76.559f8",
+        "type": "inject",
+        "z": "1f9e3480.5be75c",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 180,
+        "y": 4700,
+        "wires": [
+            [
+                "9b6fe914.4d32e8"
+            ]
+        ]
+    },
+    {
+        "id": "9b6fe914.4d32e8",
+        "type": "api-call-service",
+        "z": "1f9e3480.5be75c",
+        "name": "",
+        "server": "5ee4d578.f7736c",
+        "service_domain": "alexa_media",
+        "service": "update_last_called",
+        "data": "",
+        "mergecontext": "",
+        "output_location": "",
+        "output_location_type": "none",
+        "x": 560,
+        "y": 4700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7186346f.4ab48c",
+        "type": "delay",
+        "z": "99d64a3d.f4e418",
+        "name": "wait 25 min",
+        "pauseType": "delay",
+        "timeout": "3",
+        "timeoutUnits": "hours",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 850,
+        "y": 340,
+        "wires": [
+            [
+                "a961f727.8da2a8",
+                "8f9c705.d69fb9"
+            ]
+        ]
+    },
+    {
+        "id": "19c4a6bc.fc0209",
+        "type": "debug",
+        "z": "48ba348c.61270c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 450,
+        "y": 2300,
+        "wires": []
+    },
+    {
+        "id": "46a1164f.bc0e28",
+        "type": "trigger",
+        "z": "84ed1066.f22de",
+        "op1": "",
+        "op2": "",
+        "op1type": "nul",
+        "op2type": "pay",
+        "duration": "-15",
+        "extend": false,
+        "units": "min",
+        "reset": "",
+        "bytopic": "all",
+        "name": "",
+        "x": 1650,
+        "y": 900,
+        "wires": [
+            [
+                "b252c457.5fe1b8"
+            ]
+        ]
+    },
+    {
+        "id": "b252c457.5fe1b8",
+        "type": "api-call-service",
+        "z": "84ed1066.f22de",
+        "name": "Lett Matt Know",
+        "server": "eef5a84.da24f58",
+        "service_domain": "notify",
+        "service": "mattiphone",
+        "data": "{\"message\":\"Warning! Feezer is still greater then -20°C\"}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 1900,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3d5bb7f0.7d5888",
+        "type": "change",
+        "z": "84ed1066.f22de",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "reset",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1420,
+        "y": 940,
+        "wires": [
+            [
+                "46a1164f.bc0e28"
+            ]
+        ]
+    },
+    {
+        "id": "6d31ab7b.eb7514",
+        "type": "trigger",
+        "z": "84ed1066.f22de",
+        "op1": "",
+        "op2": "",
+        "op1type": "nul",
+        "op2type": "pay",
+        "duration": "-15",
+        "extend": false,
+        "units": "min",
+        "reset": "",
+        "bytopic": "all",
+        "name": "",
+        "x": 1930,
+        "y": 120,
+        "wires": [
+            [
+                "87751cc2.966a4"
+            ]
+        ]
+    },
+    {
+        "id": "87751cc2.966a4",
+        "type": "api-call-service",
+        "z": "84ed1066.f22de",
+        "name": "Lett Matt Know",
+        "server": "eef5a84.da24f58",
+        "service_domain": "notify",
+        "service": "mattiphone",
+        "data": "{    \"message\": \"Warning! Frigde is still greater then 6°C\"}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 2180,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4fc7334b.b81cac",
+        "type": "change",
+        "z": "84ed1066.f22de",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "reset",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1680,
+        "y": 180,
+        "wires": [
+            [
+                "6d31ab7b.eb7514"
             ]
         ]
     }

@@ -42,16 +42,16 @@
       matt_in_bed:
         friendly_name: "Matt in Bed"
         value_template: >
-          {{((states("sensor.bed_weight_senor")|float >= 3800000 and states("sensor.bed_weight_senor")|float <= 4400000)) or (states("sensor.bed_weight_senor")|float >= 4600000) }}
+          {{((states("sensor.bed_weight_senor")|float >= states("input_number.matt_bed_weight")|float and states("sensor.bed_weight_senor")|float <= states("input_number.both_in_bed_weight")|float)) or (states("sensor.bed_weight_senor")|float >= states("input_number.both_in_bed_weight")|float) }}
       danni_in_bed:
         friendly_name: "Danni in Bed"
         value_template: >
-          {{((states("sensor.bed_weight_senor")|float >= 3100000 and states("sensor.bed_weight_senor")|float <= 3800000)) or (states("sensor.bed_weight_senor")|float >= 4600000) }}
+          {{((states("sensor.bed_weight_senor")|float >= states("input_number.danni_bed_weight")|float and states("sensor.bed_weight_senor")|float <= states("input_number.matt_bed_weight")|float )) or (states("sensor.bed_weight_senor")|float >= states("input_number.both_in_bed_weight")|float) }}
       num_in_master_bed:
         friendly_name: "Number of People in Bed"
         unit_of_measurement: 'people'
         value_template: >-
-          {% if  states("sensor.bed_weight_senor")|float >= 4600000 %}
+          {% if  states("sensor.bed_weight_senor")|float >= states("input_number.both_in_bed_weight")|float %}
               2
           {% elif states("sensor.bed_weight_senor")|float >= 3100000 %}
               1
