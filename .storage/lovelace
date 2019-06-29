@@ -394,6 +394,15 @@
                                 },
                                 {
                                     "entity": "switch.51268403dc4f2233b115"
+                                },
+                                {
+                                    "entity": "sensor.office_temperature"
+                                },
+                                {
+                                    "entity": "sensor.office_humidity"
+                                },
+                                {
+                                    "entity": "binary_sensor.office_door"
                                 }
                             ],
                             "title": "Office",
@@ -401,15 +410,6 @@
                         },
                         {
                             "entities": [
-                                {
-                                    "entity": "sensor.office_humidity"
-                                },
-                                {
-                                    "entity": "sensor.office_temperature"
-                                },
-                                {
-                                    "entity": "binary_sensor.office_door"
-                                },
                                 {
                                     "entity": "sensor.speedtest_ping"
                                 },
@@ -421,24 +421,9 @@
                                 }
                             ],
                             "show_header_toggle": false,
-                            "title": "Sensors",
+                            "theme": "Backend-selected",
+                            "title": "Internet Stats",
                             "type": "entities"
-                        },
-                        {
-                            "detail": 10,
-                            "entity": "sensor.office_temperature",
-                            "graph": "line",
-                            "hours_to_show": 6,
-                            "name": "Temperature (6 hours)",
-                            "theme": "default",
-                            "type": "sensor"
-                        },
-                        {
-                            "entity": "sensor.office_humidity",
-                            "graph": "line",
-                            "hours_to_show": 6,
-                            "name": "Humidity (6 hours)",
-                            "type": "sensor"
                         },
                         {
                             "entity": "media_player.office",
@@ -457,6 +442,18 @@
                                 },
                                 {
                                     "entity": "sensor.octoprint_actual_tool0_temp"
+                                },
+                                {
+                                    "entity": "sensor.octoprint_target_tool0_temp"
+                                },
+                                {
+                                    "entity": "sensor.octoprint_target_bed_temp"
+                                },
+                                {
+                                    "entity": "sensor.octoprint_time_elapsed"
+                                },
+                                {
+                                    "entity": "sensor.octoprint_time_remaining"
                                 }
                             ],
                             "show_header_toggle": false,
@@ -609,11 +606,28 @@
                         {
                             "camera_image": "camera.kitchen_cam",
                             "entities": [
-                                "switch.decorative_lights",
-                                "light.ceiling_lights"
+                                "switch.kitchencam_night_mode"
                             ],
                             "title": "Kitchen",
                             "type": "picture-glance"
+                        },
+                        {
+                            "camera_image": "camera.kitchencam_motion_snapshot",
+                            "entities": [
+                                "switch.kitchencam_night_mode"
+                            ],
+                            "title": "Motion Snapshot",
+                            "type": "picture-glance"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "binary_sensor.kitchencam_motion_sensor"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Kitchen",
+                            "type": "entities"
                         }
                     ],
                     "icon": "mdi:stove"
@@ -685,15 +699,6 @@
                         },
                         {
                             "entities": [
-                                "script.annoydanni",
-                                "script.test_push"
-                            ],
-                            "show_header_toggle": true,
-                            "title": "all scripts",
-                            "type": "entities"
-                        },
-                        {
-                            "entities": [
                                 "switch.0682373584f3eb675aab",
                                 "switch.51268403dc4f2233b115",
                                 "switch.1274756684f3ebb8900b",
@@ -705,33 +710,31 @@
                         },
                         {
                             "entities": [
-                                "light.bathroom_light",
-                                "light.bed_room_lamp",
-                                "light.bed_room_light",
-                                "light.hallway_light",
-                                "light.living_room_light_1",
-                                "light.living_room_light_2",
-                                "light.living_room_light_3",
-                                "light.office_light",
-                                "light.office_light_rgb"
+                                {
+                                    "entity": "input_number.matt_bed_weight"
+                                },
+                                {
+                                    "entity": "input_number.danni_bed_weight"
+                                },
+                                {
+                                    "entity": "input_number.both_in_bed_weight"
+                                },
+                                {
+                                    "entity": "sensor.bed_weight_senor"
+                                },
+                                {
+                                    "entity": "sensor.matt_in_bed"
+                                },
+                                {
+                                    "entity": "sensor.danni_in_bed"
+                                },
+                                {
+                                    "entity": "sensor.num_in_master_bed"
+                                }
                             ],
-                            "show_header_toggle": true,
-                            "title": "all lights",
+                            "show_header_toggle": false,
+                            "title": "Bed Settings",
                             "type": "entities"
-                        },
-                        {
-                            "entities": [
-                                "device_tracker.bt_matt_iphone",
-                                "device_tracker.bt_danni_iphone",
-                                "device_tracker.desktoprkr057t"
-                            ],
-                            "show_header_toggle": true,
-                            "title": "all devices",
-                            "type": "entities"
-                        },
-                        {
-                            "entity": "media_player.unnamed_device",
-                            "type": "media-control"
                         }
                     ],
                     "icon": "mdi:settings",
@@ -743,7 +746,7 @@
                         {
                             "entities": [
                                 {
-                                    "entity": "sensor.bath_room_temperature"
+                                    "entity": "sensor.bathroom_sensor_temperature"
                                 },
                                 {
                                     "entity": "sensor.bathroom_temperature"
@@ -822,8 +825,18 @@
                                 },
                                 {
                                     "entity": "binary_sensor.rm_mini_status"
+                                },
+                                {
+                                    "entity": "binary_sensor.alexa_inbound_status"
+                                },
+                                {
+                                    "entity": "binary_sensor.fridge_senor_status"
+                                },
+                                {
+                                    "entity": "binary_sensor.freezer_senor_status"
                                 }
                             ],
+                            "show_header_toggle": false,
                             "title": "Device Status",
                             "type": "entities"
                         },

@@ -81,4 +81,18 @@
     state_topic: "availability/livingroomcam"
     payload_on: "online"
     payload_off: "offline"
-
+  - platform: mqtt
+    name: "Alexa Inbound Status"
+    state_topic: "availability/alexaInbound"
+    payload_on: "online"
+    payload_off: "offline"
+  - platform: mqtt
+    name: "Fridge Senor Status"
+    state_topic: "availability/fridgeshelly"
+    payload_on: "online"
+    payload_off: "offline"
+  - platform: mqtt
+    name: "Freezer Senor Status"
+    state_topic: "availability/freezershelly"
+    payload_on: "online"
+    payload_off: "offline"
