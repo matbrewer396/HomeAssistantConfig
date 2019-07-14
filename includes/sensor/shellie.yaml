@@ -2,7 +2,7 @@
     name: "Fridge Temperature"
     state_topic: "shellies/shellyht-E00E22/sensor/temperature"
     unit_of_measurement: '°C'
-    expire_after : 10800
+    expire_after : 20800
     availability_topic: "availability/fridgeshelly"
     payload_available: "online"
     payload_not_available: "offline"
@@ -27,7 +27,7 @@
     name: "Freezer Temperature"
     state_topic: "shellies/shellyht-E00E0F/sensor/temperature"
     unit_of_measurement: '°C'
-    expire_after : 10800
+    expire_after : 20800
   - platform: mqtt
     name: "Freezer Humidity"
     state_topic: "shellies/shellyht-E00E0F/sensor/humidity"
