@@ -1,0 +1,42 @@
+  - platform: mqtt
+    name: "Kitchen Temperature"
+    state_topic: "kitchen/sensorarray"
+    unit_of_measurement: '°C'
+    value_template: "{{ value_json.temperature }}"
+    expire_after : 180
+    device_class: temperature
+    availability_topic: "availability/kitchenMCU"
+    payload_available: "online"
+    payload_not_available: "offline"
+  - platform: mqtt
+    name: "Kitchen Humidity"
+    state_topic: "kitchen/senorarray"
+    unit_of_measurement: '%'
+    value_template: "{{ value_json.humidity }}"
+    expire_after : 180
+    device_class: humidity
+    availability_topic: "availability/kitchenMCU"
+    payload_available: "online"
+    payload_not_available: "offline"
+  - platform: mqtt
+    name: "Kitchen Light Level"
+    state_topic: "kitchen/senorarray"
+    unit_of_measurement: '%'
+    value_template: "{{ value_json.lightlevel }}"
+    expire_after : 180
+    device_class: illuminance
+    availability_topic: "availability/kitchenMCU"
+    payload_available: "online"
+    payload_not_available: "offline"
+  - platform: mqtt
+    name: "Dishwasher Operational Status"
+    state_topic: "kitchen/dishwasherLDR"
+    availability_topic: "availability/kitchenMCU"
+    payload_available: "online"
+    payload_not_available: "offline"
+  - platform: mqtt
+    name: "Dishwasher Status"
+    state_topic: "kitchen/dishwasher"
+    availability_topic: "availability/kitchenMCU"
+    payload_available: "online"
+    payload_not_available: "offline"
