@@ -1,52 +1,4 @@
   - platform: mqtt
-    name: "Office Door"
-    state_topic: "office/MRS/2"
-    payload_on: Open
-    payload_off: Closed
-    availability_topic: "availability/OfficeMCU"
-    payload_available: "online"
-    payload_not_available: "offline"
-    qos: 0
-    device_class: door
-  - platform: mqtt
-    name: "Font Door"
-    state_topic: "office/MRS/1"
-    payload_on: Open
-    payload_off: Closed
-    availability_topic: "availability/OfficeMCU"
-    payload_available: "online"
-    payload_not_available: "offline"
-    qos: 0
-    device_class: door
-  - platform: mqtt
-    name: "BedRoom Window"
-    state_topic: "bedroom/mrs/1"
-    payload_on: Open
-    payload_off: Closed
-    qos: 0
-    device_class: door
-    availability_topic: "availability/bedroomMCU"
-    payload_available: "online"
-    payload_not_available: "offline"
-  - platform: mqtt
-    name: "BathRoom Door"
-    state_topic: "barthroom/mrs/1"
-    payload_on: Open
-    payload_off: Closed
-    qos: 0
-    device_class: door
-    availability_topic: "availability/bathroomMCU"
-    payload_available: "online"
-    payload_not_available: "offline"
-  - platform: rpi_gpio
-    ports:
-      17: Living Room PIR
-  - platform: huesensor
-
-
-#availability
-##############################################################
-  - platform: mqtt
     name: "Office MCU Status"
     state_topic: "availability/OfficeMCU"
     payload_on: "online"
@@ -94,5 +46,10 @@
   - platform: mqtt
     name: "Freezer Senor Status"
     state_topic: "availability/freezershelly"
+    payload_on: "online"
+    payload_off: "offline"
+  - platform: mqtt
+    name: "kitchenMCU Senor Status"
+    state_topic: "availability/kitchenMCU"
     payload_on: "online"
     payload_off: "offline"

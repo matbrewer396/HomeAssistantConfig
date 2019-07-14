@@ -39,7 +39,7 @@ map:
 
 # includes
 sensor: !include_dir_merge_list includes/sensor/
-binary_sensor: !include includes/binary_sensor.yaml
+binary_sensor: !include_dir_merge_list includes/binary_sensor/
 input_boolean: !include includes/input_boolean.yaml
 switch: !include includes/switch.yaml
 group: !include includes/groups.yaml
@@ -141,12 +141,5 @@ speedtestdotnet:
     - download
     - upload
 
-camera:
-  - platform: generic
-    name: Kitchen Cam
-    username: !secret kitchen_cam_user
-    password: !secret kitchen_cam_password
-    authentication: basic
-    still_image_url: https://192.168.1.212/cgi-bin/currentpic.cgi
-    verify_ssl: false
-    scan_interval: 5
+
+mobile_app:

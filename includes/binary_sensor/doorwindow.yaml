@@ -1,0 +1,40 @@
+  - platform: mqtt
+    name: "Office Door"
+    state_topic: "office/MRS/2"
+    payload_on: Open
+    payload_off: Closed
+    availability_topic: "availability/OfficeMCU"
+    payload_available: "online"
+    payload_not_available: "offline"
+    qos: 0
+    device_class: door
+  - platform: mqtt
+    name: "Font Door"
+    state_topic: "office/MRS/1"
+    payload_on: Open
+    payload_off: Closed
+    availability_topic: "availability/OfficeMCU"
+    payload_available: "online"
+    payload_not_available: "offline"
+    qos: 0
+    device_class: door
+  - platform: mqtt
+    name: "BedRoom Window"
+    state_topic: "bedroom/mrs/1"
+    payload_on: Open
+    payload_off: Closed
+    qos: 0
+    device_class: door
+    availability_topic: "availability/bedroomMCU"
+    payload_available: "online"
+    payload_not_available: "offline"
+  - platform: mqtt
+    name: "BathRoom Door"
+    state_topic: "barthroom/mrs/1"
+    payload_on: Open
+    payload_off: Closed
+    qos: 0
+    device_class: door
+    availability_topic: "availability/bathroomMCU"
+    payload_available: "online"
+    payload_not_available: "offline"

@@ -1,0 +1,14 @@
+  - platform: rpi_gpio
+    ports:
+      17: Living Room PIR
+
+
+  - platform: mqtt
+    name: "Kitchen Motion"
+    state_topic: "kitchen/pir"
+    availability_topic: "availability/kitchenMCU"
+    payload_available: "online"
+    payload_not_available: "offline"
+    payload_on: true
+    payload_off: false
+    device_class: motion
