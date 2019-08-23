@@ -198,6 +198,9 @@
                     "title": "Home"
                 },
                 {
+                    "badges": [
+                        "sensor.doorbell"
+                    ],
                     "cards": [
                         {
                             "cards": [
@@ -606,15 +609,15 @@
                         {
                             "camera_image": "camera.kitchen_cam",
                             "entities": [
-                                "switch.kitchencam_night_mode"
+                                "switch.kitchencam_night_mode_2"
                             ],
-                            "title": "Kitchen",
+                            "title": "Motion Snapshot",
                             "type": "picture-glance"
                         },
                         {
-                            "camera_image": "camera.kitchencam_motion_snapshot",
+                            "camera_image": "camera.kitchencam_motion_snapshot_2",
                             "entities": [
-                                "switch.kitchencam_night_mode"
+                                "switch.kitchencam_night_mode_2"
                             ],
                             "title": "Motion Snapshot",
                             "type": "picture-glance"
@@ -623,6 +626,27 @@
                             "entities": [
                                 {
                                     "entity": "binary_sensor.kitchencam_motion_sensor"
+                                },
+                                {
+                                    "entity": "sensor.kitchen_humidity"
+                                },
+                                {
+                                    "entity": "sensor.kitchen_light_level"
+                                },
+                                {
+                                    "entity": "sensor.kitchen_temperature"
+                                },
+                                {
+                                    "entity": "binary_sensor.kitchen_motion"
+                                },
+                                {
+                                    "entity": "sensor.dishwasher_status"
+                                },
+                                {
+                                    "entity": "sensor.dishwasher_operational_status"
+                                },
+                                {
+                                    "entity": "switch.77168577bcddc292c859"
                                 }
                             ],
                             "show_header_toggle": false,
@@ -866,7 +890,7 @@
                     "badges": [],
                     "cards": [
                         {
-                            "camera_image": "camera.my_camera",
+                            "camera_image": "camera.officecam",
                             "entities": [
                                 "switch.decorative_lights",
                                 "light.ceiling_lights"
