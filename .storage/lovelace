@@ -1,6 +1,20 @@
 {
     "data": {
         "config": {
+            "decluttering_templates": {
+                "my_first_template": {
+                    "card": {
+                        "icon": "mdi:[[icon]]",
+                        "name": "[[name]]",
+                        "type": "custom:button-card"
+                    },
+                    "default": [
+                        {
+                            "icon": "fire"
+                        }
+                    ]
+                }
+            },
             "resources": [
                 {
                     "type": "js",
@@ -13,6 +27,14 @@
                 {
                     "type": "js",
                     "url": "/local/custom_ui/gauge-card.js?v=0"
+                },
+                {
+                    "type": "module",
+                    "url": "/community_plugin/decluttering-card/decluttering-card.js"
+                },
+                {
+                    "type": "module",
+                    "url": "/community_plugin/button-card/button-card.js"
                 }
             ],
             "title": "Matt and Danni Home",
@@ -1064,6 +1086,29 @@
                             "show_header_toggle": false,
                             "title": "plug_01",
                             "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "input_select.alexa_tts_echo"
+                                },
+                                {
+                                    "entity": "input_text.alexa_tts"
+                                }
+                            ],
+                            "type": "entities"
+                        },
+                        {
+                            "template": "my_first_template",
+                            "type": "custom:decluttering-card",
+                            "variables": [
+                                {
+                                    "name": "Test Button"
+                                },
+                                {
+                                    "icon": "arrow-up"
+                                }
+                            ]
                         }
                     ],
                     "title": "test"

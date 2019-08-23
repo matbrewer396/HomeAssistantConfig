@@ -16,3 +16,9 @@
      - Off
      - Unknown
     initial: Unknown
+  alexa_tts_echo:
+    name: Alexa TTS Echos
+    options:
+      - all
+      - down
+      - up

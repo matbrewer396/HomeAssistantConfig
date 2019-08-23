@@ -195,11 +195,21 @@
         "env": [
             {
                 "name": "message",
-                "type": "json",
+                "type": "str",
                 "value": ""
             },
             {
                 "name": "who",
+                "type": "str",
+                "value": ""
+            },
+            {
+                "name": "notification_id",
+                "type": "str",
+                "value": ""
+            },
+            {
+                "name": "title",
                 "type": "str",
                 "value": ""
             }
@@ -938,7 +948,7 @@
         "output_location": "payload",
         "output_location_type": "msg",
         "mustacheAltTags": false,
-        "x": 1050,
+        "x": 710,
         "y": 180,
         "wires": [
             []
@@ -2634,6 +2644,13 @@
                 "pt": "msg",
                 "to": "https://msb396.duckdns.org/api/camera_proxy/camera.living_room?token=6bf07bbf33a0a37622a7fd25c019ed1fb1169449b4a0b808fafdb5800b2e5c3f",
                 "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "trusted",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
             }
         ],
         "action": "",
@@ -2644,7 +2661,9 @@
         "x": 440,
         "y": 831,
         "wires": [
-            []
+            [
+                "64a723bb.a421cc"
+            ]
         ]
     },
     {
@@ -3935,43 +3954,6 @@
         ]
     },
     {
-        "id": "e2c54a54.29fbd8",
-        "type": "api-call-service",
-        "z": "a0a4859f.5a2a48",
-        "name": "Lett Matt Know",
-        "server": "eef5a84.da24f58",
-        "service_domain": "notify",
-        "service": "mattiphone",
-        "data": "{}",
-        "mergecontext": "",
-        "output_location": "payload",
-        "output_location_type": "msg",
-        "mustacheAltTags": false,
-        "x": 1480,
-        "y": 180,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "fe85fa47.00ac98",
-        "type": "api-call-service",
-        "z": "a0a4859f.5a2a48",
-        "name": "Let Danni Know",
-        "server": "eef5a84.da24f58",
-        "service_domain": "notify",
-        "service": "danniiphone",
-        "data": "{}",
-        "mergecontext": "",
-        "output_location": "payload",
-        "output_location_type": "msg",
-        "x": 1480,
-        "y": 240,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "f2f1fbdd.6f99a8",
         "type": "api-current-state",
         "z": "a0a4859f.5a2a48",
@@ -3987,7 +3969,7 @@
         "y": 180,
         "wires": [
             [
-                "96f1c335.74979"
+                "ddc8f250.0fbf6"
             ]
         ]
     },
@@ -4034,10 +4016,9 @@
         "y": 186,
         "wires": [
             [
-                "e2c54a54.29fbd8",
-                "fe85fa47.00ac98",
                 "99c603ae.2957",
-                "7825ad5c.712c84"
+                "7825ad5c.712c84",
+                "4766ddd2.ac3f44"
             ]
         ]
     },
@@ -13804,15 +13785,14 @@
         "type": "function",
         "z": "a0a4859f.5a2a48",
         "name": "Data",
-        "func": "var loc = \"Alarm not active - \" + msg.location;\n\n\nmsg.payload = \n{\n  \"data\": \n  {\n    \"message\": loc,\n    \"data\": \n    {\n      \"push\": {\n            \"badge\": 5,\n            \"category\": \"alarm\"\n        },\"attachment\": \n      {\n        \"url\": msg.image,\n        \"content-type\": \"jpeg\",\n        \"hide-thumbnail\": false\n      }\n    }\n  }\n}\nreturn msg;",
+        "func": "var loc = \"Alarm not active - \" + msg.location;\nif (msg.trusted == false) {\n    loc = \"untrusted motion detected alarm will not trigger - \"  + msg.location\n}\n\nmsg.payload = \n{\n  \"data\": \n  {\n    \"message\": loc,\n    \"data\": \n    {\n      \"push\": {\n            \"badge\": 5,\n            \"category\": \"alarm\"\n        },\"attachment\": \n      {\n        \"url\": msg.image,\n        \"content-type\": \"jpeg\",\n        \"hide-thumbnail\": false\n      }\n    }\n  }\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "x": 1190,
         "y": 100,
         "wires": [
             [
-                "e2c54a54.29fbd8",
-                "fe85fa47.00ac98"
+                "4766ddd2.ac3f44"
             ]
         ]
     },
@@ -18060,6 +18040,13 @@
                 "pt": "msg",
                 "to": "Kitchen Cam Motion Detected",
                 "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "trusted",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
             }
         ],
         "action": "",
@@ -18792,14 +18779,20 @@
         "type": "function",
         "z": "a83e69e1.4b2ab8",
         "name": "Data",
-        "func": "var mess = env.get(\"message\")\n\nvar who = env.get(\"who\")\nvar target;\nif (who == \"Matt\") {\n   target = \"mattiphone_iphone_10smax\"\n} else if (who == \"Danni\") {\n   target = \"mattiphone_danni_iphonexr\"    \n} else {\n   target = \"mattiphone\"\n}\n\n\nif (mess == \"PAYLOAD\") {\n    msg.payload = \n    {\n      \"service\": target,\n      \"data\": msg.payload.data \n    }\n} else {\n    msg.payload = \n    {\n      \"service\": target,\n      \"data\": \n      {\n        \"message\": mess\n      }\n    }\n}\n\n\nreturn msg;",
-        "outputs": 1,
+        "func": "var mess = env.get(\"message\")\nvar title = env.get(\"title\")\n\nvar notification_id = env.get(\"notification_id\")\n\nvar who = env.get(\"who\")\nvar target;\nif (who == \"Matt\") {\n   target = \"mattiphone_iphone_10smax\"\n} else if (who == \"Danni\") {\n   target = \"mattiphone_danni_iphonexr\" \n} else if (who == \"\") {\n    target = \"\"\n} else {\n   target = \"mattiphone\"\n}\n\n\nif (mess == \"PAYLOAD\") {\n    msg.payload = \n    {\n      \"service\": target,\n      \"data\": msg.payload.data \n    }\n} else {\n    msg.payload = \n    {\n      \"service\": target,\n      \"data\": \n      {\n        \"message\": mess\n      }\n    }\n}\n\nvar createNot = null\nvar clearNot = null\nif( notification_id !== \"\" ) {\n    if (title == \"CLEARED\") {\n        clearNot = {\n         \"payload\": {\n             \"data\": {\n                    \"notification_id\":notification_id\n                }\n            }\n        }\n    } else {\n        createNot = {\n         \"payload\": {\n             \"data\": {\n                    \"message\": mess,\n                    \"title\": title,\n                    \"notification_id\":notification_id\n                }\n            }\n        }\n    }\n    \n}\n\n\nif (target == \"\") {\n    msg = null\n}\n\n\nreturn [msg,createNot,clearNot];",
+        "outputs": 3,
         "noerr": 0,
         "x": 450,
         "y": 180,
         "wires": [
             [
                 "839c216a.4a97d"
+            ],
+            [
+                "107302af.bf410d"
+            ],
+            [
+                "21ae6270.68b64e"
             ]
         ]
     },
@@ -21408,7 +21401,8 @@
         "y": 380,
         "wires": [
             [
-                "4265f93c.c31368"
+                "4265f93c.c31368",
+                "35d0937d.32b63c"
             ]
         ]
     },
@@ -21435,7 +21429,8 @@
         "y": 420,
         "wires": [
             [
-                "4265f93c.c31368"
+                "4265f93c.c31368",
+                "4974bc55.4878e4"
             ]
         ]
     },
@@ -21462,7 +21457,8 @@
         "y": 460,
         "wires": [
             [
-                "4265f93c.c31368"
+                "4265f93c.c31368",
+                "4974bc55.4878e4"
             ]
         ]
     },
@@ -21489,7 +21485,8 @@
         "y": 500,
         "wires": [
             [
-                "4265f93c.c31368"
+                "4265f93c.c31368",
+                "4974bc55.4878e4"
             ]
         ]
     },
@@ -21622,5 +21619,799 @@
                 "d72e9909.52f548"
             ]
         ]
+    },
+    {
+        "id": "1e85a050.8412e",
+        "type": "api-call-service",
+        "z": "5625076e.ee59e8",
+        "name": "",
+        "server": "5ee4d578.f7736c",
+        "service_domain": "persistent_notification",
+        "service": "create",
+        "data": "{\"message\":\"Test mesas\",\"title\":\"Test\",\"notification_id\":\"TEST_STATUS\"}",
+        "mergecontext": "",
+        "output_location": "",
+        "output_location_type": "none",
+        "mustacheAltTags": false,
+        "x": 660,
+        "y": 660,
+        "wires": [
+            [
+                "777dcdd0.a0f054"
+            ]
+        ]
+    },
+    {
+        "id": "8f560a67.f57328",
+        "type": "inject",
+        "z": "5625076e.ee59e8",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 200,
+        "y": 660,
+        "wires": [
+            [
+                "1e85a050.8412e"
+            ]
+        ]
+    },
+    {
+        "id": "4316a52c.7d3e4c",
+        "type": "api-call-service",
+        "z": "5625076e.ee59e8",
+        "name": "",
+        "server": "5ee4d578.f7736c",
+        "service_domain": "persistent_notification",
+        "service": "mark_read",
+        "data": "{\"notification_id\":\"TEST_STATUS\"}",
+        "mergecontext": "",
+        "output_location": "",
+        "output_location_type": "none",
+        "mustacheAltTags": false,
+        "x": 670,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cf940c07.d9f6e",
+        "type": "inject",
+        "z": "5625076e.ee59e8",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 200,
+        "y": 700,
+        "wires": [
+            [
+                "4316a52c.7d3e4c"
+            ]
+        ]
+    },
+    {
+        "id": "d253c5f.8474838",
+        "type": "api-call-service",
+        "z": "5625076e.ee59e8",
+        "name": "",
+        "server": "5ee4d578.f7736c",
+        "service_domain": "persistent_notification",
+        "service": "dismiss",
+        "data": "{\"notification_id\":\"TEST_STATUS\"}",
+        "mergecontext": "",
+        "output_location": "",
+        "output_location_type": "none",
+        "mustacheAltTags": false,
+        "x": 660,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "737971fa.45f07",
+        "type": "inject",
+        "z": "5625076e.ee59e8",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 200,
+        "y": 740,
+        "wires": [
+            [
+                "d253c5f.8474838"
+            ]
+        ]
+    },
+    {
+        "id": "caf78461.797e28",
+        "type": "api-call-service",
+        "z": "5625076e.ee59e8",
+        "name": "",
+        "server": "5ee4d578.f7736c",
+        "service_domain": "persistent_notification",
+        "service": "create",
+        "data": "{\"message\":\"Test mesas 2\",\"title\":\"Test\",\"notification_id\":\"TEST_STATUS\"}",
+        "mergecontext": "",
+        "output_location": "",
+        "output_location_type": "none",
+        "mustacheAltTags": false,
+        "x": 660,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "505a1442.9d24ac",
+        "type": "inject",
+        "z": "5625076e.ee59e8",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 200,
+        "y": 620,
+        "wires": [
+            [
+                "caf78461.797e28"
+            ]
+        ]
+    },
+    {
+        "id": "11e9587a.801138",
+        "type": "api-call-service",
+        "z": "5625076e.ee59e8",
+        "name": "",
+        "server": "5ee4d578.f7736c",
+        "service_domain": "persistent_notification",
+        "service": "create",
+        "data": "{\"message\":\"Test mesas 2\",\"title\":\"Test 3\",\"notification_id\":\"TEST_STATUS\"}",
+        "mergecontext": "",
+        "output_location": "",
+        "output_location_type": "none",
+        "mustacheAltTags": false,
+        "x": 640,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "797ea2c9.e54f2c",
+        "type": "inject",
+        "z": "5625076e.ee59e8",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 180,
+        "y": 580,
+        "wires": [
+            [
+                "11e9587a.801138"
+            ]
+        ]
+    },
+    {
+        "id": "2ecc5432.0e657c",
+        "type": "inject",
+        "z": "5625076e.ee59e8",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 180,
+        "y": 860,
+        "wires": [
+            [
+                "17b880fd.520f4f"
+            ]
+        ]
+    },
+    {
+        "id": "17b880fd.520f4f",
+        "type": "subflow:a83e69e1.4b2ab8",
+        "z": "5625076e.ee59e8",
+        "name": "",
+        "env": [
+            {
+                "name": "message",
+                "type": "str",
+                "value": "Hello"
+            },
+            {
+                "name": "who",
+                "type": "str",
+                "value": "Matt"
+            }
+        ],
+        "x": 500,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "79fc60a0.6824a",
+        "type": "inject",
+        "z": "5625076e.ee59e8",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 180,
+        "y": 920,
+        "wires": [
+            [
+                "6ebdb102.efdff"
+            ]
+        ]
+    },
+    {
+        "id": "6ebdb102.efdff",
+        "type": "subflow:a83e69e1.4b2ab8",
+        "z": "5625076e.ee59e8",
+        "name": "",
+        "env": [
+            {
+                "name": "message",
+                "type": "str",
+                "value": "Hello"
+            },
+            {
+                "name": "who",
+                "type": "str",
+                "value": "Matt"
+            },
+            {
+                "name": "notification_id",
+                "type": "str",
+                "value": "fdgf"
+            }
+        ],
+        "x": 500,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "107302af.bf410d",
+        "type": "api-call-service",
+        "z": "a83e69e1.4b2ab8",
+        "name": "",
+        "server": "eef5a84.da24f58",
+        "service_domain": "persistent_notification",
+        "service": "create",
+        "data": "{}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "mustacheAltTags": false,
+        "x": 780,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "777dcdd0.a0f054",
+        "type": "debug",
+        "z": "5625076e.ee59e8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 970,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "bdb64371.3e3f2",
+        "type": "inject",
+        "z": "5625076e.ee59e8",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 180,
+        "y": 1000,
+        "wires": [
+            [
+                "67b09a7e.6e4434"
+            ]
+        ]
+    },
+    {
+        "id": "67b09a7e.6e4434",
+        "type": "subflow:a83e69e1.4b2ab8",
+        "z": "5625076e.ee59e8",
+        "name": "",
+        "env": [
+            {
+                "name": "message",
+                "type": "str",
+                "value": "somethign else"
+            },
+            {
+                "name": "who",
+                "type": "str",
+                "value": "Matt"
+            },
+            {
+                "name": "notification_id",
+                "type": "str",
+                "value": "fdgf"
+            },
+            {
+                "name": "title",
+                "type": "str",
+                "value": "New toitle"
+            }
+        ],
+        "x": 500,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "21ae6270.68b64e",
+        "type": "api-call-service",
+        "z": "a83e69e1.4b2ab8",
+        "name": "",
+        "server": "eef5a84.da24f58",
+        "service_domain": "persistent_notification",
+        "service": "dismiss",
+        "data": "{}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "mustacheAltTags": false,
+        "x": 780,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2f94a2c3.b155ae",
+        "type": "inject",
+        "z": "5625076e.ee59e8",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 180,
+        "y": 1220,
+        "wires": [
+            [
+                "34a4d39.8bcdb2c"
+            ]
+        ]
+    },
+    {
+        "id": "34a4d39.8bcdb2c",
+        "type": "subflow:a83e69e1.4b2ab8",
+        "z": "5625076e.ee59e8",
+        "name": "",
+        "env": [
+            {
+                "name": "message",
+                "type": "str",
+                "value": "somethign else"
+            },
+            {
+                "name": "who",
+                "type": "str",
+                "value": "Matt"
+            },
+            {
+                "name": "notification_id",
+                "type": "str",
+                "value": "fdgf"
+            },
+            {
+                "name": "title",
+                "type": "str",
+                "value": "CLEARED"
+            }
+        ],
+        "x": 500,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "35d0937d.32b63c",
+        "type": "trigger",
+        "z": "e361c01.ee9f54",
+        "op1": "",
+        "op2": "0",
+        "op1type": "nul",
+        "op2type": "str",
+        "duration": "2",
+        "extend": false,
+        "units": "hr",
+        "reset": "",
+        "bytopic": "all",
+        "name": "",
+        "x": 930,
+        "y": 360,
+        "wires": [
+            [
+                "9f63165a.d89408",
+                "a11fdde.730532"
+            ]
+        ]
+    },
+    {
+        "id": "4974bc55.4878e4",
+        "type": "change",
+        "z": "e361c01.ee9f54",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "reset",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 720,
+        "y": 400,
+        "wires": [
+            [
+                "35d0937d.32b63c",
+                "8ad6dfaa.2113f"
+            ]
+        ]
+    },
+    {
+        "id": "9f63165a.d89408",
+        "type": "subflow:a83e69e1.4b2ab8",
+        "z": "e361c01.ee9f54",
+        "name": "Hot Idle",
+        "env": [
+            {
+                "name": "message",
+                "type": "str",
+                "value": "hot tub has been idle for more then "
+            },
+            {
+                "name": "who",
+                "type": "str",
+                "value": "Matt"
+            },
+            {
+                "name": "notification_id",
+                "type": "str",
+                "value": "HOT_TUB_STATUS"
+            },
+            {
+                "name": "title",
+                "type": "str",
+                "value": "Hot Tub Offline"
+            }
+        ],
+        "x": 1160,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "6cc4111d.451eb",
+        "type": "subflow:a83e69e1.4b2ab8",
+        "z": "e361c01.ee9f54",
+        "name": "Hot Restored",
+        "env": [
+            {
+                "name": "message",
+                "type": "str",
+                "value": "Hot tube back on line"
+            },
+            {
+                "name": "who",
+                "type": "str",
+                "value": "both"
+            },
+            {
+                "name": "notification_id",
+                "type": "str",
+                "value": "HOT_TUB_STATUS"
+            },
+            {
+                "name": "title",
+                "type": "str",
+                "value": "CLEARED"
+            }
+        ],
+        "x": 1170,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "a11fdde.730532",
+        "type": "change",
+        "z": "e361c01.ee9f54",
+        "name": "Idle Status = True",
+        "rules": [
+            {
+                "t": "set",
+                "p": "hottub.idlestatus",
+                "pt": "global",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1190,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "419b14f2.a8fb9c",
+        "type": "change",
+        "z": "e361c01.ee9f54",
+        "name": "Idle Status = False",
+        "rules": [
+            {
+                "t": "set",
+                "p": "hottub.idlestatus",
+                "pt": "global",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1190,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8ad6dfaa.2113f",
+        "type": "switch",
+        "z": "e361c01.ee9f54",
+        "name": "Idle Status",
+        "property": "hottub.idlestatus",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 930,
+        "y": 420,
+        "wires": [
+            [
+                "6cc4111d.451eb",
+                "419b14f2.a8fb9c"
+            ],
+            [
+                "419b14f2.a8fb9c",
+                "5a385c61.1d7704"
+            ]
+        ]
+    },
+    {
+        "id": "5a385c61.1d7704",
+        "type": "subflow:a83e69e1.4b2ab8",
+        "z": "e361c01.ee9f54",
+        "name": "Hot Restored - Dont send notication",
+        "env": [
+            {
+                "name": "notification_id",
+                "type": "str",
+                "value": "HOT_TUB_STATUS"
+            },
+            {
+                "name": "title",
+                "type": "str",
+                "value": "CLEARED"
+            }
+        ],
+        "x": 1240,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "5fee203c.653f4",
+        "type": "server-state-changed",
+        "z": "f92add19.c43b9",
+        "name": "",
+        "server": "5ee4d578.f7736c",
+        "version": 1,
+        "entityidfilter": "input_text.alexa_tts",
+        "entityidfiltertype": "exact",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 1,
+        "output_only_on_state_change": true,
+        "x": 160,
+        "y": 720,
+        "wires": [
+            [
+                "62af2699.5a7be8"
+            ]
+        ]
+    },
+    {
+        "id": "dc4f4973.c90148",
+        "type": "subflow:47bc2d66.1132e4",
+        "z": "f92add19.c43b9",
+        "name": "",
+        "env": [],
+        "x": 1210,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "62af2699.5a7be8",
+        "type": "change",
+        "z": "f92add19.c43b9",
+        "name": "Move to Msg.Say",
+        "rules": [
+            {
+                "t": "set",
+                "p": "say",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 450,
+        "y": 720,
+        "wires": [
+            [
+                "905d0b84.742ea8"
+            ]
+        ]
+    },
+    {
+        "id": "905d0b84.742ea8",
+        "type": "api-current-state",
+        "z": "f92add19.c43b9",
+        "name": "",
+        "server": "5ee4d578.f7736c",
+        "version": 1,
+        "outputs": 1,
+        "halt_if": "",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "override_topic": false,
+        "entity_id": "input_select.alexa_tts_echo",
+        "state_type": "str",
+        "state_location": "alexa",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "blockInputOverrides": false,
+        "x": 800,
+        "y": 720,
+        "wires": [
+            [
+                "dc4f4973.c90148"
+            ]
+        ]
+    },
+    {
+        "id": "ddc8f250.0fbf6",
+        "type": "switch",
+        "z": "a0a4859f.5a2a48",
+        "name": "",
+        "property": "trusted",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "false"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 570,
+        "y": 180,
+        "wires": [
+            [
+                "6aaf5f6d.8996c"
+            ],
+            [
+                "96f1c335.74979"
+            ]
+        ]
+    },
+    {
+        "id": "4766ddd2.ac3f44",
+        "type": "subflow:a83e69e1.4b2ab8",
+        "z": "a0a4859f.5a2a48",
+        "name": "",
+        "env": [
+            {
+                "name": "message",
+                "type": "str",
+                "value": "PAYLOAD"
+            },
+            {
+                "name": "who",
+                "type": "str",
+                "value": "both"
+            }
+        ],
+        "x": 1460,
+        "y": 180,
+        "wires": []
     }
 ]
