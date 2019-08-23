@@ -16,7 +16,7 @@ homeassistant:
 
 # Enables the frontend
 frontend:
-
+  themes: !include includes/themes.yaml
 # Enables configuration UI
 config:
 
@@ -53,6 +53,7 @@ ios: !include includes/iso.yaml
 light: !include includes/light.yaml
 input_select: !include includes/input_select.yaml
 plant: !include includes/plant.yaml
+input_text: !include includes/input_text.yaml
 
 
 weather:
@@ -60,10 +61,10 @@ weather:
     api_key: !secret darksky_apikey
 
 
-custom_updater:
-  component_urls:
-    - https://raw.githubusercontent.com/keatontaylor/custom_components/master/custom_components.json
-    - https://raw.githubusercontent.com/robmarkcole/Hue-sensors-HASS/master/custom_updater.json
+# custom_updater:
+#   component_urls:
+#     - https://raw.githubusercontent.com/keatontaylor/custom_components/master/custom_components.json
+#     - https://raw.githubusercontent.com/robmarkcole/Hue-sensors-HASS/master/custom_updater.json
 
 
 
@@ -74,6 +75,9 @@ notify:
   - platform: ios
     name: danniIphone
     target: '409ff712-e1a1-31af-a7a9-b27f61143473'
+  - platform: nfandroidtv
+    name: Living Room Tv
+    host: 192.168.1.30
 
 mqtt:
   broker: '192.168.1.253'
@@ -143,3 +147,23 @@ speedtestdotnet:
 
 
 mobile_app:
+
+
+hacs:
+  token: !secret githubtoken
+
+
+climate:
+  - platform: mqtt
+    name: bedroom
+    modes:
+      - "off"
+      - "auto"
+    power_command_topic: "bedroom/ac/power/set"
+    temperature_command_topic: "bedroom/ac/temperature/set"
+    min_temp: 18
+    max_temp: 25
+    current_temperature_topic: "bedroom/senorarray"
+    current_temperature_template: "{{ value_json.temperature }}"
+    temp_step: 0.5
+

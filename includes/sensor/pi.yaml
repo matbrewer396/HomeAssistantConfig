@@ -1,11 +1,4 @@
 ## Local senor
-  - platform: dht
-    sensor: DHT11
-    pin: 4
-    name: "Living Room Senor"
-    monitored_conditions:
-      - temperature
-      - humidity
   - platform: uptime
   - platform: systemmonitor
     resources:

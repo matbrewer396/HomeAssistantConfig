@@ -1,34 +1,26 @@
   isanyonehome:
     name: Is Any One Home
-    initial: off
     icon: mdi:account-arrow-right
   guestmode:
     name: Guest Mode
-    initial: off
     icon: mdi:account
   holidaymode:
     name: Holiday Mode
-    initial: off
     icon: mdi:airplane
   testrednode:
     name: Test Node Red
-    initial: off
     icon: mdi:access-point
   bathtime:
     name: Bath Time
-    initial: off
     icon: mdi:test-tube
   goodnight:
     name: Good Night
-    initial: off
     icon: mdi:weather-night
   goodbye:
     name: Good Bye
-    initial: off
     icon: mdi:exit-run
   takenbinout:
     name: Taken Bin Out
-    initial: off
     icon: mdi:trash-can
   node_red:
     name: Node Red Watchdog
@@ -42,3 +34,7 @@
   goodnight_beentriggered:
     name: Good Night Has Been Triggered
     initial: off
+
+  danni_button:
+    name: Danni Button Pressed
+    

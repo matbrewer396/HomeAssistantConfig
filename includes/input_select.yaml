@@ -9,3 +9,10 @@
      - None
     initial: None
     icon: mdi:all-inclusive
+  tv_state:
+    name: TV State
+    options:
+     - On
+     - Off
+     - Unknown
+    initial: Unknown

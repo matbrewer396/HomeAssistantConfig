@@ -53,7 +53,7 @@
         value_template: >-
           {% if  states("sensor.bed_weight_senor")|float >= states("input_number.both_in_bed_weight")|float %}
               2
-          {% elif states("sensor.bed_weight_senor")|float >= 3100000 %}
+          {% elif states("sensor.bed_weight_senor")|float >= states("input_number.danni_bed_weight")|float %}
               1
           {% else %}
               0

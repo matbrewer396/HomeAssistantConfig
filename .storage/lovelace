@@ -203,6 +203,27 @@
                     ],
                     "cards": [
                         {
+                            "columns": 2,
+                            "entities": [
+                                {
+                                    "entity": "switch.tv"
+                                },
+                                {
+                                    "entity": "switch.plug_03"
+                                },
+                                {
+                                    "entity": "light.bed_room_lamp"
+                                },
+                                {
+                                    "entity": "light.living_room_lights"
+                                }
+                            ],
+                            "show_icon": true,
+                            "show_name": true,
+                            "title": "Controlls",
+                            "type": "glance"
+                        },
+                        {
                             "cards": [
                                 {
                                     "aspect_ratio": "50%",
@@ -324,7 +345,7 @@
                         {
                             "entities": [
                                 {
-                                    "entity": "switch.1274756684f3ebb8900b"
+                                    "entity": "switch.plug_03"
                                 },
                                 {
                                     "entity": "switch.tv"
@@ -342,23 +363,30 @@
                                     "entity": "light.living_room_light_3"
                                 },
                                 {
-                                    "entity": "binary_sensor.living_room_pir"
-                                },
-                                {
                                     "entity": "input_boolean.motionlivingroom"
                                 },
                                 {
                                     "entity": "binary_sensor.font_door"
+                                },
+                                {
+                                    "entity": "light.bed_room_lamp"
+                                },
+                                {
+                                    "entity": "sensor.plug_03_energy_power"
+                                },
+                                {
+                                    "entity": "alarm_control_panel.ha_alarm"
+                                },
+                                {
+                                    "entity": "sensor.plug_07_energy_power"
+                                },
+                                {
+                                    "entity": "input_select.tv_state"
                                 }
                             ],
                             "show_header_toggle": true,
                             "title": "Living Room",
                             "type": "entities"
-                        },
-                        {
-                            "entity": "sensor.living_room_senor_temperature",
-                            "name": "Temperature",
-                            "type": "sensor"
                         },
                         {
                             "entity": "sensor.living_room_senor_humidity",
@@ -393,7 +421,7 @@
                                     "entity": "switch.mattpc"
                                 },
                                 {
-                                    "entity": "switch.77168577bcddc29befd4"
+                                    "entity": "switch.plug_05"
                                 },
                                 {
                                     "entity": "switch.51268403dc4f2233b115"
@@ -406,6 +434,9 @@
                                 },
                                 {
                                     "entity": "binary_sensor.office_door"
+                                },
+                                {
+                                    "entity": "sensor.plug_05_energy_power"
                                 }
                             ],
                             "title": "Office",
@@ -464,7 +495,7 @@
                             "type": "entities"
                         },
                         {
-                            "content": "Printer http://192.168.1.204/\nLiving Room Cam: http://192.168.1.203/\nGrafana: https://192.168.1.253:3000/login\nNode Red: https://192.168.1.253:1880/\nInfluxDB: http://192.168.1.253:8888\nOldUi: https://192.168.1.253/states\nESP Home: http://192.168.1.253:6052",
+                            "content": "Printer http://192.168.1.204/\nLiving Room Cam: http://192.168.1.203/\nGrafana: https://192.168.1.253:3000/login\nNode Red: https://192.168.1.253:1880/\nInfluxDB: http://192.168.1.253:8888\nOldUi: https://192.168.1.253/states\nESP Home: http://192.168.1.253:6052\nProxmox: https://192.168.1.249:8006\nUnfi: https://192.168.1.253:8443",
                             "title": "Links",
                             "type": "markdown"
                         },
@@ -480,16 +511,32 @@
                 {
                     "cards": [
                         {
+                            "columns": 2,
                             "entities": [
                                 {
                                     "entity": "light.library_lights",
-                                    "name": "Lumos"
+                                    "name": "Lumos",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    }
                                 },
                                 {
-                                    "entity": "switch.0682373584f3eb675aab",
-                                    "name": "Plug"
+                                    "entity": "switch.plug_06",
+                                    "name": "Plug",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    }
+                                },
+                                {
+                                    "entity": "sensor.plug_06_energy_power"
+                                },
+                                {
+                                    "entity": "sensor.plug_06_energy_today"
                                 }
                             ],
+                            "show_icon": true,
+                            "show_state": true,
+                            "theme": "Backend-selected",
                             "title": "Magic Room",
                             "type": "glance"
                         },
@@ -517,18 +564,43 @@
                 {
                     "cards": [
                         {
+                            "columns": 2,
                             "entities": [
                                 {
-                                    "entity": "light.bed_room_lamp"
+                                    "entity": "switch.plug_08",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    }
                                 },
+                                {
+                                    "entity": "light.hue_lightstrip_plus_1"
+                                },
+                                {
+                                    "entity": "climate.bedroom",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    }
+                                },
+                                {
+                                    "entity": "light.bed_room_light"
+                                }
+                            ],
+                            "title": "Controls",
+                            "type": "glance"
+                        },
+                        {
+                            "entities": [
                                 {
                                     "entity": "light.bed_room_light"
                                 },
                                 {
                                     "entity": "light.hue_lightstrip_plus_1"
+                                },
+                                {
+                                    "entity": "switch.plug_04"
                                 }
                             ],
-                            "show_header_toggle": true,
+                            "show_header_toggle": false,
                             "title": "Bed Room",
                             "type": "entities"
                         },
@@ -562,6 +634,11 @@
                             "show_header_toggle": false,
                             "title": "Bedroom Senor",
                             "type": "entities"
+                        },
+                        {
+                            "entity": "climate.bedroom",
+                            "name": "Bed Room",
+                            "type": "thermostat"
                         }
                     ],
                     "icon": "mdi:hotel",
@@ -603,15 +680,11 @@
                             "type": "entities"
                         },
                         {
-                            "entity": "media_player.kitten",
-                            "type": "media-control"
-                        },
-                        {
                             "camera_image": "camera.kitchen_cam",
                             "entities": [
                                 "switch.kitchencam_night_mode_2"
                             ],
-                            "title": "Motion Snapshot",
+                            "title": "Kitchen Cam",
                             "type": "picture-glance"
                         },
                         {
@@ -623,10 +696,11 @@
                             "type": "picture-glance"
                         },
                         {
+                            "entity": "media_player.kitten",
+                            "type": "media-control"
+                        },
+                        {
                             "entities": [
-                                {
-                                    "entity": "binary_sensor.kitchencam_motion_sensor"
-                                },
                                 {
                                     "entity": "sensor.kitchen_humidity"
                                 },
@@ -646,11 +720,45 @@
                                     "entity": "sensor.dishwasher_operational_status"
                                 },
                                 {
-                                    "entity": "switch.77168577bcddc292c859"
+                                    "entity": "switch.sonoff"
+                                },
+                                {
+                                    "entity": "sensor.sonoff_energy_power"
+                                },
+                                {
+                                    "entity": "sensor.sonoff_energy_today"
+                                },
+                                {
+                                    "entity": "sensor.sonoff_energy_total"
                                 }
                             ],
                             "show_header_toggle": false,
                             "title": "Kitchen",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.plug_02_energy_power"
+                                },
+                                {
+                                    "entity": "switch.plug_02"
+                                },
+                                {
+                                    "entity": "sensor.plug_02_energy_today"
+                                },
+                                {
+                                    "entity": "sensor.plug_03_energy_today"
+                                },
+                                {
+                                    "entity": "sensor.hot_tub_status"
+                                },
+                                {
+                                    "entity": "sensor.hot_tube_cost"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Hot Tub",
                             "type": "entities"
                         }
                     ],
@@ -673,7 +781,7 @@
                                     "entity": "light.hallway_light"
                                 }
                             ],
-                            "show_header_toggle": true,
+                            "show_header_toggle": false,
                             "title": "Hallway",
                             "type": "entities"
                         },
@@ -704,7 +812,7 @@
                                     "entity": "sensor.bath_room_temperature"
                                 }
                             ],
-                            "show_header_toggle": true,
+                            "show_header_toggle": false,
                             "title": "BathRoom",
                             "type": "entities"
                         }
@@ -754,6 +862,9 @@
                                 },
                                 {
                                     "entity": "sensor.num_in_master_bed"
+                                },
+                                {
+                                    "entity": "input_number.kwh_rate"
                                 }
                             ],
                             "show_header_toggle": false,
@@ -785,13 +896,13 @@
                                     "entity": "sensor.hallway_temperature"
                                 },
                                 {
-                                    "entity": "sensor.living_room_senor_temperature"
-                                },
-                                {
                                     "entity": "sensor.office_aloe_vera_temperature"
                                 },
                                 {
                                     "entity": "sensor.home_avg_temperature"
+                                },
+                                {
+                                    "entity": "sensor.kitchen_temperature"
                                 }
                             ],
                             "show_header_toggle": false,
@@ -807,10 +918,10 @@
                                     "entity": "sensor.bedroom_humidity"
                                 },
                                 {
-                                    "entity": "sensor.living_room_senor_humidity"
+                                    "entity": "sensor.office_humidity"
                                 },
                                 {
-                                    "entity": "sensor.office_humidity"
+                                    "entity": "sensor.kitchen_humidity"
                                 }
                             ],
                             "title": "Humidity",
@@ -882,6 +993,19 @@
                                 "action": "none"
                             },
                             "type": "picture"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.danni_living_room"
+                                },
+                                {
+                                    "entity": "sensor.matt_living_room"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Bluetooth Tracker",
+                            "type": "entities"
                         }
                     ],
                     "icon": "mdi:ladybug"
@@ -897,6 +1021,49 @@
                             ],
                             "title": "Living room",
                             "type": "picture-glance"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.sonoff_energy_apparentpower"
+                                },
+                                {
+                                    "entity": "sensor.sonoff_energy_current"
+                                },
+                                {
+                                    "entity": "sensor.sonoff_energy_factor"
+                                },
+                                {
+                                    "entity": "sensor.sonoff_energy_power"
+                                },
+                                {
+                                    "entity": "sensor.sonoff_energy_reactivepower"
+                                },
+                                {
+                                    "entity": "sensor.sonoff_energy_today"
+                                },
+                                {
+                                    "entity": "sensor.sonoff_energy_total"
+                                },
+                                {
+                                    "entity": "sensor.sonoff_energy_totalstarttime"
+                                },
+                                {
+                                    "entity": "sensor.sonoff_energy_voltage"
+                                },
+                                {
+                                    "entity": "sensor.sonoff_energy_yesterday"
+                                },
+                                {
+                                    "entity": "sensor.sonoff_status"
+                                },
+                                {
+                                    "entity": "switch.sonoff"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "plug_01",
+                            "type": "entities"
                         }
                     ],
                     "title": "test"
