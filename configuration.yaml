@@ -54,18 +54,12 @@ light: !include includes/light.yaml
 input_select: !include includes/input_select.yaml
 plant: !include includes/plant.yaml
 input_text: !include includes/input_text.yaml
+zone: !include includes/zone.yaml
 
 
 weather:
   - platform: darksky
     api_key: !secret darksky_apikey
-
-
-# custom_updater:
-#   component_urls:
-#     - https://raw.githubusercontent.com/keatontaylor/custom_components/master/custom_components.json
-#     - https://raw.githubusercontent.com/robmarkcole/Hue-sensors-HASS/master/custom_updater.json
-
 
 
 notify:
@@ -94,16 +88,16 @@ tuya:
   country_code: 44
   platform: smart_life
 
-alexa_media:
-  accounts:
-    - email: !secret alexa_username
-      password: !secret alexa_password
-      url: "amazon.co.uk"
+# alexa_media:
+#  accounts:
+#    - email: !secret alexa_username
+#      password: !secret alexa_password
+#      url: "amazon.co.uk"
 
-emulated_hue:
-  expose_by_default: true
-  exposed_domains:
-    - switch
+# emulated_hue:
+#   expose_by_default: true
+#   exposed_domains:
+#     - switch
 
 
 influxdb:
@@ -130,8 +124,8 @@ alarm_control_panel:
 
 
 
-recorder:
-  purge_keep_days: 1
+# recorder:
+#   purge_keep_days: 5
 
 octoprint:
   host: 192.168.1.204
@@ -164,8 +158,45 @@ climate:
     power_command_topic: "bedroom/ac/power/set"
     temperature_command_topic: "bedroom/ac/temperature/set"
     min_temp: 18
-    max_temp: 25
+    max_temp: 30
     current_temperature_topic: "bedroom/senorarray"
     current_temperature_template: "{{ value_json.temperature }}"
     temp_step: 0.5
 
+lovelace:
+  mode: yaml
+
+life360:
+  accounts:
+    - username: !secret life360_username
+      password: !secret life360_password
+  driving_speed: 18
+  interval_seconds: 10
+  max_gps_accuracy: 200
+  max_update_wait:
+    minutes: 45
+  show_as_state:
+    - driving
+    - moving
+  warning_threshold: 2
+  error_threshold: 3
+
+
+person:
+  - name: Matt
+    id: matt
+    device_trackers:
+      - device_tracker.life360_matt
+      - device_tracker.bt_matt_iphone
+  - name: Danni
+    id: danni
+    device_trackers:
+      - device_tracker.life360_danni
+      - device_tracker.bt_danni_iphone
+
+media_player:
+  - platform: androidtv
+    host: 192.168.1.216
+    name: "Fire Tv"
+    adb_server_ip: 127.0.0.1
+    adb_server_port: 5037

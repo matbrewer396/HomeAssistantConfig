@@ -8,7 +8,7 @@ List of all my device, that make house smart:
 | Device  | Quantity | Notes |
 | ------------- | :---: | ------------- | 
 | Hue Hub | 1 |  | 
-| PI3b | 1 | Runs HASSIO | 
+| IntelNuc | 1 | Runs HASSIO and much more| 
 | PI Zero | 1 | Bluetooth Tracker |
 | PI Zero | 1 | Octo print |
 | PI Zero | 1 | Monition Eye |
@@ -27,7 +27,7 @@ List of all my device, that make house smart:
 | Device  | Quantity | Notes |
 | ------------- | :---: | ------------- | 
 | Philips Hue Smart Motion Sensor | 2 | Connected via hue hub |
-| DIY: PIR Motion Detector | 1 | Connect to Pi | 
+| DIY: PIR Motion Detector | 1 | Connect to nodemcu, controlled via MQTT  | 
 
 ### Door / Window Senor
 | Device  | Quantity | Notes |
@@ -37,10 +37,9 @@ List of all my device, that make house smart:
 ### Temperature / Humidity / Light Level
 | Device  | Quantity | Notes |
 | ------------- | :---: | ------------- | 
-| DIY: DHT11 | 1 | Temperature & Humidity. Connect to nodemcu, pushes to MQTT | 
-| DIY: DHT11 | 1 | Temperature & Humidity. Connect to Pi |
+| DIY: DHT11 | 2 | Temperature & Humidity. Connect to nodemcu, pushes to MQTT | 
 | DIY: DHT22 | 2 | Temperature & Humidity. Connect to nodemcu, pushes to MQTT | 
-| DIY: LDR | 1 | Light Level. Connect to nodemcu, pushes to MQTT | 
+| DIY: LDR | 2 | Light Level. Connect to nodemcu, pushes to MQTT | 
 | Philips Hue Smart Motion Sensor | 2 | Temperature / Light Level. Connected via hue hub |
 | Shelly H&T | 2 | Temperature & Humidity |
 
@@ -53,7 +52,7 @@ List of all my device, that make house smart:
 ### Plugs
 | Device  | Quantity | Notes |
 | ------------- | :---: | ------------- | 
-| Teckin WI-FI Plug | 6 |  | 
+| Teckin WI-FI Plug | 10 | flashed with tasmota | 
 | Eve Elgato Plug | 2 | BLE - Cant find a way to connect to HA, so there more use for odd task like restarting PI | 
 
 
@@ -68,7 +67,7 @@ List of all my device, that make house smart:
 ### Camera
 | Device  | Quantity | Notes |
 | ------------- | :---: | ------------- | 
-| Neos SmartCam | 1 | flashed to https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks | 
+| Neos SmartCam | 2 | flashed to https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks | 
 
 
 ## Automation

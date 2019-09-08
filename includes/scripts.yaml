@@ -25,6 +25,10 @@ toggle_tv:
     - service: switch.toggle
       data:
         entity_id: switch.tv
+    - service: androidtv.adb_command
+      data:
+        entity_id: media_player.fire_tv
+        command: 'POWER'
 motionlivingroom:
   alias: motionlivingroom
   sequence:

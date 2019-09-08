@@ -1,0 +1,20 @@
+  - platform: template
+    sensors:
+      danni_phone_battery:
+        friendly_name: "Danni phone battery"
+        value_template: >
+          {{state_attr("device_tracker.life360_danni", "battery")}}
+        unit_of_measurement: "%"
+      danni_phone_battery_charging:
+        friendly_name: "Danni phone is charging"
+        value_template: >
+          {{state_attr("device_tracker.life360_danni", "battery_charging")}}
+      matt_phone_battery:
+        friendly_name: "Matt phone battery"
+        value_template: >
+          {{state_attr("device_tracker.life360_matt", "battery")}}
+        unit_of_measurement: "%"
+      matt_phone_battery_charging:
+        friendly_name: "Matt phone is charging"
+        value_template: >
+          {{state_attr("device_tracker.life360_matt", "battery_charging")}}

@@ -1,0 +1,9 @@
+  - platform: mqtt
+    name: "Dishwasher Door"
+    payload_on: "false"
+    payload_off: "true"
+    device_class: door
+    state_topic: "kitchen/dishwasherdoor"
+    availability_topic: "availability/kitchenMCU"
+    payload_available: "online"
+    payload_not_available: "offline"

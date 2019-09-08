@@ -38,3 +38,8 @@
   danni_button:
     name: Danni Button Pressed
     
+  dummy1:
+    name: Dummy 1
+
+  restart_bluetoothtracker:
+    name: Restart Bluetooth Tracker

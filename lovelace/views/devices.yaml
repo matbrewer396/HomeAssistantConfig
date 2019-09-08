@@ -1,0 +1,305 @@
+title: Devices
+path: devices
+cards:
+  - type: vertical-stack 
+    cards:
+      - type: custom:decluttering-card
+        template: quick-access-menu
+        variables:
+          - name1: Weather
+          - icon1: weather-sunny
+          - path1: weather
+      - type: custom:decluttering-card
+        template: header
+        variables:
+          - content: '## Climate Control'
+
+      
+      - type: custom:decluttering-card
+        template: header
+        variables:
+          - content: '##### Hot Tub'
+      - type: horizontal-stack
+        cards:
+        - type: horizontal-stack
+          cards:
+          - !include ../jimz011/includes/blank-card.yaml
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: switch.plug_02
+              - name: "[[[ return `Hot-tub - ${states['sensor.hot_tub_status'].state}`;  ]]]"
+              - icon: hot-tub
+              - label: "[[[ if (states['sensor.plug_02_energy_power'].state > 0) return `${states['sensor.plug_02_energy_power'].state} W`; else return '&nbsp;' ]]]"
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+              - lock: true
+          - type: custom:decluttering-card
+            template: mini-graph 
+            variables:
+              - entities:
+                  - sensor.hot_tube_cost
+              - name: Cost
+              - line_color: '#e300ff'
+              - font_size: 53
+              - decimals: 1
+              - graph: bar
+              - extrema: true
+          - type: custom:decluttering-card
+            template: mini-graph 
+            variables:
+              - entities:
+                  - sensor.plug_02_energy_power
+              - name: Power Usages
+              - line_color: '#00ff51'
+              - font_size: 53
+              - decimals: 1
+              - graph: bar
+              - extrema: true
+          - !include ../jimz011/includes/blank-card.yaml
+
+      - type: custom:decluttering-card
+        template: header
+        variables:
+          - content: '##### Dishwasher'
+      - type: horizontal-stack
+        cards:
+        - type: horizontal-stack
+          cards:
+          - !include ../jimz011/includes/blank-card.yaml
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: switch.sonoff
+              - name: Dishwasher
+              - icon: dishwasher
+              - label: "[[[ if (states['sensor.sonoff_energy_power'].state > 0) return `${states['sensor.sonoff_energy_power'].state} W`; else return '&nbsp;' ]]]"
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+          - type: custom:decluttering-card
+            template: mini-graph 
+            variables:
+              - entities:
+                  - sensor.hot_tube_cost
+              - name: Cost
+              - line_color: '#e300ff'
+              - font_size: 53
+              - decimals: 1
+              - graph: bar
+              - extrema: true
+          - type: custom:decluttering-card
+            template: mini-graph 
+            variables:
+              - entities:
+                  - sensor.sonoff_energy_power
+              - name: Power Usages
+              - line_color: '#00ff51'
+              - font_size: 53
+              - decimals: 1
+              - graph: bar
+              - extrema: true
+          - !include ../jimz011/includes/blank-card.yaml
+
+      - type: horizontal-stack
+        cards:
+        - type: horizontal-stack
+          cards:
+          - !include ../jimz011/includes/blank-card.yaml
+          - type: custom:decluttering-card
+            template: button 
+            variables:
+              - entity: binary_sensor.dishwasher_door
+              - name: DishWasher Door
+              - icon: door
+              - show_last_changed: true
+              - tap_action: more-info
+              - variable: icon
+              - spin: 'mdi:door-open'
+          - type: custom:button-card
+            color_type: blank-card
+            aspect_ratio: 1/1
+          - type: custom:button-card
+            color_type: blank-card
+            aspect_ratio: 1/1
+          - !include ../jimz011/includes/blank-card.yaml
+
+
+      - type: custom:decluttering-card
+        template: header
+        variables:
+          - content: '##### Bed'
+      - type: horizontal-stack
+        cards:
+        - type: horizontal-stack
+          cards:
+          - !include ../jimz011/includes/blank-card.yaml
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: sensor.num_in_master_bed
+              - name: Number in Bed
+              - icon: bed-empty
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+          - type: custom:decluttering-card
+            template: mini-graph 
+            variables:
+              - entities:
+                  - sensor.bed_weight_senor
+              - name: Bed Weight Senor
+              - line_color: '#e300ff'
+              - font_size: 53
+              - decimals: 1
+              - graph: bar
+              # - extrema: true
+          - type: custom:button-card
+            color_type: blank-card
+            aspect_ratio: 1/1
+          - !include ../jimz011/includes/blank-card.yaml
+
+      - type: horizontal-stack
+        cards:
+        - type: horizontal-stack
+          cards:
+          - !include ../jimz011/includes/blank-card.yaml
+          - type: entities
+            style: |
+              ha-card {
+                background: var(--homekit-card-off);
+                --paper-item-icon-color: var(--icon-color-off);
+                color: var(--name-color-off);
+                border-radius: var(--border-radius);
+              }
+            entities:
+              - entity: input_number.matt_bed_weight
+              - entity: input_number.danni_bed_weight
+              - entity: input_number.both_in_bed_weight
+          - !include ../jimz011/includes/blank-card.yaml
+
+### The following piece is for tablets only, You can leave this out if not needed.
+  - type: custom:state-switch
+    entity: user
+    states:
+      Home Assistant:
+        type: vertical-stack
+        cards:
+          - type: markdown 
+            style: |
+              ha-card {
+                background: none;
+                color: white;
+                box-shadow: none;
+                text-align: end;
+                font-size: 45px;
+                height: 155px;
+              }
+            content: '# [[ sensor.time.state ]]'
+### End of tablet code.
+
+  - type: vertical-stack
+    cards:
+      - type: custom:decluttering-card
+        template: header
+        variables:
+          - content: '##### Fridge'
+      - type: horizontal-stack
+        cards:
+          - !include ../jimz011/includes/blank-card.yaml 
+          - type: custom:decluttering-card
+            template: mini-graph 
+            variables:
+              - entities:
+                  - sensor.fridge_temperature
+              - name: Temperature
+              - line_color: '#ffb414'
+              - font_size: 53
+              - decimals: 1
+              - graph: bar
+              - extrema: true
+          - type: custom:decluttering-card
+            template: mini-graph 
+            variables:
+              - entities:
+                  - sensor.fridge_humidity
+              - name: Humidity
+              - line_color: '#1427ff'
+              - font_size: 53
+              - decimals: 1
+              - graph: bar
+              - extrema: true
+          - type: custom:decluttering-card
+            template: mini-graph 
+            variables:
+              - entities:
+                  - sensor.fridge_temperature_shelly_ht_battery
+              - name: Battery
+              - line_color: '#ff0000'
+              - font_size: 53
+              - decimals: 1
+              - graph: bar
+              - extrema: true
+          - !include ../jimz011/includes/blank-card.yaml
+      - type: custom:decluttering-card
+        template: header
+        variables:
+          - content: '##### Feezer'
+      - type: horizontal-stack
+        cards:
+          - !include ../jimz011/includes/blank-card.yaml 
+          - type: custom:decluttering-card
+            template: mini-graph 
+            variables:
+              - entities:
+                  - sensor.freezer_temperature
+              - name: Temperature
+              - line_color: '#ffb414'
+              - font_size: 53
+              - decimals: 1
+              - graph: bar
+              - extrema: true
+          - type: custom:decluttering-card
+            template: mini-graph 
+            variables:
+              - entities:
+                  - sensor.freezer_humidity
+              - name: Humidity
+              - line_color: '#1427ff'
+              - font_size: 53
+              - decimals: 1
+              - graph: bar
+              - extrema: true
+          - type: custom:decluttering-card
+            template: mini-graph 
+            variables:
+              - entities:
+                  - sensor.freezer_temperature_shelly_ht_battery
+              - name: Battery
+              - line_color: '#ff0000'
+              - font_size: 53
+              - decimals: 1
+              - graph: bar
+              - extrema: true
+          - !include ../jimz011/includes/blank-card.yaml
+          
+      
+      - type: custom:decluttering-card
+        template: header
+        variables:
+          - content: '##### Settings'
+      - type: horizontal-stack
+        cards:
+        - !include ../jimz011/includes/blank-card.yaml
+        - type: entities
+          style: |
+            ha-card {
+              background: var(--homekit-card-off);
+              --paper-item-icon-color: var(--icon-color-off);
+              color: var(--name-color-off);
+              border-radius: var(--border-radius);
+            }
+          entities:
+            - entity: input_number.kwh_rate
+        - !include ../jimz011/includes/blank-card.yaml
+            
+      - !include ../jimz011/includes/bottom-card.yaml
+        

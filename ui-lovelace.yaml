@@ -1,0 +1,30 @@
+resources:
+  !include lovelace/resources.yaml
+
+cch:
+  !include lovelace/compact-custom-header.yaml
+
+
+decluttering_templates:
+  !include lovelace/templates/decluttering-templates.yaml
+           
+title: Matt & Danni Home
+background: var(--background-image)
+views:
+  - !include lovelace/views/main_view.yaml
+  - !include lovelace/views/controls.yaml
+  - !include lovelace/views/main_menu.yaml
+  - !include lovelace/views/remote.yaml
+  - !include lovelace/views/climate.yaml
+  - !include lovelace/views/security.yaml
+  - !include lovelace/views/devices.yaml
+
+  - !include lovelace/views/lights.yaml
+  - !include lovelace/views/alarm.yaml
+  - !include lovelace/views/scenes.yaml
+  - !include lovelace/views/links.yaml
+  - !include lovelace/views/matt.yaml
+  - !include lovelace/views/debug.yaml
+  
+  # - !include lovelace/jimz011/views/energy.yaml
+  

@@ -1,0 +1,207 @@
+title: Debug
+path: debug
+cards:
+  - type: vertical-stack
+    cards:
+      - type: custom:decluttering-card
+        template: quick-access-menu 
+        # variables:
+        #   - name1: About
+        #   - icon1: information
+        #   - lovelace1: developer-tools
+        #   - path1: info
+        #   - name2: Dashboard
+        #   - icon2: cogs
+        #   - lovelace2: config
+        #   - path2: dashboard
+      - type: custom:decluttering-card
+        template: header 
+        variables:
+          - content: '## Debug / Testing Page'
+      - type: custom:decluttering-card
+        template: header 
+        variables:
+          - content: '##### Device Status'
+      # - type: horizontal-stack
+      #   cards:
+      #     - !include ../includes/blank-card.yaml
+      #     - type: custom:decluttering-card
+      #       template: button 
+      #       variables:
+      #         - entity: binary_sensor.bath_mcu_status
+      #         - name: Bathroom MCU
+      #         - icon: chip
+      #         - tap_action:
+      #             action: more-info
+      #     - type: custom:decluttering-card
+      #       template: button 
+      #       variables:
+      #         - entity: binary_sensor.bedroom_mcu_status
+      #         - name: BedRoom MCU
+      #         - icon: chip
+      #         - tap_action:
+      #             action: more-info
+      #     - type: custom:decluttering-card
+      #       template: button 
+      #       variables:
+      #         - entity: binary_sensor.bluetooth_traker_mcu_status
+      #         - name: Bluetooth Tracker
+      #         - icon: bluetooth-connect
+      #         - tap_action:
+      #             action: more-info
+      #     - type: custom:decluttering-card
+      #       template: button 
+      #       variables:
+      #         - entity: binary_sensor.doorbell_mcu_status
+      #         - name: Door Bell
+      #         - icon: chip
+      #         - tap_action:
+      #             action: more-info
+      - type: horizontal-stack
+        cards:
+          - !include ../includes/blank-card.yaml
+          - type: 'custom:auto-entities'
+            card:
+              type: glance
+              columns: 3
+              show_empty: true
+              style: |
+                ha-card {
+                  border-radius: var(--border-radius);
+                  background: var(--homekit-card-off);
+                  color: var(--name-color-off);
+                  font-size: 12px;
+                  font-family: Helvetica;
+                }
+            filter:
+              include:
+                - entity_id: binary_sensor.bath_mcu_status
+                - entity_id: binary_sensor.bedroom_mcu_status
+                - entity_id: binary_sensor.bluetooth_traker_mcu_status
+                - entity_id: binary_sensor.doorbell_mcu_status
+                - entity_id: binary_sensor.living_room_cam_status
+                - entity_id: binary_sensor.office_mcu_status
+                - entity_id: binary_sensor.rm_mini_status
+                - entity_id: binary_sensor.alexa_inbound_status
+                - entity_id: binary_sensor.fridge_senor_status
+                - entity_id: binary_sensor.freezer_senor_status
+                                                                    
+          - !include ../includes/blank-card.yaml
+
+
+      - type: custom:decluttering-card
+        template: header 
+        variables:
+          - content: '##### Bluetooth Tracker'
+      - type: horizontal-stack
+        cards:
+          - !include ../includes/blank-card.yaml
+          - type: custom:decluttering-card
+            template: button 
+            variables:
+              - entity: sensor.danni_living_room
+              - name: Danni
+              - icon:  bluetooth-connect
+              - opacity: 1.0
+              - tap_action:
+                  action: more-info
+          - type: custom:decluttering-card
+            template: button 
+            variables:
+              - entity: sensor.matt_living_room
+              - name: Matt
+              - icon:  bluetooth-connect
+              - tap_action:
+                  action: more-info
+              - opacity: 1.0
+          - type: custom:decluttering-card
+            template: button 
+            variables:
+              - entity: input_boolean.restart_bluetoothtracker
+              - name: Restart
+              - icon: restart
+              - show_state: false
+              - label: Bluetooth Tracker
+          - !include ../includes/blank-card.yaml
+         
+
+
+  - type: vertical-stack
+    cards:
+      - type: custom:decluttering-card
+        template: header 
+        variables:
+          - content: '##### System Tools'
+      - type: horizontal-stack
+        cards:
+          - !include ../includes/blank-card.yaml
+          - type: custom:decluttering-card
+            template: button 
+            variables:
+              - entity: input_boolean.dummy1
+              - name: Dashboard
+              - label: HA Settings
+              - icon: settings
+              - show_state: false
+              - opacity: 0.8
+              - tap_action:
+                  action: navigate
+                  navigation_path: /config/dashboard/
+                  haptic: light
+              - hold_action:
+                  action: none
+          - type: custom:decluttering-card
+            template: button 
+            variables:
+              - entity: input_boolean.dummy1
+              - name: Developer
+              - label: Tools
+              - icon: screwdriver
+              - show_state: false
+              - opacity: 0.8
+              - tap_action:
+                  action: navigate
+                  navigation_path: /developer-tools/info/
+                  haptic: light
+              - hold_action:
+                  action: none
+          - type: custom:decluttering-card
+            template: button 
+            variables:
+              - entity: input_boolean.dummy1
+              - name: Restart
+              - label: Restart HA
+              - icon: restart
+              - lock: true
+              - show_state: false
+              - opacity: 0.8
+              - hold_action:
+                  action: call-service
+                  service: homeassistant.restart
+                  haptic: light
+              - tap_action:
+                  action: none
+          - !include ../includes/blank-card.yaml
+      
+      - type: custom:decluttering-card
+        template: header 
+        variables:
+          - content: '##### Alexa TTS'
+      - type: horizontal-stack
+        cards:
+          - !include ../jimz011/includes/blank-card.yaml
+          - type: entities
+            style: |
+              ha-card {
+                background: var(--homekit-card-off);
+                --paper-item-icon-color: var(--icon-color-off);
+                color: var(--name-color-off);
+                border-radius: var(--border-radius);
+              }
+            entities:
+              - entity: input_select.alexa_tts_echo
+              - entity: input_text.alexa_tts
+              
+          - !include ../jimz011/includes/blank-card.yaml
+
+      - !include ../includes/bottom-card.yaml

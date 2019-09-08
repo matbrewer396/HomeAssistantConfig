@@ -1,0 +1,116 @@
+title: Links
+path:  links
+cards:    
+  - type: vertical-stack
+    cards:
+      - type: custom:decluttering-card
+        template: quick-access-menu 
+        variables:
+          - name1: Location
+          - icon1: map
+          - path1: location
+      - type: custom:decluttering-card
+        template: header 
+        variables:
+          - content: '## Links'
+      - type: vertical-stack
+        cards:
+          - type: custom:decluttering-card
+            template: header 
+            variables:
+              - content: '##### Waze Navigation'
+          - type: horizontal-stack
+            cards:
+              - !include ../jimz011/includes/blank-card.yaml
+              - type: entities
+                style: |
+                  ha-card {
+                    background: var(--homekit-card-off);
+                    --paper-item-icon-color: var(--icon-color-off);
+                    color: var(--name-color-off);
+                    border-radius: var(--border-radius);
+                  }
+                entities:
+                  - type: weblink
+                    name: Node Red
+                    icon: 'mdi:blur'
+                    url:  https://192.168.1.253:1880/
+                  - type: weblink
+                    name: Plex Docker 1
+                    icon: 'mdi:plex'
+                    url:  http://192.168.1.248:32400
+                  - type: weblink
+                    name: Printer
+                    icon: 'mdi:printer-3d'
+                    url:  http://192.168.1.204/
+                  - type: weblink
+                    name: Living Room Cam
+                    icon: 'mdi:cctv'
+                    url:  http://192.168.1.203/
+                  - type: weblink
+                    name: Grafana
+                    icon: 'mdi:graph'
+                    url:  https://192.168.1.253:3000/login
+                  - type: weblink
+                    name: Influx DB
+                    icon: 'mdi:database'
+                    url:  http://192.168.1.253:8888
+                  - type: weblink
+                    name: ESP Home
+                    icon: 'mdi:chip'
+                    url:  http://192.168.1.253:6052
+                  - type: weblink
+                    name: Proxmox
+                    icon: 'mdi:server'
+                    url:  https://192.168.1.249:8006
+                  - type: weblink
+                    name: Unfi
+                    icon: 'mdi:access-point-network'
+                    url:  https://192.168.1.253:8443
+                  - type: weblink
+                    name: Portainer
+                    icon: 'mdi:docker'
+                    url:  http://192.168.1.248:9000
+                  
+              - !include ../jimz011/includes/blank-card.yaml
+  # - type: vertical-stack
+  #   cards:
+  #     - type: custom:decluttering-card
+  #       template: header 
+  #       variables:
+  #         - content: '##### iOS Shortcuts'
+  #     - type: horizontal-stack
+  #       cards:
+  #         - !include ../jimz011/includes/blank-card.yaml
+  #         - type: entities
+  #           style: |
+  #             ha-card {
+  #               background: var(--homekit-card-off);
+  #               --paper-item-icon-color: var(--icon-color-off);
+  #               color: var(--name-color-off);
+  #               border-radius: var(--border-radius);
+  #             }
+  #           entities:
+  #             - type: weblink
+  #               name: Outlook
+  #               url: ms-outlook://
+  #             - type: weblink
+  #               name: PostNL
+  #               url: postnl://
+  #             - type: weblink
+  #               name: Calendar
+  #               url: weekcal://
+  #             - type: weblink
+  #               name: Bunq
+  #               url: bunq://
+  #             - type: weblink
+  #               name: Maps
+  #               url: maps://
+  #             - type: weblink
+  #               name: Apple Music
+  #               url: music://
+  #             - type: weblink
+  #               name: Plex
+  #               url: plex://
+  #         - !include ../jimz011/includes/blank-card.yaml
+      - !include ../jimz011/includes/bottom-card.yaml

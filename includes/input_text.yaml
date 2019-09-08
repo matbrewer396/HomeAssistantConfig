@@ -1,0 +1,6 @@
+  # text1:
+  #   name: TV Status
+  #   initial: Unknown
+
+  alexa_tts:
+    name: Alexa TTS

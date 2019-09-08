@@ -1,32 +1,60 @@
 
 - platform: mjpeg 
   name: Living Room
-  mjpeg_url: http://192.168.1.203:8082
-  still_image_url: http://192.168.1.203/picture/2/current/?_username=admin&_signature=88d404fba5f50139465f9f8365c1349a8c1d9d93
+  mjpeg_url: http://192.168.30.203:8082
+  still_image_url: http://192.168.30.203/picture/2/current/?_username=admin&_signature=88d404fba5f50139465f9f8365c1349a8c1d9d93
   username: !secret camera_username
   password: !secret camera_password
 
 - platform: mjpeg 
   name: Font Door
-  mjpeg_url: http://192.168.1.203:8083
-  still_image_url: http://192.168.1.203/picture/3/current/?_username=admin&_signature=76a7cd9d2ec21068642c802fe17494a8a9c75e8d
+  mjpeg_url: http://192.168.30.203:8083
+  still_image_url: http://192.168.30.203/picture/3/current/?_username=admin&_signature=76a7cd9d2ec21068642c802fe17494a8a9c75e8d
   username: !secret camera_username
   password: !secret camera_password
 
   
 - platform: ffmpeg
+  name: Back Garden
+  input: -rtsp_transport tcp -i rtsp://192.168.30.213:8554/unicast
+- platform: ffmpeg
   name: OfficeCam
-  input: -rtsp_transport tcp -i rtsp://192.168.1.213:8554/unicast
+  input: -rtsp_transport tcp -i rtsp://192.168.30.217:8554/unicast
 
 - platform: ffmpeg
   name: KitchenCam
   input: -rtsp_transport tcp -i rtsp://192.168.1.212:8554/unicast
 
 - platform: generic
-  name: Kitchen Cam
+  name: Kitchen Cam Stills
   username: !secret kitchen_cam_user
   password: !secret kitchen_cam_password
   authentication: basic
   still_image_url: https://192.168.1.212/cgi-bin/currentpic.cgi
+  verify_ssl: false
+  scan_interval: 5
+- platform: generic
+  name: Back Garden Cam Stills
+  username: !secret backgarden_cam_user
+  password: !secret backgarden_cam_password
+  authentication: basic
+  still_image_url: https://192.168.30.213/cgi-bin/currentpic.cgi
+  verify_ssl: false
+  scan_interval: 5
+- platform: generic
+  name: Office Cam Stills
+  username: !secret backgarden_cam_user
+  password: !secret backgarden_cam_password
+  authentication: basic
+  still_image_url: https://192.168.30.217/cgi-bin/currentpic.cgi
+  verify_ssl: false
+  scan_interval: 5
+  
+- platform: generic
+  name: Landing Cam Stills
+  username: !secret backgarden_cam_user
+  password: !secret backgarden_cam_password
+  authentication: basic
+  still_image_url: https://192.168.30.218/cgi-bin/currentpic.cgi
   verify_ssl: false
   scan_interval: 5
