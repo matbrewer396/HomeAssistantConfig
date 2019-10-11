@@ -9,9 +9,9 @@ List of all my device, that make house smart:
 | ------------- | :---: | ------------- | 
 | Hue Hub | 1 |  | 
 | IntelNuc | 1 | Runs HASSIO and much more| 
-| PI Zero | 1 | Bluetooth Tracker |
+| PI Zero | 1 | Bluetooth Gateway https://github.com/zewelor/bt-mqtt-gateway |
 | PI Zero | 1 | Octo print |
-| PI Zero | 1 | Monition Eye |
+| PI Zero | 1 | Blue tooth tracker using https://github.com/andrewjfreyer/monitor/blob/master/support/README.md and motion eye |
 | Broadlink IR home hub | 1 | Monition Eye |
 | 1byone Easy Chime Wireless Doorbell | 1 | with a nodemcu to connect to HA |
 
@@ -42,6 +42,7 @@ List of all my device, that make house smart:
 | DIY: LDR | 2 | Light Level. Connect to nodemcu, pushes to MQTT | 
 | Philips Hue Smart Motion Sensor | 2 | Temperature / Light Level. Connected via hue hub |
 | Shelly H&T | 2 | Temperature & Humidity |
+| miflora | 1 |  |
 
 ### Load Sensor
 | Device  | Quantity | Notes |
@@ -67,8 +68,10 @@ List of all my device, that make house smart:
 ### Camera
 | Device  | Quantity | Notes |
 | ------------- | :---: | ------------- | 
-| Neos SmartCam | 2 | flashed to https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks | 
+| Neos SmartCam | 5 | flashed to https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks | 
 
+### Mechanical
+| SwitchBot | 1 |  |
 
 ## Automation
 List of all my automation, that make house smart. 
@@ -101,7 +104,7 @@ Pretty much the same
 
 ### Kitchen
 * Fridge/ Freezer - when the temperature drops below target trigger a notification (door might be open). - Testing!  assuming no false postive going hookup to alexa aka wake me up before food go bad!
-
+* Voice control - "Alexa Lights" / "Alex Turn on kitchen room lights"
 
 ### Office (aka my room)
 * On door open and dark, lights turn on 

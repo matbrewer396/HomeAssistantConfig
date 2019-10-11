@@ -98,6 +98,13 @@
         "info": ""
     },
     {
+        "id": "21d6efde.d0943",
+        "type": "tab",
+        "label": "Bedroom",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "a0cdc0f9.a362b",
         "type": "tab",
         "label": "BathRoom",
@@ -108,13 +115,6 @@
         "id": "acf12371.2c1ae",
         "type": "tab",
         "label": "Office",
-        "disabled": false,
-        "info": ""
-    },
-    {
-        "id": "21d6efde.d0943",
-        "type": "tab",
-        "label": "Bedroom",
         "disabled": false,
         "info": ""
     },
@@ -1158,6 +1158,7 @@
         "z": "a3158433.9d1f78",
         "name": "Danni Home/Away",
         "server": "eef5a84.da24f58",
+        "version": "1",
         "entityidfilter": "device_tracker.life360_danni",
         "entityidfiltertype": "substring",
         "outputinitially": false,
@@ -1181,11 +1182,16 @@
         "z": "a3158433.9d1f78",
         "name": "Matt Home/Away",
         "server": "eef5a84.da24f58",
+        "version": "1",
         "entityidfilter": "device_tracker.life360_matt",
         "entityidfiltertype": "substring",
         "outputinitially": false,
+        "state_type": "str",
         "haltifstate": "",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
         "outputs": 1,
+        "output_only_on_state_change": false,
         "x": 140,
         "y": 492,
         "wires": [
@@ -1391,10 +1397,16 @@
         "z": "a3158433.9d1f78",
         "name": "Guest Mode Change",
         "server": "eef5a84.da24f58",
+        "version": "1",
         "entityidfilter": "input_boolean.guestmode",
         "entityidfiltertype": "substring",
+        "outputinitially": false,
+        "state_type": "str",
         "haltifstate": "",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
         "outputs": 1,
+        "output_only_on_state_change": false,
         "x": 150,
         "y": 601,
         "wires": [
@@ -1830,11 +1842,16 @@
         "z": "99d64a3d.f4e418",
         "name": "Sun Changes",
         "server": "eef5a84.da24f58",
+        "version": 1,
         "entityidfilter": "sun.sun",
         "entityidfiltertype": "substring",
         "outputinitially": false,
+        "state_type": "str",
         "haltifstate": "",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
         "outputs": 1,
+        "output_only_on_state_change": false,
         "x": 130,
         "y": 200,
         "wires": [
@@ -1858,51 +1875,6 @@
                 "626c9c60.30cf24",
                 "6125c1be.4d871",
                 "7186346f.4ab48c"
-            ]
-        ]
-    },
-    {
-        "id": "9870fe03.bab26",
-        "type": "server-state-changed",
-        "z": "1e454935.091dd7",
-        "name": "Good Night",
-        "server": "5ee4d578.f7736c",
-        "entityidfilter": "input_boolean.goodnight",
-        "entityidfiltertype": "substring",
-        "outputinitially": false,
-        "haltifstate": "",
-        "outputs": 1,
-        "x": 130,
-        "y": 180,
-        "wires": [
-            [
-                "a733e2b3.2fbae",
-                "2ddc2933.91dc56"
-            ]
-        ]
-    },
-    {
-        "id": "a733e2b3.2fbae",
-        "type": "switch",
-        "z": "1e454935.091dd7",
-        "name": "Is On?",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "on",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 290,
-        "y": 180,
-        "wires": [
-            [
-                "9567c19f.3fa0b"
             ]
         ]
     },
@@ -6607,11 +6579,16 @@
         "z": "a3158433.9d1f78",
         "name": "Matt Home / Away",
         "server": "5ee4d578.f7736c",
+        "version": "1",
         "entityidfilter": "sensor.matt_living_room",
         "entityidfiltertype": "substring",
         "outputinitially": false,
+        "state_type": "str",
         "haltifstate": "",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
         "outputs": 1,
+        "output_only_on_state_change": false,
         "x": 150,
         "y": 220,
         "wires": [
@@ -6626,11 +6603,16 @@
         "z": "a3158433.9d1f78",
         "name": "Danni Home / Away",
         "server": "5ee4d578.f7736c",
+        "version": "1",
         "entityidfilter": "sensor.danni_living_room",
         "entityidfiltertype": "substring",
         "outputinitially": false,
+        "state_type": "str",
         "haltifstate": "",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
         "outputs": 1,
+        "output_only_on_state_change": false,
         "x": 150,
         "y": 260,
         "wires": [
@@ -7271,9 +7253,12 @@
         "z": "c9b308f8.01ef68",
         "name": "Reset Request",
         "server": "5ee4d578.f7736c",
+        "version": "1",
         "service_domain": "input_boolean",
         "service": "turn_off",
-        "data": "{\"entity_id\":\"input_boolean.goodnight\"}",
+        "entityId": "input_boolean.goodnight",
+        "data": "",
+        "dataType": "json",
         "mergecontext": "",
         "output_location": "payload",
         "output_location_type": "msg",
@@ -7899,27 +7884,13 @@
         "wires": []
     },
     {
-        "id": "2ddc2933.91dc56",
-        "type": "debug",
-        "z": "1e454935.091dd7",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "x": 310,
-        "y": 140,
-        "wires": []
-    },
-    {
         "id": "9567c19f.3fa0b",
         "type": "subflow:c9b308f8.01ef68",
         "z": "1e454935.091dd7",
         "name": "",
         "env": [],
-        "x": 460,
-        "y": 180,
+        "x": 450,
+        "y": 280,
         "wires": []
     },
     {
@@ -8288,6 +8259,7 @@
         "type": "subflow:20dffe5a.37e8a2",
         "z": "80866e71.966c6",
         "name": "",
+        "env": [],
         "x": 600,
         "y": 280,
         "wires": [
@@ -9726,8 +9698,6 @@
                 "dfbfea55.092c18"
             ],
             [
-                "a43cb31c.bbb2a",
-                "1df00caa.c88d63",
                 "807b6968.6ef5c8"
             ]
         ]
@@ -9773,11 +9743,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1280,
+        "x": 1340,
         "y": 520,
         "wires": [
             [
-                "95a4dd4.cece52"
+                "95a4dd4.cece52",
+                "bc7a046f.08cac8"
             ]
         ]
     },
@@ -9826,8 +9797,9 @@
         "y": 480,
         "wires": [
             [
-                "bc7a046f.08cac8",
-                "4a2e8ced.86f9d4"
+                "4a2e8ced.86f9d4",
+                "807b6968.6ef5c8",
+                "95a4dd4.cece52"
             ]
         ]
     },
@@ -9855,12 +9827,16 @@
         "z": "a0cdc0f9.a362b",
         "name": "Dim Lights",
         "server": "5ee4d578.f7736c",
+        "version": "1",
         "service_domain": "light",
         "service": "turn_on",
-        "data": "{\"entity_id\":\"light.bathroom_light\",\"brightness_pct\":25,\"transition\":0}",
+        "entityId": "light.bathroom_light",
+        "data": "{\"brightness_pct\":25,\"transition\":0}",
+        "dataType": "json",
         "mergecontext": "",
         "output_location": "",
         "output_location_type": "none",
+        "mustacheAltTags": false,
         "x": 3310,
         "y": 380,
         "wires": [
@@ -9884,7 +9860,7 @@
         "bytopic": "all",
         "name": "",
         "x": 3570,
-        "y": 540,
+        "y": 560,
         "wires": [
             [
                 "7cd2befd.6212",
@@ -9898,14 +9874,18 @@
         "z": "a0cdc0f9.a362b",
         "name": "Turn off Lights",
         "server": "5ee4d578.f7736c",
+        "version": "1",
         "service_domain": "light",
         "service": "turn_off",
-        "data": "{\"entity_id\":\"light.bathroom_light\",\"transition\":15}",
+        "entityId": "light.bathroom_light",
+        "data": "{\"transition\":15}",
+        "dataType": "json",
         "mergecontext": "",
         "output_location": "",
         "output_location_type": "none",
-        "x": 3820,
-        "y": 520,
+        "mustacheAltTags": false,
+        "x": 3780,
+        "y": 540,
         "wires": [
             []
         ]
@@ -9976,8 +9956,8 @@
         "mergecontext": "",
         "output_location": "",
         "output_location_type": "none",
-        "x": 1610,
-        "y": 380,
+        "x": 1630,
+        "y": 400,
         "wires": [
             []
         ]
@@ -9993,8 +9973,8 @@
         "endTime": "22:00",
         "startOffset": 0,
         "endOffset": 0,
-        "x": 1390,
-        "y": 360,
+        "x": 1410,
+        "y": 380,
         "wires": [
             [
                 "221d531d.195e8c"
@@ -10021,7 +10001,7 @@
         "output_location": "",
         "output_location_type": "none",
         "x": 1810,
-        "y": 340,
+        "y": 380,
         "wires": [
             []
         ]
@@ -10849,8 +10829,7 @@
         "wires": [
             [
                 "e459e773.cc4ca8",
-                "d09e9ffd.22858",
-                "96744777.ee4268"
+                "d09e9ffd.22858"
             ]
         ]
     },
@@ -10935,8 +10914,8 @@
         "endTime": "18:00",
         "startOffset": 0,
         "endOffset": 0,
-        "x": 1610,
-        "y": 340,
+        "x": 1630,
+        "y": 360,
         "wires": [
             [],
             [
@@ -11191,12 +11170,16 @@
         "z": "acf12371.2c1ae",
         "name": "",
         "server": "5ee4d578.f7736c",
+        "version": "1",
         "service_domain": "light",
         "service": "turn_on",
-        "data": "{\"entity_id\":\"light.hue_lightstrip_plus_1_2\",\"rgb_color\":[255,40,254]}",
+        "entityId": "light.hue_lightstrip_plus_1_2",
+        "data": "{\"rgb_color\":[255,40,254]}",
+        "dataType": "json",
         "mergecontext": "",
         "output_location": "",
         "output_location_type": "none",
+        "mustacheAltTags": false,
         "x": 760,
         "y": 220,
         "wires": [
@@ -11209,12 +11192,16 @@
         "z": "acf12371.2c1ae",
         "name": "",
         "server": "5ee4d578.f7736c",
+        "version": "1",
         "service_domain": "light",
         "service": "turn_on",
-        "data": "{\"entity_id\":\"light.office_light_rgb\",\"rgb_color\":[255,40,254]}",
+        "entityId": "light.office_light_rgb",
+        "data": "{\"rgb_color\":[255,40,254]}",
+        "dataType": "json",
         "mergecontext": "",
         "output_location": "",
         "output_location_type": "none",
+        "mustacheAltTags": false,
         "x": 760,
         "y": 260,
         "wires": [
@@ -11227,7 +11214,7 @@
         "z": "acf12371.2c1ae",
         "name": "When office plug active",
         "info": "",
-        "x": 320,
+        "x": 120,
         "y": 200,
         "wires": []
     },
@@ -11674,7 +11661,7 @@
         "id": "11cc7991.aa98f6",
         "type": "change",
         "z": "a0cdc0f9.a362b",
-        "name": "",
+        "name": "On",
         "rules": [
             {
                 "t": "set",
@@ -11689,8 +11676,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 200,
-        "y": 520,
+        "x": 330,
+        "y": 460,
         "wires": [
             [
                 "9edcd817.aed998"
@@ -11726,7 +11713,7 @@
         "z": "21d6efde.d0943",
         "name": "Number Of People In Bed",
         "server": "5ee4d578.f7736c",
-        "version": "1",
+        "version": 1,
         "entityidfilter": "sensor.num_in_master_bed",
         "entityidfiltertype": "substring",
         "outputinitially": false,
@@ -11802,11 +11789,17 @@
         "z": "21d6efde.d0943",
         "name": "Turn Off Bath Room Light",
         "server": "5ee4d578.f7736c",
+        "version": "1",
         "service_domain": "light",
         "service": "turn_off",
-        "data": "{\"entity_id\":\"light.bathroom_light\"}",
+        "entityId": "light.bathroom_light",
+        "data": "",
+        "dataType": "json",
         "mergecontext": "",
-        "x": 1290,
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "mustacheAltTags": false,
+        "x": 1350,
         "y": 400,
         "wires": [
             []
@@ -12117,8 +12110,7 @@
                 "ad898ac9.92eed8",
                 "77cd270e.473e68",
                 "bf1745aa.99ae38",
-                "85de34f9.89a238",
-                "2f384af5.144826"
+                "85de34f9.89a238"
             ]
         ]
     },
@@ -12193,7 +12185,7 @@
         "links": [
             "4fe3f102.783b3"
         ],
-        "x": 1095,
+        "x": 1155,
         "y": 180,
         "wires": []
     },
@@ -12468,8 +12460,8 @@
                 "73c4653f.fa065c",
                 "b72e15a1.166368",
                 "60ccf4c9.3b230c",
-                "2f384af5.144826",
-                "19968e17.daaa62"
+                "19968e17.daaa62",
+                "406dc049.8d9a9"
             ]
         ]
     },
@@ -13082,8 +13074,8 @@
         "links": [
             "e04902ac.5849e"
         ],
-        "x": 55,
-        "y": 360,
+        "x": 195,
+        "y": 380,
         "wires": [
             [
                 "6d9dc6b3.422258"
@@ -13107,8 +13099,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 190,
-        "y": 360,
+        "x": 310,
+        "y": 380,
         "wires": [
             [
                 "a930f15f.b431d",
@@ -13122,8 +13114,8 @@
         "z": "a0cdc0f9.a362b",
         "name": "Hallway motion",
         "info": "",
-        "x": 120,
-        "y": 300,
+        "x": 260,
+        "y": 340,
         "wires": []
     },
     {
@@ -13174,7 +13166,8 @@
                 "c6403382.59d75",
                 "f49bd1bf.ad501",
                 "95a4dd4.cece52",
-                "1df00caa.c88d63"
+                "1df00caa.c88d63",
+                "bc7a046f.08cac8"
             ]
         ]
     },
@@ -13211,8 +13204,8 @@
         "links": [
             "5a8e5309.e00ddc"
         ],
-        "x": 895,
-        "y": 480,
+        "x": 1255,
+        "y": 360,
         "wires": []
     },
     {
@@ -13223,11 +13216,11 @@
         "links": [
             "60ccf4c9.3b230c"
         ],
-        "x": 175,
-        "y": 640,
+        "x": 575,
+        "y": 480,
         "wires": [
             [
-                "9b9a792f.af51f8"
+                "1df00caa.c88d63"
             ]
         ]
     },
@@ -13452,7 +13445,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 220,
+        "x": 160,
         "y": 640,
         "wires": [
             [
@@ -13471,7 +13464,7 @@
         "service": "turn_on",
         "data": "{\"entity_id\":\"light.office_light\"}",
         "mergecontext": "",
-        "x": 1050,
+        "x": 990,
         "y": 620,
         "wires": [
             []
@@ -13489,7 +13482,7 @@
         "entity_id": "light.hue_lightstrip_plus_1_2",
         "override_payload": true,
         "override_data": true,
-        "x": 610,
+        "x": 550,
         "y": 620,
         "wires": [
             [
@@ -13514,7 +13507,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 810,
+        "x": 750,
         "y": 620,
         "wires": [
             [
@@ -13542,7 +13535,7 @@
         "links": [
             "aa78949c.41c9a8"
         ],
-        "x": 115,
+        "x": 55,
         "y": 640,
         "wires": [
             [
@@ -13609,7 +13602,7 @@
         "type": "subflow:56368b94.f11494",
         "z": "acf12371.2c1ae",
         "name": "",
-        "x": 380,
+        "x": 320,
         "y": 640,
         "wires": [
             [
@@ -15019,7 +15012,7 @@
         "z": "a0cdc0f9.a362b",
         "name": "Light On",
         "server": "5ee4d578.f7736c",
-        "version": "1",
+        "version": 1,
         "outputs": 1,
         "halt_if": "",
         "halt_if_type": "str",
@@ -17590,9 +17583,12 @@
         "z": "48ba348c.61270c",
         "name": "Call Routine",
         "server": "eef5a84.da24f58",
+        "version": "1",
         "service_domain": "media_player",
         "service": "play_media",
-        "data": "{\"entity_id\":\"media_player.office\",\"media_content_id\":\"test hass\",\"media_content_type\":\"routine\"}",
+        "entityId": "media_player.office",
+        "data": "{\"media_content_id\":\"test hass\",\"media_content_type\":\"routine\"}",
+        "dataType": "json",
         "mergecontext": "",
         "output_location": "payload",
         "output_location_type": "msg",
@@ -17617,18 +17613,20 @@
         "id": "b7739156.649f8",
         "type": "inject",
         "z": "48ba348c.61270c",
-        "name": "Every 4 Minutes",
+        "name": "Every 15 Minutes",
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "repeat": "240",
+        "repeat": "900",
         "crontab": "",
         "once": true,
         "onceDelay": "60",
         "x": 170,
         "y": 2100,
         "wires": [
-            []
+            [
+                "badd92c3.692f9"
+            ]
         ]
     },
     {
@@ -18867,11 +18865,14 @@
         "id": "e1a0cf09.c2cb",
         "type": "api-call-service",
         "z": "c9b308f8.01ef68",
-        "name": "Living Room Lam,p",
+        "name": "Living Room Lamp",
         "server": "5ee4d578.f7736c",
+        "version": "1",
         "service_domain": "light",
         "service": "turn_off",
-        "data": "{\"entity_id\":\"light.bed_room_lamp\"}",
+        "entityId": "light.bed_room_lamp",
+        "data": "",
+        "dataType": "json",
         "mergecontext": "",
         "output_location": "payload",
         "output_location_type": "msg",
@@ -19080,50 +19081,25 @@
         ]
     },
     {
-        "id": "a6f67c64.7b979",
-        "type": "mqtt out",
-        "z": "b8a16318.b66a5",
-        "name": "Restart Tracker",
-        "topic": "btmonitor/scan/restart",
-        "qos": "0",
-        "retain": "false",
-        "broker": "1b6bc4ba.56ff4b",
-        "x": 340,
-        "y": 940,
-        "wires": []
-    },
-    {
         "id": "8b4076b0.a87368",
         "type": "inject",
         "z": "b8a16318.b66a5",
         "name": "",
         "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "repeat": "43200",
+        "payload": "RestartRequest",
+        "payloadType": "str",
+        "repeat": "14400",
         "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "x": 110,
+        "once": true,
+        "onceDelay": "800",
+        "x": 130,
         "y": 940,
         "wires": [
             [
-                "a6f67c64.7b979"
+                "a990f614.02de78",
+                "6efcf683.ea5c88"
             ]
         ]
-    },
-    {
-        "id": "96744777.ee4268",
-        "type": "mqtt out",
-        "z": "b8a16318.b66a5",
-        "name": "Restart Tracker",
-        "topic": "btmonitor/scan/restart",
-        "qos": "0",
-        "retain": "false",
-        "broker": "1b6bc4ba.56ff4b",
-        "x": 280,
-        "y": 760,
-        "wires": []
     },
     {
         "id": "879b2b35.d68d68",
@@ -20152,6 +20128,7 @@
         "z": "8a69107f.14257",
         "name": "Reset Button Status",
         "server": "5ee4d578.f7736c",
+        "version": 0,
         "service_domain": "input_boolean",
         "service": "turn_off",
         "data": "{\"entity_id\":\"input_boolean.danni_button\"}",
@@ -20202,41 +20179,6 @@
         "y": 1140,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "46aac761.a8d478",
-        "type": "api-call-service",
-        "z": "9a341993.fbc528",
-        "name": "TV On/Off",
-        "server": "5ee4d578.f7736c",
-        "service_domain": "switch",
-        "service": "toggle",
-        "data": "{\"entity_id\":\"switch.tv\"}",
-        "mergecontext": "",
-        "output_location": "payload",
-        "output_location_type": "msg",
-        "x": 300,
-        "y": 560,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "7bbc3eb4.8f7f7",
-        "type": "alexa-home",
-        "z": "9a341993.fbc528",
-        "conf": "3fa4c0fe.0f3ed",
-        "device": "51101",
-        "acknoledge": true,
-        "name": "TV",
-        "topic": "",
-        "x": 90,
-        "y": 560,
-        "wires": [
-            [
-                "46aac761.a8d478"
-            ]
         ]
     },
     {
@@ -20708,28 +20650,6 @@
         ]
     },
     {
-        "id": "2f384af5.144826",
-        "type": "trigger",
-        "z": "21d6efde.d0943",
-        "op1": "",
-        "op2": "",
-        "op1type": "nul",
-        "op2type": "pay",
-        "duration": "20",
-        "extend": true,
-        "units": "s",
-        "reset": "",
-        "bytopic": "all",
-        "name": "",
-        "x": 1030,
-        "y": 400,
-        "wires": [
-            [
-                "406dc049.8d9a9"
-            ]
-        ]
-    },
-    {
         "id": "b191db40.a5b7f8",
         "type": "api-call-service",
         "z": "21d6efde.d0943",
@@ -21113,33 +21033,6 @@
             [
                 "99afc7fd.02cdd8",
                 "8cbf3f8d.84749"
-            ]
-        ]
-    },
-    {
-        "id": "9b9a792f.af51f8",
-        "type": "change",
-        "z": "a0cdc0f9.a362b",
-        "name": "Off",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "off",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 290,
-        "y": 640,
-        "wires": [
-            [
-                "43f0cbfb.ff1114"
             ]
         ]
     },
@@ -22413,5 +22306,535 @@
         "x": 1460,
         "y": 180,
         "wires": []
+    },
+    {
+        "id": "a990f614.02de78",
+        "type": "mqtt out",
+        "z": "b8a16318.b66a5",
+        "name": "Restart Tracker",
+        "topic": "btmonitor/scan/restart",
+        "qos": "0",
+        "retain": "false",
+        "broker": "1b6bc4ba.56ff4b",
+        "x": 340,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "86c0bbde.977958",
+        "type": "mqtt out",
+        "z": "b8a16318.b66a5",
+        "name": "Restart Tracker",
+        "topic": "btmonitor/scan/restart",
+        "qos": "0",
+        "retain": "false",
+        "broker": "1b6bc4ba.56ff4b",
+        "x": 520,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "6efcf683.ea5c88",
+        "type": "delay",
+        "z": "b8a16318.b66a5",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 320,
+        "y": 980,
+        "wires": [
+            [
+                "86c0bbde.977958"
+            ]
+        ]
+    },
+    {
+        "id": "d8362427.c17708",
+        "type": "trigger-state",
+        "z": "1e454935.091dd7",
+        "name": "Good night triggered",
+        "server": "5ee4d578.f7736c",
+        "entityid": "input_boolean.goodnight",
+        "entityidfiltertype": "exact",
+        "debugenabled": false,
+        "constraints": [
+            {
+                "id": "ce96o0ps5uh",
+                "targetType": "this_entity",
+                "targetValue": "",
+                "propertyType": "current_state",
+                "propertyValue": "new_state.state",
+                "comparatorType": "is",
+                "comparatorValueDatatype": "str",
+                "comparatorValue": "on"
+            },
+            {
+                "id": "g04bldiufeh",
+                "targetType": "this_entity",
+                "targetValue": "",
+                "propertyType": "previous_state",
+                "propertyValue": "old_state.state",
+                "comparatorType": "is",
+                "comparatorValueDatatype": "str",
+                "comparatorValue": "off"
+            }
+        ],
+        "constraintsmustmatch": "all",
+        "outputs": 2,
+        "customoutputs": [],
+        "outputinitially": false,
+        "state_type": "str",
+        "x": 150,
+        "y": 280,
+        "wires": [
+            [
+                "9567c19f.3fa0b"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "1340727d.22962e",
+        "type": "inject",
+        "z": "1e454935.091dd7",
+        "name": "Startup",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "10",
+        "x": 120,
+        "y": 340,
+        "wires": [
+            [
+                "c11dfeb5.382b4"
+            ]
+        ]
+    },
+    {
+        "id": "c11dfeb5.382b4",
+        "type": "api-current-state",
+        "z": "1e454935.091dd7",
+        "name": "",
+        "server": "5ee4d578.f7736c",
+        "version": 1,
+        "outputs": 2,
+        "halt_if": "true",
+        "halt_if_type": "bool",
+        "halt_if_compare": "is",
+        "override_topic": false,
+        "entity_id": "input_boolean.goodnight",
+        "state_type": "habool",
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "blockInputOverrides": false,
+        "x": 390,
+        "y": 340,
+        "wires": [
+            [
+                "b5871c4d.5646b"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "b5871c4d.5646b",
+        "type": "api-call-service",
+        "z": "1e454935.091dd7",
+        "name": "Reset Request",
+        "server": "5ee4d578.f7736c",
+        "version": "1",
+        "service_domain": "input_boolean",
+        "service": "turn_off",
+        "entityId": "input_boolean.goodnight",
+        "data": "",
+        "dataType": "json",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "mustacheAltTags": false,
+        "x": 660,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7918afaa.44de1",
+        "type": "comment",
+        "z": "1e454935.091dd7",
+        "name": "Good Night",
+        "info": "",
+        "x": 130,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "51d10a3.ede8bf4",
+        "type": "api-call-service",
+        "z": "80866e71.966c6",
+        "name": "TV On/Off",
+        "server": "5ee4d578.f7736c",
+        "service_domain": "switch",
+        "service": "toggle",
+        "data": "{\"entity_id\":\"switch.tv\"}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 340,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ff0503fb.8cdfb",
+        "type": "alexa-home",
+        "z": "80866e71.966c6",
+        "conf": "3fa4c0fe.0f3ed",
+        "device": "51101",
+        "acknoledge": true,
+        "name": "TV",
+        "topic": "",
+        "x": 130,
+        "y": 400,
+        "wires": [
+            [
+                "51d10a3.ede8bf4",
+                "faa2a401.7af228"
+            ]
+        ]
+    },
+    {
+        "id": "faa2a401.7af228",
+        "type": "debug",
+        "z": "80866e71.966c6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 350,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "7513ff8e.927e4",
+        "type": "server-state-changed",
+        "z": "6e74caff.7ad1f4",
+        "name": "Dishwasher Door",
+        "server": "5ee4d578.f7736c",
+        "version": 1,
+        "entityidfilter": "binary_sensor.dishwasher_door",
+        "entityidfiltertype": "exact",
+        "outputinitially": false,
+        "state_type": "habool",
+        "haltifstate": "",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 1,
+        "output_only_on_state_change": true,
+        "x": 180,
+        "y": 860,
+        "wires": [
+            [
+                "f75923e1.22159",
+                "2934fdb0.6598f2"
+            ]
+        ]
+    },
+    {
+        "id": "f75923e1.22159",
+        "type": "switch",
+        "z": "6e74caff.7ad1f4",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 370,
+        "y": 860,
+        "wires": [
+            [
+                "fd8731ca.f5bab"
+            ],
+            [
+                "b25c4dff.04735",
+                "763e012a.d6211"
+            ]
+        ]
+    },
+    {
+        "id": "bd520a5c.aa4848",
+        "type": "api-call-service",
+        "z": "6e74caff.7ad1f4",
+        "name": "Turn Off Power",
+        "server": "5ee4d578.f7736c",
+        "version": 1,
+        "service_domain": "switch",
+        "service": "turn_off",
+        "entityId": "switch.sonoff",
+        "data": "",
+        "dataType": "json",
+        "mergecontext": "",
+        "output_location": "",
+        "output_location_type": "none",
+        "mustacheAltTags": false,
+        "x": 900,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fd8731ca.f5bab",
+        "type": "trigger",
+        "z": "6e74caff.7ad1f4",
+        "op1": "",
+        "op2": "0",
+        "op1type": "nul",
+        "op2type": "str",
+        "duration": "20",
+        "extend": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "name": "",
+        "x": 670,
+        "y": 820,
+        "wires": [
+            [
+                "bd520a5c.aa4848"
+            ]
+        ]
+    },
+    {
+        "id": "2934fdb0.6598f2",
+        "type": "debug",
+        "z": "6e74caff.7ad1f4",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 410,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "763e012a.d6211",
+        "type": "api-call-service",
+        "z": "6e74caff.7ad1f4",
+        "name": "Turn On Power",
+        "server": "5ee4d578.f7736c",
+        "version": 1,
+        "service_domain": "switch",
+        "service": "turn_on",
+        "entityId": "switch.sonoff",
+        "data": "",
+        "dataType": "json",
+        "mergecontext": "",
+        "output_location": "",
+        "output_location_type": "none",
+        "mustacheAltTags": false,
+        "x": 560,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b25c4dff.04735",
+        "type": "change",
+        "z": "6e74caff.7ad1f4",
+        "name": "Reset",
+        "rules": [
+            {
+                "t": "set",
+                "p": "reset",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 530,
+        "y": 880,
+        "wires": [
+            [
+                "fd8731ca.f5bab"
+            ]
+        ]
+    },
+    {
+        "id": "6dc15410.c5f52c",
+        "type": "mqtt out",
+        "z": "f92add19.c43b9",
+        "name": "Restart Tracker",
+        "topic": "btmonitor/scan/restart",
+        "qos": "0",
+        "retain": "false",
+        "broker": "1b6bc4ba.56ff4b",
+        "x": 400,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "3364c90.63b1f38",
+        "type": "comment",
+        "z": "f92add19.c43b9",
+        "name": "Alexa TTS",
+        "info": "",
+        "x": 80,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "6087dbe0.a43c44",
+        "type": "comment",
+        "z": "f92add19.c43b9",
+        "name": "Restart BL Tracker",
+        "info": "",
+        "x": 115.01420593261719,
+        "y": 858.6420288085938,
+        "wires": []
+    },
+    {
+        "id": "862d00f9.a28b2",
+        "type": "trigger-state",
+        "z": "f92add19.c43b9",
+        "name": "Restart Selected",
+        "server": "5ee4d578.f7736c",
+        "entityid": "input_boolean.restart_bluetoothtracker",
+        "entityidfiltertype": "exact",
+        "debugenabled": false,
+        "constraints": [
+            {
+                "id": "ra4a769ue6",
+                "targetType": "this_entity",
+                "targetValue": "",
+                "propertyType": "current_state",
+                "propertyValue": "new_state.state",
+                "comparatorType": "is",
+                "comparatorValueDatatype": "str",
+                "comparatorValue": "on"
+            },
+            {
+                "id": "ipoc8pc35tr",
+                "targetType": "this_entity",
+                "targetValue": "",
+                "propertyType": "previous_state",
+                "propertyValue": "old_state.state",
+                "comparatorType": "is",
+                "comparatorValueDatatype": "str",
+                "comparatorValue": "off"
+            }
+        ],
+        "constraintsmustmatch": "all",
+        "outputs": 2,
+        "customoutputs": [],
+        "outputinitially": false,
+        "state_type": "str",
+        "x": 110,
+        "y": 920,
+        "wires": [
+            [
+                "6dc15410.c5f52c",
+                "252c7f74.c4fc5"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "5bc216ba.000d68",
+        "type": "api-call-service",
+        "z": "f92add19.c43b9",
+        "name": "Turn Off Input",
+        "server": "5ee4d578.f7736c",
+        "version": 1,
+        "service_domain": "input_boolean",
+        "service": "turn_off",
+        "entityId": "input_boolean.restart_bluetoothtracker",
+        "data": "",
+        "dataType": "json",
+        "mergecontext": "",
+        "output_location": "",
+        "output_location_type": "none",
+        "mustacheAltTags": false,
+        "x": 580,
+        "y": 960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "252c7f74.c4fc5",
+        "type": "delay",
+        "z": "f92add19.c43b9",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 380,
+        "y": 960,
+        "wires": [
+            [
+                "5bc216ba.000d68"
+            ]
+        ]
+    },
+    {
+        "id": "30c083fd.58f19c",
+        "type": "inject",
+        "z": "a0cdc0f9.a362b",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 2660,
+        "y": 280,
+        "wires": [
+            [
+                "918f0fb5.9a267"
+            ]
+        ]
     }
 ]
