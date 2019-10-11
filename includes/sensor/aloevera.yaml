@@ -1,0 +1,20 @@
+  - platform: mqtt
+    state_topic: bt-mqtt-gateway/miflora/aloevera/temperature
+    name: "Aloe Vera Temperature"
+    unit_of_measurement: "°C"
+  - platform: mqtt
+    state_topic: bt-mqtt-gateway/miflora/aloevera/moisture
+    name: "Aloe Vera Moisture"
+    unit_of_measurement: "%"
+  - platform: mqtt
+    state_topic: bt-mqtt-gateway/miflora/aloevera/light
+    name: "Aloe Vera Light"
+    unit_of_measurement: "lux"
+  - platform: mqtt
+    state_topic: bt-mqtt-gateway/miflora/aloevera/conductivity
+    name: "Aloe Vera Conductivity"
+    unit_of_measurement: "us/cm"
+  - platform: mqtt
+    state_topic: bt-mqtt-gateway/miflora/aloevera/battery
+    name: "Aloe Vera Battery"
+    unit_of_measurement: "%"

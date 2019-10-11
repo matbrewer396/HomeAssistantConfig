@@ -88,11 +88,11 @@ tuya:
   country_code: 44
   platform: smart_life
 
-# alexa_media:
-#  accounts:
-#    - email: !secret alexa_username
-#      password: !secret alexa_password
-#      url: "amazon.co.uk"
+alexa_media:
+  accounts:
+   - email: !secret alexa_username
+     password: !secret alexa_password
+     url: "amazon.co.uk"
 
 # emulated_hue:
 #   expose_by_default: true

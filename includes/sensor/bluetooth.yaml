@@ -3,7 +3,7 @@
     value_template: '{{ value_json.confidence }}'
     unit_of_measurement: '%'
     name: 'Matt Living Room'
-    availability_topic: "availability/bluetoothtracker"
+    availability_topic: "btmonitor/livingroom/status"
     payload_available: "online"
     payload_not_available: "offline"
   - platform: mqtt
@@ -11,6 +11,6 @@
     value_template: '{{ value_json.confidence }}'
     unit_of_measurement: '%'
     name: 'Danni Living Room'
-    availability_topic: "availability/bluetoothtracker"
+    availability_topic: "btmonitor/livingroom/status"
     payload_available: "online"
     payload_not_available: "offline"
