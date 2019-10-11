@@ -46,3 +46,16 @@
           service: switch.turn_off
           entity_id: switch.mattpc_off
           
+
+  - platform: mqtt
+    name: "Kitchen Light"
+    state_topic: "kitchen/light/status"
+    command_topic: "bt-mqtt-gateway/switchbot/kitchen/light/set"
+    # availability_topic: "bt-mqtt-gateway/switchbot/kitchen/light/available"
+    payload_on: "ON"
+    payload_off: "OFF"
+    state_on: "ON"
+    state_off: "OFF"
+    optimistic: false
+    qos: 1
+    retain: false
