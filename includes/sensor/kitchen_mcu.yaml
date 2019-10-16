@@ -48,5 +48,5 @@
       dishwaser_cost:
         friendly_name: "Dishwasher Cost"
         value_template: >
-          {{(states("sensor.sonoff_energy_power")|float * (states("input_number.kwh_rate")|float /100) )|round(2)}} 
-        unit_of_measurement: "£"
+          {{(states("sensor.sonoff_energy_today")|float * (states("input_number.kwh_rate")|float /100) )|round(2)}} 
+        unit_of_measurement: "£" 
