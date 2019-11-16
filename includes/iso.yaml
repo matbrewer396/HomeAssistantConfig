@@ -15,6 +15,15 @@
             authenticationRequired: yes
             destructive: no
             behavior: 'default'
+      - name: Alarm going off
+        identifier: 'alarmrringing'
+        actions:
+          - identifier: 'SILENCE_ALARM'
+            title: 'Silence Alarm'
+            activationMode: 'background'
+            authenticationRequired: yes
+            destructive: no
+            behavior: 'default'
       - name: Good Night
         identifier: 'goodnight'
         actions:
