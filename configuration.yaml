@@ -200,3 +200,17 @@ media_player:
     name: "Fire Tv"
     adb_server_ip: 127.0.0.1
     adb_server_port: 5037
+
+
+# image_processing:
+#   - platform: tensorflow
+#     scan_interval: 604800
+#     source:
+#       - entity_id: camera.office_cam_stills
+#     file_out:
+#       - "/config/www/tensorflow/{{ camera_entity.split('.')[1] }}_latest.jpg"
+#       - "/config/www/tensorflow/{{ camera_entity.split('.')[1] }}_{{ now().strftime('%Y%m%d_%H%M%S') }}.jpg"
+#     model:
+#       graph: /config/tensorflow/model/frozen_inference_graph.pb
+#       categories: 
+#         - category: person

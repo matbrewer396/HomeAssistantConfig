@@ -80,7 +80,7 @@ cards:
             template: mini-graph 
             variables:
               - entities:
-                  - sensor.hot_tube_cost
+                  - sensor.dishwaser_cost
               - name: Cost
               - line_color: '#e300ff'
               - font_size: 53
