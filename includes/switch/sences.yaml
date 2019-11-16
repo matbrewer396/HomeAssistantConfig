@@ -1,0 +1,4 @@
+  - platform: mqtt
+    name: "Shower Time"
+    state_topic: "sences/showertimer"
+    command_topic: "sences/showertimer/set"

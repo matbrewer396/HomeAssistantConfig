@@ -1,0 +1,77 @@
+  - platform: mqtt
+    name: "Kitchen Light"
+    state_topic: "kitchen/light/status"
+    command_topic: "bt-mqtt-gateway/switchbot/kitchen/light/set"
+    # availability_topic: "bt-mqtt-gateway/switchbot/kitchen/light/available"
+    payload_on: "ON"
+    payload_off: "OFF"
+    state_on: "ON"
+    state_off: "OFF"
+    optimistic: false
+    qos: 1
+    retain: false
+
+  - platform: mqtt
+    name: "Record Living Room Camera"
+    state_topic: "camera/livingroom/record"
+    command_topic: "camera/livingroom/record/set"
+    availability_topic: "camera/livingroom/available"
+    payload_on: "ON"
+    payload_off: "OFF"
+    state_on: "ON"
+    state_off: "OFF"
+    optimistic: false
+    qos: 0
+    retain: true
+
+  - platform: mqtt
+    name: "Record Kitchen Camera"
+    state_topic: "camera/kitchen/record"
+    command_topic: "camera/kitchen/record/set"
+    availability_topic: "camera/kitchen/available"
+    payload_on: "ON"
+    payload_off: "OFF"
+    state_on: "ON"
+    state_off: "OFF"
+    optimistic: false
+    qos: 0
+    retain: true
+
+  - platform: mqtt
+    name: "Record Hallway Camera"
+    state_topic: "camera/hallway/record"
+    command_topic: "camera/hallway/record/set"
+    availability_topic: "camera/hallway/available"
+    payload_on: "ON"
+    payload_off: "OFF"
+    state_on: "ON"
+    state_off: "OFF"
+    optimistic: false
+    qos: 0
+    retain: true
+
+  - platform: mqtt
+    name: "Record Back Garden Camera"
+    state_topic: "camera/backgraden/record"
+    command_topic: "camera/backgraden/record/set"
+    availability_topic: "camera/backgraden/available"
+    payload_on: "ON"
+    payload_off: "OFF"
+    state_on: "ON"
+    state_off: "OFF"
+    optimistic: false
+    qos: 0
+    retain: true
+
+  - platform: mqtt
+    name: "Record Office Camera"
+    state_topic: "camera/office/record"
+    command_topic: "camera/office/record/set"
+    availability_topic: "camera/office/available"
+    payload_on: "ON"
+    payload_off: "OFF"
+    state_on: "ON"
+    state_off: "OFF"
+    optimistic: false
+    qos: 0
+    retain: true
