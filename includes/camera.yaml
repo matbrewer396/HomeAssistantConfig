@@ -17,6 +17,7 @@
 - platform: ffmpeg
   name: Back Garden
   input: -rtsp_transport tcp -i rtsp://192.168.30.213:8554/unicast
+
 - platform: ffmpeg
   name: OfficeCam
   input: -rtsp_transport tcp -i rtsp://192.168.30.217:8554/unicast
@@ -24,6 +25,14 @@
 - platform: ffmpeg
   name: KitchenCam
   input: -rtsp_transport tcp -i rtsp://192.168.30.212:8554/unicast
+
+- platform: ffmpeg
+  name: LivingRoomCam
+  input: -rtsp_transport tcp -i rtsp://192.168.30.219:8554/unicast
+- platform: ffmpeg
+  name: LandingCam
+  input: -rtsp_transport tcp -i rtsp://192.168.30.218:8554/unicast
+
 
 - platform: generic
   name: Kitchen Cam Stills
@@ -56,5 +65,13 @@
   password: !secret backgarden_cam_password
   authentication: basic
   still_image_url: https://192.168.30.218/cgi-bin/currentpic.cgi
+  verify_ssl: false
+  scan_interval: 5
+- platform: generic
+  name: Living Room Cam Stills
+  username: !secret backgarden_cam_user
+  password: !secret backgarden_cam_password
+  authentication: basic
+  still_image_url: https://192.168.30.219/cgi-bin/currentpic.cgi
   verify_ssl: false
   scan_interval: 5
