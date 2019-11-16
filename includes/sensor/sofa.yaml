@@ -1,0 +1,7 @@
+  - platform: mqtt
+    name: "sofa Weight Senor"
+    state_topic: "sofa/weight"
+    # availability_topic: "availability/bedroomMCU"
+    # payload_available: "online"
+    # payload_not_available: "offline"
+    expire_after : 180

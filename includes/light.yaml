@@ -19,6 +19,25 @@
     payload_not_available: "offline"
 
 
+  - platform: mqtt
+    name: "Sofa 1 Light RGB"
+    state_topic: "sofa1/rgb1/light/status"
+    command_topic: "sofa1/rgb1/light/switch"
+    brightness_state_topic: "sofa1/rgb1/brightness/status"
+    brightness_command_topic: "sofa1/rgb1/brightness/set"
+    rgb_state_topic: "sofa1/rgb1/rgb/status"
+    rgb_command_topic: "sofa1/rgb1/rgb/set"
+    rgb_value_template: "{{ value_json.rgb | join(',') }}"
+    # effect_command_topic: "sofa1/rgb1/effect/set"
+    # effect_state_topic: "sofa1/rgb1/effect/"
+    qos: 0
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+    # availability_topic: "availability/OfficeMCU"
+    # payload_available: "online"
+    # payload_not_available: "offline"
+
 
   - platform: group
     name: Living Room Lights
