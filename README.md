@@ -81,6 +81,7 @@ Key points:
 * Life360 uses GPS to provide a Home / Away for everyone
 * Bluetooth tracker to get real-time update if someone leaves / come home
 * On font door open, bluetooth tracker trigger a scan for who has arrived
+* On arrival / font door open - light on if dark
 * On font door close, bluetooth tracker trigger a scan every 15 seconds for upto 5 minutes or untill leaves
 * While armed, if any motion / contract sensor is triggered this trigger alarm
 
