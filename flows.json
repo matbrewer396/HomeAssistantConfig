@@ -7888,11 +7888,16 @@
     "z": "a068bd5.28a8d4",
     "name": "Bedroom Window Changed",
     "server": "5ee4d578.f7736c",
+    "version": "1",
     "entityidfilter": "binary_sensor.bedroom_window",
     "entityidfiltertype": "substring",
     "outputinitially": false,
+    "state_type": "str",
     "haltifstate": "",
+    "halt_if_type": "str",
+    "halt_if_compare": "is",
     "outputs": 1,
+    "output_only_on_state_change": false,
     "x": 160,
     "y": 340,
     "wires": [
@@ -9950,7 +9955,7 @@
     "outputs": 1,
     "output_only_on_state_change": false,
     "x": 130,
-    "y": 280,
+    "y": 200,
     "wires": [
       [
         "46820b01.32dab4",
@@ -9978,7 +9983,7 @@
     "to": "",
     "reg": false,
     "x": 450,
-    "y": 280,
+    "y": 200,
     "wires": [
       [
         "64a723bb.a421cc"
@@ -9998,7 +10003,7 @@
       "b46a8ce3.5b6ed"
     ],
     "x": 355,
-    "y": 240,
+    "y": 160,
     "wires": []
   },
   {
@@ -29234,5 +29239,56 @@
     "x": 355,
     "y": 960,
     "wires": []
+  },
+  {
+    "id": "89d441eb.91883",
+    "type": "server-state-changed",
+    "z": "a068bd5.28a8d4",
+    "name": "Barthroom Window Changed",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "entityidfilter": "binary_sensor.bedroom_window",
+    "entityidfiltertype": "substring",
+    "outputinitially": false,
+    "state_type": "str",
+    "haltifstate": "",
+    "halt_if_type": "str",
+    "halt_if_compare": "is",
+    "outputs": 1,
+    "output_only_on_state_change": false,
+    "x": 160,
+    "y": 300,
+    "wires": [
+      [
+        "67a90e6f.5920c"
+      ]
+    ]
+  },
+  {
+    "id": "67a90e6f.5920c",
+    "type": "change",
+    "z": "a068bd5.28a8d4",
+    "name": "Barthroom Window",
+    "rules": [
+      {
+        "t": "set",
+        "p": "location",
+        "pt": "msg",
+        "to": "Barthroom Window",
+        "tot": "str"
+      }
+    ],
+    "action": "",
+    "property": "",
+    "from": "",
+    "to": "",
+    "reg": false,
+    "x": 430,
+    "y": 300,
+    "wires": [
+      [
+        "64a723bb.a421cc"
+      ]
+    ]
   }
 ]
