@@ -24,7 +24,7 @@ config:
 
 http:
   base_url: !secret base_url
-  api_password: !secret api_password
+  # api_password: !secret api_password
   ssl_certificate: /ssl/fullchain.pem
   ssl_key: /ssl/privkey.pem
   # ip_ban_enabled: True
@@ -88,11 +88,11 @@ mqtt:
   discovery: true
   discovery_prefix: homeassistant
 
-tuya:
-  username: !secret tuya_username
-  password: !secret tuya_password
-  country_code: 44
-  platform: smart_life
+# tuya:
+#   username: !secret tuya_username
+#   password: !secret tuya_password
+#   country_code: 44
+#   platform: smart_life
 
 alexa_media:
   accounts:
@@ -134,7 +134,7 @@ alarm_control_panel:
 #   purge_keep_days: 5
 
 octoprint:
-  host: 192.168.1.204
+  host: 192.168.30.204
   api_key: !secret octoprint_apikey
   bed: true
   number_of_tools: 1 
