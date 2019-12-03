@@ -4,6 +4,7 @@
 secrets.yaml
 known_devices.yaml
 includes/zone.yaml
+fitbit.conf
 
 #HA Stuff
 home-assistant.log
@@ -14,19 +15,29 @@ home-assistant_v2.db
 !.storage/lovelace
 .cloud/
 deps/
+deps-old/
 .uuid
 emulated_hue_ids.json
 home-assistant_v2.db-shm
 home-assistant_v2.db-wal
+home-assistant_v2.db-shm
+home-assistant*
 
 #Custom Stuff / Addons
 **.pickle
 life360.conf
 custom_components/
 www/
-
+lovelace/jimz011/*
 node-red/*
 !node-red/flows.json
+tensorflow/*
+appdaemon/*
+.vs/*
+.vscode/*
+
 
 esphome/
 tmp*
+
+
