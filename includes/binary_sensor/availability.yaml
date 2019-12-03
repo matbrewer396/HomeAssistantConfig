@@ -9,8 +9,8 @@
     payload_on: "online"
     payload_off: "offline"
   - platform: mqtt
-    name: "DoorBell MCU Status"
-    state_topic: "availability/doorbellMCU"
+    name: "DoorBell Status"
+    state_topic: "availability/doorbell"
     payload_on: "online"
     payload_off: "offline"
   - platform: mqtt
@@ -39,17 +39,17 @@
     payload_on: "online"
     payload_off: "offline"
   - platform: mqtt
-    name: "Fridge Senor Status"
+    name: "Fridge Sensor Status"
     state_topic: "availability/fridgeshelly"
     payload_on: "online"
     payload_off: "offline"
   - platform: mqtt
-    name: "Freezer Senor Status"
+    name: "Freezer Sensor Status"
     state_topic: "availability/freezershelly"
     payload_on: "online"
     payload_off: "offline"
   - platform: mqtt
-    name: "kitchenMCU Senor Status"
+    name: "kitchenMCU Sensor Status"
     state_topic: "availability/kitchenMCU"
     payload_on: "online"
     payload_off: "offline"

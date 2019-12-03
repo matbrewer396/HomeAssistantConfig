@@ -1,0 +1,20 @@
+  - platform: mqtt
+    name: "Play Door Bell"
+    state_topic: "doorbell"
+    command_topic: "doorbell/set"
+    payload_on: "Play Doorbell"
+    state_on: "Play Doorbell"
+    retain: false
+    availability_topic: "availability/doorbell"
+    payload_available: "online"
+    payload_not_available: "offline"
+  - platform: mqtt
+    name: "Door Bell Change Volume"
+    state_topic: "doorbell"
+    command_topic: "doorbell/set"
+    payload_on: "Change Volume"
+    state_on: "Change Volume"
+    retain: false
+    availability_topic: "availability/doorbell"
+    payload_available: "online"
+    payload_not_available: "offline"
