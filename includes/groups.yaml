@@ -25,3 +25,18 @@
     name: BathRoom
     entities:
       - light.bathroom_light
+  sofa:
+    name: Living Room
+    entities:
+      - light.sofa2
+  livingroom_led:
+    name: Living Room
+    entities:
+      - light.sofa2
+      - light.wled_understairs
+
+  livingroom_main_lights:
+    entities:
+      - light.living_room_light_1
+      - light.living_room_light_2
+      - light.living_room_light_3

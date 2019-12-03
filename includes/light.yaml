@@ -37,14 +37,6 @@
     # availability_topic: "availability/OfficeMCU"
     # payload_available: "online"
     # payload_not_available: "offline"
-
-
-  - platform: group
-    name: Living Room Lights
-    entities:
-      - light.living_room_light_1
-      - light.living_room_light_2
-      - light.living_room_light_3
   - platform: group
     name: Library Lights
     entities:

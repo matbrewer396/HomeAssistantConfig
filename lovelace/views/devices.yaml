@@ -280,6 +280,42 @@ cards:
               - graph: bar
               - extrema: true
           - !include ../jimz011/includes/blank-card.yaml
+
+
+      - type: custom:decluttering-card
+        template: header
+        variables:
+          - content: '##### Door bell'
+      - type: horizontal-stack
+        cards:
+          - !include ../jimz011/includes/blank-card.yaml 
+          - type: custom:decluttering-card
+            template: button 
+            variables:
+              - entity: sensor.doorbell
+              - icon: bell
+              - show_last_changed: true
+              - tap_action: more-info
+              - variable: icon
+              - spin: 'mdi:bell-ring'
+              - show_name: false
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: switch.play_door_bell
+              - name: Play Door Bell
+              - icon: volume-high
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: switch.door_bell_change_volume
+              - name: Change Volume
+              - icon: volume-medium
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+          - !include ../jimz011/includes/blank-card.yaml
           
       
       - type: custom:decluttering-card

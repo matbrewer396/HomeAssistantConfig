@@ -156,6 +156,16 @@ cards:
               - tap_action: more-info
               - variable: icon
               - spin: 'mdi:door-open'
+          - type: custom:decluttering-card
+            template: button 
+            variables:
+              - entity: binary_sensor.back_door_sensor
+              - name: Back Door
+              - icon: door
+              - show_last_changed: true
+              - tap_action: more-info
+              - variable: icon
+              - spin: 'mdi:door-open'
           - !include  ../jimz011/includes/blank-card.yaml
       - type: custom:decluttering-card
         template: header 
@@ -174,6 +184,9 @@ cards:
               - tap_action: more-info
               - variable: icon
               - spin: 'mdi:door-open'
+          - type: custom:button-card
+            color_type: blank-card
+            aspect_ratio: 1/1
           - type: custom:button-card
             color_type: blank-card
             aspect_ratio: 1/1
@@ -212,6 +225,14 @@ cards:
               - icon: motion-sensor
               - show_last_changed: true
               - tap_action: more-info
+          - type: custom:decluttering-card
+            template: button 
+            variables:
+              - entity: binary_sensor.office_motion
+              - name: Office
+              - icon: motion-sensor
+              - show_last_changed: true
+              - tap_action: more-info
           - !include  ../jimz011/includes/blank-card.yaml
       - type: horizontal-stack
         cards:
@@ -232,6 +253,9 @@ cards:
               - icon: motion-sensor
               - show_last_changed: true
               - tap_action: more-info
+          - type: custom:button-card
+            color_type: blank-card
+            aspect_ratio: 1/1
           - type: custom:button-card
             color_type: blank-card
             aspect_ratio: 1/1

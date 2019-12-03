@@ -4,4 +4,5 @@
     # availability_topic: "availability/bedroomMCU"
     # payload_available: "online"
     # payload_not_available: "offline"
+    unit_of_measurement: 'Weight'
     expire_after : 180

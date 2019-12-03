@@ -64,28 +64,7 @@ cards:
       #         - size: 15%
           - !include ../jimz011/includes/blank-card.yaml
 
-### The following piece is for tablets only, You can leave this out if not needed.
-  - type: custom:state-switch
-    entity: user
-    states:
-      Home Assistant:
-        type: vertical-stack
-        cards:
-          - type: markdown 
-            style: |
-              ha-card {
-                background: none;
-                color: white;
-                box-shadow: none;
-                text-align: end;
-                font-size: 45px;
-                height: 155px;
-              }
-            content: '# [[ sensor.time.state ]]'
-### End of tablet code.
 
-  - type: vertical-stack
-    cards:
       - type: custom:decluttering-card
         template: header
         variables:
@@ -186,19 +165,8 @@ cards:
             template: mini-graph 
             variables:
               - entities:
-                  - sensor.waterkoker_am2301_temperature
-              - name: Keuken
-              - line_color: '#ffb414'
-              - font_size: 53
-              - decimals: 1
-              - graph: bar
-              - extrema: true
-          - type: custom:decluttering-card
-            template: mini-graph 
-            variables:
-              - entities:
-                  - sensor.temperature_158d0002b54868
-              - name: Badkamer
+                  - sensor.office_temperature_2
+              - name: Office (Doorbell)
               - line_color: '#ffb414'
               - font_size: 53
               - decimals: 1
@@ -207,7 +175,33 @@ cards:
           - type: custom:button-card
             color_type: blank-card
             aspect_ratio: 1/1
+          - type: custom:button-card
+            color_type: blank-card
+            aspect_ratio: 1/1
           - !include ../jimz011/includes/blank-card.yaml 
+
+    ### The following piece is for tablets only, You can leave this out if not needed.
+  - type: custom:state-switch
+    entity: user
+    states:
+      Home Assistant:
+        type: vertical-stack
+        cards:
+          - type: markdown 
+            style: |
+              ha-card {
+                background: none;
+                color: white;
+                box-shadow: none;
+                text-align: end;
+                font-size: 45px;
+                height: 155px;
+              }
+            content: '# [[ sensor.time.state ]]'
+### End of tablet code.
+
+  - type: vertical-stack
+    cards:
       - type: custom:decluttering-card
         template: header
         variables:
@@ -263,9 +257,17 @@ cards:
               - decimals: 1
               - graph: bar
               - extrema: true
-          - type: custom:button-card
-            color_type: blank-card
-            aspect_ratio: 1/1
+          - type: custom:decluttering-card
+            template: mini-graph 
+            variables:
+              - entities:
+                  - sensor.office_humidity_2
+              - name: Office
+              - line_color: '#1427ff'
+              - font_size: 53
+              - decimals: 1
+              - graph: bar
+              - extrema: true
           - type: custom:button-card
             color_type: blank-card
             aspect_ratio: 1/1
@@ -281,8 +283,8 @@ cards:
             template: mini-graph 
             variables:
               - entities:
-                  - sensor.bathroom_sensor_light_level
-              - name: Bathroom
+                  - sensor.office_light_level
+              - name: Office
               - line_color: '#00d8ff'
               - font_size: 53
               - decimals: 1
