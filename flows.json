@@ -401,6 +401,12 @@
           },
           {
             "id": "cf3d8dd7.66602"
+          },
+          {
+            "id": "45cd9a9f.06b514"
+          },
+          {
+            "id": "dbaf728b.3f5ca"
           }
         ]
       }
@@ -29866,6 +29872,52 @@
       [
         "9b45968c.c07618"
       ],
+      []
+    ]
+  },
+  {
+    "id": "45cd9a9f.06b514",
+    "type": "api-call-service",
+    "z": "c9b308f8.01ef68",
+    "name": "Sofa 2 Led",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "light",
+    "service": "turn_off",
+    "entityId": "light.sofa2",
+    "data": "",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "payload",
+    "output_location_type": "msg",
+    "mustacheAltTags": false,
+    "x": 230,
+    "y": 540,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "dbaf728b.3f5ca",
+    "type": "api-call-service",
+    "z": "c9b308f8.01ef68",
+    "name": "Under Stairs Led",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "light",
+    "service": "turn_off",
+    "entityId": "light.wled_understairs",
+    "data": "",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "payload",
+    "output_location_type": "msg",
+    "mustacheAltTags": false,
+    "x": 250,
+    "y": 580,
+    "wires": [
       []
     ]
   }
