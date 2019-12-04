@@ -119,13 +119,6 @@
     "info": ""
   },
   {
-    "id": "1f9e3480.5be75c",
-    "type": "tab",
-    "label": "alexa testing",
-    "disabled": false,
-    "info": ""
-  },
-  {
     "id": "84ed1066.f22de",
     "type": "tab",
     "label": "Fridge / Freezer",
@@ -150,7 +143,7 @@
     "id": "e361c01.ee9f54",
     "type": "tab",
     "label": "Hot Tub",
-    "disabled": false,
+    "disabled": true,
     "info": ""
   },
   {
@@ -182,6 +175,13 @@
     "info": ""
   },
   {
+    "id": "1f9e3480.5be75c",
+    "type": "tab",
+    "label": "Test - Alexa",
+    "disabled": false,
+    "info": ""
+  },
+  {
     "id": "826a5f7f.19967",
     "type": "tab",
     "label": "Flow 3",
@@ -196,13 +196,6 @@
     "info": ""
   },
   {
-    "id": "69fcb34d.8b001c",
-    "type": "tab",
-    "label": "Flow 1",
-    "disabled": false,
-    "info": ""
-  },
-  {
     "id": "7647c96c.034198",
     "type": "tab",
     "label": "Flow 4",
@@ -212,7 +205,7 @@
   {
     "id": "5625076e.ee59e8",
     "type": "tab",
-    "label": "Flow 2",
+    "label": "Test - Notication stuff",
     "disabled": false,
     "info": ""
   },
@@ -1251,12 +1244,17 @@
         "vt": "str"
       },
       {
+        "t": "eq",
+        "v": "bath",
+        "vt": "str"
+      },
+      {
         "t": "else"
       }
     ],
     "checkall": "true",
     "repair": false,
-    "outputs": 5,
+    "outputs": 6,
     "x": 230,
     "y": 180,
     "wires": [
@@ -1271,6 +1269,9 @@
       ],
       [
         "3d3fb4fe.b5ba7c"
+      ],
+      [
+        "7447c294.cedd9c"
       ],
       [
         "f3a398d3.2da708"
@@ -1877,7 +1878,7 @@
     "bytopic": "all",
     "name": "",
     "x": 850,
-    "y": 1320,
+    "y": 1380,
     "wires": [
       [
         "c29bf2f6.ae361",
@@ -1963,7 +1964,7 @@
     "output_location": "payload",
     "output_location_type": "msg",
     "x": 1100,
-    "y": 1320,
+    "y": 1380,
     "wires": [
       []
     ]
@@ -1981,7 +1982,7 @@
     "output_location": "payload",
     "output_location_type": "msg",
     "x": 1080,
-    "y": 1360,
+    "y": 1420,
     "wires": [
       []
     ]
@@ -9200,7 +9201,8 @@
         "86692ab8.010d38",
         "404814cc.c2c46c",
         "f6c97631.876a78",
-        "72c8674b.8e3c38"
+        "72c8674b.8e3c38",
+        "6ff4d6e.b277128"
       ]
     ]
   },
@@ -18423,7 +18425,8 @@
     "y": 180,
     "wires": [
       [
-        "839c216a.4a97d"
+        "839c216a.4a97d",
+        "865e9283.e79ab"
       ],
       [
         "107302af.bf410d"
@@ -18983,7 +18986,7 @@
     "y": 180,
     "wires": [
       [
-        "dcf0e660.845408"
+        "dd1b2ddf.ab4aa"
       ]
     ]
   },
@@ -19018,20 +19021,6 @@
         "ba2df1bf.c4dd7"
       ]
     ]
-  },
-  {
-    "id": "dcf0e660.845408",
-    "type": "debug",
-    "z": "e361c01.ee9f54",
-    "name": "",
-    "active": true,
-    "tosidebar": true,
-    "console": false,
-    "tostatus": false,
-    "complete": "false",
-    "x": 650,
-    "y": 140,
-    "wires": []
   },
   {
     "id": "dd1b2ddf.ab4aa",
@@ -21127,13 +21116,13 @@
     "env": [
       {
         "name": "message",
-        "type": "str",
-        "value": "Hello"
+        "value": "Hello",
+        "type": "str"
       },
       {
         "name": "who",
-        "type": "str",
-        "value": "Matt"
+        "value": "Matt",
+        "type": "str"
       }
     ],
     "x": 500,
@@ -21168,18 +21157,18 @@
     "env": [
       {
         "name": "message",
-        "type": "str",
-        "value": "Hello"
+        "value": "Hello",
+        "type": "str"
       },
       {
         "name": "who",
-        "type": "str",
-        "value": "Matt"
+        "value": "Matt",
+        "type": "str"
       },
       {
         "name": "notification_id",
-        "type": "str",
-        "value": "fdgf"
+        "value": "fdgf",
+        "type": "str"
       }
     ],
     "x": 500,
@@ -21248,23 +21237,23 @@
     "env": [
       {
         "name": "message",
-        "type": "str",
-        "value": "somethign else"
+        "value": "somethign else",
+        "type": "str"
       },
       {
         "name": "who",
-        "type": "str",
-        "value": "Matt"
+        "value": "Matt",
+        "type": "str"
       },
       {
         "name": "notification_id",
-        "type": "str",
-        "value": "fdgf"
+        "value": "fdgf",
+        "type": "str"
       },
       {
         "name": "title",
-        "type": "str",
-        "value": "New toitle"
+        "value": "New toitle",
+        "type": "str"
       }
     ],
     "x": 500,
@@ -21318,23 +21307,23 @@
     "env": [
       {
         "name": "message",
-        "type": "str",
-        "value": "somethign else"
+        "value": "somethign else",
+        "type": "str"
       },
       {
         "name": "who",
-        "type": "str",
-        "value": "Matt"
+        "value": "Matt",
+        "type": "str"
       },
       {
         "name": "notification_id",
-        "type": "str",
-        "value": "fdgf"
+        "value": "fdgf",
+        "type": "str"
       },
       {
         "name": "title",
-        "type": "str",
-        "value": "CLEARED"
+        "value": "CLEARED",
+        "type": "str"
       }
     ],
     "x": 500,
@@ -29247,7 +29236,7 @@
     "name": "Barthroom Window Changed",
     "server": "5ee4d578.f7736c",
     "version": 1,
-    "entityidfilter": "binary_sensor.bedroom_window",
+    "entityidfilter": "binary_sensor.bathroom_window",
     "entityidfiltertype": "substring",
     "outputinitially": false,
     "state_type": "str",
@@ -29255,12 +29244,13 @@
     "halt_if_type": "str",
     "halt_if_compare": "is",
     "outputs": 1,
-    "output_only_on_state_change": false,
+    "output_only_on_state_change": true,
     "x": 160,
     "y": 300,
     "wires": [
       [
-        "67a90e6f.5920c"
+        "67a90e6f.5920c",
+        "7ccd5774.a912e8"
       ]
     ]
   },
@@ -29290,5 +29280,406 @@
         "64a723bb.a421cc"
       ]
     ]
+  },
+  {
+    "id": "6ff4d6e.b277128",
+    "type": "api-render-template",
+    "z": "a3158433.9d1f78",
+    "name": "Windows / Door Status",
+    "server": "5ee4d578.f7736c",
+    "template": "Font Door: {% if is_state('binary_sensor.font_door', 'off') %}Closed{% elif  is_state('binary_sensor.font_door', 'on') %}Open{% else %}Unknown{% endif %}\nBack Boor: {% if is_state('binary_sensor.back_door_sensor', 'off') %}Closed{% elif  is_state('binary_sensor.back_door_sensor', 'on') %}Open{% else %}Unknown{% endif %}\n\nBedroom Window: {% if is_state('binary_sensor.bedroom_window', 'off') %}Closed{% elif  is_state('binary_sensor.bedroom_window', 'on') %}Open{% else %}Unknown{% endif %}\nBathroom Window: {% if is_state('binary_sensor.bathroom_window', 'off') %}Closed{% elif  is_state('binary_sensor.bathroom_window', 'on') %}Open{% else %}Unknown{% endif %}",
+    "resultsLocation": "payload",
+    "resultsLocationType": "msg",
+    "templateLocation": "",
+    "templateLocationType": "none",
+    "x": 1160,
+    "y": 1300,
+    "wires": [
+      [
+        "4f164db.e136eb4",
+        "42db4fb.3baa2b"
+      ]
+    ]
+  },
+  {
+    "id": "8cf03270.db05c",
+    "type": "subflow:a83e69e1.4b2ab8",
+    "z": "a3158433.9d1f78",
+    "name": "",
+    "env": [
+      {
+        "name": "message",
+        "value": "PAYLOAD",
+        "type": "str"
+      },
+      {
+        "name": "who",
+        "value": "Matt",
+        "type": "str"
+      }
+    ],
+    "x": 1580,
+    "y": 1300,
+    "wires": []
+  },
+  {
+    "id": "42db4fb.3baa2b",
+    "type": "debug",
+    "z": "a3158433.9d1f78",
+    "name": "",
+    "active": true,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "true",
+    "targetType": "full",
+    "x": 1510,
+    "y": 1400,
+    "wires": []
+  },
+  {
+    "id": "4f164db.e136eb4",
+    "type": "change",
+    "z": "a3158433.9d1f78",
+    "name": "Data",
+    "rules": [
+      {
+        "t": "move",
+        "p": "payload",
+        "pt": "msg",
+        "to": "payload.data.message",
+        "tot": "msg"
+      }
+    ],
+    "action": "",
+    "property": "",
+    "from": "",
+    "to": "",
+    "reg": false,
+    "x": 1350,
+    "y": 1300,
+    "wires": [
+      [
+        "42db4fb.3baa2b",
+        "8cf03270.db05c"
+      ]
+    ]
+  },
+  {
+    "id": "865e9283.e79ab",
+    "type": "debug",
+    "z": "a83e69e1.4b2ab8",
+    "name": "Send Message",
+    "active": true,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "true",
+    "targetType": "full",
+    "x": 670,
+    "y": 120,
+    "wires": []
+  },
+  {
+    "id": "27136334.733a9c",
+    "type": "subflow:a83e69e1.4b2ab8",
+    "z": "5625076e.ee59e8",
+    "name": "",
+    "env": [
+      {
+        "name": "message",
+        "value": "PAYLOAD",
+        "type": "str"
+      },
+      {
+        "name": "who",
+        "value": "Matt",
+        "type": "str"
+      }
+    ],
+    "x": 520,
+    "y": 1120,
+    "wires": []
+  },
+  {
+    "id": "1af05f2c.119c11",
+    "type": "inject",
+    "z": "5625076e.ee59e8",
+    "name": "",
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "x": 180,
+    "y": 1100,
+    "wires": [
+      [
+        "d6f373d6.49af"
+      ]
+    ]
+  },
+  {
+    "id": "d6f373d6.49af",
+    "type": "change",
+    "z": "5625076e.ee59e8",
+    "name": "Data",
+    "rules": [
+      {
+        "t": "set",
+        "p": "payload.data.message",
+        "pt": "msg",
+        "to": "Hello",
+        "tot": "str"
+      }
+    ],
+    "action": "",
+    "property": "",
+    "from": "",
+    "to": "",
+    "reg": false,
+    "x": 350,
+    "y": 1100,
+    "wires": [
+      [
+        "27136334.733a9c"
+      ]
+    ]
+  },
+  {
+    "id": "2df22b9c.bebe64",
+    "type": "inject",
+    "z": "1f9e3480.5be75c",
+    "name": "",
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "x": 1480,
+    "y": 4220,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "ef41719.8fded9",
+    "type": "inject",
+    "z": "1f9e3480.5be75c",
+    "name": "",
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "x": 1360,
+    "y": 80,
+    "wires": [
+      [
+        "1867d849.6636c8"
+      ]
+    ]
+  },
+  {
+    "id": "1867d849.6636c8",
+    "type": "api-render-template",
+    "z": "1f9e3480.5be75c",
+    "name": "Bath room weather",
+    "server": "5ee4d578.f7736c",
+    "template": "Right now its {% if not is_state('sensor.bath_room_temperature', 'unknown') %}{{ states('sensor.bath_room_temperature') | round(2)}} degrees {% elif not is_state('sensor.bath_room_temperature', 'unknown') %}{{ states('sensor.bathroom_sensor_temperature') | round(2)}} degrees{% else %}{% endif %}{% if not is_state('sensor.bath_room_humidity', 'unknown') %}with humidity of {{ states('sensor.bath_room_humidity' | round(0) ) }} percent {% endif %} inside.\nOutside its {{ state_attr('weather.dark_sky','temperature')  | round(2)}} degrees with humidity of {{ state_attr('weather.dark_sky','humidity') }} percent",
+    "resultsLocation": "say",
+    "resultsLocationType": "msg",
+    "templateLocation": "",
+    "templateLocationType": "msg",
+    "x": 1570,
+    "y": 80,
+    "wires": [
+      [
+        "6174bbc0.9b3a04"
+      ]
+    ]
+  },
+  {
+    "id": "b2abfa88.4a6958",
+    "type": "subflow:47bc2d66.1132e4",
+    "z": "1f9e3480.5be75c",
+    "name": "",
+    "env": [],
+    "x": 1910,
+    "y": 180,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "6174bbc0.9b3a04",
+    "type": "change",
+    "z": "1f9e3480.5be75c",
+    "name": "Bath Room Alexa",
+    "rules": [
+      {
+        "t": "set",
+        "p": "alexa",
+        "pt": "msg",
+        "to": "bath",
+        "tot": "str"
+      }
+    ],
+    "action": "",
+    "property": "",
+    "from": "",
+    "to": "",
+    "reg": false,
+    "x": 1810,
+    "y": 80,
+    "wires": [
+      [
+        "b2abfa88.4a6958"
+      ]
+    ]
+  },
+  {
+    "id": "7447c294.cedd9c",
+    "type": "change",
+    "z": "47bc2d66.1132e4",
+    "name": "Bath",
+    "rules": [
+      {
+        "t": "set",
+        "p": "pri_alexa",
+        "pt": "msg",
+        "to": "[\"media_player.barthroom_2\"]",
+        "tot": "json"
+      }
+    ],
+    "action": "",
+    "property": "",
+    "from": "",
+    "to": "",
+    "reg": false,
+    "x": 450,
+    "y": 340,
+    "wires": [
+      [
+        "c5f11237.56983"
+      ]
+    ]
+  },
+  {
+    "id": "7d892064.7f7aa",
+    "type": "api-render-template",
+    "z": "a0cdc0f9.a362b",
+    "name": "Bath room weather",
+    "server": "5ee4d578.f7736c",
+    "template": "Right now its {% if not is_state('sensor.bath_room_temperature', 'unknown') %}{{ states('sensor.bath_room_temperature') | round(2)}} degrees {% elif not is_state('sensor.bath_room_temperature', 'unknown') %}{{ states('sensor.bathroom_sensor_temperature') | round(2)}} degrees{% else %}{% endif %}{% if not is_state('sensor.bath_room_humidity', 'unknown') %}with humidity of {{ states('sensor.bath_room_humidity' | round(0) ) }} percent {% endif %} inside.\nOutside its {{ state_attr('weather.dark_sky','temperature')  | round(2)}} degrees with humidity of {{ state_attr('weather.dark_sky','humidity') }} percent",
+    "resultsLocation": "say",
+    "resultsLocationType": "msg",
+    "templateLocation": "",
+    "templateLocationType": "msg",
+    "x": 290,
+    "y": 1700,
+    "wires": [
+      [
+        "34f42aaf.90d7b6"
+      ]
+    ]
+  },
+  {
+    "id": "1e1fdef1.99f061",
+    "type": "subflow:47bc2d66.1132e4",
+    "z": "a0cdc0f9.a362b",
+    "name": "",
+    "env": [],
+    "x": 790,
+    "y": 1700,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "34f42aaf.90d7b6",
+    "type": "change",
+    "z": "a0cdc0f9.a362b",
+    "name": "Bath Room Alexa",
+    "rules": [
+      {
+        "t": "set",
+        "p": "alexa",
+        "pt": "msg",
+        "to": "bath",
+        "tot": "str"
+      }
+    ],
+    "action": "",
+    "property": "",
+    "from": "",
+    "to": "",
+    "reg": false,
+    "x": 530,
+    "y": 1700,
+    "wires": [
+      [
+        "1e1fdef1.99f061"
+      ]
+    ]
+  },
+  {
+    "id": "a4a986e.5cee778",
+    "type": "link in",
+    "z": "a0cdc0f9.a362b",
+    "name": "Bath Room - Action Open",
+    "links": [
+      "b4657f46.153e"
+    ],
+    "x": 155,
+    "y": 1640,
+    "wires": [
+      [
+        "7d892064.7f7aa"
+      ]
+    ]
+  },
+  {
+    "id": "7ccd5774.a912e8",
+    "type": "switch",
+    "z": "a068bd5.28a8d4",
+    "name": "Triggered?",
+    "property": "payload",
+    "propertyType": "msg",
+    "rules": [
+      {
+        "t": "eq",
+        "v": "on",
+        "vt": "str"
+      }
+    ],
+    "checkall": "true",
+    "repair": false,
+    "outputs": 1,
+    "x": 410,
+    "y": 260,
+    "wires": [
+      [
+        "b4657f46.153e"
+      ]
+    ]
+  },
+  {
+    "id": "b4657f46.153e",
+    "type": "link out",
+    "z": "a068bd5.28a8d4",
+    "name": "",
+    "links": [
+      "a4a986e.5cee778"
+    ],
+    "x": 540,
+    "y": 260,
+    "wires": []
   }
 ]

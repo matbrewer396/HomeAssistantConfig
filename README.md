@@ -127,3 +127,4 @@ Pretty much the same
 ### Bath Room
 * On Motion & Door senors trigger light on. Turn off a few minutes later
 * Input boolean on HA ui, for bath time - force the light to turn of for 1 hour
+* On window open, alex will give a details on temp and humdity inside and outside 
