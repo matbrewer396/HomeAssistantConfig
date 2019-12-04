@@ -217,6 +217,13 @@
     "info": ""
   },
   {
+    "id": "6d7fc63f.5adbe8",
+    "type": "tab",
+    "label": "Xmas lights",
+    "disabled": false,
+    "info": ""
+  },
+  {
     "id": "a83e69e1.4b2ab8",
     "type": "subflow",
     "name": "Send Message",
@@ -29681,5 +29688,185 @@
     "x": 540,
     "y": 260,
     "wires": []
+  },
+  {
+    "id": "90aab28.477495",
+    "type": "catch",
+    "z": "6d7fc63f.5adbe8",
+    "name": "",
+    "scope": null,
+    "uncaught": true,
+    "x": 120,
+    "y": 80,
+    "wires": [
+      [
+        "8022b999.df8938"
+      ]
+    ]
+  },
+  {
+    "id": "8022b999.df8938",
+    "type": "subflow:f5eab19a.7cf17",
+    "z": "6d7fc63f.5adbe8",
+    "name": "",
+    "x": 330,
+    "y": 80,
+    "wires": []
+  },
+  {
+    "id": "7ff829ee.210798",
+    "type": "comment",
+    "z": "6d7fc63f.5adbe8",
+    "name": "Error Handler",
+    "info": "",
+    "x": 110,
+    "y": 40,
+    "wires": []
+  },
+  {
+    "id": "63b26139.6d6b1",
+    "type": "comment",
+    "z": "6d7fc63f.5adbe8",
+    "name": "Disable this tab when tree is down",
+    "info": "",
+    "x": 180,
+    "y": 140,
+    "wires": []
+  },
+  {
+    "id": "26e6b9d.261cc46",
+    "type": "api-call-service",
+    "z": "6d7fc63f.5adbe8",
+    "name": "",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "switch",
+    "service": "turn_on",
+    "entityId": "switch.plug_02",
+    "data": "",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "",
+    "output_location_type": "none",
+    "mustacheAltTags": false,
+    "x": 430,
+    "y": 220,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "9b45968c.c07618",
+    "type": "api-call-service",
+    "z": "6d7fc63f.5adbe8",
+    "name": "",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "switch",
+    "service": "turn_off",
+    "entityId": "switch.plug_02",
+    "data": "",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "",
+    "output_location_type": "none",
+    "mustacheAltTags": false,
+    "x": 430,
+    "y": 280,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "7ffb929a.4515ec",
+    "type": "trigger-state",
+    "z": "6d7fc63f.5adbe8",
+    "name": "Lamp On",
+    "server": "5ee4d578.f7736c",
+    "entityid": "light.bed_room_lamp",
+    "entityidfiltertype": "exact",
+    "debugenabled": false,
+    "constraints": [
+      {
+        "id": "7jadbz2mrxn",
+        "targetType": "this_entity",
+        "targetValue": "",
+        "propertyType": "current_state",
+        "propertyValue": "new_state.state",
+        "comparatorType": "is",
+        "comparatorValueDatatype": "bool",
+        "comparatorValue": "true"
+      },
+      {
+        "id": "z2kb7nj23b",
+        "targetType": "this_entity",
+        "targetValue": "",
+        "propertyType": "previous_state",
+        "propertyValue": "old_state.state",
+        "comparatorType": "is",
+        "comparatorValueDatatype": "bool",
+        "comparatorValue": "false"
+      }
+    ],
+    "constraintsmustmatch": "all",
+    "outputs": 2,
+    "customoutputs": [],
+    "outputinitially": false,
+    "state_type": "habool",
+    "x": 180,
+    "y": 220,
+    "wires": [
+      [
+        "26e6b9d.261cc46"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "941433cb.845cc",
+    "type": "trigger-state",
+    "z": "6d7fc63f.5adbe8",
+    "name": "Lamp On",
+    "server": "5ee4d578.f7736c",
+    "entityid": "light.bed_room_lamp",
+    "entityidfiltertype": "exact",
+    "debugenabled": false,
+    "constraints": [
+      {
+        "id": "cz2wjoyqmtp",
+        "targetType": "this_entity",
+        "targetValue": "",
+        "propertyType": "current_state",
+        "propertyValue": "new_state.state",
+        "comparatorType": "is",
+        "comparatorValueDatatype": "bool",
+        "comparatorValue": "false"
+      },
+      {
+        "id": "d36c1rfkas",
+        "targetType": "this_entity",
+        "targetValue": "",
+        "propertyType": "previous_state",
+        "propertyValue": "old_state.state",
+        "comparatorType": "is",
+        "comparatorValueDatatype": "bool",
+        "comparatorValue": "true"
+      }
+    ],
+    "constraintsmustmatch": "all",
+    "outputs": 2,
+    "customoutputs": [],
+    "outputinitially": false,
+    "state_type": "habool",
+    "x": 180,
+    "y": 280,
+    "wires": [
+      [
+        "9b45968c.c07618"
+      ],
+      []
+    ]
   }
 ]
