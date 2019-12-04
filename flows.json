@@ -13301,7 +13301,7 @@
     "y": 640,
     "wires": [
       [
-        "2d437d10.987252"
+        "59628c2c.735854"
       ],
       []
     ]
@@ -13312,12 +13312,19 @@
     "z": "acf12371.2c1ae",
     "name": "Turn on office Light",
     "server": "5ee4d578.f7736c",
+    "version": 1,
+    "debugenabled": false,
     "service_domain": "light",
     "service": "turn_on",
-    "data": "{\"entity_id\":\"light.office_light\"}",
+    "entityId": "light.office_light",
+    "data": "",
+    "dataType": "json",
     "mergecontext": "",
-    "x": 990,
-    "y": 620,
+    "output_location": "payload",
+    "output_location_type": "msg",
+    "mustacheAltTags": false,
+    "x": 850,
+    "y": 640,
     "wires": [
       []
     ]
@@ -13328,43 +13335,27 @@
     "z": "acf12371.2c1ae",
     "name": "Is office light strip",
     "server": "5ee4d578.f7736c",
-    "outputs": 1,
-    "halt_if": "",
+    "version": 1,
+    "outputs": 2,
+    "halt_if": "true",
+    "halt_if_type": "bool",
+    "halt_if_compare": "is",
     "override_topic": true,
     "entity_id": "light.hue_lightstrip_plus_1_2",
-    "override_payload": true,
-    "override_data": true,
-    "x": 550,
-    "y": 620,
+    "state_type": "habool",
+    "state_location": "payload",
+    "override_payload": "msg",
+    "entity_location": "data",
+    "override_data": "msg",
+    "blockInputOverrides": false,
+    "x": 570,
+    "y": 640,
     "wires": [
       [
-        "8b16eeba.b939e"
-      ]
-    ]
-  },
-  {
-    "id": "8b16eeba.b939e",
-    "type": "switch",
-    "z": "acf12371.2c1ae",
-    "name": "is On",
-    "property": "data.attributes.dark",
-    "propertyType": "msg",
-    "rules": [
-      {
-        "t": "eq",
-        "v": "off",
-        "vt": "str"
-      }
-    ],
-    "checkall": "true",
-    "repair": false,
-    "outputs": 1,
-    "x": 750,
-    "y": 620,
-    "wires": [
-      [
-        "2b73f0a0.724a4"
-      ]
+        "2b73f0a0.724a4",
+        "3c8bb36d.6841fc"
+      ],
+      []
     ]
   },
   {
@@ -13385,6 +13376,7 @@
     "z": "acf12371.2c1ae",
     "name": "",
     "links": [
+      "8c42e0e.e62702",
       "aa78949c.41c9a8"
     ],
     "x": 55,
@@ -13447,21 +13439,6 @@
     "y": 140,
     "wires": [
       [],
-      [],
-      []
-    ]
-  },
-  {
-    "id": "2d437d10.987252",
-    "type": "subflow:56368b94.f11494",
-    "z": "acf12371.2c1ae",
-    "name": "",
-    "x": 320,
-    "y": 640,
-    "wires": [
-      [
-        "5ec4b1fb.2f549"
-      ],
       [],
       []
     ]
@@ -29236,7 +29213,8 @@
       "688dc601.8b0c68",
       "8f80ab0d.e271b8",
       "b46a8ce3.5b6ed",
-      "c215726b.e66d5"
+      "c215726b.e66d5",
+      "79d508d7.4f2b68"
     ],
     "x": 355,
     "y": 960,
@@ -29919,6 +29897,164 @@
     "y": 580,
     "wires": [
       []
+    ]
+  },
+  {
+    "id": "59628c2c.735854",
+    "type": "api-current-state",
+    "z": "acf12371.2c1ae",
+    "name": "Is it light",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "outputs": 2,
+    "halt_if": "1.6",
+    "halt_if_type": "num",
+    "halt_if_compare": "gt",
+    "override_topic": false,
+    "entity_id": "sensor.office_light_level",
+    "state_type": "num",
+    "state_location": "payload",
+    "override_payload": "msg",
+    "entity_location": "data",
+    "override_data": "msg",
+    "blockInputOverrides": true,
+    "x": 360,
+    "y": 640,
+    "wires": [
+      [
+        "5ec4b1fb.2f549"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "3c8bb36d.6841fc",
+    "type": "trigger",
+    "z": "acf12371.2c1ae",
+    "op1": "",
+    "op2": "",
+    "op1type": "nul",
+    "op2type": "payl",
+    "duration": "30",
+    "extend": true,
+    "units": "min",
+    "reset": "",
+    "bytopic": "all",
+    "name": "",
+    "x": 830,
+    "y": 680,
+    "wires": [
+      [
+        "bc54c26f.5a203"
+      ]
+    ]
+  },
+  {
+    "id": "bc54c26f.5a203",
+    "type": "api-call-service",
+    "z": "acf12371.2c1ae",
+    "name": "Turn off office Light",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "light",
+    "service": "turn_off",
+    "entityId": "light.office_light",
+    "data": "",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "payload",
+    "output_location_type": "msg",
+    "mustacheAltTags": false,
+    "x": 1050,
+    "y": 680,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "bca5faad.bb2738",
+    "type": "trigger-state",
+    "z": "acf12371.2c1ae",
+    "name": "Light Strips On",
+    "server": "5ee4d578.f7736c",
+    "entityid": "light.hue_lightstrip_plus_1_2",
+    "entityidfiltertype": "exact",
+    "debugenabled": false,
+    "constraints": [
+      {
+        "id": "qhecvyt3517",
+        "targetType": "this_entity",
+        "targetValue": "",
+        "propertyType": "current_state",
+        "propertyValue": "new_state.state",
+        "comparatorType": "is",
+        "comparatorValueDatatype": "bool",
+        "comparatorValue": "true"
+      }
+    ],
+    "constraintsmustmatch": "all",
+    "outputs": 2,
+    "customoutputs": [],
+    "outputinitially": false,
+    "state_type": "habool",
+    "x": 340,
+    "y": 680,
+    "wires": [
+      [
+        "758d79c1.8c5508"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "758d79c1.8c5508",
+    "type": "delay",
+    "z": "acf12371.2c1ae",
+    "name": "",
+    "pauseType": "delay",
+    "timeout": "2",
+    "timeoutUnits": "seconds",
+    "rate": "1",
+    "nbRateUnits": "1",
+    "rateUnits": "second",
+    "randomFirst": "1",
+    "randomLast": "5",
+    "randomUnits": "seconds",
+    "drop": false,
+    "x": 500,
+    "y": 680,
+    "wires": [
+      [
+        "e8a55e90.6643a"
+      ]
+    ]
+  },
+  {
+    "id": "e8a55e90.6643a",
+    "type": "change",
+    "z": "acf12371.2c1ae",
+    "name": "Reset",
+    "rules": [
+      {
+        "t": "set",
+        "p": "reset",
+        "pt": "msg",
+        "to": "true",
+        "tot": "bool"
+      }
+    ],
+    "action": "",
+    "property": "",
+    "from": "",
+    "to": "",
+    "reg": false,
+    "x": 630,
+    "y": 680,
+    "wires": [
+      [
+        "3c8bb36d.6841fc"
+      ]
     ]
   }
 ]

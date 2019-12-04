@@ -108,7 +108,7 @@ Pretty much the same
 * Voice control - "Alexa Lights" / "Alex Turn on kitchen room lights"
 
 ### Office (aka my room)
-* On door open and dark, lights turn on 
+* On door open / motion and dark in room, lights turn on - turn off after 30 min
 * Voice control - "Alexa Computer On" - off hibrate my pc. Under and above desk strip light also turn on
 * On 3d printer status change, send notication
 * Voice control - "Alexa Dryer On"
