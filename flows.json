@@ -1429,7 +1429,7 @@
     "z": "a3158433.9d1f78",
     "name": "Matt Home/Away",
     "server": "eef5a84.da24f58",
-    "version": "1",
+    "version": 1,
     "entityidfilter": "device_tracker.life360_matt",
     "entityidfiltertype": "substring",
     "outputinitially": false,
@@ -1693,7 +1693,8 @@
       "2eee0fe3.6615e",
       "f7740640.c80dd8",
       "7b16b22f.9b719c",
-      "75a9b44f.1ad8bc"
+      "75a9b44f.1ad8bc",
+      "62e65b11.82cb44"
     ],
     "x": 2995,
     "y": 500,
@@ -5383,7 +5384,8 @@
       "75a9b44f.1ad8bc",
       "2102539f.96c77c",
       "deda2f49.2eff4",
-      "e947642c.3c9798"
+      "e947642c.3c9798",
+      "62e65b11.82cb44"
     ],
     "x": 995,
     "y": 1040,
@@ -10015,7 +10017,8 @@
       "bc5dc5ef.bc51a8",
       "688dc601.8b0c68",
       "a76f3a0f.d1fb38",
-      "b46a8ce3.5b6ed"
+      "b46a8ce3.5b6ed",
+      "dfd9170e.807548"
     ],
     "x": 355,
     "y": 160,
@@ -13297,11 +13300,11 @@
     "checkall": "true",
     "repair": false,
     "outputs": 2,
-    "x": 160,
+    "x": 220,
     "y": 640,
     "wires": [
       [
-        "59628c2c.735854"
+        "a6585e65.8f1eb"
       ],
       []
     ]
@@ -13323,7 +13326,7 @@
     "output_location": "payload",
     "output_location_type": "msg",
     "mustacheAltTags": false,
-    "x": 850,
+    "x": 1270,
     "y": 640,
     "wires": [
       []
@@ -13337,7 +13340,7 @@
     "server": "5ee4d578.f7736c",
     "version": 1,
     "outputs": 2,
-    "halt_if": "true",
+    "halt_if": "false",
     "halt_if_type": "bool",
     "halt_if_compare": "is",
     "override_topic": true,
@@ -13348,7 +13351,7 @@
     "entity_location": "data",
     "override_data": "msg",
     "blockInputOverrides": false,
-    "x": 570,
+    "x": 990,
     "y": 640,
     "wires": [
       [
@@ -17714,7 +17717,8 @@
       "bc5dc5ef.bc51a8",
       "a76f3a0f.d1fb38",
       "b46a8ce3.5b6ed",
-      "c215726b.e66d5"
+      "c215726b.e66d5",
+      "dfd9170e.807548"
     ],
     "x": 355,
     "y": 680,
@@ -20149,7 +20153,8 @@
       "688dc601.8b0c68",
       "a76f3a0f.d1fb38",
       "b46a8ce3.5b6ed",
-      "c215726b.e66d5"
+      "c215726b.e66d5",
+      "dfd9170e.807548"
     ],
     "x": 355,
     "y": 760,
@@ -23263,7 +23268,8 @@
       "1d9c70a.c14368f",
       "f7740640.c80dd8",
       "7b16b22f.9b719c",
-      "75a9b44f.1ad8bc"
+      "75a9b44f.1ad8bc",
+      "62e65b11.82cb44"
     ],
     "x": 1335,
     "y": 280,
@@ -23324,7 +23330,8 @@
       "7149bfa1.ce884",
       "f7740640.c80dd8",
       "7b16b22f.9b719c",
-      "75a9b44f.1ad8bc"
+      "75a9b44f.1ad8bc",
+      "62e65b11.82cb44"
     ],
     "x": 1335,
     "y": 460,
@@ -23539,7 +23546,7 @@
     "type": "function",
     "z": "e2e6b53d.b747f8",
     "name": "Data",
-    "func": "var BreakerName = env.get(\"InputPrefix\") + env.get(\"BreakerName\")\nflow.set('breakerOldmsg',msg);\n\n\n\nmsg = {\"payload\" : {\"entity_id\": BreakerName}}\n    \nreturn msg;\n\n",
+    "func": "var BreakerName = env.get(\"InputPrefix\") + env.get(\"BreakerName\").toLowerCase()\nflow.set('breakerOldmsg',msg);\n\n\n\nmsg = {\"payload\" : {\"entity_id\": BreakerName}}\n    \nreturn msg;\n\n",
     "outputs": 1,
     "noerr": 0,
     "x": 250,
@@ -24878,17 +24885,20 @@
     "env": [
       {
         "name": "BreakerName",
-        "type": "str",
-        "value": "LampOnDownStairs"
+        "value": "LampOnDownStairs",
+        "type": "str"
       }
     ],
     "x": 220,
     "y": 1920,
     "wires": [
       [
-        "4b47eaf4.4a6da4"
+        "4b47eaf4.4a6da4",
+        "8100715b.8c6bd"
       ],
-      []
+      [
+        "4fdb5811.284bc8"
+      ]
     ]
   },
   {
@@ -28486,284 +28496,6 @@
     "wires": []
   },
   {
-    "id": "cf1e7ec2.cc878",
-    "type": "api-call-service",
-    "z": "a068bd5.28a8d4",
-    "name": "Hallway Light On",
-    "server": "5ee4d578.f7736c",
-    "version": 1,
-    "debugenabled": false,
-    "service_domain": "light",
-    "service": "turn_on",
-    "entityId": "light.hallway_light",
-    "data": "",
-    "dataType": "json",
-    "mergecontext": "",
-    "output_location": "payload",
-    "output_location_type": "msg",
-    "mustacheAltTags": false,
-    "x": 670,
-    "y": 2260,
-    "wires": [
-      []
-    ]
-  },
-  {
-    "id": "a8a19346.4b11c",
-    "type": "api-call-service",
-    "z": "a068bd5.28a8d4",
-    "name": "Living Room Lamp",
-    "server": "5ee4d578.f7736c",
-    "version": 1,
-    "service_domain": "light",
-    "service": "turn_on",
-    "entityId": "light.bed_room_lamp",
-    "data": "{\"brightness_pct\":\"100\",\"transition\":\"2\",\"rgb_color\":[255,244,216]}",
-    "dataType": "json",
-    "mergecontext": "",
-    "output_location": "payload",
-    "output_location_type": "msg",
-    "mustacheAltTags": false,
-    "x": 870,
-    "y": 2320,
-    "wires": [
-      [
-        "6abffa1a.9588d4"
-      ]
-    ]
-  },
-  {
-    "id": "6abffa1a.9588d4",
-    "type": "trigger",
-    "z": "a068bd5.28a8d4",
-    "op1": "",
-    "op2": "0",
-    "op1type": "nul",
-    "op2type": "str",
-    "duration": "8",
-    "extend": true,
-    "units": "min",
-    "reset": "",
-    "bytopic": "all",
-    "name": "",
-    "x": 1090,
-    "y": 2400,
-    "wires": [
-      [
-        "3eea4253.fc389e"
-      ]
-    ]
-  },
-  {
-    "id": "ec70985c.f0af88",
-    "type": "switch",
-    "z": "a068bd5.28a8d4",
-    "name": "Triggered?",
-    "property": "payload",
-    "propertyType": "msg",
-    "rules": [
-      {
-        "t": "eq",
-        "v": "on",
-        "vt": "str"
-      }
-    ],
-    "checkall": "true",
-    "repair": false,
-    "outputs": 1,
-    "x": 190,
-    "y": 2440,
-    "wires": [
-      [
-        "fb0740fb.95bc8"
-      ]
-    ]
-  },
-  {
-    "id": "fb0740fb.95bc8",
-    "type": "change",
-    "z": "a068bd5.28a8d4",
-    "name": "",
-    "rules": [
-      {
-        "t": "set",
-        "p": "reset",
-        "pt": "msg",
-        "to": "",
-        "tot": "str"
-      }
-    ],
-    "action": "",
-    "property": "",
-    "from": "",
-    "to": "",
-    "reg": false,
-    "x": 400,
-    "y": 2440,
-    "wires": [
-      [
-        "6abffa1a.9588d4"
-      ]
-    ]
-  },
-  {
-    "id": "3eea4253.fc389e",
-    "type": "api-call-service",
-    "z": "a068bd5.28a8d4",
-    "name": "Turn Off Light",
-    "server": "5ee4d578.f7736c",
-    "version": 1,
-    "debugenabled": false,
-    "service_domain": "light",
-    "service": "turn_off",
-    "entityId": "light.bed_room_lamp",
-    "data": "",
-    "dataType": "json",
-    "mergecontext": "",
-    "output_location": "payload",
-    "output_location_type": "msg",
-    "mustacheAltTags": false,
-    "x": 1300,
-    "y": 2400,
-    "wires": [
-      []
-    ]
-  },
-  {
-    "id": "b46a8ce3.5b6ed",
-    "type": "link in",
-    "z": "a068bd5.28a8d4",
-    "name": "",
-    "links": [
-      "224d137d.2e20dc",
-      "3495a219.f840be",
-      "f8efe1fe.a4a0e",
-      "8c42e0e.e62702"
-    ],
-    "x": 75,
-    "y": 2440,
-    "wires": [
-      [
-        "ec70985c.f0af88"
-      ]
-    ]
-  },
-  {
-    "id": "e68b50d8.312ab",
-    "type": "subflow:56368b94.f11494",
-    "z": "a068bd5.28a8d4",
-    "name": "",
-    "x": 420,
-    "y": 2300,
-    "wires": [
-      [
-        "cf1e7ec2.cc878",
-        "3fc7c010.0410f"
-      ],
-      [],
-      [
-        "cf1e7ec2.cc878",
-        "3fc7c010.0410f"
-      ]
-    ]
-  },
-  {
-    "id": "75a9b44f.1ad8bc",
-    "type": "link in",
-    "z": "a068bd5.28a8d4",
-    "name": "Welcome Light",
-    "links": [
-      "528c1fad.a8b2",
-      "634ad6f8.7dd188",
-      "cc2fcdb8.ee0ea",
-      "f48b357d.debff8"
-    ],
-    "x": 75,
-    "y": 2280,
-    "wires": [
-      [
-        "e68b50d8.312ab"
-      ]
-    ]
-  },
-  {
-    "id": "113a8705.1f19a9",
-    "type": "comment",
-    "z": "a068bd5.28a8d4",
-    "name": "MOtion Detected",
-    "info": "",
-    "x": 140,
-    "y": 2400,
-    "wires": []
-  },
-  {
-    "id": "eb947b1e.235fb8",
-    "type": "comment",
-    "z": "a068bd5.28a8d4",
-    "name": "Someone Just Got Home",
-    "info": "",
-    "x": 170,
-    "y": 2240,
-    "wires": []
-  },
-  {
-    "id": "1683f6.6fee7c0b",
-    "type": "subflow:cdbc6ec6.2e0ec",
-    "z": "a068bd5.28a8d4",
-    "name": "",
-    "env": [],
-    "x": 220,
-    "y": 2340,
-    "wires": [
-      [],
-      [
-        "e68b50d8.312ab"
-      ]
-    ]
-  },
-  {
-    "id": "4bb66f41.1e0e6",
-    "type": "link in",
-    "z": "a068bd5.28a8d4",
-    "name": "",
-    "links": [],
-    "x": 75,
-    "y": 2340,
-    "wires": [
-      [
-        "1683f6.6fee7c0b"
-      ]
-    ]
-  },
-  {
-    "id": "3fc7c010.0410f",
-    "type": "api-current-state",
-    "z": "a068bd5.28a8d4",
-    "name": "Lamp On?",
-    "server": "5ee4d578.f7736c",
-    "version": 1,
-    "outputs": 2,
-    "halt_if": "false",
-    "halt_if_type": "bool",
-    "halt_if_compare": "is",
-    "override_topic": false,
-    "entity_id": "light.bed_room_lamp",
-    "state_type": "habool",
-    "state_location": "payload",
-    "override_payload": "msg",
-    "entity_location": "data",
-    "override_data": "msg",
-    "blockInputOverrides": false,
-    "x": 650,
-    "y": 2320,
-    "wires": [
-      [
-        "a8a19346.4b11c"
-      ],
-      []
-    ]
-  },
-  {
     "id": "32097680.334d7a",
     "type": "inject",
     "z": "a3158433.9d1f78",
@@ -29214,7 +28946,8 @@
       "8f80ab0d.e271b8",
       "b46a8ce3.5b6ed",
       "c215726b.e66d5",
-      "79d508d7.4f2b68"
+      "79d508d7.4f2b68",
+      "dfd9170e.807548"
     ],
     "x": 355,
     "y": 960,
@@ -29909,7 +29642,7 @@
     "outputs": 2,
     "halt_if": "1.6",
     "halt_if_type": "num",
-    "halt_if_compare": "gt",
+    "halt_if_compare": "lt",
     "override_topic": false,
     "entity_id": "sensor.office_light_level",
     "state_type": "num",
@@ -29918,7 +29651,7 @@
     "entity_location": "data",
     "override_data": "msg",
     "blockInputOverrides": true,
-    "x": 360,
+    "x": 780,
     "y": 640,
     "wires": [
       [
@@ -29935,13 +29668,13 @@
     "op2": "",
     "op1type": "nul",
     "op2type": "payl",
-    "duration": "30",
+    "duration": "5",
     "extend": true,
     "units": "min",
     "reset": "",
     "bytopic": "all",
     "name": "",
-    "x": 830,
+    "x": 1250,
     "y": 680,
     "wires": [
       [
@@ -29966,8 +29699,8 @@
     "output_location": "payload",
     "output_location_type": "msg",
     "mustacheAltTags": false,
-    "x": 1050,
-    "y": 680,
+    "x": 1470,
+    "y": 720,
     "wires": [
       []
     ]
@@ -29998,36 +29731,13 @@
     "customoutputs": [],
     "outputinitially": false,
     "state_type": "habool",
-    "x": 340,
-    "y": 680,
-    "wires": [
-      [
-        "758d79c1.8c5508"
-      ],
-      []
-    ]
-  },
-  {
-    "id": "758d79c1.8c5508",
-    "type": "delay",
-    "z": "acf12371.2c1ae",
-    "name": "",
-    "pauseType": "delay",
-    "timeout": "2",
-    "timeoutUnits": "seconds",
-    "rate": "1",
-    "nbRateUnits": "1",
-    "rateUnits": "second",
-    "randomFirst": "1",
-    "randomLast": "5",
-    "randomUnits": "seconds",
-    "drop": false,
-    "x": 500,
-    "y": 680,
+    "x": 820,
+    "y": 700,
     "wires": [
       [
         "e8a55e90.6643a"
-      ]
+      ],
+      []
     ]
   },
   {
@@ -30049,12 +29759,342 @@
     "from": "",
     "to": "",
     "reg": false,
-    "x": 630,
-    "y": 680,
+    "x": 1050,
+    "y": 700,
     "wires": [
       [
-        "3c8bb36d.6841fc"
+        "3c8bb36d.6841fc",
+        "bc54c26f.5a203"
       ]
+    ]
+  },
+  {
+    "id": "8100715b.8c6bd",
+    "type": "debug",
+    "z": "a068bd5.28a8d4",
+    "name": "",
+    "active": true,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "true",
+    "targetType": "full",
+    "x": 470,
+    "y": 1840,
+    "wires": []
+  },
+  {
+    "id": "4fdb5811.284bc8",
+    "type": "debug",
+    "z": "a068bd5.28a8d4",
+    "name": "",
+    "active": true,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "true",
+    "targetType": "full",
+    "x": 470,
+    "y": 1880,
+    "wires": []
+  },
+  {
+    "id": "a6585e65.8f1eb",
+    "type": "subflow:e2e6b53d.b747f8",
+    "z": "acf12371.2c1ae",
+    "name": "",
+    "env": [
+      {
+        "name": "BreakerName",
+        "value": "officelightonmotion",
+        "type": "str"
+      }
+    ],
+    "x": 500,
+    "y": 640,
+    "wires": [
+      [
+        "59628c2c.735854"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "25dc764e.1ed99a",
+    "type": "api-call-service",
+    "z": "cd950567.f864b8",
+    "name": "Hallway Light On",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "light",
+    "service": "turn_on",
+    "entityId": "light.hallway_light",
+    "data": "",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "payload",
+    "output_location_type": "msg",
+    "mustacheAltTags": false,
+    "x": 670,
+    "y": 1300,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "78bb52c2.40ffac",
+    "type": "api-call-service",
+    "z": "cd950567.f864b8",
+    "name": "Living Room Lamp",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "service_domain": "light",
+    "service": "turn_on",
+    "entityId": "light.bed_room_lamp",
+    "data": "{\"brightness_pct\":\"100\",\"transition\":\"2\",\"rgb_color\":[255,244,216]}",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "payload",
+    "output_location_type": "msg",
+    "mustacheAltTags": false,
+    "x": 870,
+    "y": 1360,
+    "wires": [
+      [
+        "c22eea3.7fa6118"
+      ]
+    ]
+  },
+  {
+    "id": "c22eea3.7fa6118",
+    "type": "trigger",
+    "z": "cd950567.f864b8",
+    "op1": "",
+    "op2": "0",
+    "op1type": "nul",
+    "op2type": "str",
+    "duration": "8",
+    "extend": true,
+    "units": "min",
+    "reset": "",
+    "bytopic": "all",
+    "name": "",
+    "x": 1090,
+    "y": 1440,
+    "wires": [
+      [
+        "2d0e3d99.12fbd2"
+      ]
+    ]
+  },
+  {
+    "id": "94c969c1.0d1668",
+    "type": "switch",
+    "z": "cd950567.f864b8",
+    "name": "Triggered?",
+    "property": "payload",
+    "propertyType": "msg",
+    "rules": [
+      {
+        "t": "eq",
+        "v": "on",
+        "vt": "str"
+      }
+    ],
+    "checkall": "true",
+    "repair": false,
+    "outputs": 1,
+    "x": 190,
+    "y": 1480,
+    "wires": [
+      [
+        "75e721da.a3eeb"
+      ]
+    ]
+  },
+  {
+    "id": "75e721da.a3eeb",
+    "type": "change",
+    "z": "cd950567.f864b8",
+    "name": "",
+    "rules": [
+      {
+        "t": "set",
+        "p": "reset",
+        "pt": "msg",
+        "to": "",
+        "tot": "str"
+      }
+    ],
+    "action": "",
+    "property": "",
+    "from": "",
+    "to": "",
+    "reg": false,
+    "x": 400,
+    "y": 1480,
+    "wires": [
+      [
+        "c22eea3.7fa6118"
+      ]
+    ]
+  },
+  {
+    "id": "2d0e3d99.12fbd2",
+    "type": "api-call-service",
+    "z": "cd950567.f864b8",
+    "name": "Turn Off Light",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "light",
+    "service": "turn_off",
+    "entityId": "light.bed_room_lamp, light.hallway_light",
+    "data": "",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "payload",
+    "output_location_type": "msg",
+    "mustacheAltTags": false,
+    "x": 1300,
+    "y": 1440,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "dfd9170e.807548",
+    "type": "link in",
+    "z": "cd950567.f864b8",
+    "name": "",
+    "links": [
+      "224d137d.2e20dc",
+      "3495a219.f840be",
+      "f8efe1fe.a4a0e",
+      "8c42e0e.e62702"
+    ],
+    "x": 75,
+    "y": 1480,
+    "wires": [
+      [
+        "94c969c1.0d1668"
+      ]
+    ]
+  },
+  {
+    "id": "354de190.00169e",
+    "type": "subflow:56368b94.f11494",
+    "z": "cd950567.f864b8",
+    "name": "",
+    "x": 420,
+    "y": 1340,
+    "wires": [
+      [
+        "25dc764e.1ed99a",
+        "3e4eb988.7e47c6"
+      ],
+      [],
+      [
+        "25dc764e.1ed99a",
+        "3e4eb988.7e47c6"
+      ]
+    ]
+  },
+  {
+    "id": "62e65b11.82cb44",
+    "type": "link in",
+    "z": "cd950567.f864b8",
+    "name": "Welcome Light",
+    "links": [
+      "528c1fad.a8b2",
+      "634ad6f8.7dd188",
+      "cc2fcdb8.ee0ea",
+      "f48b357d.debff8"
+    ],
+    "x": 75,
+    "y": 1320,
+    "wires": [
+      [
+        "354de190.00169e"
+      ]
+    ]
+  },
+  {
+    "id": "523c240b.dd2e8c",
+    "type": "comment",
+    "z": "cd950567.f864b8",
+    "name": "MOtion Detected",
+    "info": "",
+    "x": 140,
+    "y": 1440,
+    "wires": []
+  },
+  {
+    "id": "480996f2.5fd988",
+    "type": "comment",
+    "z": "cd950567.f864b8",
+    "name": "Someone Just Got Home",
+    "info": "",
+    "x": 170,
+    "y": 1280,
+    "wires": []
+  },
+  {
+    "id": "a3887573.d80c88",
+    "type": "subflow:cdbc6ec6.2e0ec",
+    "z": "cd950567.f864b8",
+    "name": "",
+    "env": [],
+    "x": 220,
+    "y": 1380,
+    "wires": [
+      [],
+      [
+        "354de190.00169e"
+      ]
+    ]
+  },
+  {
+    "id": "5e18f96b.d4c508",
+    "type": "link in",
+    "z": "cd950567.f864b8",
+    "name": "",
+    "links": [],
+    "x": 75,
+    "y": 1380,
+    "wires": [
+      [
+        "a3887573.d80c88"
+      ]
+    ]
+  },
+  {
+    "id": "3e4eb988.7e47c6",
+    "type": "api-current-state",
+    "z": "cd950567.f864b8",
+    "name": "Lamp On?",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "outputs": 2,
+    "halt_if": "false",
+    "halt_if_type": "bool",
+    "halt_if_compare": "is",
+    "override_topic": false,
+    "entity_id": "light.bed_room_lamp",
+    "state_type": "habool",
+    "state_location": "payload",
+    "override_payload": "msg",
+    "entity_location": "data",
+    "override_data": "msg",
+    "blockInputOverrides": false,
+    "x": 650,
+    "y": 1360,
+    "wires": [
+      [
+        "78bb52c2.40ffac"
+      ],
+      []
     ]
   }
 ]
