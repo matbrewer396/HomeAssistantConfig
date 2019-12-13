@@ -5,6 +5,8 @@ secrets.yaml
 known_devices.yaml
 includes/zone.yaml
 fitbit.conf
+plex.conf
+Life360.conf
 
 #HA Stuff
 home-assistant.log
@@ -30,7 +32,6 @@ custom_components/
 www/
 lovelace/jimz011/*
 node-red/*
-!node-red/flows.json
 tensorflow/*
 appdaemon/*
 .vs/*
