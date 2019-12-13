@@ -18079,13 +18079,13 @@
     "env": [
       {
         "name": "message",
-        "type": "str",
-        "value": "PAYLOAD"
+        "value": "PAYLOAD",
+        "type": "str"
       },
       {
         "name": "who",
-        "type": "str",
-        "value": "Both"
+        "value": "Both",
+        "type": "str"
       }
     ],
     "x": 980,
@@ -30191,6 +30191,427 @@
     "y": 1040,
     "wires": [
       []
+    ]
+  },
+  {
+    "id": "35eae1b3.ccafbe",
+    "type": "comment",
+    "z": "9a341993.fbc528",
+    "name": "Drive Status from Power",
+    "info": "",
+    "x": 210,
+    "y": 860,
+    "wires": []
+  },
+  {
+    "id": "bf1e8f5e.13d05",
+    "type": "server-state-changed",
+    "z": "6e74caff.7ad1f4",
+    "name": "Power Change",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "entityidfilter": "sensor.plug_09_energy_power",
+    "entityidfiltertype": "exact",
+    "outputinitially": false,
+    "state_type": "str",
+    "haltifstate": "",
+    "halt_if_type": "str",
+    "halt_if_compare": "is",
+    "outputs": 1,
+    "output_only_on_state_change": true,
+    "x": 140,
+    "y": 2220,
+    "wires": [
+      [
+        "1fa06118.77638f",
+        "b91ec71b.de1508"
+      ]
+    ]
+  },
+  {
+    "id": "2b752590.0edd6a",
+    "type": "switch",
+    "z": "6e74caff.7ad1f4",
+    "name": "",
+    "property": "payload",
+    "propertyType": "msg",
+    "rules": [
+      {
+        "t": "eq",
+        "v": "0",
+        "vt": "num"
+      },
+      {
+        "t": "else"
+      }
+    ],
+    "checkall": "true",
+    "repair": false,
+    "outputs": 2,
+    "x": 450,
+    "y": 2220,
+    "wires": [
+      [
+        "c4292ac5.6b9648"
+      ],
+      [
+        "cb10ed6c.836b4",
+        "e2e37ddb.d2983"
+      ]
+    ]
+  },
+  {
+    "id": "1fa06118.77638f",
+    "type": "debug",
+    "z": "6e74caff.7ad1f4",
+    "name": "",
+    "active": true,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "payload",
+    "targetType": "msg",
+    "x": 330,
+    "y": 2180,
+    "wires": []
+  },
+  {
+    "id": "b91ec71b.de1508",
+    "type": "rbe",
+    "z": "6e74caff.7ad1f4",
+    "name": "",
+    "func": "rbe",
+    "gap": "",
+    "start": "",
+    "inout": "out",
+    "property": "payload",
+    "x": 310,
+    "y": 2220,
+    "wires": [
+      [
+        "2b752590.0edd6a"
+      ]
+    ]
+  },
+  {
+    "id": "c4292ac5.6b9648",
+    "type": "trigger",
+    "z": "6e74caff.7ad1f4",
+    "op1": "",
+    "op2": "0",
+    "op1type": "nul",
+    "op2type": "str",
+    "duration": "25",
+    "extend": false,
+    "units": "s",
+    "reset": "",
+    "bytopic": "all",
+    "name": "",
+    "x": 830,
+    "y": 2160,
+    "wires": [
+      [
+        "e2e37ddb.d2983"
+      ]
+    ]
+  },
+  {
+    "id": "cb10ed6c.836b4",
+    "type": "change",
+    "z": "6e74caff.7ad1f4",
+    "name": "",
+    "rules": [
+      {
+        "t": "set",
+        "p": "reset",
+        "pt": "msg",
+        "to": "",
+        "tot": "str"
+      }
+    ],
+    "action": "",
+    "property": "",
+    "from": "",
+    "to": "",
+    "reg": false,
+    "x": 620,
+    "y": 2140,
+    "wires": [
+      [
+        "c4292ac5.6b9648"
+      ]
+    ]
+  },
+  {
+    "id": "e2e37ddb.d2983",
+    "type": "switch",
+    "z": "6e74caff.7ad1f4",
+    "name": "Status",
+    "property": "payload",
+    "propertyType": "msg",
+    "rules": [
+      {
+        "t": "eq",
+        "v": "1",
+        "vt": "num"
+      },
+      {
+        "t": "gt",
+        "v": "1",
+        "vt": "num"
+      }
+    ],
+    "checkall": "false",
+    "repair": false,
+    "outputs": 2,
+    "x": 870,
+    "y": 2240,
+    "wires": [
+      [
+        "e5ac570e.22d648"
+      ],
+      [
+        "bf75942f.91c238"
+      ]
+    ]
+  },
+  {
+    "id": "16d8d201.0473ce",
+    "type": "comment",
+    "z": "6e74caff.7ad1f4",
+    "name": "Washer Drive Status from Power",
+    "info": "",
+    "x": 190,
+    "y": 2120,
+    "wires": []
+  },
+  {
+    "id": "118fa0d5.385e1f",
+    "type": "change",
+    "z": "6e74caff.7ad1f4",
+    "name": "Washer done",
+    "rules": [
+      {
+        "t": "set",
+        "p": "say",
+        "pt": "msg",
+        "to": "the washing machine has finished",
+        "tot": "str"
+      },
+      {
+        "t": "set",
+        "p": "alexa",
+        "pt": "msg",
+        "to": "down",
+        "tot": "str"
+      }
+    ],
+    "action": "",
+    "property": "",
+    "from": "",
+    "to": "",
+    "reg": false,
+    "x": 1550,
+    "y": 2220,
+    "wires": [
+      [
+        "312b9bb5.feabc4"
+      ]
+    ]
+  },
+  {
+    "id": "312b9bb5.feabc4",
+    "type": "subflow:47bc2d66.1132e4",
+    "z": "6e74caff.7ad1f4",
+    "name": "",
+    "env": [],
+    "x": 1890,
+    "y": 2200,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "4a770ad6.5bccc4",
+    "type": "change",
+    "z": "6e74caff.7ad1f4",
+    "name": "Washer Started",
+    "rules": [
+      {
+        "t": "set",
+        "p": "say",
+        "pt": "msg",
+        "to": "washer machine has started",
+        "tot": "str"
+      },
+      {
+        "t": "set",
+        "p": "alexa",
+        "pt": "msg",
+        "to": "Kitchen",
+        "tot": "str"
+      }
+    ],
+    "action": "",
+    "property": "",
+    "from": "",
+    "to": "",
+    "reg": false,
+    "x": 1560,
+    "y": 2260,
+    "wires": [
+      [
+        "312b9bb5.feabc4"
+      ]
+    ]
+  },
+  {
+    "id": "1fc7be16.10f152",
+    "type": "subflow:a83e69e1.4b2ab8",
+    "z": "6e74caff.7ad1f4",
+    "name": "",
+    "env": [
+      {
+        "name": "message",
+        "value": "Washer Started",
+        "type": "str"
+      },
+      {
+        "name": "who",
+        "value": "Both",
+        "type": "str"
+      }
+    ],
+    "x": 1560,
+    "y": 2300,
+    "wires": []
+  },
+  {
+    "id": "c2955882.59bb98",
+    "type": "subflow:a83e69e1.4b2ab8",
+    "z": "6e74caff.7ad1f4",
+    "name": "",
+    "env": [
+      {
+        "name": "message",
+        "value": "Washer Finished",
+        "type": "str"
+      },
+      {
+        "name": "who",
+        "value": "Both",
+        "type": "str"
+      }
+    ],
+    "x": 1560,
+    "y": 2180,
+    "wires": []
+  },
+  {
+    "id": "e5ac570e.22d648",
+    "type": "change",
+    "z": "6e74caff.7ad1f4",
+    "name": "Done",
+    "rules": [
+      {
+        "t": "set",
+        "p": "payload",
+        "pt": "msg",
+        "to": "Done",
+        "tot": "str"
+      }
+    ],
+    "action": "",
+    "property": "",
+    "from": "",
+    "to": "",
+    "reg": false,
+    "x": 1010,
+    "y": 2220,
+    "wires": [
+      [
+        "efe1be6f.d6185"
+      ]
+    ]
+  },
+  {
+    "id": "bf75942f.91c238",
+    "type": "change",
+    "z": "6e74caff.7ad1f4",
+    "name": "Running",
+    "rules": [
+      {
+        "t": "set",
+        "p": "payload",
+        "pt": "msg",
+        "to": "Running",
+        "tot": "str"
+      }
+    ],
+    "action": "",
+    "property": "",
+    "from": "",
+    "to": "",
+    "reg": false,
+    "x": 1020,
+    "y": 2260,
+    "wires": [
+      [
+        "efe1be6f.d6185"
+      ]
+    ]
+  },
+  {
+    "id": "efe1be6f.d6185",
+    "type": "rbe",
+    "z": "6e74caff.7ad1f4",
+    "name": "",
+    "func": "rbe",
+    "gap": "",
+    "start": "",
+    "inout": "out",
+    "property": "payload",
+    "x": 1170,
+    "y": 2240,
+    "wires": [
+      [
+        "3d3030f0.75c41"
+      ]
+    ]
+  },
+  {
+    "id": "3d3030f0.75c41",
+    "type": "switch",
+    "z": "6e74caff.7ad1f4",
+    "name": "",
+    "property": "payload",
+    "propertyType": "msg",
+    "rules": [
+      {
+        "t": "eq",
+        "v": "Done",
+        "vt": "str"
+      },
+      {
+        "t": "eq",
+        "v": "Running",
+        "vt": "str"
+      }
+    ],
+    "checkall": "true",
+    "repair": false,
+    "outputs": 2,
+    "x": 1310,
+    "y": 2240,
+    "wires": [
+      [
+        "118fa0d5.385e1f",
+        "c2955882.59bb98"
+      ],
+      [
+        "4a770ad6.5bccc4",
+        "1fc7be16.10f152"
+      ]
     ]
   }
 ]

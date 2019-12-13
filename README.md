@@ -109,20 +109,23 @@ Pretty much the same
 * In the morning, when the hallway motion sensor. Living room lights will come for 30 seconds and will remain on if the living room motion sensor is triggered. - This more convenience to void delay of walking into a dark room.
 * Voice control - "Alexa Lights" / "Alex Turn on living room lights"
 * Voice control - "Alexa TV On" - plug fire tv
-* Voice control - "Alexa Turn On Living Room Plug" - we have extention lead that runs under sofa for thing phone / laptops charger etc
+* Voice control - "Alexa Turn On Living Room Plug" - we have extension lead that runs under sofa for thing phone / laptops charger etc
 
 ### Kitchen
 * Fridge/ Freezer - when the temperature drops below target trigger a notification (door might be open). - Testing!  assuming no false postive going hookup to alexa aka wake me up before food go bad!
 * Voice control - "Alexa Lights" / "Alex Turn on kitchen room lights"
+* On dishwasher door open the smart plug switched off and back on after the door close - stops an annoying bleep when dorr is left open
+* On dishwasher status changed, notification is sent and alex say completed
+* On washing machine status changed, notification is sent and alex say completed
 
 ### Office (aka my room)
 * On door open / motion and dark in room, lights turn on - turn off after 30 min
 * Voice control - "Alexa Computer On" - off hibrate my pc. Under and above desk strip light also turn on
-* On 3d printer status change, send notication
+* On 3d printer status change, send notification
 * Voice control - "Alexa Dryer On"
 
 ### Hallway
-* Simple light on when montion senor trigger and is dark for a few minutes - only automate that run outside of HA (all in hue hub)
+* Simple light on when motion senor trigger and is dark for a few minutes - only automate that run outside of HA (all in hue hub)
 
 ### Bedroom
 * Voice control - "Alexa Lights"
@@ -136,7 +139,7 @@ Pretty much the same
 * On Motion & Door senors trigger light on. Turn off a few minutes later
 * Input boolean on HA ui, for bath time - force the light to turn of for 1 hour
 * Shower time - force the light to go max brightness, music starts playing
-* On window open, alex will give a details on temp and humdity inside and outside 
+* On window open, alex will give a details on temp and humidity inside and outside 
 * Smart Switch - for when your up for talking:
   * Left Single Press: Toggle Light
   * Right Single Press: Bath Time 
