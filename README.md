@@ -14,6 +14,7 @@ List of all my device, that make house smart:
 | PI Zero | 1 | Blue tooth tracker using https://github.com/andrewjfreyer/monitor/blob/master/support/README.md and motion eye |
 | Broadlink IR home hub | 1 | Monition Eye |
 | 1byone Easy Chime Wireless Doorbell | 1 | with a nodemcu to connect to HA |
+| dresden elektronik ConBee II | 1 | for all my zigbee needs |
 
 ### Lights
 | Device  | Quantity | Notes |
@@ -22,24 +23,26 @@ List of all my device, that make house smart:
 | Philips Hue White Ambiance | 4 | Connected via hue hub | 
 | Philips Hue White and Color Ambiance Light Strip | 2 | Connected via hue hub | 
 | DIY: 39inch RGB LED Light | 1 | Connect to nodemcu, controlled via MQTT | 
+| DIY: ws2812b LED Light strips  | 3 | Connect to nodemcu / D1 mini, using a modded version of WLED firmware  | 
 
 ### Motion Detector
 | Device  | Quantity | Notes |
 | ------------- | :---: | ------------- | 
 | Philips Hue Smart Motion Sensor | 2 | Connected via hue hub |
-| DIY: PIR Motion Detector | 1 | Connect to nodemcu, controlled via MQTT  | 
+| DIY: PIR Motion Detector | 2 | Connect to nodemcu, controlled via MQTT  | 
 
 ### Door / Window Senor
 | Device  | Quantity | Notes |
 | ------------- | :---: | ------------- | 
 | DIY: Door / Window Magnetic Contact Reed Switch | 4 | Connect to nodemcu, pushes to MQTT | 
+| Aqara Door / Window / Temperature Senor | 5 | Connect to Zigbee USB | 
 
 ### Temperature / Humidity / Light Level
 | Device  | Quantity | Notes |
 | ------------- | :---: | ------------- | 
-| DIY: DHT11 | 2 | Temperature & Humidity. Connect to nodemcu, pushes to MQTT | 
+| DIY: DHT11 | 3 | Temperature & Humidity. Connect to nodemcu, pushes to MQTT | 
 | DIY: DHT22 | 2 | Temperature & Humidity. Connect to nodemcu, pushes to MQTT | 
-| DIY: LDR | 2 | Light Level. Connect to nodemcu, pushes to MQTT | 
+| DIY: LDR | 3 | Light Level. Connect to nodemcu, pushes to MQTT | 
 | Philips Hue Smart Motion Sensor | 2 | Temperature / Light Level. Connected via hue hub |
 | Shelly H&T | 2 | Temperature & Humidity |
 | miflora | 1 |  |
@@ -71,7 +74,12 @@ List of all my device, that make house smart:
 | Neos SmartCam | 5 | flashed to https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks | 
 
 ### Mechanical
-| SwitchBot | 1 |  |
+| SwitchBot | 1 | Bluetooth to pi zero, then MQTT |
+
+### Buttons
+| Aqara Wireless Smart Switch - Double Button  | 1 |  |
+
+
 
 ## Automation
 List of all my automation, that make house smart. 
@@ -127,4 +135,12 @@ Pretty much the same
 ### Bath Room
 * On Motion & Door senors trigger light on. Turn off a few minutes later
 * Input boolean on HA ui, for bath time - force the light to turn of for 1 hour
+* Shower time - force the light to go max brightness, music starts playing
 * On window open, alex will give a details on temp and humdity inside and outside 
+* Smart Switch - for when your up for talking:
+  * Left Single Press: Toggle Light
+  * Right Single Press: Bath Time 
+  * Left Double Press: Shower Time
+  * Right Double Press: 
+  * Left Long Press: 
+  * Right Long Press: 
