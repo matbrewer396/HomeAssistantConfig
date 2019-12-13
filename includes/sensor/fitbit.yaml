@@ -1,0 +1,8 @@
+  # - platform: fitbit
+  #   monitored_resources:
+  #     - "devices/battery"
+  #     - "activities/steps"
+  #     - "activities/tracker/steps"
+  #     - "activities/heart"
+  #     - "activities/distance"
+  #     - "sleep/minutesAsleep"
