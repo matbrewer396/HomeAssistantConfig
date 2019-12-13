@@ -21,7 +21,7 @@ cards:
           - type: custom:decluttering-card
             template: button  
             variables:
-              - entity: light.living_room_lights
+              - entity: group.livingroom_main_lights
               - name: Main
               - icon: ceiling-light
               - label: !include ../jimz011/includes/brightness-label.yaml
@@ -63,9 +63,9 @@ cards:
           - type: custom:decluttering-card
             template: button  
             variables:
-              - entity: light.sofa_1_light_rgb
-              - name: Sofa
-              - icon: sofa
+              - entity: group.livingroom_led
+              - name: LEDs
+              - icon: led-strip-variant
               - label: !include ../jimz011/includes/brightness-label.yaml
               - grid:
                   !include ../jimz011/includes/light-devices-grid.yaml
@@ -73,27 +73,26 @@ cards:
             template: button  
             variables:
               - entity: light.wled_understairs
-              - name: Understars
-              - icon: ceiling-light
-              - label: !include ../jimz011/includes/brightness-label.yaml
-              - grid:
-                  !include ../jimz011/includes/light-devices-grid.yaml
-      
-          - type: custom:decluttering-card
-            template: button  
-            variables:
-              - entity: light.living_room_light_2
-              - name: Main - 2
-              - icon: ceiling-light
+              - name: Under Stairs
+              - icon: stairs
               - label: !include ../jimz011/includes/brightness-label.yaml
               - grid:
                   !include ../jimz011/includes/light-devices-grid.yaml
           - type: custom:decluttering-card
             template: button  
             variables:
-              - entity: light.living_room_light_3
-              - name: Main - 3
-              - icon: ceiling-light
+              - entity: light.sofa_1_light_rgb
+              - name: Sofa - 1 
+              - icon: sofa
+              - label: !include ../jimz011/includes/brightness-label.yaml
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: light.wled_sofa2
+              - name: Sofa-2
+              - icon: Sofa
               - label: !include ../jimz011/includes/brightness-label.yaml
               - grid:
                   !include ../jimz011/includes/light-devices-grid.yaml
@@ -101,15 +100,6 @@ cards:
       - type: horizontal-stack
         cards:
           - !include ../jimz011/includes/blank-card.yaml
-          - type: custom:decluttering-card
-            template: button  
-            variables:
-              - entity: light.sofa_1_light_rgb
-              - name: Sofa
-              - icon: sofa
-              - label: !include ../jimz011/includes/brightness-label.yaml
-              - grid:
-                  !include ../jimz011/includes/light-devices-grid.yaml
           - type: custom:decluttering-card
             template: button  
             variables:
@@ -138,6 +128,9 @@ cards:
               - label: !include ../jimz011/includes/brightness-label.yaml
               - grid:
                   !include ../jimz011/includes/light-devices-grid.yaml
+          - type: custom:button-card
+            color_type: blank-card
+            aspect_ratio: 1/1
           - !include ../jimz011/includes/blank-card.yaml
       
 
