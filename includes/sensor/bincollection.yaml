@@ -1,0 +1,32 @@
+  - platform: rest
+    name: Black Bins Collection
+    resource: https://citizen.westberks.gov.uk/apiserver/ajaxlibrary
+    method: POST
+    scan_interval: 86400
+    device_class: timestamp
+    payload: '{ "jsonrpc" : "2.0" , "id" : "1321455687934464654" , "method" : "veolia.wasteservices.v1.getServicesByUPRN" , "params" : { "uprn" : "10009197994" } }'
+    value_template: "{{ as_timestamp(value_json.result.services[1].ServiceHeaders.ServiceHeader.Next) | timestamp_custom('%d/%m/%y') }}"
+    headers:
+      Content-Type: application/json
+      User-Agent: Home Assistant REST sensor
+ 
+  - platform: rest
+    name: Green Bins Collection
+    resource: https://citizen.westberks.gov.uk/apiserver/ajaxlibrary
+    method: POST
+    scan_interval: 86400
+    device_class: timestamp
+    payload: '{ "jsonrpc" : "2.0" , "id" : "1321455517694427543" , "method" : "veolia.wasteservices.v1.getServicesByUPRN" , "params" : { "uprn" : "10009197994" } }'
+    value_template: "{{ as_timestamp(value_json.result.services[2].ServiceHeaders.ServiceHeader.Next) | timestamp_custom('%d/%m/%y') }}"    
+    headers:
+      Content-Type: application/json
+      User-Agent: Home Assistant REST sensor
+  - platform: template
+    sensors:
+      nextbincollection:
+        value_template: > 
+          Next collection is {% if states("sensor.black_bins_collection") < states("sensor.green_bins_collection") %}black bin ({{ states("sensor.black_bins_collection") }}){% elif states("sensor.black_bins_collection") > states("sensor.green_bins_collection") %}recyling bins ({{ states("sensor.green_bins_collection")}}){% endif %}
+      bincollectionistomorrow:
+        value_template: >
+          {% set tomorrow = (as_timestamp(now())+ (86400)) | timestamp_custom("%d/%m/%y") %}{{tomorrow ==  states("sensor.black_bins_collection") or tomorrow ==  states("sensor.green_bins_collection")}}
+

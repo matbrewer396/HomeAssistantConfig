@@ -147,3 +147,6 @@ Pretty much the same
   * Right Double Press: 
   * Left Long Press: 
   * Right Long Press: 
+
+### Bin Collection
+* Let me know the day before when the next bin collection is and what type

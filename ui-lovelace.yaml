@@ -25,6 +25,7 @@ views:
   - !include lovelace/views/links.yaml
   - !include lovelace/views/matt.yaml
   - !include lovelace/views/debug.yaml
+  - !include lovelace/views/house.yaml
   
   # - !include lovelace/jimz011/views/energy.yaml
   

@@ -217,6 +217,13 @@
     "info": ""
   },
   {
+    "id": "ea5aca0.33b1a38",
+    "type": "tab",
+    "label": "Bin Day",
+    "disabled": false,
+    "info": ""
+  },
+  {
     "id": "a83e69e1.4b2ab8",
     "type": "subflow",
     "name": "Send Message",
@@ -17964,7 +17971,7 @@
     "type": "function",
     "z": "a83e69e1.4b2ab8",
     "name": "Data",
-    "func": "var mess = env.get(\"message\")\nvar title = env.get(\"title\")\n\nvar notification_id = env.get(\"notification_id\")\n\nvar who = env.get(\"who\")\nvar target;\nif (who == \"Matt\") {\n   target = \"mattiphone_iphone_10smax\"\n} else if (who == \"Danni\") {\n   target = \"mattiphone_danni_iphonexr\" \n} else if (who == \"\") {\n    target = \"\"\n} else {\n   target = \"mattiphone\"\n}\n\n\nif (mess == \"PAYLOAD\") {\n    msg.payload = \n    {\n      \"service\": target,\n      \"data\": msg.payload.data \n    }\n} else {\n    msg.payload = \n    {\n      \"service\": target,\n      \"data\": \n      {\n        \"message\": mess\n      }\n    }\n}\n\nvar createNot = null\nvar clearNot = null\nif( notification_id !== \"\" ) {\n    if (title == \"CLEARED\") {\n        clearNot = {\n         \"payload\": {\n             \"data\": {\n                    \"notification_id\":notification_id\n                }\n            }\n        }\n    } else {\n        createNot = {\n         \"payload\": {\n             \"data\": {\n                    \"message\": mess,\n                    \"title\": title,\n                    \"notification_id\":notification_id\n                }\n            }\n        }\n    }\n    \n}\n\n\nif (target == \"\") {\n    msg = null\n}\n\n\nreturn [msg,createNot,clearNot];",
+    "func": "var mess = env.get(\"message\")\nvar title = env.get(\"title\")\n\nvar notification_id = env.get(\"notification_id\")\n\nvar who = env.get(\"who\")\nvar target;\nif (who == \"Matt\") {\n   target = \"mattiphone_iphone_10smax\"\n} else if (who == \"Danni\") {\n   target = \"mattiphone_danni_iphonexr\" \n} else if (who == \"\") {\n    target = \"\"\n} else {\n   target = \"mattiphone\"\n}\n\n\nif (mess == \"PAYLOAD\") {\n    msg.payload = \n    {\n      \"service\": target,\n      \"data\": msg.payload.data \n    }\n} else if (mess == \"PAYLOAD_MSG\") {\n    msg.payload = \n    {\n      \"service\": target,\n      \"data\": \n      {\n        \"message\": msg.payload\n      }\n    }\n} else {\n    msg.payload = \n    {\n      \"service\": target,\n      \"data\": \n      {\n        \"message\": mess\n      }\n    }\n}\n\nvar createNot = null\nvar clearNot = null\nif( notification_id !== \"\" ) {\n    if (title == \"CLEARED\") {\n        clearNot = {\n         \"payload\": {\n             \"data\": {\n                    \"notification_id\":notification_id\n                }\n            }\n        }\n    } else {\n        createNot = {\n         \"payload\": {\n             \"data\": {\n                    \"message\": mess,\n                    \"title\": title,\n                    \"notification_id\":notification_id\n                }\n            }\n        }\n    }\n    \n}\n\n\nif (target == \"\") {\n    msg = null\n}\n\n\nreturn [msg,createNot,clearNot];",
     "outputs": 3,
     "noerr": 0,
     "x": 450,
@@ -19153,9 +19160,9 @@
     "id": "9aa1f984.f7e9b8",
     "type": "comment",
     "z": "a83e69e1.4b2ab8",
-    "name": "message == \"PAYLOAD\"",
+    "name": "message == \"PAYLOAD\" - msg.payload.data.message",
     "info": "",
-    "x": 510,
+    "x": 600,
     "y": 20,
     "wires": []
   },
@@ -22613,7 +22620,7 @@
     "type": "rbe",
     "z": "cd950567.f864b8",
     "name": "",
-    "func": "rbe",
+    "func": "rbei",
     "gap": "",
     "start": "",
     "inout": "out",
@@ -22730,7 +22737,7 @@
     "type": "rbe",
     "z": "cd950567.f864b8",
     "name": "",
-    "func": "rbe",
+    "func": "rbei",
     "gap": "",
     "start": "",
     "inout": "out",
@@ -29544,7 +29551,7 @@
     "name": "",
     "server": "5ee4d578.f7736c",
     "event_type": "deconz_event",
-    "x": 320,
+    "x": 160,
     "y": 240,
     "wires": [
       [
@@ -29564,7 +29571,7 @@
     "tostatus": false,
     "complete": "true",
     "targetType": "full",
-    "x": 710,
+    "x": 550,
     "y": 220,
     "wires": []
   },
@@ -29585,7 +29592,7 @@
     "checkall": "true",
     "repair": false,
     "outputs": 1,
-    "x": 670,
+    "x": 510,
     "y": 280,
     "wires": [
       [
@@ -29601,7 +29608,7 @@
     "func": "\nreturn msg;",
     "outputs": 1,
     "noerr": 0,
-    "x": 840,
+    "x": 680,
     "y": 280,
     "wires": [
       [
@@ -29617,7 +29624,7 @@
     "links": [
       "257bd400.1aeb5c"
     ],
-    "x": 995,
+    "x": 835,
     "y": 280,
     "wires": []
   },
@@ -30566,7 +30573,7 @@
     "type": "rbe",
     "z": "6e74caff.7ad1f4",
     "name": "",
-    "func": "rbe",
+    "func": "rbei",
     "gap": "",
     "start": "",
     "inout": "out",
@@ -30613,5 +30620,328 @@
         "1fc7be16.10f152"
       ]
     ]
+  },
+  {
+    "id": "eb6dc825.428168",
+    "type": "catch",
+    "z": "c9dd75c4.1c8078",
+    "name": "",
+    "scope": null,
+    "uncaught": true,
+    "x": 140,
+    "y": 80,
+    "wires": [
+      [
+        "4524867b.b67518"
+      ]
+    ]
+  },
+  {
+    "id": "4524867b.b67518",
+    "type": "subflow:f5eab19a.7cf17",
+    "z": "c9dd75c4.1c8078",
+    "name": "",
+    "x": 350,
+    "y": 80,
+    "wires": []
+  },
+  {
+    "id": "9a4ee868.759318",
+    "type": "comment",
+    "z": "c9dd75c4.1c8078",
+    "name": "Error Handler",
+    "info": "",
+    "x": 130,
+    "y": 40,
+    "wires": []
+  },
+  {
+    "id": "573a9269.82f1bc",
+    "type": "catch",
+    "z": "ea5aca0.33b1a38",
+    "name": "",
+    "scope": null,
+    "uncaught": true,
+    "x": 120,
+    "y": 80,
+    "wires": [
+      [
+        "4d2d40f4.43d7c"
+      ]
+    ]
+  },
+  {
+    "id": "4d2d40f4.43d7c",
+    "type": "subflow:f5eab19a.7cf17",
+    "z": "ea5aca0.33b1a38",
+    "name": "",
+    "x": 330,
+    "y": 80,
+    "wires": []
+  },
+  {
+    "id": "fc3343cc.4d055",
+    "type": "comment",
+    "z": "ea5aca0.33b1a38",
+    "name": "Error Handler",
+    "info": "",
+    "x": 110,
+    "y": 40,
+    "wires": []
+  },
+  {
+    "id": "d3ab0ec5.96ff8",
+    "type": "trigger-state",
+    "z": "ea5aca0.33b1a38",
+    "name": "",
+    "server": "5ee4d578.f7736c",
+    "entityid": "sensor.bincollectionistomorrow",
+    "entityidfiltertype": "exact",
+    "debugenabled": false,
+    "constraints": [
+      {
+        "id": "pvivnzb1anq",
+        "targetType": "this_entity",
+        "targetValue": "",
+        "propertyType": "current_state",
+        "propertyValue": "new_state.state",
+        "comparatorType": "is",
+        "comparatorValueDatatype": "bool",
+        "comparatorValue": "true"
+      }
+    ],
+    "constraintsmustmatch": "all",
+    "outputs": 2,
+    "customoutputs": [],
+    "outputinitially": false,
+    "state_type": "habool",
+    "x": 210,
+    "y": 280,
+    "wires": [
+      [],
+      []
+    ]
+  },
+  {
+    "id": "2f8a6246.a3fb7e",
+    "type": "inject",
+    "z": "ea5aca0.33b1a38",
+    "name": "11:30",
+    "topic": "",
+    "payload": "true",
+    "payloadType": "bool",
+    "repeat": "",
+    "crontab": "30 11 * * *",
+    "once": false,
+    "onceDelay": "15",
+    "x": 130,
+    "y": 420,
+    "wires": [
+      [
+        "55f61cc.83cf8e4"
+      ]
+    ]
+  },
+  {
+    "id": "55f61cc.83cf8e4",
+    "type": "api-current-state",
+    "z": "ea5aca0.33b1a38",
+    "name": "Bin Day Tomorrow",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "outputs": 2,
+    "halt_if": "true",
+    "halt_if_type": "bool",
+    "halt_if_compare": "is",
+    "override_topic": false,
+    "entity_id": "sensor.bincollectionistomorrow",
+    "state_type": "habool",
+    "state_location": "payload",
+    "override_payload": "msg",
+    "entity_location": "data",
+    "override_data": "msg",
+    "blockInputOverrides": false,
+    "x": 330,
+    "y": 420,
+    "wires": [
+      [
+        "373da54a.7d9baa"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "373da54a.7d9baa",
+    "type": "api-current-state",
+    "z": "ea5aca0.33b1a38",
+    "name": "",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "outputs": 1,
+    "halt_if": "",
+    "halt_if_type": "str",
+    "halt_if_compare": "is",
+    "override_topic": false,
+    "entity_id": "sensor.nextbincollection",
+    "state_type": "str",
+    "state_location": "payload",
+    "override_payload": "msg",
+    "entity_location": "",
+    "override_data": "none",
+    "blockInputOverrides": true,
+    "x": 650,
+    "y": 420,
+    "wires": [
+      [
+        "bdcd9b69.25d2b8"
+      ]
+    ]
+  },
+  {
+    "id": "bdcd9b69.25d2b8",
+    "type": "subflow:a83e69e1.4b2ab8",
+    "z": "ea5aca0.33b1a38",
+    "name": "",
+    "env": [
+      {
+        "name": "message",
+        "value": "PAYLOAD_MSG",
+        "type": "str"
+      },
+      {
+        "name": "who",
+        "value": "Both",
+        "type": "str"
+      }
+    ],
+    "x": 960,
+    "y": 420,
+    "wires": []
+  },
+  {
+    "id": "e41dca06.50b638",
+    "type": "comment",
+    "z": "a83e69e1.4b2ab8",
+    "name": "message == \"PAYLOAD_MSG\" - msg.payload",
+    "info": "",
+    "x": 570,
+    "y": 60,
+    "wires": []
+  },
+  {
+    "id": "80805cef.7019f",
+    "type": "comment",
+    "z": "ea5aca0.33b1a38",
+    "name": "Reminder about bin day",
+    "info": "",
+    "x": 160,
+    "y": 380,
+    "wires": []
+  },
+  {
+    "id": "afeb14c0.5fa1d8",
+    "type": "inject",
+    "z": "ea5aca0.33b1a38",
+    "name": "11:30",
+    "topic": "",
+    "payload": "true",
+    "payloadType": "bool",
+    "repeat": "",
+    "crontab": "30 18 * * *",
+    "once": false,
+    "onceDelay": "15",
+    "x": 130,
+    "y": 560,
+    "wires": [
+      [
+        "38a6cc97.0bcdc4"
+      ]
+    ]
+  },
+  {
+    "id": "38a6cc97.0bcdc4",
+    "type": "api-current-state",
+    "z": "ea5aca0.33b1a38",
+    "name": "Bin Day Tomorrow",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "outputs": 2,
+    "halt_if": "true",
+    "halt_if_type": "bool",
+    "halt_if_compare": "is",
+    "override_topic": false,
+    "entity_id": "sensor.bincollectionistomorrow",
+    "state_type": "habool",
+    "state_location": "payload",
+    "override_payload": "msg",
+    "entity_location": "data",
+    "override_data": "msg",
+    "blockInputOverrides": false,
+    "x": 330,
+    "y": 560,
+    "wires": [
+      [
+        "6ef489f4.033f88"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "6ef489f4.033f88",
+    "type": "api-current-state",
+    "z": "ea5aca0.33b1a38",
+    "name": "",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "outputs": 1,
+    "halt_if": "",
+    "halt_if_type": "str",
+    "halt_if_compare": "is",
+    "override_topic": false,
+    "entity_id": "sensor.nextbincollection",
+    "state_type": "str",
+    "state_location": "payload",
+    "override_payload": "msg",
+    "entity_location": "",
+    "override_data": "none",
+    "blockInputOverrides": true,
+    "x": 650,
+    "y": 560,
+    "wires": [
+      [
+        "3774cac3.15d456"
+      ]
+    ]
+  },
+  {
+    "id": "3774cac3.15d456",
+    "type": "subflow:a83e69e1.4b2ab8",
+    "z": "ea5aca0.33b1a38",
+    "name": "",
+    "env": [
+      {
+        "name": "message",
+        "value": "PAYLOAD_MSG",
+        "type": "str"
+      },
+      {
+        "name": "who",
+        "value": "Both",
+        "type": "str"
+      }
+    ],
+    "x": 960,
+    "y": 560,
+    "wires": []
+  },
+  {
+    "id": "dd6c3709.fb45a8",
+    "type": "comment",
+    "z": "ea5aca0.33b1a38",
+    "name": "Reminder about bin day",
+    "info": "",
+    "x": 160,
+    "y": 520,
+    "wires": []
   }
 ]

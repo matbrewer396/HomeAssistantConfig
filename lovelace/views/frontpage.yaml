@@ -129,17 +129,17 @@ cards:
         - type: custom:decluttering-card
           template: button 
           variables:
-            - name: Light
+            - name: House
             - label: Control
-            - icon: floor-lamp
+            - icon: home-circle-outline
             - show_state: false
             - tap_action: 
                 action: navigate
-                navigation_path: /lovelace/lights
+                navigation_path: /lovelace/house
                 haptic: light
             - hold_action: 
                 action: navigate
-                navigation_path: /lovelace/lights
+                navigation_path: /lovelace/house
                 haptic: light
             - entity: input_boolean.dummy1
             - margin-right: 40px

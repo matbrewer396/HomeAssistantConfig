@@ -1,0 +1,47 @@
+title: house
+path:  house
+cards:    
+  - type: vertical-stack
+    cards:
+      - type: custom:decluttering-card
+        template: quick-access-menu 
+        variables:
+          - name1: Location
+          - icon1: map
+          - path1: location
+      - type: custom:decluttering-card
+        template: header 
+        variables:
+          - content: '## House'
+      - type: vertical-stack
+        cards:
+          - type: custom:decluttering-card
+            template: header 
+            variables:
+              - content: '##### Bin Collection'
+          - type: horizontal-stack
+            cards:
+              - !include ../jimz011/includes/blank-card.yaml
+              - type: vertical-stack
+                style: |
+                  ha-card {
+                    background: var(--homekit-card-off);
+                    --paper-item-icon-color: var(--icon-color-off);
+                    color: var(--name-color-off);
+                    border-radius: var(--border-radius);
+                  }
+                cards:
+                  # - entity: sensor.nextbincollection
+                  #   show_label: false
+                  #   show_name: false
+                  #   show_icon: false
+                  - type: markdown
+                    content: |
+                        **Next collection** [[ sensor.nextbincollection.state ]]
+                        
+                        **Black** Bin next collection [[ sensor.black_bins_collection.state ]]
+                        **Recycling** next collection [[ sensor.green_bins_collection.state ]]
+                  
+              - !include ../jimz011/includes/blank-card.yaml
+ 
+      - !include ../jimz011/includes/bottom-card.yaml
