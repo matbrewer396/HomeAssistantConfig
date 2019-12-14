@@ -19,7 +19,6 @@ views:
   - !include lovelace/views/security.yaml
   - !include lovelace/views/devices.yaml
 
-  - !include lovelace/views/lights.yaml
   - !include lovelace/views/alarm.yaml
   - !include lovelace/views/scenes.yaml
   - !include lovelace/views/links.yaml
