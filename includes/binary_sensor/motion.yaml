@@ -17,3 +17,12 @@
     payload_on: "false"
     payload_off: "true"
     device_class: motion
+  - platform: mqtt
+    name: "Living Room Motion"
+    state_topic: "wled/pir"
+    availability_topic: "wled/undertv/status"
+    payload_available: "online"
+    payload_not_available: "offline"
+    payload_on: "Detected"
+    payload_off: "Cleared"
+    device_class: motion

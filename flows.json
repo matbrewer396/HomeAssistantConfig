@@ -9506,7 +9506,7 @@
     "name": "Living Room Motion",
     "server": "5ee4d578.f7736c",
     "version": 1,
-    "entityidfilter": "binary_sensor.living_room_pir",
+    "entityidfilter": "binary_sensor.living_room_motion",
     "entityidfiltertype": "substring",
     "outputinitially": false,
     "state_type": "str",
@@ -29587,17 +29587,21 @@
         "t": "eq",
         "v": "transmitter_2_gang",
         "vt": "str"
+      },
+      {
+        "t": "else"
       }
     ],
     "checkall": "true",
     "repair": false,
-    "outputs": 1,
+    "outputs": 2,
     "x": 510,
-    "y": 280,
+    "y": 300,
     "wires": [
       [
         "d1d7d64a.b61628"
-      ]
+      ],
+      []
     ]
   },
   {

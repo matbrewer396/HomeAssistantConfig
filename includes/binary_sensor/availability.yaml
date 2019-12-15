@@ -53,3 +53,10 @@
     state_topic: "availability/kitchenMCU"
     payload_on: "online"
     payload_off: "offline"
+  - platform: mqtt
+    name: "Under tv Status"
+    state_topic: "wled/undertv/status"
+    payload_on: "online"
+    payload_off: "offline"
+
+    

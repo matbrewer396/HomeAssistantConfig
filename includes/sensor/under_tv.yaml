@@ -1,0 +1,40 @@
+## Door bell mqtt
+  - platform: mqtt
+    name: "Living Room Temperature"
+    state_topic: "wled/senorarray"
+    unit_of_measurement: '°C'
+    value_template: "{{ value_json.temperature }}"
+    expire_after : 180
+    device_class: temperature
+    availability_topic: "wled/undertv/status"
+    payload_available: "online"
+    payload_not_available: "offline"
+  - platform: mqtt
+    name: "Living Room Humidity"
+    state_topic: "wled/senorarray"
+    unit_of_measurement: '%'
+    value_template: "{{ value_json.humidity }}"
+    expire_after : 180
+    device_class: humidity
+    availability_topic: "wled/undertv/status"
+    payload_available: "online"
+    payload_not_available: "offline"
+  - platform: mqtt
+    name: "Living Room Light Level"
+    state_topic: "wled/sensorarray"
+    unit_of_measurement: '%'
+    value_template: "{{ value_json.lightlevel }}"
+    expire_after : 180
+    device_class: illuminance
+    availability_topic: "wled/undertv/status"
+    payload_available: "online"
+    payload_not_available: "offline"
+  - platform: mqtt
+    name: "Living Room DHT Error"
+    state_topic: "wled/senorarray"
+    unit_of_measurement: '%'
+    value_template: "{{ value_json.dhterror }}"
+    expire_after : 180
+    availability_topic: "wled/undertv/status"
+    payload_available: "online"
+    payload_not_available: "offline"

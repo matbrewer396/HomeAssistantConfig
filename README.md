@@ -23,13 +23,13 @@ List of all my device, that make house smart:
 | Philips Hue White Ambiance | 4 | Connected via hue hub | 
 | Philips Hue White and Color Ambiance Light Strip | 2 | Connected via hue hub | 
 | DIY: 39inch RGB LED Light | 1 | Connect to nodemcu, controlled via MQTT | 
-| DIY: ws2812b LED Light strips  | 3 | Connect to nodemcu / D1 mini, using a modded version of WLED firmware  | 
+| DIY: ws2812b LED Light strips  | 4 | Connect to nodemcu / D1 mini, using a modded version of WLED firmware  | 
 
 ### Motion Detector
 | Device  | Quantity | Notes |
 | ------------- | :---: | ------------- | 
 | Philips Hue Smart Motion Sensor | 2 | Connected via hue hub |
-| DIY: PIR Motion Detector | 2 | Connect to nodemcu, controlled via MQTT  | 
+| DIY: PIR Motion Detector | 3 | Connect to nodemcu, controlled via MQTT  | 
 
 ### Door / Window Senor
 | Device  | Quantity | Notes |
@@ -40,9 +40,9 @@ List of all my device, that make house smart:
 ### Temperature / Humidity / Light Level
 | Device  | Quantity | Notes |
 | ------------- | :---: | ------------- | 
-| DIY: DHT11 | 3 | Temperature & Humidity. Connect to nodemcu, pushes to MQTT | 
+| DIY: DHT11 | 4 | Temperature & Humidity. Connect to nodemcu, pushes to MQTT | 
 | DIY: DHT22 | 2 | Temperature & Humidity. Connect to nodemcu, pushes to MQTT | 
-| DIY: LDR | 3 | Light Level. Connect to nodemcu, pushes to MQTT | 
+| DIY: LDR | 4 | Light Level. Connect to nodemcu, pushes to MQTT | 
 | Philips Hue Smart Motion Sensor | 2 | Temperature / Light Level. Connected via hue hub |
 | Shelly H&T | 2 | Temperature & Humidity |
 | miflora | 1 |  |
