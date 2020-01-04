@@ -146,6 +146,7 @@ Pretty much the same
 * On Motion & Door senors trigger light on. Turn off a few minutes later
 * Input boolean on HA ui, for bath time - force the light to turn of for 1 hour
 * Shower time - force the light to go max brightness, music starts playing
+* when shower door open trigger shower time
 * On window open, alex will give a details on temp and humidity inside and outside 
 * Smart Switch - for when your up for talking:
   * Left Single Press: Toggle Light

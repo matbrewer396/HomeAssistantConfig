@@ -12621,14 +12621,13 @@
     "z": "a0cdc0f9.a362b",
     "name": "Bathroom disable timer",
     "links": [
-      "60ccf4c9.3b230c",
-      "1ba3252.4c458db"
+      "1ba3252.4c458db",
+      "60ccf4c9.3b230c"
     ],
-    "x": 735,
-    "y": 640,
+    "x": 555,
+    "y": 620,
     "wires": [
       [
-        "35d5239.16e63dc",
         "c6d28a61.3da988"
       ]
     ]
@@ -17148,7 +17147,8 @@
     "name": "Shower Time",
     "links": [
       "baddf022.477dc",
-      "39937e5c.81db92"
+      "39937e5c.81db92",
+      "1ab28cd7.d2d263"
     ],
     "x": 100,
     "y": 1380,
@@ -31109,5 +31109,94 @@
         "f4916e43.db42f"
       ]
     ]
+  },
+  {
+    "id": "e332e132.17225",
+    "type": "trigger-state",
+    "z": "a0cdc0f9.a362b",
+    "name": "Shower Door",
+    "server": "5ee4d578.f7736c",
+    "entityid": "binary_sensor.shower_door",
+    "entityidfiltertype": "exact",
+    "debugenabled": false,
+    "constraints": [
+      {
+        "id": "zarheyu0bjf",
+        "targetType": "this_entity",
+        "targetValue": "",
+        "propertyType": "current_state",
+        "propertyValue": "new_state.state",
+        "comparatorType": "is",
+        "comparatorValueDatatype": "bool",
+        "comparatorValue": "true"
+      },
+      {
+        "id": "ausbqpdz31p",
+        "targetType": "this_entity",
+        "targetValue": "",
+        "propertyType": "previous_state",
+        "propertyValue": "old_state.state",
+        "comparatorType": "is",
+        "comparatorValueDatatype": "bool",
+        "comparatorValue": "false"
+      }
+    ],
+    "constraintsmustmatch": "all",
+    "outputs": 2,
+    "customoutputs": [],
+    "outputinitially": false,
+    "state_type": "habool",
+    "x": 170,
+    "y": 1980,
+    "wires": [
+      [
+        "2b286b3b.0a1bb4"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "2b286b3b.0a1bb4",
+    "type": "trigger",
+    "z": "a0cdc0f9.a362b",
+    "op1": "",
+    "op2": "",
+    "op1type": "pay",
+    "op2type": "nul",
+    "duration": "10",
+    "extend": false,
+    "units": "min",
+    "reset": "",
+    "bytopic": "all",
+    "name": "",
+    "x": 380,
+    "y": 1980,
+    "wires": [
+      [
+        "1ab28cd7.d2d263"
+      ]
+    ]
+  },
+  {
+    "id": "1ab28cd7.d2d263",
+    "type": "link out",
+    "z": "a0cdc0f9.a362b",
+    "name": "Shower Time Request",
+    "links": [
+      "8fa41eed.e0746"
+    ],
+    "x": 545,
+    "y": 1980,
+    "wires": []
+  },
+  {
+    "id": "fcc59b6b.f2bad8",
+    "type": "comment",
+    "z": "a0cdc0f9.a362b",
+    "name": "Shower time",
+    "info": "",
+    "x": 170,
+    "y": 1920,
+    "wires": []
   }
 ]
