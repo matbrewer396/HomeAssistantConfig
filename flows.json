@@ -2661,8 +2661,8 @@
     "halt_if_compare": "is",
     "outputs": 1,
     "output_only_on_state_change": false,
-    "x": 120,
-    "y": 400,
+    "x": 160,
+    "y": 760,
     "wires": [
       [
         "c8944506.30f148",
@@ -2685,8 +2685,8 @@
     "halt_if_compare": "is",
     "outputs": 1,
     "output_only_on_state_change": false,
-    "x": 130,
-    "y": 560,
+    "x": 170,
+    "y": 920,
     "wires": [
       [
         "8d007ed4.b4b9",
@@ -2711,8 +2711,8 @@
     "checkall": "true",
     "repair": false,
     "outputs": 1,
-    "x": 870,
-    "y": 660,
+    "x": 910,
+    "y": 1020,
     "wires": [
       [
         "297e3f11.045a3"
@@ -2801,8 +2801,8 @@
     "outputinitially": false,
     "haltifstate": "",
     "outputs": 1,
-    "x": 130,
-    "y": 831,
+    "x": 170,
+    "y": 1191,
     "wires": [
       [
         "2c51c6d4.5f6e0a",
@@ -2836,8 +2836,8 @@
     "from": "",
     "to": "",
     "reg": false,
-    "x": 450,
-    "y": 400,
+    "x": 490,
+    "y": 760,
     "wires": [
       [
         "64a723bb.a421cc"
@@ -2863,8 +2863,8 @@
     "from": "",
     "to": "",
     "reg": false,
-    "x": 460,
-    "y": 560,
+    "x": 500,
+    "y": 920,
     "wires": [
       [
         "64a723bb.a421cc"
@@ -2904,8 +2904,8 @@
     "from": "",
     "to": "",
     "reg": false,
-    "x": 440,
-    "y": 831,
+    "x": 480,
+    "y": 1191,
     "wires": [
       [
         "64a723bb.a421cc"
@@ -2931,8 +2931,8 @@
     "entity_location": "data",
     "override_data": "msg",
     "blockInputOverrides": false,
-    "x": 680,
-    "y": 1260,
+    "x": 720,
+    "y": 1620,
     "wires": [
       [
         "59366fbb.88318"
@@ -2958,8 +2958,8 @@
     "entity_location": "data",
     "override_data": "msg",
     "blockInputOverrides": false,
-    "x": 1150,
-    "y": 1260,
+    "x": 1190,
+    "y": 1620,
     "wires": [
       [
         "805e34e0.934a48"
@@ -3006,8 +3006,8 @@
     "checkall": "true",
     "repair": false,
     "outputs": 2,
-    "x": 880,
-    "y": 1260,
+    "x": 920,
+    "y": 1620,
     "wires": [
       [
         "17dd0169.527b5f"
@@ -3037,8 +3037,8 @@
     "checkall": "true",
     "repair": false,
     "outputs": 2,
-    "x": 1400,
-    "y": 1260,
+    "x": 1440,
+    "y": 1620,
     "wires": [
       [
         "dee4af6a.215dc"
@@ -3057,8 +3057,8 @@
     "tostatus": false,
     "complete": "true",
     "targetType": "full",
-    "x": 1620,
-    "y": 1260,
+    "x": 1660,
+    "y": 1620,
     "wires": []
   },
   {
@@ -4292,8 +4292,8 @@
     "links": [
       "7f31a2c4.2e726c"
     ],
-    "x": 1035,
-    "y": 660,
+    "x": 1075,
+    "y": 1020,
     "wires": []
   },
   {
@@ -5203,8 +5203,8 @@
     "halt_if_compare": "is",
     "outputs": 1,
     "output_only_on_state_change": false,
-    "x": 140,
-    "y": 1360,
+    "x": 180,
+    "y": 1720,
     "wires": [
       [
         "5f4591ce.85447",
@@ -5218,8 +5218,8 @@
     "z": "a068bd5.28a8d4",
     "name": "Office Door",
     "info": "",
-    "x": 110,
-    "y": 1320,
+    "x": 150,
+    "y": 1680,
     "wires": []
   },
   {
@@ -5228,8 +5228,8 @@
     "z": "a068bd5.28a8d4",
     "name": "Trun on Lving Room Light ",
     "info": "",
-    "x": 690,
-    "y": 1220,
+    "x": 730,
+    "y": 1580,
     "wires": []
   },
   {
@@ -5251,8 +5251,8 @@
     "from": "",
     "to": "",
     "reg": false,
-    "x": 430,
-    "y": 1153,
+    "x": 470,
+    "y": 1513,
     "wires": [
       [
         "64a723bb.a421cc"
@@ -5275,8 +5275,8 @@
     "halt_if_compare": "is",
     "outputs": 1,
     "output_only_on_state_change": true,
-    "x": 120,
-    "y": 1051,
+    "x": 160,
+    "y": 1411,
     "wires": [
       [
         "cc4f8d1.d9d097",
@@ -5303,8 +5303,8 @@
     "from": "",
     "to": "",
     "reg": false,
-    "x": 660,
-    "y": 1053,
+    "x": 700,
+    "y": 1413,
     "wires": [
       [
         "64a723bb.a421cc",
@@ -5357,8 +5357,8 @@
     "checkall": "true",
     "repair": false,
     "outputs": 2,
-    "x": 810,
-    "y": 1120,
+    "x": 850,
+    "y": 1480,
     "wires": [
       [
         "cc2fcdb8.ee0ea"
@@ -5378,8 +5378,8 @@
     "z": "a068bd5.28a8d4",
     "name": "Todo - disable if camera is offline",
     "info": "",
-    "x": 1670,
-    "y": 1220,
+    "x": 1710,
+    "y": 1580,
     "wires": []
   },
   {
@@ -5398,8 +5398,8 @@
       "e947642c.3c9798",
       "62e65b11.82cb44"
     ],
-    "x": 995,
-    "y": 1040,
+    "x": 1035,
+    "y": 1400,
     "wires": []
   },
   {
@@ -5850,8 +5850,8 @@
       "688dc601.8b0c68",
       "e947642c.3c9798"
     ],
-    "x": 935,
-    "y": 1180,
+    "x": 975,
+    "y": 1540,
     "wires": []
   },
   {
@@ -7854,8 +7854,8 @@
     "halt_if_compare": "is",
     "outputs": 1,
     "output_only_on_state_change": false,
-    "x": 160,
-    "y": 340,
+    "x": 200,
+    "y": 700,
     "wires": [
       [
         "53670de2.10b724"
@@ -7881,8 +7881,8 @@
     "from": "",
     "to": "",
     "reg": false,
-    "x": 430,
-    "y": 340,
+    "x": 470,
+    "y": 700,
     "wires": [
       [
         "64a723bb.a421cc"
@@ -9209,8 +9209,8 @@
     "links": [
       "4fe3f102.783b3"
     ],
-    "x": 355,
-    "y": 600,
+    "x": 395,
+    "y": 960,
     "wires": []
   },
   {
@@ -9515,8 +9515,8 @@
     "halt_if_compare": "is",
     "outputs": 1,
     "output_only_on_state_change": false,
-    "x": 130,
-    "y": 200,
+    "x": 170,
+    "y": 560,
     "wires": [
       [
         "46820b01.32dab4",
@@ -9543,8 +9543,8 @@
     "from": "",
     "to": "",
     "reg": false,
-    "x": 450,
-    "y": 200,
+    "x": 490,
+    "y": 560,
     "wires": [
       [
         "64a723bb.a421cc"
@@ -9564,8 +9564,8 @@
       "b46a8ce3.5b6ed",
       "dfd9170e.807548"
     ],
-    "x": 355,
-    "y": 160,
+    "x": 395,
+    "y": 520,
     "wires": []
   },
   {
@@ -9577,7 +9577,8 @@
       "224d137d.2e20dc",
       "3495a219.f840be",
       "f8efe1fe.a4a0e",
-      "8c42e0e.e62702"
+      "8c42e0e.e62702",
+      "64fb3f92.803b6"
     ],
     "x": 75,
     "y": 1980,
@@ -9619,8 +9620,8 @@
       "c3e890f4.9c742",
       "e947642c.3c9798"
     ],
-    "x": 355,
-    "y": 440,
+    "x": 395,
+    "y": 800,
     "wires": []
   },
   {
@@ -9632,7 +9633,8 @@
       "3495a219.f840be",
       "e04902ac.5849e",
       "f8efe1fe.a4a0e",
-      "8c42e0e.e62702"
+      "8c42e0e.e62702",
+      "64fb3f92.803b6"
     ],
     "x": 75,
     "y": 1920,
@@ -10238,8 +10240,8 @@
     "y": 591,
     "wires": [
       [
-        "b217742e.3caa78",
-        "379963b.1349f9c"
+        "379963b.1349f9c",
+        "21652d70.72b232"
       ]
     ]
   },
@@ -10952,8 +10954,8 @@
     "checkall": "true",
     "repair": false,
     "outputs": 1,
-    "x": 2490,
-    "y": 590,
+    "x": 2470,
+    "y": 640,
     "wires": [
       [
         "21652d70.72b232",
@@ -12925,8 +12927,8 @@
     "links": [
       "79d508d7.4f2b68"
     ],
-    "x": 355,
-    "y": 1360,
+    "x": 395,
+    "y": 1720,
     "wires": []
   },
   {
@@ -13777,8 +13779,8 @@
     "from": "",
     "to": "",
     "reg": false,
-    "x": 450,
-    "y": 1093,
+    "x": 490,
+    "y": 1453,
     "wires": [
       []
     ]
@@ -14126,8 +14128,8 @@
     "z": "a068bd5.28a8d4",
     "name": "",
     "env": [],
-    "x": 1040,
-    "y": 740,
+    "x": 1080,
+    "y": 1100,
     "wires": [
       [
         "408d5f52.6ad53"
@@ -14152,8 +14154,8 @@
     "output_location": "payload",
     "output_location_type": "msg",
     "mustacheAltTags": false,
-    "x": 1440,
-    "y": 740,
+    "x": 1480,
+    "y": 1100,
     "wires": [
       []
     ]
@@ -14166,8 +14168,8 @@
     "func": "msg.payload = \n{\n  \"data\": \n  {\n    \"message\": msg.location,\n    \"data\": \n    {\n      \"push\": {\n            \"badge\": 5,\n            \"category\": \"alarm\"\n        },\"attachment\": \n      {\n        \"url\": msg.image,\n        \"content-type\": \"jpeg\",\n        \"hide-thumbnail\": false\n      }\n    }\n  }\n}\nreturn msg;",
     "outputs": 1,
     "noerr": 0,
-    "x": 1230,
-    "y": 740,
+    "x": 1270,
+    "y": 1100,
     "wires": [
       [
         "27a0c65e.2a12da"
@@ -17173,8 +17175,8 @@
     "halt_if_compare": "is",
     "outputs": 1,
     "output_only_on_state_change": false,
-    "x": 120,
-    "y": 480,
+    "x": 160,
+    "y": 840,
     "wires": [
       [
         "f6e880d3.d5189"
@@ -17200,8 +17202,8 @@
     "from": "",
     "to": "",
     "reg": false,
-    "x": 440,
-    "y": 480,
+    "x": 480,
+    "y": 840,
     "wires": [
       [
         "64a723bb.a421cc"
@@ -17223,8 +17225,8 @@
     "halt_if_compare": "is",
     "outputs": 1,
     "output_only_on_state_change": false,
-    "x": 110,
-    "y": 640,
+    "x": 150,
+    "y": 1000,
     "wires": [
       [
         "decef216.64021",
@@ -17258,8 +17260,8 @@
     "from": "",
     "to": "",
     "reg": false,
-    "x": 470,
-    "y": 640,
+    "x": 510,
+    "y": 1000,
     "wires": [
       [
         "64a723bb.a421cc"
@@ -17279,8 +17281,8 @@
       "c215726b.e66d5",
       "dfd9170e.807548"
     ],
-    "x": 355,
-    "y": 680,
+    "x": 395,
+    "y": 1040,
     "wires": []
   },
   {
@@ -18219,8 +18221,8 @@
     "randomLast": "5",
     "randomUnits": "seconds",
     "drop": true,
-    "x": 440,
-    "y": 1053,
+    "x": 480,
+    "y": 1413,
     "wires": [
       [
         "9c585f5f.3d0d4"
@@ -19658,8 +19660,8 @@
     "halt_if_compare": "is",
     "outputs": 1,
     "output_only_on_state_change": false,
-    "x": 120,
-    "y": 720,
+    "x": 160,
+    "y": 1080,
     "wires": [
       [
         "726c2fb2.8c822",
@@ -19693,8 +19695,8 @@
     "from": "",
     "to": "",
     "reg": false,
-    "x": 420,
-    "y": 720,
+    "x": 460,
+    "y": 1080,
     "wires": [
       [
         "64a723bb.a421cc"
@@ -19707,16 +19709,13 @@
     "z": "a068bd5.28a8d4",
     "name": "Kitchen Motion Detected",
     "links": [
-      "8f80ab0d.e271b8",
-      "bc5dc5ef.bc51a8",
       "688dc601.8b0c68",
-      "a76f3a0f.d1fb38",
-      "b46a8ce3.5b6ed",
+      "8f80ab0d.e271b8",
       "c215726b.e66d5",
       "dfd9170e.807548"
     ],
-    "x": 355,
-    "y": 760,
+    "x": 395,
+    "y": 1120,
     "wires": []
   },
   {
@@ -21962,7 +21961,8 @@
       "224d137d.2e20dc",
       "3495a219.f840be",
       "82e7bf66.f63d3",
-      "8c42e0e.e62702"
+      "8c42e0e.e62702",
+      "64fb3f92.803b6"
     ],
     "x": 855,
     "y": 1060,
@@ -28000,8 +28000,8 @@
     "halt_if_compare": "is",
     "outputs": 1,
     "output_only_on_state_change": true,
-    "x": 150,
-    "y": 880,
+    "x": 190,
+    "y": 1240,
     "wires": [
       [
         "92c23e69.85056"
@@ -28034,8 +28034,8 @@
     "from": "",
     "to": "",
     "reg": false,
-    "x": 410,
-    "y": 880,
+    "x": 450,
+    "y": 1240,
     "wires": [
       [
         "64a723bb.a421cc",
@@ -28172,8 +28172,8 @@
     "halt_if_compare": "is",
     "outputs": 1,
     "output_only_on_state_change": true,
-    "x": 110,
-    "y": 920,
+    "x": 150,
+    "y": 1280,
     "wires": [
       [
         "c27c19ab.52cbf8",
@@ -28207,8 +28207,8 @@
     "from": "",
     "to": "",
     "reg": false,
-    "x": 410,
-    "y": 920,
+    "x": 450,
+    "y": 1280,
     "wires": [
       [
         "64a723bb.a421cc"
@@ -28228,8 +28228,8 @@
       "79d508d7.4f2b68",
       "dfd9170e.807548"
     ],
-    "x": 355,
-    "y": 960,
+    "x": 395,
+    "y": 1320,
     "wires": []
   },
   {
@@ -28248,8 +28248,8 @@
     "halt_if_compare": "is",
     "outputs": 1,
     "output_only_on_state_change": true,
-    "x": 160,
-    "y": 300,
+    "x": 200,
+    "y": 660,
     "wires": [
       [
         "67a90e6f.5920c",
@@ -28276,8 +28276,8 @@
     "from": "",
     "to": "",
     "reg": false,
-    "x": 430,
-    "y": 300,
+    "x": 470,
+    "y": 660,
     "wires": [
       [
         "64a723bb.a421cc"
@@ -28665,8 +28665,8 @@
     "checkall": "true",
     "repair": false,
     "outputs": 1,
-    "x": 410,
-    "y": 260,
+    "x": 450,
+    "y": 620,
     "wires": [
       [
         "b4657f46.153e"
@@ -28681,8 +28681,8 @@
     "links": [
       "a4a986e.5cee778"
     ],
-    "x": 540,
-    "y": 260,
+    "x": 580,
+    "y": 620,
     "wires": []
   },
   {
@@ -29224,7 +29224,8 @@
       "224d137d.2e20dc",
       "3495a219.f840be",
       "f8efe1fe.a4a0e",
-      "8c42e0e.e62702"
+      "8c42e0e.e62702",
+      "64fb3f92.803b6"
     ],
     "x": 75,
     "y": 1480,
@@ -29571,8 +29572,8 @@
     "tostatus": false,
     "complete": "true",
     "targetType": "full",
-    "x": 550,
-    "y": 220,
+    "x": 540,
+    "y": 180,
     "wires": []
   },
   {
@@ -29585,7 +29586,7 @@
     "rules": [
       {
         "t": "eq",
-        "v": "transmitter_2_gang",
+        "v": "bathroom_2_gang",
         "vt": "str"
       },
       {
@@ -30947,5 +30948,166 @@
     "x": 160,
     "y": 520,
     "wires": []
+  },
+  {
+    "id": "130e15b.29debea",
+    "type": "server-state-changed",
+    "z": "a068bd5.28a8d4",
+    "name": "Libary Motion",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "entityidfilter": "binary_sensor.motion_library",
+    "entityidfiltertype": "substring",
+    "outputinitially": false,
+    "state_type": "str",
+    "haltifstate": "",
+    "halt_if_type": "str",
+    "halt_if_compare": "is",
+    "outputs": 1,
+    "output_only_on_state_change": false,
+    "x": 150,
+    "y": 480,
+    "wires": [
+      [
+        "5d0a1c2a.272a64",
+        "d8919309.7def5"
+      ]
+    ]
+  },
+  {
+    "id": "5d0a1c2a.272a64",
+    "type": "change",
+    "z": "a068bd5.28a8d4",
+    "name": "Libary Motion",
+    "rules": [
+      {
+        "t": "set",
+        "p": "location",
+        "pt": "msg",
+        "to": "Libary Motion",
+        "tot": "str"
+      },
+      {
+        "t": "set",
+        "p": "trusted",
+        "pt": "msg",
+        "to": "false",
+        "tot": "bool"
+      }
+    ],
+    "action": "",
+    "property": "",
+    "from": "",
+    "to": "",
+    "reg": false,
+    "x": 460,
+    "y": 440,
+    "wires": [
+      [
+        "64a723bb.a421cc"
+      ]
+    ]
+  },
+  {
+    "id": "d8919309.7def5",
+    "type": "link out",
+    "z": "a068bd5.28a8d4",
+    "name": "Libary Motion",
+    "links": [
+      "4288444c.f3f9bc"
+    ],
+    "x": 395,
+    "y": 480,
+    "wires": []
+  },
+  {
+    "id": "fd53b0e0.c9b61",
+    "type": "comment",
+    "z": "8a69107f.14257",
+    "name": "Motion Detected",
+    "info": "",
+    "x": 160,
+    "y": 600,
+    "wires": []
+  },
+  {
+    "id": "4288444c.f3f9bc",
+    "type": "link in",
+    "z": "8a69107f.14257",
+    "name": "Action Libary motion",
+    "links": [
+      "d8919309.7def5"
+    ],
+    "x": 95,
+    "y": 680,
+    "wires": [
+      [
+        "655a695c.ef8778"
+      ]
+    ]
+  },
+  {
+    "id": "f4916e43.db42f",
+    "type": "api-call-service",
+    "z": "8a69107f.14257",
+    "name": "Toggle library_lights",
+    "server": "5ee4d578.f7736c",
+    "service_domain": "light",
+    "service": "toggle",
+    "data": "{\"entity_id\":\"light.library_lights\"}",
+    "mergecontext": "",
+    "output_location": "",
+    "output_location_type": "none",
+    "mustacheAltTags": false,
+    "x": 410,
+    "y": 720,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "f7fcedc6.be69",
+    "type": "api-call-service",
+    "z": "8a69107f.14257",
+    "name": "Toggle plug",
+    "server": "5ee4d578.f7736c",
+    "service_domain": "switch",
+    "service": "toggle",
+    "data": "{\"entity_id\":\"switch.plug_06\"}",
+    "mergecontext": "",
+    "output_location": "",
+    "output_location_type": "none",
+    "mustacheAltTags": false,
+    "x": 400,
+    "y": 680,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "655a695c.ef8778",
+    "type": "switch",
+    "z": "8a69107f.14257",
+    "name": "Triggered?",
+    "property": "payload",
+    "propertyType": "msg",
+    "rules": [
+      {
+        "t": "eq",
+        "v": "on",
+        "vt": "str"
+      }
+    ],
+    "checkall": "true",
+    "repair": false,
+    "outputs": 1,
+    "x": 230,
+    "y": 680,
+    "wires": [
+      [
+        "f7fcedc6.be69",
+        "f4916e43.db42f"
+      ]
+    ]
   }
 ]

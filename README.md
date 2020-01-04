@@ -30,6 +30,7 @@ List of all my device, that make house smart:
 | ------------- | :---: | ------------- | 
 | Philips Hue Smart Motion Sensor | 2 | Connected via hue hub |
 | DIY: PIR Motion Detector | 3 | Connect to nodemcu, controlled via MQTT  | 
+| Xiaomi Aqara Human Body Sensor | 1 | Connect to Zigbee USB |
 
 ### Door / Window Senor
 | Device  | Quantity | Notes |
@@ -74,9 +75,13 @@ List of all my device, that make house smart:
 | Neos SmartCam | 5 | flashed to https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks | 
 
 ### Mechanical
+| Device  | Quantity | Notes |
+| ------------- | :---: | ------------- | 
 | SwitchBot | 1 | Bluetooth to pi zero, then MQTT |
 
 ### Buttons
+| Device  | Quantity | Notes |
+| ------------- | :---: | ------------- | 
 | Aqara Wireless Smart Switch - Double Button  | 1 |  |
 
 
@@ -123,6 +128,8 @@ Pretty much the same
 * Voice control - "Alexa Computer On" - off hibrate my pc. Under and above desk strip light also turn on
 * On 3d printer status change, send notification
 * Voice control - "Alexa Dryer On"
+### Libary
+* On motion turn on lights and plug 
 
 ### Hallway
 * Simple light on when motion senor trigger and is dark for a few minutes - only automate that run outside of HA (all in hue hub)
