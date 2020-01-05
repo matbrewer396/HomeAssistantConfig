@@ -240,6 +240,14 @@ cards:
           - type: custom:decluttering-card
             template: button 
             variables:
+              - entity: binary_sensor.living_room_motion
+              - name: Living Room
+              - icon: motion-sensor
+              - show_last_changed: true
+              - tap_action: more-info
+          - type: custom:decluttering-card
+            template: button 
+            variables:
               - entity: binary_sensor.kitchencam_motion_sensor
               - name: Kitchen Cam
               - icon: motion-sensor
@@ -253,9 +261,6 @@ cards:
               - icon: motion-sensor
               - show_last_changed: true
               - tap_action: more-info
-          - type: custom:button-card
-            color_type: blank-card
-            aspect_ratio: 1/1
           - type: custom:button-card
             color_type: blank-card
             aspect_ratio: 1/1
