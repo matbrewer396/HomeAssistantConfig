@@ -407,6 +407,9 @@
           },
           {
             "id": "dbaf728b.3f5ca"
+          },
+          {
+            "id": "f0907ad6.72d1f8"
           }
         ]
       }
@@ -2652,6 +2655,7 @@
     "z": "a068bd5.28a8d4",
     "name": "Hallway Motion",
     "server": "5ee4d578.f7736c",
+    "version": "1",
     "entityidfilter": "binary_sensor.hallway_motion_sensor",
     "entityidfiltertype": "substring",
     "outputinitially": false,
@@ -9207,7 +9211,9 @@
     "z": "a068bd5.28a8d4",
     "name": "Bathroom Motion Detected",
     "links": [
-      "4fe3f102.783b3"
+      "4fe3f102.783b3",
+      "f76b8f5.fc5af7",
+      "ba09070a.220758"
     ],
     "x": 395,
     "y": 960,
@@ -9618,7 +9624,9 @@
       "c215726b.e66d5",
       "a2f7cd26.7ec92",
       "c3e890f4.9c742",
-      "e947642c.3c9798"
+      "e947642c.3c9798",
+      "ba09070a.220758",
+      "cb9341a7.ef2ad"
     ],
     "x": 395,
     "y": 800,
@@ -11169,21 +11177,21 @@
     "y": 380,
     "wires": [
       [
-        "b5f1a42e.badfd8",
-        "8742d21b.87bac"
+        "8742d21b.87bac",
+        "f5f4dbc1.426328"
       ],
       [
-        "b5f1a42e.badfd8",
-        "37a4096e.f440b6"
+        "37a4096e.f440b6",
+        "f5f4dbc1.426328"
       ],
       [
-        "b5f1a42e.badfd8",
-        "e00c5e15.87c8"
+        "e00c5e15.87c8",
+        "f5f4dbc1.426328"
       ],
       [
         "8742d21b.87bac",
         "89782bb8.4daed8",
-        "b5f1a42e.badfd8"
+        "f5f4dbc1.426328"
       ]
     ],
     "outputLabels": [
@@ -11507,7 +11515,7 @@
     "from": "",
     "to": "",
     "reg": false,
-    "x": 230,
+    "x": 370,
     "y": 520,
     "wires": [
       [
@@ -31198,5 +31206,243 @@
     "x": 170,
     "y": 1920,
     "wires": []
+  },
+  {
+    "id": "f0907ad6.72d1f8",
+    "type": "api-call-service",
+    "z": "c9b308f8.01ef68",
+    "name": "Under Stairs Led",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "light",
+    "service": "turn_off",
+    "entityId": "light.wled_undertv",
+    "data": "",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "payload",
+    "output_location_type": "msg",
+    "mustacheAltTags": false,
+    "x": 250,
+    "y": 620,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "93dbb7a4.b9e748",
+    "type": "comment",
+    "z": "21d6efde.d0943",
+    "name": "Light Auto Off",
+    "info": "",
+    "x": 110,
+    "y": 3240,
+    "wires": []
+  },
+  {
+    "id": "b45dab02.6d7738",
+    "type": "trigger-state",
+    "z": "21d6efde.d0943",
+    "name": "Light On",
+    "server": "5ee4d578.f7736c",
+    "entityid": "light.bedroom",
+    "entityidfiltertype": "exact",
+    "debugenabled": false,
+    "constraints": [
+      {
+        "id": "3hivjx1hsq1",
+        "targetType": "this_entity",
+        "targetValue": "",
+        "propertyType": "current_state",
+        "propertyValue": "new_state.state",
+        "comparatorType": "is",
+        "comparatorValueDatatype": "bool",
+        "comparatorValue": "true"
+      },
+      {
+        "id": "5d986k2xa2q",
+        "targetType": "this_entity",
+        "targetValue": "",
+        "propertyType": "previous_state",
+        "propertyValue": "old_state.state",
+        "comparatorType": "is",
+        "comparatorValueDatatype": "bool",
+        "comparatorValue": "false"
+      }
+    ],
+    "constraintsmustmatch": "all",
+    "outputs": 2,
+    "customoutputs": [],
+    "outputinitially": false,
+    "state_type": "habool",
+    "x": 100,
+    "y": 3300,
+    "wires": [
+      [
+        "9fa767a9.90dc18"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "ba09070a.220758",
+    "type": "link in",
+    "z": "21d6efde.d0943",
+    "name": "Action - BedRoom Light Auto Off (Trigged safe)",
+    "links": [
+      "90fde8f7.a26cb8",
+      "e04902ac.5849e"
+    ],
+    "x": 55,
+    "y": 3360,
+    "wires": [
+      [
+        "57604a2f.19b454"
+      ]
+    ]
+  },
+  {
+    "id": "e1c5ffbe.bd264",
+    "type": "api-current-state",
+    "z": "21d6efde.d0943",
+    "name": "LighOn?",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "outputs": 2,
+    "halt_if": "true",
+    "halt_if_type": "bool",
+    "halt_if_compare": "is",
+    "override_topic": false,
+    "entity_id": "light.bedroom",
+    "state_type": "habool",
+    "state_location": "payload",
+    "override_payload": "msg",
+    "entity_location": "data",
+    "override_data": "msg",
+    "blockInputOverrides": false,
+    "x": 380,
+    "y": 3360,
+    "wires": [
+      [
+        "9fa767a9.90dc18"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "9fa767a9.90dc18",
+    "type": "trigger",
+    "z": "21d6efde.d0943",
+    "op1": "",
+    "op2": "0",
+    "op1type": "nul",
+    "op2type": "str",
+    "duration": "30",
+    "extend": true,
+    "units": "min",
+    "reset": "",
+    "bytopic": "all",
+    "name": "",
+    "x": 550,
+    "y": 3295,
+    "wires": [
+      [
+        "a6e879f5.cba028"
+      ]
+    ]
+  },
+  {
+    "id": "57604a2f.19b454",
+    "type": "switch",
+    "z": "21d6efde.d0943",
+    "name": "Triggered?",
+    "property": "payload",
+    "propertyType": "msg",
+    "rules": [
+      {
+        "t": "eq",
+        "v": "on",
+        "vt": "str"
+      }
+    ],
+    "checkall": "true",
+    "repair": false,
+    "outputs": 1,
+    "x": 170,
+    "y": 3360,
+    "wires": [
+      [
+        "e1c5ffbe.bd264"
+      ]
+    ]
+  },
+  {
+    "id": "a6e879f5.cba028",
+    "type": "api-call-service",
+    "z": "21d6efde.d0943",
+    "name": "Turn Off Light",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "light",
+    "service": "turn_off",
+    "entityId": "light.bedroom",
+    "data": "",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "",
+    "output_location_type": "none",
+    "mustacheAltTags": false,
+    "x": 772,
+    "y": 3295,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "f5f4dbc1.426328",
+    "type": "function",
+    "z": "21d6efde.d0943",
+    "name": "Bed State Changed",
+    "func": "\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 170,
+    "y": 520,
+    "wires": [
+      [
+        "b5f1a42e.badfd8",
+        "4f518fae.94cda"
+      ]
+    ]
+  },
+  {
+    "id": "4f518fae.94cda",
+    "type": "link out",
+    "z": "21d6efde.d0943",
+    "name": "Bed State Changed",
+    "links": [
+      "baf3c4a6.a7e0d8"
+    ],
+    "x": 340,
+    "y": 560,
+    "wires": []
+  },
+  {
+    "id": "baf3c4a6.a7e0d8",
+    "type": "link in",
+    "z": "21d6efde.d0943",
+    "name": "Action - BedRoom Light Auto Off",
+    "links": [
+      "4f518fae.94cda"
+    ],
+    "x": 215,
+    "y": 3400,
+    "wires": [
+      [
+        "e1c5ffbe.bd264"
+      ]
+    ]
   }
 ]

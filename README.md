@@ -128,6 +128,7 @@ Pretty much the same
 * Voice control - "Alexa Computer On" - off hibrate my pc. Under and above desk strip light also turn on
 * On 3d printer status change, send notification
 * Voice control - "Alexa Dryer On"
+
 ### Libary
 * On motion turn on lights and plug 
 
@@ -141,6 +142,7 @@ Pretty much the same
 * When someone get into bed, strip lights under bed are turn on and slowly dim
 * When someone get out of bed, bath room light turns on (dimmed of course if night)
 * On sunrise strip lights turn off
+* turn off light after 30 minutes
 
 ### Bath Room
 * On Motion & Door senors trigger light on. Turn off a few minutes later
