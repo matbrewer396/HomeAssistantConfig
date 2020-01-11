@@ -2159,9 +2159,13 @@
     "z": "d73100a9.0d64d",
     "name": "Is it Bed time - Matt",
     "server": "eef5a84.da24f58",
+    "version": "1",
+    "debugenabled": false,
     "service_domain": "notify",
     "service": "mattiphone",
+    "entityId": "",
     "data": "{\"message\":\"Bed time? I'm turning everything off in 5 minutes\",\"data\":{\"push\":{\"badge\":5,\"category\":\"goodnight\"}}}",
+    "dataType": "json",
     "mergecontext": "",
     "output_location": "payload",
     "output_location_type": "msg",
@@ -4824,8 +4828,8 @@
     "from": "",
     "to": "",
     "reg": false,
-    "x": 2298,
-    "y": 380,
+    "x": 2640,
+    "y": 340,
     "wires": [
       [
         "747f847d.8cf0ec"
@@ -10715,7 +10719,7 @@
     "comparator": "is",
     "value": "2",
     "valueType": "str",
-    "timeout": "2",
+    "timeout": "4",
     "timeoutUnits": "hours",
     "entityLocation": "",
     "entityLocationType": "none",
@@ -10738,8 +10742,8 @@
     "z": "d73100a9.0d64d",
     "name": "",
     "env": [],
-    "x": 2488,
-    "y": 380,
+    "x": 2830,
+    "y": 340,
     "wires": [
       []
     ]
@@ -13569,7 +13573,7 @@
     "wires": [
       [],
       [
-        "ff31cac4.b7b148"
+        "c9b7606.bb30ea"
       ]
     ]
   },
@@ -13609,8 +13613,8 @@
     "links": [
       "5d68af75.25cde"
     ],
-    "x": 1575,
-    "y": 440,
+    "x": 1595,
+    "y": 620,
     "wires": [
       [
         "7356acc5.e71944"
@@ -13632,8 +13636,8 @@
     "checkall": "true",
     "repair": false,
     "outputs": 1,
-    "x": 1720,
-    "y": 440,
+    "x": 1760,
+    "y": 620,
     "wires": [
       [
         "94c4fb0a.6129d8",
@@ -13659,7 +13663,7 @@
     "y": 480,
     "wires": [
       [
-        "ff31cac4.b7b148"
+        "c9b7606.bb30ea"
       ]
     ]
   },
@@ -31338,7 +31342,7 @@
     "op2": "0",
     "op1type": "nul",
     "op2type": "str",
-    "duration": "30",
+    "duration": "20",
     "extend": true,
     "units": "min",
     "reset": "",
@@ -31444,5 +31448,43 @@
         "e1c5ffbe.bd264"
       ]
     ]
+  },
+  {
+    "id": "c9b7606.bb30ea",
+    "type": "api-current-state",
+    "z": "d73100a9.0d64d",
+    "name": "Is office light strip",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "outputs": 2,
+    "halt_if": "true",
+    "halt_if_type": "bool",
+    "halt_if_compare": "is",
+    "override_topic": true,
+    "entity_id": "light.hue_lightstrip_plus_1_2",
+    "state_type": "habool",
+    "state_location": "payload",
+    "override_payload": "msg",
+    "entity_location": "data",
+    "override_data": "msg",
+    "blockInputOverrides": false,
+    "x": 2410,
+    "y": 340,
+    "wires": [
+      [
+        "ff31cac4.b7b148"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "84d435fb.32f558",
+    "type": "comment",
+    "z": "d73100a9.0d64d",
+    "name": "Trigger Anyway",
+    "info": "",
+    "x": 1760,
+    "y": 580,
+    "wires": []
   }
 ]
