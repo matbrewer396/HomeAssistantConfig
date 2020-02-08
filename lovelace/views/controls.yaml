@@ -128,9 +128,15 @@ cards:
               - label: !include ../jimz011/includes/brightness-label.yaml
               - grid:
                   !include ../jimz011/includes/light-devices-grid.yaml
-          - type: custom:button-card
-            color_type: blank-card
-            aspect_ratio: 1/1
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: light.wled_undertv
+              - name: Under TV
+              - icon: ceiling-light
+              - label: !include ../jimz011/includes/brightness-label.yaml
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
           - !include ../jimz011/includes/blank-card.yaml
       
 
@@ -306,6 +312,81 @@ cards:
                   !include ../jimz011/includes/light-devices-grid.yaml
           - !include ../jimz011/includes/blank-card.yaml
 
+      - type: custom:decluttering-card
+        template: header 
+        variables:
+          - content: '##### Kitchen'
+      - type: horizontal-stack
+        cards:
+          - !include ../jimz011/includes/blank-card.yaml
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: switch.kitchen_light
+              - name: "Kitchen Light"
+              - icon: stove
+              # - label: "[[[ if (states['sensor.plug_02_energy_power'].state > 0) return `${states['sensor.plug_02_energy_power'].state} W`; else return '&nbsp;' ]]]"
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: switch.plug_010
+              - name: Plug
+              - icon: microwave
+              - label: "[[[ if (states['sensor.plug_010_energy_power'].state > 0) return `${states['sensor.plug_010_energy_power'].state} W`; else return '&nbsp;' ]]]"
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: switch.sonoff
+              - name: Dishwasher
+              - icon: dishwasher
+              - label: "[[[ if (states['sensor.sonoff_energy_power'].state > 0) return `${states['sensor.sonoff_energy_power'].state} W`; else return '&nbsp;' ]]]"
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: switch.plug_011
+              - name: Plug
+              - icon: power-socket-uk
+              - label: "[[[ if (states['sensor.plug_011_energy_power'].state > 0) return `${states['sensor.plug_011_energy_power'].state} W`; else return '&nbsp;' ]]]"
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+          
+          
+          - !include ../jimz011/includes/blank-card.yaml
+
+      - type: horizontal-stack
+        cards:
+          - !include ../jimz011/includes/blank-card.yaml
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: switch.plug_012
+              - name: Plug
+              - icon: power-socket-uk
+              - label: "[[[ if (states['sensor.plug_012_energy_power'].state > 0) return `${states['sensor.plug_012_energy_power'].state} W`; else return '&nbsp;' ]]]"
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: switch.plug_013
+              - name: Plug
+              - icon: power-socket-uk
+              - label: "[[[ if (states['sensor.plug_013_energy_power'].state > 0) return `${states['sensor.plug_013_energy_power'].state} W`; else return '&nbsp;' ]]]"
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+          - type: custom:button-card
+            color_type: blank-card
+            aspect_ratio: 1/1
+          - type: custom:button-card
+            color_type: blank-card
+            aspect_ratio: 1/1
+          - !include ../jimz011/includes/blank-card.yaml
    
       - type: custom:decluttering-card
         template: header 
@@ -334,15 +415,7 @@ cards:
               - grid:
                   !include ../jimz011/includes/light-devices-grid.yaml
               - label: !include ../jimz011/includes/brightness-label.yaml
-          - type: custom:decluttering-card
-            template: button  
-            variables:
-              - entity: switch.sonoff
-              - name: Dishwasher
-              - icon: dishwasher
-              - label: "[[[ if (states['sensor.sonoff_energy_power'].state > 0) return `${states['sensor.sonoff_energy_power'].state} W`; else return '&nbsp;' ]]]"
-              - grid:
-                  !include ../jimz011/includes/light-devices-grid.yaml
+          
           - type: custom:decluttering-card
             template: button  
             variables:
@@ -353,19 +426,13 @@ cards:
               - grid:
                   !include ../jimz011/includes/light-devices-grid.yaml
               - lock: true
+          - type: custom:button-card
+            color_type: blank-card
+            aspect_ratio: 1/1
           - !include ../jimz011/includes/blank-card.yaml
       - type: horizontal-stack
         cards:
           - !include ../jimz011/includes/blank-card.yaml
-          - type: custom:decluttering-card
-            template: button  
-            variables:
-              - entity: switch.kitchen_light
-              - name: "Kitchen Light"
-              - icon: stove
-              # - label: "[[[ if (states['sensor.plug_02_energy_power'].state > 0) return `${states['sensor.plug_02_energy_power'].state} W`; else return '&nbsp;' ]]]"
-              - grid:
-                  !include ../jimz011/includes/light-devices-grid.yaml
           - type: custom:button-card
             color_type: blank-card
             aspect_ratio: 1/1

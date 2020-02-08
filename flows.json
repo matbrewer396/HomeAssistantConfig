@@ -14,16 +14,16 @@
     "info": ""
   },
   {
-    "id": "99d64a3d.f4e418",
+    "id": "b8a16318.b66a5",
     "type": "tab",
-    "label": "Sun State Change",
+    "label": "Maintenance",
     "disabled": false,
     "info": ""
   },
   {
-    "id": "b8a16318.b66a5",
+    "id": "99d64a3d.f4e418",
     "type": "tab",
-    "label": "Maintenance",
+    "label": "Sun State Change",
     "disabled": false,
     "info": ""
   },
@@ -206,7 +206,7 @@
     "id": "6d7fc63f.5adbe8",
     "type": "tab",
     "label": "Xmas lights",
-    "disabled": false,
+    "disabled": true,
     "info": ""
   },
   {
@@ -220,6 +220,13 @@
     "id": "ea5aca0.33b1a38",
     "type": "tab",
     "label": "Bin Day",
+    "disabled": false,
+    "info": ""
+  },
+  {
+    "id": "377a27ad.b99c9",
+    "type": "tab",
+    "label": "Flow 1",
     "disabled": false,
     "info": ""
   },
@@ -410,6 +417,18 @@
           },
           {
             "id": "f0907ad6.72d1f8"
+          },
+          {
+            "id": "837ff9b4.f5dc98"
+          },
+          {
+            "id": "6a2c7663.3da788"
+          },
+          {
+            "id": "ba1c0362.a5462"
+          },
+          {
+            "id": "1c752f54.5dc961"
           }
         ]
       }
@@ -10806,7 +10825,7 @@
     "op2": "",
     "op1type": "nul",
     "op2type": "pay",
-    "duration": "8",
+    "duration": "20",
     "extend": false,
     "units": "min",
     "reset": "",
@@ -10829,7 +10848,7 @@
     "op2": "0",
     "op1type": "nul",
     "op2type": "str",
-    "duration": "4",
+    "duration": "10",
     "extend": false,
     "units": "min",
     "reset": "",
@@ -19724,7 +19743,8 @@
       "688dc601.8b0c68",
       "8f80ab0d.e271b8",
       "c215726b.e66d5",
-      "dfd9170e.807548"
+      "dfd9170e.807548",
+      "fd781bb5.bad858"
     ],
     "x": 395,
     "y": 1120,
@@ -20143,7 +20163,8 @@
         "8c3e0d70.aec22"
       ],
       [
-        "5c0d216f.67deb"
+        "5c0d216f.67deb",
+        "8e4230b9.58f06"
       ],
       [
         "d72e9909.52f548"
@@ -20347,7 +20368,7 @@
     "output_location_type": "none",
     "mustacheAltTags": false,
     "x": 630,
-    "y": 1180,
+    "y": 1220,
     "wires": [
       []
     ]
@@ -20391,7 +20412,7 @@
     "output_location_type": "none",
     "mustacheAltTags": false,
     "x": 640,
-    "y": 1220,
+    "y": 1280,
     "wires": [
       []
     ]
@@ -25866,7 +25887,7 @@
     "retain": "",
     "broker": "1b6bc4ba.56ff4b",
     "x": 530,
-    "y": 460,
+    "y": 660,
     "wires": []
   },
   {
@@ -25889,7 +25910,7 @@
     "override_data": "msg",
     "blockInputOverrides": false,
     "x": 230,
-    "y": 460,
+    "y": 660,
     "wires": [
       [
         "1d6f928f.447afd"
@@ -25917,7 +25938,7 @@
     "to": "",
     "reg": false,
     "x": 370,
-    "y": 460,
+    "y": 660,
     "wires": [
       [
         "d4f5417a.e20e8"
@@ -29593,12 +29614,12 @@
     "type": "switch",
     "z": "c9dd75c4.1c8078",
     "name": "Device",
-    "property": "payload.event.id",
+    "property": "payload.event.unique_id",
     "propertyType": "msg",
     "rules": [
       {
         "t": "eq",
-        "v": "bathroom_2_gang",
+        "v": "00:15:8d:00:03:56:00:10",
         "vt": "str"
       },
       {
@@ -31064,15 +31085,19 @@
     "z": "8a69107f.14257",
     "name": "Toggle library_lights",
     "server": "5ee4d578.f7736c",
+    "version": "1",
+    "debugenabled": false,
     "service_domain": "light",
-    "service": "toggle",
-    "data": "{\"entity_id\":\"light.library_lights\"}",
+    "service": "turn_on",
+    "entityId": "light.library_lights",
+    "data": "",
+    "dataType": "json",
     "mergecontext": "",
     "output_location": "",
     "output_location_type": "none",
     "mustacheAltTags": false,
-    "x": 410,
-    "y": 720,
+    "x": 460,
+    "y": 740,
     "wires": [
       []
     ]
@@ -31083,14 +31108,18 @@
     "z": "8a69107f.14257",
     "name": "Toggle plug",
     "server": "5ee4d578.f7736c",
+    "version": "1",
+    "debugenabled": false,
     "service_domain": "switch",
-    "service": "toggle",
-    "data": "{\"entity_id\":\"switch.plug_06\"}",
+    "service": "turn_on",
+    "entityId": "switch.plug_06",
+    "data": "",
+    "dataType": "json",
     "mergecontext": "",
     "output_location": "",
     "output_location_type": "none",
     "mustacheAltTags": false,
-    "x": 400,
+    "x": 430,
     "y": 680,
     "wires": [
       []
@@ -31486,5 +31515,365 @@
     "x": 1760,
     "y": 580,
     "wires": []
+  },
+  {
+    "id": "8e4230b9.58f06",
+    "type": "link out",
+    "z": "9a341993.fbc528",
+    "name": "TV On",
+    "links": [
+      "35934b6b.88af44"
+    ],
+    "x": 595,
+    "y": 1180,
+    "wires": []
+  },
+  {
+    "id": "4bd60bc.b131ef4",
+    "type": "comment",
+    "z": "9a341993.fbc528",
+    "name": "TV On",
+    "info": "",
+    "x": 150,
+    "y": 1620,
+    "wires": []
+  },
+  {
+    "id": "35934b6b.88af44",
+    "type": "link in",
+    "z": "9a341993.fbc528",
+    "name": "Action - Tv On",
+    "links": [
+      "8e4230b9.58f06"
+    ],
+    "x": 115,
+    "y": 1680,
+    "wires": [
+      [
+        "a2966779.e5fa98",
+        "eb20ee4f.aa464",
+        "3a687ee8.833de2",
+        "31a917c2.923668"
+      ]
+    ]
+  },
+  {
+    "id": "a2966779.e5fa98",
+    "type": "api-call-service",
+    "z": "9a341993.fbc528",
+    "name": "Sofa Led",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "light",
+    "service": "turn_on",
+    "entityId": "light.sofa_1_light_rgb",
+    "data": "",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "payload",
+    "output_location_type": "msg",
+    "mustacheAltTags": false,
+    "x": 380,
+    "y": 1680,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "eb20ee4f.aa464",
+    "type": "api-call-service",
+    "z": "9a341993.fbc528",
+    "name": "Sofa 2 Led",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "light",
+    "service": "turn_on",
+    "entityId": "light.wled_sofa2",
+    "data": "",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "payload",
+    "output_location_type": "msg",
+    "mustacheAltTags": false,
+    "x": 390,
+    "y": 1720,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "3a687ee8.833de2",
+    "type": "api-call-service",
+    "z": "9a341993.fbc528",
+    "name": "Under Stairs Led",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "light",
+    "service": "turn_on",
+    "entityId": "light.wled_understairs",
+    "data": "",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "payload",
+    "output_location_type": "msg",
+    "mustacheAltTags": false,
+    "x": 410,
+    "y": 1760,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "31a917c2.923668",
+    "type": "api-call-service",
+    "z": "9a341993.fbc528",
+    "name": "Under TV Led",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "light",
+    "service": "turn_on",
+    "entityId": "light.wled_undertv",
+    "data": "",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "payload",
+    "output_location_type": "msg",
+    "mustacheAltTags": false,
+    "x": 400,
+    "y": 1800,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "837ff9b4.f5dc98",
+    "type": "api-call-service",
+    "z": "c9b308f8.01ef68",
+    "name": "Turn off Mircowave",
+    "server": "eef5a84.da24f58",
+    "version": "1",
+    "debugenabled": false,
+    "service_domain": "switch",
+    "service": "turn_off",
+    "entityId": "switch.plug_010",
+    "data": "",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "payload",
+    "output_location_type": "msg",
+    "mustacheAltTags": false,
+    "x": 510,
+    "y": 340,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "6a2c7663.3da788",
+    "type": "api-call-service",
+    "z": "c9b308f8.01ef68",
+    "name": "Turn off Kic - 11",
+    "server": "eef5a84.da24f58",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "switch",
+    "service": "turn_off",
+    "entityId": "switch.plug_011",
+    "data": "",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "payload",
+    "output_location_type": "msg",
+    "mustacheAltTags": false,
+    "x": 500,
+    "y": 380,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "ba1c0362.a5462",
+    "type": "api-call-service",
+    "z": "c9b308f8.01ef68",
+    "name": "Turn off Kic - 12",
+    "server": "eef5a84.da24f58",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "switch",
+    "service": "turn_off",
+    "entityId": "switch.plug_012",
+    "data": "",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "payload",
+    "output_location_type": "msg",
+    "mustacheAltTags": false,
+    "x": 500,
+    "y": 420,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "1c752f54.5dc961",
+    "type": "api-call-service",
+    "z": "c9b308f8.01ef68",
+    "name": "Turn off Kic - 13",
+    "server": "eef5a84.da24f58",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "switch",
+    "service": "turn_off",
+    "entityId": "switch.plug_013",
+    "data": "",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "payload",
+    "output_location_type": "msg",
+    "mustacheAltTags": false,
+    "x": 500,
+    "y": 460,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "a2a8b688.0a7b58",
+    "type": "api-call-service",
+    "z": "6e74caff.7ad1f4",
+    "name": "Turn On Mircowave",
+    "server": "eef5a84.da24f58",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "switch",
+    "service": "turn_on",
+    "entityId": "switch.plug_010",
+    "data": "",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "payload",
+    "output_location_type": "msg",
+    "mustacheAltTags": false,
+    "x": 490,
+    "y": 2580,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "155f91a5.24f70e",
+    "type": "api-call-service",
+    "z": "6e74caff.7ad1f4",
+    "name": "Turn On Kic - 11",
+    "server": "eef5a84.da24f58",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "switch",
+    "service": "turn_on",
+    "entityId": "switch.plug_011",
+    "data": "",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "payload",
+    "output_location_type": "msg",
+    "mustacheAltTags": false,
+    "x": 480,
+    "y": 2620,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "c1ec00ec.750c6",
+    "type": "api-call-service",
+    "z": "6e74caff.7ad1f4",
+    "name": "Turn On Kic - 12",
+    "server": "eef5a84.da24f58",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "switch",
+    "service": "turn_on",
+    "entityId": "switch.plug_012",
+    "data": "",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "payload",
+    "output_location_type": "msg",
+    "mustacheAltTags": false,
+    "x": 480,
+    "y": 2660,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "c915e43b.832848",
+    "type": "api-call-service",
+    "z": "6e74caff.7ad1f4",
+    "name": "Turn On Kic - 13",
+    "server": "eef5a84.da24f58",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "switch",
+    "service": "turn_on",
+    "entityId": "switch.plug_013",
+    "data": "",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "payload",
+    "output_location_type": "msg",
+    "mustacheAltTags": false,
+    "x": 480,
+    "y": 2700,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "ab939947.296018",
+    "type": "comment",
+    "z": "6e74caff.7ad1f4",
+    "name": "Turn On plugs",
+    "info": "",
+    "x": 130,
+    "y": 2520,
+    "wires": []
+  },
+  {
+    "id": "fd781bb5.bad858",
+    "type": "link in",
+    "z": "6e74caff.7ad1f4",
+    "name": "On Kic Mov",
+    "links": [
+      "3495a219.f840be"
+    ],
+    "x": 100,
+    "y": 2640,
+    "wires": [
+      [
+        "b0280511.628478"
+      ]
+    ]
+  },
+  {
+    "id": "b0280511.628478",
+    "type": "subflow:cdbc6ec6.2e0ec",
+    "z": "6e74caff.7ad1f4",
+    "name": "",
+    "x": 260,
+    "y": 2640,
+    "wires": [
+      [
+        "a2a8b688.0a7b58",
+        "155f91a5.24f70e",
+        "c1ec00ec.750c6",
+        "c915e43b.832848"
+      ],
+      []
+    ]
   }
 ]

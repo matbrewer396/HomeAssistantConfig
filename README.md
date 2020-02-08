@@ -58,6 +58,7 @@ List of all my device, that make house smart:
 | Device  | Quantity | Notes |
 | ------------- | :---: | ------------- | 
 | Teckin WI-FI Plug | 10 | flashed with tasmota | 
+| 2nice WI-FI Plug | 4 | flashed with tasmota | 
 | Eve Elgato Plug | 2 | BLE - Cant find a way to connect to HA, so there more use for odd task like restarting PI | 
 
 
@@ -122,6 +123,7 @@ Pretty much the same
 * On dishwasher door open the smart plug switched off and back on after the door close - stops an annoying bleep when dorr is left open
 * On dishwasher status changed, notification is sent and alex say completed
 * On washing machine status changed, notification is sent and alex say completed
+* Plugs turn off when good night / bye triggered. On motion these are turn back on
 
 ### Office (aka my room)
 * On door open / motion and dark in room, lights turn on - turn off after 30 min
