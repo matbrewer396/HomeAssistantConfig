@@ -103,7 +103,7 @@ Key points:
 This is really just a big annoying show to scare off anyone
 * All lights flash red
 * All alexs playing message
-* Send everyone notication, with of a disable option
+* Send everyone notification, with of a disable option
 
 ### Good Night / Good Bye
 Pretty much the same
@@ -124,6 +124,7 @@ Pretty much the same
 * On dishwasher status changed, notification is sent and alex say completed
 * On washing machine status changed, notification is sent and alex say completed
 * Plugs turn off when good night / bye triggered. On motion these are turn back on
+* Plugs turn off when when no motion for 40 minuites. On motion these are turn back on
 
 ### Office (aka my room)
 * On door open / motion and dark in room, lights turn on - turn off after 30 min
@@ -133,6 +134,7 @@ Pretty much the same
 
 ### Libary
 * On motion turn on lights and plug 
+* Turn off after no motion
 
 ### Hallway
 * Simple light on when motion senor trigger and is dark for a few minutes - only automate that run outside of HA (all in hue hub)
