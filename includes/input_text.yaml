@@ -4,3 +4,6 @@
 
   alexa_tts:
     name: Alexa TTS
+
+  goodnight_waittill:
+    name: Good Night Wait Until

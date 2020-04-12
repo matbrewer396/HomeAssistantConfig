@@ -143,7 +143,7 @@
     "id": "e361c01.ee9f54",
     "type": "tab",
     "label": "Hot Tub",
-    "disabled": true,
+    "disabled": false,
     "info": ""
   },
   {
@@ -2189,8 +2189,8 @@
     "output_location": "payload",
     "output_location_type": "msg",
     "mustacheAltTags": false,
-    "x": 2090,
-    "y": 300,
+    "x": 2630,
+    "y": 280,
     "wires": [
       []
     ]
@@ -2252,7 +2252,6 @@
     "wires": [
       [
         "99df83ab.46e3b",
-        "987ed362.eb692",
         "8a9e4a8c.294d28"
       ],
       [
@@ -2276,7 +2275,7 @@
     "type": "light-scheduler",
     "z": "d73100a9.0d64d",
     "settings": "525afe76.43e05",
-    "events": "[{\"start\":{\"dow\":6,\"mod\":1365},\"end\":{\"dow\":0,\"mod\":0}},{\"start\":{\"dow\":5,\"mod\":1350},\"end\":{\"dow\":6,\"mod\":0}},{\"start\":{\"dow\":1,\"mod\":0},\"end\":{\"dow\":1,\"mod\":420}},{\"start\":{\"dow\":2,\"mod\":0},\"end\":{\"dow\":2,\"mod\":420}},{\"start\":{\"dow\":3,\"mod\":0},\"end\":{\"dow\":3,\"mod\":420}},{\"start\":{\"dow\":4,\"mod\":0},\"end\":{\"dow\":4,\"mod\":420}},{\"start\":{\"dow\":5,\"mod\":0},\"end\":{\"dow\":5,\"mod\":420}},{\"start\":{\"dow\":6,\"mod\":0},\"end\":{\"dow\":6,\"mod\":420}},{\"start\":{\"dow\":0,\"mod\":0},\"end\":{\"dow\":0,\"mod\":420}},{\"start\":{\"dow\":2,\"mod\":1290},\"end\":{\"dow\":3,\"mod\":0}},{\"start\":{\"dow\":3,\"mod\":1290},\"end\":{\"dow\":4,\"mod\":0}},{\"start\":{\"dow\":4,\"mod\":1290},\"end\":{\"dow\":5,\"mod\":0}},{\"start\":{\"dow\":0,\"mod\":1290},\"end\":{\"dow\":1,\"mod\":30}},{\"start\":{\"dow\":1,\"mod\":1200},\"end\":{\"dow\":2,\"mod\":0}},{\"start\":{\"dow\":2,\"mod\":1200},\"end\":{\"dow\":2,\"mod\":1290}},{\"start\":{\"dow\":3,\"mod\":1200},\"end\":{\"dow\":3,\"mod\":1290}},{\"start\":{\"dow\":4,\"mod\":1200},\"end\":{\"dow\":4,\"mod\":1290}},{\"start\":{\"dow\":0,\"mod\":1200},\"end\":{\"dow\":0,\"mod\":1290}},{\"start\":{\"dow\":6,\"mod\":1320},\"end\":{\"dow\":6,\"mod\":1365}},{\"start\":{\"dow\":5,\"mod\":1320},\"end\":{\"dow\":5,\"mod\":1350}},{\"start\":{\"dow\":6,\"mod\":1305},\"end\":{\"dow\":6,\"mod\":1320}},{\"start\":{\"dow\":5,\"mod\":1305},\"end\":{\"dow\":5,\"mod\":1320}},{\"start\":{\"dow\":1,\"mod\":1140},\"end\":{\"dow\":1,\"mod\":1200}},{\"start\":{\"dow\":2,\"mod\":1140},\"end\":{\"dow\":2,\"mod\":1200}},{\"start\":{\"dow\":3,\"mod\":1140},\"end\":{\"dow\":3,\"mod\":1200}},{\"start\":{\"dow\":0,\"mod\":1140},\"end\":{\"dow\":0,\"mod\":1200}},{\"start\":{\"dow\":4,\"mod\":1140},\"end\":{\"dow\":4,\"mod\":1200}}]",
+    "events": "[{\"start\":{\"dow\":6,\"mod\":1365},\"end\":{\"dow\":0,\"mod\":0}},{\"start\":{\"dow\":5,\"mod\":1350},\"end\":{\"dow\":6,\"mod\":0}},{\"start\":{\"dow\":1,\"mod\":0},\"end\":{\"dow\":1,\"mod\":360}},{\"start\":{\"dow\":3,\"mod\":0},\"end\":{\"dow\":3,\"mod\":360}},{\"start\":{\"dow\":4,\"mod\":0},\"end\":{\"dow\":4,\"mod\":360}},{\"start\":{\"dow\":6,\"mod\":0},\"end\":{\"dow\":6,\"mod\":360}},{\"start\":{\"dow\":0,\"mod\":0},\"end\":{\"dow\":0,\"mod\":360}},{\"start\":{\"dow\":2,\"mod\":1290},\"end\":{\"dow\":3,\"mod\":0}},{\"start\":{\"dow\":3,\"mod\":1290},\"end\":{\"dow\":4,\"mod\":0}},{\"start\":{\"dow\":4,\"mod\":1290},\"end\":{\"dow\":5,\"mod\":0}},{\"start\":{\"dow\":0,\"mod\":1290},\"end\":{\"dow\":1,\"mod\":30}},{\"start\":{\"dow\":1,\"mod\":1200},\"end\":{\"dow\":2,\"mod\":0}},{\"start\":{\"dow\":2,\"mod\":1200},\"end\":{\"dow\":2,\"mod\":1290}},{\"start\":{\"dow\":3,\"mod\":1200},\"end\":{\"dow\":3,\"mod\":1290}},{\"start\":{\"dow\":4,\"mod\":1200},\"end\":{\"dow\":4,\"mod\":1290}},{\"start\":{\"dow\":0,\"mod\":1200},\"end\":{\"dow\":0,\"mod\":1290}},{\"start\":{\"dow\":6,\"mod\":1320},\"end\":{\"dow\":6,\"mod\":1365}},{\"start\":{\"dow\":5,\"mod\":1320},\"end\":{\"dow\":5,\"mod\":1350}},{\"start\":{\"dow\":6,\"mod\":1305},\"end\":{\"dow\":6,\"mod\":1320}},{\"start\":{\"dow\":5,\"mod\":1305},\"end\":{\"dow\":5,\"mod\":1320}},{\"start\":{\"dow\":1,\"mod\":1140},\"end\":{\"dow\":1,\"mod\":1200}},{\"start\":{\"dow\":2,\"mod\":1140},\"end\":{\"dow\":2,\"mod\":1200}},{\"start\":{\"dow\":3,\"mod\":1140},\"end\":{\"dow\":3,\"mod\":1200}},{\"start\":{\"dow\":0,\"mod\":1140},\"end\":{\"dow\":0,\"mod\":1200}},{\"start\":{\"dow\":4,\"mod\":1140},\"end\":{\"dow\":4,\"mod\":1200}},{\"start\":{\"dow\":5,\"mod\":0},\"end\":{\"dow\":5,\"mod\":360}},{\"start\":{\"dow\":2,\"mod\":0},\"end\":{\"dow\":2,\"mod\":360}}]",
     "topic": "",
     "name": "Auto Good Night",
     "onPayload": "On",
@@ -2373,7 +2372,9 @@
         "a9920411.01ba78",
         "94c4fb0a.6129d8",
         "b399da43.7ff288",
-        "c73f668c.f7ef28"
+        "c73f668c.f7ef28",
+        "72c3ab65.ad95e4",
+        "fc10e2c0.0607"
       ]
     ]
   },
@@ -2386,7 +2387,7 @@
     "op1type": "nul",
     "op2type": "str",
     "duration": "30",
-    "extend": false,
+    "extend": true,
     "units": "min",
     "reset": "off",
     "bytopic": "all",
@@ -2409,7 +2410,7 @@
     "op1type": "nul",
     "op2type": "str",
     "duration": "60",
-    "extend": false,
+    "extend": true,
     "units": "min",
     "reset": "off",
     "bytopic": "all",
@@ -2431,7 +2432,7 @@
     "op1type": "nul",
     "op2type": "str",
     "duration": "180",
-    "extend": false,
+    "extend": true,
     "units": "min",
     "reset": "off",
     "bytopic": "all",
@@ -2450,8 +2451,7 @@
     "z": "d73100a9.0d64d",
     "name": "Good Night Message",
     "links": [
-      "c3aa3a6e.de2c88",
-      "29c3c120.517e0e"
+      "53134777.f235d8"
     ],
     "x": 1162,
     "y": 630,
@@ -2469,20 +2469,6 @@
     "complete": "false",
     "x": 1182,
     "y": 550,
-    "wires": []
-  },
-  {
-    "id": "987ed362.eb692",
-    "type": "debug",
-    "z": "d73100a9.0d64d",
-    "name": "",
-    "active": true,
-    "tosidebar": true,
-    "console": false,
-    "tostatus": false,
-    "complete": "false",
-    "x": 770,
-    "y": 800,
     "wires": []
   },
   {
@@ -2560,47 +2546,21 @@
     "z": "d73100a9.0d64d",
     "name": "Holiday Mode",
     "server": "eef5a84.da24f58",
-    "outputs": 1,
-    "halt_if": "",
-    "halt_if_type": "str",
+    "version": 1,
+    "outputs": 2,
+    "halt_if": "false",
+    "halt_if_type": "bool",
     "halt_if_compare": "is",
     "override_topic": true,
     "entity_id": "input_boolean.holidaymode",
-    "state_type": "str",
+    "state_type": "habool",
     "state_location": "payload",
     "override_payload": "msg",
     "entity_location": "data",
     "override_data": "msg",
+    "blockInputOverrides": false,
     "x": 800,
     "y": 360,
-    "wires": [
-      [
-        "79ee0fe4.ad1bd"
-      ]
-    ]
-  },
-  {
-    "id": "79ee0fe4.ad1bd",
-    "type": "switch",
-    "z": "d73100a9.0d64d",
-    "name": "No?",
-    "property": "payload",
-    "propertyType": "msg",
-    "rules": [
-      {
-        "t": "eq",
-        "v": "on",
-        "vt": "str"
-      },
-      {
-        "t": "else"
-      }
-    ],
-    "checkall": "true",
-    "repair": false,
-    "outputs": 2,
-    "x": 990,
-    "y": 340,
     "wires": [
       [],
       [
@@ -4847,8 +4807,8 @@
     "from": "",
     "to": "",
     "reg": false,
-    "x": 2640,
-    "y": 340,
+    "x": 3180,
+    "y": 320,
     "wires": [
       [
         "747f847d.8cf0ec"
@@ -4960,8 +4920,8 @@
     "links": [
       "5866fa08.5976e4"
     ],
-    "x": 241,
-    "y": 792,
+    "x": 495,
+    "y": 780,
     "wires": [
       [
         "69a40cbb.df3674",
@@ -4977,8 +4937,8 @@
     "links": [
       "d89c7a04.840df8"
     ],
-    "x": 240,
-    "y": 752,
+    "x": 494,
+    "y": 740,
     "wires": [
       [
         "be9e3159.3ea59",
@@ -4994,8 +4954,8 @@
     "links": [
       "8322431a.be704"
     ],
-    "x": 240,
-    "y": 712,
+    "x": 494,
+    "y": 700,
     "wires": [
       [
         "8a9e4a8c.294d28",
@@ -7280,6 +7240,7 @@
     "name": "Confirm Trigger",
     "server": "5ee4d578.f7736c",
     "version": 1,
+    "debugenabled": false,
     "service_domain": "input_boolean",
     "service": "turn_on",
     "entityId": "input_boolean.goodnight_beentriggered",
@@ -7920,10 +7881,10 @@
     "id": "7323ca0e.ee9ac4",
     "type": "comment",
     "z": "d73100a9.0d64d",
-    "name": "",
+    "name": "Reset on start",
     "info": "",
-    "x": 0,
-    "y": 0,
+    "x": 130,
+    "y": 160,
     "wires": []
   },
   {
@@ -7932,8 +7893,8 @@
     "z": "d73100a9.0d64d",
     "name": "Wait for us to both be in bed",
     "info": "",
-    "x": 1560,
-    "y": 240,
+    "x": 2100,
+    "y": 220,
     "wires": []
   },
   {
@@ -10085,7 +10046,8 @@
     "wires": [
       [
         "cdb49bda.24b898",
-        "a1c74ed7.4353b"
+        "a1c74ed7.4353b",
+        "9451899f.67b3e8"
       ]
     ]
   },
@@ -10101,8 +10063,8 @@
     "crontab": "",
     "once": true,
     "onceDelay": "120",
-    "x": 100,
-    "y": 640,
+    "x": 120,
+    "y": 820,
     "wires": [
       [
         "e459e773.cc4ca8",
@@ -10154,8 +10116,8 @@
     "from": "",
     "to": "",
     "reg": false,
-    "x": 320,
-    "y": 640,
+    "x": 340,
+    "y": 780,
     "wires": [
       []
     ]
@@ -10171,8 +10133,8 @@
     "endTime": "20:00",
     "startOffset": 0,
     "endOffset": 0,
-    "x": 270,
-    "y": 700,
+    "x": 290,
+    "y": 840,
     "wires": [
       [
         "3aea71b8.ac593e"
@@ -10526,7 +10488,7 @@
     "entityLocationType": "none",
     "checkCurrentState": true,
     "blockInputOverrides": true,
-    "x": 1510,
+    "x": 1870,
     "y": 320,
     "wires": [
       [
@@ -10543,8 +10505,8 @@
     "z": "d73100a9.0d64d",
     "name": "",
     "env": [],
-    "x": 2830,
-    "y": 340,
+    "x": 3370,
+    "y": 320,
     "wires": [
       []
     ]
@@ -10555,8 +10517,8 @@
     "z": "d73100a9.0d64d",
     "name": "",
     "env": [],
-    "x": 2470,
-    "y": 440,
+    "x": 3010,
+    "y": 420,
     "wires": []
   },
   {
@@ -10929,7 +10891,7 @@
     "z": "d73100a9.0d64d",
     "name": "",
     "pauseType": "delay",
-    "timeout": "5",
+    "timeout": "30",
     "timeoutUnits": "seconds",
     "rate": "1",
     "nbRateUnits": "1",
@@ -12021,8 +11983,8 @@
     "from": "",
     "to": "",
     "reg": false,
-    "x": 2518,
-    "y": 500,
+    "x": 3058,
+    "y": 480,
     "wires": [
       [
         "f7a7ad4c.e1887"
@@ -12034,8 +11996,8 @@
     "type": "subflow:7df159d5.618c58",
     "z": "d73100a9.0d64d",
     "name": "",
-    "x": 2780,
-    "y": 500,
+    "x": 3320,
+    "y": 480,
     "wires": [
       []
     ]
@@ -12048,8 +12010,8 @@
     "func": "\nreturn msg;",
     "outputs": 1,
     "noerr": 0,
-    "x": 2290,
-    "y": 440,
+    "x": 2830,
+    "y": 420,
     "wires": [
       [
         "b4bcf0ef.3f114",
@@ -12503,12 +12465,12 @@
     "checkall": "true",
     "repair": false,
     "outputs": 2,
-    "x": 1220,
-    "y": 360,
+    "x": 1340,
+    "y": 300,
     "wires": [
       [],
       [
-        "8cbf3f8d.84749"
+        "72c3ab65.ad95e4"
       ]
     ]
   },
@@ -12527,8 +12489,8 @@
     "checkall": "true",
     "repair": false,
     "outputs": 1,
-    "x": 1800,
-    "y": 360,
+    "x": 2340,
+    "y": 340,
     "wires": [
       [
         "6e45a7ed.2c8728",
@@ -13359,8 +13321,8 @@
     "entityLocation": "",
     "entityLocationType": "none",
     "checkCurrentState": true,
-    "x": 2070,
-    "y": 360,
+    "x": 2610,
+    "y": 340,
     "wires": [
       [],
       [
@@ -13385,30 +13347,14 @@
     "entityLocation": "",
     "entityLocationType": "none",
     "checkCurrentState": true,
-    "x": 2068,
-    "y": 420,
+    "x": 2608,
+    "y": 400,
     "wires": [
       [
         "86cbf076.c386f"
       ],
       [
         "33d67a23.de0b26"
-      ]
-    ]
-  },
-  {
-    "id": "c3aa3a6e.de2c88",
-    "type": "link in",
-    "z": "d73100a9.0d64d",
-    "name": "Good Night Message",
-    "links": [
-      "5d68af75.25cde"
-    ],
-    "x": 1595,
-    "y": 620,
-    "wires": [
-      [
-        "7356acc5.e71944"
       ]
     ]
   },
@@ -13427,8 +13373,8 @@
     "checkall": "true",
     "repair": false,
     "outputs": 1,
-    "x": 1760,
-    "y": 620,
+    "x": 2300,
+    "y": 600,
     "wires": [
       [
         "94c4fb0a.6129d8",
@@ -13450,8 +13396,8 @@
     "reset": "off",
     "bytopic": "all",
     "name": "",
-    "x": 2050,
-    "y": 480,
+    "x": 2590,
+    "y": 460,
     "wires": [
       [
         "c9b7606.bb30ea"
@@ -13472,8 +13418,8 @@
     "reset": "off",
     "bytopic": "all",
     "name": "",
-    "x": 2050,
-    "y": 520,
+    "x": 2590,
+    "y": 500,
     "wires": [
       [
         "33d67a23.de0b26"
@@ -13512,8 +13458,8 @@
     "crontab": "",
     "once": false,
     "onceDelay": 0.1,
-    "x": 500,
-    "y": 440,
+    "x": 600,
+    "y": 180,
     "wires": [
       [
         "6ea9b8b4.f2d438",
@@ -13540,8 +13486,8 @@
     "from": "",
     "to": "",
     "reg": false,
-    "x": 700,
-    "y": 460,
+    "x": 760,
+    "y": 140,
     "wires": [
       [
         "54fc6c62.79b6c4"
@@ -13558,8 +13504,8 @@
     "console": false,
     "tostatus": false,
     "complete": "false",
-    "x": 900,
-    "y": 440,
+    "x": 930,
+    "y": 140,
     "wires": []
   },
   {
@@ -17927,8 +17873,8 @@
         "type": "str"
       }
     ],
-    "x": 640,
-    "y": 700,
+    "x": 660,
+    "y": 840,
     "wires": []
   },
   {
@@ -19539,8 +19485,8 @@
     "upper": "100",
     "mode": "increment",
     "outputs": 1,
-    "x": 2320,
-    "y": 100,
+    "x": 2860,
+    "y": 80,
     "wires": [
       [
         "9d46d128.5c116",
@@ -19559,29 +19505,9 @@
     "tostatus": false,
     "complete": "true",
     "targetType": "full",
-    "x": 2630,
-    "y": 60,
+    "x": 3170,
+    "y": 40,
     "wires": []
-  },
-  {
-    "id": "6a38d27e.f667ec",
-    "type": "inject",
-    "z": "d73100a9.0d64d",
-    "name": "",
-    "topic": "",
-    "payload": "",
-    "payloadType": "date",
-    "repeat": "",
-    "crontab": "",
-    "once": false,
-    "onceDelay": 0.1,
-    "x": 1280,
-    "y": 440,
-    "wires": [
-      [
-        "8cbf3f8d.84749"
-      ]
-    ]
   },
   {
     "id": "633fd784.87d398",
@@ -19595,11 +19521,13 @@
     "crontab": "",
     "once": true,
     "onceDelay": "10",
-    "x": 640,
-    "y": 60,
+    "x": 140,
+    "y": 220,
     "wires": [
       [
-        "1f2cf988.2620b6"
+        "1f2cf988.2620b6",
+        "10927101.c3aa0f",
+        "ce507b.cc701f88"
       ]
     ]
   },
@@ -19622,8 +19550,8 @@
     "from": "",
     "to": "",
     "reg": false,
-    "x": 850,
-    "y": 60,
+    "x": 350,
+    "y": 220,
     "wires": [
       []
     ]
@@ -19643,11 +19571,11 @@
     "randomLast": "5",
     "randomUnits": "seconds",
     "drop": false,
-    "x": 2680,
-    "y": 220,
+    "x": 3220,
+    "y": 200,
     "wires": [
       [
-        "8cbf3f8d.84749"
+        "72c3ab65.ad95e4"
       ]
     ]
   },
@@ -19671,8 +19599,8 @@
     "checkall": "true",
     "repair": false,
     "outputs": 2,
-    "x": 2490,
-    "y": 180,
+    "x": 3030,
+    "y": 160,
     "wires": [
       [
         "832545e1.4bf1f8",
@@ -19702,8 +19630,8 @@
     "from": "",
     "to": "",
     "reg": false,
-    "x": 2940,
-    "y": 100,
+    "x": 3480,
+    "y": 80,
     "wires": [
       [
         "86cbf076.c386f"
@@ -19718,7 +19646,7 @@
     "func": "\nreturn msg;",
     "outputs": 1,
     "noerr": 0,
-    "x": 1110,
+    "x": 1150,
     "y": 120,
     "wires": [
       [
@@ -19740,12 +19668,12 @@
     "reset": "",
     "bytopic": "all",
     "name": "",
-    "x": 2690,
-    "y": 160,
+    "x": 3230,
+    "y": 140,
     "wires": [
       [
         "99afc7fd.02cdd8",
-        "8cbf3f8d.84749"
+        "72c3ab65.ad95e4"
       ]
     ]
   },
@@ -19769,7 +19697,6 @@
     "y": 960,
     "wires": [
       [
-        "e9f4c700.bf3c08",
         "bbcfcdc6.3d796"
       ]
     ]
@@ -19805,21 +19732,6 @@
         "c562a33.fc16d6"
       ]
     ]
-  },
-  {
-    "id": "e9f4c700.bf3c08",
-    "type": "debug",
-    "z": "9a341993.fbc528",
-    "name": "",
-    "active": true,
-    "tosidebar": true,
-    "console": false,
-    "tostatus": false,
-    "complete": "payload",
-    "targetType": "msg",
-    "x": 370,
-    "y": 920,
-    "wires": []
   },
   {
     "id": "bbcfcdc6.3d796",
@@ -21189,7 +21101,7 @@
     "output_location_type": "msg",
     "mustacheAltTags": false,
     "x": 660,
-    "y": 340,
+    "y": 360,
     "wires": [
       []
     ]
@@ -21707,8 +21619,8 @@
       "3b5bbfbe.77c1d",
       "346b65c8.a46e1a"
     ],
-    "x": 2415,
-    "y": 540,
+    "x": 2955,
+    "y": 520,
     "wires": []
   },
   {
@@ -21783,7 +21695,8 @@
     "y": 1060,
     "wires": [
       [
-        "7064b85a.243398"
+        "7064b85a.243398",
+        "3ed3ba30.d71e26"
       ]
     ]
   },
@@ -21803,13 +21716,14 @@
     "z": "d73100a9.0d64d",
     "name": "Wait For Both To Be In Bed",
     "links": [
-      "7064b85a.243398"
+      "7064b85a.243398",
+      "5d68af75.25cde"
     ],
     "x": 1275,
-    "y": 300,
+    "y": 260,
     "wires": [
       [
-        "8cbf3f8d.84749"
+        "72c3ab65.ad95e4"
       ]
     ]
   },
@@ -21901,7 +21815,7 @@
     "id": "274fa071.0948a",
     "type": "change",
     "z": "d73100a9.0d64d",
-    "name": "Its Morning",
+    "name": "Its Morning - Reset",
     "rules": [
       {
         "t": "set",
@@ -21945,7 +21859,7 @@
     "checkCurrentState": true,
     "blockInputOverrides": true,
     "x": 420,
-    "y": 1440,
+    "y": 1280,
     "wires": [
       [
         "1a1a7b1d.3db2c5"
@@ -21968,7 +21882,7 @@
     "randomUnits": "seconds",
     "drop": false,
     "x": 580,
-    "y": 1440,
+    "y": 1280,
     "wires": [
       [
         "371e0584.05c96a"
@@ -21995,7 +21909,7 @@
     "override_data": "msg",
     "blockInputOverrides": false,
     "x": 760,
-    "y": 1380,
+    "y": 1220,
     "wires": [
       [
         "4d91f3d6.b9c79c"
@@ -22012,7 +21926,7 @@
     "name": "Assume Nothing happen if it turn off in 2 minutes",
     "info": "",
     "x": 860,
-    "y": 1440,
+    "y": 1280,
     "wires": []
   },
   {
@@ -23141,8 +23055,8 @@
     "links": [
       "32cd8fcd.35633"
     ],
-    "x": 2860,
-    "y": 200,
+    "x": 3400,
+    "y": 180,
     "wires": []
   },
   {
@@ -26748,8 +26662,8 @@
     "randomLast": "5",
     "randomUnits": "seconds",
     "drop": false,
-    "x": 470,
-    "y": 700,
+    "x": 490,
+    "y": 840,
     "wires": [
       [
         "93fd391a.057098"
@@ -30009,7 +29923,6 @@
     "y": 2220,
     "wires": [
       [
-        "1fa06118.77638f",
         "b91ec71b.de1508"
       ]
     ]
@@ -30045,21 +29958,6 @@
         "e2e37ddb.d2983"
       ]
     ]
-  },
-  {
-    "id": "1fa06118.77638f",
-    "type": "debug",
-    "z": "6e74caff.7ad1f4",
-    "name": "",
-    "active": true,
-    "tosidebar": true,
-    "console": false,
-    "tostatus": false,
-    "complete": "payload",
-    "targetType": "msg",
-    "x": 330,
-    "y": 2180,
-    "wires": []
   },
   {
     "id": "b91ec71b.de1508",
@@ -30826,7 +30724,7 @@
     "z": "8a69107f.14257",
     "name": "Toggle library_lights",
     "server": "5ee4d578.f7736c",
-    "version": "1",
+    "version": 1,
     "debugenabled": false,
     "service_domain": "light",
     "service": "turn_on",
@@ -30849,7 +30747,7 @@
     "z": "8a69107f.14257",
     "name": "Toggle plug",
     "server": "5ee4d578.f7736c",
-    "version": "1",
+    "version": 1,
     "debugenabled": false,
     "service_domain": "switch",
     "service": "turn_on",
@@ -31239,8 +31137,8 @@
     "entity_location": "data",
     "override_data": "msg",
     "blockInputOverrides": false,
-    "x": 2410,
-    "y": 340,
+    "x": 2950,
+    "y": 320,
     "wires": [
       [
         "ff31cac4.b7b148"
@@ -31254,8 +31152,8 @@
     "z": "d73100a9.0d64d",
     "name": "Trigger Anyway",
     "info": "",
-    "x": 1760,
-    "y": 580,
+    "x": 2300,
+    "y": 560,
     "wires": []
   },
   {
@@ -32111,7 +32009,7 @@
     "server": "5ee4d578.f7736c",
     "outputs": 2,
     "entityId": "binary_sensor.living_room_motion",
-    "property": "",
+    "property": "state",
     "comparator": "is",
     "value": "true",
     "valueType": "bool",
@@ -32243,8 +32141,8 @@
     "links": [
       "69e3038b.68b6fc"
     ],
-    "x": 1875,
-    "y": 440,
+    "x": 2415,
+    "y": 420,
     "wires": [
       [
         "33d67a23.de0b26"
@@ -32319,8 +32217,8 @@
     "crontab": "",
     "once": false,
     "onceDelay": 0.1,
-    "x": 1840,
-    "y": 220,
+    "x": 2380,
+    "y": 200,
     "wires": [
       [
         "6e45a7ed.2c8728"
@@ -32442,6 +32340,739 @@
     "y": 2940,
     "wires": [
       []
+    ]
+  },
+  {
+    "id": "10927101.c3aa0f",
+    "type": "api-call-service",
+    "z": "d73100a9.0d64d",
+    "name": "Reset Inputs",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "input_boolean",
+    "service": "turn_off",
+    "entityId": "input_boolean.goodnight_beentriggered, input_boolean.goodnight, input_boolean.goodnight_delay_60, input_boolean.goodnight_delay_180, input_boolean.goodnight_delay_30, input_boolean.goodnight_armed, input_boolean.goodnight_cancel",
+    "data": "",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "",
+    "output_location_type": "none",
+    "mustacheAltTags": false,
+    "x": 330,
+    "y": 260,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "72c3ab65.ad95e4",
+    "type": "function",
+    "z": "d73100a9.0d64d",
+    "name": "Arm -Bed",
+    "func": "\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 1680,
+    "y": 280,
+    "wires": [
+      [
+        "8cbf3f8d.84749"
+      ]
+    ]
+  },
+  {
+    "id": "d569524f.092a7",
+    "type": "change",
+    "z": "d73100a9.0d64d",
+    "name": "Disarm",
+    "rules": [
+      {
+        "t": "set",
+        "p": "reset",
+        "pt": "msg",
+        "to": "true",
+        "tot": "str"
+      }
+    ],
+    "action": "",
+    "property": "",
+    "from": "",
+    "to": "",
+    "reg": false,
+    "x": 1680,
+    "y": 340,
+    "wires": [
+      [
+        "8cbf3f8d.84749",
+        "9cc7615c.cb47d"
+      ]
+    ]
+  },
+  {
+    "id": "23e81ddc.189fd2",
+    "type": "status",
+    "z": "d73100a9.0d64d",
+    "name": "",
+    "scope": [
+      "8cbf3f8d.84749"
+    ],
+    "x": 120,
+    "y": 1560,
+    "wires": [
+      [
+        "84fe1e1b.17e5d"
+      ]
+    ]
+  },
+  {
+    "id": "84fe1e1b.17e5d",
+    "type": "function",
+    "z": "d73100a9.0d64d",
+    "name": "Convert Message to time",
+    "func": "var s = msg.status.text;\nif (s.match(/waiting until.*/) && s.length > 8){\n    s = s.substr(s.length -8)\n    s = s.substr(0,5)\n    msg = {\"payload\":{\"data\":{\"value\":s}}}\n} else {\n    msg = null;\n}\nreturn msg;\n\n",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 350,
+    "y": 1560,
+    "wires": [
+      [
+        "6d53b44.800114c",
+        "af695324.942b"
+      ]
+    ]
+  },
+  {
+    "id": "6d53b44.800114c",
+    "type": "api-call-service",
+    "z": "d73100a9.0d64d",
+    "name": "Set wait till time",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "input_text",
+    "service": "set_value",
+    "entityId": " input_text.goodnight_waittill",
+    "data": "",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "",
+    "output_location_type": "none",
+    "mustacheAltTags": false,
+    "x": 600,
+    "y": 1500,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "da9b8ab1.874268",
+    "type": "comment",
+    "z": "d73100a9.0d64d",
+    "name": "Output wait till time",
+    "info": "",
+    "x": 150,
+    "y": 1500,
+    "wires": []
+  },
+  {
+    "id": "ce507b.cc701f88",
+    "type": "api-call-service",
+    "z": "d73100a9.0d64d",
+    "name": "Set wait till time",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "input_text",
+    "service": "set_value",
+    "entityId": " input_text.goodnight_waittill",
+    "data": "{\"value\":\"\"}",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "",
+    "output_location_type": "none",
+    "mustacheAltTags": false,
+    "x": 340,
+    "y": 300,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "9451899f.67b3e8",
+    "type": "change",
+    "z": "b8a16318.b66a5",
+    "name": "Set Param",
+    "rules": [
+      {
+        "t": "set",
+        "p": "me.user_id",
+        "pt": "global",
+        "to": "dfa60723e3ee4e0191c1def891de2021",
+        "tot": "str"
+      }
+    ],
+    "action": "",
+    "property": "",
+    "from": "",
+    "to": "",
+    "reg": false,
+    "x": 270,
+    "y": 640,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "c0a3b8d5.d6ec88",
+    "type": "trigger-state",
+    "z": "d73100a9.0d64d",
+    "name": "Armed Status Changed - On",
+    "server": "5ee4d578.f7736c",
+    "exposeToHomeAssistant": false,
+    "haConfig": [
+      {
+        "property": "name",
+        "value": ""
+      },
+      {
+        "property": "icon",
+        "value": ""
+      }
+    ],
+    "entityid": "input_boolean.goodnight_armed",
+    "entityidfiltertype": "exact",
+    "debugenabled": false,
+    "constraints": [
+      {
+        "id": "fkpvnb99ttn",
+        "targetType": "this_entity",
+        "targetValue": "",
+        "propertyType": "property",
+        "propertyValue": "new_state.context.user_id",
+        "comparatorType": "is_not",
+        "comparatorValueDatatype": "str",
+        "comparatorValue": "dfa60723e3ee4e0191c1def891de2021"
+      },
+      {
+        "id": "tdd9mk8uaxp",
+        "targetType": "this_entity",
+        "targetValue": "",
+        "propertyType": "current_state",
+        "propertyValue": "new_state.state",
+        "comparatorType": "is",
+        "comparatorValueDatatype": "bool",
+        "comparatorValue": "true"
+      }
+    ],
+    "constraintsmustmatch": "all",
+    "outputs": 2,
+    "customoutputs": [],
+    "outputinitially": false,
+    "state_type": "habool",
+    "x": 1380,
+    "y": 220,
+    "wires": [
+      [
+        "72c3ab65.ad95e4",
+        "9ce3ee59.467b6"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "e8cc9bf1.7eb9e8",
+    "type": "trigger-state",
+    "z": "d73100a9.0d64d",
+    "name": "Armed Status Changed - Off",
+    "server": "5ee4d578.f7736c",
+    "exposeToHomeAssistant": false,
+    "haConfig": [
+      {
+        "property": "name",
+        "value": ""
+      },
+      {
+        "property": "icon",
+        "value": ""
+      }
+    ],
+    "entityid": "input_boolean.goodnight_armed",
+    "entityidfiltertype": "exact",
+    "debugenabled": false,
+    "constraints": [
+      {
+        "id": "fkpvnb99ttn",
+        "targetType": "this_entity",
+        "targetValue": "",
+        "propertyType": "property",
+        "propertyValue": "new_state.context.user_id",
+        "comparatorType": "is_not",
+        "comparatorValueDatatype": "str",
+        "comparatorValue": "dfa60723e3ee4e0191c1def891de2021"
+      },
+      {
+        "id": "w2qrsalti3p",
+        "targetType": "this_entity",
+        "targetValue": "",
+        "propertyType": "current_state",
+        "propertyValue": "new_state.state",
+        "comparatorType": "is",
+        "comparatorValueDatatype": "bool",
+        "comparatorValue": "false"
+      }
+    ],
+    "constraintsmustmatch": "all",
+    "outputs": 2,
+    "customoutputs": [],
+    "outputinitially": false,
+    "state_type": "habool",
+    "x": 1380,
+    "y": 400,
+    "wires": [
+      [
+        "d569524f.092a7"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "9cc7615c.cb47d",
+    "type": "api-call-service",
+    "z": "d73100a9.0d64d",
+    "name": "Armed Status",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "input_boolean",
+    "service": "turn_off",
+    "entityId": "input_boolean.goodnight_armed",
+    "data": "",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "",
+    "output_location_type": "none",
+    "mustacheAltTags": false,
+    "x": 1880,
+    "y": 360,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "9ce3ee59.467b6",
+    "type": "api-call-service",
+    "z": "d73100a9.0d64d",
+    "name": "Reset Been Triggered Status",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "input_boolean",
+    "service": "turn_off",
+    "entityId": "input_boolean.goodnight_beentriggered",
+    "data": "",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "payload",
+    "output_location_type": "msg",
+    "mustacheAltTags": false,
+    "x": 1740,
+    "y": 200,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "3ed3ba30.d71e26",
+    "type": "api-call-service",
+    "z": "d73100a9.0d64d",
+    "name": "Reset Been Triggered Status",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "input_boolean",
+    "service": "turn_off",
+    "entityId": "input_boolean.goodnight_beentriggered",
+    "data": "",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "payload",
+    "output_location_type": "msg",
+    "mustacheAltTags": false,
+    "x": 1320,
+    "y": 1100,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "13089769.bc8c29",
+    "type": "comment",
+    "z": "d73100a9.0d64d",
+    "name": "Inputs",
+    "info": "",
+    "x": 100.01734924316406,
+    "y": 1640.12158203125,
+    "wires": []
+  },
+  {
+    "id": "260f161b.31fb1a",
+    "type": "trigger-state",
+    "z": "d73100a9.0d64d",
+    "name": "Delay 30",
+    "server": "5ee4d578.f7736c",
+    "exposeToHomeAssistant": false,
+    "haConfig": [
+      {
+        "property": "name",
+        "value": ""
+      },
+      {
+        "property": "icon",
+        "value": ""
+      }
+    ],
+    "entityid": "input_boolean.goodnight_delay_30",
+    "entityidfiltertype": "exact",
+    "debugenabled": false,
+    "constraints": [
+      {
+        "id": "fkpvnb99ttn",
+        "targetType": "this_entity",
+        "targetValue": "",
+        "propertyType": "property",
+        "propertyValue": "new_state.context.user_id",
+        "comparatorType": "is_not",
+        "comparatorValueDatatype": "str",
+        "comparatorValue": "dfa60723e3ee4e0191c1def891de2021"
+      },
+      {
+        "id": "tdd9mk8uaxp",
+        "targetType": "this_entity",
+        "targetValue": "",
+        "propertyType": "current_state",
+        "propertyValue": "new_state.state",
+        "comparatorType": "is",
+        "comparatorValueDatatype": "bool",
+        "comparatorValue": "true"
+      }
+    ],
+    "constraintsmustmatch": "all",
+    "outputs": 2,
+    "customoutputs": [],
+    "outputinitially": false,
+    "state_type": "habool",
+    "x": 120,
+    "y": 720,
+    "wires": [
+      [
+        "bebe9295.26d41",
+        "8a9e4a8c.294d28"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "d514a6dd.c6ec88",
+    "type": "trigger-state",
+    "z": "d73100a9.0d64d",
+    "name": "Delay 60",
+    "server": "5ee4d578.f7736c",
+    "exposeToHomeAssistant": false,
+    "haConfig": [
+      {
+        "property": "name",
+        "value": ""
+      },
+      {
+        "property": "icon",
+        "value": ""
+      }
+    ],
+    "entityid": "input_boolean.goodnight_delay_60",
+    "entityidfiltertype": "exact",
+    "debugenabled": false,
+    "constraints": [
+      {
+        "id": "fkpvnb99ttn",
+        "targetType": "this_entity",
+        "targetValue": "",
+        "propertyType": "property",
+        "propertyValue": "new_state.context.user_id",
+        "comparatorType": "is_not",
+        "comparatorValueDatatype": "str",
+        "comparatorValue": "dfa60723e3ee4e0191c1def891de2021"
+      },
+      {
+        "id": "tdd9mk8uaxp",
+        "targetType": "this_entity",
+        "targetValue": "",
+        "propertyType": "current_state",
+        "propertyValue": "new_state.state",
+        "comparatorType": "is",
+        "comparatorValueDatatype": "bool",
+        "comparatorValue": "true"
+      }
+    ],
+    "constraintsmustmatch": "all",
+    "outputs": 2,
+    "customoutputs": [],
+    "outputinitially": false,
+    "state_type": "habool",
+    "x": 120,
+    "y": 760,
+    "wires": [
+      [
+        "bebe9295.26d41",
+        "be9e3159.3ea59"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "6e15fcea.d46e04",
+    "type": "trigger-state",
+    "z": "d73100a9.0d64d",
+    "name": "Delay 180",
+    "server": "5ee4d578.f7736c",
+    "exposeToHomeAssistant": false,
+    "haConfig": [
+      {
+        "property": "name",
+        "value": ""
+      },
+      {
+        "property": "icon",
+        "value": ""
+      }
+    ],
+    "entityid": "input_boolean.goodnight_delay_180",
+    "entityidfiltertype": "exact",
+    "debugenabled": false,
+    "constraints": [
+      {
+        "id": "fkpvnb99ttn",
+        "targetType": "this_entity",
+        "targetValue": "",
+        "propertyType": "property",
+        "propertyValue": "new_state.context.user_id",
+        "comparatorType": "is_not",
+        "comparatorValueDatatype": "str",
+        "comparatorValue": "dfa60723e3ee4e0191c1def891de2021"
+      },
+      {
+        "id": "tdd9mk8uaxp",
+        "targetType": "this_entity",
+        "targetValue": "",
+        "propertyType": "current_state",
+        "propertyValue": "new_state.state",
+        "comparatorType": "is",
+        "comparatorValueDatatype": "bool",
+        "comparatorValue": "true"
+      }
+    ],
+    "constraintsmustmatch": "all",
+    "outputs": 2,
+    "customoutputs": [],
+    "outputinitially": false,
+    "state_type": "habool",
+    "x": 120,
+    "y": 800,
+    "wires": [
+      [
+        "bebe9295.26d41",
+        "69a40cbb.df3674"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "7635119a.f1f75",
+    "type": "trigger-state",
+    "z": "d73100a9.0d64d",
+    "name": "Cancel",
+    "server": "5ee4d578.f7736c",
+    "exposeToHomeAssistant": false,
+    "haConfig": [
+      {
+        "property": "name",
+        "value": ""
+      },
+      {
+        "property": "icon",
+        "value": ""
+      }
+    ],
+    "entityid": "input_boolean.goodnight_cancel",
+    "entityidfiltertype": "exact",
+    "debugenabled": false,
+    "constraints": [
+      {
+        "id": "fkpvnb99ttn",
+        "targetType": "this_entity",
+        "targetValue": "",
+        "propertyType": "property",
+        "propertyValue": "new_state.context.user_id",
+        "comparatorType": "is_not",
+        "comparatorValueDatatype": "str",
+        "comparatorValue": "dfa60723e3ee4e0191c1def891de2021"
+      },
+      {
+        "id": "tdd9mk8uaxp",
+        "targetType": "this_entity",
+        "targetValue": "",
+        "propertyType": "current_state",
+        "propertyValue": "new_state.state",
+        "comparatorType": "is",
+        "comparatorValueDatatype": "bool",
+        "comparatorValue": "true"
+      }
+    ],
+    "constraintsmustmatch": "all",
+    "outputs": 2,
+    "customoutputs": [],
+    "outputinitially": false,
+    "state_type": "habool",
+    "x": 110,
+    "y": 640,
+    "wires": [
+      [
+        "bebe9295.26d41"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "bebe9295.26d41",
+    "type": "function",
+    "z": "d73100a9.0d64d",
+    "name": ">",
+    "func": "\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 290,
+    "y": 640,
+    "wires": [
+      [
+        "99df83ab.46e3b"
+      ]
+    ]
+  },
+  {
+    "id": "b6fd0d53.bb28e",
+    "type": "api-call-service",
+    "z": "d73100a9.0d64d",
+    "name": "Reset Been Triggered Status",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "input_boolean",
+    "service": "turn_off",
+    "entityId": "input_boolean.goodnight_beentriggered",
+    "data": "",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "payload",
+    "output_location_type": "msg",
+    "mustacheAltTags": false,
+    "x": 180,
+    "y": 1700,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "af695324.942b",
+    "type": "api-call-service",
+    "z": "d73100a9.0d64d",
+    "name": "Armed Status",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "input_boolean",
+    "service": "turn_on",
+    "entityId": "input_boolean.goodnight_armed",
+    "data": "",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "",
+    "output_location_type": "none",
+    "mustacheAltTags": false,
+    "x": 607.017333984375,
+    "y": 1545.010498046875,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "e57623.5458c9e",
+    "type": "api-call-service",
+    "z": "d73100a9.0d64d",
+    "name": "Reset Inputs",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "input_boolean",
+    "service": "turn_off",
+    "entityId": "input_boolean.goodnight_beentriggered, input_boolean.goodnight, input_boolean.goodnight_delay_60, input_boolean.goodnight_delay_180, input_boolean.goodnight_delay_30, input_boolean.goodnight_armed, input_boolean.goodnight_cancel",
+    "data": "",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "",
+    "output_location_type": "none",
+    "mustacheAltTags": false,
+    "x": 1570,
+    "y": 460,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "8efbd9c3.525698",
+    "type": "delay",
+    "z": "d73100a9.0d64d",
+    "name": "",
+    "pauseType": "delay",
+    "timeout": "3",
+    "timeoutUnits": "seconds",
+    "rate": "1",
+    "nbRateUnits": "1",
+    "rateUnits": "second",
+    "randomFirst": "1",
+    "randomLast": "5",
+    "randomUnits": "seconds",
+    "drop": false,
+    "x": 1400,
+    "y": 460,
+    "wires": [
+      [
+        "e57623.5458c9e"
+      ]
+    ]
+  },
+  {
+    "id": "fc10e2c0.0607",
+    "type": "change",
+    "z": "d73100a9.0d64d",
+    "name": "Remove Reset",
+    "rules": [
+      {
+        "t": "delete",
+        "p": "reset",
+        "pt": "msg"
+      }
+    ],
+    "action": "",
+    "property": "",
+    "from": "",
+    "to": "",
+    "reg": false,
+    "x": 1220,
+    "y": 460,
+    "wires": [
+      [
+        "8efbd9c3.525698"
+      ]
     ]
   }
 ]

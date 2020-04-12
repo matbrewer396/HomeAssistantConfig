@@ -13,9 +13,7 @@
   bathtime:
     name: Bath Time
     icon: mdi:test-tube
-  goodnight:
-    name: Good Night
-    icon: mdi:weather-night
+
   goodbye:
     name: Good Bye
     icon: mdi:exit-run
@@ -31,9 +29,7 @@
     initial: off
 
 
-  goodnight_beentriggered:
-    name: Good Night Has Been Triggered
-    initial: off
+
 
   danni_button:
     name: Danni Button Pressed
@@ -43,3 +39,54 @@
 
   restart_bluetoothtracker:
     name: Restart Bluetooth Tracker
+
+  matt_showertime:
+    name: Matt Shower Time Sence
+
+
+## Good Nights
+  goodnight:
+    name: Good Night
+    icon: mdi:weather-night
+  goodnight_delay_30:
+    name: Delay Auto Night - 30 Mins
+    initial: off
+  goodnight_delay_60:
+    name: Delay Auto Night - 1 Hour
+    initial: off
+  goodnight_delay_180:
+    name: Delay Auto Night - 3 Hour
+    initial: off
+  goodnight_cancel:
+    name: Auto Night - Cancel
+    initial: off
+  goodnight_beentriggered:
+    name: Good Night Has Been Triggered
+    initial: off
+  goodnight_armed:
+    name: Is good night armed
+    initial: off
+
+
+## Automation Breaker
+# use to disable / enable automation
+
+  automation_underbedlight_temp:
+    name: Temporarily disable under bed light
+    initial: on
+
+  automation_bedstriponmainlighton:
+    name: Turn strip light to max on bedroom main light on
+    initial: on
+
+  automation_lampondownstairs:
+    name: Turn lamp on, on motion
+    initial: on
+
+  automation_nightalarm:
+    name: Night Time Alarm
+    initial: on
+
+  automation_officelightonmotion:
+    name: Office Light Turn on, On Motion
+    initial: on

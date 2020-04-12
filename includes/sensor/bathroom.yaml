@@ -18,7 +18,3 @@
     availability_topic: "availability/bathroomMCU"
     payload_available: "online"
     payload_not_available: "offline"
-  - platform: mqtt
-    name: "Debug - Bath Room Light"
-    state_topic: "debug/bathroomlight"
-    expire_after : 180

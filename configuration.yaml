@@ -1,5 +1,5 @@
 homeassistant:
-  packages: !include_dir_named packages
+  packages: !include_dir_named packages/
   # Name of the location where Home Assistant is running
   name: Home
   # Location required to calculate the time the sun rises and sets
@@ -88,11 +88,11 @@ mqtt:
   discovery: true
   discovery_prefix: homeassistant
 
-# tuya:
-#   username: !secret tuya_username
-#   password: !secret tuya_password
-#   country_code: 44
-#   platform: smart_life
+tuya:
+  username: !secret tuya_username
+  password: !secret tuya_password
+  country_code: 44
+  platform: smart_life
 
 alexa_media:
   accounts:

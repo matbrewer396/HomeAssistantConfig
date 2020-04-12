@@ -42,3 +42,4 @@ esphome/
 tmp*
 
 
+/lovelace/views/old-view.yaml
