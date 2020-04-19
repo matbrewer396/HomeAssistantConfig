@@ -116,6 +116,8 @@ Pretty much the same
 * Voice control - "Alexa Lights" / "Alex Turn on living room lights"
 * Voice control - "Alexa TV On" - plug fire tv
 * Voice control - "Alexa Turn On Living Room Plug" - we have extension lead that runs under sofa for thing phone / laptops charger etc
+* Fire Tv go to idle - tv turn off
+* Fire Tv changes from idle - turn on tv 
 
 ### Kitchen
 * Fridge/ Freezer - when the temperature drops below target trigger a notification (door might be open). - Testing!  assuming no false postive going hookup to alexa aka wake me up before food go bad!

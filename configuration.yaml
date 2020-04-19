@@ -1,5 +1,5 @@
 homeassistant:
-  packages: !include_dir_named packages/
+  # packages: !include_dir_named packages/
   # Name of the location where Home Assistant is running
   name: Home
   # Location required to calculate the time the sun rises and sets
@@ -77,7 +77,7 @@ notify:
     target: '409ff712-e1a1-31af-a7a9-b27f61143473'
   - platform: nfandroidtv
     name: Living Room Tv
-    host: 192.168.1.30
+    host: 192.168.1.216
   # - platform: alexa_media
   #   name: alexa_media
 
@@ -94,11 +94,11 @@ tuya:
   country_code: 44
   platform: smart_life
 
-alexa_media:
-  accounts:
-   - email: !secret alexa_username
-     password: !secret alexa_password
-     url: "amazon.co.uk"
+# alexa_media:
+#   accounts:
+#    - email: !secret alexa_username
+#      password: !secret alexa_password
+#      url: "amazon.co.uk"
 
 # emulated_hue:
 #   expose_by_default: true
@@ -203,9 +203,7 @@ person:
 media_player:
   - platform: androidtv
     host: 192.168.1.216
-    name: "Fire Tv"
-    adb_server_ip: 127.0.0.1
-    adb_server_port: 5037
+    name: "Living Room Fire Tv"
 
 
 # image_processing:

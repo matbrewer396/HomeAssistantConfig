@@ -8560,180 +8560,6 @@
     ]
   },
   {
-    "id": "f1f04b2f.da4be8",
-    "type": "comment",
-    "z": "48ba348c.61270c",
-    "name": "Living Room Cam Availability",
-    "info": "",
-    "x": 180,
-    "y": 1380,
-    "wires": []
-  },
-  {
-    "id": "a4255651.6b2fa8",
-    "type": "trigger",
-    "z": "48ba348c.61270c",
-    "op1": "",
-    "op2": "offline",
-    "op1type": "nul",
-    "op2type": "str",
-    "duration": "4",
-    "extend": true,
-    "units": "min",
-    "reset": "",
-    "bytopic": "all",
-    "name": "",
-    "x": 710,
-    "y": 1400,
-    "wires": [
-      [
-        "7777aa85.124f64",
-        "e9c109a5.b4ce18"
-      ]
-    ]
-  },
-  {
-    "id": "af146bf.3df0b98",
-    "type": "change",
-    "z": "48ba348c.61270c",
-    "name": "online",
-    "rules": [
-      {
-        "t": "set",
-        "p": "payload",
-        "pt": "msg",
-        "to": "online",
-        "tot": "str"
-      }
-    ],
-    "action": "",
-    "property": "",
-    "from": "",
-    "to": "",
-    "reg": false,
-    "x": 690,
-    "y": 1440,
-    "wires": [
-      [
-        "141d4bb.57eb4b4"
-      ]
-    ]
-  },
-  {
-    "id": "3fc21522.ece32a",
-    "type": "api-call-service",
-    "z": "48ba348c.61270c",
-    "name": "Lett Matt Know",
-    "server": "eef5a84.da24f58",
-    "service_domain": "notify",
-    "service": "mattiphone",
-    "data": "{\"message\":\"Living Room Cam - Offline\"}",
-    "mergecontext": "",
-    "output_location": "payload",
-    "output_location_type": "msg",
-    "x": 1240,
-    "y": 1420,
-    "wires": [
-      []
-    ]
-  },
-  {
-    "id": "7777aa85.124f64",
-    "type": "change",
-    "z": "48ba348c.61270c",
-    "name": "Fault Details",
-    "rules": [
-      {
-        "t": "set",
-        "p": "fault.name",
-        "pt": "msg",
-        "to": "Can not ping Living Room Cam",
-        "tot": "str"
-      },
-      {
-        "t": "set",
-        "p": "fault.item",
-        "pt": "msg",
-        "to": "Living Room Cam",
-        "tot": "str"
-      },
-      {
-        "t": "set",
-        "p": "fault.actiontofix",
-        "pt": "msg",
-        "to": "Check Living Room Cam network connection / power supply ",
-        "tot": "str"
-      }
-    ],
-    "action": "",
-    "property": "",
-    "from": "",
-    "to": "",
-    "reg": false,
-    "x": 1010,
-    "y": 1380,
-    "wires": [
-      [
-        "b32e27f7.8449f8"
-      ]
-    ]
-  },
-  {
-    "id": "b32e27f7.8449f8",
-    "type": "link out",
-    "z": "48ba348c.61270c",
-    "name": "Fault Detected",
-    "links": [
-      "c6717092.75d4b"
-    ],
-    "x": 1215,
-    "y": 1380,
-    "wires": []
-  },
-  {
-    "id": "bea7e8f6.3d6718",
-    "type": "ping",
-    "z": "48ba348c.61270c",
-    "name": "Check Living Room Cam On Every 2 Minutes",
-    "host": "192.168.1.203",
-    "timer": "5",
-    "x": 230,
-    "y": 1440,
-    "wires": [
-      [
-        "8ea47506.ccd558"
-      ]
-    ]
-  },
-  {
-    "id": "8ea47506.ccd558",
-    "type": "switch",
-    "z": "48ba348c.61270c",
-    "name": "Is offline?",
-    "property": "payload",
-    "propertyType": "msg",
-    "rules": [
-      {
-        "t": "false"
-      },
-      {
-        "t": "else"
-      }
-    ],
-    "checkall": "true",
-    "repair": false,
-    "outputs": 2,
-    "x": 500,
-    "y": 1440,
-    "wires": [
-      [],
-      [
-        "af146bf.3df0b98",
-        "a4255651.6b2fa8"
-      ]
-    ]
-  },
-  {
     "id": "6d2e1465.714b2c",
     "type": "inject",
     "z": "b8a16318.b66a5",
@@ -13722,27 +13548,6 @@
     ]
   },
   {
-    "id": "e9c109a5.b4ce18",
-    "type": "subflow:85970b46.61e358",
-    "z": "48ba348c.61270c",
-    "name": "",
-    "env": [
-      {
-        "name": "NoteType",
-        "type": "str",
-        "value": "FAULT_DETECTION"
-      }
-    ],
-    "x": 1020,
-    "y": 1420,
-    "wires": [
-      [
-        "3fc21522.ece32a"
-      ],
-      []
-    ]
-  },
-  {
     "id": "d8742850.a3fb68",
     "type": "subflow:85970b46.61e358",
     "z": "48ba348c.61270c",
@@ -13989,40 +13794,6 @@
     "broker": "1b6bc4ba.56ff4b",
     "x": 1030,
     "y": 1320,
-    "wires": []
-  },
-  {
-    "id": "299c3b08.68c174",
-    "type": "inject",
-    "z": "48ba348c.61270c",
-    "name": "10 Second After Start up",
-    "topic": "",
-    "payload": "",
-    "payloadType": "date",
-    "repeat": "",
-    "crontab": "",
-    "once": true,
-    "onceDelay": "10",
-    "x": 170,
-    "y": 1480,
-    "wires": [
-      [
-        "8ea47506.ccd558",
-        "af146bf.3df0b98"
-      ]
-    ]
-  },
-  {
-    "id": "141d4bb.57eb4b4",
-    "type": "mqtt out",
-    "z": "48ba348c.61270c",
-    "name": "availability/livingroomcam",
-    "topic": "availability/livingroomcam",
-    "qos": "2",
-    "retain": "true",
-    "broker": "1b6bc4ba.56ff4b",
-    "x": 1050,
-    "y": 1460,
     "wires": []
   },
   {
@@ -16624,12 +16395,17 @@
     "z": "48ba348c.61270c",
     "name": "Lett Matt Know",
     "server": "eef5a84.da24f58",
+    "version": "1",
+    "debugenabled": false,
     "service_domain": "notify",
     "service": "mattiphone",
+    "entityId": "",
     "data": "{\"message\":\"Alexa Inbound - Offline\"}",
+    "dataType": "json",
     "mergecontext": "",
     "output_location": "payload",
     "output_location_type": "msg",
+    "mustacheAltTags": false,
     "x": 1040,
     "y": 2180,
     "wires": [
@@ -16697,8 +16473,8 @@
     "env": [
       {
         "name": "NoteType",
-        "type": "str",
-        "value": "FAULT_DETECTION"
+        "value": "FAULT_DETECTION",
+        "type": "str"
       }
     ],
     "x": 740,
@@ -19984,6 +19760,7 @@
     "name": "On",
     "server": "5ee4d578.f7736c",
     "version": 1,
+    "debugenabled": false,
     "service_domain": "input_select",
     "service": "select_option",
     "entityId": "input_select.tv_state",
@@ -20006,6 +19783,7 @@
     "name": "Off",
     "server": "5ee4d578.f7736c",
     "version": 1,
+    "debugenabled": false,
     "service_domain": "input_select",
     "service": "select_option",
     "entityId": "input_select.tv_state",
@@ -33138,6 +32916,304 @@
       [
         "94c4fb0a.6129d8",
         "b399da43.7ff288"
+      ]
+    ]
+  },
+  {
+    "id": "cd00845c.ea1588",
+    "type": "trigger-state",
+    "z": "8a69107f.14257",
+    "name": "Vib Detected",
+    "server": "5ee4d578.f7736c",
+    "exposeToHomeAssistant": false,
+    "haConfig": [
+      {
+        "property": "name",
+        "value": ""
+      },
+      {
+        "property": "icon",
+        "value": ""
+      }
+    ],
+    "entityid": "binary_sensor.danni_lockbox_vibration",
+    "entityidfiltertype": "exact",
+    "debugenabled": false,
+    "constraints": [],
+    "constraintsmustmatch": "all",
+    "outputs": 2,
+    "customoutputs": [],
+    "outputinitially": false,
+    "state_type": "habool",
+    "x": 150,
+    "y": 1100,
+    "wires": [
+      [
+        "da1a813e.2484c"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "f3b9a0bd.b62b7",
+    "type": "comment",
+    "z": "8a69107f.14257",
+    "name": "Vib Detected",
+    "info": "",
+    "x": 150,
+    "y": 1060,
+    "wires": []
+  },
+  {
+    "id": "d2ecf097.f4769",
+    "type": "subflow:a83e69e1.4b2ab8",
+    "z": "8a69107f.14257",
+    "name": "Sweet box open!!",
+    "env": [
+      {
+        "name": "message",
+        "value": "Sweet box open!!",
+        "type": "str"
+      },
+      {
+        "name": "who",
+        "value": "Both",
+        "type": "str"
+      }
+    ],
+    "x": 670,
+    "y": 1100,
+    "wires": []
+  },
+  {
+    "id": "da1a813e.2484c",
+    "type": "delay",
+    "z": "8a69107f.14257",
+    "name": "",
+    "pauseType": "rate",
+    "timeout": "5",
+    "timeoutUnits": "seconds",
+    "rate": "1",
+    "nbRateUnits": "2",
+    "rateUnits": "minute",
+    "randomFirst": "1",
+    "randomLast": "5",
+    "randomUnits": "seconds",
+    "drop": true,
+    "x": 400,
+    "y": 1100,
+    "wires": [
+      [
+        "d2ecf097.f4769"
+      ]
+    ]
+  },
+  {
+    "id": "37d369f1.b8e6c6",
+    "type": "trigger",
+    "z": "9a341993.fbc528",
+    "op1": "",
+    "op2": "",
+    "op1type": "nul",
+    "op2type": "pay",
+    "duration": "2",
+    "extend": false,
+    "units": "min",
+    "reset": "",
+    "bytopic": "all",
+    "name": "",
+    "x": 310,
+    "y": 2020,
+    "wires": [
+      [
+        "321647b6.3f2028"
+      ]
+    ]
+  },
+  {
+    "id": "878320aa.0b185",
+    "type": "trigger-state",
+    "z": "9a341993.fbc528",
+    "name": "On Idle",
+    "server": "5ee4d578.f7736c",
+    "exposeToHomeAssistant": false,
+    "haConfig": [
+      {
+        "property": "name",
+        "value": ""
+      },
+      {
+        "property": "icon",
+        "value": ""
+      }
+    ],
+    "entityid": "media_player.living_room_fire_tv",
+    "entityidfiltertype": "exact",
+    "debugenabled": false,
+    "constraints": [
+      {
+        "id": "22yt78kdgb3",
+        "targetType": "this_entity",
+        "targetValue": "",
+        "propertyType": "current_state",
+        "propertyValue": "new_state.state",
+        "comparatorType": "is",
+        "comparatorValueDatatype": "str",
+        "comparatorValue": "idle"
+      }
+    ],
+    "constraintsmustmatch": "all",
+    "outputs": 2,
+    "customoutputs": [],
+    "outputinitially": false,
+    "state_type": "str",
+    "x": 140,
+    "y": 2020,
+    "wires": [
+      [
+        "37d369f1.b8e6c6"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "520dab52.888584",
+    "type": "comment",
+    "z": "9a341993.fbc528",
+    "name": "Turn off tv when idle",
+    "info": "",
+    "x": 170,
+    "y": 1940,
+    "wires": []
+  },
+  {
+    "id": "321647b6.3f2028",
+    "type": "subflow:50a84f0.9f6dbb",
+    "z": "9a341993.fbc528",
+    "name": "",
+    "env": [],
+    "x": 510,
+    "y": 2020,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "3c440883.49d378",
+    "type": "trigger-state",
+    "z": "9a341993.fbc528",
+    "name": "From Idle",
+    "server": "5ee4d578.f7736c",
+    "exposeToHomeAssistant": false,
+    "haConfig": [
+      {
+        "property": "name",
+        "value": ""
+      },
+      {
+        "property": "icon",
+        "value": ""
+      }
+    ],
+    "entityid": "media_player.living_room_fire_tv",
+    "entityidfiltertype": "exact",
+    "debugenabled": false,
+    "constraints": [
+      {
+        "id": "vs7r4t1nqy",
+        "targetType": "this_entity",
+        "targetValue": "",
+        "propertyType": "previous_state",
+        "propertyValue": "old_state.state",
+        "comparatorType": "is",
+        "comparatorValueDatatype": "str",
+        "comparatorValue": "idle"
+      }
+    ],
+    "constraintsmustmatch": "all",
+    "outputs": 2,
+    "customoutputs": [],
+    "outputinitially": false,
+    "state_type": "str",
+    "x": 140,
+    "y": 2120,
+    "wires": [
+      [
+        "56f53c09.858104"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "d77bd763.d91168",
+    "type": "api-call-service",
+    "z": "9a341993.fbc528",
+    "name": "TV On/Off",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "service_domain": "switch",
+    "service": "toggle",
+    "entityId": "switch.tv",
+    "data": "",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "payload",
+    "output_location_type": "msg",
+    "mustacheAltTags": false,
+    "x": 640,
+    "y": 2120,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "66be0e9d.86475",
+    "type": "api-current-state",
+    "z": "9a341993.fbc528",
+    "name": "Is Off",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "outputs": 2,
+    "halt_if": "False",
+    "halt_if_type": "str",
+    "halt_if_compare": "is",
+    "override_topic": false,
+    "entity_id": "input_select.tv_state",
+    "state_type": "str",
+    "state_location": "payload",
+    "override_payload": "msg",
+    "entity_location": "data",
+    "override_data": "msg",
+    "blockInputOverrides": false,
+    "x": 470,
+    "y": 2120,
+    "wires": [
+      [
+        "d77bd763.d91168"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "56f53c09.858104",
+    "type": "delay",
+    "z": "9a341993.fbc528",
+    "name": "",
+    "pauseType": "rate",
+    "timeout": "5",
+    "timeoutUnits": "seconds",
+    "rate": "1",
+    "nbRateUnits": "1",
+    "rateUnits": "minute",
+    "randomFirst": "1",
+    "randomLast": "5",
+    "randomUnits": "seconds",
+    "drop": true,
+    "x": 310,
+    "y": 2120,
+    "wires": [
+      [
+        "66be0e9d.86475"
       ]
     ]
   }
