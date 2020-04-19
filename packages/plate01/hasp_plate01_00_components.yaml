@@ -121,7 +121,7 @@ input_number:
 group:
   plate01:
     name: plate01
-    view: yes
+    # view: yes
     entities:
       - binary_sensor.plate01_connected
       - sensor.plate01_sensor
@@ -131,7 +131,7 @@ group:
       - group.plate01_automations
   plate01_pageselect:
     name: plate01 Page Selection
-    view: no
+    # view: no
     entities:
       - input_number.hasp_plate01_activepage
       - input_number.hasp_plate01_pagebutton1page
@@ -142,7 +142,7 @@ group:
       - input_text.hasp_plate01_pagebutton3label
   plate01_automations:
     name: plate01 automations
-    view: no
+    # view: no
     entities:
       - automation.hasp_plate01_00_firsttimesetup
 

@@ -38,3 +38,10 @@
     availability_topic: "wled/undertv/status"
     payload_available: "online"
     payload_not_available: "offline"
+  # - platform: template
+  #   sensors:
+  #     is_dark_living_room:
+  #       friendly_name: "Living Room - Is Dark"
+  #       value_template: >
+  #         {{ (states("sensor.living_room_light_level")|float <= states("input_number.is_dark_living_room")|float) }}
+   

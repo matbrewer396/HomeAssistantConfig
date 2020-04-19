@@ -32,13 +32,13 @@ light:
 ##############################################################################
 # Create a group for the lights
 group:
-  light_toggle_group:
-    name: Light Toggle Group
-    view: no
-    entities:
-      - light.light_1
-      - light.light_2
-      - light.light_3
+  # light_toggle_group:
+  #   name: Light Toggle Group
+  #   view: no
+  #   entities:
+  #     - light.light_1
+  #     - light.light_2
+  #     - light.light_3
 
 scene:
 - name: Lights On

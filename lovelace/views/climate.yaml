@@ -313,6 +313,27 @@ cards:
               - graph: bar
               - extrema: true
           - !include ../jimz011/includes/blank-card.yaml
+      - type: horizontal-stack
+        cards:
+          - !include ../jimz011/includes/blank-card.yaml 
+          - type: custom:decluttering-card
+            template: mini-graph 
+            variables:
+              - entities:
+                  - sensor.living_room_light_level
+              - name: Living Room
+              - line_color: '#00d8ff'
+              - font_size: 53
+              - decimals: 1
+              - graph: bar
+              - extrema: true
+          - type: custom:button-card
+            color_type: blank-card
+            aspect_ratio: 1/1
+          - type: custom:button-card
+            color_type: blank-card
+            aspect_ratio: 1/1
+          - !include ../jimz011/includes/blank-card.yaml
       - type: custom:decluttering-card
         template: header
         variables:

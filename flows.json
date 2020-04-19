@@ -185,7 +185,7 @@
     "id": "5625076e.ee59e8",
     "type": "tab",
     "label": "Test - Notication stuff",
-    "disabled": true,
+    "disabled": false,
     "info": ""
   },
   {
@@ -2286,8 +2286,8 @@
     "sunElevationThreshold": 6,
     "sunShowElevationInStatus": false,
     "outputfreq": "output.statechange.startup",
-    "x": 130,
-    "y": 360,
+    "x": 120,
+    "y": 380,
     "wires": [
       [
         "6f09f51.c3f470c"
@@ -2304,7 +2304,7 @@
     "start": "",
     "inout": "out",
     "property": "payload",
-    "x": 470,
+    "x": 450,
     "y": 360,
     "wires": [
       [
@@ -2396,8 +2396,7 @@
     "y": 610,
     "wires": [
       [
-        "5d68af75.25cde",
-        "57390bd5.d36854"
+        "5d68af75.25cde"
       ]
     ]
   },
@@ -2455,20 +2454,6 @@
     ],
     "x": 1162,
     "y": 630,
-    "wires": []
-  },
-  {
-    "id": "57390bd5.d36854",
-    "type": "debug",
-    "z": "d73100a9.0d64d",
-    "name": "",
-    "active": true,
-    "tosidebar": true,
-    "console": false,
-    "tostatus": false,
-    "complete": "false",
-    "x": 1182,
-    "y": 550,
     "wires": []
   },
   {
@@ -2548,7 +2533,7 @@
     "server": "eef5a84.da24f58",
     "version": 1,
     "outputs": 2,
-    "halt_if": "false",
+    "halt_if": "true",
     "halt_if_type": "bool",
     "halt_if_compare": "is",
     "override_topic": true,
@@ -2558,8 +2543,8 @@
     "override_payload": "msg",
     "entity_location": "data",
     "override_data": "msg",
-    "blockInputOverrides": false,
-    "x": 800,
+    "blockInputOverrides": true,
+    "x": 820,
     "y": 360,
     "wires": [
       [],
@@ -10489,13 +10474,13 @@
     "checkCurrentState": true,
     "blockInputOverrides": true,
     "x": 1870,
-    "y": 320,
+    "y": 300,
     "wires": [
       [
-        "eb0ba936.3f4e18"
+        "75529894.e77db8"
       ],
       [
-        "7356acc5.e71944"
+        "27d2e607.3670ba"
       ]
     ]
   },
@@ -10819,9 +10804,20 @@
     "z": "a0cdc0f9.a362b",
     "name": "Bathroom Door Closes",
     "server": "5ee4d578.f7736c",
+    "exposeToHomeAssistant": false,
+    "haConfig": [
+      {
+        "property": "name",
+        "value": ""
+      },
+      {
+        "property": "icon",
+        "value": ""
+      }
+    ],
     "entityid": "binary_sensor.bathroom_door",
     "entityidfiltertype": "exact",
-    "debugenabled": true,
+    "debugenabled": false,
     "constraints": [
       {
         "id": "d5vltnbuxze",
@@ -10900,8 +10896,8 @@
     "randomLast": "5",
     "randomUnits": "seconds",
     "drop": false,
-    "x": 320,
-    "y": 360,
+    "x": 300,
+    "y": 380,
     "wires": [
       [
         "76161c80.f91cb4"
@@ -11612,8 +11608,7 @@
     "wires": [
       [
         "31e78bac.bf7a44",
-        "f095ae40.45f81",
-        "e1584c1c.7e807"
+        "f095ae40.45f81"
       ]
     ]
   },
@@ -11632,8 +11627,7 @@
         "73c4653f.fa065c",
         "b72e15a1.166368",
         "60ccf4c9.3b230c",
-        "19968e17.daaa62",
-        "328fc27d.6834ae"
+        "19968e17.daaa62"
       ]
     ]
   },
@@ -12219,25 +12213,9 @@
     "y": 1060,
     "wires": [
       [
-        "65fba381.feb66c",
-        "cac0fa9c.057558"
+        "65fba381.feb66c"
       ]
     ]
-  },
-  {
-    "id": "cac0fa9c.057558",
-    "type": "debug",
-    "z": "21d6efde.d0943",
-    "name": "hallway ",
-    "active": true,
-    "tosidebar": true,
-    "console": false,
-    "tostatus": false,
-    "complete": "payload",
-    "targetType": "msg",
-    "x": 390,
-    "y": 1020,
-    "wires": []
   },
   {
     "id": "c3e890f4.9c742",
@@ -12465,7 +12443,7 @@
     "checkall": "true",
     "repair": false,
     "outputs": 2,
-    "x": 1340,
+    "x": 1160,
     "y": 300,
     "wires": [
       [],
@@ -12489,8 +12467,8 @@
     "checkall": "true",
     "repair": false,
     "outputs": 1,
-    "x": 2340,
-    "y": 340,
+    "x": 2220,
+    "y": 300,
     "wires": [
       [
         "6e45a7ed.2c8728",
@@ -13458,11 +13436,10 @@
     "crontab": "",
     "once": false,
     "onceDelay": 0.1,
-    "x": 600,
-    "y": 180,
+    "x": 580,
+    "y": 140,
     "wires": [
       [
-        "6ea9b8b4.f2d438",
         "dbfd4318.98ec5"
       ]
     ]
@@ -18262,6 +18239,17 @@
     "name": "Power Change",
     "server": "5ee4d578.f7736c",
     "version": 1,
+    "exposeToHomeAssistant": false,
+    "haConfig": [
+      {
+        "property": "name",
+        "value": ""
+      },
+      {
+        "property": "icon",
+        "value": ""
+      }
+    ],
     "entityidfilter": "sensor.plug_02_energy_power",
     "entityidfiltertype": "exact",
     "outputinitially": false,
@@ -18613,8 +18601,7 @@
     "y": 1620,
     "wires": [
       [
-        "9d2fae06.e4429",
-        "2fe61c64.f41694"
+        "9d2fae06.e4429"
       ]
     ]
   },
@@ -18705,9 +18692,7 @@
     "x": 320,
     "y": 1560,
     "wires": [
-      [
-        "214086c1.e908fa"
-      ]
+      []
     ]
   },
   {
@@ -18729,20 +18714,6 @@
         "b0d7b9ab.a54a28"
       ]
     ]
-  },
-  {
-    "id": "214086c1.e908fa",
-    "type": "debug",
-    "z": "21d6efde.d0943",
-    "name": "",
-    "active": true,
-    "tosidebar": true,
-    "console": false,
-    "tostatus": false,
-    "complete": "false",
-    "x": 530,
-    "y": 1560,
-    "wires": []
   },
   {
     "id": "9d2fae06.e4429",
@@ -18851,20 +18822,6 @@
     "info": "",
     "x": 140,
     "y": 1700,
-    "wires": []
-  },
-  {
-    "id": "2fe61c64.f41694",
-    "type": "debug",
-    "z": "21d6efde.d0943",
-    "name": "",
-    "active": true,
-    "tosidebar": true,
-    "console": false,
-    "tostatus": false,
-    "complete": "false",
-    "x": 750,
-    "y": 1620,
     "wires": []
   },
   {
@@ -19248,8 +19205,7 @@
       [
         "d94b6303.4c9b4",
         "40a46c6f.c7ba64",
-        "19968e17.daaa62",
-        "6f400742.831278"
+        "19968e17.daaa62"
       ]
     ]
   },
@@ -19266,7 +19222,6 @@
     "wires": [
       [
         "4775ee16.55733",
-        "a38cf1cd.6e235",
         "b785bc45.9ba0a"
       ]
     ]
@@ -19515,8 +19470,8 @@
     "z": "d73100a9.0d64d",
     "name": "Startup",
     "topic": "",
-    "payload": "",
-    "payloadType": "date",
+    "payload": "Start",
+    "payloadType": "str",
     "repeat": "",
     "crontab": "",
     "once": true,
@@ -19550,7 +19505,7 @@
     "from": "",
     "to": "",
     "reg": false,
-    "x": 350,
+    "x": 490,
     "y": 220,
     "wires": [
       []
@@ -22952,8 +22907,7 @@
     "y": 380,
     "wires": [
       [
-        "17ce9344.2f1a6d",
-        "9060d874.dcb2c8"
+        "17ce9344.2f1a6d"
       ],
       []
     ]
@@ -23844,81 +23798,6 @@
         "b7f644c.01308b8"
       ]
     ]
-  },
-  {
-    "id": "e1584c1c.7e807",
-    "type": "debug",
-    "z": "21d6efde.d0943",
-    "name": "Someone Out Of Bed",
-    "active": true,
-    "tosidebar": true,
-    "console": false,
-    "tostatus": false,
-    "complete": "true",
-    "targetType": "full",
-    "x": 740,
-    "y": 260,
-    "wires": []
-  },
-  {
-    "id": "328fc27d.6834ae",
-    "type": "debug",
-    "z": "21d6efde.d0943",
-    "name": "Both In Bed",
-    "active": true,
-    "tosidebar": true,
-    "console": false,
-    "tostatus": false,
-    "complete": "true",
-    "targetType": "full",
-    "x": 687,
-    "y": 346,
-    "wires": []
-  },
-  {
-    "id": "6f400742.831278",
-    "type": "debug",
-    "z": "21d6efde.d0943",
-    "name": "Someone got into to bed and bed was empty",
-    "active": true,
-    "tosidebar": true,
-    "console": false,
-    "tostatus": false,
-    "complete": "true",
-    "targetType": "full",
-    "x": 689,
-    "y": 662,
-    "wires": []
-  },
-  {
-    "id": "a38cf1cd.6e235",
-    "type": "debug",
-    "z": "21d6efde.d0943",
-    "name": "Emtpy Bed",
-    "active": true,
-    "tosidebar": true,
-    "console": false,
-    "tostatus": false,
-    "complete": "true",
-    "targetType": "full",
-    "x": 950,
-    "y": 800,
-    "wires": []
-  },
-  {
-    "id": "9060d874.dcb2c8",
-    "type": "debug",
-    "z": "21d6efde.d0943",
-    "name": "Breaker",
-    "active": true,
-    "tosidebar": true,
-    "console": false,
-    "tostatus": false,
-    "complete": "true",
-    "targetType": "full",
-    "x": 420,
-    "y": 220,
-    "wires": []
   },
   {
     "id": "bb814067.827f8",
@@ -32359,7 +32238,7 @@
     "output_location": "",
     "output_location_type": "none",
     "mustacheAltTags": false,
-    "x": 330,
+    "x": 470,
     "y": 260,
     "wires": [
       []
@@ -32438,7 +32317,7 @@
     "wires": [
       [
         "6d53b44.800114c",
-        "af695324.942b"
+        "633f2350.96e4dc"
       ]
     ]
   },
@@ -32492,7 +32371,7 @@
     "output_location": "",
     "output_location_type": "none",
     "mustacheAltTags": false,
-    "x": 340,
+    "x": 480,
     "y": 300,
     "wires": [
       []
@@ -32988,7 +32867,7 @@
     "name": "Armed Status",
     "server": "5ee4d578.f7736c",
     "version": 1,
-    "debugenabled": false,
+    "debugenabled": true,
     "service_domain": "input_boolean",
     "service": "turn_on",
     "entityId": "input_boolean.goodnight_armed",
@@ -32998,8 +32877,8 @@
     "output_location": "",
     "output_location_type": "none",
     "mustacheAltTags": false,
-    "x": 607.017333984375,
-    "y": 1545.010498046875,
+    "x": 800,
+    "y": 1560,
     "wires": [
       []
     ]
@@ -33072,6 +32951,193 @@
     "wires": [
       [
         "8efbd9c3.525698"
+      ]
+    ]
+  },
+  {
+    "id": "633f2350.96e4dc",
+    "type": "change",
+    "z": "d73100a9.0d64d",
+    "name": "",
+    "rules": [
+      {
+        "t": "delete",
+        "p": "payload",
+        "pt": "msg"
+      }
+    ],
+    "action": "",
+    "property": "",
+    "from": "",
+    "to": "",
+    "reg": false,
+    "x": 590,
+    "y": 1560,
+    "wires": [
+      [
+        "af695324.942b"
+      ]
+    ]
+  },
+  {
+    "id": "fcf075af.6884d8",
+    "type": "ha-wait-until",
+    "z": "e361c01.ee9f54",
+    "name": "Wait for heater off",
+    "server": "5ee4d578.f7736c",
+    "outputs": 1,
+    "entityId": "sensor.hot_tub_status",
+    "property": "state",
+    "comparator": "is_not",
+    "value": "Heating",
+    "valueType": "str",
+    "timeout": 0,
+    "timeoutUnits": "seconds",
+    "entityLocation": "",
+    "entityLocationType": "none",
+    "checkCurrentState": true,
+    "blockInputOverrides": true,
+    "x": 350,
+    "y": 740,
+    "wires": [
+      [
+        "e86b21dd.5f291",
+        "97f9ece3.55bcb"
+      ]
+    ]
+  },
+  {
+    "id": "e86b21dd.5f291",
+    "type": "subflow:a83e69e1.4b2ab8",
+    "z": "e361c01.ee9f54",
+    "name": "Hot tub reached temp - heater off",
+    "env": [
+      {
+        "name": "message",
+        "value": "Hot tub reached temp - heater off",
+        "type": "str"
+      },
+      {
+        "name": "who",
+        "value": "both",
+        "type": "str"
+      }
+    ],
+    "x": 740,
+    "y": 740,
+    "wires": []
+  },
+  {
+    "id": "789e5afc.0e24b4",
+    "type": "trigger-state",
+    "z": "e361c01.ee9f54",
+    "name": "Alert On",
+    "server": "5ee4d578.f7736c",
+    "exposeToHomeAssistant": false,
+    "haConfig": [
+      {
+        "property": "name",
+        "value": ""
+      },
+      {
+        "property": "icon",
+        "value": ""
+      }
+    ],
+    "entityid": "input_boolean.alert_hottub_heateroff",
+    "entityidfiltertype": "exact",
+    "debugenabled": false,
+    "constraints": [
+      {
+        "id": "ul9aqqbtx2d",
+        "targetType": "this_entity",
+        "targetValue": "",
+        "propertyType": "current_state",
+        "propertyValue": "new_state.state",
+        "comparatorType": "is",
+        "comparatorValueDatatype": "bool",
+        "comparatorValue": "true"
+      }
+    ],
+    "constraintsmustmatch": "all",
+    "outputs": 2,
+    "customoutputs": [],
+    "outputinitially": true,
+    "state_type": "habool",
+    "x": 120,
+    "y": 740,
+    "wires": [
+      [
+        "fcf075af.6884d8"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "42b3effb.fbfaf",
+    "type": "comment",
+    "z": "e361c01.ee9f54",
+    "name": "Wait for heater to go off",
+    "info": "",
+    "x": 160,
+    "y": 700,
+    "wires": []
+  },
+  {
+    "id": "97f9ece3.55bcb",
+    "type": "api-call-service",
+    "z": "e361c01.ee9f54",
+    "name": "Cancel alert",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "input_boolean",
+    "service": "turn_off",
+    "entityId": "input_boolean.alert_hottub_heateroff",
+    "data": "",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "",
+    "output_location_type": "none",
+    "mustacheAltTags": false,
+    "x": 670,
+    "y": 780,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "75529894.e77db8",
+    "type": "function",
+    "z": "d73100a9.0d64d",
+    "name": ">",
+    "func": "\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 2200,
+    "y": 340,
+    "wires": [
+      [
+        "6e45a7ed.2c8728",
+        "5d848996.a2fc68",
+        "3eddd440.5a143c"
+      ]
+    ]
+  },
+  {
+    "id": "27d2e607.3670ba",
+    "type": "function",
+    "z": "d73100a9.0d64d",
+    "name": ">",
+    "func": "\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 2270,
+    "y": 640,
+    "wires": [
+      [
+        "94c4fb0a.6129d8",
+        "b399da43.7ff288"
       ]
     ]
   }

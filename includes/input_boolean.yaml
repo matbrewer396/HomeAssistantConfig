@@ -90,3 +90,9 @@
   automation_officelightonmotion:
     name: Office Light Turn on, On Motion
     initial: on
+
+## Alerts
+
+  alert_hottub_heateroff:
+    name: When Heater Next Off
+    initial: off
