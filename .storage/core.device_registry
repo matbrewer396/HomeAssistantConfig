@@ -1,0 +1,1622 @@
+{
+    "data": {
+        "devices": [
+            {
+                "area_id": null,
+                "config_entries": [
+                    "34f2c255e07545a8ad51334e150b35cf"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:17:88:78:88:ff"
+                    ]
+                ],
+                "id": "7712811594f8447bb3058d84093ac73a",
+                "identifiers": [
+                    [
+                        "hue",
+                        "001788FFFE7888FF"
+                    ]
+                ],
+                "manufacturer": "Signify",
+                "model": "BSB002",
+                "name": "Philips hue",
+                "name_by_user": null,
+                "sw_version": "1933144020",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "34f2c255e07545a8ad51334e150b35cf"
+                ],
+                "connections": [],
+                "id": "239f612a0669449a886da15275c91642",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:02:93:22:f1-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue color lamp",
+                "name": "Bed Room Light",
+                "name_by_user": null,
+                "sw_version": "1.46.13_r26312",
+                "via_device_id": "7712811594f8447bb3058d84093ac73a"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "34f2c255e07545a8ad51334e150b35cf"
+                ],
+                "connections": [],
+                "id": "97572c97b49248aca1d9887d70ddda09",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:02:89:85:72-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue color lamp",
+                "name": "Bed Room Lamp",
+                "name_by_user": null,
+                "sw_version": "1.46.13_r26312",
+                "via_device_id": "7712811594f8447bb3058d84093ac73a"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "34f2c255e07545a8ad51334e150b35cf"
+                ],
+                "connections": [],
+                "id": "4fa34ea111d946b896d4b481728b8c76",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:03:20:63:d4-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue color lamp",
+                "name": "Office Light",
+                "name_by_user": null,
+                "sw_version": "1.46.13_r26312",
+                "via_device_id": "7712811594f8447bb3058d84093ac73a"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "34f2c255e07545a8ad51334e150b35cf"
+                ],
+                "connections": [],
+                "id": "07acdaa144d94c66ac8fd46187f545f6",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:03:53:9a:13-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue color lamp",
+                "name": "Living Room Light 2",
+                "name_by_user": null,
+                "sw_version": "1.46.13_r26312",
+                "via_device_id": "7712811594f8447bb3058d84093ac73a"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "34f2c255e07545a8ad51334e150b35cf"
+                ],
+                "connections": [],
+                "id": "c08dc16db1dd460ca3d0c72154504bb7",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:02:b1:0b:c1-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue white lamp",
+                "name": "Hallway Light",
+                "name_by_user": null,
+                "sw_version": "1.46.13_r26312",
+                "via_device_id": "7712811594f8447bb3058d84093ac73a"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "34f2c255e07545a8ad51334e150b35cf"
+                ],
+                "connections": [],
+                "id": "02a83aee20414a7f918872e10fcecb88",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:03:20:64:fa-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue color lamp",
+                "name": "Living Room Light 1",
+                "name_by_user": null,
+                "sw_version": "1.46.13_r26312",
+                "via_device_id": "7712811594f8447bb3058d84093ac73a"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "34f2c255e07545a8ad51334e150b35cf"
+                ],
+                "connections": [],
+                "id": "c9c0c22a194d4befbddc6d4b300d9397",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:02:53:32:46-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue white lamp",
+                "name": "Bathroom Light",
+                "name_by_user": null,
+                "sw_version": "1.46.13_r26312",
+                "via_device_id": "7712811594f8447bb3058d84093ac73a"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "34f2c255e07545a8ad51334e150b35cf"
+                ],
+                "connections": [],
+                "id": "1e5dcf2f8c1b40b89a43a9707046a28f",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:03:11:c6:61-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue color lamp",
+                "name": "Living Room Light 3",
+                "name_by_user": null,
+                "sw_version": "1.46.13_r26312",
+                "via_device_id": "7712811594f8447bb3058d84093ac73a"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "48b73952d0de463c9efabacec94dddf0"
+                ],
+                "connections": [],
+                "id": "9bee4c62ece942049d0f3aa0d1381e64",
+                "identifiers": [
+                    [
+                        "ios",
+                        "C1FFC48A-23C1-4CE3-B664-F28F0A2091E2"
+                    ]
+                ],
+                "manufacturer": "Apple",
+                "model": "iPhone11,6",
+                "name": "iPhone",
+                "name_by_user": null,
+                "sw_version": "13.3",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "48b73952d0de463c9efabacec94dddf0"
+                ],
+                "connections": [],
+                "id": "6750b7cc435e4717a0ee134de5e04135",
+                "identifiers": [
+                    [
+                        "ios",
+                        "70E7958C-9404-4975-A7D6-4ADB21683EF4"
+                    ]
+                ],
+                "manufacturer": "Apple",
+                "model": "iPhone11,8",
+                "name": "iPhone",
+                "name_by_user": null,
+                "sw_version": "13.1.3",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "34f2c255e07545a8ad51334e150b35cf"
+                ],
+                "connections": [],
+                "id": "84e14aa718fc46b0ac1628cdb8c6cacd",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:03:f5:6b:4d-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue lightstrip plus",
+                "name": "Bedroom lightstrip plus 1",
+                "name_by_user": null,
+                "sw_version": "1.46.13_r26312",
+                "via_device_id": "7712811594f8447bb3058d84093ac73a"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "34f2c255e07545a8ad51334e150b35cf"
+                ],
+                "connections": [],
+                "id": "9d5e1fb656bf431e84db4eaf05359919",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:03:38:81:e8-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue white lamp",
+                "name": "Library Light 2",
+                "name_by_user": null,
+                "sw_version": "1.46.13_r26312",
+                "via_device_id": "7712811594f8447bb3058d84093ac73a"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "34f2c255e07545a8ad51334e150b35cf"
+                ],
+                "connections": [],
+                "id": "e6764cf8834240ac94bfd852a6f16bc0",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:03:26:fd:f5-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue white lamp",
+                "name": "Library Light 1",
+                "name_by_user": null,
+                "sw_version": "1.46.13_r26312",
+                "via_device_id": "7712811594f8447bb3058d84093ac73a"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "34f2c255e07545a8ad51334e150b35cf"
+                ],
+                "connections": [],
+                "id": "0f2168a591fb4651b3f683de8f847b71",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:03:cd:17:9f-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue lightstrip plus",
+                "name": "Office lightstrip",
+                "name_by_user": null,
+                "sw_version": "1.46.13_r26312",
+                "via_device_id": "7712811594f8447bb3058d84093ac73a"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "48b73952d0de463c9efabacec94dddf0"
+                ],
+                "connections": [],
+                "id": "78521626a28b4b1c9eb6e2e53e07d313",
+                "identifiers": [
+                    [
+                        "ios",
+                        "11FB9094-D3E4-422E-AC26-2B6EE232F1E1"
+                    ]
+                ],
+                "manufacturer": "Apple",
+                "model": "iPhone Xs Max",
+                "name": "iPhone",
+                "name_by_user": null,
+                "sw_version": "12.2",
+                "via_device_id": null
+            },
+            {
+                "area_id": "373ee5a51dbb4f41a790d722125e64fe",
+                "config_entries": [
+                    "83736706ab004933acd19e31adcf6d25"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "3c:71:bf:6a:54:7c"
+                    ]
+                ],
+                "id": "54d42f4c951040b3bf53aba29495c7ff",
+                "identifiers": [],
+                "manufacturer": "espressif",
+                "model": "Espressif ESP-WROVER-KIT",
+                "name": "ble",
+                "name_by_user": null,
+                "sw_version": "1.12.2 (Apr 15 2019, 18:25:54)",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "34f2c255e07545a8ad51334e150b35cf"
+                ],
+                "connections": [],
+                "id": "be4e6811324f4205bf7b7499e88f5f95",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:02:13:16:0a"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue motion sensor",
+                "name": "Hallway sensor",
+                "name_by_user": null,
+                "sw_version": "6.1.1.27575",
+                "via_device_id": "7712811594f8447bb3058d84093ac73a"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "34f2c255e07545a8ad51334e150b35cf"
+                ],
+                "connections": [],
+                "id": "e2fe67761fcb4cb0be5c593ae17adf9b",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:03:28:31:b0"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue motion sensor",
+                "name": "Bathroom sensor",
+                "name_by_user": null,
+                "sw_version": "6.1.1.27575",
+                "via_device_id": "7712811594f8447bb3058d84093ac73a"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "b86044f2439745d091509f16fa907f55"
+                ],
+                "connections": [],
+                "id": "b6004faa3a2546ebbac6e9eb37104223",
+                "identifiers": [
+                    [
+                        "alexa_media",
+                        "75D23480C2C048608612343DDDD7DFAA"
+                    ]
+                ],
+                "manufacturer": "Amazon",
+                "model": "AMAZONMOBILEMUSIC_IOS A2825NDLA7WDZV",
+                "name": "mat's Alexa Apps",
+                "name_by_user": null,
+                "sw_version": "4",
+                "via_device_id": "b6004faa3a2546ebbac6e9eb37104223"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "b86044f2439745d091509f16fa907f55"
+                ],
+                "connections": [],
+                "id": "9268d6c9af9b4b25b49e9ed017d3a6b2",
+                "identifiers": [
+                    [
+                        "alexa_media",
+                        "G090VC0784051V29"
+                    ]
+                ],
+                "manufacturer": "Amazon",
+                "model": "ECHO A32DOYMUN6DTXA",
+                "name": "Bedroom",
+                "name_by_user": null,
+                "sw_version": "3725203076",
+                "via_device_id": "9268d6c9af9b4b25b49e9ed017d3a6b2"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "b86044f2439745d091509f16fa907f55"
+                ],
+                "connections": [],
+                "id": "38e44d86dc544322a0922e7c3d7bb300",
+                "identifiers": [
+                    [
+                        "alexa_media",
+                        "e6bcf959b85c4bc4bbc3f299b4047a7a"
+                    ]
+                ],
+                "manufacturer": "Amazon",
+                "model": "WHA A3C9PE6TNYLTCH",
+                "name": "Upstairs",
+                "name_by_user": null,
+                "sw_version": "0",
+                "via_device_id": "38e44d86dc544322a0922e7c3d7bb300"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "b86044f2439745d091509f16fa907f55"
+                ],
+                "connections": [],
+                "id": "68cc24db3ca8452cae2d4e46cef9ad23",
+                "identifiers": [
+                    [
+                        "alexa_media",
+                        "G090P308826309K2"
+                    ]
+                ],
+                "manufacturer": "Amazon",
+                "model": "ECHO A7WXQPH584YP",
+                "name": "Office",
+                "name_by_user": null,
+                "sw_version": "651614420",
+                "via_device_id": "68cc24db3ca8452cae2d4e46cef9ad23"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "b86044f2439745d091509f16fa907f55"
+                ],
+                "connections": [],
+                "id": "3d371bed187e4d4d90ba1fb46dd36c4c",
+                "identifiers": [
+                    [
+                        "alexa_media",
+                        "5F9815873C2E4A25A6F28542FA1E379E"
+                    ]
+                ],
+                "manufacturer": "Amazon",
+                "model": "VOX A2IVLV5VM2W81",
+                "name": "This Device",
+                "name_by_user": null,
+                "sw_version": "1",
+                "via_device_id": "3d371bed187e4d4d90ba1fb46dd36c4c"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "b86044f2439745d091509f16fa907f55"
+                ],
+                "connections": [],
+                "id": "aa24ed14e54a49cc99f264d31d8347c9",
+                "identifiers": [
+                    [
+                        "alexa_media",
+                        "91080a5d8e394436a72fac3fee5eab64"
+                    ]
+                ],
+                "manufacturer": "Amazon",
+                "model": "WHA A3C9PE6TNYLTCH",
+                "name": "Downstairs",
+                "name_by_user": null,
+                "sw_version": "0",
+                "via_device_id": "aa24ed14e54a49cc99f264d31d8347c9"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "b86044f2439745d091509f16fa907f55"
+                ],
+                "connections": [],
+                "id": "6cf5145fef3d4525a3418dddbae51370",
+                "identifiers": [
+                    [
+                        "alexa_media",
+                        "4a5bebb7a1eb4711883abcd67db5d4c6"
+                    ]
+                ],
+                "manufacturer": "Amazon",
+                "model": "WHA A3C9PE6TNYLTCH",
+                "name": "Everywhere",
+                "name_by_user": null,
+                "sw_version": "0",
+                "via_device_id": "6cf5145fef3d4525a3418dddbae51370"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "b86044f2439745d091509f16fa907f55"
+                ],
+                "connections": [],
+                "id": "29bd8b72b32e4ec9a574e1dd5cfe0a75",
+                "identifiers": [
+                    [
+                        "alexa_media",
+                        "G090U610912713L9"
+                    ]
+                ],
+                "manufacturer": "Amazon",
+                "model": "ECHO A32DOYMUN6DTXA",
+                "name": "danielle's Echo Dot",
+                "name_by_user": null,
+                "sw_version": "3725203076",
+                "via_device_id": "29bd8b72b32e4ec9a574e1dd5cfe0a75"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "b86044f2439745d091509f16fa907f55"
+                ],
+                "connections": [],
+                "id": "82d8430a01ce455995a29d29fe068ee8",
+                "identifiers": [
+                    [
+                        "alexa_media",
+                        "G2A0P308826706UM"
+                    ]
+                ],
+                "manufacturer": "Amazon",
+                "model": "ECHO A7WXQPH584YP",
+                "name": "living room",
+                "name_by_user": null,
+                "sw_version": "651614420",
+                "via_device_id": "82d8430a01ce455995a29d29fe068ee8"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "b86044f2439745d091509f16fa907f55"
+                ],
+                "connections": [],
+                "id": "f7fc0172cb7c4a09a0a689a71506cac0",
+                "identifiers": [
+                    [
+                        "alexa_media",
+                        "C9E3FE51FB80468CAE03B9FA3A52FFAB"
+                    ]
+                ],
+                "manufacturer": "Amazon",
+                "model": "VOX A2IVLV5VM2W81",
+                "name": "This Device",
+                "name_by_user": null,
+                "sw_version": "1",
+                "via_device_id": "f7fc0172cb7c4a09a0a689a71506cac0"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "b86044f2439745d091509f16fa907f55"
+                ],
+                "connections": [],
+                "id": "3b64c7d07a404bcbb1135b81c0c3eba6",
+                "identifiers": [
+                    [
+                        "alexa_media",
+                        "aabf76814bf843b5a4ac1255edeffd2c"
+                    ]
+                ],
+                "manufacturer": "Amazon",
+                "model": "WHA A3C9PE6TNYLTCH",
+                "name": "Shared Downstairs",
+                "name_by_user": null,
+                "sw_version": "0",
+                "via_device_id": "3b64c7d07a404bcbb1135b81c0c3eba6"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "b86044f2439745d091509f16fa907f55"
+                ],
+                "connections": [],
+                "id": "850723dde1b84d198cdbe78d714a6d29",
+                "identifiers": [
+                    [
+                        "alexa_media",
+                        "G070VM0583942HT6"
+                    ]
+                ],
+                "manufacturer": "Amazon",
+                "model": "FIRE_TV AKPGW064GI9HE",
+                "name": "mat's Fire TV",
+                "name_by_user": null,
+                "sw_version": "3590963076",
+                "via_device_id": "850723dde1b84d198cdbe78d714a6d29"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "b86044f2439745d091509f16fa907f55"
+                ],
+                "connections": [],
+                "id": "b06cc70e90d04301aa26212a89fd94f1",
+                "identifiers": [
+                    [
+                        "alexa_media",
+                        "G090LF1182840TW7"
+                    ]
+                ],
+                "manufacturer": "Amazon",
+                "model": "ECHO A3S5BH2HU6VAYF",
+                "name": "Barthroom",
+                "name_by_user": null,
+                "sw_version": "653621620",
+                "via_device_id": "b06cc70e90d04301aa26212a89fd94f1"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "b86044f2439745d091509f16fa907f55"
+                ],
+                "connections": [],
+                "id": "2e3d8a5f59de4edc82d09ba0c15a1169",
+                "identifiers": [
+                    [
+                        "alexa_media",
+                        "G090U507842227LJ"
+                    ]
+                ],
+                "manufacturer": "Amazon",
+                "model": "ECHO A32DOYMUN6DTXA",
+                "name": "Kitten",
+                "name_by_user": null,
+                "sw_version": "3658075524",
+                "via_device_id": "2e3d8a5f59de4edc82d09ba0c15a1169"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "b86044f2439745d091509f16fa907f55"
+                ],
+                "connections": [],
+                "id": "86f203742c6d42658c6ec226271efec7",
+                "identifiers": [
+                    [
+                        "alexa_media",
+                        "G0911M0793941D73"
+                    ]
+                ],
+                "manufacturer": "Amazon",
+                "model": "ECHO A1RABVCI4QCIKC",
+                "name": "mat's Echo Dot",
+                "name_by_user": null,
+                "sw_version": "0",
+                "via_device_id": "86f203742c6d42658c6ec226271efec7"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "b86044f2439745d091509f16fa907f55"
+                ],
+                "connections": [],
+                "id": "faee4b54a440426eb225b95b414df155",
+                "identifiers": [
+                    [
+                        "alexa_media",
+                        "G0W0X8089406FJ3N"
+                    ]
+                ],
+                "manufacturer": "Amazon",
+                "model": "TABLET A1Q7QCGNMXAKYW",
+                "name": "mat's 2nd Fire",
+                "name_by_user": null,
+                "sw_version": "2517057924",
+                "via_device_id": "faee4b54a440426eb225b95b414df155"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "9a:a0:32:9a:92:67"
+                    ]
+                ],
+                "id": "49fa8d7b21ef483c84056b5b0e1831fa",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00212E05009D"
+                    ],
+                    [
+                        "deconz",
+                        "00212EFFFF05009D"
+                    ]
+                ],
+                "manufacturer": "Dresden Elektronik",
+                "model": "deCONZ",
+                "name": "msb-GW",
+                "name_by_user": null,
+                "sw_version": "2.5.69",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:15:8d:00:04:44:8b:4b"
+                    ]
+                ],
+                "id": "f19ebf53cd08472d814515a2dceaaec4",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:15:8d:00:04:44:8b:4b"
+                    ]
+                ],
+                "manufacturer": "LUMI",
+                "model": "lumi.sensor_magnet.aq2",
+                "name": "Back door",
+                "name_by_user": null,
+                "sw_version": "20161128",
+                "via_device_id": "49fa8d7b21ef483c84056b5b0e1831fa"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:21:2e:ff:ff:05:00:9d"
+                    ]
+                ],
+                "id": "21b900f8c3c8487ca20a8a6ede6f8151",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:21:2e:ff:ff:05:00:9d"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "PHDL00",
+                "name": "Daylight",
+                "name_by_user": null,
+                "sw_version": "1.0",
+                "via_device_id": "49fa8d7b21ef483c84056b5b0e1831fa"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "8c964edfe4e14191a40455bece6b7c7b"
+                ],
+                "connections": [],
+                "id": "b264c6267bf2439d9dab51da771fdabb",
+                "identifiers": [
+                    [
+                        "device_id",
+                        "c6e39b53af1c42eca4431f121aadfb98"
+                    ],
+                    [
+                        "webhook_id",
+                        "215e302ff7952a29feebb9e5bdbb845054724dcc244da5d1586694bfb351b765"
+                    ]
+                ],
+                "manufacturer": "Apple",
+                "model": "iPhone X\u0280",
+                "name": "iPhone",
+                "name_by_user": null,
+                "sw_version": "13.3",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "8c964edfe4e14191a40455bece6b7c7b"
+                ],
+                "connections": [],
+                "id": "29d69b8cc85043ecb0100a4fe0a1171e",
+                "identifiers": [
+                    [
+                        "mobile_app",
+                        "c6e39b53af1c42eca4431f121aadfb98"
+                    ]
+                ],
+                "manufacturer": "Apple",
+                "model": "iPhone X\u0280",
+                "name": "iPhone",
+                "name_by_user": null,
+                "sw_version": "13.3.1",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "fc307db2fb8143168ab6824be5d4e9e1"
+                ],
+                "connections": [],
+                "id": "ab8bb171faf24382acae4260b4297afa",
+                "identifiers": [
+                    [
+                        "webhook_id",
+                        "9a4efa7565a0e6c17ed292673e6090f8aeca3e3c6789bd526df31efee15b9ef9"
+                    ],
+                    [
+                        "device_id",
+                        "28d68ed320c448bc88c4e226aa0a3282"
+                    ]
+                ],
+                "manufacturer": "Apple",
+                "model": "iPhone Xs Max",
+                "name": "iPhone",
+                "name_by_user": null,
+                "sw_version": "13.3",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "fc307db2fb8143168ab6824be5d4e9e1"
+                ],
+                "connections": [],
+                "id": "f43e2d60eb044b06b97aca70971b6ca6",
+                "identifiers": [
+                    [
+                        "mobile_app",
+                        "28d68ed320c448bc88c4e226aa0a3282"
+                    ]
+                ],
+                "manufacturer": "Apple",
+                "model": "iPhone Xs Max",
+                "name": "iPhone",
+                "name_by_user": null,
+                "sw_version": "13.3.1",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "e7b146a93753424dacb3728f458597e0"
+                ],
+                "connections": [],
+                "id": "48badeb10dc0486192261c7d457324c8",
+                "identifiers": [
+                    [
+                        "wled",
+                        "bcddc2b66dd3"
+                    ]
+                ],
+                "manufacturer": "WLED",
+                "model": "DIY light",
+                "name": "WLED",
+                "name_by_user": null,
+                "sw_version": "0.8.7-dev",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "cb89cb3c4f6e4fc7b5d1487554c773b9"
+                ],
+                "connections": [],
+                "id": "3ce018a6e1344a29b75373bca17f21d3",
+                "identifiers": [
+                    [
+                        "wled",
+                        "bcddc2b618ac"
+                    ]
+                ],
+                "manufacturer": "WLED",
+                "model": "DIY light",
+                "name": "WLED",
+                "name_by_user": null,
+                "sw_version": "0.8.7-dev",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:15:8d:00:04:46:f5:79"
+                    ]
+                ],
+                "id": "bdd391b81bd142c7b2409c770cad7d6e",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:15:8d:00:04:46:f5:79"
+                    ]
+                ],
+                "manufacturer": "LUMI",
+                "model": "lumi.sensor_magnet.aq2",
+                "name": "Bathroom window",
+                "name_by_user": null,
+                "sw_version": "20161128",
+                "via_device_id": "49fa8d7b21ef483c84056b5b0e1831fa"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:15:8d:00:04:45:1f:69"
+                    ]
+                ],
+                "id": "572f4d4a819848c4928bfe793c8252a8",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:15:8d:00:04:45:1f:69"
+                    ]
+                ],
+                "manufacturer": "LUMI",
+                "model": "lumi.sensor_magnet.aq2",
+                "name": "Kitchen Window Sensor",
+                "name_by_user": null,
+                "sw_version": "20161128",
+                "via_device_id": "49fa8d7b21ef483c84056b5b0e1831fa"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "b86044f2439745d091509f16fa907f55"
+                ],
+                "connections": [],
+                "id": "c114880776034ce3b13d8e7c7f960817",
+                "identifiers": [
+                    [
+                        "alexa_media",
+                        "G091B002947315A2"
+                    ]
+                ],
+                "manufacturer": "Amazon",
+                "model": "ECHO A1RABVCI4QCIKC",
+                "name": "mat's 2nd Echo Dot",
+                "name_by_user": null,
+                "sw_version": "0",
+                "via_device_id": "c114880776034ce3b13d8e7c7f960817"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "b86044f2439745d091509f16fa907f55"
+                ],
+                "connections": [],
+                "id": "74daeb2db598462cb4b2a209796bbdc7",
+                "identifiers": [
+                    [
+                        "alexa_media",
+                        "c9229a9648c048aa8f032ded0692ce69"
+                    ]
+                ],
+                "manufacturer": "Amazon",
+                "model": "UNKNOWN A3L2K717GERE73",
+                "name": "mat's Voice in a Can for iOS",
+                "name_by_user": null,
+                "sw_version": "20190508",
+                "via_device_id": "74daeb2db598462cb4b2a209796bbdc7"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "b86044f2439745d091509f16fa907f55"
+                ],
+                "connections": [],
+                "id": "b847b314dca44fcc92eaec4c6d41ec08",
+                "identifiers": [
+                    [
+                        "alexa_media",
+                        "cdc5c3b5521a468ab60f255b195f707e"
+                    ]
+                ],
+                "manufacturer": "Amazon",
+                "model": "UNKNOWN A222D4HGE48EOR",
+                "name": "mat's Voice in a can for Apple Watch",
+                "name_by_user": null,
+                "sw_version": "0",
+                "via_device_id": "b847b314dca44fcc92eaec4c6d41ec08"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:15:8d:00:02:9a:7b:01"
+                    ]
+                ],
+                "id": "73047b583aa44b6e854fe5be42baad02",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:15:8d:00:02:9a:7b:01"
+                    ]
+                ],
+                "manufacturer": "LUMI",
+                "model": "lumi.sensor_cube.aqgl01",
+                "name": "Mi Magic Cube",
+                "name_by_user": null,
+                "sw_version": "20160704",
+                "via_device_id": "49fa8d7b21ef483c84056b5b0e1831fa"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:15:8d:00:03:56:00:10"
+                    ]
+                ],
+                "id": "a8f875b64d1d44fcb53bb86d5ead4c89",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:15:8d:00:03:56:00:10"
+                    ]
+                ],
+                "manufacturer": "LUMI",
+                "model": "lumi.remote.b286acn01",
+                "name": "Bathroom 2-gang",
+                "name_by_user": null,
+                "sw_version": "20180809",
+                "via_device_id": "49fa8d7b21ef483c84056b5b0e1831fa"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:15:8d:00:04:10:f7:d4"
+                    ]
+                ],
+                "id": "9453139490ce4eec84bb93d10617bb89",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:15:8d:00:04:10:f7:d4"
+                    ]
+                ],
+                "manufacturer": "LUMI",
+                "model": "lumi.sensor_magnet.aq2",
+                "name": "Shower",
+                "name_by_user": null,
+                "sw_version": "20161128",
+                "via_device_id": "49fa8d7b21ef483c84056b5b0e1831fa"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:15:8d:00:04:4d:ca:af"
+                    ]
+                ],
+                "id": "8447268ae7c0474ba200f160b31dc5bf",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:15:8d:00:04:4d:ca:af"
+                    ]
+                ],
+                "manufacturer": "LUMI",
+                "model": "lumi.sensor_magnet.aq2",
+                "name": "Window / Door Sensor",
+                "name_by_user": null,
+                "sw_version": "20161128",
+                "via_device_id": "49fa8d7b21ef483c84056b5b0e1831fa"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:15:8d:00:03:9d:85:23"
+                    ]
+                ],
+                "id": "0fbd36e29a0741fea7a93678729dd459",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:15:8d:00:03:9d:85:23"
+                    ]
+                ],
+                "manufacturer": "LUMI",
+                "model": "lumi.vibration.aq1",
+                "name": "Vibration Sensor",
+                "name_by_user": null,
+                "sw_version": "20180130",
+                "via_device_id": "49fa8d7b21ef483c84056b5b0e1831fa"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4aa4128ce3604af68007796e024e29c5"
+                ],
+                "connections": [],
+                "id": "f12bd82088c54a6a85d9968722c67341",
+                "identifiers": [
+                    [
+                        "wled",
+                        "2cf4324b043b"
+                    ]
+                ],
+                "manufacturer": "WLED",
+                "model": "DIY light",
+                "name": "WLED",
+                "name_by_user": null,
+                "sw_version": "0.8.7-dev",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:15:8d:00:03:02:10:de"
+                    ]
+                ],
+                "id": "20bd486d7c80451d8161e2f9ed4b56d0",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:15:8d:00:03:02:10:de"
+                    ]
+                ],
+                "manufacturer": "LUMI",
+                "model": "lumi.sensor_motion.aq2",
+                "name": "Library  Sensor",
+                "name_by_user": null,
+                "sw_version": "20170627",
+                "via_device_id": "49fa8d7b21ef483c84056b5b0e1831fa"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "34f2c255e07545a8ad51334e150b35cf"
+                ],
+                "connections": [],
+                "id": "46a6e81ccaa04bab8b80581a2c263ac5",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:04:f3:38:37"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue dimmer switch",
+                "name": "Living room switch",
+                "name_by_user": null,
+                "sw_version": "5.45.1.17846",
+                "via_device_id": "7712811594f8447bb3058d84093ac73a"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "2f2ba8793b5741028def01705355d41b"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "a8:3f:a1:80:e9:bc"
+                    ]
+                ],
+                "id": "b81be2e2dfe4452ba550dca7e48b2bea",
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "a83fa180e9bc"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Dafang",
+                "name": "Xiaomi Dafang",
+                "name_by_user": null,
+                "sw_version": "Dafang Hacks",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "2f2ba8793b5741028def01705355d41b"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "a8:3f:a1:81:04:ee"
+                    ]
+                ],
+                "id": "3a3552fa96db40be863a2deeb14ff06c",
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "a83fa18104ee"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Dafang",
+                "name": "Xiaomi Dafang",
+                "name_by_user": null,
+                "sw_version": "Dafang Hacks",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "2f2ba8793b5741028def01705355d41b"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "dc:4f:22:b1:b5:4e"
+                    ]
+                ],
+                "id": "ef8c1995ff5d4f72bec3a52809f88fb7",
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "B1B54E"
+                    ]
+                ],
+                "manufacturer": "Tasmota",
+                "model": "2NICE UP111",
+                "name": "plug_010",
+                "name_by_user": null,
+                "sw_version": "7.0.0.6(tasmota)",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "2f2ba8793b5741028def01705355d41b"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "dc:4f:22:b1:e6:4e"
+                    ]
+                ],
+                "id": "6c38f7df02d745199701e51cd555a658",
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "B1E64E"
+                    ]
+                ],
+                "manufacturer": "Tasmota",
+                "model": "2NICE UP111",
+                "name": "plug_011",
+                "name_by_user": null,
+                "sw_version": "7.0.0.6(tasmota)",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "2f2ba8793b5741028def01705355d41b"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "84:0d:8e:7f:ea:d4"
+                    ]
+                ],
+                "id": "7be9512002d748dfa0f2bcba0767cfcb",
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "7FEAD4"
+                    ]
+                ],
+                "manufacturer": "Tasmota",
+                "model": "2NICE UP111",
+                "name": "plug_012",
+                "name_by_user": null,
+                "sw_version": "7.0.0.6(tasmota)",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "2f2ba8793b5741028def01705355d41b"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "dc:4f:22:b0:ef:f3"
+                    ]
+                ],
+                "id": "b9e2034b7d7f42ffaa8bc1f58a399f83",
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "B0EFF3"
+                    ]
+                ],
+                "manufacturer": "Tasmota",
+                "model": "2NICE UP111",
+                "name": "plug_013",
+                "name_by_user": null,
+                "sw_version": "7.0.0.6(tasmota)",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "2f2ba8793b5741028def01705355d41b"
+                ],
+                "connections": [],
+                "id": "d7ad5924458c453eafc1c1f248b41db3",
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "494165"
+                    ]
+                ],
+                "manufacturer": "Tasmota",
+                "model": "Teckin SP23",
+                "name": "Plug_01",
+                "name_by_user": null,
+                "sw_version": "6.5.0(sonoff)",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "2f2ba8793b5741028def01705355d41b"
+                ],
+                "connections": [],
+                "id": "38be29b6ab5c4630b5972b49adc6f0ee",
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "B8900B"
+                    ]
+                ],
+                "manufacturer": "Tasmota",
+                "model": "Teckin SP23",
+                "name": "plug_03",
+                "name_by_user": null,
+                "sw_version": "6.5.0(sonoff)",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "2f2ba8793b5741028def01705355d41b"
+                ],
+                "connections": [],
+                "id": "6009ba99d3034ffe8822485f496f701d",
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "92C859"
+                    ]
+                ],
+                "manufacturer": "Tasmota",
+                "model": "Teckin SP23",
+                "name": "plug_02",
+                "name_by_user": null,
+                "sw_version": "6.5.0(sonoff)",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "2f2ba8793b5741028def01705355d41b"
+                ],
+                "connections": [],
+                "id": "3ec7b43da78f466f830c42fd21b0dff2",
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "272AC6"
+                    ]
+                ],
+                "manufacturer": "Tasmota",
+                "model": "Teckin SP23",
+                "name": "plug_04",
+                "name_by_user": null,
+                "sw_version": "6.5.0(sonoff)",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "2f2ba8793b5741028def01705355d41b"
+                ],
+                "connections": [],
+                "id": "bf2ae205f9ac4852b2166c7156ae3083",
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "27299E"
+                    ]
+                ],
+                "manufacturer": "Tasmota",
+                "model": "Teckin SP23",
+                "name": "plug_05",
+                "name_by_user": null,
+                "sw_version": "6.5.0(sonoff)",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "2f2ba8793b5741028def01705355d41b"
+                ],
+                "connections": [],
+                "id": "7e1f0398ff5142dbb134e267b1d2c570",
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "9BEFD4"
+                    ]
+                ],
+                "manufacturer": "Tasmota",
+                "model": "Teckin SP23",
+                "name": "plug_06",
+                "name_by_user": null,
+                "sw_version": "6.5.0(sonoff)",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "2f2ba8793b5741028def01705355d41b"
+                ],
+                "connections": [],
+                "id": "d021f82c511f4fc4a77437521afd197b",
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "675AAB"
+                    ]
+                ],
+                "manufacturer": "Tasmota",
+                "model": "Teckin SP23",
+                "name": "plug_07",
+                "name_by_user": null,
+                "sw_version": "6.5.0(sonoff)",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "2f2ba8793b5741028def01705355d41b"
+                ],
+                "connections": [],
+                "id": "c3611535c6ea48e9a4d43675de988a91",
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "273DAF"
+                    ]
+                ],
+                "manufacturer": "Tasmota",
+                "model": "Teckin SP23",
+                "name": "plug_08",
+                "name_by_user": null,
+                "sw_version": "6.5.0(sonoff)",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "2f2ba8793b5741028def01705355d41b"
+                ],
+                "connections": [],
+                "id": "d57a20ed83e744569a040801b4e8e08e",
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "273662"
+                    ]
+                ],
+                "manufacturer": "Tasmota",
+                "model": "Teckin SP23",
+                "name": "plug_09",
+                "name_by_user": null,
+                "sw_version": "6.5.0(sonoff)",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "2f2ba8793b5741028def01705355d41b"
+                ],
+                "connections": [],
+                "id": "0ba42fb3d18744dca2587df2b9b56daf",
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "bt-mqtt-gateway/00-11-22-33-44-55/miflora_herbs"
+                    ],
+                    [
+                        "mqtt",
+                        "00:11:22:33:44:55"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "MiFlora",
+                "name": "miflora_herbs",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "2f2ba8793b5741028def01705355d41b"
+                ],
+                "connections": [],
+                "id": "d0952caeab894cf085ad51f9ad9addc9",
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "bt-mqtt-gateway/00-11-22-33-44-55/smartgadget_living_room"
+                    ]
+                ],
+                "manufacturer": "Sensirion AG",
+                "model": "SmartGadget",
+                "name": "smartgadget_living_room",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "2f2ba8793b5741028def01705355d41b"
+                ],
+                "connections": [],
+                "id": "2141868463aa4981bc631318b6852b76",
+                "identifiers": [
+                    [
+                        "mqtt",
+                        "C4:7C:8D:6A:42:10"
+                    ],
+                    [
+                        "mqtt",
+                        "bt-mqtt-gateway/C4-7C-8D-6A-42-10/miflora_herbs"
+                    ],
+                    [
+                        "mqtt",
+                        "bt-mqtt-gateway/C4-7C-8D-6A-42-10/miflora_aloevera"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "MiFlora",
+                "name": "miflora_aloevera",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            }
+        ]
+    },
+    "key": "core.device_registry",
+    "version": 1
+}

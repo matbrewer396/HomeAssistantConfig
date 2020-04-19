@@ -15,6 +15,9 @@ home-assistant_v2.db
 .storage/auth
 .storage/*
 !.storage/lovelace
+!.storage/core.device_registry
+!.storage/core.entity_registry
+
 .cloud/
 deps/
 deps-old/
