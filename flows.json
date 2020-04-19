@@ -966,7 +966,7 @@
     "z": "",
     "name": "Home Assistant",
     "legacy": false,
-    "hassio": true,
+    "addon": true,
     "rejectUnauthorizedCerts": true
   },
   {
@@ -1144,7 +1144,6 @@
     "z": "",
     "name": "Home Assistant",
     "legacy": false,
-    "hassio": false,
     "rejectUnauthorizedCerts": false
   },
   {
@@ -1906,7 +1905,8 @@
         "b0c86ed5.ad287",
         "dc2626b6.cb8a88",
         "740c59e5.4fccd8",
-        "4d9f4167.b65e1"
+        "4d9f4167.b65e1",
+        "9e7450fb.4d726"
       ]
     ]
   },
@@ -8348,6 +8348,7 @@
     "name": "Check BT On Every 2 Minutes",
     "host": "192.168.1.205",
     "timer": "120",
+    "inputs": 0,
     "x": 180,
     "y": 1120,
     "wires": [
@@ -8523,6 +8524,7 @@
     "name": "Check RM Mini On Every 2 Minutes",
     "host": "192.168.30.202",
     "timer": "120",
+    "inputs": 0,
     "x": 200,
     "y": 1300,
     "wires": [
@@ -10446,7 +10448,7 @@
     "z": "a3158433.9d1f78",
     "name": "Away",
     "server": "eef5a84.da24f58",
-    "version": "1",
+    "version": 1,
     "debugenabled": false,
     "service_domain": "input_boolean",
     "service": "turn_off",
@@ -10737,9 +10739,20 @@
     "name": "Number Of People In Bed",
     "server": "5ee4d578.f7736c",
     "version": 1,
+    "exposeToHomeAssistant": false,
+    "haConfig": [
+      {
+        "property": "name",
+        "value": ""
+      },
+      {
+        "property": "icon",
+        "value": ""
+      }
+    ],
     "entityidfilter": "sensor.num_in_master_bed",
     "entityidfiltertype": "substring",
-    "outputinitially": false,
+    "outputinitially": true,
     "state_type": "str",
     "haltifstate": "",
     "halt_if_type": "str",
@@ -12731,7 +12744,7 @@
     "func": "var loc = \"Alarm not active - \" + msg.location;\nif (msg.trusted == false) {\n    loc = \"untrusted motion detected alarm will not trigger - \"  + msg.location\n}\n\nmsg.payload = \n{\n  \"data\": \n  {\n    \"message\": loc,\n    \"data\": \n    {\n      \"push\": {\n            \"badge\": 5,\n            \"category\": \"alarm\"\n        },\"attachment\": \n      {\n        \"url\": msg.image,\n        \"content-type\": \"jpeg\",\n        \"hide-thumbnail\": false\n      }\n    }\n  }\n}\nreturn msg;",
     "outputs": 1,
     "noerr": 0,
-    "x": 1270,
+    "x": 1390,
     "y": 100,
     "wires": [
       [
@@ -12772,6 +12785,7 @@
     "z": "cdbc6ec6.2e0ec",
     "name": "Danni",
     "server": "5ee4d578.f7736c",
+    "version": "1",
     "outputs": 1,
     "halt_if": "",
     "halt_if_type": "str",
@@ -12783,6 +12797,7 @@
     "override_payload": "msg",
     "entity_location": "data",
     "override_data": "msg",
+    "blockInputOverrides": false,
     "x": 210,
     "y": 80,
     "wires": [
@@ -12840,7 +12855,7 @@
     "z": "a0a4859f.5a2a48",
     "name": "",
     "env": [],
-    "x": 980,
+    "x": 1240,
     "y": 100,
     "wires": [
       [],
@@ -12906,7 +12921,7 @@
     "y": 100,
     "wires": [
       [
-        "e615d2e5.a6b6e"
+        "51b15e05.4f64a"
       ]
     ]
   },
@@ -19562,7 +19577,8 @@
     "y": 1160,
     "wires": [
       [
-        "8c3e0d70.aec22"
+        "8c3e0d70.aec22",
+        "7a770c6e.ef1804"
       ],
       [
         "5c0d216f.67deb",
@@ -20965,9 +20981,10 @@
     "name": "Turn Off Power",
     "server": "5ee4d578.f7736c",
     "version": 1,
+    "debugenabled": false,
     "service_domain": "switch",
     "service": "turn_off",
-    "entityId": "switch.sonoff",
+    "entityId": "switch.plug_01",
     "data": "",
     "dataType": "json",
     "mergecontext": "",
@@ -21023,9 +21040,10 @@
     "name": "Turn On Power",
     "server": "5ee4d578.f7736c",
     "version": 1,
+    "debugenabled": false,
     "service_domain": "switch",
     "service": "turn_on",
-    "entityId": "switch.sonoff",
+    "entityId": "switch.plug_01",
     "data": "",
     "dataType": "json",
     "mergecontext": "",
@@ -23693,8 +23711,8 @@
     "env": [
       {
         "name": "BreakerName",
-        "type": "str",
-        "value": "BedStripOnMainLightOn"
+        "value": "BedStripOnMainLightOn",
+        "type": "str"
       }
     ],
     "x": 320,
@@ -27112,7 +27130,7 @@
     "qos": "0",
     "retain": "false",
     "broker": "1b6bc4ba.56ff4b",
-    "x": 1240,
+    "x": 1440,
     "y": 140,
     "wires": []
   },
@@ -33009,28 +33027,6 @@
     ]
   },
   {
-    "id": "37d369f1.b8e6c6",
-    "type": "trigger",
-    "z": "9a341993.fbc528",
-    "op1": "",
-    "op2": "",
-    "op1type": "nul",
-    "op2type": "pay",
-    "duration": "2",
-    "extend": false,
-    "units": "min",
-    "reset": "",
-    "bytopic": "all",
-    "name": "",
-    "x": 310,
-    "y": 2020,
-    "wires": [
-      [
-        "321647b6.3f2028"
-      ]
-    ]
-  },
-  {
     "id": "878320aa.0b185",
     "type": "trigger-state",
     "z": "9a341993.fbc528",
@@ -33065,13 +33061,13 @@
     "constraintsmustmatch": "all",
     "outputs": 2,
     "customoutputs": [],
-    "outputinitially": false,
+    "outputinitially": true,
     "state_type": "str",
-    "x": 140,
-    "y": 2020,
+    "x": 120,
+    "y": 2000,
     "wires": [
       [
-        "37d369f1.b8e6c6"
+        "321647b6.3f2028"
       ],
       []
     ]
@@ -33082,8 +33078,8 @@
     "z": "9a341993.fbc528",
     "name": "Turn off tv when idle",
     "info": "",
-    "x": 170,
-    "y": 1940,
+    "x": 150,
+    "y": 1960,
     "wires": []
   },
   {
@@ -33092,8 +33088,8 @@
     "z": "9a341993.fbc528",
     "name": "",
     "env": [],
-    "x": 510,
-    "y": 2020,
+    "x": 330,
+    "y": 2000,
     "wires": [
       []
     ]
@@ -33120,7 +33116,7 @@
     "debugenabled": false,
     "constraints": [
       {
-        "id": "vs7r4t1nqy",
+        "id": "q6kmyuh4xf",
         "targetType": "this_entity",
         "targetValue": "",
         "propertyType": "previous_state",
@@ -33128,15 +33124,25 @@
         "comparatorType": "is",
         "comparatorValueDatatype": "str",
         "comparatorValue": "idle"
+      },
+      {
+        "id": "len2bij403",
+        "targetType": "this_entity",
+        "targetValue": "",
+        "propertyType": "current_state",
+        "propertyValue": "new_state.state",
+        "comparatorType": "is_not",
+        "comparatorValueDatatype": "str",
+        "comparatorValue": "off"
       }
     ],
     "constraintsmustmatch": "all",
     "outputs": 2,
     "customoutputs": [],
-    "outputinitially": false,
+    "outputinitially": true,
     "state_type": "str",
-    "x": 140,
-    "y": 2120,
+    "x": 120,
+    "y": 2200,
     "wires": [
       [
         "56f53c09.858104"
@@ -33160,8 +33166,8 @@
     "output_location": "payload",
     "output_location_type": "msg",
     "mustacheAltTags": false,
-    "x": 640,
-    "y": 2120,
+    "x": 680,
+    "y": 2220,
     "wires": [
       []
     ]
@@ -33185,8 +33191,8 @@
     "entity_location": "data",
     "override_data": "msg",
     "blockInputOverrides": false,
-    "x": 470,
-    "y": 2120,
+    "x": 510,
+    "y": 2220,
     "wires": [
       [
         "d77bd763.d91168"
@@ -33209,12 +33215,293 @@
     "randomLast": "5",
     "randomUnits": "seconds",
     "drop": true,
-    "x": 310,
-    "y": 2120,
+    "x": 350,
+    "y": 2220,
     "wires": [
       [
         "66be0e9d.86475"
       ]
+    ]
+  },
+  {
+    "id": "51b15e05.4f64a",
+    "type": "subflow:e2e6b53d.b747f8",
+    "z": "a0a4859f.5a2a48",
+    "name": "",
+    "env": [
+      {
+        "name": "BreakerName",
+        "value": "alarm_notication_only",
+        "type": "str"
+      }
+    ],
+    "x": 1000,
+    "y": 100,
+    "wires": [
+      [
+        "e615d2e5.a6b6e"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "9e7450fb.4d726",
+    "type": "api-current-state",
+    "z": "a3158433.9d1f78",
+    "name": "_alarm_notication_only ",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "outputs": 2,
+    "halt_if": "false",
+    "halt_if_type": "bool",
+    "halt_if_compare": "is",
+    "override_topic": false,
+    "entity_id": "input_boolean.automation_alarm_notication_only",
+    "state_type": "habool",
+    "state_location": "payload",
+    "override_payload": "msg",
+    "entity_location": "data",
+    "override_data": "msg",
+    "blockInputOverrides": false,
+    "x": 830,
+    "y": 980,
+    "wires": [
+      [
+        "b8b9d59f.cb51d8"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "b8b9d59f.cb51d8",
+    "type": "subflow:a83e69e1.4b2ab8",
+    "z": "a3158433.9d1f78",
+    "name": "Notication Only Mode",
+    "env": [
+      {
+        "name": "message",
+        "value": "Notication only mode - is disabled",
+        "type": "str"
+      },
+      {
+        "name": "who",
+        "value": "Both",
+        "type": "str"
+      }
+    ],
+    "x": 1140,
+    "y": 980,
+    "wires": []
+  },
+  {
+    "id": "9e5b6fe3.3e762",
+    "type": "trigger-state",
+    "z": "9a341993.fbc528",
+    "name": "From Off",
+    "server": "5ee4d578.f7736c",
+    "exposeToHomeAssistant": false,
+    "haConfig": [
+      {
+        "property": "name",
+        "value": ""
+      },
+      {
+        "property": "icon",
+        "value": ""
+      }
+    ],
+    "entityid": "media_player.living_room_fire_tv",
+    "entityidfiltertype": "exact",
+    "debugenabled": false,
+    "constraints": [
+      {
+        "id": "gxkweky4j4v",
+        "targetType": "this_entity",
+        "targetValue": "",
+        "propertyType": "current_state",
+        "propertyValue": "new_state.state",
+        "comparatorType": "is_not",
+        "comparatorValueDatatype": "str",
+        "comparatorValue": "idle"
+      },
+      {
+        "id": "sk2bzr6ks6d",
+        "targetType": "this_entity",
+        "targetValue": "",
+        "propertyType": "previous_state",
+        "propertyValue": "old_state.state",
+        "comparatorType": "is",
+        "comparatorValueDatatype": "str",
+        "comparatorValue": "off"
+      }
+    ],
+    "constraintsmustmatch": "all",
+    "outputs": 2,
+    "customoutputs": [],
+    "outputinitially": true,
+    "state_type": "str",
+    "x": 120,
+    "y": 2240,
+    "wires": [
+      [
+        "56f53c09.858104"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "d367e975.44df38",
+    "type": "comment",
+    "z": "9a341993.fbc528",
+    "name": "Turn on tv",
+    "info": "",
+    "x": 120,
+    "y": 2160,
+    "wires": []
+  },
+  {
+    "id": "2b25f7b.081a808",
+    "type": "trigger-state",
+    "z": "9a341993.fbc528",
+    "name": "On Off",
+    "server": "5ee4d578.f7736c",
+    "exposeToHomeAssistant": false,
+    "haConfig": [
+      {
+        "property": "name",
+        "value": ""
+      },
+      {
+        "property": "icon",
+        "value": ""
+      }
+    ],
+    "entityid": "media_player.living_room_fire_tv",
+    "entityidfiltertype": "exact",
+    "debugenabled": false,
+    "constraints": [
+      {
+        "id": "us59baz4j2",
+        "targetType": "this_entity",
+        "targetValue": "",
+        "propertyType": "current_state",
+        "propertyValue": "new_state.state",
+        "comparatorType": "is",
+        "comparatorValueDatatype": "str",
+        "comparatorValue": "off"
+      }
+    ],
+    "constraintsmustmatch": "all",
+    "outputs": 2,
+    "customoutputs": [],
+    "outputinitially": true,
+    "state_type": "str",
+    "x": 110,
+    "y": 2040,
+    "wires": [
+      [
+        "321647b6.3f2028"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "51a50a7d.f76064",
+    "type": "api-call-service",
+    "z": "9a341993.fbc528",
+    "name": "Turn Off Fire Stick",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "media_player",
+    "service": "turn_off",
+    "entityId": "media_player.living_room_fire_tv",
+    "data": "",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "",
+    "output_location_type": "none",
+    "mustacheAltTags": false,
+    "x": 1070,
+    "y": 1100,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "7a770c6e.ef1804",
+    "type": "api-current-state",
+    "z": "9a341993.fbc528",
+    "name": "Is off?",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "outputs": 2,
+    "halt_if": "off",
+    "halt_if_type": "str",
+    "halt_if_compare": "is_not",
+    "override_topic": false,
+    "entity_id": "media_player.living_room_fire_tv",
+    "state_type": "str",
+    "state_location": "payload",
+    "override_payload": "msg",
+    "entity_location": "data",
+    "override_data": "msg",
+    "blockInputOverrides": false,
+    "x": 770,
+    "y": 1100,
+    "wires": [
+      [
+        "51a50a7d.f76064"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "d07ab53b.8d42b8",
+    "type": "inject",
+    "z": "21d6efde.d0943",
+    "name": "Start Up",
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "repeat": "",
+    "crontab": "",
+    "once": true,
+    "onceDelay": "10",
+    "x": 320,
+    "y": 800,
+    "wires": [
+      [
+        "2c441a8d.3f1c86"
+      ]
+    ]
+  },
+  {
+    "id": "2c441a8d.3f1c86",
+    "type": "api-current-state",
+    "z": "21d6efde.d0943",
+    "name": "Bed Empty",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "outputs": 2,
+    "halt_if": "0",
+    "halt_if_type": "num",
+    "halt_if_compare": "is",
+    "override_topic": false,
+    "entity_id": "sensor.num_in_master_bed",
+    "state_type": "num",
+    "state_location": "payload",
+    "override_payload": "msg",
+    "entity_location": "data",
+    "override_data": "msg",
+    "blockInputOverrides": false,
+    "x": 490,
+    "y": 800,
+    "wires": [
+      [
+        "89782bb8.4daed8"
+      ],
+      []
     ]
   }
 ]

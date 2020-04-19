@@ -91,6 +91,13 @@
     name: Office Light Turn on, On Motion
     initial: on
 
+
+  automation_alarm_notication_only:
+    name: Send notication if no one home
+
+
+    
+
 ## Alerts
 
   alert_hottub_heateroff:

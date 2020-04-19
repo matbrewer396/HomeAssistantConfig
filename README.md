@@ -129,7 +129,7 @@ Pretty much the same
 * Plugs turn off when when no motion for 40 minuites. On motion these are turn back on
 
 ### Office (aka my room)
-* On door open / motion and dark in room, lights turn on - turn off after 30 min
+* On door open / motion and dark in room, lights turn on - turn off after x min
 * Voice control - "Alexa Computer On" - off hibrate my pc. Under and above desk strip light also turn on
 * On 3d printer status change, send notification
 * Voice control - "Alexa Dryer On"
