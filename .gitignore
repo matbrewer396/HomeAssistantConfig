@@ -46,3 +46,10 @@ tmp*
 
 
 /lovelace/views/old-view.yaml
+
+# temp
+
+global_config/*
+lovelace/templates/*
+lovelace/includes/*
+
