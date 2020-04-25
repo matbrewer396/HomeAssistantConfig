@@ -12,4 +12,4 @@ type: 'custom:button-card'
 color_type: blank-card
 styles:
   card:
-    - height: 10px  (now it has the same size as the blank-card)
+    - height: 10px
