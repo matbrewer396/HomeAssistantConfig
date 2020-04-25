@@ -11,6 +11,7 @@ decluttering_templates:
 title: Matt & Danni Home
 background: var(--background-image)
 views:
+  
   - !include lovelace/views/main_view.yaml
   - !include lovelace/views/controls.yaml
   - !include lovelace/views/main_menu.yaml
@@ -25,6 +26,11 @@ views:
   - !include lovelace/views/matt.yaml
   - !include lovelace/views/debug.yaml
   - !include lovelace/views/house.yaml
+  - !include lovelace/views/battery.yaml
+  - !include lovelace/views/power.yaml
+
+
+#views: !include_dir_merge_list lovelace/views/
   
-  # - !include lovelace/jimz011/views/energy.yaml
-  
+  # - !include lovelace/jimz011/views/energy.yam
+

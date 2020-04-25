@@ -1,0 +1,73 @@
+# lovelace_gen
+
+title: Battery
+path: battery
+icon: mdi:battery
+cards: 
+  - type: vertical-stack
+    cards:
+      - type: custom:decluttering-card
+        template: quick-access-menu 
+      - type: custom:layout-card
+        cards:
+          - type: custom:auto-entities
+            filter:
+              exclude:
+                - entity_id: '*battery_state*'
+                - entity_id: '*charging*'
+                - entity_id: '*phone*'
+                - name: '*phone*'
+              
+              include:
+                - entity_id: '*battery*'
+                  # options:
+                  #   tap_action:
+                  #     action: toggle
+                  # options:
+                  #   type: custom:decluttering-card
+                  #   template: mini-graph 
+                  #   variables:
+                  #     - entities: entity_id
+                  #     - name: Power Usages
+                  #     - line_color: '#00ff51'
+                  #     - font_size: 53
+                  #     - decimals: 1
+                  #     - graph: bar
+                  #     - extrema: true
+
+                    # - !include '../templates/button_popup_only.yaml'
+                    # - entity: this.entity_id
+                    #   show_last_changed: false
+                    #   show_label: false
+                    #   template: more_info_popup.yaml
+                    #   icon: "'[[[ if (states[`this.entity_id`].state < 10) return `mdi:battery-10`; if (states[`this.entity_id`].state < 20) return `mdi:battery-20`; if (states[`this.entity_id`].state < 30) return `mdi:battery-30`; if (states[`this.entity_id`].state < 40) return `mdi:battery-40`; if (states[`this.entity_id`].state < 50) return `mdi:battery-50`; if (states[`this.entity_id`].state < 60) return `mdi:battery-60`; if (states[`this.entity_id`].state < 70) return `mdi:battery-70`; if (states[`this.entity_id`].state < 80) return `mdi:battery-80`; if (states[`this.entity_id`].state < 90) return `mdi:battery-90`; return `mdi:battery`; ]]]'"
+                - type: custom:button-card
+                  color_type: blank-card
+                  aspect_ratio: 1/1
+            show_empty: false
+            sort:
+              method: state
+              numeric: true
+              reverse: true
+            # card:
+            #   type: custom:layout-card
+            #   min_columns: 3
+            #   max_columns: 3
+            #   justify_content: start
+            #   layout: horizontal
+            # card:
+            #   show_header_toggle: false
+            #   title: Battery Status
+            #   type: entities
+            card:
+              type: glance
+              columns: 3
+              show_empty: true
+              style: |
+                ha-card {
+                  border-radius: var(--border-radius);
+                  background: var(--homekit-card-off);
+                  color: var(--name-color-off);
+                  font-size: 12px;
+                  font-family: Helvetica;
+                }

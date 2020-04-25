@@ -1,0 +1,49 @@
+title: Power
+path: power
+icon: mdi:battery
+cards: 
+  - type: vertical-stack
+    cards:
+      - type: custom:decluttering-card
+        template: quick-access-menu 
+      - type: custom:layout-card
+        cards:
+          - type: custom:auto-entities
+            filter:
+              # exclude:
+              #   - entity_id: '*battery_state*'
+              #   - entity_id: '*charging*'
+              #   - entity_id: '*phone*'
+              #   - name: '*phone*'
+              
+              include:
+                - entity_id: '*energy_power'
+                - type: custom:button-card
+                  color_type: blank-card
+                  aspect_ratio: 1/1
+            show_empty: false
+            sort:
+              method: state
+              numeric: true
+            # card:
+            #   type: custom:layout-card
+            #   min_columns: 3
+            #   max_columns: 3
+            #   justify_content: start
+            #   layout: horizontal
+            # card:
+            #   show_header_toggle: false
+            #   title: Battery Status
+            #   type: entities
+            card:
+              type: glance
+              columns: 3
+              show_empty: true
+              style: |
+                ha-card {
+                  border-radius: var(--border-radius);
+                  background: var(--homekit-card-off);
+                  color: var(--name-color-off);
+                  font-size: 12px;
+                  font-family: Helvetica;
+                }

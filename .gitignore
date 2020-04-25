@@ -52,4 +52,5 @@ tmp*
 global_config/*
 lovelace/templates/*
 lovelace/includes/*
-
+packages/homekit_infused/configuration.yaml
+packages/homekit_infused/hki_groups.yaml
