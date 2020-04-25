@@ -102,7 +102,7 @@ cards:
             template: mini-graph 
             variables:
               - entities:
-                  - sensor.bathroom_temperature
+                  - sensor.bath_room_temperature	
               - name: Bathroom
               - line_color: '#ffb414'
               - font_size: 53

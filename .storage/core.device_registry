@@ -721,11 +721,11 @@
                 "identifiers": [
                     [
                         "deconz",
-                        "00212E05009D"
+                        "00212EFFFF05009D"
                     ],
                     [
                         "deconz",
-                        "00212EFFFF05009D"
+                        "00212E05009D"
                     ]
                 ],
                 "manufacturer": "Dresden Elektronik",
@@ -794,12 +794,12 @@
                 "id": "b264c6267bf2439d9dab51da771fdabb",
                 "identifiers": [
                     [
-                        "device_id",
-                        "c6e39b53af1c42eca4431f121aadfb98"
-                    ],
-                    [
                         "webhook_id",
                         "215e302ff7952a29feebb9e5bdbb845054724dcc244da5d1586694bfb351b765"
+                    ],
+                    [
+                        "device_id",
+                        "c6e39b53af1c42eca4431f121aadfb98"
                     ]
                 ],
                 "manufacturer": "Apple",
@@ -1118,7 +1118,7 @@
                 ],
                 "manufacturer": "LUMI",
                 "model": "lumi.sensor_magnet.aq2",
-                "name": "Window / Door Sensor",
+                "name": "Microwave Window / Door Sensor",
                 "name_by_user": null,
                 "sw_version": "20161128",
                 "via_device_id": "49fa8d7b21ef483c84056b5b0e1831fa"
@@ -1601,11 +1601,11 @@
                     ],
                     [
                         "mqtt",
-                        "bt-mqtt-gateway/C4-7C-8D-6A-42-10/miflora_herbs"
+                        "bt-mqtt-gateway/C4-7C-8D-6A-42-10/miflora_aloevera"
                     ],
                     [
                         "mqtt",
-                        "bt-mqtt-gateway/C4-7C-8D-6A-42-10/miflora_aloevera"
+                        "bt-mqtt-gateway/C4-7C-8D-6A-42-10/miflora_herbs"
                     ]
                 ],
                 "manufacturer": "Xiaomi",

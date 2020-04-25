@@ -19577,8 +19577,7 @@
     "y": 1160,
     "wires": [
       [
-        "8c3e0d70.aec22",
-        "7a770c6e.ef1804"
+        "8c3e0d70.aec22"
       ],
       [
         "5c0d216f.67deb",
@@ -20866,28 +20865,6 @@
     "wires": []
   },
   {
-    "id": "51d10a3.ede8bf4",
-    "type": "api-call-service",
-    "z": "80866e71.966c6",
-    "name": "TV On/Off",
-    "server": "5ee4d578.f7736c",
-    "version": "1",
-    "service_domain": "switch",
-    "service": "toggle",
-    "entityId": "switch.tv",
-    "data": "",
-    "dataType": "json",
-    "mergecontext": "",
-    "output_location": "payload",
-    "output_location_type": "msg",
-    "mustacheAltTags": false,
-    "x": 320,
-    "y": 800,
-    "wires": [
-      []
-    ]
-  },
-  {
     "id": "ff0503fb.8cdfb",
     "type": "alexa-home",
     "z": "80866e71.966c6",
@@ -20900,24 +20877,9 @@
     "y": 800,
     "wires": [
       [
-        "51d10a3.ede8bf4",
-        "faa2a401.7af228"
+        "f68efe92.f2def"
       ]
     ]
-  },
-  {
-    "id": "faa2a401.7af228",
-    "type": "debug",
-    "z": "80866e71.966c6",
-    "name": "",
-    "active": true,
-    "tosidebar": true,
-    "console": false,
-    "tostatus": false,
-    "complete": "false",
-    "x": 330,
-    "y": 760,
-    "wires": []
   },
   {
     "id": "7513ff8e.927e4",
@@ -30835,7 +30797,7 @@
     "id": "8e4230b9.58f06",
     "type": "link out",
     "z": "9a341993.fbc528",
-    "name": "TV On",
+    "name": "TV Is now On",
     "links": [
       "35934b6b.88af44",
       "f3f9e3f0.7dc0a"
@@ -31074,8 +31036,8 @@
     "output_location": "payload",
     "output_location_type": "msg",
     "mustacheAltTags": false,
-    "x": 490,
-    "y": 2580,
+    "x": 750,
+    "y": 2740,
     "wires": [
       []
     ]
@@ -31182,14 +31144,14 @@
     "z": "6e74caff.7ad1f4",
     "name": "",
     "env": [],
-    "x": 260,
-    "y": 2600,
+    "x": 190,
+    "y": 2440,
     "wires": [
       [
-        "a2a8b688.0a7b58",
         "155f91a5.24f70e",
         "c1ec00ec.750c6",
-        "c915e43b.832848"
+        "c915e43b.832848",
+        "e73a2bf6.84b5d8"
       ],
       []
     ]
@@ -31916,13 +31878,14 @@
     "bytopic": "all",
     "name": "",
     "x": 270,
-    "y": 2860,
+    "y": 2940,
     "wires": [
       [
         "8a6a1096.31559",
         "ed99d640.d55998",
         "43a82c49.740a84",
-        "9015c87c.b8b528"
+        "9015c87c.b8b528",
+        "ee63abb8.30fef8"
       ]
     ]
   },
@@ -31944,7 +31907,7 @@
     "output_location_type": "msg",
     "mustacheAltTags": false,
     "x": 490,
-    "y": 2820,
+    "y": 2900,
     "wires": [
       []
     ]
@@ -31967,7 +31930,7 @@
     "output_location_type": "msg",
     "mustacheAltTags": false,
     "x": 480,
-    "y": 2860,
+    "y": 2940,
     "wires": [
       []
     ]
@@ -31990,7 +31953,7 @@
     "output_location_type": "msg",
     "mustacheAltTags": false,
     "x": 480,
-    "y": 2900,
+    "y": 2980,
     "wires": [
       []
     ]
@@ -32013,7 +31976,7 @@
     "output_location_type": "msg",
     "mustacheAltTags": false,
     "x": 480,
-    "y": 2940,
+    "y": 3020,
     "wires": [
       []
     ]
@@ -33065,7 +33028,7 @@
     "outputinitially": true,
     "state_type": "str",
     "x": 120,
-    "y": 2000,
+    "y": 2320,
     "wires": [
       [
         "321647b6.3f2028"
@@ -33080,7 +33043,7 @@
     "name": "Turn off tv when idle",
     "info": "",
     "x": 150,
-    "y": 1960,
+    "y": 2280,
     "wires": []
   },
   {
@@ -33090,7 +33053,7 @@
     "name": "",
     "env": [],
     "x": 330,
-    "y": 2000,
+    "y": 2320,
     "wires": [
       []
     ]
@@ -33135,6 +33098,16 @@
         "comparatorType": "is_not",
         "comparatorValueDatatype": "str",
         "comparatorValue": "off"
+      },
+      {
+        "id": "su36mf4imrj",
+        "targetType": "this_entity",
+        "targetValue": "",
+        "propertyType": "current_state",
+        "propertyValue": "new_state.state",
+        "comparatorType": "is_not",
+        "comparatorValueDatatype": "str",
+        "comparatorValue": "unavailable"
       }
     ],
     "constraintsmustmatch": "all",
@@ -33143,7 +33116,7 @@
     "outputinitially": true,
     "state_type": "str",
     "x": 120,
-    "y": 2200,
+    "y": 2520,
     "wires": [
       [
         "56f53c09.858104"
@@ -33168,7 +33141,7 @@
     "output_location_type": "msg",
     "mustacheAltTags": false,
     "x": 680,
-    "y": 2220,
+    "y": 2540,
     "wires": [
       []
     ]
@@ -33193,7 +33166,7 @@
     "override_data": "msg",
     "blockInputOverrides": false,
     "x": 510,
-    "y": 2220,
+    "y": 2540,
     "wires": [
       [
         "d77bd763.d91168"
@@ -33217,7 +33190,7 @@
     "randomUnits": "seconds",
     "drop": true,
     "x": 350,
-    "y": 2220,
+    "y": 2540,
     "wires": [
       [
         "66be0e9d.86475"
@@ -33334,6 +33307,16 @@
         "comparatorType": "is",
         "comparatorValueDatatype": "str",
         "comparatorValue": "off"
+      },
+      {
+        "id": "kjvkix8duk",
+        "targetType": "this_entity",
+        "targetValue": "",
+        "propertyType": "current_state",
+        "propertyValue": "new_state.state",
+        "comparatorType": "is_not",
+        "comparatorValueDatatype": "str",
+        "comparatorValue": "unavailable"
       }
     ],
     "constraintsmustmatch": "all",
@@ -33342,7 +33325,7 @@
     "outputinitially": true,
     "state_type": "str",
     "x": 120,
-    "y": 2240,
+    "y": 2560,
     "wires": [
       [
         "56f53c09.858104"
@@ -33357,7 +33340,7 @@
     "name": "Turn on tv",
     "info": "",
     "x": 120,
-    "y": 2160,
+    "y": 2480,
     "wires": []
   },
   {
@@ -33398,7 +33381,7 @@
     "outputinitially": true,
     "state_type": "str",
     "x": 110,
-    "y": 2040,
+    "y": 2360,
     "wires": [
       [
         "321647b6.3f2028"
@@ -33423,7 +33406,7 @@
     "output_location": "",
     "output_location_type": "none",
     "mustacheAltTags": false,
-    "x": 1070,
+    "x": 1250,
     "y": 1100,
     "wires": [
       []
@@ -33448,7 +33431,7 @@
     "entity_location": "data",
     "override_data": "msg",
     "blockInputOverrides": false,
-    "x": 770,
+    "x": 890,
     "y": 1100,
     "wires": [
       [
@@ -33517,10 +33500,320 @@
     "y": 2640,
     "wires": [
       [
-        "a2a8b688.0a7b58",
         "155f91a5.24f70e",
         "c1ec00ec.750c6",
-        "c915e43b.832848"
+        "c915e43b.832848",
+        "e73a2bf6.84b5d8"
+      ]
+    ]
+  },
+  {
+    "id": "9bc67dac.7e623",
+    "type": "link out",
+    "z": "80866e71.966c6",
+    "name": "Alex Inbound - Tv ON",
+    "links": [
+      "ee32c760.c5da28"
+    ],
+    "x": 515,
+    "y": 780,
+    "wires": []
+  },
+  {
+    "id": "f68efe92.f2def",
+    "type": "subflow:fec14295.8a46d",
+    "z": "80866e71.966c6",
+    "name": "",
+    "x": 320,
+    "y": 800,
+    "wires": [
+      [
+        "9bc67dac.7e623"
+      ],
+      [
+        "795286f2.ecd0c8"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "795286f2.ecd0c8",
+    "type": "link out",
+    "z": "80866e71.966c6",
+    "name": "Alex Inbound - Tv Off",
+    "links": [
+      "a671d8a0.8b37f8"
+    ],
+    "x": 515,
+    "y": 820,
+    "wires": []
+  },
+  {
+    "id": "ae6cbcd9.0f76b",
+    "type": "comment",
+    "z": "9a341993.fbc528",
+    "name": "Alexa",
+    "info": "",
+    "x": 130,
+    "y": 2060,
+    "wires": []
+  },
+  {
+    "id": "a671d8a0.8b37f8",
+    "type": "link in",
+    "z": "9a341993.fbc528",
+    "name": "Turn Off Tv",
+    "links": [
+      "795286f2.ecd0c8"
+    ],
+    "x": 95,
+    "y": 2120,
+    "wires": [
+      [
+        "7314ddef.dc1a84",
+        "49e915b3.b8b47c"
+      ]
+    ]
+  },
+  {
+    "id": "7314ddef.dc1a84",
+    "type": "subflow:50a84f0.9f6dbb",
+    "z": "9a341993.fbc528",
+    "name": "",
+    "env": [],
+    "x": 510,
+    "y": 2120,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "433179bb.7f7688",
+    "type": "api-call-service",
+    "z": "9a341993.fbc528",
+    "name": "TV On/Off",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "switch",
+    "service": "toggle",
+    "entityId": "switch.tv",
+    "data": "",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "payload",
+    "output_location_type": "msg",
+    "mustacheAltTags": false,
+    "x": 500,
+    "y": 2200,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "ee32c760.c5da28",
+    "type": "link in",
+    "z": "9a341993.fbc528",
+    "name": "",
+    "links": [
+      "9bc67dac.7e623"
+    ],
+    "x": 95,
+    "y": 2200,
+    "wires": [
+      [
+        "4731a02c.b46cf"
+      ]
+    ]
+  },
+  {
+    "id": "4731a02c.b46cf",
+    "type": "api-current-state",
+    "z": "9a341993.fbc528",
+    "name": "Is Off",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "outputs": 2,
+    "halt_if": "False",
+    "halt_if_type": "str",
+    "halt_if_compare": "is",
+    "override_topic": false,
+    "entity_id": "input_select.tv_state",
+    "state_type": "str",
+    "state_location": "payload",
+    "override_payload": "msg",
+    "entity_location": "data",
+    "override_data": "msg",
+    "blockInputOverrides": false,
+    "x": 310,
+    "y": 2200,
+    "wires": [
+      [
+        "433179bb.7f7688",
+        "3cd3065a.24292a"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "49e915b3.b8b47c",
+    "type": "api-call-service",
+    "z": "9a341993.fbc528",
+    "name": "Turn On Fire Stick",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "media_player",
+    "service": "turn_on",
+    "entityId": "media_player.living_room_fire_tv",
+    "data": "",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "",
+    "output_location_type": "none",
+    "mustacheAltTags": false,
+    "x": 530,
+    "y": 2160,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "3cd3065a.24292a",
+    "type": "api-call-service",
+    "z": "9a341993.fbc528",
+    "name": "Turn Off Fire Stick",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "media_player",
+    "service": "turn_off",
+    "entityId": "media_player.living_room_fire_tv",
+    "data": "",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "",
+    "output_location_type": "none",
+    "mustacheAltTags": false,
+    "x": 530,
+    "y": 2240,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "e73a2bf6.84b5d8",
+    "type": "ha-wait-until",
+    "z": "6e74caff.7ad1f4",
+    "name": "Wait for door to open",
+    "server": "5ee4d578.f7736c",
+    "outputs": 1,
+    "entityId": "binary_sensor.mircowave_door",
+    "entityIdFilterType": "exact",
+    "property": "state",
+    "comparator": "is",
+    "value": "on",
+    "valueType": "str",
+    "timeout": 0,
+    "timeoutType": "num",
+    "timeoutUnits": "hours",
+    "entityLocation": "",
+    "entityLocationType": "none",
+    "checkCurrentState": true,
+    "blockInputOverrides": true,
+    "x": 500,
+    "y": 2740,
+    "wires": [
+      [
+        "a2a8b688.0a7b58"
+      ]
+    ]
+  },
+  {
+    "id": "ee63abb8.30fef8",
+    "type": "change",
+    "z": "6e74caff.7ad1f4",
+    "name": "Reset",
+    "rules": [
+      {
+        "t": "set",
+        "p": "reset",
+        "pt": "msg",
+        "to": "true",
+        "tot": "bool"
+      }
+    ],
+    "action": "",
+    "property": "",
+    "from": "",
+    "to": "",
+    "reg": false,
+    "x": 370,
+    "y": 2840,
+    "wires": [
+      [
+        "e73a2bf6.84b5d8"
+      ]
+    ]
+  },
+  {
+    "id": "c5c6a7d6.c84f48",
+    "type": "inject",
+    "z": "6e74caff.7ad1f4",
+    "name": "",
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "x": 120,
+    "y": 2800,
+    "wires": [
+      [
+        "7ffa086a.2667e8"
+      ]
+    ]
+  },
+  {
+    "id": "cf3bde13.c70a4",
+    "type": "inject",
+    "z": "6e74caff.7ad1f4",
+    "name": "",
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "x": 140,
+    "y": 2560,
+    "wires": [
+      [
+        "6c7e6965.ffe1c8"
+      ]
+    ]
+  },
+  {
+    "id": "5689ccb9.92d694",
+    "type": "inject",
+    "z": "6e74caff.7ad1f4",
+    "name": "",
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "x": 160,
+    "y": 2740,
+    "wires": [
+      [
+        "ee63abb8.30fef8",
+        "8a6a1096.31559"
       ]
     ]
   }

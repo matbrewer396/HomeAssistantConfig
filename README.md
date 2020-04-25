@@ -127,6 +127,7 @@ Pretty much the same
 * On washing machine status changed, notification is sent and alex say completed
 * Plugs turn off when good night / bye triggered. On motion these are turn back on
 * Plugs turn off when when no motion for 40 minuites. On motion these are turn back on
+* Microwave smarty plug only come on when the door opens 
 
 ### Office (aka my room)
 * On door open / motion and dark in room, lights turn on - turn off after x min

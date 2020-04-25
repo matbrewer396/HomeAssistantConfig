@@ -6,5 +6,5 @@
       hot_tube_cost:
         friendly_name: "Hot Tub Cost"
         value_template: >
-          {{(states("sensor.plug_02_energy_today")|float * (states("input_number.kwh_rate")|float /100) )|round(2)}} 
+          {{(states("sensor.plug_02_energy_total")|float * (states("input_number.kwh_rate")|float /100) )|round(2)}} 
         unit_of_measurement: "£"
