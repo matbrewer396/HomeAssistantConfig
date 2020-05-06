@@ -121,7 +121,7 @@
   {
     "id": "d1172b8b.3d3298",
     "type": "tab",
-    "label": "DoorBell",
+    "label": "Hallway / DoorBell",
     "disabled": false,
     "info": ""
   },
@@ -171,7 +171,7 @@
     "id": "d3802138.c1529",
     "type": "tab",
     "label": "Test - Is Dask",
-    "disabled": true,
+    "disabled": false,
     "info": ""
   },
   {
@@ -227,6 +227,20 @@
     "id": "ea5aca0.33b1a38",
     "type": "tab",
     "label": "Bin Day",
+    "disabled": false,
+    "info": ""
+  },
+  {
+    "id": "9b87d885.88c89",
+    "type": "tab",
+    "label": "Flow 1",
+    "disabled": false,
+    "info": ""
+  },
+  {
+    "id": "3861180c.88c7e8",
+    "type": "tab",
+    "label": "Flow 2",
     "disabled": false,
     "info": ""
   },
@@ -515,7 +529,7 @@
     ],
     "out": [
       {
-        "x": 920,
+        "x": 1160,
         "y": 80,
         "wires": [
           {
@@ -525,35 +539,35 @@
           {
             "id": "228d3470.7e90ac",
             "port": 0
+          },
+          {
+            "id": "8c895b54.0a9588",
+            "port": 0
           }
         ]
       },
       {
-        "x": 920,
+        "x": 1160,
         "y": 140,
         "wires": [
           {
             "id": "76978b35.4c91e4",
             "port": 1
+          },
+          {
+            "id": "8c895b54.0a9588",
+            "port": 1
           }
         ]
       },
       {
-        "x": 920,
-        "y": 200,
-        "wires": [
-          {
-            "id": "76978b35.4c91e4",
-            "port": 2
-          },
-          {
-            "id": "8963696a.ae3798",
-            "port": 0
-          }
-        ]
+        "x": 1140,
+        "y": 300,
+        "wires": []
       }
     ],
     "env": [],
+    "color": "#DDAA99",
     "outputLabels": [
       "True",
       "False",
@@ -953,6 +967,38 @@
         }
       ]
     }
+  },
+  {
+    "id": "42cea594.a055ac",
+    "type": "subflow",
+    "name": "Should Office Light Come On",
+    "info": "",
+    "category": "",
+    "in": [
+      {
+        "x": 80,
+        "y": 220,
+        "wires": [
+          {
+            "id": "bf61daf5.994bf8"
+          }
+        ]
+      }
+    ],
+    "out": [
+      {
+        "x": 1360,
+        "y": 200,
+        "wires": [
+          {
+            "id": "f11b6517.78b028",
+            "port": 0
+          }
+        ]
+      }
+    ],
+    "env": [],
+    "color": "#DDAA99"
   },
   {
     "id": "5ee4d578.f7736c",
@@ -2116,7 +2162,7 @@
     "checkall": "true",
     "repair": false,
     "outputs": 1,
-    "x": 450,
+    "x": 730,
     "y": 180,
     "wires": [
       [
@@ -2623,7 +2669,18 @@
     "z": "a068bd5.28a8d4",
     "name": "Hallway Motion",
     "server": "5ee4d578.f7736c",
-    "version": "1",
+    "version": 1,
+    "exposeToHomeAssistant": false,
+    "haConfig": [
+      {
+        "property": "name",
+        "value": ""
+      },
+      {
+        "property": "icon",
+        "value": ""
+      }
+    ],
     "entityidfilter": "binary_sensor.hallway_motion_sensor",
     "entityidfiltertype": "substring",
     "outputinitially": false,
@@ -4758,7 +4815,7 @@
     "from": "",
     "to": "",
     "reg": false,
-    "x": 850,
+    "x": 1130,
     "y": 220,
     "wires": [
       [
@@ -5819,8 +5876,7 @@
     "links": [
       "3d0ad1be.cff38e",
       "3f687ec7.49a272",
-      "688dc601.8b0c68",
-      "e947642c.3c9798"
+      "688dc601.8b0c68"
     ],
     "x": 975,
     "y": 1540,
@@ -6555,7 +6611,7 @@
     "type": "subflow:f5eab19a.7cf17",
     "z": "d1172b8b.3d3298",
     "name": "",
-    "x": 330,
+    "x": 340,
     "y": 80,
     "wires": []
   },
@@ -7828,7 +7884,7 @@
     "outputs": 1,
     "output_only_on_state_change": false,
     "x": 200,
-    "y": 700,
+    "y": 580,
     "wires": [
       [
         "53670de2.10b724"
@@ -7855,7 +7911,7 @@
     "to": "",
     "reg": false,
     "x": 470,
-    "y": 700,
+    "y": 580,
     "wires": [
       [
         "64a723bb.a421cc"
@@ -7953,7 +8009,7 @@
     "type": "subflow:47bc2d66.1132e4",
     "z": "d1172b8b.3d3298",
     "name": "",
-    "x": 1270,
+    "x": 1550,
     "y": 220,
     "wires": [
       []
@@ -9330,7 +9386,7 @@
     "outputs": 1,
     "output_only_on_state_change": false,
     "x": 170,
-    "y": 560,
+    "y": 440,
     "wires": [
       [
         "46820b01.32dab4",
@@ -9358,7 +9414,7 @@
     "to": "",
     "reg": false,
     "x": 490,
-    "y": 560,
+    "y": 440,
     "wires": [
       [
         "64a723bb.a421cc"
@@ -9380,7 +9436,7 @@
       "23f2e7cd.7ad698"
     ],
     "x": 395,
-    "y": 520,
+    "y": 400,
     "wires": []
   },
   {
@@ -9392,10 +9448,11 @@
       "c215726b.e66d5",
       "a2f7cd26.7ec92",
       "c3e890f4.9c742",
-      "e947642c.3c9798",
       "ba09070a.220758",
       "cb9341a7.ef2ad",
-      "b6655c35.3097a"
+      "b6655c35.3097a",
+      "1430c409.2b12ec",
+      "e947642c.3c9798"
     ],
     "x": 395,
     "y": 800,
@@ -11875,7 +11932,8 @@
     "z": "21d6efde.d0943",
     "name": "Hallway Motion - Action",
     "links": [
-      "e04902ac.5849e"
+      "e04902ac.5849e",
+      "ddc05dd0.50814"
     ],
     "x": 75,
     "y": 1060,
@@ -12062,7 +12120,8 @@
     "z": "a0cdc0f9.a362b",
     "name": "Hallway Motion - Action",
     "links": [
-      "e04902ac.5849e"
+      "e04902ac.5849e",
+      "ddc05dd0.50814"
     ],
     "x": 135,
     "y": 300,
@@ -12418,37 +12477,6 @@
     "wires": []
   },
   {
-    "id": "b28527ed.3a86f8",
-    "type": "switch",
-    "z": "acf12371.2c1ae",
-    "name": "Is Open?",
-    "property": "payload",
-    "propertyType": "msg",
-    "rules": [
-      {
-        "t": "eq",
-        "v": "on",
-        "vt": "str"
-      },
-      {
-        "t": "eq",
-        "v": "off",
-        "vt": "str"
-      }
-    ],
-    "checkall": "true",
-    "repair": false,
-    "outputs": 2,
-    "x": 220,
-    "y": 640,
-    "wires": [
-      [
-        "a6585e65.8f1eb"
-      ],
-      []
-    ]
-  },
-  {
     "id": "2b73f0a0.724a4",
     "type": "api-call-service",
     "z": "acf12371.2c1ae",
@@ -12465,38 +12493,9 @@
     "output_location": "payload",
     "output_location_type": "msg",
     "mustacheAltTags": false,
-    "x": 1501,
-    "y": 640,
+    "x": 950,
+    "y": 620,
     "wires": [
-      []
-    ]
-  },
-  {
-    "id": "5ec4b1fb.2f549",
-    "type": "api-current-state",
-    "z": "acf12371.2c1ae",
-    "name": "Is office light strip",
-    "server": "5ee4d578.f7736c",
-    "version": 1,
-    "outputs": 2,
-    "halt_if": "false",
-    "halt_if_type": "bool",
-    "halt_if_compare": "is",
-    "override_topic": true,
-    "entity_id": "light.hue_lightstrip_plus_1_2",
-    "state_type": "habool",
-    "state_location": "payload",
-    "override_payload": "msg",
-    "entity_location": "data",
-    "override_data": "msg",
-    "blockInputOverrides": false,
-    "x": 1221,
-    "y": 640,
-    "wires": [
-      [
-        "2b73f0a0.724a4",
-        "3c8bb36d.6841fc"
-      ],
       []
     ]
   },
@@ -12521,11 +12520,11 @@
       "8c42e0e.e62702",
       "aa78949c.41c9a8"
     ],
-    "x": 55,
-    "y": 640,
+    "x": 161,
+    "y": 680,
     "wires": [
       [
-        "b28527ed.3a86f8"
+        "bb9565df.a2f8c8"
       ]
     ]
   },
@@ -12582,7 +12581,9 @@
     "wires": [
       [],
       [],
-      []
+      [
+        "8c895b54.0a9588"
+      ]
     ]
   },
   {
@@ -16779,9 +16780,7 @@
       "a76f3a0f.d1fb38",
       "b46a8ce3.5b6ed",
       "c215726b.e66d5",
-      "dfd9170e.807548",
-      "23f2e7cd.7ad698",
-      "b6655c35.3097a"
+      "dfd9170e.807548"
     ],
     "x": 395,
     "y": 1040,
@@ -17662,7 +17661,7 @@
         "value": "Both"
       }
     ],
-    "x": 700,
+    "x": 980,
     "y": 180,
     "wires": []
   },
@@ -24191,10 +24190,12 @@
     "name": "",
     "scope": null,
     "uncaught": false,
-    "x": 680,
-    "y": 200,
+    "x": 360,
+    "y": 220,
     "wires": [
-      []
+      [
+        "8c895b54.0a9588"
+      ]
     ]
   },
   {
@@ -27382,7 +27383,7 @@
     "output_location": "payload",
     "output_location_type": "msg",
     "mustacheAltTags": false,
-    "x": 710,
+    "x": 990,
     "y": 260,
     "wires": [
       []
@@ -27402,8 +27403,8 @@
     "reset": "",
     "bytopic": "all",
     "name": "",
-    "x": 690,
-    "y": 300,
+    "x": 970,
+    "y": 320,
     "wires": [
       [
         "43cd373b.972e08"
@@ -27427,8 +27428,8 @@
     "output_location": "payload",
     "output_location_type": "msg",
     "mustacheAltTags": false,
-    "x": 950,
-    "y": 300,
+    "x": 1210,
+    "y": 320,
     "wires": [
       []
     ]
@@ -27437,13 +27438,12 @@
     "id": "e947642c.3c9798",
     "type": "link in",
     "z": "d1172b8b.3d3298",
-    "name": "",
+    "name": "Keep Light on",
     "links": [
-      "82e7bf66.f63d3",
       "cc2fcdb8.ee0ea",
       "e04902ac.5849e"
     ],
-    "x": 300,
+    "x": 295,
     "y": 300,
     "wires": [
       [
@@ -27470,7 +27470,7 @@
     "from": "",
     "to": "",
     "reg": false,
-    "x": 460,
+    "x": 740,
     "y": 300,
     "wires": [
       [
@@ -27573,7 +27573,7 @@
     "outputs": 1,
     "output_only_on_state_change": true,
     "x": 200,
-    "y": 660,
+    "y": 540,
     "wires": [
       [
         "67a90e6f.5920c",
@@ -27601,7 +27601,7 @@
     "to": "",
     "reg": false,
     "x": 470,
-    "y": 660,
+    "y": 540,
     "wires": [
       [
         "64a723bb.a421cc"
@@ -27990,7 +27990,7 @@
     "repair": false,
     "outputs": 1,
     "x": 450,
-    "y": 620,
+    "y": 500,
     "wires": [
       [
         "b4657f46.153e"
@@ -28006,7 +28006,7 @@
       "a4a986e.5cee778"
     ],
     "x": 580,
-    "y": 620,
+    "y": 500,
     "wires": []
   },
   {
@@ -28236,36 +28236,6 @@
     ]
   },
   {
-    "id": "59628c2c.735854",
-    "type": "api-current-state",
-    "z": "acf12371.2c1ae",
-    "name": "Is it light",
-    "server": "5ee4d578.f7736c",
-    "version": 1,
-    "outputs": 2,
-    "halt_if": "1.6",
-    "halt_if_type": "num",
-    "halt_if_compare": "lt",
-    "override_topic": false,
-    "entity_id": "sensor.office_light_level",
-    "state_type": "num",
-    "state_location": "payload",
-    "override_payload": "msg",
-    "entity_location": "data",
-    "override_data": "msg",
-    "blockInputOverrides": true,
-    "x": 740,
-    "y": 640,
-    "wires": [
-      [
-        "5ec4b1fb.2f549"
-      ],
-      [
-        "3ac03ac8.fb0e46"
-      ]
-    ]
-  },
-  {
     "id": "3c8bb36d.6841fc",
     "type": "trigger",
     "z": "acf12371.2c1ae",
@@ -28279,8 +28249,8 @@
     "reset": "",
     "bytopic": "all",
     "name": "",
-    "x": 1481,
-    "y": 680,
+    "x": 930,
+    "y": 660,
     "wires": [
       [
         "bc54c26f.5a203"
@@ -28304,8 +28274,8 @@
     "output_location": "payload",
     "output_location_type": "msg",
     "mustacheAltTags": false,
-    "x": 1701,
-    "y": 720,
+    "x": 1370,
+    "y": 800,
     "wires": [
       []
     ]
@@ -28316,6 +28286,17 @@
     "z": "acf12371.2c1ae",
     "name": "Light Strips On",
     "server": "5ee4d578.f7736c",
+    "exposeToHomeAssistant": false,
+    "haConfig": [
+      {
+        "property": "name",
+        "value": ""
+      },
+      {
+        "property": "icon",
+        "value": ""
+      }
+    ],
     "entityid": "light.hue_lightstrip_plus_1_2",
     "entityidfiltertype": "exact",
     "debugenabled": false,
@@ -28336,8 +28317,8 @@
     "customoutputs": [],
     "outputinitially": false,
     "state_type": "habool",
-    "x": 1060,
-    "y": 700,
+    "x": 320,
+    "y": 800,
     "wires": [
       [
         "e8a55e90.6643a"
@@ -28364,34 +28345,14 @@
     "from": "",
     "to": "",
     "reg": false,
-    "x": 1281,
-    "y": 700,
+    "x": 650,
+    "y": 800,
     "wires": [
       [
         "3c8bb36d.6841fc",
-        "bc54c26f.5a203"
+        "bc54c26f.5a203",
+        "8ba694b1.ff3688"
       ]
-    ]
-  },
-  {
-    "id": "a6585e65.8f1eb",
-    "type": "subflow:e2e6b53d.b747f8",
-    "z": "acf12371.2c1ae",
-    "name": "",
-    "env": [
-      {
-        "name": "BreakerName",
-        "value": "officelightonmotion",
-        "type": "str"
-      }
-    ],
-    "x": 500,
-    "y": 640,
-    "wires": [
-      [
-        "59628c2c.735854"
-      ],
-      []
     ]
   },
   {
@@ -28828,34 +28789,6 @@
     "x": 1160,
     "y": 1040,
     "wires": [
-      []
-    ]
-  },
-  {
-    "id": "3ac03ac8.fb0e46",
-    "type": "api-current-state",
-    "z": "acf12371.2c1ae",
-    "name": "office light  on?",
-    "server": "5ee4d578.f7736c",
-    "version": 1,
-    "outputs": 2,
-    "halt_if": "true",
-    "halt_if_type": "bool",
-    "halt_if_compare": "is",
-    "override_topic": true,
-    "entity_id": "light.office_light",
-    "state_type": "habool",
-    "state_location": "payload",
-    "override_payload": "msg",
-    "entity_location": "data",
-    "override_data": "msg",
-    "blockInputOverrides": false,
-    "x": 960,
-    "y": 600,
-    "wires": [
-      [
-        "5ec4b1fb.2f549"
-      ],
       []
     ]
   },
@@ -30275,7 +30208,7 @@
     "outputs": 1,
     "output_only_on_state_change": false,
     "x": 150,
-    "y": 480,
+    "y": 360,
     "wires": [
       [
         "5d0a1c2a.272a64",
@@ -30310,7 +30243,7 @@
     "to": "",
     "reg": false,
     "x": 460,
-    "y": 440,
+    "y": 320,
     "wires": [
       [
         "64a723bb.a421cc"
@@ -30326,7 +30259,7 @@
       "4288444c.f3f9bc"
     ],
     "x": 395,
-    "y": 480,
+    "y": 360,
     "wires": []
   },
   {
@@ -30602,7 +30535,8 @@
     "name": "Action - BedRoom Light Auto Off (Trigged safe)",
     "links": [
       "90fde8f7.a26cb8",
-      "e04902ac.5849e"
+      "e04902ac.5849e",
+      "ddc05dd0.50814"
     ],
     "x": 55,
     "y": 3360,
@@ -31275,12 +31209,10 @@
     "links": [
       "224d137d.2e20dc",
       "3495a219.f840be",
-      "f8efe1fe.a4a0e",
-      "8c42e0e.e62702",
-      "64fb3f92.803b6"
+      "8c42e0e.e62702"
     ],
-    "x": 55,
-    "y": 400,
+    "x": 95,
+    "y": 420,
     "wires": [
       [
         "134ba71e.8780d9",
@@ -31316,10 +31248,9 @@
     "name": "Hallway Motion - Action",
     "links": [
       "3495a219.f840be",
-      "e04902ac.5849e",
-      "f8efe1fe.a4a0e",
       "8c42e0e.e62702",
-      "64fb3f92.803b6"
+      "e04902ac.5849e",
+      "ddc05dd0.50814"
     ],
     "x": 55,
     "y": 340,
@@ -32985,9 +32916,7 @@
     "x": 400,
     "y": 1100,
     "wires": [
-      [
-        "d2ecf097.f4769"
-      ]
+      []
     ]
   },
   {
@@ -33815,6 +33744,480 @@
         "ee63abb8.30fef8",
         "8a6a1096.31559"
       ]
+    ]
+  },
+  {
+    "id": "7ba291d9.e0a41",
+    "type": "comment",
+    "z": "acf12371.2c1ae",
+    "name": "Computer truns on",
+    "info": "",
+    "x": 130,
+    "y": 800,
+    "wires": []
+  },
+  {
+    "id": "74c44243.13ca9c",
+    "type": "server-state-changed",
+    "z": "a068bd5.28a8d4",
+    "name": "Lower Hallway Motion",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "exposeToHomeAssistant": false,
+    "haConfig": [
+      {
+        "property": "name",
+        "value": ""
+      },
+      {
+        "property": "icon",
+        "value": ""
+      }
+    ],
+    "entityidfilter": "binary_sensor.lower_hallway_motion",
+    "entityidfiltertype": "substring",
+    "outputinitially": false,
+    "state_type": "str",
+    "haltifstate": "",
+    "halt_if_type": "str",
+    "halt_if_compare": "is",
+    "outputs": 1,
+    "output_only_on_state_change": false,
+    "x": 180,
+    "y": 660,
+    "wires": [
+      [
+        "411325bd.14718c",
+        "ddc05dd0.50814"
+      ]
+    ]
+  },
+  {
+    "id": "411325bd.14718c",
+    "type": "change",
+    "z": "a068bd5.28a8d4",
+    "name": "Lower Hallway Motion Detected",
+    "rules": [
+      {
+        "t": "set",
+        "p": "location",
+        "pt": "msg",
+        "to": "Lower Hallway Motion Detected",
+        "tot": "str"
+      },
+      {
+        "t": "set",
+        "p": "image",
+        "pt": "msg",
+        "to": "https://msb396.duckdns.org/api/camera_proxy/camera.living_room?token=6bf07bbf33a0a37622a7fd25c019ed1fb1169449b4a0b808fafdb5800b2e5c3f",
+        "tot": "str"
+      }
+    ],
+    "action": "",
+    "property": "",
+    "from": "",
+    "to": "",
+    "reg": false,
+    "x": 510,
+    "y": 660,
+    "wires": [
+      [
+        "64a723bb.a421cc"
+      ]
+    ]
+  },
+  {
+    "id": "ddc05dd0.50814",
+    "type": "link out",
+    "z": "a068bd5.28a8d4",
+    "name": "Lower Hallway Motion",
+    "links": [
+      "a2f7cd26.7ec92",
+      "b6655c35.3097a",
+      "ba09070a.220758",
+      "c3e890f4.9c742",
+      "5972a834.14fe58",
+      "1430c409.2b12ec"
+    ],
+    "x": 395,
+    "y": 700,
+    "wires": []
+  },
+  {
+    "id": "7cac62c4.7981bc",
+    "type": "comment",
+    "z": "acf12371.2c1ae",
+    "name": "Office",
+    "info": "",
+    "x": 92,
+    "y": 680,
+    "wires": []
+  },
+  {
+    "id": "9be597a1.716c08",
+    "type": "comment",
+    "z": "acf12371.2c1ae",
+    "name": "Hallway",
+    "info": "",
+    "x": 92,
+    "y": 720,
+    "wires": []
+  },
+  {
+    "id": "5972a834.14fe58",
+    "type": "link in",
+    "z": "acf12371.2c1ae",
+    "name": "Light on - On hallway motion",
+    "links": [
+      "ddc05dd0.50814"
+    ],
+    "x": 161,
+    "y": 720,
+    "wires": [
+      [
+        "c13d514c.e2c37"
+      ]
+    ]
+  },
+  {
+    "id": "f11b6517.78b028",
+    "type": "api-current-state",
+    "z": "42cea594.a055ac",
+    "name": "Is office light strip",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "outputs": 2,
+    "halt_if": "false",
+    "halt_if_type": "bool",
+    "halt_if_compare": "is",
+    "override_topic": true,
+    "entity_id": "light.hue_lightstrip_plus_1_2",
+    "state_type": "habool",
+    "state_location": "payload",
+    "override_payload": "msg",
+    "entity_location": "data",
+    "override_data": "msg",
+    "blockInputOverrides": false,
+    "x": 1150,
+    "y": 220,
+    "wires": [
+      [],
+      []
+    ]
+  },
+  {
+    "id": "f9ec5694.79b328",
+    "type": "api-current-state",
+    "z": "42cea594.a055ac",
+    "name": "Is it light",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "outputs": 2,
+    "halt_if": "1.6",
+    "halt_if_type": "num",
+    "halt_if_compare": "lt",
+    "override_topic": false,
+    "entity_id": "sensor.office_doorbell_light_level",
+    "state_type": "num",
+    "state_location": "payload",
+    "override_payload": "msg",
+    "entity_location": "data",
+    "override_data": "msg",
+    "blockInputOverrides": true,
+    "x": 669,
+    "y": 220,
+    "wires": [
+      [
+        "f11b6517.78b028"
+      ],
+      [
+        "9f714878.a46298"
+      ]
+    ]
+  },
+  {
+    "id": "5abca6a5.3c6618",
+    "type": "subflow:e2e6b53d.b747f8",
+    "z": "42cea594.a055ac",
+    "name": "",
+    "env": [
+      {
+        "name": "BreakerName",
+        "value": "officelightonmotion",
+        "type": "str"
+      }
+    ],
+    "x": 429,
+    "y": 220,
+    "wires": [
+      [
+        "f9ec5694.79b328"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "9f714878.a46298",
+    "type": "api-current-state",
+    "z": "42cea594.a055ac",
+    "name": "office light  on?",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "outputs": 2,
+    "halt_if": "true",
+    "halt_if_type": "bool",
+    "halt_if_compare": "is",
+    "override_topic": true,
+    "entity_id": "light.office_light",
+    "state_type": "habool",
+    "state_location": "payload",
+    "override_payload": "msg",
+    "entity_location": "data",
+    "override_data": "msg",
+    "blockInputOverrides": false,
+    "x": 889,
+    "y": 180,
+    "wires": [
+      [
+        "f11b6517.78b028"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "bf61daf5.994bf8",
+    "type": "switch",
+    "z": "42cea594.a055ac",
+    "name": "Is Open?",
+    "property": "payload",
+    "propertyType": "msg",
+    "rules": [
+      {
+        "t": "eq",
+        "v": "on",
+        "vt": "str"
+      },
+      {
+        "t": "eq",
+        "v": "off",
+        "vt": "str"
+      }
+    ],
+    "checkall": "true",
+    "repair": false,
+    "outputs": 2,
+    "x": 240,
+    "y": 220,
+    "wires": [
+      [
+        "5abca6a5.3c6618"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "c13d514c.e2c37",
+    "type": "subflow:42cea594.a055ac",
+    "z": "acf12371.2c1ae",
+    "name": "",
+    "env": [],
+    "x": 328,
+    "y": 720,
+    "wires": [
+      [
+        "2b73f0a0.724a4",
+        "20b05573.a1ea0a"
+      ]
+    ]
+  },
+  {
+    "id": "bb9565df.a2f8c8",
+    "type": "subflow:42cea594.a055ac",
+    "z": "acf12371.2c1ae",
+    "name": "",
+    "x": 328,
+    "y": 680,
+    "wires": [
+      [
+        "3c8bb36d.6841fc",
+        "2b73f0a0.724a4",
+        "4cb8a330.dc112c"
+      ]
+    ]
+  },
+  {
+    "id": "8ba694b1.ff3688",
+    "type": "trigger",
+    "z": "acf12371.2c1ae",
+    "op1": "",
+    "op2": "",
+    "op1type": "nul",
+    "op2type": "payl",
+    "duration": "30",
+    "extend": true,
+    "units": "s",
+    "reset": "",
+    "bytopic": "all",
+    "name": "",
+    "x": 930,
+    "y": 760,
+    "wires": [
+      [
+        "bc54c26f.5a203"
+      ]
+    ]
+  },
+  {
+    "id": "4cb8a330.dc112c",
+    "type": "change",
+    "z": "acf12371.2c1ae",
+    "name": "Reset",
+    "rules": [
+      {
+        "t": "set",
+        "p": "reset",
+        "pt": "msg",
+        "to": "true",
+        "tot": "bool"
+      }
+    ],
+    "action": "",
+    "property": "",
+    "from": "",
+    "to": "",
+    "reg": false,
+    "x": 750,
+    "y": 700,
+    "wires": [
+      [
+        "8ba694b1.ff3688"
+      ]
+    ]
+  },
+  {
+    "id": "208083c8.0849cc",
+    "type": "comment",
+    "z": "acf12371.2c1ae",
+    "name": "Hallway turn the light on for short time untill office motion",
+    "info": "",
+    "x": 1070,
+    "y": 720,
+    "wires": []
+  },
+  {
+    "id": "20b05573.a1ea0a",
+    "type": "api-current-state",
+    "z": "acf12371.2c1ae",
+    "name": "Office light must be off",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "outputs": 2,
+    "halt_if": "false",
+    "halt_if_type": "bool",
+    "halt_if_compare": "is",
+    "override_topic": true,
+    "entity_id": "light.office_light",
+    "state_type": "habool",
+    "state_location": "payload",
+    "override_payload": "msg",
+    "entity_location": "data",
+    "override_data": "msg",
+    "blockInputOverrides": false,
+    "x": 580,
+    "y": 760,
+    "wires": [
+      [
+        "8ba694b1.ff3688"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "1430c409.2b12ec",
+    "type": "link in",
+    "z": "d1172b8b.3d3298",
+    "name": "Keep Light on",
+    "links": [
+      "ddc05dd0.50814",
+      "e04902ac.5849e"
+    ],
+    "x": 295,
+    "y": 260,
+    "wires": [
+      [
+        "94fbbe31.aebc9"
+      ]
+    ]
+  },
+  {
+    "id": "7184d2e0.642dcc",
+    "type": "comment",
+    "z": "d1172b8b.3d3298",
+    "name": "Lower Hallway",
+    "info": "",
+    "x": 180,
+    "y": 260,
+    "wires": []
+  },
+  {
+    "id": "56bd6b2d.0ff904",
+    "type": "comment",
+    "z": "d1172b8b.3d3298",
+    "name": "Door",
+    "info": "",
+    "x": 150,
+    "y": 300,
+    "wires": []
+  },
+  {
+    "id": "ed779155.11ae4",
+    "type": "subflow:56368b94.f11494",
+    "z": "d1172b8b.3d3298",
+    "name": "",
+    "env": [],
+    "x": 740,
+    "y": 240,
+    "wires": [
+      [
+        "dcdab32e.51851"
+      ],
+      [],
+      [
+        "dcdab32e.51851"
+      ]
+    ]
+  },
+  {
+    "id": "94fbbe31.aebc9",
+    "type": "subflow:fec14295.8a46d",
+    "z": "d1172b8b.3d3298",
+    "name": "",
+    "x": 540,
+    "y": 240,
+    "wires": [
+      [
+        "ed779155.11ae4"
+      ],
+      [],
+      []
+    ]
+  },
+  {
+    "id": "8c895b54.0a9588",
+    "type": "time-range-switch",
+    "z": "56368b94.f11494",
+    "name": "",
+    "lat": "",
+    "lon": "",
+    "startTime": "sunriseEnd",
+    "endTime": "sunsetStart",
+    "startOffset": 0,
+    "endOffset": 0,
+    "x": 890,
+    "y": 220,
+    "wires": [
+      [],
+      []
     ]
   }
 ]

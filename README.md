@@ -30,7 +30,7 @@ List of all my device, that make house smart:
 | ------------- | :---: | ------------- | 
 | Philips Hue Smart Motion Sensor | 2 | Connected via hue hub |
 | DIY: PIR Motion Detector | 3 | Connect to nodemcu, controlled via MQTT  | 
-| Xiaomi Aqara Human Body Sensor | 1 | Connect to Zigbee USB |
+| Xiaomi Aqara Human Body Sensor | 2 | Connect to Zigbee USB |
 
 ### Door / Window Senor
 | Device  | Quantity | Notes |
@@ -79,6 +79,8 @@ List of all my device, that make house smart:
 | Device  | Quantity | Notes |
 | ------------- | :---: | ------------- | 
 | SwitchBot | 1 | Bluetooth to pi zero, then MQTT |
+| Ikea FYRTUR roller blind | 1 | Connect to Zigbee USB |
+
 
 ### Buttons
 | Device  | Quantity | Notes |
@@ -140,7 +142,8 @@ Pretty much the same
 * Turn off after no motion
 
 ### Hallway
-* Simple light on when motion senor trigger and is dark for a few minutes - only automate that run outside of HA (all in hue hub)
+* Simple light on when motion sensor trigger and is dark for a few minutes - only automate that run outside of HA (all in hue hub)
+* Lower hallway motion sensor - trigger both hallway andd offlce light automation 
 
 ### Bedroom
 * Voice control - "Alexa Lights"

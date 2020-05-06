@@ -1,0 +1,8 @@
+sensor:
+  - platform: uk_transport
+    app_id: !secret transportapi_appid
+    app_key: !secret transportapi_key
+    queries:
+      - mode: bus
+        origin: 030052670001
+        destination: Newbury

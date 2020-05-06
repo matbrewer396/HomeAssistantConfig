@@ -721,11 +721,11 @@
                 "identifiers": [
                     [
                         "deconz",
-                        "00212EFFFF05009D"
+                        "00212E05009D"
                     ],
                     [
                         "deconz",
-                        "00212E05009D"
+                        "00212EFFFF05009D"
                     ]
                 ],
                 "manufacturer": "Dresden Elektronik",
@@ -838,12 +838,12 @@
                 "id": "ab8bb171faf24382acae4260b4297afa",
                 "identifiers": [
                     [
-                        "webhook_id",
-                        "9a4efa7565a0e6c17ed292673e6090f8aeca3e3c6789bd526df31efee15b9ef9"
-                    ],
-                    [
                         "device_id",
                         "28d68ed320c448bc88c4e226aa0a3282"
+                    ],
+                    [
+                        "webhook_id",
+                        "9a4efa7565a0e6c17ed292673e6090f8aeca3e3c6789bd526df31efee15b9ef9"
                     ]
                 ],
                 "manufacturer": "Apple",
@@ -1597,11 +1597,11 @@
                 "identifiers": [
                     [
                         "mqtt",
-                        "C4:7C:8D:6A:42:10"
+                        "bt-mqtt-gateway/C4-7C-8D-6A-42-10/miflora_aloevera"
                     ],
                     [
                         "mqtt",
-                        "bt-mqtt-gateway/C4-7C-8D-6A-42-10/miflora_aloevera"
+                        "C4:7C:8D:6A:42:10"
                     ],
                     [
                         "mqtt",
@@ -1614,6 +1614,101 @@
                 "name_by_user": null,
                 "sw_version": null,
                 "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:15:8d:00:04:7d:41:8a"
+                    ]
+                ],
+                "id": "90e494310fb947d696a6759cb4f1e609",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:15:8d:00:04:7d:41:8a"
+                    ]
+                ],
+                "manufacturer": "LUMI",
+                "model": "lumi.sensor_motion.aq2",
+                "name": "Lower Hallway Motion Sensor",
+                "name_by_user": null,
+                "sw_version": "20170627",
+                "via_device_id": "49fa8d7b21ef483c84056b5b0e1831fa"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:0d:6f:ff:fe:2b:59:54"
+                    ]
+                ],
+                "id": "957595b62fd3456f8d589fa6555e1b6d",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:0d:6f:ff:fe:2b:59:54"
+                    ]
+                ],
+                "manufacturer": "IKEA of Sweden",
+                "model": "FYRTUR block-out roller blind",
+                "name": "Hallway blind",
+                "name_by_user": null,
+                "sw_version": "22007631",
+                "via_device_id": "49fa8d7b21ef483c84056b5b0e1831fa"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:0d:6f:ff:fe:a2:03:88"
+                    ]
+                ],
+                "id": "c032e3603940478194577c026b49bf99",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:0d:6f:ff:fe:a2:03:88"
+                    ]
+                ],
+                "manufacturer": "IKEA of Sweden",
+                "model": "TRADFRI open/close remote",
+                "name": "TRADFRI open/close remote",
+                "name_by_user": null,
+                "sw_version": "2.2.008",
+                "via_device_id": "49fa8d7b21ef483c84056b5b0e1831fa"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [],
+                "id": "87775cfdfe8e44baa56b21c2233bbdca",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00212EFFFF05009D-/groups/1"
+                    ]
+                ],
+                "manufacturer": "Dresden Elektronik",
+                "model": "deCONZ group",
+                "name": "all",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": "49fa8d7b21ef483c84056b5b0e1831fa"
             }
         ]
     },

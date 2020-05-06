@@ -7,7 +7,7 @@
     payload_available: "online"
     payload_not_available: "offline"
   - platform: mqtt
-    name: "Office Temperature"
+    name: "Office (Doorbell) Temperature"
     state_topic: "doorbell/senorarray"
     unit_of_measurement: '°C'
     value_template: "{{ value_json.temperature }}"
@@ -17,7 +17,7 @@
     payload_available: "online"
     payload_not_available: "offline"
   - platform: mqtt
-    name: "Office Humidity"
+    name: "Office (Doorbell) Humidity"
     state_topic: "doorbell/senorarray"
     unit_of_measurement: '%'
     value_template: "{{ value_json.humidity }}"
@@ -27,7 +27,7 @@
     payload_available: "online"
     payload_not_available: "offline"
   - platform: mqtt
-    name: "Office Light Level"
+    name: "Office (Doorbell) Light Level"
     state_topic: "doorbell/sensorarray"
     unit_of_measurement: '%'
     value_template: "{{ value_json.lightlevel }}"
@@ -37,7 +37,7 @@
     payload_available: "online"
     payload_not_available: "offline"
   - platform: mqtt
-    name: "Office DHT Error"
+    name: "Office (Doorbell) DHT Error"
     state_topic: "doorbell/senorarray"
     unit_of_measurement: '%'
     value_template: "{{ value_json.dhterror }}"
