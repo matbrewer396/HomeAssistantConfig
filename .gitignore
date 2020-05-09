@@ -33,12 +33,19 @@ home-assistant*
 life360.conf
 custom_components/
 www/
-lovelace/jimz011/*
+
 node-red/*
 tensorflow/*
 appdaemon/*
 .vs/*
 .vscode/*
+
+# hki
+dashboards/*
+lovelace/jimz011/*
+packages/hki_icons/*
+packages/hki_languages/*
+packages/homekit_infused/*
 
 
 esphome/

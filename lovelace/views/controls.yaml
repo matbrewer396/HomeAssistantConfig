@@ -191,13 +191,13 @@ cards:
              # - ambient_temperature: sensor.temperature_158d00020ed06c
           - !include ../jimz011/includes/blank-card.yaml
 
-      - type: horizontal-stack
-        cards:
-          - !include ../jimz011/includes/blank-card.yaml
-          - entity: climate.bedroom
-            name: Bed Room
-            type: thermostat
-          - !include ../jimz011/includes/blank-card.yaml
+      # - type: horizontal-stack
+      #   cards:
+      #     - !include ../jimz011/includes/blank-card.yaml
+      #     - entity: climate.bedroom
+      #       name: Bed Room
+      #       type: thermostat
+      #     - !include ../jimz011/includes/blank-card.yaml
 
       
 

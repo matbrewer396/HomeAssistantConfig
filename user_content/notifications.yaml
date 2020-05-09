@@ -1,0 +1,72 @@
+# This is the notifications page, you can edit notifications that are
+# shown on the frontend in this file. This works with conditional cards.
+# What this means is that the conditions need to be be met before these
+# cards are shown. When there are more entities/states in a conditional
+# card it will always be an 'AND' condition, it will never be an 'OR'
+# condition. Edit the conditions, entities and notification content to
+# your own likings.
+
+#### #### #### #### #### #### #### #### #### #### #### #### #### #### #
+
+# Card Config
+# All Clear
+- type: conditional
+  conditions:
+    - entity: alarm_control_panel.home_alarm
+      state: disarmed
+    - entity: input_boolean.isanyonehome
+      state: "on"
+    - entity: input_boolean.fridge_temp_warning
+      state_not: "on"
+  card:
+    !include
+    - '../dashboards/templates/notification_template.yaml'
+    - icon: mdi:check-box-outline
+      name: Everything is quiet, there are no reports
+
+# Alarm Triggered
+- type: conditional
+  conditions:
+    - entity: alarm_control_panel.home_alarm
+      state: "triggered"
+  card:
+    !include
+    - '../dashboards/templates/notification_template.yaml'
+    - icon: fal:sensor-alert
+      name: PAY ATTENTION! The alarm has gone off, ATTENTION!
+# Alarm Armed
+- type: conditional
+  conditions:
+    - entity: alarm_control_panel.home_alarm
+      state_not: disarmed
+    - entity: alarm_control_panel.home_alarm
+      state_not: pending
+  card:
+    !include
+    - '../dashboards/templates/notification_template.yaml'
+    - icon: fal:sensor-alert
+      name: PAY ATTENTION! The alarm is turned on!
+# Alarm Disarmed Not Home
+- type: conditional
+  conditions:
+    - entity: alarm_control_panel.home_alarm
+      state: disarmed
+    - entity: input_boolean.isanyonehome
+      state_not: "on"
+  card:
+    !include
+    - '../dashboards/templates/notification_template.yaml'
+    - icon: fal:exclamation-circle
+      name: No one is home anymore, turn on the alarm!
+
+
+# Fridge is to hot
+- type: conditional
+  conditions:
+    - entity: input_boolean.fridge_temp_warning
+      state: "on"
+  card:
+    !include
+    - '../dashboards/templates/notification_template.yaml'
+    - icon: fal:exclamation-circle
+      name: Warning! Fridge is greater then 6°C

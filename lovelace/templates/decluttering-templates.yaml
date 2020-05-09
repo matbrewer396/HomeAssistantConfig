@@ -24,7 +24,7 @@ more-info-popup:
 
 # Button Card (This is the main template used everywhere)
 button:
-  !include ../jimz011/templates/button-template.yaml
+  !include button-template.yaml
 
 # Header Text
 header:

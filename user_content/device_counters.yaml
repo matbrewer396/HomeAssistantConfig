@@ -1,0 +1,136 @@
+# Homekit Infused Device Counters
+
+# Fill this file to have the badges and device counters work in HKI.
+# You can use these sensors in your badges.
+
+
+# All Radiator Valves or Climate entities (ONLY climate entities can be used here!, if you have a single thermostat put it here as well)
+all_climate_entities:
+  entities:
+    - climate.bedroom
+# All Fans (Enter all your fans in here)
+all_fans:
+  # entities:
+  #   - switch.ventilator
+
+# All Temperature Sensors
+all_temperature_sensors:
+  entities:
+    - sensor.bathroom_sensor_temperature
+    - sensor.bath_room_temperature
+    - sensor.hallway_temperature
+    - sensor.hallway_sensor_temperature
+    - sensor.living_room_senor_temperature
+    - sensor.office_temperature
+    - sensor.office_doorbell_temperature
+    - sensor.bedroom_temperature
+    - sensor.kitchen_temperature
+# Other Temperature Sensors
+other_temperature_sensors:
+  entities:
+    - sensor.freezer_temperature
+    - sensor.fridge_temperature
+# All Humidity Sensors
+all_humidity_sensors:
+  entities:
+    - sensor.bathroom_sensor_temperature
+    - sensor.hallway_temperature
+    - sensor.living_room_senor_temperature
+    - sensor.office_temperature
+    - sensor.bedroom_temperature
+    - sensor.kitchen_temperature
+
+# All Air Pressure Sensors
+all_air_pressure_sensors:
+  # entities:
+  #   - sensor.slaapkamer_3
+  #   - sensor.badkamer_3
+# Camera's
+all_cameras:
+  entities:
+    - camera.living_room_cam_stills
+    - camera.kitchen_cam_stills
+    - camera.office_cam_stills
+    - camera.landing_cam_stills
+    - camera.back_garden_cam_stills
+
+# Window Sensors
+all_window_sensors:
+  entities:
+    - binary_sensor.bathroom_window
+    - binary_sensor.bedroom_window
+    - binary_sensor.kitchen_window
+# Door Sensors
+all_door_sensors:
+  entities:
+    - binary_sensor.back_door_sensor
+    - binary_sensor.bathroom_door
+    - binary_sensor.font_door
+    - binary_sensor.office_door
+
+# Door Sensors
+other_door_sensors:
+  entities:
+    - binary_sensor.dishwasher_door
+    - binary_sensor.mircowave_door
+    - binary_sensor.shower_door
+
+# Motion Sensors
+all_motion_sensors:
+  entities:
+    - binary_sensor.bathroom_sensor_motion
+    - binary_sensor.hallway_sensor_motion
+    - binary_sensor.kitchen_motion
+    - binary_sensor.living_room_motion
+    - binary_sensor.lower_hallway_motion
+    - binary_sensor.motion_library
+    - binary_sensor.office_motion
+# Smoke Detectors
+all_smoke_detectors:
+  
+
+# All Binary Sensors (door/window/motion/smoke/gas etc)
+all_binary_sensors:
+  # entities:
+
+# All Motion, Smoke, Fire and Gas Sensors
+all_motion_smoke_sensors:
+  # entities:
+
+# All Lights (Used in counters only)
+all_lighting:
+  # entities:
+
+
+# All Devices (Used in counters only)
+all_device_switches:
+  # entities:
+
+# All Computers (This isn't used yet, though you can just fill it in)
+all_computers:
+  entities:
+    - switch.plug_05
+  #   - switch.pc_van_jimmy
+  #   - switch.windows_server_2016
+
+# All TV's (Can be shown on the remote button to show the number of tv's)
+all_tvs:
+  # entities:
+  #   - switch.samsung_tv
+  #   - switch.tv_slaapkamer
+
+# All Laundry Devices (e.g. washing-machine, tumble-dryer or dishwasher)
+all_laundry_devices:
+  entities:
+    - switch.plug_01 # dishwasher
+    - switch.Plug_09 # washer
+    - switch.Plug_02 # hottub
+    
+# All Covers
+all_covers:
+  entities:
+    - 
+
+# All Garage Doors
+all_garage_doors:
+  entities:

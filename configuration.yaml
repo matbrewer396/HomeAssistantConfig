@@ -1,5 +1,5 @@
 homeassistant:
-  # packages: !include_dir_named packages/
+  packages: !include_dir_named packages/
   # Name of the location where Home Assistant is running
   name: Home
   # Location required to calculate the time the sun rises and sets
@@ -169,8 +169,31 @@ climate:
     current_temperature_template: "{{ value_json.temperature }}"
     temp_step: 0.5
 
+
 lovelace:
   mode: yaml
+  resources: 
+    # !include_dir_merge_list dashboards/resources/
+    !include lovelace/resources.yaml
+  dashboards:
+    old-home:
+      mode: yaml
+      title: Home
+      show_in_sidebar: true
+      filename: ui-lovelace.yaml
+    homekit-infused:
+      mode: yaml
+      title: HKI
+      icon: mdi:cellphone
+      show_in_sidebar: true
+      filename: homekit_infused.yaml
+    hki-settings:
+      mode: yaml
+      title: HKI Settings
+      icon: mdi:tools
+      show_in_sidebar: true
+      filename: homekit_infused_settings.yaml
+
 
 life360:
   accounts:
@@ -218,3 +241,6 @@ media_player:
 #       graph: /config/tensorflow/model/frozen_inference_graph.pb
 #       categories: 
 #         - category: person
+
+
+browser_mod:

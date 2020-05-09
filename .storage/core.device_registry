@@ -463,7 +463,7 @@
                 "model": "ECHO A7WXQPH584YP",
                 "name": "Office",
                 "name_by_user": null,
-                "sw_version": "651614420",
+                "sw_version": "653621620",
                 "via_device_id": "68cc24db3ca8452cae2d4e46cef9ad23"
             },
             {
@@ -563,7 +563,7 @@
                 "model": "ECHO A7WXQPH584YP",
                 "name": "living room",
                 "name_by_user": null,
-                "sw_version": "651614420",
+                "sw_version": "653621620",
                 "via_device_id": "82d8430a01ce455995a29d29fe068ee8"
             },
             {
@@ -663,7 +663,7 @@
                 "model": "ECHO A32DOYMUN6DTXA",
                 "name": "Kitten",
                 "name_by_user": null,
-                "sw_version": "3658075524",
+                "sw_version": "3725203076",
                 "via_device_id": "2e3d8a5f59de4edc82d09ba0c15a1169"
             },
             {
@@ -721,11 +721,11 @@
                 "identifiers": [
                     [
                         "deconz",
-                        "00212E05009D"
+                        "00212EFFFF05009D"
                     ],
                     [
                         "deconz",
-                        "00212EFFFF05009D"
+                        "00212E05009D"
                     ]
                 ],
                 "manufacturer": "Dresden Elektronik",
@@ -794,12 +794,12 @@
                 "id": "b264c6267bf2439d9dab51da771fdabb",
                 "identifiers": [
                     [
-                        "webhook_id",
-                        "215e302ff7952a29feebb9e5bdbb845054724dcc244da5d1586694bfb351b765"
-                    ],
-                    [
                         "device_id",
                         "c6e39b53af1c42eca4431f121aadfb98"
+                    ],
+                    [
+                        "webhook_id",
+                        "215e302ff7952a29feebb9e5bdbb845054724dcc244da5d1586694bfb351b765"
                     ]
                 ],
                 "manufacturer": "Apple",
@@ -826,7 +826,7 @@
                 "model": "iPhone X\u0280",
                 "name": "iPhone",
                 "name_by_user": null,
-                "sw_version": "13.3.1",
+                "sw_version": "13.4.1",
                 "via_device_id": null
             },
             {
@@ -1573,28 +1573,12 @@
                     "2f2ba8793b5741028def01705355d41b"
                 ],
                 "connections": [],
-                "id": "d0952caeab894cf085ad51f9ad9addc9",
+                "id": "2141868463aa4981bc631318b6852b76",
                 "identifiers": [
                     [
                         "mqtt",
-                        "bt-mqtt-gateway/00-11-22-33-44-55/smartgadget_living_room"
-                    ]
-                ],
-                "manufacturer": "Sensirion AG",
-                "model": "SmartGadget",
-                "name": "smartgadget_living_room",
-                "name_by_user": null,
-                "sw_version": null,
-                "via_device_id": null
-            },
-            {
-                "area_id": null,
-                "config_entries": [
-                    "2f2ba8793b5741028def01705355d41b"
-                ],
-                "connections": [],
-                "id": "2141868463aa4981bc631318b6852b76",
-                "identifiers": [
+                        "bt-mqtt-gateway/C4-7C-8D-6A-42-10/miflora_herbs"
+                    ],
                     [
                         "mqtt",
                         "bt-mqtt-gateway/C4-7C-8D-6A-42-10/miflora_aloevera"
@@ -1602,10 +1586,6 @@
                     [
                         "mqtt",
                         "C4:7C:8D:6A:42:10"
-                    ],
-                    [
-                        "mqtt",
-                        "bt-mqtt-gateway/C4-7C-8D-6A-42-10/miflora_herbs"
                     ]
                 ],
                 "manufacturer": "Xiaomi",
@@ -1662,7 +1642,7 @@
                 "model": "FYRTUR block-out roller blind",
                 "name": "Hallway blind",
                 "name_by_user": null,
-                "sw_version": "22007631",
+                "sw_version": "2.2.007",
                 "via_device_id": "49fa8d7b21ef483c84056b5b0e1831fa"
             },
             {
@@ -1706,6 +1686,31 @@
                 "manufacturer": "Dresden Elektronik",
                 "model": "deCONZ group",
                 "name": "all",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": "49fa8d7b21ef483c84056b5b0e1831fa"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:15:8d:00:04:2a:ce:3d"
+                    ]
+                ],
+                "id": "36f58daab881487eb413962eddbdcb7c",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:15:8d:00:04:2a:ce:3d"
+                    ]
+                ],
+                "manufacturer": "LUMI",
+                "model": "lumi.sensor_wleak.aq1",
+                "name": "Bath Water Sensor",
                 "name_by_user": null,
                 "sw_version": null,
                 "via_device_id": "49fa8d7b21ef483c84056b5b0e1831fa"
