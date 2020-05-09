@@ -10,3 +10,28 @@
   - data:
       addon: a0d7b954_nodered
     service: hassio.addon_restart
+
+
+# Update the slider when moved
+# - id: '1542052478368'
+#   alias: Hallway Blind
+#   trigger:
+#   platform: template
+#   value_template: "{{ states.cover.blind }}"
+#   action:
+#     service: input_number.set_value
+#     data_template:
+#       entity_id: input_number.hallwayblind
+#     value: '{{trigger.template}}'
+
+# # Move when slider moved
+# - id: '1542052478369'
+#   alias: Sun Shade - Moved
+#   trigger:
+#   platform: state
+#   entity_id: input_slider.hallwayblind
+#   action:
+#     service: cover.set_cover_position
+#     data_template:
+#       entity_id: cover.blind
+#     value: '{{trigger.state}}'

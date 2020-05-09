@@ -53,6 +53,11 @@ List of all my device, that make house smart:
 | ------------- | :---: | ------------- | 
 | DIY: HX711 + 4x Load Cells | 1 | Connect via Node NCU |
 
+### Leak Sensor
+| Device  | Quantity | Notes |
+| ------------- | :---: | ------------- | 
+| Aqara Smart Water Detector | 1 |  |
+
 
 ### Plugs
 | Device  | Quantity | Notes |
@@ -167,6 +172,7 @@ Pretty much the same
   * Right Double Press: 
   * Left Long Press: 
   * Right Long Press: 
+* Bath is ready notification when water reach a level
 
 ### Bin Collection
 * Let me know the day before when the next bin collection is and what type

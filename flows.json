@@ -171,7 +171,7 @@
     "id": "d3802138.c1529",
     "type": "tab",
     "label": "Test - Is Dask",
-    "disabled": false,
+    "disabled": true,
     "info": ""
   },
   {
@@ -241,6 +241,13 @@
     "id": "3861180c.88c7e8",
     "type": "tab",
     "label": "Flow 2",
+    "disabled": false,
+    "info": ""
+  },
+  {
+    "id": "fc40a241.ce0cd",
+    "type": "tab",
+    "label": "Flow 3",
     "disabled": false,
     "info": ""
   },
@@ -443,6 +450,9 @@
           },
           {
             "id": "1c752f54.5dc961"
+          },
+          {
+            "id": "d55df0b8.b9985"
           }
         ]
       }
@@ -8903,7 +8913,18 @@
     "z": "a0cdc0f9.a362b",
     "name": "Bath Time",
     "server": "5ee4d578.f7736c",
-    "version": "1",
+    "version": 1,
+    "exposeToHomeAssistant": false,
+    "haConfig": [
+      {
+        "property": "name",
+        "value": ""
+      },
+      {
+        "property": "icon",
+        "value": ""
+      }
+    ],
     "entityidfilter": "input_boolean.bathtime",
     "entityidfiltertype": "substring",
     "outputinitially": false,
@@ -9252,8 +9273,8 @@
     "entity_location": "data",
     "override_data": "msg",
     "blockInputOverrides": false,
-    "x": 1320,
-    "y": 540,
+    "x": 1321,
+    "y": 560,
     "wires": [
       [],
       [
@@ -9315,7 +9336,8 @@
     "z": "a0cdc0f9.a362b",
     "name": "Full Lights",
     "server": "5ee4d578.f7736c",
-    "version": "1",
+    "version": 1,
+    "debugenabled": false,
     "service_domain": "light",
     "service": "turn_on",
     "entityId": "light.bathroom_light",
@@ -10758,7 +10780,7 @@
     "from": "",
     "to": "",
     "reg": false,
-    "x": 390,
+    "x": 410,
     "y": 360,
     "wires": [
       [
@@ -11181,8 +11203,7 @@
         "ad898ac9.92eed8",
         "77cd270e.473e68",
         "bf1745aa.99ae38",
-        "85de34f9.89a238",
-        "b785bc45.9ba0a"
+        "85de34f9.89a238"
       ]
     ]
   },
@@ -12197,7 +12218,7 @@
     "rules": [
       {
         "t": "set",
-        "p": "reset",
+        "p": "blah",
         "pt": "msg",
         "to": "",
         "tot": "str"
@@ -12212,10 +12233,10 @@
     "y": 400,
     "wires": [
       [
-        "c6403382.59d75",
         "f49bd1bf.ad501",
         "95a4dd4.cece52",
-        "bc7a046f.08cac8"
+        "bc7a046f.08cac8",
+        "84ba3598.6c50e8"
       ]
     ]
   },
@@ -12540,7 +12561,7 @@
     "halt_if_type": "str",
     "halt_if_compare": "is",
     "override_topic": true,
-    "entity_id": "binary_sensor.hallway_motion_sensor",
+    "entity_id": "sensor.hallway_sensor_light_level",
     "state_type": "str",
     "state_location": "payload",
     "override_payload": "msg",
@@ -15017,42 +15038,6 @@
     ]
   },
   {
-    "id": "b89a4f68.e80b4",
-    "type": "api-call-service",
-    "z": "84ed1066.f22de",
-    "name": "Lett Matt Know",
-    "server": "eef5a84.da24f58",
-    "service_domain": "notify",
-    "service": "mattiphone",
-    "data": "{    \"message\": \"Warning! Frigde is greater then 6°C\"}",
-    "mergecontext": "",
-    "output_location": "payload",
-    "output_location_type": "msg",
-    "x": 1680,
-    "y": 80,
-    "wires": [
-      []
-    ]
-  },
-  {
-    "id": "5dd0e20c.1b737c",
-    "type": "api-call-service",
-    "z": "84ed1066.f22de",
-    "name": "Lett Matt Know",
-    "server": "eef5a84.da24f58",
-    "service_domain": "notify",
-    "service": "mattiphone",
-    "data": "{\"message\":\"Frigde temperature restored\"}",
-    "mergecontext": "",
-    "output_location": "payload",
-    "output_location_type": "msg",
-    "x": 1680,
-    "y": 220,
-    "wires": [
-      []
-    ]
-  },
-  {
     "id": "818a6a7a.bf8988",
     "type": "mqtt out",
     "z": "84ed1066.f22de",
@@ -15166,12 +15151,14 @@
     "y": 180,
     "wires": [
       [
-        "b89a4f68.e80b4",
-        "6d31ab7b.eb7514"
+        "6d31ab7b.eb7514",
+        "ca273093.5cb1",
+        "99388b0c.5d9408"
       ],
       [
-        "5dd0e20c.1b737c",
-        "4fc7334b.b81cac"
+        "4fc7334b.b81cac",
+        "c60c5993.eeb3d8",
+        "4872f683.b6b3a8"
       ]
     ]
   },
@@ -15252,12 +15239,17 @@
     "z": "84ed1066.f22de",
     "name": "Lett Matt Know",
     "server": "eef5a84.da24f58",
+    "version": "1",
+    "debugenabled": false,
     "service_domain": "notify",
     "service": "mattiphone",
+    "entityId": "",
     "data": "{\"message\":\"Fridge Shelly - Offline\"}",
+    "dataType": "json",
     "mergecontext": "",
     "output_location": "payload",
     "output_location_type": "msg",
+    "mustacheAltTags": false,
     "x": 1155,
     "y": 380,
     "wires": [
@@ -16955,7 +16947,7 @@
     "z": "84ed1066.f22de",
     "op1": "",
     "op2": "",
-    "op1type": "nul",
+    "op1type": "pay",
     "op2type": "pay",
     "duration": "-15",
     "extend": false,
@@ -16967,26 +16959,8 @@
     "y": 120,
     "wires": [
       [
-        "87751cc2.966a4"
+        "4dbddc9e.21a464"
       ]
-    ]
-  },
-  {
-    "id": "87751cc2.966a4",
-    "type": "api-call-service",
-    "z": "84ed1066.f22de",
-    "name": "Lett Matt Know",
-    "server": "eef5a84.da24f58",
-    "service_domain": "notify",
-    "service": "mattiphone",
-    "data": "{    \"message\": \"Warning! Frigde is still greater then 6°C\"}",
-    "mergecontext": "",
-    "output_location": "payload",
-    "output_location_type": "msg",
-    "x": 2180,
-    "y": 120,
-    "wires": [
-      []
     ]
   },
   {
@@ -19096,11 +19070,12 @@
     "from": "",
     "to": "",
     "reg": false,
-    "x": 770,
-    "y": 740,
+    "x": 790,
+    "y": 720,
     "wires": [
       [
-        "4775ee16.55733"
+        "4775ee16.55733",
+        "b785bc45.9ba0a"
       ]
     ]
   },
@@ -23637,7 +23612,7 @@
     "output_location_type": "msg",
     "mustacheAltTags": false,
     "x": 1150,
-    "y": 840,
+    "y": 880,
     "wires": [
       []
     ]
@@ -23657,10 +23632,11 @@
     "bytopic": "all",
     "name": "",
     "x": 950,
-    "y": 840,
+    "y": 880,
     "wires": [
       [
-        "f8a2b0f4.5b3a9"
+        "f8a2b0f4.5b3a9",
+        "2d64a30b.7c287c"
       ]
     ]
   },
@@ -23922,7 +23898,8 @@
     "z": "a0cdc0f9.a362b",
     "name": "Full Lights",
     "server": "5ee4d578.f7736c",
-    "version": "1",
+    "version": 1,
+    "debugenabled": false,
     "service_domain": "light",
     "service": "turn_on",
     "entityId": "light.bathroom_light",
@@ -29219,7 +29196,8 @@
     "z": "a0cdc0f9.a362b",
     "name": "Trigger Count Down",
     "links": [
-      "5d1f606c.02ec9"
+      "5d1f606c.02ec9",
+      "6122d212.c9789c"
     ],
     "x": 935,
     "y": 500,
@@ -30592,7 +30570,7 @@
     "y": 3295,
     "wires": [
       [
-        "a6e879f5.cba028"
+        "9086d0ab.761df"
       ]
     ]
   },
@@ -30638,8 +30616,8 @@
     "output_location": "",
     "output_location_type": "none",
     "mustacheAltTags": false,
-    "x": 772,
-    "y": 3295,
+    "x": 1000,
+    "y": 3300,
     "wires": [
       []
     ]
@@ -34219,5 +34197,958 @@
       [],
       []
     ]
+  },
+  {
+    "id": "3218ec69.4bca34",
+    "type": "trigger-state",
+    "z": "d1172b8b.3d3298",
+    "name": "Current Pos",
+    "server": "5ee4d578.f7736c",
+    "exposeToHomeAssistant": false,
+    "haConfig": [
+      {
+        "property": "name",
+        "value": ""
+      },
+      {
+        "property": "icon",
+        "value": ""
+      }
+    ],
+    "entityid": "sensor.blind_hallway_current_position",
+    "entityidfiltertype": "exact",
+    "debugenabled": false,
+    "constraints": [],
+    "constraintsmustmatch": "all",
+    "outputs": 2,
+    "customoutputs": [],
+    "outputinitially": true,
+    "state_type": "num",
+    "x": 150,
+    "y": 720,
+    "wires": [
+      [
+        "dd1dc8cc.067d38",
+        "563c9f2c.dc7c4"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "dd1dc8cc.067d38",
+    "type": "debug",
+    "z": "d1172b8b.3d3298",
+    "name": "",
+    "active": true,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "false",
+    "x": 630,
+    "y": 680,
+    "wires": []
+  },
+  {
+    "id": "84773bd2.99bed8",
+    "type": "comment",
+    "z": "d1172b8b.3d3298",
+    "name": "Blind Logic",
+    "info": "",
+    "x": 160,
+    "y": 560,
+    "wires": []
+  },
+  {
+    "id": "d118f7af.474a58",
+    "type": "trigger-state",
+    "z": "d1172b8b.3d3298",
+    "name": "Number Changed",
+    "server": "5ee4d578.f7736c",
+    "exposeToHomeAssistant": false,
+    "haConfig": [
+      {
+        "property": "name",
+        "value": ""
+      },
+      {
+        "property": "icon",
+        "value": ""
+      }
+    ],
+    "entityid": "input_number.hallwayblind",
+    "entityidfiltertype": "exact",
+    "debugenabled": false,
+    "constraints": [],
+    "constraintsmustmatch": "all",
+    "outputs": 2,
+    "customoutputs": [],
+    "outputinitially": false,
+    "state_type": "str",
+    "x": 160,
+    "y": 640,
+    "wires": [
+      [],
+      []
+    ]
+  },
+  {
+    "id": "699ef634.60e708",
+    "type": "api-call-service",
+    "z": "d1172b8b.3d3298",
+    "name": "",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "cover",
+    "service": "set_cover_position",
+    "entityId": "cover.blind",
+    "data": "",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "",
+    "output_location_type": "none",
+    "mustacheAltTags": false,
+    "x": 500,
+    "y": 640,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "83a33475.9201e8",
+    "type": "api-call-service",
+    "z": "d1172b8b.3d3298",
+    "name": "Open",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "cover",
+    "service": "set_cover_position",
+    "entityId": "cover.hallway_blind",
+    "data": "{\"position\":95}",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "",
+    "output_location_type": "none",
+    "mustacheAltTags": false,
+    "x": 710,
+    "y": 820,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "8c0baf59.7ecfe",
+    "type": "inject",
+    "z": "d1172b8b.3d3298",
+    "name": "",
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "x": 320,
+    "y": 780,
+    "wires": [
+      [
+        "ebc396b5.597c88"
+      ]
+    ]
+  },
+  {
+    "id": "9e2ef6d6.0b5fb8",
+    "type": "api-call-service",
+    "z": "d1172b8b.3d3298",
+    "name": "",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "input_number",
+    "service": "set_value",
+    "entityId": "input_number.hallwayblind",
+    "data": "",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "",
+    "output_location_type": "none",
+    "mustacheAltTags": false,
+    "x": 800,
+    "y": 760,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "8cba57fa.1fa358",
+    "type": "api-call-service",
+    "z": "d1172b8b.3d3298",
+    "name": "Close Blind",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "cover",
+    "service": "set_cover_position",
+    "entityId": "cover.hallway_blind",
+    "data": "{\"position\":10}",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "",
+    "output_location_type": "none",
+    "mustacheAltTags": false,
+    "x": 690,
+    "y": 880,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "11278cd8.a471c3",
+    "type": "inject",
+    "z": "d1172b8b.3d3298",
+    "name": "",
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "x": 260,
+    "y": 980,
+    "wires": [
+      [
+        "70f4c965.2edba8"
+      ]
+    ]
+  },
+  {
+    "id": "a1d080e4.29f15",
+    "type": "debug",
+    "z": "d1172b8b.3d3298",
+    "name": "",
+    "active": true,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "true",
+    "targetType": "full",
+    "x": 730,
+    "y": 720,
+    "wires": []
+  },
+  {
+    "id": "563c9f2c.dc7c4",
+    "type": "function",
+    "z": "d1172b8b.3d3298",
+    "name": "",
+    "func": "\nvar r\nvar p = msg.payload;\nr = {\"data\":{\"value\":p}}\n\nreturn r",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 490,
+    "y": 720,
+    "wires": [
+      [
+        "9e2ef6d6.0b5fb8",
+        "a1d080e4.29f15"
+      ]
+    ]
+  },
+  {
+    "id": "70f4c965.2edba8",
+    "type": "api-current-state",
+    "z": "d1172b8b.3d3298",
+    "name": "Is Closed",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "outputs": 2,
+    "halt_if": "15",
+    "halt_if_type": "num",
+    "halt_if_compare": "gt",
+    "override_topic": false,
+    "entity_id": "sensor.blind_hallway_current_position",
+    "state_type": "num",
+    "state_location": "payload",
+    "override_payload": "msg",
+    "entity_location": "data",
+    "override_data": "msg",
+    "blockInputOverrides": false,
+    "x": 520,
+    "y": 880,
+    "wires": [
+      [
+        "8cba57fa.1fa358"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "ebc396b5.597c88",
+    "type": "api-current-state",
+    "z": "d1172b8b.3d3298",
+    "name": "Is Open",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "outputs": 2,
+    "halt_if": "92",
+    "halt_if_type": "num",
+    "halt_if_compare": "lt",
+    "override_topic": false,
+    "entity_id": "sensor.blind_hallway_current_position",
+    "state_type": "num",
+    "state_location": "payload",
+    "override_payload": "msg",
+    "entity_location": "data",
+    "override_data": "msg",
+    "blockInputOverrides": false,
+    "x": 520,
+    "y": 820,
+    "wires": [
+      [
+        "83a33475.9201e8"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "15424de5.911922",
+    "type": "link in",
+    "z": "d1172b8b.3d3298",
+    "name": "Open Hallway Blind",
+    "links": [
+      "2d64a30b.7c287c"
+    ],
+    "x": 255,
+    "y": 820,
+    "wires": [
+      [
+        "ebc396b5.597c88"
+      ]
+    ]
+  },
+  {
+    "id": "579218ea.5178a8",
+    "type": "link in",
+    "z": "d1172b8b.3d3298",
+    "name": "Close Hallway Blind",
+    "links": [],
+    "x": 255,
+    "y": 880,
+    "wires": [
+      [
+        "70f4c965.2edba8"
+      ]
+    ]
+  },
+  {
+    "id": "7d6dc10a.845af",
+    "type": "api-call-service",
+    "z": "c9b308f8.01ef68",
+    "name": "Close Blind",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "cover",
+    "service": "set_cover_position",
+    "entityId": "cover.hallway_blind",
+    "data": "{\"position\":10}",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "",
+    "output_location_type": "none",
+    "mustacheAltTags": false,
+    "x": 1050,
+    "y": 260,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "d55df0b8.b9985",
+    "type": "api-current-state",
+    "z": "c9b308f8.01ef68",
+    "name": "Is Closed",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "outputs": 2,
+    "halt_if": "15",
+    "halt_if_type": "num",
+    "halt_if_compare": "gt",
+    "override_topic": false,
+    "entity_id": "sensor.blind_hallway_current_position",
+    "state_type": "num",
+    "state_location": "payload",
+    "override_payload": "msg",
+    "entity_location": "data",
+    "override_data": "msg",
+    "blockInputOverrides": false,
+    "x": 880,
+    "y": 260,
+    "wires": [
+      [
+        "7d6dc10a.845af"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "2d64a30b.7c287c",
+    "type": "link out",
+    "z": "21d6efde.d0943",
+    "name": "Bed Empty for 8 Min",
+    "links": [
+      "15424de5.911922"
+    ],
+    "x": 1075,
+    "y": 920,
+    "wires": []
+  },
+  {
+    "id": "c4f42088.33c4a",
+    "type": "trigger-state",
+    "z": "a0cdc0f9.a362b",
+    "name": "Bath Is wet",
+    "server": "5ee4d578.f7736c",
+    "exposeToHomeAssistant": false,
+    "haConfig": [
+      {
+        "property": "name",
+        "value": ""
+      },
+      {
+        "property": "icon",
+        "value": ""
+      }
+    ],
+    "entityid": "binary_sensor.water_bath",
+    "entityidfiltertype": "exact",
+    "debugenabled": false,
+    "constraints": [
+      {
+        "id": "2b53jy80ay5",
+        "targetType": "this_entity",
+        "targetValue": "",
+        "propertyType": "current_state",
+        "propertyValue": "new_state.state",
+        "comparatorType": "is",
+        "comparatorValueDatatype": "bool",
+        "comparatorValue": "true"
+      },
+      {
+        "id": "2pi79jbuhas",
+        "targetType": "this_entity",
+        "targetValue": "",
+        "propertyType": "previous_state",
+        "propertyValue": "old_state.state",
+        "comparatorType": "is",
+        "comparatorValueDatatype": "bool",
+        "comparatorValue": "false"
+      }
+    ],
+    "constraintsmustmatch": "all",
+    "outputs": 2,
+    "customoutputs": [],
+    "outputinitially": false,
+    "state_type": "habool",
+    "x": 140,
+    "y": 2760,
+    "wires": [
+      [
+        "98784fb2.de356"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "98784fb2.de356",
+    "type": "delay",
+    "z": "a0cdc0f9.a362b",
+    "name": "",
+    "pauseType": "rate",
+    "timeout": "5",
+    "timeoutUnits": "seconds",
+    "rate": "1",
+    "nbRateUnits": "15",
+    "rateUnits": "minute",
+    "randomFirst": "1",
+    "randomLast": "5",
+    "randomUnits": "seconds",
+    "drop": true,
+    "x": 360,
+    "y": 2760,
+    "wires": [
+      [
+        "257fec5a.d920d4",
+        "13dfe582.3112fa"
+      ]
+    ]
+  },
+  {
+    "id": "257fec5a.d920d4",
+    "type": "subflow:a83e69e1.4b2ab8",
+    "z": "a0cdc0f9.a362b",
+    "name": "Bath is ready",
+    "env": [
+      {
+        "name": "message",
+        "value": "Bath is ready",
+        "type": "str"
+      },
+      {
+        "name": "who",
+        "value": "both",
+        "type": "str"
+      }
+    ],
+    "x": 590,
+    "y": 2760,
+    "wires": []
+  },
+  {
+    "id": "3f227561.20ac5a",
+    "type": "comment",
+    "z": "a0cdc0f9.a362b",
+    "name": "Bath is read",
+    "info": "",
+    "x": 130,
+    "y": 2700,
+    "wires": []
+  },
+  {
+    "id": "bcc04b7b.85b428",
+    "type": "inject",
+    "z": "9a341993.fbc528",
+    "name": "",
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "x": 140,
+    "y": 2720,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "7173ef33.c11c",
+    "type": "inject",
+    "z": "9a341993.fbc528",
+    "name": "",
+    "topic": "Every Minute",
+    "payload": "",
+    "payloadType": "date",
+    "repeat": "60",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "x": 190,
+    "y": 2720,
+    "wires": [
+      [
+        "10f1d1dc.850a5e"
+      ]
+    ]
+  },
+  {
+    "id": "10f1d1dc.850a5e",
+    "type": "api-current-state",
+    "z": "9a341993.fbc528",
+    "name": "Is Fire Stick Off",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "outputs": 2,
+    "halt_if": "off",
+    "halt_if_type": "str",
+    "halt_if_compare": "is",
+    "override_topic": false,
+    "entity_id": "media_player.living_room_fire_tv",
+    "state_type": "str",
+    "state_location": "payload",
+    "override_payload": "msg",
+    "entity_location": "data",
+    "override_data": "msg",
+    "blockInputOverrides": false,
+    "x": 440,
+    "y": 2720,
+    "wires": [
+      [
+        "15aa591b.3118d7"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "15aa591b.3118d7",
+    "type": "subflow:50a84f0.9f6dbb",
+    "z": "9a341993.fbc528",
+    "name": "",
+    "env": [],
+    "x": 650,
+    "y": 2720,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "6be188e5.f97488",
+    "type": "comment",
+    "z": "9a341993.fbc528",
+    "name": "Once Minute Check",
+    "info": "",
+    "x": 150,
+    "y": 2680,
+    "wires": []
+  },
+  {
+    "id": "84ba3598.6c50e8",
+    "type": "change",
+    "z": "a0cdc0f9.a362b",
+    "name": "Reset",
+    "rules": [
+      {
+        "t": "set",
+        "p": "reset",
+        "pt": "msg",
+        "to": "me",
+        "tot": "str"
+      }
+    ],
+    "action": "",
+    "property": "",
+    "from": "",
+    "to": "",
+    "reg": false,
+    "x": 870,
+    "y": 220,
+    "wires": [
+      [
+        "c6403382.59d75"
+      ]
+    ]
+  },
+  {
+    "id": "a8679bb4.6df808",
+    "type": "inject",
+    "z": "9b87d885.88c89",
+    "name": "",
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "x": 320,
+    "y": 100,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "85e1d7ab.49f3d8",
+    "type": "trigger",
+    "z": "9b87d885.88c89",
+    "op1": "1",
+    "op2": "0",
+    "op1type": "val",
+    "op2type": "val",
+    "duration": "250",
+    "extend": "false",
+    "units": "ms",
+    "reset": "",
+    "bytopic": "all",
+    "name": "",
+    "x": 540,
+    "y": 100,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "3d31da22.31cfd6",
+    "type": "status",
+    "z": "9b87d885.88c89",
+    "name": "",
+    "scope": [],
+    "x": 300,
+    "y": 200,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "8f4ae6ab.256d08",
+    "type": "complete",
+    "z": "9b87d885.88c89",
+    "name": "",
+    "scope": [],
+    "uncaught": false,
+    "x": 420,
+    "y": 280,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "6122d212.c9789c",
+    "type": "link out",
+    "z": "a0cdc0f9.a362b",
+    "name": "Start up Light On",
+    "links": [
+      "ef383b90.090248"
+    ],
+    "x": 1035,
+    "y": 100,
+    "wires": []
+  },
+  {
+    "id": "bbdf8cac.2e19",
+    "type": "inject",
+    "z": "a0cdc0f9.a362b",
+    "name": "10Sec Start Upd",
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "repeat": "",
+    "crontab": "",
+    "once": true,
+    "onceDelay": "10s",
+    "x": 730,
+    "y": 100,
+    "wires": [
+      [
+        "4d717f68.041d7"
+      ]
+    ]
+  },
+  {
+    "id": "4d717f68.041d7",
+    "type": "api-current-state",
+    "z": "a0cdc0f9.a362b",
+    "name": "Light On?",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "outputs": 2,
+    "halt_if": "true",
+    "halt_if_type": "bool",
+    "halt_if_compare": "is",
+    "override_topic": false,
+    "entity_id": "light.bathroom",
+    "state_type": "habool",
+    "state_location": "payload",
+    "override_payload": "msg",
+    "entity_location": "data",
+    "override_data": "msg",
+    "blockInputOverrides": false,
+    "x": 920,
+    "y": 100,
+    "wires": [
+      [
+        "6122d212.c9789c"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "3b8a834.9f67e7c",
+    "type": "comment",
+    "z": "a0cdc0f9.a362b",
+    "name": "Start up trigger count down ",
+    "info": "",
+    "x": 750,
+    "y": 60,
+    "wires": []
+  },
+  {
+    "id": "18282b56.a4d3b5",
+    "type": "api-call-service",
+    "z": "a0cdc0f9.a362b",
+    "name": "Turn On Bathtime",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "input_boolean",
+    "service": "turn_on",
+    "entityId": "input_boolean.bathtime",
+    "data": "",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "",
+    "output_location_type": "none",
+    "mustacheAltTags": false,
+    "x": 790,
+    "y": 2800,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "13dfe582.3112fa",
+    "type": "api-current-state",
+    "z": "a0cdc0f9.a362b",
+    "name": "Bathtime Off",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "outputs": 2,
+    "halt_if": "false",
+    "halt_if_type": "bool",
+    "halt_if_compare": "is",
+    "override_topic": false,
+    "entity_id": "input_boolean.bathtime",
+    "state_type": "habool",
+    "state_location": "payload",
+    "override_payload": "msg",
+    "entity_location": "data",
+    "override_data": "msg",
+    "blockInputOverrides": false,
+    "x": 590,
+    "y": 2800,
+    "wires": [
+      [
+        "18282b56.a4d3b5"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "9086d0ab.761df",
+    "type": "api-current-state",
+    "z": "21d6efde.d0943",
+    "name": "Bed Empty",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "outputs": 2,
+    "halt_if": "0",
+    "halt_if_type": "num",
+    "halt_if_compare": "is",
+    "override_topic": false,
+    "entity_id": "sensor.num_in_master_bed",
+    "state_type": "str",
+    "state_location": "payload",
+    "override_payload": "msg",
+    "entity_location": "data",
+    "override_data": "msg",
+    "blockInputOverrides": false,
+    "x": 770,
+    "y": 3300,
+    "wires": [
+      [
+        "a6e879f5.cba028"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "ca273093.5cb1",
+    "type": "api-call-service",
+    "z": "84ed1066.f22de",
+    "name": "fridge_temp_warning - ON",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "input_boolean",
+    "service": "turn_on",
+    "entityId": "input_boolean.fridge_temp_warning",
+    "data": "",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "",
+    "output_location_type": "none",
+    "mustacheAltTags": false,
+    "x": 1720,
+    "y": 40,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "c60c5993.eeb3d8",
+    "type": "api-call-service",
+    "z": "84ed1066.f22de",
+    "name": "fridge_temp_warning - Off",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "input_boolean",
+    "service": "turn_off",
+    "entityId": "input_boolean.fridge_temp_warning",
+    "data": "",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "",
+    "output_location_type": "none",
+    "mustacheAltTags": false,
+    "x": 1710,
+    "y": 260,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "4872f683.b6b3a8",
+    "type": "subflow:a83e69e1.4b2ab8",
+    "z": "84ed1066.f22de",
+    "name": "Frigde temperature restored",
+    "env": [
+      {
+        "name": "message",
+        "value": "Frigde temperature restored",
+        "type": "str"
+      },
+      {
+        "name": "who",
+        "value": "both",
+        "type": "str"
+      }
+    ],
+    "x": 1720,
+    "y": 220,
+    "wires": []
+  },
+  {
+    "id": "99388b0c.5d9408",
+    "type": "subflow:a83e69e1.4b2ab8",
+    "z": "84ed1066.f22de",
+    "name": "Warning! Fridge is greater then 6°C",
+    "env": [
+      {
+        "name": "message",
+        "value": "Warning! Fridge is greater then 6°C",
+        "type": "str"
+      },
+      {
+        "name": "who",
+        "value": "both",
+        "type": "str"
+      }
+    ],
+    "x": 1740,
+    "y": 80,
+    "wires": []
+  },
+  {
+    "id": "4dbddc9e.21a464",
+    "type": "subflow:a83e69e1.4b2ab8",
+    "z": "84ed1066.f22de",
+    "name": "Warning! Fridge is greater then 6°C",
+    "env": [
+      {
+        "name": "message",
+        "value": "Warning! Fridge is greater then 6°C",
+        "type": "str"
+      },
+      {
+        "name": "who",
+        "value": "both",
+        "type": "str"
+      }
+    ],
+    "x": 2220,
+    "y": 120,
+    "wires": []
   }
 ]

@@ -28,8 +28,8 @@
     name: Motion Detect Living Room Cam
     initial: off
 
-
-
+  fridge_temp_warning:
+    name: Fridge Is Over 6°C
 
   danni_button:
     name: Danni Button Pressed
