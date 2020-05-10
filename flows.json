@@ -16270,7 +16270,8 @@
     "wires": [
       [
         "133788d9.3c7a57",
-        "7de9701c.ad9a5"
+        "7de9701c.ad9a5",
+        "a2e16c2c.312fc"
       ]
     ]
   },
@@ -16281,6 +16282,7 @@
     "name": "Call Routine",
     "server": "eef5a84.da24f58",
     "version": 1,
+    "debugenabled": false,
     "service_domain": "media_player",
     "service": "play_media",
     "entityId": "media_player.office",
@@ -16310,7 +16312,7 @@
     "id": "b7739156.649f8",
     "type": "inject",
     "z": "48ba348c.61270c",
-    "name": "Every 15 Minutes",
+    "name": "Every 30 Minutes",
     "topic": "",
     "payload": "",
     "payloadType": "date",
@@ -35149,6 +35151,21 @@
     ],
     "x": 2220,
     "y": 120,
+    "wires": []
+  },
+  {
+    "id": "a2e16c2c.312fc",
+    "type": "debug",
+    "z": "48ba348c.61270c",
+    "name": "Test Alex",
+    "active": true,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "payload",
+    "targetType": "msg",
+    "x": 720,
+    "y": 2100,
     "wires": []
   }
 ]

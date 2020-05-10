@@ -128,9 +128,21 @@ all_laundry_devices:
     
 # All Covers
 all_covers:
-  entities:
-    - 
 
 # All Garage Doors
 all_garage_doors:
   entities:
+
+# All 
+all_device_status:
+  entities:
+    - binary_sensor.bath_mcu_status
+    - binary_sensor.bedroom_mcu_status
+    - binary_sensor.bluetooth_traker_mcu_status
+    - binary_sensor.doorbell_mcu_status
+    - binary_sensor.living_room_cam_status
+    - binary_sensor.office_mcu_status
+    - binary_sensor.rm_mini_status
+    - binary_sensor.alexa_inbound_status
+    - binary_sensor.fridge_senor_status
+    - binary_sensor.freezer_senor_status
