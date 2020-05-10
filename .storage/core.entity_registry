@@ -1387,7 +1387,7 @@
                 "entity_id": "switch.living_room_shuffle_switch",
                 "icon": null,
                 "name": null,
-                "original_icon": "mdi:shuffle",
+                "original_icon": "mdi:shuffle-disabled",
                 "original_name": "living room shuffle switch",
                 "platform": "alexa_media",
                 "supported_features": 0,
@@ -1579,7 +1579,7 @@
                 "entity_id": "switch.barthroom_shuffle_switch",
                 "icon": null,
                 "name": null,
-                "original_icon": "mdi:shuffle-disabled",
+                "original_icon": "mdi:shuffle",
                 "original_name": "Barthroom shuffle switch",
                 "platform": "alexa_media",
                 "supported_features": 0,
@@ -2715,7 +2715,7 @@
                 "entity_id": "sensor.battery_state_3",
                 "icon": null,
                 "name": null,
-                "original_icon": "mdi:battery-50",
+                "original_icon": "mdi:battery-10",
                 "original_name": "iPhone Battery State",
                 "platform": "mobile_app",
                 "supported_features": 0,
@@ -2731,7 +2731,7 @@
                 "entity_id": "sensor.battery_level_3",
                 "icon": null,
                 "name": "Matt Iphone Battery",
-                "original_icon": "mdi:battery-50",
+                "original_icon": "mdi:battery-10",
                 "original_name": "iPhone Battery Level",
                 "platform": "mobile_app",
                 "supported_features": 0,
@@ -2763,7 +2763,7 @@
                 "entity_id": "sensor.activity_3",
                 "icon": null,
                 "name": null,
-                "original_icon": "mdi:walk",
+                "original_icon": "mdi:help-circle",
                 "original_name": "iPhone Activity",
                 "platform": "mobile_app",
                 "supported_features": 0,
@@ -29288,7 +29288,7 @@
                 "unit_of_measurement": null
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "0f7846efea5d42b7b6f798f8dc7e4cad",
                 "device_class": null,
                 "device_id": "632139b3dd2e4c59813d85293da28e3d",
@@ -29304,7 +29304,7 @@
                 "unit_of_measurement": "queries"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "0f7846efea5d42b7b6f798f8dc7e4cad",
                 "device_class": null,
                 "device_id": "632139b3dd2e4c59813d85293da28e3d",
@@ -29320,7 +29320,7 @@
                 "unit_of_measurement": "requests"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "0f7846efea5d42b7b6f798f8dc7e4cad",
                 "device_class": null,
                 "device_id": "632139b3dd2e4c59813d85293da28e3d",
@@ -29336,7 +29336,7 @@
                 "unit_of_measurement": "queries"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "0f7846efea5d42b7b6f798f8dc7e4cad",
                 "device_class": null,
                 "device_id": "632139b3dd2e4c59813d85293da28e3d",
@@ -29352,7 +29352,7 @@
                 "unit_of_measurement": "%"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "0f7846efea5d42b7b6f798f8dc7e4cad",
                 "device_class": null,
                 "device_id": "632139b3dd2e4c59813d85293da28e3d",
@@ -29368,7 +29368,7 @@
                 "unit_of_measurement": "requests"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "0f7846efea5d42b7b6f798f8dc7e4cad",
                 "device_class": null,
                 "device_id": "632139b3dd2e4c59813d85293da28e3d",
@@ -29384,7 +29384,7 @@
                 "unit_of_measurement": null
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "0f7846efea5d42b7b6f798f8dc7e4cad",
                 "device_class": null,
                 "device_id": "632139b3dd2e4c59813d85293da28e3d",
@@ -29400,7 +29400,7 @@
                 "unit_of_measurement": "requests"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "0f7846efea5d42b7b6f798f8dc7e4cad",
                 "device_class": null,
                 "device_id": "632139b3dd2e4c59813d85293da28e3d",
@@ -29416,7 +29416,7 @@
                 "unit_of_measurement": "ms"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "0f7846efea5d42b7b6f798f8dc7e4cad",
                 "device_class": null,
                 "device_id": "632139b3dd2e4c59813d85293da28e3d",
@@ -29432,7 +29432,7 @@
                 "unit_of_measurement": "rules"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "0f7846efea5d42b7b6f798f8dc7e4cad",
                 "device_class": null,
                 "device_id": "632139b3dd2e4c59813d85293da28e3d",
@@ -29448,7 +29448,7 @@
                 "unit_of_measurement": null
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "0f7846efea5d42b7b6f798f8dc7e4cad",
                 "device_class": null,
                 "device_id": "632139b3dd2e4c59813d85293da28e3d",
@@ -29464,7 +29464,7 @@
                 "unit_of_measurement": null
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "0f7846efea5d42b7b6f798f8dc7e4cad",
                 "device_class": null,
                 "device_id": "632139b3dd2e4c59813d85293da28e3d",
@@ -29480,7 +29480,7 @@
                 "unit_of_measurement": null
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "0f7846efea5d42b7b6f798f8dc7e4cad",
                 "device_class": null,
                 "device_id": "632139b3dd2e4c59813d85293da28e3d",
@@ -29496,7 +29496,7 @@
                 "unit_of_measurement": null
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "0f7846efea5d42b7b6f798f8dc7e4cad",
                 "device_class": null,
                 "device_id": "632139b3dd2e4c59813d85293da28e3d",
@@ -29512,7 +29512,7 @@
                 "unit_of_measurement": null
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "891f8e82bf3a4d9fb44d38329c66d439",
@@ -29528,7 +29528,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "891f8e82bf3a4d9fb44d38329c66d439",
@@ -29544,7 +29544,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "76049fc7116e440e9e8e5a938a711a5a",
@@ -29560,7 +29560,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "76049fc7116e440e9e8e5a938a711a5a",
@@ -29576,7 +29576,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "b9e2034b7d7f42ffaa8bc1f58a399f83",
@@ -29592,7 +29592,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "b9e2034b7d7f42ffaa8bc1f58a399f83",
@@ -29608,7 +29608,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "6566f50699d0471db1c65074c042c398",
@@ -29624,7 +29624,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "6566f50699d0471db1c65074c042c398",
@@ -29640,7 +29640,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "f2a25d61a7db4cf8a586085b254300d3",
@@ -29656,7 +29656,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "f2a25d61a7db4cf8a586085b254300d3",
@@ -29672,7 +29672,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "2dada9e69b6e4555b5fae75eabdca0b5",
@@ -29688,7 +29688,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "2dada9e69b6e4555b5fae75eabdca0b5",
@@ -29704,7 +29704,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "3ce62447e2464534b646b4c3d57b54d8",
@@ -29720,7 +29720,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "3ce62447e2464534b646b4c3d57b54d8",
@@ -29736,7 +29736,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "0b298d013db44df3a4d6ed34cca79af6",
@@ -29752,7 +29752,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "0b298d013db44df3a4d6ed34cca79af6",
@@ -29768,7 +29768,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "3640ad091b8e49a8829ebaeeb3691ed5",
@@ -29784,7 +29784,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "3640ad091b8e49a8829ebaeeb3691ed5",
@@ -29800,7 +29800,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "98fcd8f9ea694329b47221fe18b677b7",
@@ -29816,7 +29816,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "98fcd8f9ea694329b47221fe18b677b7",
@@ -29832,7 +29832,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "6ca85e0e28b242c680ada7db991daa9b",
@@ -29848,7 +29848,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "6ca85e0e28b242c680ada7db991daa9b",
@@ -29864,7 +29864,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "043d84ec28d547958b84187533491541",
@@ -29880,7 +29880,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "043d84ec28d547958b84187533491541",
@@ -29896,7 +29896,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "2882b02a9f6045618933c969fe3d844a",
@@ -29912,7 +29912,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "2882b02a9f6045618933c969fe3d844a",
@@ -29928,7 +29928,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "521a7aa41258400182dd450e4e578f0b",
@@ -29944,7 +29944,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "521a7aa41258400182dd450e4e578f0b",
@@ -29960,7 +29960,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "9382f7f4ef0b48b1befc2ee163b8a57f",
@@ -29976,7 +29976,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "9382f7f4ef0b48b1befc2ee163b8a57f",
@@ -29992,7 +29992,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "6d09646690fa45b98fde03d0a029dca2",
@@ -30008,7 +30008,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "6d09646690fa45b98fde03d0a029dca2",
@@ -30024,7 +30024,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "511e5969caf04688adc266db7b674995",
@@ -30040,7 +30040,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "511e5969caf04688adc266db7b674995",
@@ -30056,7 +30056,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "615a105bd65543c6b03529f4bc4a27f3",
@@ -30072,7 +30072,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "615a105bd65543c6b03529f4bc4a27f3",
@@ -30088,7 +30088,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "164f89f666174654903844d761814fac",
@@ -30104,7 +30104,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "164f89f666174654903844d761814fac",
@@ -30120,7 +30120,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "3a3552fa96db40be863a2deeb14ff06c",
@@ -30136,7 +30136,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "3a3552fa96db40be863a2deeb14ff06c",
@@ -30152,7 +30152,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "7c760f726532464c9f6a4c8260da0de4",
@@ -30168,7 +30168,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "7c760f726532464c9f6a4c8260da0de4",
@@ -30184,7 +30184,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "f4b2a40baa72409485d10d48bcbc47d1",
@@ -30200,7 +30200,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "f4b2a40baa72409485d10d48bcbc47d1",
@@ -30216,7 +30216,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "7be9512002d748dfa0f2bcba0767cfcb",
@@ -30232,7 +30232,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "7be9512002d748dfa0f2bcba0767cfcb",
@@ -30248,7 +30248,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "bd6a84999a734d8abc5b74b30a70df49",
@@ -30264,7 +30264,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "bd6a84999a734d8abc5b74b30a70df49",
@@ -30280,7 +30280,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "db8ce8e1ad284f3abc560b66476af3a0",
@@ -30296,7 +30296,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "db8ce8e1ad284f3abc560b66476af3a0",
@@ -30312,7 +30312,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "1c6224eb592549318b5e22e44f134945",
@@ -30328,7 +30328,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "1c6224eb592549318b5e22e44f134945",
@@ -30344,7 +30344,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "abac11b4fa724282ad9e3095d72f6a97",
@@ -30360,7 +30360,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "abac11b4fa724282ad9e3095d72f6a97",
@@ -30376,7 +30376,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "9e12047799aa49f28ed3423ec31d0730",
@@ -30392,7 +30392,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "9e12047799aa49f28ed3423ec31d0730",
@@ -30408,7 +30408,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "b81be2e2dfe4452ba550dca7e48b2bea",
@@ -30424,7 +30424,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "b81be2e2dfe4452ba550dca7e48b2bea",
@@ -30440,7 +30440,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "26a1f5df151e4e44ae0c0be5386029ec",
@@ -30456,7 +30456,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "26a1f5df151e4e44ae0c0be5386029ec",
@@ -30472,7 +30472,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "6c38f7df02d745199701e51cd555a658",
@@ -30488,7 +30488,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "6c38f7df02d745199701e51cd555a658",
@@ -30504,7 +30504,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "2eba345f718c4075ab6145d537116482",
@@ -30520,7 +30520,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "2eba345f718c4075ab6145d537116482",
@@ -30536,7 +30536,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "968624bfedb34c65ad8c7fd792eeb69a",
@@ -30552,7 +30552,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "968624bfedb34c65ad8c7fd792eeb69a",
@@ -30568,7 +30568,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "190a63a8c9064c46b1da9825d31a7158",
@@ -30584,7 +30584,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "190a63a8c9064c46b1da9825d31a7158",
@@ -30600,7 +30600,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "fb8862e8aa2b40b1b415fe72e3c48841",
@@ -30616,7 +30616,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "fb8862e8aa2b40b1b415fe72e3c48841",
@@ -30632,7 +30632,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "ef8c1995ff5d4f72bec3a52809f88fb7",
@@ -30648,7 +30648,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "ef8c1995ff5d4f72bec3a52809f88fb7",
@@ -30664,7 +30664,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "85dda2faa94a4534a76217e353a88a7e",
@@ -30680,7 +30680,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "85dda2faa94a4534a76217e353a88a7e",
@@ -30696,7 +30696,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "1af3a37e8a8049a6b9201e8f56717a18",
@@ -30712,7 +30712,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "1af3a37e8a8049a6b9201e8f56717a18",
@@ -30728,7 +30728,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "f12446aa83ee4ef2bea589ae1f0122ba",
@@ -30744,7 +30744,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "f12446aa83ee4ef2bea589ae1f0122ba",
@@ -30760,7 +30760,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "ad615077629045d9ada8698b822b5909",
@@ -30776,7 +30776,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "ad615077629045d9ada8698b822b5909",
@@ -30792,7 +30792,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "d1f84ceb09ab407d8fb4618350f056c2",
@@ -30808,7 +30808,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "d1f84ceb09ab407d8fb4618350f056c2",
@@ -30824,7 +30824,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "c6b3fd3717d94132b16b2520c7bc62a5",
@@ -30840,7 +30840,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "c6b3fd3717d94132b16b2520c7bc62a5",
@@ -30856,7 +30856,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "40da67d0cb8c40de9eeee560e811b9fe",
@@ -30872,7 +30872,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "40da67d0cb8c40de9eeee560e811b9fe",
@@ -30888,7 +30888,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "169b26f42f254481afa1746c0001a7aa",
@@ -30904,7 +30904,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "169b26f42f254481afa1746c0001a7aa",
@@ -30920,7 +30920,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "8b3594d6277945e7bf8826ad07a3e5ea",
@@ -30936,7 +30936,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
                 "device_class": null,
                 "device_id": "8b3594d6277945e7bf8826ad07a3e5ea",
@@ -30952,7 +30952,7 @@
                 "unit_of_measurement": "MB"
             },
             {
-                "capabilities": null,
+                "capabilities": {},
                 "config_entry_id": "2f2ba8793b5741028def01705355d41b",
                 "device_class": "timestamp",
                 "device_id": null,
@@ -30966,6 +30966,70 @@
                 "supported_features": 0,
                 "unique_id": "first_item_homeassistant",
                 "unit_of_measurement": null
+            },
+            {
+                "capabilities": {},
+                "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
+                "device_class": null,
+                "device_id": "9986c72da85e4bafbd7eb1b15b34addb",
+                "disabled_by": null,
+                "entity_id": "sensor.rx_4",
+                "icon": null,
+                "name": null,
+                "original_icon": null,
+                "original_name": " RX",
+                "platform": "unifi",
+                "supported_features": 0,
+                "unique_id": "rx-fa:76:a7:72:6a:bb",
+                "unit_of_measurement": "MB"
+            },
+            {
+                "capabilities": {},
+                "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
+                "device_class": null,
+                "device_id": "9986c72da85e4bafbd7eb1b15b34addb",
+                "disabled_by": null,
+                "entity_id": "sensor.tx_4",
+                "icon": null,
+                "name": null,
+                "original_icon": null,
+                "original_name": " TX",
+                "platform": "unifi",
+                "supported_features": 0,
+                "unique_id": "tx-fa:76:a7:72:6a:bb",
+                "unit_of_measurement": "MB"
+            },
+            {
+                "capabilities": null,
+                "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
+                "device_class": null,
+                "device_id": "c2580fe892fe4698bc8b74fc67d7e73a",
+                "disabled_by": null,
+                "entity_id": "sensor.amazon_9c433f386_rx",
+                "icon": null,
+                "name": null,
+                "original_icon": null,
+                "original_name": "amazon-9c433f386 RX",
+                "platform": "unifi",
+                "supported_features": 0,
+                "unique_id": "rx-7c:61:66:38:6c:bf",
+                "unit_of_measurement": "MB"
+            },
+            {
+                "capabilities": null,
+                "config_entry_id": "d3e1b6f284404ed287da3173ed660c7c",
+                "device_class": null,
+                "device_id": "c2580fe892fe4698bc8b74fc67d7e73a",
+                "disabled_by": null,
+                "entity_id": "sensor.amazon_9c433f386_tx",
+                "icon": null,
+                "name": null,
+                "original_icon": null,
+                "original_name": "amazon-9c433f386 TX",
+                "platform": "unifi",
+                "supported_features": 0,
+                "unique_id": "tx-7c:61:66:38:6c:bf",
+                "unit_of_measurement": "MB"
             }
         ]
     },

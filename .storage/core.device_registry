@@ -729,7 +729,7 @@
                 "name": "Back door",
                 "name_by_user": null,
                 "sw_version": "20161128",
-                "via_device_id": "49fa8d7b21ef483c84056b5b0e1831fa"
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
             },
             {
                 "area_id": null,
@@ -754,7 +754,7 @@
                 "name": "Daylight",
                 "name_by_user": null,
                 "sw_version": "1.0",
-                "via_device_id": "49fa8d7b21ef483c84056b5b0e1831fa"
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
             },
             {
                 "area_id": null,
@@ -765,12 +765,12 @@
                 "id": "b264c6267bf2439d9dab51da771fdabb",
                 "identifiers": [
                     [
-                        "webhook_id",
-                        "215e302ff7952a29feebb9e5bdbb845054724dcc244da5d1586694bfb351b765"
-                    ],
-                    [
                         "device_id",
                         "c6e39b53af1c42eca4431f121aadfb98"
+                    ],
+                    [
+                        "webhook_id",
+                        "215e302ff7952a29feebb9e5bdbb845054724dcc244da5d1586694bfb351b765"
                     ]
                 ],
                 "manufacturer": "Apple",
@@ -809,12 +809,12 @@
                 "id": "ab8bb171faf24382acae4260b4297afa",
                 "identifiers": [
                     [
-                        "device_id",
-                        "28d68ed320c448bc88c4e226aa0a3282"
-                    ],
-                    [
                         "webhook_id",
                         "9a4efa7565a0e6c17ed292673e6090f8aeca3e3c6789bd526df31efee15b9ef9"
+                    ],
+                    [
+                        "device_id",
+                        "28d68ed320c448bc88c4e226aa0a3282"
                     ]
                 ],
                 "manufacturer": "Apple",
@@ -907,7 +907,7 @@
                 "name": "Bathroom window",
                 "name_by_user": null,
                 "sw_version": "20161128",
-                "via_device_id": "49fa8d7b21ef483c84056b5b0e1831fa"
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
             },
             {
                 "area_id": null,
@@ -932,7 +932,7 @@
                 "name": "Kitchen Window Sensor",
                 "name_by_user": null,
                 "sw_version": "20161128",
-                "via_device_id": "49fa8d7b21ef483c84056b5b0e1831fa"
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
             },
             {
                 "area_id": null,
@@ -1017,7 +1017,7 @@
                 "name": "Mi Magic Cube",
                 "name_by_user": null,
                 "sw_version": "20160704",
-                "via_device_id": "49fa8d7b21ef483c84056b5b0e1831fa"
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
             },
             {
                 "area_id": null,
@@ -1042,7 +1042,7 @@
                 "name": "Bathroom 2-gang",
                 "name_by_user": null,
                 "sw_version": "20180809",
-                "via_device_id": "49fa8d7b21ef483c84056b5b0e1831fa"
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
             },
             {
                 "area_id": null,
@@ -1067,7 +1067,7 @@
                 "name": "Shower",
                 "name_by_user": null,
                 "sw_version": "20161128",
-                "via_device_id": "49fa8d7b21ef483c84056b5b0e1831fa"
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
             },
             {
                 "area_id": null,
@@ -1092,7 +1092,7 @@
                 "name": "Microwave Window / Door Sensor",
                 "name_by_user": null,
                 "sw_version": "20161128",
-                "via_device_id": "49fa8d7b21ef483c84056b5b0e1831fa"
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
             },
             {
                 "area_id": null,
@@ -1117,7 +1117,7 @@
                 "name": "Vibration Sensor",
                 "name_by_user": null,
                 "sw_version": "20180130",
-                "via_device_id": "49fa8d7b21ef483c84056b5b0e1831fa"
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
             },
             {
                 "area_id": null,
@@ -1162,7 +1162,7 @@
                 "name": "Library  Sensor",
                 "name_by_user": null,
                 "sw_version": "20170627",
-                "via_device_id": "49fa8d7b21ef483c84056b5b0e1831fa"
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
             },
             {
                 "area_id": null,
@@ -1187,8 +1187,8 @@
             {
                 "area_id": null,
                 "config_entries": [
-                    "d3e1b6f284404ed287da3173ed660c7c",
-                    "2f2ba8793b5741028def01705355d41b"
+                    "2f2ba8793b5741028def01705355d41b",
+                    "d3e1b6f284404ed287da3173ed660c7c"
                 ],
                 "connections": [
                     [
@@ -1213,8 +1213,8 @@
             {
                 "area_id": null,
                 "config_entries": [
-                    "d3e1b6f284404ed287da3173ed660c7c",
-                    "2f2ba8793b5741028def01705355d41b"
+                    "2f2ba8793b5741028def01705355d41b",
+                    "d3e1b6f284404ed287da3173ed660c7c"
                 ],
                 "connections": [
                     [
@@ -1239,8 +1239,8 @@
             {
                 "area_id": null,
                 "config_entries": [
-                    "d3e1b6f284404ed287da3173ed660c7c",
-                    "2f2ba8793b5741028def01705355d41b"
+                    "2f2ba8793b5741028def01705355d41b",
+                    "d3e1b6f284404ed287da3173ed660c7c"
                 ],
                 "connections": [
                     [
@@ -1265,8 +1265,8 @@
             {
                 "area_id": null,
                 "config_entries": [
-                    "d3e1b6f284404ed287da3173ed660c7c",
-                    "2f2ba8793b5741028def01705355d41b"
+                    "2f2ba8793b5741028def01705355d41b",
+                    "d3e1b6f284404ed287da3173ed660c7c"
                 ],
                 "connections": [
                     [
@@ -1291,8 +1291,8 @@
             {
                 "area_id": null,
                 "config_entries": [
-                    "d3e1b6f284404ed287da3173ed660c7c",
-                    "2f2ba8793b5741028def01705355d41b"
+                    "2f2ba8793b5741028def01705355d41b",
+                    "d3e1b6f284404ed287da3173ed660c7c"
                 ],
                 "connections": [
                     [
@@ -1317,8 +1317,8 @@
             {
                 "area_id": null,
                 "config_entries": [
-                    "d3e1b6f284404ed287da3173ed660c7c",
-                    "2f2ba8793b5741028def01705355d41b"
+                    "2f2ba8793b5741028def01705355d41b",
+                    "d3e1b6f284404ed287da3173ed660c7c"
                 ],
                 "connections": [
                     [
@@ -1554,15 +1554,15 @@
                 "identifiers": [
                     [
                         "mqtt",
+                        "C4:7C:8D:6A:42:10"
+                    ],
+                    [
+                        "mqtt",
                         "bt-mqtt-gateway/C4-7C-8D-6A-42-10/miflora_herbs"
                     ],
                     [
                         "mqtt",
                         "bt-mqtt-gateway/C4-7C-8D-6A-42-10/miflora_aloevera"
-                    ],
-                    [
-                        "mqtt",
-                        "C4:7C:8D:6A:42:10"
                     ]
                 ],
                 "manufacturer": "Xiaomi",
@@ -1595,7 +1595,7 @@
                 "name": "Lower Hallway Motion Sensor",
                 "name_by_user": null,
                 "sw_version": "20170627",
-                "via_device_id": "49fa8d7b21ef483c84056b5b0e1831fa"
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
             },
             {
                 "area_id": null,
@@ -1620,7 +1620,7 @@
                 "name": "Hallway blind",
                 "name_by_user": null,
                 "sw_version": "2.2.007",
-                "via_device_id": "49fa8d7b21ef483c84056b5b0e1831fa"
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
             },
             {
                 "area_id": null,
@@ -1645,7 +1645,7 @@
                 "name": "TRADFRI open/close remote",
                 "name_by_user": null,
                 "sw_version": "2.2.008",
-                "via_device_id": "49fa8d7b21ef483c84056b5b0e1831fa"
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
             },
             {
                 "area_id": null,
@@ -1665,7 +1665,7 @@
                 "name": "all",
                 "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": "49fa8d7b21ef483c84056b5b0e1831fa"
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
             },
             {
                 "area_id": null,
@@ -1690,7 +1690,7 @@
                 "name": "Bath Water Sensor",
                 "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": "49fa8d7b21ef483c84056b5b0e1831fa"
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
             },
             {
                 "area_id": null,
@@ -1817,7 +1817,8 @@
             {
                 "area_id": null,
                 "config_entries": [
-                    "d3e1b6f284404ed287da3173ed660c7c"
+                    "d3e1b6f284404ed287da3173ed660c7c",
+                    "5eabc300fd3c46e591d56c043e0bd396"
                 ],
                 "connections": [
                     [
@@ -1826,12 +1827,17 @@
                     ]
                 ],
                 "id": "3ce62447e2464534b646b4c3d57b54d8",
-                "identifiers": [],
-                "manufacturer": null,
-                "model": null,
-                "name": null,
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00212E05009D"
+                    ]
+                ],
+                "manufacturer": "Ubiquiti Networks",
+                "model": "UniFi Controller",
+                "name": "UniFi Controller",
                 "name_by_user": null,
-                "sw_version": null,
+                "sw_version": "2.5.69",
                 "via_device_id": null
             },
             {
@@ -2486,6 +2492,46 @@
                     ]
                 ],
                 "id": "8b3594d6277945e7bf8826ad07a3e5ea",
+                "identifiers": [],
+                "manufacturer": null,
+                "model": null,
+                "name": null,
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "d3e1b6f284404ed287da3173ed660c7c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "fa:76:a7:72:6a:bb"
+                    ]
+                ],
+                "id": "9986c72da85e4bafbd7eb1b15b34addb",
+                "identifiers": [],
+                "manufacturer": null,
+                "model": null,
+                "name": null,
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "d3e1b6f284404ed287da3173ed660c7c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "7c:61:66:38:6c:bf"
+                    ]
+                ],
+                "id": "c2580fe892fe4698bc8b74fc67d7e73a",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,

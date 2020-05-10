@@ -59,4 +59,12 @@
     payload_on: "online"
     payload_off: "offline"
 
+  - platform: mqtt
+    name: "Bedroom MCU - Not Posted Temp"
+    state_topic: "availability/bedroomMCU/senorarray"
+    payload_on: "online"
+    payload_off: "offline"
+
+
+
     

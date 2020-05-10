@@ -18,7 +18,7 @@
     payload_not_available: "offline"
   - platform: mqtt
     name: "Office (Doorbell) Humidity"
-    state_topic: "doorbell/senorarray"
+    state_topic: "doorbell/sensorarray"
     unit_of_measurement: '%'
     value_template: "{{ value_json.humidity }}"
     expire_after : 180
@@ -38,10 +38,11 @@
     payload_not_available: "offline"
   - platform: mqtt
     name: "Office (Doorbell) DHT Error"
-    state_topic: "doorbell/senorarray"
+    state_topic: "doorbell/sensorarray"
     unit_of_measurement: '%'
     value_template: "{{ value_json.dhterror }}"
     expire_after : 180
     availability_topic: "availability/doorbell"
     payload_available: "online"
     payload_not_available: "offline"
+

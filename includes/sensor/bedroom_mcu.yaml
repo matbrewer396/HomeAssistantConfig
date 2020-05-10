@@ -6,7 +6,7 @@
     value_template: "{{ value_json.temperature }}"
     expire_after : 180
     device_class: temperature
-    availability_topic: "availability/bedroomMCU"
+    availability_topic: "availability/bedroomMCU/senorarray"
     payload_available: "online"
     payload_not_available: "offline"
   - platform: mqtt
@@ -16,7 +16,7 @@
     value_template: "{{ value_json.humidity }}"
     expire_after : 180
     device_class: humidity
-    availability_topic: "availability/bedroomMCU"
+    availability_topic: "availability/bedroomMCU/senorarray"
     payload_available: "online"
     payload_not_available: "offline"
   - platform: mqtt
@@ -26,7 +26,7 @@
     value_template: "{{ value_json.lightlevel }}"
     expire_after : 180
     device_class: illuminance
-    availability_topic: "availability/bedroomMCU"
+    availability_topic: "availability/bedroomMCU/senorarray"
     payload_available: "online"
     payload_not_available: "offline"
   - platform: mqtt
