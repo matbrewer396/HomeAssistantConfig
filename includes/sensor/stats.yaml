@@ -9,3 +9,15 @@
       - sensor.office_temperature
       - sensor.bedroom_temperature
       - sensor.kitchen_temperature
+
+
+  - platform: min_max
+    type: mean
+    name: Home Avg Temperature
+    entity_ids:
+      - sensor.bathroom_sensor_temperature
+      - sensor.hallway_temperature
+      - sensor.living_room_senor_temperature
+      - sensor.office_temperature
+      - sensor.bedroom_temperature
+      - sensor.kitchen_temperature

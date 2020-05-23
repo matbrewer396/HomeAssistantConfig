@@ -148,4 +148,5 @@ all_device_status:
     - binary_sensor.freezer_senor_status
     - binary_sensor.bedroom_mcu_not_posted_temp
     - binary_sensor.kitchenmcu_sensor_status
+    # - availability/bathroomMCU/senorarray
 

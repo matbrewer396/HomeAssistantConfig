@@ -65,6 +65,11 @@
     payload_on: "online"
     payload_off: "offline"
 
+  - platform: mqtt
+    name: "Bathroom MCU - Not Posted Temp"
+    state_topic: "availability/bathroomMCU/senorarray"
+    payload_on: "online"
+    payload_off: "offline"
 
 
     

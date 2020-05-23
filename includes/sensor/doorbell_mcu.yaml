@@ -8,7 +8,7 @@
     payload_not_available: "offline"
   - platform: mqtt
     name: "Office (Doorbell) Temperature"
-    state_topic: "doorbell/senorarray"
+    state_topic: "doorbell/sensorarray"
     unit_of_measurement: '°C'
     value_template: "{{ value_json.temperature }}"
     expire_after : 180

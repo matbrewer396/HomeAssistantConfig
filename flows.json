@@ -34474,7 +34474,7 @@
     "service_domain": "cover",
     "service": "set_cover_position",
     "entityId": "cover.hallway_blind",
-    "data": "{\"position\":10}",
+    "data": "{\"position\":0}",
     "dataType": "json",
     "mergecontext": "",
     "output_location": "",
@@ -34546,7 +34546,7 @@
     "server": "5ee4d578.f7736c",
     "version": 1,
     "outputs": 2,
-    "halt_if": "15",
+    "halt_if": "0",
     "halt_if_type": "num",
     "halt_if_compare": "gt",
     "override_topic": false,
@@ -34622,57 +34622,6 @@
       [
         "70f4c965.2edba8"
       ]
-    ]
-  },
-  {
-    "id": "7d6dc10a.845af",
-    "type": "api-call-service",
-    "z": "c9b308f8.01ef68",
-    "name": "Close Blind",
-    "server": "5ee4d578.f7736c",
-    "version": 1,
-    "debugenabled": false,
-    "service_domain": "cover",
-    "service": "set_cover_position",
-    "entityId": "cover.hallway_blind",
-    "data": "{\"position\":10}",
-    "dataType": "json",
-    "mergecontext": "",
-    "output_location": "",
-    "output_location_type": "none",
-    "mustacheAltTags": false,
-    "x": 1050,
-    "y": 260,
-    "wires": [
-      []
-    ]
-  },
-  {
-    "id": "d55df0b8.b9985",
-    "type": "api-current-state",
-    "z": "c9b308f8.01ef68",
-    "name": "Is Closed",
-    "server": "5ee4d578.f7736c",
-    "version": 1,
-    "outputs": 2,
-    "halt_if": "15",
-    "halt_if_type": "num",
-    "halt_if_compare": "gt",
-    "override_topic": false,
-    "entity_id": "sensor.blind_hallway_current_position",
-    "state_type": "num",
-    "state_location": "payload",
-    "override_payload": "msg",
-    "entity_location": "data",
-    "override_data": "msg",
-    "blockInputOverrides": false,
-    "x": 880,
-    "y": 260,
-    "wires": [
-      [
-        "7d6dc10a.845af"
-      ],
-      []
     ]
   },
   {
@@ -35657,6 +35606,205 @@
     "wires": [
       [
         "e7c2066f.c4ddf8"
+      ]
+    ]
+  },
+  {
+    "id": "d74630e8.b4909",
+    "type": "comment",
+    "z": "48ba348c.61270c",
+    "name": "Bathroom MCU - Not Posted Temp",
+    "info": "",
+    "x": 200,
+    "y": 2760,
+    "wires": []
+  },
+  {
+    "id": "b4c6c87d.23ca68",
+    "type": "mqtt in",
+    "z": "48ba348c.61270c",
+    "name": "",
+    "topic": "bathroom/senorarray",
+    "qos": "2",
+    "datatype": "auto",
+    "broker": "1b6bc4ba.56ff4b",
+    "x": 150,
+    "y": 2800,
+    "wires": [
+      [
+        "8661edcc.3be77"
+      ]
+    ]
+  },
+  {
+    "id": "8661edcc.3be77",
+    "type": "trigger",
+    "z": "48ba348c.61270c",
+    "op1": "",
+    "op2": "offline",
+    "op1type": "nul",
+    "op2type": "str",
+    "duration": "2",
+    "extend": true,
+    "units": "min",
+    "reset": "",
+    "bytopic": "all",
+    "name": "",
+    "x": 430,
+    "y": 2800,
+    "wires": [
+      [
+        "cb282ca8.cd75f"
+      ]
+    ]
+  },
+  {
+    "id": "3bc8dc13.a3f8c4",
+    "type": "inject",
+    "z": "48ba348c.61270c",
+    "name": "10 Second After Start up",
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "repeat": "",
+    "crontab": "",
+    "once": true,
+    "onceDelay": "10",
+    "x": 170,
+    "y": 2840,
+    "wires": [
+      [
+        "8661edcc.3be77",
+        "a4acf032.66917"
+      ]
+    ]
+  },
+  {
+    "id": "a4acf032.66917",
+    "type": "change",
+    "z": "48ba348c.61270c",
+    "name": "Online",
+    "rules": [
+      {
+        "t": "set",
+        "p": "payload",
+        "pt": "msg",
+        "to": "online",
+        "tot": "str"
+      }
+    ],
+    "action": "",
+    "property": "",
+    "from": "",
+    "to": "",
+    "reg": false,
+    "x": 410,
+    "y": 2840,
+    "wires": [
+      [
+        "cb282ca8.cd75f"
+      ]
+    ]
+  },
+  {
+    "id": "cb282ca8.cd75f",
+    "type": "subflow:484cfc13.181de4",
+    "z": "48ba348c.61270c",
+    "name": "Bathroom MCU - Not Posted Temp",
+    "env": [
+      {
+        "name": "fault.name",
+        "value": "Bathroom MCU - Not Posted Temp",
+        "type": "str"
+      },
+      {
+        "name": "fault.item",
+        "value": "Bath Node MCU",
+        "type": "str"
+      },
+      {
+        "name": "fault.actiontofix",
+        "value": "Restart it",
+        "type": "str"
+      },
+      {
+        "name": "availbility.topic",
+        "value": "availability/bathroomMCU/senorarray",
+        "type": "str"
+      }
+    ],
+    "x": 740,
+    "y": 2820,
+    "wires": []
+  },
+  {
+    "id": "7d6dc10a.845af",
+    "type": "api-call-service",
+    "z": "c9b308f8.01ef68",
+    "name": "Close Blind",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "debugenabled": false,
+    "service_domain": "cover",
+    "service": "set_cover_position",
+    "entityId": "cover.hallway_blind",
+    "data": "{\"position\":0}",
+    "dataType": "json",
+    "mergecontext": "",
+    "output_location": "",
+    "output_location_type": "none",
+    "mustacheAltTags": false,
+    "x": 1050,
+    "y": 260,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "d55df0b8.b9985",
+    "type": "api-current-state",
+    "z": "c9b308f8.01ef68",
+    "name": "Is Closed",
+    "server": "5ee4d578.f7736c",
+    "version": 1,
+    "outputs": 2,
+    "halt_if": "0",
+    "halt_if_type": "num",
+    "halt_if_compare": "gt",
+    "override_topic": false,
+    "entity_id": "sensor.blind_hallway_current_position",
+    "state_type": "num",
+    "state_location": "payload",
+    "override_payload": "msg",
+    "entity_location": "data",
+    "override_data": "msg",
+    "blockInputOverrides": false,
+    "x": 880,
+    "y": 260,
+    "wires": [
+      [
+        "7d6dc10a.845af"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "c87086a7.b7e0f8",
+    "type": "inject",
+    "z": "d1172b8b.3d3298",
+    "name": "",
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "x": 480,
+    "y": 980,
+    "wires": [
+      [
+        "8cba57fa.1fa358"
       ]
     ]
   }
