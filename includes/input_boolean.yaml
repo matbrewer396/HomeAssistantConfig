@@ -92,6 +92,8 @@
     initial: on
 
 
+
+
   automation_alarm_notication_only:
     name: Send notication if no one home
 
@@ -102,4 +104,13 @@
 
   alert_hottub_heateroff:
     name: When Heater Next Off
+    initial: off
+
+
+## Lunch Time Timer
+  automation_mattlunchtime:
+    name: Trigger Lunch Time Trimer
+
+  lunchtimetimer:
+    name: Lunch Timer On
     initial: off
