@@ -14,3 +14,17 @@
     availability_topic: "btmonitor/livingroom/status"
     payload_available: "online"
     payload_not_available: "offline"
+  - platform: mqtt
+    state_topic: 'btmonitor/livingroom/mattwatch'
+    value_template: '{{ value_json.confidence }}'
+    unit_of_measurement: '%'
+    name: 'Matt Watch Living Room'
+    availability_topic: "btmonitor/livingroom/status"
+    payload_available: "online"
+    payload_not_available: "offline"
+  - platform: template
+    sensors:
+      bt_anyonehome_livingroom:
+        friendly_name: "Bluetooth is anyone home"
+        value_template: >
+          {{(states("sensor.matt_living_room") | float > 10 or states("sensor.danni_living_room") | float > 10  or states("sensor.mattwatch_living_room") | float > 10)}}

@@ -95,3 +95,12 @@
             activationMode: 'background'
             authenticationRequired: no
             destructive: yes
+      - name: Pong
+        identifier: 'PONG'
+        actions:
+          - identifier: 'PING'
+            title: 'Ping'
+            activationMode: 'background'
+            authenticationRequired: no
+            destructive: no
+            behavior: 'default'

@@ -128,7 +128,7 @@ cards:
             template: mini-graph 
             variables:
               - entities:
-                  - sensor.hallway_temperature
+                  - sensor.hallway_sensor_temperature
               - name: Hallway
               - line_color: '#ffb414'
               - font_size: 53
@@ -345,7 +345,7 @@ cards:
             template: mini-graph 
             variables:
               - entities:
-                  - sensor.bathroom_lux
+                  - sensor.bathroom_sensor_light_level
               - name: Bathroom
               - line_color: '#00d8ff'
               - font_size: 53
@@ -356,7 +356,7 @@ cards:
             template: mini-graph 
             variables:
               - entities:
-                  - sensor.hallway_lux
+                  - sensor.hallway_sensor_light_level
               - name: Hallway
               - line_color: '#00d8ff'
               - font_size: 53
