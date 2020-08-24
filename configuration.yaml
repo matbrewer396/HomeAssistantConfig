@@ -69,15 +69,20 @@ weather:
 
 
 notify:
-  - platform: ios
-    name: mattIphone
-    target: '887f840a-462e-3b19-b5de-919e1f1004a7'
-  - platform: ios
-    name: danniIphone
-    target: '409ff712-e1a1-31af-a7a9-b27f61143473'
+  # - platform: ios
+  #   name: mattIphone
+  #   target: 'dSS8TcAw3EF5mB3T9VnXkP:APA91bFe1Xg9vdvqrLomEAWVqOA9obefXcHoY3MankTTW1Mu2NCBZN7iShRmdRameyIWD6EKFoVnKQqRJhpHwX09wsFr03xqSTH0uJlbTDhGv5cmfZRh4Ib40rlQ1KCcccbAcpGQpJ1z'
+  # - platform: ios
+  #   name: danniIphone
+  #   target: '409ff712-e1a1-31af-a7a9-b27f61143473'
   - platform: nfandroidtv
     name: Living Room Tv
     host: 192.168.1.216
+  - platform: group
+    name: all_ios_devices
+    services:
+      - service: mobile_app_iphone
+      - service: mobile_app_matt_iphone  
   # - platform: alexa_media
   #   name: alexa_media
 

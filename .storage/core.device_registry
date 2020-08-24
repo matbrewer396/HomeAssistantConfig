@@ -1,174 +1,177 @@
 {
     "data": {
-        "devices": [
+        "deleted_devices": [
             {
-                "area_id": null,
                 "config_entries": [
                     "34f2c255e07545a8ad51334e150b35cf"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "239f612a0669449a886da15275c91642",
-                "identifiers": [
-                    [
-                        "hue",
-                        "00:17:88:01:02:93:22:f1-0b"
-                    ]
-                ],
-                "manufacturer": "Philips",
-                "model": "Hue color lamp",
-                "name": "Bed Room Light",
-                "name_by_user": null,
-                "sw_version": "1.46.13_r26312",
-                "via_device_id": "e3ff81bb4a264e12af6167b8d0006583"
-            },
-            {
-                "area_id": null,
-                "config_entries": [
-                    "34f2c255e07545a8ad51334e150b35cf"
-                ],
-                "connections": [],
-                "entry_type": null,
-                "id": "97572c97b49248aca1d9887d70ddda09",
-                "identifiers": [
-                    [
-                        "hue",
-                        "00:17:88:01:02:89:85:72-0b"
-                    ]
-                ],
-                "manufacturer": "Philips",
-                "model": "Hue color lamp",
-                "name": "Bed Room Lamp",
-                "name_by_user": null,
-                "sw_version": "1.46.13_r26312",
-                "via_device_id": "e3ff81bb4a264e12af6167b8d0006583"
-            },
-            {
-                "area_id": null,
-                "config_entries": [
-                    "34f2c255e07545a8ad51334e150b35cf"
-                ],
-                "connections": [],
-                "entry_type": null,
                 "id": "4fa34ea111d946b896d4b481728b8c76",
                 "identifiers": [
                     [
                         "hue",
                         "00:17:88:01:03:20:63:d4-0b"
                     ]
-                ],
-                "manufacturer": "Philips",
-                "model": "Hue color lamp",
-                "name": "Office Light",
-                "name_by_user": null,
-                "sw_version": "1.46.13_r26312",
-                "via_device_id": "e3ff81bb4a264e12af6167b8d0006583"
+                ]
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "34f2c255e07545a8ad51334e150b35cf"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "07acdaa144d94c66ac8fd46187f545f6",
+                "id": "0f2168a591fb4651b3f683de8f847b71",
                 "identifiers": [
                     [
                         "hue",
-                        "00:17:88:01:03:53:9a:13-0b"
+                        "00:17:88:01:03:cd:17:9f-0b"
                     ]
-                ],
-                "manufacturer": "Philips",
-                "model": "Hue color lamp",
-                "name": "Living Room Light 2",
-                "name_by_user": null,
-                "sw_version": "1.46.13_r26312",
-                "via_device_id": "e3ff81bb4a264e12af6167b8d0006583"
+                ]
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "34f2c255e07545a8ad51334e150b35cf"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "c08dc16db1dd460ca3d0c72154504bb7",
+                "id": "97572c97b49248aca1d9887d70ddda09",
                 "identifiers": [
                     [
                         "hue",
-                        "00:17:88:01:02:b1:0b:c1-0b"
+                        "00:17:88:01:02:89:85:72-0b"
                     ]
-                ],
-                "manufacturer": "Philips",
-                "model": "Hue white lamp",
-                "name": "Hallway Light",
-                "name_by_user": null,
-                "sw_version": "1.46.13_r26312",
-                "via_device_id": "e3ff81bb4a264e12af6167b8d0006583"
+                ]
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "34f2c255e07545a8ad51334e150b35cf"
                 ],
                 "connections": [],
-                "entry_type": null,
                 "id": "02a83aee20414a7f918872e10fcecb88",
                 "identifiers": [
                     [
                         "hue",
                         "00:17:88:01:03:20:64:fa-0b"
                     ]
-                ],
-                "manufacturer": "Philips",
-                "model": "Hue color lamp",
-                "name": "Living Room Light 1",
-                "name_by_user": null,
-                "sw_version": "1.46.13_r26312",
-                "via_device_id": "e3ff81bb4a264e12af6167b8d0006583"
+                ]
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "34f2c255e07545a8ad51334e150b35cf"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "c9c0c22a194d4befbddc6d4b300d9397",
+                "id": "07acdaa144d94c66ac8fd46187f545f6",
                 "identifiers": [
                     [
                         "hue",
-                        "00:17:88:01:02:53:32:46-0b"
+                        "00:17:88:01:03:53:9a:13-0b"
                     ]
-                ],
-                "manufacturer": "Philips",
-                "model": "Hue white lamp",
-                "name": "Bathroom Light",
-                "name_by_user": null,
-                "sw_version": "1.46.13_r26312",
-                "via_device_id": "e3ff81bb4a264e12af6167b8d0006583"
+                ]
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "34f2c255e07545a8ad51334e150b35cf"
                 ],
                 "connections": [],
-                "entry_type": null,
                 "id": "1e5dcf2f8c1b40b89a43a9707046a28f",
                 "identifiers": [
                     [
                         "hue",
                         "00:17:88:01:03:11:c6:61-0b"
                     ]
-                ],
-                "manufacturer": "Philips",
-                "model": "Hue color lamp",
-                "name": "Living Room Light 3",
-                "name_by_user": null,
-                "sw_version": "1.46.13_r26312",
-                "via_device_id": "e3ff81bb4a264e12af6167b8d0006583"
+                ]
             },
+            {
+                "config_entries": [
+                    "34f2c255e07545a8ad51334e150b35cf"
+                ],
+                "connections": [],
+                "id": "c08dc16db1dd460ca3d0c72154504bb7",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:02:b1:0b:c1-0b"
+                    ]
+                ]
+            },
+            {
+                "config_entries": [
+                    "34f2c255e07545a8ad51334e150b35cf"
+                ],
+                "connections": [],
+                "id": "be4e6811324f4205bf7b7499e88f5f95",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:02:13:16:0a"
+                    ]
+                ]
+            },
+            {
+                "config_entries": [
+                    "34f2c255e07545a8ad51334e150b35cf"
+                ],
+                "connections": [],
+                "id": "c9c0c22a194d4befbddc6d4b300d9397",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:02:53:32:46-0b"
+                    ]
+                ]
+            },
+            {
+                "config_entries": [
+                    "34f2c255e07545a8ad51334e150b35cf"
+                ],
+                "connections": [],
+                "id": "e6764cf8834240ac94bfd852a6f16bc0",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:03:26:fd:f5-0b"
+                    ]
+                ]
+            },
+            {
+                "config_entries": [
+                    "34f2c255e07545a8ad51334e150b35cf"
+                ],
+                "connections": [],
+                "id": "9d5e1fb656bf431e84db4eaf05359919",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:03:38:81:e8-0b"
+                    ]
+                ]
+            },
+            {
+                "config_entries": [
+                    "34f2c255e07545a8ad51334e150b35cf"
+                ],
+                "connections": [],
+                "id": "84e14aa718fc46b0ac1628cdb8c6cacd",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:03:f5:6b:4d-0b"
+                    ]
+                ]
+            },
+            {
+                "config_entries": [
+                    "34f2c255e07545a8ad51334e150b35cf"
+                ],
+                "connections": [],
+                "id": "239f612a0669449a886da15275c91642",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:02:93:22:f1-0b"
+                    ]
+                ]
+            }
+        ],
+        "devices": [
             {
                 "area_id": null,
                 "config_entries": [
@@ -210,90 +213,6 @@
                 "name_by_user": null,
                 "sw_version": "13.1.3",
                 "via_device_id": null
-            },
-            {
-                "area_id": null,
-                "config_entries": [
-                    "34f2c255e07545a8ad51334e150b35cf"
-                ],
-                "connections": [],
-                "entry_type": null,
-                "id": "84e14aa718fc46b0ac1628cdb8c6cacd",
-                "identifiers": [
-                    [
-                        "hue",
-                        "00:17:88:01:03:f5:6b:4d-0b"
-                    ]
-                ],
-                "manufacturer": "Philips",
-                "model": "Hue lightstrip plus",
-                "name": "Bedroom lightstrip plus 1",
-                "name_by_user": null,
-                "sw_version": "1.46.13_r26312",
-                "via_device_id": "e3ff81bb4a264e12af6167b8d0006583"
-            },
-            {
-                "area_id": null,
-                "config_entries": [
-                    "34f2c255e07545a8ad51334e150b35cf"
-                ],
-                "connections": [],
-                "entry_type": null,
-                "id": "9d5e1fb656bf431e84db4eaf05359919",
-                "identifiers": [
-                    [
-                        "hue",
-                        "00:17:88:01:03:38:81:e8-0b"
-                    ]
-                ],
-                "manufacturer": "Philips",
-                "model": "Hue white lamp",
-                "name": "Library Light 2",
-                "name_by_user": null,
-                "sw_version": "1.46.13_r26312",
-                "via_device_id": "e3ff81bb4a264e12af6167b8d0006583"
-            },
-            {
-                "area_id": null,
-                "config_entries": [
-                    "34f2c255e07545a8ad51334e150b35cf"
-                ],
-                "connections": [],
-                "entry_type": null,
-                "id": "e6764cf8834240ac94bfd852a6f16bc0",
-                "identifiers": [
-                    [
-                        "hue",
-                        "00:17:88:01:03:26:fd:f5-0b"
-                    ]
-                ],
-                "manufacturer": "Philips",
-                "model": "Hue white lamp",
-                "name": "Library Light 1",
-                "name_by_user": null,
-                "sw_version": "1.46.13_r26312",
-                "via_device_id": "e3ff81bb4a264e12af6167b8d0006583"
-            },
-            {
-                "area_id": null,
-                "config_entries": [
-                    "34f2c255e07545a8ad51334e150b35cf"
-                ],
-                "connections": [],
-                "entry_type": null,
-                "id": "0f2168a591fb4651b3f683de8f847b71",
-                "identifiers": [
-                    [
-                        "hue",
-                        "00:17:88:01:03:cd:17:9f-0b"
-                    ]
-                ],
-                "manufacturer": "Philips",
-                "model": "Hue lightstrip plus",
-                "name": "Office lightstrip",
-                "name_by_user": null,
-                "sw_version": "1.46.13_r26312",
-                "via_device_id": "e3ff81bb4a264e12af6167b8d0006583"
             },
             {
                 "area_id": null,
@@ -344,27 +263,6 @@
                 ],
                 "connections": [],
                 "entry_type": null,
-                "id": "be4e6811324f4205bf7b7499e88f5f95",
-                "identifiers": [
-                    [
-                        "hue",
-                        "00:17:88:01:02:13:16:0a"
-                    ]
-                ],
-                "manufacturer": "Philips",
-                "model": "Hue motion sensor",
-                "name": "Hallway sensor",
-                "name_by_user": null,
-                "sw_version": "6.1.1.27575",
-                "via_device_id": "e3ff81bb4a264e12af6167b8d0006583"
-            },
-            {
-                "area_id": null,
-                "config_entries": [
-                    "34f2c255e07545a8ad51334e150b35cf"
-                ],
-                "connections": [],
-                "entry_type": null,
                 "id": "e2fe67761fcb4cb0be5c593ae17adf9b",
                 "identifiers": [
                     [
@@ -372,12 +270,12 @@
                         "00:17:88:01:03:28:31:b0"
                     ]
                 ],
-                "manufacturer": "Philips",
+                "manufacturer": "Signify Netherlands B.V.",
                 "model": "Hue motion sensor",
                 "name": "Bathroom sensor",
                 "name_by_user": null,
                 "sw_version": "6.1.1.27575",
-                "via_device_id": "e3ff81bb4a264e12af6167b8d0006583"
+                "via_device_id": "2a29277768d44580b5b8d71676b4457d"
             },
             {
                 "area_id": null,
@@ -418,7 +316,7 @@
                 "model": "ECHO A32DOYMUN6DTXA",
                 "name": "Bedroom",
                 "name_by_user": null,
-                "sw_version": "3725203076",
+                "sw_version": "3926569348",
                 "via_device_id": "9268d6c9af9b4b25b49e9ed017d3a6b2"
             },
             {
@@ -460,7 +358,7 @@
                 "model": "ECHO A7WXQPH584YP",
                 "name": "Office",
                 "name_by_user": null,
-                "sw_version": "653621620",
+                "sw_version": "655636720",
                 "via_device_id": "68cc24db3ca8452cae2d4e46cef9ad23"
             },
             {
@@ -544,7 +442,7 @@
                 "model": "ECHO A32DOYMUN6DTXA",
                 "name": "danielle's Echo Dot",
                 "name_by_user": null,
-                "sw_version": "3725203076",
+                "sw_version": "3926569348",
                 "via_device_id": "29bd8b72b32e4ec9a574e1dd5cfe0a75"
             },
             {
@@ -565,7 +463,7 @@
                 "model": "ECHO A7WXQPH584YP",
                 "name": "living room",
                 "name_by_user": null,
-                "sw_version": "653621620",
+                "sw_version": "655636720",
                 "via_device_id": "82d8430a01ce455995a29d29fe068ee8"
             },
             {
@@ -649,7 +547,7 @@
                 "model": "ECHO A3S5BH2HU6VAYF",
                 "name": "Barthroom",
                 "name_by_user": null,
-                "sw_version": "653621620",
+                "sw_version": "655636720",
                 "via_device_id": "b06cc70e90d04301aa26212a89fd94f1"
             },
             {
@@ -670,7 +568,7 @@
                 "model": "ECHO A32DOYMUN6DTXA",
                 "name": "Kitten",
                 "name_by_user": null,
-                "sw_version": "3725203076",
+                "sw_version": "3926569348",
                 "via_device_id": "2e3d8a5f59de4edc82d09ba0c15a1169"
             },
             {
@@ -712,7 +610,7 @@
                 "model": "TABLET A1Q7QCGNMXAKYW",
                 "name": "mat's 2nd Fire",
                 "name_by_user": null,
-                "sw_version": "2517057924",
+                "sw_version": "3658074244",
                 "via_device_id": "faee4b54a440426eb225b95b414df155"
             },
             {
@@ -785,28 +683,7 @@
                 "model": "iPhone X\u0280",
                 "name": "iPhone",
                 "name_by_user": null,
-                "sw_version": "13.4.1",
-                "via_device_id": null
-            },
-            {
-                "area_id": null,
-                "config_entries": [
-                    "fc307db2fb8143168ab6824be5d4e9e1"
-                ],
-                "connections": [],
-                "entry_type": null,
-                "id": "f43e2d60eb044b06b97aca70971b6ca6",
-                "identifiers": [
-                    [
-                        "mobile_app",
-                        "28d68ed320c448bc88c4e226aa0a3282"
-                    ]
-                ],
-                "manufacturer": "Apple",
-                "model": "iPhone Xs Max",
-                "name": "iPhone",
-                "name_by_user": null,
-                "sw_version": "13.3.1",
+                "sw_version": "13.6",
                 "via_device_id": null
             },
             {
@@ -1157,18 +1034,18 @@
                         "00:17:88:01:04:f3:38:37"
                     ]
                 ],
-                "manufacturer": "Philips",
+                "manufacturer": "Signify Netherlands B.V.",
                 "model": "Hue dimmer switch",
                 "name": "Living room switch",
                 "name_by_user": null,
                 "sw_version": "5.45.1.17846",
-                "via_device_id": "e3ff81bb4a264e12af6167b8d0006583"
+                "via_device_id": "2a29277768d44580b5b8d71676b4457d"
             },
             {
                 "area_id": null,
                 "config_entries": [
-                    "d3e1b6f284404ed287da3173ed660c7c",
-                    "2f2ba8793b5741028def01705355d41b"
+                    "2f2ba8793b5741028def01705355d41b",
+                    "d3e1b6f284404ed287da3173ed660c7c"
                 ],
                 "connections": [
                     [
@@ -1194,8 +1071,8 @@
             {
                 "area_id": null,
                 "config_entries": [
-                    "d3e1b6f284404ed287da3173ed660c7c",
-                    "2f2ba8793b5741028def01705355d41b"
+                    "2f2ba8793b5741028def01705355d41b",
+                    "d3e1b6f284404ed287da3173ed660c7c"
                 ],
                 "connections": [
                     [
@@ -1221,8 +1098,8 @@
             {
                 "area_id": null,
                 "config_entries": [
-                    "d3e1b6f284404ed287da3173ed660c7c",
-                    "2f2ba8793b5741028def01705355d41b"
+                    "2f2ba8793b5741028def01705355d41b",
+                    "d3e1b6f284404ed287da3173ed660c7c"
                 ],
                 "connections": [
                     [
@@ -1248,8 +1125,8 @@
             {
                 "area_id": null,
                 "config_entries": [
-                    "d3e1b6f284404ed287da3173ed660c7c",
-                    "2f2ba8793b5741028def01705355d41b"
+                    "2f2ba8793b5741028def01705355d41b",
+                    "d3e1b6f284404ed287da3173ed660c7c"
                 ],
                 "connections": [
                     [
@@ -1275,8 +1152,8 @@
             {
                 "area_id": null,
                 "config_entries": [
-                    "d3e1b6f284404ed287da3173ed660c7c",
-                    "2f2ba8793b5741028def01705355d41b"
+                    "2f2ba8793b5741028def01705355d41b",
+                    "d3e1b6f284404ed287da3173ed660c7c"
                 ],
                 "connections": [
                     [
@@ -1302,8 +1179,8 @@
             {
                 "area_id": null,
                 "config_entries": [
-                    "d3e1b6f284404ed287da3173ed660c7c",
-                    "2f2ba8793b5741028def01705355d41b"
+                    "2f2ba8793b5741028def01705355d41b",
+                    "d3e1b6f284404ed287da3173ed660c7c"
                 ],
                 "connections": [
                     [
@@ -1551,15 +1428,15 @@
                 "identifiers": [
                     [
                         "mqtt",
-                        "bt-mqtt-gateway/C4-7C-8D-6A-42-10/miflora_herbs"
-                    ],
-                    [
-                        "mqtt",
                         "C4:7C:8D:6A:42:10"
                     ],
                     [
                         "mqtt",
                         "bt-mqtt-gateway/C4-7C-8D-6A-42-10/miflora_aloevera"
+                    ],
+                    [
+                        "mqtt",
+                        "bt-mqtt-gateway/C4-7C-8D-6A-42-10/miflora_herbs"
                     ]
                 ],
                 "manufacturer": "Xiaomi",
@@ -1616,7 +1493,7 @@
                 ],
                 "manufacturer": "IKEA of Sweden",
                 "model": "FYRTUR block-out roller blind",
-                "name": "Hallway blind",
+                "name": "Hallway Blind",
                 "name_by_user": null,
                 "sw_version": "2.2.007",
                 "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
@@ -2687,6 +2564,637 @@
                 "name": "Dryer",
                 "name_by_user": null,
                 "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "d3e1b6f284404ed287da3173ed660c7c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "b8:27:eb:66:59:da"
+                    ]
+                ],
+                "entry_type": null,
+                "id": "a7d2a05d44884668858f8bf3a4ba5384",
+                "identifiers": [],
+                "manufacturer": null,
+                "model": null,
+                "name": null,
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "34f2c255e07545a8ad51334e150b35cf"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:17:88:78:88:ff"
+                    ]
+                ],
+                "entry_type": null,
+                "id": "2a29277768d44580b5b8d71676b4457d",
+                "identifiers": [
+                    [
+                        "hue",
+                        "001788FFFE7888FF"
+                    ]
+                ],
+                "manufacturer": "Signify",
+                "model": "BSB002",
+                "name": "Philips hue",
+                "name_by_user": null,
+                "sw_version": "1939070020",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "d3e1b6f284404ed287da3173ed660c7c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "e8:fb:e9:5e:3f:4c"
+                    ]
+                ],
+                "entry_type": null,
+                "id": "afd996aed2454c7c88779fd8a060c5f9",
+                "identifiers": [],
+                "manufacturer": null,
+                "model": null,
+                "name": null,
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "d3e1b6f284404ed287da3173ed660c7c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "44:00:49:66:8b:6b"
+                    ]
+                ],
+                "entry_type": null,
+                "id": "209392c0c3104ae28b2530184052dbfe",
+                "identifiers": [],
+                "manufacturer": null,
+                "model": null,
+                "name": null,
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "d3e1b6f284404ed287da3173ed660c7c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "68:db:f5:a3:a9:98"
+                    ]
+                ],
+                "entry_type": null,
+                "id": "1f5f6aa6291e4b2b96e798ca5bcba714",
+                "identifiers": [],
+                "manufacturer": null,
+                "model": null,
+                "name": null,
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "dfc3b118601d4435b84cce1cc1047d1e"
+                ],
+                "connections": [],
+                "entry_type": null,
+                "id": "a0eb121a12714963883011e0854fa6e7",
+                "identifiers": [
+                    [
+                        "mobile_app",
+                        "09DCE5AB-756E-4D8E-80F5-CD76D9366C65"
+                    ]
+                ],
+                "manufacturer": "Apple",
+                "model": "iPhone Xs Max",
+                "name": "Matt iPhone ",
+                "name_by_user": null,
+                "sw_version": "14.0",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:17:88:01:03:20:63:d4"
+                    ]
+                ],
+                "entry_type": null,
+                "id": "93cecfb1e20a4bd2bdfa8988eefeaaf2",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:17:88:01:03:20:63:d4"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "LCT015",
+                "name": "Office Light",
+                "name_by_user": null,
+                "sw_version": "1.46.13_r26312",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:17:88:01:03:cd:17:9f"
+                    ]
+                ],
+                "entry_type": null,
+                "id": "a34f5c26682344eb93ebbaea1a2ea643",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:17:88:01:03:cd:17:9f"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "LST002",
+                "name": "Office Light Strip",
+                "name_by_user": null,
+                "sw_version": "1.46.13_r26312",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:15:8d:00:04:77:62:11"
+                    ]
+                ],
+                "entry_type": null,
+                "id": "b8be5acda12d4a1d9046de18b3b202d2",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:15:8d:00:04:77:62:11"
+                    ]
+                ],
+                "manufacturer": "Feibit",
+                "model": "FNB56-ZCW25FB2.1",
+                "name": "Light 6",
+                "name_by_user": null,
+                "sw_version": "V1.5",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "ec:1b:bd:ff:fe:b5:7c:1c"
+                    ]
+                ],
+                "entry_type": null,
+                "id": "64b32aba597f48eca2b7168632ed5373",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "ec:1b:bd:ff:fe:b5:7c:1c"
+                    ]
+                ],
+                "manufacturer": "IKEA of Sweden",
+                "model": "TRADFRI bulb E27 WW 806lm",
+                "name": "Light 7",
+                "name_by_user": null,
+                "sw_version": "2.1.022",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "68:0a:e2:ff:fe:15:0b:85"
+                    ]
+                ],
+                "entry_type": null,
+                "id": "9f7850cbbca94f1c91779bbb17bdeaf9",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "68:0a:e2:ff:fe:15:0b:85"
+                    ]
+                ],
+                "manufacturer": "IKEA of Sweden",
+                "model": "TRADFRI on/off switch",
+                "name": "Office dimmer",
+                "name_by_user": null,
+                "sw_version": "2.2.010",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [],
+                "entry_type": null,
+                "id": "93eb3787cda646d69956f594afd27e8d",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00212EFFFF05009D-/groups/5"
+                    ]
+                ],
+                "manufacturer": "Dresden Elektronik",
+                "model": "deCONZ group",
+                "name": "test",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [],
+                "entry_type": null,
+                "id": "32c4d126f25c4d53ae902a758568ec4c",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00212EFFFF05009D-/groups/6"
+                    ]
+                ],
+                "manufacturer": "Dresden Elektronik",
+                "model": "deCONZ group",
+                "name": "blind",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:17:88:01:02:89:85:72"
+                    ]
+                ],
+                "entry_type": null,
+                "id": "fa696151af5e449bbecba1cecebc5dbc",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:17:88:01:02:89:85:72"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "LCT010",
+                "name": "Living Room Lamp",
+                "name_by_user": null,
+                "sw_version": "1.46.13_r26312",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:17:88:01:03:53:9a:13"
+                    ]
+                ],
+                "entry_type": null,
+                "id": "5bfbfa28d31e49daaf9d0c1491cd60f7",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:17:88:01:03:53:9a:13"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "LCT015",
+                "name": "Living Room 2",
+                "name_by_user": null,
+                "sw_version": "1.46.13_r26312",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:17:88:01:03:11:c6:61"
+                    ]
+                ],
+                "entry_type": null,
+                "id": "a30132eafb09479c9bd4ace5058aecb8",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:17:88:01:03:11:c6:61"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "LCT015",
+                "name": "Living Room 3",
+                "name_by_user": null,
+                "sw_version": "1.46.13_r26312",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:17:88:01:03:20:64:fa"
+                    ]
+                ],
+                "entry_type": null,
+                "id": "62ea81c377eb44f09cd764b8ce1ef79f",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:17:88:01:03:20:64:fa"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "LCT015",
+                "name": "Living Room 1",
+                "name_by_user": null,
+                "sw_version": "1.46.13_r26312",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:17:88:01:02:b1:0b:c1"
+                    ]
+                ],
+                "entry_type": null,
+                "id": "756a90163d1e4319a40b81e5f423fb0c",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:17:88:01:02:b1:0b:c1"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "LWB010",
+                "name": "hall way light",
+                "name_by_user": null,
+                "sw_version": "1.46.13_r26312",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:17:88:01:02:13:16:0a"
+                    ]
+                ],
+                "entry_type": null,
+                "id": "3c7fd27d28744a7792fd56249f7ae382",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:17:88:01:02:13:16:0a"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "SML001",
+                "name": "Motion Sensor",
+                "name_by_user": null,
+                "sw_version": "6.1.1.27575",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:17:88:01:02:53:32:46"
+                    ]
+                ],
+                "entry_type": null,
+                "id": "9ce9af3804ef4d07a572c7871bdaabbc",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:17:88:01:02:53:32:46"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "LWB010",
+                "name": "Bathroom light",
+                "name_by_user": null,
+                "sw_version": "1.46.13_r26312",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:17:88:01:03:26:fd:f5"
+                    ]
+                ],
+                "entry_type": null,
+                "id": "43b37c83c73b489ca79cc51e0d584d75",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:17:88:01:03:26:fd:f5"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "LWB010",
+                "name": "Lib Light 1",
+                "name_by_user": null,
+                "sw_version": "1.46.13_r26312",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:17:88:01:03:38:81:e8"
+                    ]
+                ],
+                "entry_type": null,
+                "id": "9cf980c511734cc68f11f99d7075a56c",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:17:88:01:03:38:81:e8"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "LWB010",
+                "name": "Lib Light 2",
+                "name_by_user": null,
+                "sw_version": "1.46.13_r26312",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "098a79cdf5a24d1893bc96bdac53d861"
+                ],
+                "connections": [],
+                "entry_type": null,
+                "id": "6754c841487c49cd8b56315d04f38484",
+                "identifiers": [
+                    [
+                        "mobile_app",
+                        "D780356D-FE42-4216-9CC7-5C7F4A9F83EC"
+                    ]
+                ],
+                "manufacturer": "Apple",
+                "model": "iPhone Xs Max",
+                "name": "Matt iPhone ",
+                "name_by_user": null,
+                "sw_version": "14.0",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:17:88:01:03:f5:6b:4d"
+                    ]
+                ],
+                "entry_type": null,
+                "id": "6bf25ea5f7e0499bbde64988cac6dffe",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:17:88:01:03:f5:6b:4d"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "LST002",
+                "name": "Bed room LED Strips",
+                "name_by_user": null,
+                "sw_version": "1.46.13_r26312",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:17:88:01:02:93:22:f1"
+                    ]
+                ],
+                "entry_type": null,
+                "id": "623534cddaa34a87859fe43aac81c43f",
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:17:88:01:02:93:22:f1"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "LCT010",
+                "name": "Bedroom Light",
+                "name_by_user": null,
+                "sw_version": "1.46.13_r26312",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "c4f1e774b38744138f87b0cf6c3baa07"
+                ],
+                "connections": [],
+                "entry_type": null,
+                "id": "cbc76b399c01434697518060e2853cf7",
+                "identifiers": [
+                    [
+                        "mobile_app",
+                        "2642AF19-1AE8-466F-BFFD-6BB2EE1F1F3F"
+                    ]
+                ],
+                "manufacturer": "Apple",
+                "model": "iPhone X\u0280",
+                "name": "iPhone",
+                "name_by_user": null,
+                "sw_version": "13.6.1",
                 "via_device_id": null
             }
         ]
