@@ -1,42 +1,109 @@
-  office:
-    name: Office
+  # office:
+  #   name: Office
+  #   entities:
+  #     - light.office_light
+  #     - switch.12747566807d3a494165
+  # bedroom:
+  #   name: Bed Room
+  #   entities:
+  #     - light.bed_room_lamp
+  #     - light.bed_room_light
+  #     - switch.0682373584f3eb675aab
+  # hallway:
+  #   name: Hallway
+  #   entities:
+  #     - light.hallway_light
+  # livingroom:
+  #   name: Living Room
+  #   entities:
+  #     - light.living_room_light_1
+  #     - light.living_room_light_2
+  #     - light.living_room_light_3
+  #     - media_player.living_room_xbox_one
+  #     - switch.tv
+  # bathroom:
+  #   name: BathRoom
+  #   entities:
+  #     - light.bathroom_light
+  # sofa:
+  #   name: Living Room
+  #   entities:
+  #     - light.sofa2
+  # livingroom_led:
+  #   name: Living Room
+  #   entities:
+  #     - light.sofa2
+  #     - light.wled_understairs
+
+  # livingroom_main_lights:
+  #   entities:
+  #     - light.living_room_light_1
+  #     - light.living_room_light_2
+  #     - light.living_room_light_3
+
+
+######################################
+## blinds
+######################################
+
+  blind_all:
+    entities:
+      - cover.office_blind_r
+      - cover.office_blind_l
+      - cover.kitchen_blind
+
+######################################
+## Lights
+######################################
+  light_goodnight:
+    - light.middle_floor_hallway
+    - light.middle_floor_bathroom
+    - light.bedroom_font
+    - light.bedroom_back
+    - light.bedroom_lamp
+    - light.living_room_front_main
+    - light.living_room_back_main
+    - light.living_room_back_left
+    - light.living_room_back_right
+    - light.office_light
+    - light.spare_room
+    - light.kitchen
+    - light.ground_floor_hallway
+    - light.middle_floor_hallway
+    - light.top_floor_hallway
+    - light.ground_floor_toilet
+    - light.middle_floor_bathroom
+    - light.top_floor_shower
+    - switch.plug_010
+    - switch.plug_07
+  light_bedroom:
+    entities:
+      - light.bedroom_font
+      - light.bedroom_back
+      - light.bedroom_lamp
+      - light.hue_lightstrip_underbed
+  light_livingroom:
+    entities:
+      - light.living_room_front_main
+      - light.living_room_back_main
+      - light.living_room_back_left
+      - light.living_room_back_right
+  light_office:
     entities:
       - light.office_light
-      - switch.12747566807d3a494165
-  bedroom:
-    name: Bed Room
+  light_spareroom:
     entities:
-      - light.bed_room_lamp
-      - light.bed_room_light
-      - switch.0682373584f3eb675aab
-  hallway:
-    name: Hallway
+      - light.spare_room
+  light_kitchen:
     entities:
-      - light.hallway_light
-  livingroom:
-    name: Living Room
+      - light.kitchen
+  light_hallways:
     entities:
-      - light.living_room_light_1
-      - light.living_room_light_2
-      - light.living_room_light_3
-      - media_player.living_room_xbox_one
-      - switch.tv
-  bathroom:
-    name: BathRoom
+      - light.ground_floor_hallway
+      - light.middle_floor_hallway
+      - light.top_floor_hallway
+  light_restrooms:
     entities:
-      - light.bathroom_light
-  sofa:
-    name: Living Room
-    entities:
-      - light.sofa2
-  livingroom_led:
-    name: Living Room
-    entities:
-      - light.sofa2
-      - light.wled_understairs
-
-  livingroom_main_lights:
-    entities:
-      - light.living_room_light_1
-      - light.living_room_light_2
-      - light.living_room_light_3
+      - light.ground_floor_toilet
+      - light.middle_floor_bathroom
+      - light.top_floor_shower

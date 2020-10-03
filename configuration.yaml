@@ -15,6 +15,9 @@ homeassistant:
   customize: !include includes/customize.yaml
   whitelist_external_dirs:
     - /config/tmp
+  media_dirs:
+    camera: /share/camera
+      
 
 # Enables the frontend
 frontend:
@@ -71,7 +74,7 @@ weather:
 notify:
   # - platform: ios
   #   name: mattIphone
-  #   target: 'dSS8TcAw3EF5mB3T9VnXkP:APA91bFe1Xg9vdvqrLomEAWVqOA9obefXcHoY3MankTTW1Mu2NCBZN7iShRmdRameyIWD6EKFoVnKQqRJhpHwX09wsFr03xqSTH0uJlbTDhGv5cmfZRh4Ib40rlQ1KCcccbAcpGQpJ1z'
+  #   target: 'fuqcGNWCkkFUiPPpXQWBXy:APA91bEq3f1jM2ikqjzYeRNmXRifec7ERueDC6cP2SfIYPbkbSLXEyhotIBqu2uJoq_0T4bf_VFcqe9ZTPBdww8-W7ebK3Q-c20qRqUUKgmGL5XmnthqqZM0oeMw-sHiWWOfSbaB_dk2'
   # - platform: ios
   #   name: danniIphone
   #   target: '409ff712-e1a1-31af-a7a9-b27f61143473'
@@ -82,7 +85,7 @@ notify:
     name: all_ios_devices
     services:
       - service: mobile_app_iphone
-      - service: mobile_app_matt_iphone  
+      - service: mobile_app_matt
   # - platform: alexa_media
   #   name: alexa_media
 

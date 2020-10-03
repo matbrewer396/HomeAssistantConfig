@@ -12,6 +12,7 @@ Life360.conf
 home-assistant.log
 home-assistant_v2.db
 .ios.conf
+.ios2.conf
 .storage/auth
 .storage/*
 !.storage/lovelace
@@ -63,3 +64,4 @@ packages/homekit_infused/configuration.yaml
 packages/homekit_infused/hki_groups.yaml
 lovelace/notifications/notifications.yaml
 octoprint/uploads/*
+zigbee.db

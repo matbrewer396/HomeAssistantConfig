@@ -32,4 +32,7 @@ views:
 
 #views: !include_dir_merge_list lovelace/views/
   
+
   # - !include lovelace/jimz011/views/energy.yam
+
+  
