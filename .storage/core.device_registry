@@ -1,185 +1,13 @@
 {
+    "version": 1,
+    "key": "core.device_registry",
     "data": {
-        "deleted_devices": [
-            {
-                "config_entries": [
-                    "34f2c255e07545a8ad51334e150b35cf"
-                ],
-                "connections": [],
-                "id": "4fa34ea111d946b896d4b481728b8c76",
-                "identifiers": [
-                    [
-                        "hue",
-                        "00:17:88:01:03:20:63:d4-0b"
-                    ]
-                ]
-            },
-            {
-                "config_entries": [
-                    "34f2c255e07545a8ad51334e150b35cf"
-                ],
-                "connections": [],
-                "id": "0f2168a591fb4651b3f683de8f847b71",
-                "identifiers": [
-                    [
-                        "hue",
-                        "00:17:88:01:03:cd:17:9f-0b"
-                    ]
-                ]
-            },
-            {
-                "config_entries": [
-                    "34f2c255e07545a8ad51334e150b35cf"
-                ],
-                "connections": [],
-                "id": "97572c97b49248aca1d9887d70ddda09",
-                "identifiers": [
-                    [
-                        "hue",
-                        "00:17:88:01:02:89:85:72-0b"
-                    ]
-                ]
-            },
-            {
-                "config_entries": [
-                    "34f2c255e07545a8ad51334e150b35cf"
-                ],
-                "connections": [],
-                "id": "02a83aee20414a7f918872e10fcecb88",
-                "identifiers": [
-                    [
-                        "hue",
-                        "00:17:88:01:03:20:64:fa-0b"
-                    ]
-                ]
-            },
-            {
-                "config_entries": [
-                    "34f2c255e07545a8ad51334e150b35cf"
-                ],
-                "connections": [],
-                "id": "07acdaa144d94c66ac8fd46187f545f6",
-                "identifiers": [
-                    [
-                        "hue",
-                        "00:17:88:01:03:53:9a:13-0b"
-                    ]
-                ]
-            },
-            {
-                "config_entries": [
-                    "34f2c255e07545a8ad51334e150b35cf"
-                ],
-                "connections": [],
-                "id": "1e5dcf2f8c1b40b89a43a9707046a28f",
-                "identifiers": [
-                    [
-                        "hue",
-                        "00:17:88:01:03:11:c6:61-0b"
-                    ]
-                ]
-            },
-            {
-                "config_entries": [
-                    "34f2c255e07545a8ad51334e150b35cf"
-                ],
-                "connections": [],
-                "id": "c08dc16db1dd460ca3d0c72154504bb7",
-                "identifiers": [
-                    [
-                        "hue",
-                        "00:17:88:01:02:b1:0b:c1-0b"
-                    ]
-                ]
-            },
-            {
-                "config_entries": [
-                    "34f2c255e07545a8ad51334e150b35cf"
-                ],
-                "connections": [],
-                "id": "be4e6811324f4205bf7b7499e88f5f95",
-                "identifiers": [
-                    [
-                        "hue",
-                        "00:17:88:01:02:13:16:0a"
-                    ]
-                ]
-            },
-            {
-                "config_entries": [
-                    "34f2c255e07545a8ad51334e150b35cf"
-                ],
-                "connections": [],
-                "id": "c9c0c22a194d4befbddc6d4b300d9397",
-                "identifiers": [
-                    [
-                        "hue",
-                        "00:17:88:01:02:53:32:46-0b"
-                    ]
-                ]
-            },
-            {
-                "config_entries": [
-                    "34f2c255e07545a8ad51334e150b35cf"
-                ],
-                "connections": [],
-                "id": "e6764cf8834240ac94bfd852a6f16bc0",
-                "identifiers": [
-                    [
-                        "hue",
-                        "00:17:88:01:03:26:fd:f5-0b"
-                    ]
-                ]
-            },
-            {
-                "config_entries": [
-                    "34f2c255e07545a8ad51334e150b35cf"
-                ],
-                "connections": [],
-                "id": "9d5e1fb656bf431e84db4eaf05359919",
-                "identifiers": [
-                    [
-                        "hue",
-                        "00:17:88:01:03:38:81:e8-0b"
-                    ]
-                ]
-            },
-            {
-                "config_entries": [
-                    "34f2c255e07545a8ad51334e150b35cf"
-                ],
-                "connections": [],
-                "id": "84e14aa718fc46b0ac1628cdb8c6cacd",
-                "identifiers": [
-                    [
-                        "hue",
-                        "00:17:88:01:03:f5:6b:4d-0b"
-                    ]
-                ]
-            },
-            {
-                "config_entries": [
-                    "34f2c255e07545a8ad51334e150b35cf"
-                ],
-                "connections": [],
-                "id": "239f612a0669449a886da15275c91642",
-                "identifiers": [
-                    [
-                        "hue",
-                        "00:17:88:01:02:93:22:f1-0b"
-                    ]
-                ]
-            }
-        ],
         "devices": [
             {
-                "area_id": null,
                 "config_entries": [
                     "48b73952d0de463c9efabacec94dddf0"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "9bee4c62ece942049d0f3aa0d1381e64",
                 "identifiers": [
                     [
                         "ios",
@@ -189,18 +17,18 @@
                 "manufacturer": "Apple",
                 "model": "iPhone11,6",
                 "name": "iPhone",
-                "name_by_user": null,
                 "sw_version": "13.3",
-                "via_device_id": null
+                "entry_type": null,
+                "id": "9bee4c62ece942049d0f3aa0d1381e64",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "48b73952d0de463c9efabacec94dddf0"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "6750b7cc435e4717a0ee134de5e04135",
                 "identifiers": [
                     [
                         "ios",
@@ -210,18 +38,18 @@
                 "manufacturer": "Apple",
                 "model": "iPhone11,8",
                 "name": "iPhone",
-                "name_by_user": null,
                 "sw_version": "13.1.3",
-                "via_device_id": null
+                "entry_type": null,
+                "id": "6750b7cc435e4717a0ee134de5e04135",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "48b73952d0de463c9efabacec94dddf0"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "78521626a28b4b1c9eb6e2e53e07d313",
                 "identifiers": [
                     [
                         "ios",
@@ -231,12 +59,14 @@
                 "manufacturer": "Apple",
                 "model": "iPhone Xs Max",
                 "name": "iPhone",
-                "name_by_user": null,
                 "sw_version": "12.2",
-                "via_device_id": null
+                "entry_type": null,
+                "id": "78521626a28b4b1c9eb6e2e53e07d313",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": "373ee5a51dbb4f41a790d722125e64fe",
                 "config_entries": [
                     "83736706ab004933acd19e31adcf6d25"
                 ],
@@ -246,45 +76,22 @@
                         "3c:71:bf:6a:54:7c"
                     ]
                 ],
-                "entry_type": null,
-                "id": "54d42f4c951040b3bf53aba29495c7ff",
                 "identifiers": [],
                 "manufacturer": "espressif",
                 "model": "Espressif ESP-WROVER-KIT",
                 "name": "ble",
-                "name_by_user": null,
                 "sw_version": "1.12.2 (Apr 15 2019, 18:25:54)",
-                "via_device_id": null
-            },
-            {
-                "area_id": null,
-                "config_entries": [
-                    "34f2c255e07545a8ad51334e150b35cf"
-                ],
-                "connections": [],
                 "entry_type": null,
-                "id": "e2fe67761fcb4cb0be5c593ae17adf9b",
-                "identifiers": [
-                    [
-                        "hue",
-                        "00:17:88:01:03:28:31:b0"
-                    ]
-                ],
-                "manufacturer": "Signify Netherlands B.V.",
-                "model": "Hue motion sensor",
-                "name": "Bathroom sensor",
-                "name_by_user": null,
-                "sw_version": "6.1.1.27575",
-                "via_device_id": "2a29277768d44580b5b8d71676b4457d"
+                "id": "54d42f4c951040b3bf53aba29495c7ff",
+                "via_device_id": null,
+                "area_id": "373ee5a51dbb4f41a790d722125e64fe",
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "b86044f2439745d091509f16fa907f55"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "b6004faa3a2546ebbac6e9eb37104223",
                 "identifiers": [
                     [
                         "alexa_media",
@@ -294,18 +101,18 @@
                 "manufacturer": "Amazon",
                 "model": "AMAZONMOBILEMUSIC_IOS A2825NDLA7WDZV",
                 "name": "mat's Alexa Apps",
-                "name_by_user": null,
                 "sw_version": "4",
-                "via_device_id": "b6004faa3a2546ebbac6e9eb37104223"
+                "entry_type": null,
+                "id": "b6004faa3a2546ebbac6e9eb37104223",
+                "via_device_id": "b6004faa3a2546ebbac6e9eb37104223",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "b86044f2439745d091509f16fa907f55"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "9268d6c9af9b4b25b49e9ed017d3a6b2",
                 "identifiers": [
                     [
                         "alexa_media",
@@ -315,18 +122,18 @@
                 "manufacturer": "Amazon",
                 "model": "ECHO A32DOYMUN6DTXA",
                 "name": "Bedroom",
-                "name_by_user": null,
-                "sw_version": "3926569348",
-                "via_device_id": "9268d6c9af9b4b25b49e9ed017d3a6b2"
+                "sw_version": "4128036484",
+                "entry_type": null,
+                "id": "9268d6c9af9b4b25b49e9ed017d3a6b2",
+                "via_device_id": "9268d6c9af9b4b25b49e9ed017d3a6b2",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "b86044f2439745d091509f16fa907f55"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "38e44d86dc544322a0922e7c3d7bb300",
                 "identifiers": [
                     [
                         "alexa_media",
@@ -336,18 +143,18 @@
                 "manufacturer": "Amazon",
                 "model": "WHA A3C9PE6TNYLTCH",
                 "name": "Upstairs",
-                "name_by_user": null,
                 "sw_version": "0",
-                "via_device_id": "38e44d86dc544322a0922e7c3d7bb300"
+                "entry_type": null,
+                "id": "38e44d86dc544322a0922e7c3d7bb300",
+                "via_device_id": "38e44d86dc544322a0922e7c3d7bb300",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "b86044f2439745d091509f16fa907f55"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "68cc24db3ca8452cae2d4e46cef9ad23",
                 "identifiers": [
                     [
                         "alexa_media",
@@ -357,18 +164,18 @@
                 "manufacturer": "Amazon",
                 "model": "ECHO A7WXQPH584YP",
                 "name": "Office",
-                "name_by_user": null,
-                "sw_version": "655636720",
-                "via_device_id": "68cc24db3ca8452cae2d4e46cef9ad23"
+                "sw_version": "655711520",
+                "entry_type": null,
+                "id": "68cc24db3ca8452cae2d4e46cef9ad23",
+                "via_device_id": "68cc24db3ca8452cae2d4e46cef9ad23",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "b86044f2439745d091509f16fa907f55"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "3d371bed187e4d4d90ba1fb46dd36c4c",
                 "identifiers": [
                     [
                         "alexa_media",
@@ -378,18 +185,18 @@
                 "manufacturer": "Amazon",
                 "model": "VOX A2IVLV5VM2W81",
                 "name": "This Device",
-                "name_by_user": null,
                 "sw_version": "1",
-                "via_device_id": "3d371bed187e4d4d90ba1fb46dd36c4c"
+                "entry_type": null,
+                "id": "3d371bed187e4d4d90ba1fb46dd36c4c",
+                "via_device_id": "3d371bed187e4d4d90ba1fb46dd36c4c",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "b86044f2439745d091509f16fa907f55"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "aa24ed14e54a49cc99f264d31d8347c9",
                 "identifiers": [
                     [
                         "alexa_media",
@@ -399,18 +206,18 @@
                 "manufacturer": "Amazon",
                 "model": "WHA A3C9PE6TNYLTCH",
                 "name": "Downstairs",
-                "name_by_user": null,
                 "sw_version": "0",
-                "via_device_id": "aa24ed14e54a49cc99f264d31d8347c9"
+                "entry_type": null,
+                "id": "aa24ed14e54a49cc99f264d31d8347c9",
+                "via_device_id": "aa24ed14e54a49cc99f264d31d8347c9",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "b86044f2439745d091509f16fa907f55"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "6cf5145fef3d4525a3418dddbae51370",
                 "identifiers": [
                     [
                         "alexa_media",
@@ -420,18 +227,18 @@
                 "manufacturer": "Amazon",
                 "model": "WHA A3C9PE6TNYLTCH",
                 "name": "Everywhere",
-                "name_by_user": null,
                 "sw_version": "0",
-                "via_device_id": "6cf5145fef3d4525a3418dddbae51370"
+                "entry_type": null,
+                "id": "6cf5145fef3d4525a3418dddbae51370",
+                "via_device_id": "6cf5145fef3d4525a3418dddbae51370",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "b86044f2439745d091509f16fa907f55"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "29bd8b72b32e4ec9a574e1dd5cfe0a75",
                 "identifiers": [
                     [
                         "alexa_media",
@@ -441,18 +248,18 @@
                 "manufacturer": "Amazon",
                 "model": "ECHO A32DOYMUN6DTXA",
                 "name": "danielle's Echo Dot",
-                "name_by_user": null,
-                "sw_version": "3926569348",
-                "via_device_id": "29bd8b72b32e4ec9a574e1dd5cfe0a75"
+                "sw_version": "4128034692",
+                "entry_type": null,
+                "id": "29bd8b72b32e4ec9a574e1dd5cfe0a75",
+                "via_device_id": "29bd8b72b32e4ec9a574e1dd5cfe0a75",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "b86044f2439745d091509f16fa907f55"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "82d8430a01ce455995a29d29fe068ee8",
                 "identifiers": [
                     [
                         "alexa_media",
@@ -462,18 +269,18 @@
                 "manufacturer": "Amazon",
                 "model": "ECHO A7WXQPH584YP",
                 "name": "living room",
-                "name_by_user": null,
-                "sw_version": "655636720",
-                "via_device_id": "82d8430a01ce455995a29d29fe068ee8"
+                "sw_version": "655711520",
+                "entry_type": null,
+                "id": "82d8430a01ce455995a29d29fe068ee8",
+                "via_device_id": "82d8430a01ce455995a29d29fe068ee8",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "b86044f2439745d091509f16fa907f55"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "f7fc0172cb7c4a09a0a689a71506cac0",
                 "identifiers": [
                     [
                         "alexa_media",
@@ -483,18 +290,18 @@
                 "manufacturer": "Amazon",
                 "model": "VOX A2IVLV5VM2W81",
                 "name": "This Device",
-                "name_by_user": null,
                 "sw_version": "1",
-                "via_device_id": "f7fc0172cb7c4a09a0a689a71506cac0"
+                "entry_type": null,
+                "id": "f7fc0172cb7c4a09a0a689a71506cac0",
+                "via_device_id": "f7fc0172cb7c4a09a0a689a71506cac0",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "b86044f2439745d091509f16fa907f55"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "3b64c7d07a404bcbb1135b81c0c3eba6",
                 "identifiers": [
                     [
                         "alexa_media",
@@ -504,18 +311,18 @@
                 "manufacturer": "Amazon",
                 "model": "WHA A3C9PE6TNYLTCH",
                 "name": "Shared Downstairs",
-                "name_by_user": null,
                 "sw_version": "0",
-                "via_device_id": "3b64c7d07a404bcbb1135b81c0c3eba6"
+                "entry_type": null,
+                "id": "3b64c7d07a404bcbb1135b81c0c3eba6",
+                "via_device_id": "3b64c7d07a404bcbb1135b81c0c3eba6",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "b86044f2439745d091509f16fa907f55"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "850723dde1b84d198cdbe78d714a6d29",
                 "identifiers": [
                     [
                         "alexa_media",
@@ -525,18 +332,18 @@
                 "manufacturer": "Amazon",
                 "model": "FIRE_TV AKPGW064GI9HE",
                 "name": "mat's Fire TV",
-                "name_by_user": null,
-                "sw_version": "3590963076",
-                "via_device_id": "850723dde1b84d198cdbe78d714a6d29"
+                "sw_version": "3993687428",
+                "entry_type": null,
+                "id": "850723dde1b84d198cdbe78d714a6d29",
+                "via_device_id": "850723dde1b84d198cdbe78d714a6d29",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "b86044f2439745d091509f16fa907f55"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "b06cc70e90d04301aa26212a89fd94f1",
                 "identifiers": [
                     [
                         "alexa_media",
@@ -546,18 +353,18 @@
                 "manufacturer": "Amazon",
                 "model": "ECHO A3S5BH2HU6VAYF",
                 "name": "Barthroom",
-                "name_by_user": null,
-                "sw_version": "655636720",
-                "via_device_id": "b06cc70e90d04301aa26212a89fd94f1"
+                "sw_version": "655711020",
+                "entry_type": null,
+                "id": "b06cc70e90d04301aa26212a89fd94f1",
+                "via_device_id": "b06cc70e90d04301aa26212a89fd94f1",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "b86044f2439745d091509f16fa907f55"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "2e3d8a5f59de4edc82d09ba0c15a1169",
                 "identifiers": [
                     [
                         "alexa_media",
@@ -567,18 +374,18 @@
                 "manufacturer": "Amazon",
                 "model": "ECHO A32DOYMUN6DTXA",
                 "name": "Kitten",
-                "name_by_user": null,
-                "sw_version": "3926569348",
-                "via_device_id": "2e3d8a5f59de4edc82d09ba0c15a1169"
+                "sw_version": "4128036484",
+                "entry_type": null,
+                "id": "2e3d8a5f59de4edc82d09ba0c15a1169",
+                "via_device_id": "2e3d8a5f59de4edc82d09ba0c15a1169",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "b86044f2439745d091509f16fa907f55"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "86f203742c6d42658c6ec226271efec7",
                 "identifiers": [
                     [
                         "alexa_media",
@@ -588,18 +395,18 @@
                 "manufacturer": "Amazon",
                 "model": "ECHO A1RABVCI4QCIKC",
                 "name": "mat's Echo Dot",
-                "name_by_user": null,
                 "sw_version": "0",
-                "via_device_id": "86f203742c6d42658c6ec226271efec7"
+                "entry_type": null,
+                "id": "86f203742c6d42658c6ec226271efec7",
+                "via_device_id": "86f203742c6d42658c6ec226271efec7",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "b86044f2439745d091509f16fa907f55"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "faee4b54a440426eb225b95b414df155",
                 "identifiers": [
                     [
                         "alexa_media",
@@ -609,12 +416,14 @@
                 "manufacturer": "Amazon",
                 "model": "TABLET A1Q7QCGNMXAKYW",
                 "name": "mat's 2nd Fire",
-                "name_by_user": null,
                 "sw_version": "3658074244",
-                "via_device_id": "faee4b54a440426eb225b95b414df155"
+                "entry_type": null,
+                "id": "faee4b54a440426eb225b95b414df155",
+                "via_device_id": "faee4b54a440426eb225b95b414df155",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "5eabc300fd3c46e591d56c043e0bd396"
                 ],
@@ -624,9 +433,11 @@
                         "00:15:8d:00:04:44:8b:4b"
                     ]
                 ],
-                "entry_type": null,
-                "id": "f19ebf53cd08472d814515a2dceaaec4",
                 "identifiers": [
+                    [
+                        "zha",
+                        "00:15:8d:00:04:44:8b:4b"
+                    ],
                     [
                         "deconz",
                         "00:15:8d:00:04:44:8b:4b"
@@ -635,12 +446,14 @@
                 "manufacturer": "LUMI",
                 "model": "lumi.sensor_magnet.aq2",
                 "name": "Back door",
-                "name_by_user": null,
                 "sw_version": "20161128",
-                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+                "entry_type": null,
+                "id": "f19ebf53cd08472d814515a2dceaaec4",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "5eabc300fd3c46e591d56c043e0bd396"
                 ],
@@ -650,50 +463,31 @@
                         "00:21:2e:ff:ff:05:00:9d"
                     ]
                 ],
-                "entry_type": null,
-                "id": "21b900f8c3c8487ca20a8a6ede6f8151",
                 "identifiers": [
                     [
                         "deconz",
+                        "00:21:2e:ff:ff:05:00:9d"
+                    ],
+                    [
+                        "zha",
                         "00:21:2e:ff:ff:05:00:9d"
                     ]
                 ],
                 "manufacturer": "Philips",
                 "model": "PHDL00",
                 "name": "Daylight",
-                "name_by_user": null,
                 "sw_version": "1.0",
-                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
-            },
-            {
-                "area_id": null,
-                "config_entries": [
-                    "8c964edfe4e14191a40455bece6b7c7b"
-                ],
-                "connections": [],
                 "entry_type": null,
-                "id": "29d69b8cc85043ecb0100a4fe0a1171e",
-                "identifiers": [
-                    [
-                        "mobile_app",
-                        "c6e39b53af1c42eca4431f121aadfb98"
-                    ]
-                ],
-                "manufacturer": "Apple",
-                "model": "iPhone X\u0280",
-                "name": "iPhone",
-                "name_by_user": null,
-                "sw_version": "13.6",
-                "via_device_id": null
+                "id": "21b900f8c3c8487ca20a8a6ede6f8151",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "e7b146a93753424dacb3728f458597e0"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "48badeb10dc0486192261c7d457324c8",
                 "identifiers": [
                     [
                         "wled",
@@ -703,18 +497,18 @@
                 "manufacturer": "WLED",
                 "model": "DIY light",
                 "name": "WLED",
-                "name_by_user": null,
                 "sw_version": "0.8.7-dev",
-                "via_device_id": null
+                "entry_type": null,
+                "id": "48badeb10dc0486192261c7d457324c8",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "cb89cb3c4f6e4fc7b5d1487554c773b9"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "3ce018a6e1344a29b75373bca17f21d3",
                 "identifiers": [
                     [
                         "wled",
@@ -724,12 +518,14 @@
                 "manufacturer": "WLED",
                 "model": "DIY light",
                 "name": "WLED",
-                "name_by_user": null,
                 "sw_version": "0.8.7-dev",
-                "via_device_id": null
+                "entry_type": null,
+                "id": "3ce018a6e1344a29b75373bca17f21d3",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "5eabc300fd3c46e591d56c043e0bd396"
                 ],
@@ -739,8 +535,6 @@
                         "00:15:8d:00:04:46:f5:79"
                     ]
                 ],
-                "entry_type": null,
-                "id": "bdd391b81bd142c7b2409c770cad7d6e",
                 "identifiers": [
                     [
                         "deconz",
@@ -749,13 +543,15 @@
                 ],
                 "manufacturer": "LUMI",
                 "model": "lumi.sensor_magnet.aq2",
-                "name": "Bathroom window",
-                "name_by_user": null,
+                "name": "Ground Floor Toilet Door",
                 "sw_version": "20161128",
-                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+                "entry_type": null,
+                "id": "bdd391b81bd142c7b2409c770cad7d6e",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "5eabc300fd3c46e591d56c043e0bd396"
                 ],
@@ -765,8 +561,6 @@
                         "00:15:8d:00:04:45:1f:69"
                     ]
                 ],
-                "entry_type": null,
-                "id": "572f4d4a819848c4928bfe793c8252a8",
                 "identifiers": [
                     [
                         "deconz",
@@ -776,18 +570,18 @@
                 "manufacturer": "LUMI",
                 "model": "lumi.sensor_magnet.aq2",
                 "name": "Kitchen Window Sensor",
-                "name_by_user": null,
                 "sw_version": "20161128",
-                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+                "entry_type": null,
+                "id": "572f4d4a819848c4928bfe793c8252a8",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "b86044f2439745d091509f16fa907f55"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "c114880776034ce3b13d8e7c7f960817",
                 "identifiers": [
                     [
                         "alexa_media",
@@ -797,18 +591,18 @@
                 "manufacturer": "Amazon",
                 "model": "ECHO A1RABVCI4QCIKC",
                 "name": "mat's 2nd Echo Dot",
-                "name_by_user": null,
                 "sw_version": "0",
-                "via_device_id": "c114880776034ce3b13d8e7c7f960817"
+                "entry_type": null,
+                "id": "c114880776034ce3b13d8e7c7f960817",
+                "via_device_id": "c114880776034ce3b13d8e7c7f960817",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "b86044f2439745d091509f16fa907f55"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "74daeb2db598462cb4b2a209796bbdc7",
                 "identifiers": [
                     [
                         "alexa_media",
@@ -818,18 +612,18 @@
                 "manufacturer": "Amazon",
                 "model": "UNKNOWN A3L2K717GERE73",
                 "name": "mat's Voice in a Can for iOS",
-                "name_by_user": null,
                 "sw_version": "20190508",
-                "via_device_id": "74daeb2db598462cb4b2a209796bbdc7"
+                "entry_type": null,
+                "id": "74daeb2db598462cb4b2a209796bbdc7",
+                "via_device_id": "74daeb2db598462cb4b2a209796bbdc7",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "b86044f2439745d091509f16fa907f55"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "b847b314dca44fcc92eaec4c6d41ec08",
                 "identifiers": [
                     [
                         "alexa_media",
@@ -839,12 +633,14 @@
                 "manufacturer": "Amazon",
                 "model": "UNKNOWN A222D4HGE48EOR",
                 "name": "mat's Voice in a can for Apple Watch",
-                "name_by_user": null,
                 "sw_version": "0",
-                "via_device_id": "b847b314dca44fcc92eaec4c6d41ec08"
+                "entry_type": null,
+                "id": "b847b314dca44fcc92eaec4c6d41ec08",
+                "via_device_id": "b847b314dca44fcc92eaec4c6d41ec08",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "5eabc300fd3c46e591d56c043e0bd396"
                 ],
@@ -854,8 +650,6 @@
                         "00:15:8d:00:02:9a:7b:01"
                     ]
                 ],
-                "entry_type": null,
-                "id": "73047b583aa44b6e854fe5be42baad02",
                 "identifiers": [
                     [
                         "deconz",
@@ -865,12 +659,14 @@
                 "manufacturer": "LUMI",
                 "model": "lumi.sensor_cube.aqgl01",
                 "name": "Mi Magic Cube",
-                "name_by_user": null,
                 "sw_version": "20160704",
-                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+                "entry_type": null,
+                "id": "73047b583aa44b6e854fe5be42baad02",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "5eabc300fd3c46e591d56c043e0bd396"
                 ],
@@ -880,8 +676,6 @@
                         "00:15:8d:00:03:56:00:10"
                     ]
                 ],
-                "entry_type": null,
-                "id": "a8f875b64d1d44fcb53bb86d5ead4c89",
                 "identifiers": [
                     [
                         "deconz",
@@ -891,38 +685,14 @@
                 "manufacturer": "LUMI",
                 "model": "lumi.remote.b286acn01",
                 "name": "Bathroom 2-gang",
-                "name_by_user": null,
                 "sw_version": "20180809",
-                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
-            },
-            {
-                "area_id": null,
-                "config_entries": [
-                    "5eabc300fd3c46e591d56c043e0bd396"
-                ],
-                "connections": [
-                    [
-                        "zigbee",
-                        "00:15:8d:00:04:10:f7:d4"
-                    ]
-                ],
                 "entry_type": null,
-                "id": "9453139490ce4eec84bb93d10617bb89",
-                "identifiers": [
-                    [
-                        "deconz",
-                        "00:15:8d:00:04:10:f7:d4"
-                    ]
-                ],
-                "manufacturer": "LUMI",
-                "model": "lumi.sensor_magnet.aq2",
-                "name": "Shower",
-                "name_by_user": null,
-                "sw_version": "20161128",
-                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+                "id": "a8f875b64d1d44fcb53bb86d5ead4c89",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "5eabc300fd3c46e591d56c043e0bd396"
                 ],
@@ -932,8 +702,6 @@
                         "00:15:8d:00:04:4d:ca:af"
                     ]
                 ],
-                "entry_type": null,
-                "id": "8447268ae7c0474ba200f160b31dc5bf",
                 "identifiers": [
                     [
                         "deconz",
@@ -943,12 +711,14 @@
                 "manufacturer": "LUMI",
                 "model": "lumi.sensor_magnet.aq2",
                 "name": "Microwave Window / Door Sensor",
-                "name_by_user": null,
                 "sw_version": "20161128",
-                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+                "entry_type": null,
+                "id": "8447268ae7c0474ba200f160b31dc5bf",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "5eabc300fd3c46e591d56c043e0bd396"
                 ],
@@ -958,8 +728,6 @@
                         "00:15:8d:00:03:9d:85:23"
                     ]
                 ],
-                "entry_type": null,
-                "id": "0fbd36e29a0741fea7a93678729dd459",
                 "identifiers": [
                     [
                         "deconz",
@@ -969,18 +737,18 @@
                 "manufacturer": "LUMI",
                 "model": "lumi.vibration.aq1",
                 "name": "Vibration Sensor",
-                "name_by_user": null,
                 "sw_version": "20180130",
-                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+                "entry_type": null,
+                "id": "0fbd36e29a0741fea7a93678729dd459",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "4aa4128ce3604af68007796e024e29c5"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "f12bd82088c54a6a85d9968722c67341",
                 "identifiers": [
                     [
                         "wled",
@@ -990,12 +758,14 @@
                 "manufacturer": "WLED",
                 "model": "DIY light",
                 "name": "WLED",
-                "name_by_user": null,
                 "sw_version": "0.8.7-dev",
-                "via_device_id": null
+                "entry_type": null,
+                "id": "f12bd82088c54a6a85d9968722c67341",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "5eabc300fd3c46e591d56c043e0bd396"
                 ],
@@ -1005,8 +775,6 @@
                         "00:15:8d:00:03:02:10:de"
                     ]
                 ],
-                "entry_type": null,
-                "id": "20bd486d7c80451d8161e2f9ed4b56d0",
                 "identifiers": [
                     [
                         "deconz",
@@ -1015,34 +783,15 @@
                 ],
                 "manufacturer": "LUMI",
                 "model": "lumi.sensor_motion.aq2",
-                "name": "Library  Sensor",
-                "name_by_user": null,
+                "name": "Bathroom Motion Sensor",
                 "sw_version": "20170627",
-                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
-            },
-            {
-                "area_id": null,
-                "config_entries": [
-                    "34f2c255e07545a8ad51334e150b35cf"
-                ],
-                "connections": [],
                 "entry_type": null,
-                "id": "46a6e81ccaa04bab8b80581a2c263ac5",
-                "identifiers": [
-                    [
-                        "hue",
-                        "00:17:88:01:04:f3:38:37"
-                    ]
-                ],
-                "manufacturer": "Signify Netherlands B.V.",
-                "model": "Hue dimmer switch",
-                "name": "Living room switch",
-                "name_by_user": null,
-                "sw_version": "5.45.1.17846",
-                "via_device_id": "2a29277768d44580b5b8d71676b4457d"
+                "id": "20bd486d7c80451d8161e2f9ed4b56d0",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "2f2ba8793b5741028def01705355d41b",
                     "d3e1b6f284404ed287da3173ed660c7c"
@@ -1053,8 +802,6 @@
                         "a8:3f:a1:80:e9:bc"
                     ]
                 ],
-                "entry_type": null,
-                "id": "b81be2e2dfe4452ba550dca7e48b2bea",
                 "identifiers": [
                     [
                         "mqtt",
@@ -1064,12 +811,14 @@
                 "manufacturer": "Xiaomi",
                 "model": "Dafang",
                 "name": "Xiaomi Dafang",
-                "name_by_user": null,
                 "sw_version": "Dafang Hacks",
-                "via_device_id": null
+                "entry_type": null,
+                "id": "b81be2e2dfe4452ba550dca7e48b2bea",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "2f2ba8793b5741028def01705355d41b",
                     "d3e1b6f284404ed287da3173ed660c7c"
@@ -1080,8 +829,6 @@
                         "a8:3f:a1:81:04:ee"
                     ]
                 ],
-                "entry_type": null,
-                "id": "3a3552fa96db40be863a2deeb14ff06c",
                 "identifiers": [
                     [
                         "mqtt",
@@ -1091,12 +838,14 @@
                 "manufacturer": "Xiaomi",
                 "model": "Dafang",
                 "name": "Xiaomi Dafang",
-                "name_by_user": null,
                 "sw_version": "Dafang Hacks",
-                "via_device_id": null
+                "entry_type": null,
+                "id": "3a3552fa96db40be863a2deeb14ff06c",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "2f2ba8793b5741028def01705355d41b",
                     "d3e1b6f284404ed287da3173ed660c7c"
@@ -1107,8 +856,6 @@
                         "dc:4f:22:b1:b5:4e"
                     ]
                 ],
-                "entry_type": null,
-                "id": "ef8c1995ff5d4f72bec3a52809f88fb7",
                 "identifiers": [
                     [
                         "mqtt",
@@ -1118,12 +865,14 @@
                 "manufacturer": "Tasmota",
                 "model": "2NICE UP111",
                 "name": "plug_010",
-                "name_by_user": null,
                 "sw_version": "7.0.0.6(tasmota)",
-                "via_device_id": null
+                "entry_type": null,
+                "id": "ef8c1995ff5d4f72bec3a52809f88fb7",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "2f2ba8793b5741028def01705355d41b",
                     "d3e1b6f284404ed287da3173ed660c7c"
@@ -1134,8 +883,6 @@
                         "dc:4f:22:b1:e6:4e"
                     ]
                 ],
-                "entry_type": null,
-                "id": "6c38f7df02d745199701e51cd555a658",
                 "identifiers": [
                     [
                         "mqtt",
@@ -1145,12 +892,14 @@
                 "manufacturer": "Tasmota",
                 "model": "2NICE UP111",
                 "name": "plug_011",
-                "name_by_user": null,
                 "sw_version": "7.0.0.6(tasmota)",
-                "via_device_id": null
+                "entry_type": null,
+                "id": "6c38f7df02d745199701e51cd555a658",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "2f2ba8793b5741028def01705355d41b",
                     "d3e1b6f284404ed287da3173ed660c7c"
@@ -1161,8 +910,6 @@
                         "84:0d:8e:7f:ea:d4"
                     ]
                 ],
-                "entry_type": null,
-                "id": "7be9512002d748dfa0f2bcba0767cfcb",
                 "identifiers": [
                     [
                         "mqtt",
@@ -1172,12 +919,14 @@
                 "manufacturer": "Tasmota",
                 "model": "2NICE UP111",
                 "name": "plug_012",
-                "name_by_user": null,
                 "sw_version": "7.0.0.6(tasmota)",
-                "via_device_id": null
+                "entry_type": null,
+                "id": "7be9512002d748dfa0f2bcba0767cfcb",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "2f2ba8793b5741028def01705355d41b",
                     "d3e1b6f284404ed287da3173ed660c7c"
@@ -1188,8 +937,6 @@
                         "dc:4f:22:b0:ef:f3"
                     ]
                 ],
-                "entry_type": null,
-                "id": "b9e2034b7d7f42ffaa8bc1f58a399f83",
                 "identifiers": [
                     [
                         "mqtt",
@@ -1199,18 +946,18 @@
                 "manufacturer": "Tasmota",
                 "model": "2NICE UP111",
                 "name": "plug_013",
-                "name_by_user": null,
                 "sw_version": "7.0.0.6(tasmota)",
-                "via_device_id": null
+                "entry_type": null,
+                "id": "b9e2034b7d7f42ffaa8bc1f58a399f83",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "2f2ba8793b5741028def01705355d41b"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "d7ad5924458c453eafc1c1f248b41db3",
                 "identifiers": [
                     [
                         "mqtt",
@@ -1220,18 +967,18 @@
                 "manufacturer": "Tasmota",
                 "model": "Teckin SP23",
                 "name": "Plug_01",
-                "name_by_user": null,
                 "sw_version": "6.5.0(sonoff)",
-                "via_device_id": null
+                "entry_type": null,
+                "id": "d7ad5924458c453eafc1c1f248b41db3",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "2f2ba8793b5741028def01705355d41b"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "38be29b6ab5c4630b5972b49adc6f0ee",
                 "identifiers": [
                     [
                         "mqtt",
@@ -1241,18 +988,18 @@
                 "manufacturer": "Tasmota",
                 "model": "Teckin SP23",
                 "name": "plug_03",
-                "name_by_user": null,
                 "sw_version": "6.5.0(sonoff)",
-                "via_device_id": null
+                "entry_type": null,
+                "id": "38be29b6ab5c4630b5972b49adc6f0ee",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "2f2ba8793b5741028def01705355d41b"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "6009ba99d3034ffe8822485f496f701d",
                 "identifiers": [
                     [
                         "mqtt",
@@ -1262,18 +1009,18 @@
                 "manufacturer": "Tasmota",
                 "model": "Teckin SP23",
                 "name": "plug_02",
-                "name_by_user": null,
                 "sw_version": "6.5.0(sonoff)",
-                "via_device_id": null
+                "entry_type": null,
+                "id": "6009ba99d3034ffe8822485f496f701d",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "2f2ba8793b5741028def01705355d41b"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "3ec7b43da78f466f830c42fd21b0dff2",
                 "identifiers": [
                     [
                         "mqtt",
@@ -1283,18 +1030,18 @@
                 "manufacturer": "Tasmota",
                 "model": "Teckin SP23",
                 "name": "plug_04",
-                "name_by_user": null,
                 "sw_version": "6.5.0(sonoff)",
-                "via_device_id": null
+                "entry_type": null,
+                "id": "3ec7b43da78f466f830c42fd21b0dff2",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "2f2ba8793b5741028def01705355d41b"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "bf2ae205f9ac4852b2166c7156ae3083",
                 "identifiers": [
                     [
                         "mqtt",
@@ -1304,18 +1051,18 @@
                 "manufacturer": "Tasmota",
                 "model": "Teckin SP23",
                 "name": "plug_05",
-                "name_by_user": null,
                 "sw_version": "6.5.0(sonoff)",
-                "via_device_id": null
+                "entry_type": null,
+                "id": "bf2ae205f9ac4852b2166c7156ae3083",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "2f2ba8793b5741028def01705355d41b"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "7e1f0398ff5142dbb134e267b1d2c570",
                 "identifiers": [
                     [
                         "mqtt",
@@ -1325,18 +1072,18 @@
                 "manufacturer": "Tasmota",
                 "model": "Teckin SP23",
                 "name": "plug_06",
-                "name_by_user": null,
                 "sw_version": "6.5.0(sonoff)",
-                "via_device_id": null
+                "entry_type": null,
+                "id": "7e1f0398ff5142dbb134e267b1d2c570",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "2f2ba8793b5741028def01705355d41b"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "d021f82c511f4fc4a77437521afd197b",
                 "identifiers": [
                     [
                         "mqtt",
@@ -1346,18 +1093,18 @@
                 "manufacturer": "Tasmota",
                 "model": "Teckin SP23",
                 "name": "plug_07",
-                "name_by_user": null,
                 "sw_version": "6.5.0(sonoff)",
-                "via_device_id": null
+                "entry_type": null,
+                "id": "d021f82c511f4fc4a77437521afd197b",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "2f2ba8793b5741028def01705355d41b"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "c3611535c6ea48e9a4d43675de988a91",
                 "identifiers": [
                     [
                         "mqtt",
@@ -1367,18 +1114,18 @@
                 "manufacturer": "Tasmota",
                 "model": "Teckin SP23",
                 "name": "plug_08",
-                "name_by_user": null,
                 "sw_version": "6.5.0(sonoff)",
-                "via_device_id": null
+                "entry_type": null,
+                "id": "c3611535c6ea48e9a4d43675de988a91",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "2f2ba8793b5741028def01705355d41b"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "d57a20ed83e744569a040801b4e8e08e",
                 "identifiers": [
                     [
                         "mqtt",
@@ -1388,18 +1135,18 @@
                 "manufacturer": "Tasmota",
                 "model": "Teckin SP23",
                 "name": "plug_09",
-                "name_by_user": null,
                 "sw_version": "6.5.0(sonoff)",
-                "via_device_id": null
+                "entry_type": null,
+                "id": "d57a20ed83e744569a040801b4e8e08e",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "2f2ba8793b5741028def01705355d41b"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "0ba42fb3d18744dca2587df2b9b56daf",
                 "identifiers": [
                     [
                         "mqtt",
@@ -1413,19 +1160,23 @@
                 "manufacturer": "Xiaomi",
                 "model": "MiFlora",
                 "name": "miflora_herbs",
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "0ba42fb3d18744dca2587df2b9b56daf",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "2f2ba8793b5741028def01705355d41b"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "2141868463aa4981bc631318b6852b76",
                 "identifiers": [
+                    [
+                        "mqtt",
+                        "bt-mqtt-gateway/C4-7C-8D-6A-42-10/miflora_herbs"
+                    ],
                     [
                         "mqtt",
                         "C4:7C:8D:6A:42:10"
@@ -1433,21 +1184,19 @@
                     [
                         "mqtt",
                         "bt-mqtt-gateway/C4-7C-8D-6A-42-10/miflora_aloevera"
-                    ],
-                    [
-                        "mqtt",
-                        "bt-mqtt-gateway/C4-7C-8D-6A-42-10/miflora_herbs"
                     ]
                 ],
                 "manufacturer": "Xiaomi",
                 "model": "MiFlora",
                 "name": "miflora_aloevera",
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "2141868463aa4981bc631318b6852b76",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "5eabc300fd3c46e591d56c043e0bd396"
                 ],
@@ -1457,23 +1206,27 @@
                         "00:15:8d:00:04:7d:41:8a"
                     ]
                 ],
-                "entry_type": null,
-                "id": "90e494310fb947d696a6759cb4f1e609",
                 "identifiers": [
                     [
                         "deconz",
+                        "00:15:8d:00:04:7d:41:8a"
+                    ],
+                    [
+                        "zha",
                         "00:15:8d:00:04:7d:41:8a"
                     ]
                 ],
                 "manufacturer": "LUMI",
                 "model": "lumi.sensor_motion.aq2",
                 "name": "Lower Hallway Motion Sensor",
-                "name_by_user": null,
                 "sw_version": "20170627",
-                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+                "entry_type": null,
+                "id": "90e494310fb947d696a6759cb4f1e609",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "5eabc300fd3c46e591d56c043e0bd396"
                 ],
@@ -1483,8 +1236,6 @@
                         "00:0d:6f:ff:fe:2b:59:54"
                     ]
                 ],
-                "entry_type": null,
-                "id": "957595b62fd3456f8d589fa6555e1b6d",
                 "identifiers": [
                     [
                         "deconz",
@@ -1494,12 +1245,14 @@
                 "manufacturer": "IKEA of Sweden",
                 "model": "FYRTUR block-out roller blind",
                 "name": "Hallway Blind",
-                "name_by_user": null,
                 "sw_version": "2.2.007",
-                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+                "entry_type": null,
+                "id": "957595b62fd3456f8d589fa6555e1b6d",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "5eabc300fd3c46e591d56c043e0bd396"
                 ],
@@ -1509,8 +1262,6 @@
                         "00:0d:6f:ff:fe:a2:03:88"
                     ]
                 ],
-                "entry_type": null,
-                "id": "c032e3603940478194577c026b49bf99",
                 "identifiers": [
                     [
                         "deconz",
@@ -1520,18 +1271,18 @@
                 "manufacturer": "IKEA of Sweden",
                 "model": "TRADFRI open/close remote",
                 "name": "TRADFRI open/close remote",
-                "name_by_user": null,
                 "sw_version": "2.2.008",
-                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+                "entry_type": null,
+                "id": "c032e3603940478194577c026b49bf99",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "5eabc300fd3c46e591d56c043e0bd396"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "87775cfdfe8e44baa56b21c2233bbdca",
                 "identifiers": [
                     [
                         "deconz",
@@ -1541,12 +1292,14 @@
                 "manufacturer": "Dresden Elektronik",
                 "model": "deCONZ group",
                 "name": "all",
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+                "entry_type": null,
+                "id": "87775cfdfe8e44baa56b21c2233bbdca",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "5eabc300fd3c46e591d56c043e0bd396"
                 ],
@@ -1556,8 +1309,6 @@
                         "00:15:8d:00:04:2a:ce:3d"
                     ]
                 ],
-                "entry_type": null,
-                "id": "36f58daab881487eb413962eddbdcb7c",
                 "identifiers": [
                     [
                         "deconz",
@@ -1567,18 +1318,18 @@
                 "manufacturer": "LUMI",
                 "model": "lumi.sensor_wleak.aq1",
                 "name": "Bath Water Sensor",
-                "name_by_user": null,
-                "sw_version": null,
-                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+                "sw_version": "20170721",
+                "entry_type": null,
+                "id": "36f58daab881487eb413962eddbdcb7c",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "0f7846efea5d42b7b6f798f8dc7e4cad"
                 ],
                 "connections": [],
-                "entry_type": "service",
-                "id": "632139b3dd2e4c59813d85293da28e3d",
                 "identifiers": [
                     [
                         "adguard",
@@ -1590,12 +1341,14 @@
                 "manufacturer": "AdGuard Team",
                 "model": null,
                 "name": "AdGuard Home",
-                "name_by_user": null,
-                "sw_version": "v0.101.0",
-                "via_device_id": null
+                "sw_version": "0.103.3",
+                "entry_type": "service",
+                "id": "632139b3dd2e4c59813d85293da28e3d",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -1605,18 +1358,18 @@
                         "bc:dd:c2:27:2a:c6"
                     ]
                 ],
-                "entry_type": null,
-                "id": "891f8e82bf3a4d9fb44d38329c66d439",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "891f8e82bf3a4d9fb44d38329c66d439",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -1626,18 +1379,18 @@
                         "bc:dd:c2:27:29:9e"
                     ]
                 ],
-                "entry_type": null,
-                "id": "76049fc7116e440e9e8e5a938a711a5a",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "76049fc7116e440e9e8e5a938a711a5a",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -1647,18 +1400,18 @@
                         "02:97:87:47:6f:32"
                     ]
                 ],
-                "entry_type": null,
-                "id": "6566f50699d0471db1c65074c042c398",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "6566f50699d0471db1c65074c042c398",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -1668,18 +1421,18 @@
                         "84:f3:eb:67:5a:ab"
                     ]
                 ],
-                "entry_type": null,
-                "id": "f2a25d61a7db4cf8a586085b254300d3",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "f2a25d61a7db4cf8a586085b254300d3",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -1689,18 +1442,18 @@
                         "a8:3f:a1:81:e6:aa"
                     ]
                 ],
-                "entry_type": null,
-                "id": "2dada9e69b6e4555b5fae75eabdca0b5",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "2dada9e69b6e4555b5fae75eabdca0b5",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "5eabc300fd3c46e591d56c043e0bd396",
                     "d3e1b6f284404ed287da3173ed660c7c"
@@ -1711,8 +1464,6 @@
                         "9a:a0:32:9a:92:67"
                     ]
                 ],
-                "entry_type": null,
-                "id": "3ce62447e2464534b646b4c3d57b54d8",
                 "identifiers": [
                     [
                         "deconz",
@@ -1722,12 +1473,14 @@
                 "manufacturer": "Dresden Elektronik",
                 "model": "deCONZ",
                 "name": "msb-GW",
-                "name_by_user": null,
                 "sw_version": "2.5.69",
-                "via_device_id": null
+                "entry_type": null,
+                "id": "3ce62447e2464534b646b4c3d57b54d8",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -1737,18 +1490,18 @@
                         "3c:71:bf:26:57:5c"
                     ]
                 ],
-                "entry_type": null,
-                "id": "0b298d013db44df3a4d6ed34cca79af6",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "0b298d013db44df3a4d6ed34cca79af6",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -1758,18 +1511,18 @@
                         "38:2b:78:03:b4:24"
                     ]
                 ],
-                "entry_type": null,
-                "id": "3640ad091b8e49a8829ebaeeb3691ed5",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "3640ad091b8e49a8829ebaeeb3691ed5",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -1779,18 +1532,18 @@
                         "3c:71:bf:26:5a:00"
                     ]
                 ],
-                "entry_type": null,
-                "id": "98fcd8f9ea694329b47221fe18b677b7",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "98fcd8f9ea694329b47221fe18b677b7",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -1800,18 +1553,18 @@
                         "bc:dd:c2:b6:18:ac"
                     ]
                 ],
-                "entry_type": null,
-                "id": "6ca85e0e28b242c680ada7db991daa9b",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "6ca85e0e28b242c680ada7db991daa9b",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -1821,18 +1574,18 @@
                         "80:7d:3a:49:41:65"
                     ]
                 ],
-                "entry_type": null,
-                "id": "043d84ec28d547958b84187533491541",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "043d84ec28d547958b84187533491541",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -1842,18 +1595,18 @@
                         "bc:dd:c2:92:c8:59"
                     ]
                 ],
-                "entry_type": null,
-                "id": "2882b02a9f6045618933c969fe3d844a",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "2882b02a9f6045618933c969fe3d844a",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -1863,18 +1616,18 @@
                         "bc:dd:c2:9b:ef:d4"
                     ]
                 ],
-                "entry_type": null,
-                "id": "521a7aa41258400182dd450e4e578f0b",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "521a7aa41258400182dd450e4e578f0b",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -1884,18 +1637,18 @@
                         "cc:9e:a2:57:81:24"
                     ]
                 ],
-                "entry_type": null,
-                "id": "9382f7f4ef0b48b1befc2ee163b8a57f",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "9382f7f4ef0b48b1befc2ee163b8a57f",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -1905,18 +1658,18 @@
                         "1c:1b:0d:e2:38:61"
                     ]
                 ],
-                "entry_type": null,
-                "id": "6d09646690fa45b98fde03d0a029dca2",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "6d09646690fa45b98fde03d0a029dca2",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -1926,18 +1679,18 @@
                         "5c:41:5a:aa:fc:e3"
                     ]
                 ],
-                "entry_type": null,
-                "id": "511e5969caf04688adc266db7b674995",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "511e5969caf04688adc266db7b674995",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -1947,18 +1700,18 @@
                         "4c:ef:c0:4b:04:c3"
                     ]
                 ],
-                "entry_type": null,
-                "id": "615a105bd65543c6b03529f4bc4a27f3",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "615a105bd65543c6b03529f4bc4a27f3",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -1968,18 +1721,18 @@
                         "a8:3f:a1:81:e7:7d"
                     ]
                 ],
-                "entry_type": null,
-                "id": "164f89f666174654903844d761814fac",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "164f89f666174654903844d761814fac",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -1989,18 +1742,18 @@
                         "84:f3:eb:b8:90:0b"
                     ]
                 ],
-                "entry_type": null,
-                "id": "7c760f726532464c9f6a4c8260da0de4",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "7c760f726532464c9f6a4c8260da0de4",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -2010,18 +1763,18 @@
                         "bc:dd:c2:27:36:62"
                     ]
                 ],
-                "entry_type": null,
-                "id": "f4b2a40baa72409485d10d48bcbc47d1",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "f4b2a40baa72409485d10d48bcbc47d1",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -2031,18 +1784,18 @@
                         "90:e1:7b:27:a2:76"
                     ]
                 ],
-                "entry_type": null,
-                "id": "bd6a84999a734d8abc5b74b30a70df49",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "bd6a84999a734d8abc5b74b30a70df49",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -2052,18 +1805,18 @@
                         "bc:dd:c2:b6:6d:d3"
                     ]
                 ],
-                "entry_type": null,
-                "id": "db8ce8e1ad284f3abc560b66476af3a0",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "db8ce8e1ad284f3abc560b66476af3a0",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -2073,18 +1826,18 @@
                         "b8:27:eb:16:0d:a8"
                     ]
                 ],
-                "entry_type": null,
-                "id": "1c6224eb592549318b5e22e44f134945",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "1c6224eb592549318b5e22e44f134945",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -2094,18 +1847,18 @@
                         "2c:f4:32:4b:28:00"
                     ]
                 ],
-                "entry_type": null,
-                "id": "abac11b4fa724282ad9e3095d72f6a97",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "abac11b4fa724282ad9e3095d72f6a97",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -2115,18 +1868,18 @@
                         "84:f3:eb:16:a7:61"
                     ]
                 ],
-                "entry_type": null,
-                "id": "9e12047799aa49f28ed3423ec31d0730",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "9e12047799aa49f28ed3423ec31d0730",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -2136,18 +1889,18 @@
                         "cc:9e:a2:1d:34:af"
                     ]
                 ],
-                "entry_type": null,
-                "id": "26a1f5df151e4e44ae0c0be5386029ec",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "26a1f5df151e4e44ae0c0be5386029ec",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -2157,18 +1910,18 @@
                         "dc:4f:22:33:b1:15"
                     ]
                 ],
-                "entry_type": null,
-                "id": "2eba345f718c4075ab6145d537116482",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "2eba345f718c4075ab6145d537116482",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -2178,18 +1931,18 @@
                         "bc:dd:c2:27:3d:af"
                     ]
                 ],
-                "entry_type": null,
-                "id": "968624bfedb34c65ad8c7fd792eeb69a",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "968624bfedb34c65ad8c7fd792eeb69a",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -2199,18 +1952,18 @@
                         "84:f3:eb:16:a0:58"
                     ]
                 ],
-                "entry_type": null,
-                "id": "190a63a8c9064c46b1da9825d31a7158",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "190a63a8c9064c46b1da9825d31a7158",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -2220,18 +1973,18 @@
                         "00:71:47:ce:4c:42"
                     ]
                 ],
-                "entry_type": null,
-                "id": "fb8862e8aa2b40b1b415fe72e3c48841",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "fb8862e8aa2b40b1b415fe72e3c48841",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -2241,18 +1994,18 @@
                         "94:c6:91:ac:fe:ec"
                     ]
                 ],
-                "entry_type": null,
-                "id": "85dda2faa94a4534a76217e353a88a7e",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "85dda2faa94a4534a76217e353a88a7e",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -2262,18 +2015,18 @@
                         "78:0f:77:18:69:4a"
                     ]
                 ],
-                "entry_type": null,
-                "id": "1af3a37e8a8049a6b9201e8f56717a18",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "1af3a37e8a8049a6b9201e8f56717a18",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -2283,18 +2036,18 @@
                         "44:00:49:5e:0a:ff"
                     ]
                 ],
-                "entry_type": null,
-                "id": "f12446aa83ee4ef2bea589ae1f0122ba",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "f12446aa83ee4ef2bea589ae1f0122ba",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -2304,18 +2057,18 @@
                         "74:b5:87:18:79:53"
                     ]
                 ],
-                "entry_type": null,
-                "id": "ad615077629045d9ada8698b822b5909",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "ad615077629045d9ada8698b822b5909",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -2325,18 +2078,18 @@
                         "e4:50:eb:0b:30:91"
                     ]
                 ],
-                "entry_type": null,
-                "id": "d1f84ceb09ab407d8fb4618350f056c2",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "d1f84ceb09ab407d8fb4618350f056c2",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -2346,18 +2099,18 @@
                         "2c:f4:32:4b:04:3b"
                     ]
                 ],
-                "entry_type": null,
-                "id": "c6b3fd3717d94132b16b2520c7bc62a5",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "c6b3fd3717d94132b16b2520c7bc62a5",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -2367,18 +2120,18 @@
                         "a8:3f:a1:81:ea:59"
                     ]
                 ],
-                "entry_type": null,
-                "id": "40da67d0cb8c40de9eeee560e811b9fe",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "40da67d0cb8c40de9eeee560e811b9fe",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -2388,18 +2141,18 @@
                         "84:f3:eb:e0:0e:22"
                     ]
                 ],
-                "entry_type": null,
-                "id": "169b26f42f254481afa1746c0001a7aa",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "169b26f42f254481afa1746c0001a7aa",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -2409,18 +2162,18 @@
                         "84:f3:eb:e0:0e:0f"
                     ]
                 ],
-                "entry_type": null,
-                "id": "8b3594d6277945e7bf8826ad07a3e5ea",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "8b3594d6277945e7bf8826ad07a3e5ea",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -2430,18 +2183,18 @@
                         "fa:76:a7:72:6a:bb"
                     ]
                 ],
-                "entry_type": null,
-                "id": "9986c72da85e4bafbd7eb1b15b34addb",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "9986c72da85e4bafbd7eb1b15b34addb",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -2451,18 +2204,18 @@
                         "7c:61:66:38:6c:bf"
                     ]
                 ],
-                "entry_type": null,
-                "id": "c2580fe892fe4698bc8b74fc67d7e73a",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "c2580fe892fe4698bc8b74fc67d7e73a",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -2472,18 +2225,18 @@
                         "30:24:32:c9:a0:c2"
                     ]
                 ],
-                "entry_type": null,
-                "id": "2d83a5c23e8d4054a5265807949fd591",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "2d83a5c23e8d4054a5265807949fd591",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -2493,18 +2246,18 @@
                         "48:5a:b6:d1:8f:41"
                     ]
                 ],
-                "entry_type": null,
-                "id": "5a4ba62c6c624bc4a617c8bebe169cb2",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "5a4ba62c6c624bc4a617c8bebe169cb2",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -2514,60 +2267,18 @@
                         "18:00:db:c8:10:3a"
                     ]
                 ],
-                "entry_type": null,
-                "id": "15737d45e0514cf9bd9f13148c1959cf",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
-            },
-            {
-                "area_id": null,
-                "config_entries": [
-                    "15b52c1c0f354a4297f721ad1b40bf64"
-                ],
-                "connections": [],
                 "entry_type": null,
-                "id": "1f79d3a895ae4465a07397a0a12c2034",
-                "identifiers": [
-                    [
-                        "tuya",
-                        "tuya.1274756684f3ebb8900b"
-                    ]
-                ],
-                "manufacturer": "Smart Life",
-                "model": "switch",
-                "name": "Living Smart Plug",
-                "name_by_user": null,
-                "sw_version": null,
-                "via_device_id": null
+                "id": "15737d45e0514cf9bd9f13148c1959cf",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
-                "config_entries": [
-                    "15b52c1c0f354a4297f721ad1b40bf64"
-                ],
-                "connections": [],
-                "entry_type": null,
-                "id": "6ddc70032e5d4f3da6d8ef3454b51047",
-                "identifiers": [
-                    [
-                        "tuya",
-                        "tuya.51268403dc4f2233b115"
-                    ]
-                ],
-                "manufacturer": "Smart Life",
-                "model": "switch",
-                "name": "Dryer",
-                "name_by_user": null,
-                "sw_version": null,
-                "via_device_id": null
-            },
-            {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -2577,44 +2288,18 @@
                         "b8:27:eb:66:59:da"
                     ]
                 ],
-                "entry_type": null,
-                "id": "a7d2a05d44884668858f8bf3a4ba5384",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
-            },
-            {
-                "area_id": null,
-                "config_entries": [
-                    "34f2c255e07545a8ad51334e150b35cf"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "00:17:88:78:88:ff"
-                    ]
-                ],
                 "entry_type": null,
-                "id": "2a29277768d44580b5b8d71676b4457d",
-                "identifiers": [
-                    [
-                        "hue",
-                        "001788FFFE7888FF"
-                    ]
-                ],
-                "manufacturer": "Signify",
-                "model": "BSB002",
-                "name": "Philips hue",
-                "name_by_user": null,
-                "sw_version": "1939070020",
-                "via_device_id": null
+                "id": "a7d2a05d44884668858f8bf3a4ba5384",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -2624,18 +2309,18 @@
                         "e8:fb:e9:5e:3f:4c"
                     ]
                 ],
-                "entry_type": null,
-                "id": "afd996aed2454c7c88779fd8a060c5f9",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "afd996aed2454c7c88779fd8a060c5f9",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -2645,18 +2330,18 @@
                         "44:00:49:66:8b:6b"
                     ]
                 ],
-                "entry_type": null,
-                "id": "209392c0c3104ae28b2530184052dbfe",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
+                "entry_type": null,
+                "id": "209392c0c3104ae28b2530184052dbfe",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "d3e1b6f284404ed287da3173ed660c7c"
                 ],
@@ -2666,39 +2351,18 @@
                         "68:db:f5:a3:a9:98"
                     ]
                 ],
-                "entry_type": null,
-                "id": "1f5f6aa6291e4b2b96e798ca5bcba714",
                 "identifiers": [],
                 "manufacturer": null,
                 "model": null,
                 "name": null,
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": null
-            },
-            {
-                "area_id": null,
-                "config_entries": [
-                    "dfc3b118601d4435b84cce1cc1047d1e"
-                ],
-                "connections": [],
                 "entry_type": null,
-                "id": "a0eb121a12714963883011e0854fa6e7",
-                "identifiers": [
-                    [
-                        "mobile_app",
-                        "09DCE5AB-756E-4D8E-80F5-CD76D9366C65"
-                    ]
-                ],
-                "manufacturer": "Apple",
-                "model": "iPhone Xs Max",
-                "name": "Matt iPhone ",
-                "name_by_user": null,
-                "sw_version": "14.0",
-                "via_device_id": null
+                "id": "1f5f6aa6291e4b2b96e798ca5bcba714",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "5eabc300fd3c46e591d56c043e0bd396"
                 ],
@@ -2708,8 +2372,6 @@
                         "00:17:88:01:03:20:63:d4"
                     ]
                 ],
-                "entry_type": null,
-                "id": "93cecfb1e20a4bd2bdfa8988eefeaaf2",
                 "identifiers": [
                     [
                         "deconz",
@@ -2719,12 +2381,14 @@
                 "manufacturer": "Philips",
                 "model": "LCT015",
                 "name": "Office Light",
-                "name_by_user": null,
                 "sw_version": "1.46.13_r26312",
-                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+                "entry_type": null,
+                "id": "93cecfb1e20a4bd2bdfa8988eefeaaf2",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "5eabc300fd3c46e591d56c043e0bd396"
                 ],
@@ -2734,8 +2398,6 @@
                         "00:17:88:01:03:cd:17:9f"
                     ]
                 ],
-                "entry_type": null,
-                "id": "a34f5c26682344eb93ebbaea1a2ea643",
                 "identifiers": [
                     [
                         "deconz",
@@ -2745,12 +2407,14 @@
                 "manufacturer": "Philips",
                 "model": "LST002",
                 "name": "Office Light Strip",
-                "name_by_user": null,
                 "sw_version": "1.46.13_r26312",
-                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+                "entry_type": null,
+                "id": "a34f5c26682344eb93ebbaea1a2ea643",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "5eabc300fd3c46e591d56c043e0bd396"
                 ],
@@ -2760,8 +2424,6 @@
                         "00:15:8d:00:04:77:62:11"
                     ]
                 ],
-                "entry_type": null,
-                "id": "b8be5acda12d4a1d9046de18b3b202d2",
                 "identifiers": [
                     [
                         "deconz",
@@ -2770,13 +2432,15 @@
                 ],
                 "manufacturer": "Feibit",
                 "model": "FNB56-ZCW25FB2.1",
-                "name": "Light 6",
-                "name_by_user": null,
+                "name": "Spare Room",
                 "sw_version": "V1.5",
-                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+                "entry_type": null,
+                "id": "b8be5acda12d4a1d9046de18b3b202d2",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "5eabc300fd3c46e591d56c043e0bd396"
                 ],
@@ -2786,8 +2450,6 @@
                         "ec:1b:bd:ff:fe:b5:7c:1c"
                     ]
                 ],
-                "entry_type": null,
-                "id": "64b32aba597f48eca2b7168632ed5373",
                 "identifiers": [
                     [
                         "deconz",
@@ -2796,13 +2458,15 @@
                 ],
                 "manufacturer": "IKEA of Sweden",
                 "model": "TRADFRI bulb E27 WW 806lm",
-                "name": "Light 7",
-                "name_by_user": null,
+                "name": "Ground Floor Toilet",
                 "sw_version": "2.1.022",
-                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+                "entry_type": null,
+                "id": "64b32aba597f48eca2b7168632ed5373",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "5eabc300fd3c46e591d56c043e0bd396"
                 ],
@@ -2812,8 +2476,6 @@
                         "68:0a:e2:ff:fe:15:0b:85"
                     ]
                 ],
-                "entry_type": null,
-                "id": "9f7850cbbca94f1c91779bbb17bdeaf9",
                 "identifiers": [
                     [
                         "deconz",
@@ -2822,19 +2484,19 @@
                 ],
                 "manufacturer": "IKEA of Sweden",
                 "model": "TRADFRI on/off switch",
-                "name": "Office dimmer",
-                "name_by_user": null,
+                "name": "Bathroom Dimmer",
                 "sw_version": "2.2.010",
-                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+                "entry_type": null,
+                "id": "9f7850cbbca94f1c91779bbb17bdeaf9",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "5eabc300fd3c46e591d56c043e0bd396"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "93eb3787cda646d69956f594afd27e8d",
                 "identifiers": [
                     [
                         "deconz",
@@ -2844,18 +2506,18 @@
                 "manufacturer": "Dresden Elektronik",
                 "model": "deCONZ group",
                 "name": "test",
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+                "entry_type": null,
+                "id": "93eb3787cda646d69956f594afd27e8d",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "5eabc300fd3c46e591d56c043e0bd396"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "32c4d126f25c4d53ae902a758568ec4c",
                 "identifiers": [
                     [
                         "deconz",
@@ -2865,12 +2527,14 @@
                 "manufacturer": "Dresden Elektronik",
                 "model": "deCONZ group",
                 "name": "blind",
-                "name_by_user": null,
                 "sw_version": null,
-                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+                "entry_type": null,
+                "id": "32c4d126f25c4d53ae902a758568ec4c",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "5eabc300fd3c46e591d56c043e0bd396"
                 ],
@@ -2880,8 +2544,6 @@
                         "00:17:88:01:02:89:85:72"
                     ]
                 ],
-                "entry_type": null,
-                "id": "fa696151af5e449bbecba1cecebc5dbc",
                 "identifiers": [
                     [
                         "deconz",
@@ -2890,13 +2552,15 @@
                 ],
                 "manufacturer": "Philips",
                 "model": "LCT010",
-                "name": "Living Room Lamp",
-                "name_by_user": null,
+                "name": "Top Floor Shower Room",
                 "sw_version": "1.46.13_r26312",
-                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+                "entry_type": null,
+                "id": "fa696151af5e449bbecba1cecebc5dbc",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "5eabc300fd3c46e591d56c043e0bd396"
                 ],
@@ -2906,23 +2570,23 @@
                         "00:17:88:01:03:53:9a:13"
                     ]
                 ],
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:17:88:01:03:53:9a:13"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "LCT015",
+                "name": "Living Room Back Main",
+                "sw_version": "1.46.13_r26312",
                 "entry_type": null,
                 "id": "5bfbfa28d31e49daaf9d0c1491cd60f7",
-                "identifiers": [
-                    [
-                        "deconz",
-                        "00:17:88:01:03:53:9a:13"
-                    ]
-                ],
-                "manufacturer": "Philips",
-                "model": "LCT015",
-                "name": "Living Room 2",
-                "name_by_user": null,
-                "sw_version": "1.46.13_r26312",
-                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "5eabc300fd3c46e591d56c043e0bd396"
                 ],
@@ -2932,23 +2596,23 @@
                         "00:17:88:01:03:11:c6:61"
                     ]
                 ],
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:17:88:01:03:11:c6:61"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "LCT015",
+                "name": "Living Room Back Right",
+                "sw_version": "1.46.13_r26312",
                 "entry_type": null,
                 "id": "a30132eafb09479c9bd4ace5058aecb8",
-                "identifiers": [
-                    [
-                        "deconz",
-                        "00:17:88:01:03:11:c6:61"
-                    ]
-                ],
-                "manufacturer": "Philips",
-                "model": "LCT015",
-                "name": "Living Room 3",
-                "name_by_user": null,
-                "sw_version": "1.46.13_r26312",
-                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "5eabc300fd3c46e591d56c043e0bd396"
                 ],
@@ -2958,8 +2622,6 @@
                         "00:17:88:01:03:20:64:fa"
                     ]
                 ],
-                "entry_type": null,
-                "id": "62ea81c377eb44f09cd764b8ce1ef79f",
                 "identifiers": [
                     [
                         "deconz",
@@ -2968,13 +2630,15 @@
                 ],
                 "manufacturer": "Philips",
                 "model": "LCT015",
-                "name": "Living Room 1",
-                "name_by_user": null,
+                "name": "Living Room Back Left",
                 "sw_version": "1.46.13_r26312",
-                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+                "entry_type": null,
+                "id": "62ea81c377eb44f09cd764b8ce1ef79f",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "5eabc300fd3c46e591d56c043e0bd396"
                 ],
@@ -2984,8 +2648,6 @@
                         "00:17:88:01:02:b1:0b:c1"
                     ]
                 ],
-                "entry_type": null,
-                "id": "756a90163d1e4319a40b81e5f423fb0c",
                 "identifiers": [
                     [
                         "deconz",
@@ -2994,13 +2656,15 @@
                 ],
                 "manufacturer": "Philips",
                 "model": "LWB010",
-                "name": "hall way light",
-                "name_by_user": null,
+                "name": "Bedroom Font",
                 "sw_version": "1.46.13_r26312",
-                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+                "entry_type": null,
+                "id": "756a90163d1e4319a40b81e5f423fb0c",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "5eabc300fd3c46e591d56c043e0bd396"
                 ],
@@ -3010,9 +2674,11 @@
                         "00:17:88:01:02:13:16:0a"
                     ]
                 ],
-                "entry_type": null,
-                "id": "3c7fd27d28744a7792fd56249f7ae382",
                 "identifiers": [
+                    [
+                        "zha",
+                        "00:17:88:01:02:13:16:0a"
+                    ],
                     [
                         "deconz",
                         "00:17:88:01:02:13:16:0a"
@@ -3020,13 +2686,15 @@
                 ],
                 "manufacturer": "Philips",
                 "model": "SML001",
-                "name": "Motion Sensor",
-                "name_by_user": null,
+                "name": "Lower Stair Montion Sensor",
                 "sw_version": "6.1.1.27575",
-                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+                "entry_type": null,
+                "id": "3c7fd27d28744a7792fd56249f7ae382",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "5eabc300fd3c46e591d56c043e0bd396"
                 ],
@@ -3036,23 +2704,23 @@
                         "00:17:88:01:02:53:32:46"
                     ]
                 ],
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:17:88:01:02:53:32:46"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "LWB010",
+                "name": "Top Floor Hallway",
+                "sw_version": "1.46.13_r26312",
                 "entry_type": null,
                 "id": "9ce9af3804ef4d07a572c7871bdaabbc",
-                "identifiers": [
-                    [
-                        "deconz",
-                        "00:17:88:01:02:53:32:46"
-                    ]
-                ],
-                "manufacturer": "Philips",
-                "model": "LWB010",
-                "name": "Bathroom light",
-                "name_by_user": null,
-                "sw_version": "1.46.13_r26312",
-                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "5eabc300fd3c46e591d56c043e0bd396"
                 ],
@@ -3062,23 +2730,23 @@
                         "00:17:88:01:03:26:fd:f5"
                     ]
                 ],
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:17:88:01:03:26:fd:f5"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "LWB010",
+                "name": "Bedroom Back",
+                "sw_version": "1.46.13_r26312",
                 "entry_type": null,
                 "id": "43b37c83c73b489ca79cc51e0d584d75",
-                "identifiers": [
-                    [
-                        "deconz",
-                        "00:17:88:01:03:26:fd:f5"
-                    ]
-                ],
-                "manufacturer": "Philips",
-                "model": "LWB010",
-                "name": "Lib Light 1",
-                "name_by_user": null,
-                "sw_version": "1.46.13_r26312",
-                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "5eabc300fd3c46e591d56c043e0bd396"
                 ],
@@ -3088,8 +2756,6 @@
                         "00:17:88:01:03:38:81:e8"
                     ]
                 ],
-                "entry_type": null,
-                "id": "9cf980c511734cc68f11f99d7075a56c",
                 "identifiers": [
                     [
                         "deconz",
@@ -3098,19 +2764,19 @@
                 ],
                 "manufacturer": "Philips",
                 "model": "LWB010",
-                "name": "Lib Light 2",
-                "name_by_user": null,
+                "name": "Middle Floor Hallway",
                 "sw_version": "1.46.13_r26312",
-                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+                "entry_type": null,
+                "id": "9cf980c511734cc68f11f99d7075a56c",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
-                    "098a79cdf5a24d1893bc96bdac53d861"
+                    "40b779145392451dbed62994151c9728"
                 ],
                 "connections": [],
-                "entry_type": null,
-                "id": "6754c841487c49cd8b56315d04f38484",
                 "identifiers": [
                     [
                         "mobile_app",
@@ -3118,14 +2784,16 @@
                     ]
                 ],
                 "manufacturer": "Apple",
-                "model": "iPhone Xs Max",
-                "name": "Matt iPhone ",
-                "name_by_user": null,
+                "model": "iPhone11,6",
+                "name": "Matt",
                 "sw_version": "14.0",
-                "via_device_id": null
+                "entry_type": null,
+                "id": "6754c841487c49cd8b56315d04f38484",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": "Matt Iphone"
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "5eabc300fd3c46e591d56c043e0bd396"
                 ],
@@ -3135,8 +2803,6 @@
                         "00:17:88:01:03:f5:6b:4d"
                     ]
                 ],
-                "entry_type": null,
-                "id": "6bf25ea5f7e0499bbde64988cac6dffe",
                 "identifiers": [
                     [
                         "deconz",
@@ -3146,12 +2812,14 @@
                 "manufacturer": "Philips",
                 "model": "LST002",
                 "name": "Bed room LED Strips",
-                "name_by_user": null,
                 "sw_version": "1.46.13_r26312",
-                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+                "entry_type": null,
+                "id": "6bf25ea5f7e0499bbde64988cac6dffe",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
                     "5eabc300fd3c46e591d56c043e0bd396"
                 ],
@@ -3161,8 +2829,6 @@
                         "00:17:88:01:02:93:22:f1"
                     ]
                 ],
-                "entry_type": null,
-                "id": "623534cddaa34a87859fe43aac81c43f",
                 "identifiers": [
                     [
                         "deconz",
@@ -3171,19 +2837,308 @@
                 ],
                 "manufacturer": "Philips",
                 "model": "LCT010",
-                "name": "Bedroom Light",
-                "name_by_user": null,
+                "name": "Living Room Front Main",
                 "sw_version": "1.46.13_r26312",
-                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8"
+                "entry_type": null,
+                "id": "623534cddaa34a87859fe43aac81c43f",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
             },
             {
-                "area_id": null,
                 "config_entries": [
-                    "c4f1e774b38744138f87b0cf6c3baa07"
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "ec:1b:bd:ff:fe:a8:ae:b3"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "deconz",
+                        "ec:1b:bd:ff:fe:a8:ae:b3"
+                    ]
+                ],
+                "manufacturer": "IKEA of Sweden",
+                "model": "TRADFRI bulb E27 WW 806lm",
+                "name": "Ground Floor Hallway",
+                "sw_version": "2.1.022",
+                "entry_type": null,
+                "id": "6ac52dba2c5f47499bfdc0cee027f71c",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "ec:1b:bd:ff:fe:48:cb:b8"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "deconz",
+                        "ec:1b:bd:ff:fe:48:cb:b8"
+                    ]
+                ],
+                "manufacturer": "IKEA of Sweden",
+                "model": "TRADFRI bulb E27 WW 806lm",
+                "name": "Kitchen",
+                "sw_version": "2.1.022",
+                "entry_type": null,
+                "id": "360d32ea52924d1eb78f8b9768555250",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "ec:1b:bd:ff:fe:a8:67:3f"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "deconz",
+                        "ec:1b:bd:ff:fe:a8:67:3f"
+                    ]
+                ],
+                "manufacturer": "IKEA of Sweden",
+                "model": "TRADFRI bulb E27 WW 806lm",
+                "name": "Middle Floor Bathroom",
+                "sw_version": "2.1.022",
+                "entry_type": null,
+                "id": "24799a34f456453183d84090f06e237c",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "ec:1b:bd:ff:fe:f1:ff:a4"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "deconz",
+                        "ec:1b:bd:ff:fe:f1:ff:a4"
+                    ]
+                ],
+                "manufacturer": "IKEA of Sweden",
+                "model": "TRADFRI bulb E27 WW 806lm",
+                "name": "Bedroom Lamp",
+                "sw_version": "2.1.022",
+                "entry_type": null,
+                "id": "04a905f725304643aa3fab16f715624b",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "08:6b:d7:ff:fe:21:b8:01"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "deconz",
+                        "08:6b:d7:ff:fe:21:b8:01"
+                    ]
+                ],
+                "manufacturer": "IKEA of Sweden",
+                "model": "TRADFRI open/close remote",
+                "name": "TRADFRI open/close remote ",
+                "sw_version": "2.2.008",
+                "entry_type": null,
+                "id": "ab13822e9f604f97b5173ca7c9d2b3ae",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:0d:6f:ff:fe:bb:34:3a"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:0d:6f:ff:fe:bb:34:3a"
+                    ],
+                    [
+                        "zha",
+                        "00:0d:6f:ff:fe:bb:34:3a"
+                    ]
+                ],
+                "manufacturer": "IKEA of Sweden",
+                "model": "KADRILJ roller blind",
+                "name": "Office Blind R",
+                "sw_version": "2.2.007",
+                "entry_type": null,
+                "id": "e6c4481c558b4f3db061305c39cff6cd",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "b86044f2439745d091509f16fa907f55"
                 ],
                 "connections": [],
+                "identifiers": [
+                    [
+                        "alexa_media",
+                        "G091B004018401G7"
+                    ]
+                ],
+                "manufacturer": "Amazon",
+                "model": "ECHO A1RABVCI4QCIKC",
+                "name": "danielle's 2nd Echo Dot",
+                "sw_version": "4128035204",
                 "entry_type": null,
-                "id": "cbc76b399c01434697518060e2853cf7",
+                "id": "6f34841f6db145cab257be2963071f1b",
+                "via_device_id": "6f34841f6db145cab257be2963071f1b",
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:15:8d:00:04:10:f7:d4"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:15:8d:00:04:10:f7:d4"
+                    ],
+                    [
+                        "zha",
+                        "00:15:8d:00:04:10:f7:d4"
+                    ]
+                ],
+                "manufacturer": "LUMI",
+                "model": "lumi.sensor_magnet.aq2",
+                "name": "Shower",
+                "sw_version": "20161128",
+                "entry_type": null,
+                "id": "9453139490ce4eec84bb93d10617bb89",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "68:0a:e2:ff:fe:3b:30:0b"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "deconz",
+                        "68:0a:e2:ff:fe:3b:30:0b"
+                    ]
+                ],
+                "manufacturer": "IKEA of Sweden",
+                "model": "KADRILJ roller blind",
+                "name": "Office Blind L",
+                "sw_version": "2.2.009",
+                "entry_type": null,
+                "id": "fee96b721777461ea8c0f5ece1ba437b",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "68:0a:e2:ff:fe:66:12:5f"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "deconz",
+                        "68:0a:e2:ff:fe:66:12:5f"
+                    ]
+                ],
+                "manufacturer": "IKEA of Sweden",
+                "model": "FYRTUR block-out roller blind",
+                "name": "Kitchen Blind",
+                "sw_version": "2.2.009",
+                "entry_type": null,
+                "id": "afe56cdb779f48abb9ca9f5e60abe14c",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "68:0a:e2:ff:fe:40:f9:39"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "deconz",
+                        "68:0a:e2:ff:fe:40:f9:39"
+                    ]
+                ],
+                "manufacturer": "IKEA of Sweden",
+                "model": "TRADFRI open/close remote",
+                "name": "TRADFRI open/close remote (2)",
+                "sw_version": "2.2.010",
+                "entry_type": null,
+                "id": "38dea74001074d4e88f61e2377e845f8",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "1a51dc671d10428ca5b9381de1560a95"
+                ],
+                "connections": [],
                 "identifiers": [
                     [
                         "mobile_app",
@@ -3191,14 +3146,206 @@
                     ]
                 ],
                 "manufacturer": "Apple",
-                "model": "iPhone X\u0280",
+                "model": "iPhone11,8",
                 "name": "iPhone",
-                "name_by_user": null,
-                "sw_version": "13.6.1",
-                "via_device_id": null
+                "sw_version": "14.0.1",
+                "entry_type": null,
+                "id": "cbc76b399c01434697518060e2853cf7",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:17:88:01:03:28:31:b0"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "deconz",
+                        "00:17:88:01:03:28:31:b0"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "SML001",
+                "name": "Shower Room Sensor",
+                "sw_version": "6.1.1.27575",
+                "entry_type": null,
+                "id": "5b8dcd6795594e4ba79e06ec69b2901c",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "68:0a:e2:ff:fe:31:6e:f7"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "deconz",
+                        "68:0a:e2:ff:fe:31:6e:f7"
+                    ]
+                ],
+                "manufacturer": "IKEA of Sweden",
+                "model": "TRADFRI on/off switch",
+                "name": "Spare room switch",
+                "sw_version": "2.2.010",
+                "entry_type": null,
+                "id": "6c85935b8be54d23873d7009957d646a",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "b86044f2439745d091509f16fa907f55"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "alexa_media",
+                        "D2FF4123186D4EFCAEC3EBE22D910D92"
+                    ]
+                ],
+                "manufacturer": "Amazon",
+                "model": "VOX A2IVLV5VM2W81",
+                "name": "This Device",
+                "sw_version": "1",
+                "entry_type": null,
+                "id": "a637c6794f0d4c329d6fceb9ebf37b56",
+                "via_device_id": "a637c6794f0d4c329d6fceb9ebf37b56",
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "b86044f2439745d091509f16fa907f55"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "alexa_media",
+                        "A2CBC6E3C000485C8746CD0B8B08BF8F"
+                    ]
+                ],
+                "manufacturer": "Amazon",
+                "model": "VOX A2IVLV5VM2W81",
+                "name": "This Device",
+                "sw_version": "1",
+                "entry_type": null,
+                "id": "b6c935b92e2c4db99d521b64785218dc",
+                "via_device_id": "b6c935b92e2c4db99d521b64785218dc",
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "e2446035008211eb9f7b9dddfc9a8284"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "57:96:bb:77:36:09"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "homekit",
+                        "e2446035008211eb9f7b9dddfc9a8284",
+                        "homekit.bridge"
+                    ]
+                ],
+                "manufacturer": "Home Assistant",
+                "model": "Home Assistant HomeKit Bridge",
+                "name": "HASS Bridge 03SA",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "e24d903b008211eba7ab357d89947e3d",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "4e566e7b009f11eb9ea17fa8bb2bb0f3"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "tuya",
+                        "tuya.1274756684f3ebb8900b"
+                    ]
+                ],
+                "manufacturer": "Smart Life",
+                "model": "switch",
+                "name": "Living Smart Plug",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "4efe7933009f11eb805cefdd5eb3c2c2",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "4e566e7b009f11eb9ea17fa8bb2bb0f3"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "tuya",
+                        "tuya.51268403dc4f2233b115"
+                    ]
+                ],
+                "manufacturer": "Smart Life",
+                "model": "switch",
+                "name": "Dryer",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "4efe9c09009f11eb9e897f95f7721634",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            }
+        ],
+        "deleted_devices": [
+            {
+                "config_entries": [
+                    "8c964edfe4e14191a40455bece6b7c7b"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mobile_app",
+                        "c6e39b53af1c42eca4431f121aadfb98"
+                    ]
+                ],
+                "id": "29d69b8cc85043ecb0100a4fe0a1171e"
+            },
+            {
+                "config_entries": [
+                    "dfc3b118601d4435b84cce1cc1047d1e"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mobile_app",
+                        "09DCE5AB-756E-4D8E-80F5-CD76D9366C65"
+                    ]
+                ],
+                "id": "a0eb121a12714963883011e0854fa6e7"
             }
         ]
-    },
-    "key": "core.device_registry",
-    "version": 1
+    }
 }
