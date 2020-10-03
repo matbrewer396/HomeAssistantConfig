@@ -1,0 +1,89 @@
+accessControl:
+    autologinAs: homeassistant
+    autologinLocal: true
+    localNetworks:
+    - 172.30.32.2
+    salt: nqoYza8vj13O4gyG9b7j3wBKZTKFlmni
+api:
+    key: 90CA71AD149945C184754321F45C65B3
+folder:
+    data: /data/octoprint/data
+    generated: /data/octoprint/generated
+    logs: /data/octoprint/logs
+    plugins: /data/octoprint/plugins
+    printerProfiles: /config/octoprint/printerProfiles
+    scripts: /config/octoprint/scripts
+    slicingProfiles: /config/octoprint/slicingProfiles
+    timelapse: /config/octoprint/timelapse
+    timelapse_tmp: /data/octoprint/timelapse/tmp
+    translations: /config/octoprint/translations
+    uploads: /config/octoprint/uploads
+    virtualSd: /data/octoprint/virtualSd
+    watched: /config/octoprint/watched
+plugins:
+    ABL_Expert:
+        max_index: 2
+    announcements:
+        _config_version: 1
+        channels:
+            _blog:
+                read_until: 1600948800
+            _important:
+                read_until: 1521111600
+            _octopi:
+                read_until: 1573722900
+            _plugins:
+                read_until: 1601182800
+            _releases:
+                read_until: 1596714600
+    cura:
+        cura_engine: /sbin/CuraEngine
+    discovery:
+        upnpUuid: 1f081c52-7629-4138-8e23-f590e31f8627
+    errortracking:
+        unique_id: 1aeee193-fbf5-410f-ad33-7e96754b917e
+    softwareupdate:
+        _config_version: 7
+    tracking:
+        enabled: true
+        unique_id: b5b8d5fe-3083-45e0-8726-d5c28fafdd55
+printerProfiles:
+    default: _default
+serial:
+    autoconnect: true
+    port: /dev/ttyUSB0
+server:
+    commands:
+        serverRestartCommand: supervisorctl restart octoprint
+        systemRestartCommand: /restart.sh
+        systemShutdownCommand: /shutdown.sh
+    firstRun: false
+    onlineCheck:
+        enabled: true
+    pluginBlacklist:
+        enabled: true
+    secretKey: cpkgSEqGzvnAKGWKyaxrX1uxI0g9PgpN
+    seenWizards:
+        corewizard: 3
+        tracking: null
+system:
+    actions:
+    -   action: mjpgstart
+        command: supervisorctl start mjpg-streamer
+        name: Start mjpg-streamer
+    -   action: mjpgstop
+        command: supervisorctl stop mjpg-streamer
+        name: Stop mjpg-streamer
+temperature:
+    profiles:
+    -   bed: 100
+        chamber: null
+        extruder: 210
+        name: ABS
+    -   bed: 60
+        chamber: null
+        extruder: 180
+        name: PLA
+webcam:
+    ffmpeg: /usr/bin/ffmpeg
+    snapshot: http://localhost:8080/?action=snapshot
