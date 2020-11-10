@@ -89,6 +89,7 @@
             },
             {
                 "config_entries": [
+                    "622bdb86058a11eb8d13ed83572130c3",
                     "b86044f2439745d091509f16fa907f55"
                 ],
                 "connections": [],
@@ -110,6 +111,7 @@
             },
             {
                 "config_entries": [
+                    "622bdb86058a11eb8d13ed83572130c3",
                     "b86044f2439745d091509f16fa907f55"
                 ],
                 "connections": [],
@@ -131,6 +133,7 @@
             },
             {
                 "config_entries": [
+                    "622bdb86058a11eb8d13ed83572130c3",
                     "b86044f2439745d091509f16fa907f55"
                 ],
                 "connections": [],
@@ -152,6 +155,7 @@
             },
             {
                 "config_entries": [
+                    "622bdb86058a11eb8d13ed83572130c3",
                     "b86044f2439745d091509f16fa907f55"
                 ],
                 "connections": [],
@@ -194,6 +198,7 @@
             },
             {
                 "config_entries": [
+                    "622bdb86058a11eb8d13ed83572130c3",
                     "b86044f2439745d091509f16fa907f55"
                 ],
                 "connections": [],
@@ -215,6 +220,7 @@
             },
             {
                 "config_entries": [
+                    "622bdb86058a11eb8d13ed83572130c3",
                     "b86044f2439745d091509f16fa907f55"
                 ],
                 "connections": [],
@@ -236,6 +242,7 @@
             },
             {
                 "config_entries": [
+                    "622bdb86058a11eb8d13ed83572130c3",
                     "b86044f2439745d091509f16fa907f55"
                 ],
                 "connections": [],
@@ -257,6 +264,7 @@
             },
             {
                 "config_entries": [
+                    "622bdb86058a11eb8d13ed83572130c3",
                     "b86044f2439745d091509f16fa907f55"
                 ],
                 "connections": [],
@@ -299,6 +307,7 @@
             },
             {
                 "config_entries": [
+                    "622bdb86058a11eb8d13ed83572130c3",
                     "b86044f2439745d091509f16fa907f55"
                 ],
                 "connections": [],
@@ -320,6 +329,7 @@
             },
             {
                 "config_entries": [
+                    "622bdb86058a11eb8d13ed83572130c3",
                     "b86044f2439745d091509f16fa907f55"
                 ],
                 "connections": [],
@@ -341,6 +351,7 @@
             },
             {
                 "config_entries": [
+                    "622bdb86058a11eb8d13ed83572130c3",
                     "b86044f2439745d091509f16fa907f55"
                 ],
                 "connections": [],
@@ -362,6 +373,7 @@
             },
             {
                 "config_entries": [
+                    "622bdb86058a11eb8d13ed83572130c3",
                     "b86044f2439745d091509f16fa907f55"
                 ],
                 "connections": [],
@@ -404,6 +416,7 @@
             },
             {
                 "config_entries": [
+                    "622bdb86058a11eb8d13ed83572130c3",
                     "b86044f2439745d091509f16fa907f55"
                 ],
                 "connections": [],
@@ -435,11 +448,11 @@
                 ],
                 "identifiers": [
                     [
-                        "zha",
+                        "deconz",
                         "00:15:8d:00:04:44:8b:4b"
                     ],
                     [
-                        "deconz",
+                        "zha",
                         "00:15:8d:00:04:44:8b:4b"
                     ]
                 ],
@@ -465,11 +478,11 @@
                 ],
                 "identifiers": [
                     [
-                        "deconz",
+                        "zha",
                         "00:21:2e:ff:ff:05:00:9d"
                     ],
                     [
-                        "zha",
+                        "deconz",
                         "00:21:2e:ff:ff:05:00:9d"
                     ]
                 ],
@@ -600,6 +613,7 @@
             },
             {
                 "config_entries": [
+                    "622bdb86058a11eb8d13ed83572130c3",
                     "b86044f2439745d091509f16fa907f55"
                 ],
                 "connections": [],
@@ -621,6 +635,7 @@
             },
             {
                 "config_entries": [
+                    "622bdb86058a11eb8d13ed83572130c3",
                     "b86044f2439745d091509f16fa907f55"
                 ],
                 "connections": [],
@@ -1175,15 +1190,15 @@
                 "identifiers": [
                     [
                         "mqtt",
-                        "bt-mqtt-gateway/C4-7C-8D-6A-42-10/miflora_herbs"
-                    ],
-                    [
-                        "mqtt",
                         "C4:7C:8D:6A:42:10"
                     ],
                     [
                         "mqtt",
                         "bt-mqtt-gateway/C4-7C-8D-6A-42-10/miflora_aloevera"
+                    ],
+                    [
+                        "mqtt",
+                        "bt-mqtt-gateway/C4-7C-8D-6A-42-10/miflora_herbs"
                     ]
                 ],
                 "manufacturer": "Xiaomi",
@@ -1208,11 +1223,11 @@
                 ],
                 "identifiers": [
                     [
-                        "deconz",
+                        "zha",
                         "00:15:8d:00:04:7d:41:8a"
                     ],
                     [
-                        "zha",
+                        "deconz",
                         "00:15:8d:00:04:7d:41:8a"
                     ]
                 ],
@@ -1455,8 +1470,8 @@
             },
             {
                 "config_entries": [
-                    "5eabc300fd3c46e591d56c043e0bd396",
-                    "d3e1b6f284404ed287da3173ed660c7c"
+                    "d3e1b6f284404ed287da3173ed660c7c",
+                    "5eabc300fd3c46e591d56c043e0bd396"
                 ],
                 "connections": [
                     [
@@ -2786,7 +2801,7 @@
                 "manufacturer": "Apple",
                 "model": "iPhone11,6",
                 "name": "Matt",
-                "sw_version": "14.0",
+                "sw_version": "14.2",
                 "entry_type": null,
                 "id": "6754c841487c49cd8b56315d04f38484",
                 "via_device_id": null,
@@ -2987,11 +3002,11 @@
                 ],
                 "identifiers": [
                     [
-                        "deconz",
+                        "zha",
                         "00:0d:6f:ff:fe:bb:34:3a"
                     ],
                     [
-                        "zha",
+                        "deconz",
                         "00:0d:6f:ff:fe:bb:34:3a"
                     ]
                 ],
@@ -3007,6 +3022,7 @@
             },
             {
                 "config_entries": [
+                    "622bdb86058a11eb8d13ed83572130c3",
                     "b86044f2439745d091509f16fa907f55"
                 ],
                 "connections": [],
@@ -3038,11 +3054,11 @@
                 ],
                 "identifiers": [
                     [
-                        "deconz",
+                        "zha",
                         "00:15:8d:00:04:10:f7:d4"
                     ],
                     [
-                        "zha",
+                        "deconz",
                         "00:15:8d:00:04:10:f7:d4"
                     ]
                 ],
@@ -3209,6 +3225,7 @@
             },
             {
                 "config_entries": [
+                    "622bdb86058a11eb8d13ed83572130c3",
                     "b86044f2439745d091509f16fa907f55"
                 ],
                 "connections": [],
@@ -3230,6 +3247,7 @@
             },
             {
                 "config_entries": [
+                    "622bdb86058a11eb8d13ed83572130c3",
                     "b86044f2439745d091509f16fa907f55"
                 ],
                 "connections": [],
@@ -3278,7 +3296,7 @@
             },
             {
                 "config_entries": [
-                    "4e566e7b009f11eb9ea17fa8bb2bb0f3"
+                    "a325e998058a11eba89e2dd27ea31446"
                 ],
                 "connections": [],
                 "identifiers": [
@@ -3292,14 +3310,14 @@
                 "name": "Living Smart Plug",
                 "sw_version": null,
                 "entry_type": null,
-                "id": "4efe7933009f11eb805cefdd5eb3c2c2",
+                "id": "a3da342f058a11eb8f9e9fa78c97e194",
                 "via_device_id": null,
                 "area_id": null,
                 "name_by_user": null
             },
             {
                 "config_entries": [
-                    "4e566e7b009f11eb9ea17fa8bb2bb0f3"
+                    "a325e998058a11eba89e2dd27ea31446"
                 ],
                 "connections": [],
                 "identifiers": [
@@ -3313,8 +3331,81 @@
                 "name": "Dryer",
                 "sw_version": null,
                 "entry_type": null,
-                "id": "4efe9c09009f11eb9e897f95f7721634",
+                "id": "a3da5096058a11eb88ff4709d2d85088",
                 "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "24c8ffd116b911eb8715f58ea6b537d5"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "ring",
+                        "343ea413d5e0"
+                    ]
+                ],
+                "manufacturer": "Ring",
+                "model": null,
+                "name": "Front Door",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "25527a7e16b911ebac1977b87b09fc03",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "68:0a:e2:ff:fe:31:6c:cd"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "deconz",
+                        "68:0a:e2:ff:fe:31:6c:cd"
+                    ]
+                ],
+                "manufacturer": "IKEA of Sweden",
+                "model": "TRADFRI on/off switch",
+                "name": "TR\u00c5DFRI on/off switch",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "b680989121d511eb9bc6d5a07ffd5321",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
+                "area_id": null,
+                "name_by_user": null
+            },
+            {
+                "config_entries": [
+                    "5eabc300fd3c46e591d56c043e0bd396"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "68:0a:e2:ff:fe:0b:7e:ac"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "deconz",
+                        "68:0a:e2:ff:fe:0b:7e:ac"
+                    ]
+                ],
+                "manufacturer": "IKEA of Sweden",
+                "model": "TRADFRI on/off switch",
+                "name": "TRADFRI on/off switch ",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "cdf4a61121ec11eb84460342210506ea",
+                "via_device_id": "3ce62447e2464534b646b4c3d57b54d8",
                 "area_id": null,
                 "name_by_user": null
             }
