@@ -33,7 +33,6 @@
   name: LandingCam
   input: -rtsp_transport tcp -i rtsp://192.168.30.218:8554/unicast
 
-
 - platform: generic
   name: Kitchen Cam Stills
   username: !secret kitchen_cam_user

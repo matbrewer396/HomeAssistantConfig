@@ -1,0 +1,34 @@
+region_of_interest=0,0,0,0
+motion_sensitivity=2
+motion_indicator_color=2
+motion_timeout=20
+motion_tracking=off
+motion_detection=on
+
+
+# Snapshots
+save_snapshot=false
+save_dir=/system/sdcard/DCIM/motion/stills
+save_snapshot_attr="0666"
+save_file_date_pattern="+%d-%m-%Y_%H.%M.%S"
+max_snapshots=20
+
+# Videos
+save_video=false
+save_video_dir=/system/sdcard/DCIM/motion/videos
+save_video_attr="0666"
+video_duration=10
+max_videos=10send_telegram=true
+publish_mqtt_message=true
+publish_mqtt_snapshot=true
+
+# Configure FTP snapshots and videos
+ftp_snapshot=true
+ftp_video=true
+ftp_host="192.168.1.253"
+ftp_port=21
+ftp_username="hassio"
+ftp_password="medot544565"
+ftp_stills_dir="/share/camera/cam4/stills"
+ftp_videos_dir="/share/camera/cam4/videos"
+

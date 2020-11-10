@@ -1,7 +1,7 @@
-  - platform: template
-    sensors:
-      blind_hallway_current_position:
-        friendly_name: "Hallway Current Position"
-        entity_id: cover.blind
-        unit_of_measurement: '%'
-        value_template: "{{ states.cover.hallway_blind.attributes.current_position }}"
+  # - platform: template
+  #   sensors:
+  #     blind_hallway_current_position:
+  #       friendly_name: "Hallway Current Position"
+  #       entity_id: cover.blind
+  #       unit_of_measurement: '%'
+  #       value_template: "{{ states.cover.hallway_blind.attributes.current_position }}"

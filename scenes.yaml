@@ -1,0 +1,160 @@
+- id: '1604853831068'
+  name: LR-On
+  entities:
+    light.living_room_front_main:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - colorloop
+      brightness: 254
+      color_temp: 403
+      is_deconz_group: false
+      friendly_name: Front Main
+      supported_features: 63
+      type: light-rgb
+      room: living_room
+      sort_order: 10
+      icon: mdi:ceiling-light
+      state: 'on'
+    light.living_room_back_main:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - colorloop
+      brightness: 206
+      color_temp: 366
+      is_deconz_group: false
+      friendly_name: Back Main
+      supported_features: 63
+      type: light-rgb
+      room: living_room
+      sort_order: 20
+      icon: mdi:ceiling-light
+      state: 'on'
+    light.living_room_back_left:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - colorloop
+      brightness: 254
+      color_temp: 367
+      is_deconz_group: false
+      friendly_name: Back Left
+      supported_features: 63
+      type: light-rgb
+      room: living_room
+      sort_order: 30
+      state: 'on'
+    light.living_room_back_right:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - colorloop
+      brightness: 254
+      color_temp: 367
+      is_deconz_group: false
+      friendly_name: Back Right
+      supported_features: 63
+      type: light-rgb
+      room: living_room
+      sort_order: 30
+      state: 'on'
+  icon: mdi:film
+- id: '1604855385583'
+  name: LR-Movie Time
+  entities:
+    light.living_room_front_main:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - colorloop
+      brightness: 193
+      hs_color:
+      - 315.249
+      - 70.98
+      rgb_color:
+      - 255
+      - 74
+      - 208
+      xy_color:
+      - 0.441
+      - 0.204
+      is_deconz_group: false
+      friendly_name: Front Main
+      supported_features: 63
+      type: light-rgb
+      room: living_room
+      sort_order: 10
+      icon: mdi:ceiling-light
+      state: 'on'
+    light.living_room_back_main:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - colorloop
+      brightness: 79
+      hs_color:
+      - 279.301
+      - 89.804
+      rgb_color:
+      - 175
+      - 25
+      - 255
+      xy_color:
+      - 0.278
+      - 0.109
+      is_deconz_group: false
+      friendly_name: Back Main
+      supported_features: 63
+      type: light-rgb
+      room: living_room
+      sort_order: 20
+      icon: mdi:ceiling-light
+      state: 'on'
+    light.living_room_back_left:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - colorloop
+      brightness: 242
+      hs_color:
+      - 256.338
+      - 83.529
+      rgb_color:
+      - 100
+      - 42
+      - 255
+      xy_color:
+      - 0.187
+      - 0.074
+      is_deconz_group: false
+      friendly_name: Back Left
+      supported_features: 63
+      type: light-rgb
+      room: living_room
+      sort_order: 30
+      state: 'on'
+    light.living_room_back_right:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - colorloop
+      brightness: 254
+      hs_color:
+      - 315.497
+      - 59.216
+      rgb_color:
+      - 255
+      - 103
+      - 215
+      xy_color:
+      - 0.423
+      - 0.216
+      is_deconz_group: false
+      friendly_name: Back Right
+      supported_features: 63
+      type: light-rgb
+      room: living_room
+      sort_order: 30
+      state: 'on'
+  icon: mdi:film

@@ -33,5 +33,5 @@ cards:
           text: "var(--weather-color)"
         tap_action:
           action: navigate
-          navigation_path: /lovelace/weather
+          navigation_path: /old-home/weather
       - !include ../includes/blank-card.yaml

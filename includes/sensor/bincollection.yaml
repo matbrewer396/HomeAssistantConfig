@@ -21,6 +21,7 @@
     headers:
       Content-Type: application/json
       User-Agent: Home Assistant REST sensor
+
   - platform: template
     sensors:
       nextbincollection:
@@ -29,4 +30,9 @@
       bincollectionistomorrow:
         value_template: >
           {% set tomorrow = (as_timestamp(now())+ (86400)) | timestamp_custom("%d/%m/%y") %}{{tomorrow ==  states("sensor.black_bins_collection") or tomorrow ==  states("sensor.green_bins_collection")}}
+      blackbinsbollection_usdate:
+        value_template: > 
+          
+
+
 

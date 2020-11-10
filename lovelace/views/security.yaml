@@ -1,6 +1,22 @@
 title: Security
 path: security
 cards:
+  - type: custom:auto-entities
+    filter:
+      include:
+        - attributes:
+            type: camera
+          options:
+            type: picture-entity
+            style: |
+              ha-card {
+                border-radius: var(--border-radius);
+                box-shadow: var(--box-shadow);
+                overflow: hidden;
+              }
+            entity: this.entity_id
+    sort:
+      numeric: true
   - type: vertical-stack
     cards:
       - type: custom:decluttering-card

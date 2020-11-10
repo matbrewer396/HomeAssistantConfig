@@ -74,30 +74,37 @@
   automation_underbedlight_temp:
     name: Temporarily disable under bed light
     initial: on
-
   automation_bedstriponmainlighton:
     name: Turn strip light to max on bedroom main light on
     initial: on
-
   automation_lampondownstairs:
     name: Turn lamp on, on motion
     initial: on
-
   automation_nightalarm:
     name: Night Time Alarm
     initial: on
-
   automation_officelightonmotion:
     name: Office Light Turn on, On Motion
     initial: on
-
-
-
-
   automation_alarm_notication_only:
     name: Send notication if no one home
 
 
+  automation_backdoor_lighton:
+    name: Backdoor - light on, when dark
+    initial: on
+  automation_livingroom_sunup_lightoff:
+    name: Livining Room - Light off when sun up
+    initial: on
+  automation_livingroom_tv_light_link:
+    name: Livining Room - Tv Light Link
+    initial: on
+  automation_livingroom_motion_light_on:
+    name: Livining Room - Montion light on
+    initial: on
+  automation_spare_room_sunup_lightoff:
+    name: Space Room - Light off when sun up
+    initial: on
     
 
 ## Alerts
@@ -114,3 +121,5 @@
   lunchtimetimer:
     name: Lunch Timer On
     initial: off
+
+## is dark

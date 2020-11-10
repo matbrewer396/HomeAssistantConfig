@@ -41,6 +41,10 @@
   #     - light.living_room_light_2
   #     - light.living_room_light_3
 
+######################################
+## Switchs
+######################################
+      
 
 ######################################
 ## blinds
@@ -55,27 +59,8 @@
 ######################################
 ## Lights
 ######################################
-  light_goodnight:
-    - light.middle_floor_hallway
-    - light.middle_floor_bathroom
-    - light.bedroom_font
-    - light.bedroom_back
-    - light.bedroom_lamp
-    - light.living_room_front_main
-    - light.living_room_back_main
-    - light.living_room_back_left
-    - light.living_room_back_right
-    - light.office_light
-    - light.spare_room
-    - light.kitchen
-    - light.ground_floor_hallway
-    - light.middle_floor_hallway
-    - light.top_floor_hallway
-    - light.ground_floor_toilet
-    - light.middle_floor_bathroom
-    - light.top_floor_shower
-    - switch.plug_010
-    - switch.plug_07
+
+    # - switch.plug_04 # Danni
   light_bedroom:
     entities:
       - light.bedroom_font
@@ -86,6 +71,11 @@
     entities:
       - light.living_room_front_main
       - light.living_room_back_main
+      - light.living_room_back_left
+      - light.living_room_back_right
+      - switch.wled_livingroomtv
+  light_livingroom_back:
+    entities:
       - light.living_room_back_left
       - light.living_room_back_right
   light_office:
@@ -107,3 +97,35 @@
       - light.ground_floor_toilet
       - light.middle_floor_bathroom
       - light.top_floor_shower
+
+
+######################################
+## Goodnight list
+######################################
+
+  goodnight:
+    - light.middle_floor_hallway
+    - light.middle_floor_bathroom
+    - light.bedroom_font
+    - light.bedroom_back
+    - light.bedroom_lamp
+    - light.living_room_front_main
+    - light.living_room_back_main
+    - light.living_room_back_left
+    - light.living_room_back_right
+    - light.office_light
+    - light.spare_room
+    - light.kitchen
+    - light.ground_floor_hallway
+    - light.middle_floor_hallway
+    - light.top_floor_hallway
+    - light.ground_floor_toilet
+    - light.middle_floor_bathroom
+    # - light.top_floor_shower
+    - switch.plug_011 #Owl
+    - switch.plug_07 #up tv
+    - switch.plug_03 #Back
+    # - switch.plug_08 # PC
+    - switch.plug_05 # Printer
+    - switch.plug_09 # Office Lamp
+    - switch.wled_livingroomtv

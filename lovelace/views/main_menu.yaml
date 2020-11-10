@@ -36,11 +36,11 @@ cards:
               - opacity: 0.8
               - tap_action:
                   action: navigate
-                  navigation_path: /lovelace/links
+                  navigation_path: /old-home/links
                   haptic: light
               - hold_action:
                   action: navigate
-                  navigation_path: /lovelace/links
+                  navigation_path: /old-home/links
                   haptic: light
           - type: custom:decluttering-card
             template: button 
@@ -52,11 +52,11 @@ cards:
               - opacity: 0.8
               - tap_action:
                   action: navigate
-                  navigation_path: /lovelace/debug
+                  navigation_path: /old-home/debug
                   haptic: light
               - hold_action:
                   action: navigate
-                  navigation_path: /lovelace/debu
+                  navigation_path: /old-home/debu
                   haptic: light
           - type: 'custom:button-card'
             color_type: blank-card
@@ -75,11 +75,11 @@ cards:
               - show_state: false
               - tap_action: 
                   action: navigate
-                  navigation_path: /lovelace/controls
+                  navigation_path: /old-home/controls
                   haptic: light
               - hold_action: 
                   action: navigate
-                  navigation_path: /lovelace/controls
+                  navigation_path: /old-home/controls
                   haptic: light
               - entity: input_boolean.dummy1
               - margin-right: 40px
@@ -93,11 +93,11 @@ cards:
               - show_state: false
               - tap_action: 
                   action: navigate
-                  navigation_path: /lovelace/alarm
+                  navigation_path: /old-home/alarm
                   haptic: light
               - hold_action: 
                   action: navigate
-                  navigation_path: /lovelace/alarm
+                  navigation_path: /old-home/alarm
                   haptic: light
               - entity: input_boolean.dummy1
               - margin-right: 40px
@@ -111,11 +111,11 @@ cards:
               - show_state: false
               - tap_action: 
                   action: navigate
-                  navigation_path: /lovelace/alarm
+                  navigation_path: /old-home/alarm
                   haptic: light
               - hold_action: 
                   action: navigate
-                  navigation_path: /lovelace/alarm
+                  navigation_path: /old-home/alarm
                   haptic: light
               - entity: alarm_control_panel.home_alarm
               - margin-right: 40px
@@ -137,11 +137,11 @@ cards:
               - show_state: false
               - tap_action: 
                   action: navigate
-                  navigation_path: /lovelace/climate
+                  navigation_path: /old-home/climate
                   haptic: light
               - hold_action: 
                   action: navigate
-                  navigation_path: /lovelace/climate
+                  navigation_path: /old-home/climate
                   haptic: light
               - entity: input_boolean.dummy1
               - margin-right: 40px
@@ -155,11 +155,11 @@ cards:
               - show_state: false
               - tap_action: 
                   action: navigate
-                  navigation_path: /lovelace/security
+                  navigation_path: /old-home/security
                   haptic: light
               - hold_action: 
                   action: navigate
-                  navigation_path: /lovelace/security
+                  navigation_path: /old-home/security
                   haptic: light
               - entity: input_boolean.dummy1
               - margin-right: 40px
@@ -173,11 +173,11 @@ cards:
               - show_state: false
               - tap_action: 
                   action: navigate
-                  navigation_path: /lovelace/devices
+                  navigation_path: /old-home/devices
                   haptic: light
               - hold_action:
                   action: navigate
-                  navigation_path: /lovelace/devices
+                  navigation_path: /old-home/devices
                   haptic: light
               - entity: input_boolean.dummy1
               - margin-right: 40px
@@ -195,11 +195,11 @@ cards:
               - show_state: false
               - tap_action: 
                   action: navigate
-                  navigation_path: /lovelace/remote
+                  navigation_path: /old-home/remote
                   haptic: light
               - hold_action: 
                   action: navigate
-                  navigation_path: /lovelace/remote
+                  navigation_path: /old-home/remote
                   haptic: light
               - entity: input_boolean.dummy1
               - margin-right: 40px
@@ -213,11 +213,11 @@ cards:
               - show_state: false
               - tap_action: 
                   action: navigate
-                  navigation_path: /lovelace/menu
+                  navigation_path: /old-home/menu
                   haptic: light
               - hold_action: 
                   action: navigate
-                  navigation_path: /lovelace/menu
+                  navigation_path: /old-home/menu
                   haptic: light
               - entity: input_boolean.dummy1
               - margin-right: 40px

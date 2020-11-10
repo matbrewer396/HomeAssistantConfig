@@ -16,45 +16,29 @@
   type: module
 - url: /hacsfiles/light-popup-card/light-popup-card.js
   type: module
-# - url: /hacsfiles/switch-popup-card/switch-popup-card.js
+# - url: /hacsfiles/lovelace-card-tools/card-tools.js
 #   type: module
-# - url: /hacsfiles/thermostat-popup-card/thermostat-popup-card.js
-#   type: module
-- url: /hacsfiles/lovelace-card-tools/card-tools.js
-  type: module
 - url: /hacsfiles/check-button-card/check-button-card.js
   type: module
-# - url: /hacsfiles/mini-media-player/mini-media-player-bundle.js
+# - url: /hacsfiles/button-card/button-card.js
 #   type: module
-# - url: /hacsfiles/upcoming-media-card/upcoming-media-card.js
-#   type: module
-# - url: /hacsfiles/calendar-card/calendar-card.js
-#   type: module
-- url: /hacsfiles/button-card/button-card.js
-  type: module
-- url: /hacsfiles/lovelace-card-mod/card-mod.js
-  type: module
-# - url: /hacsfiles/simple-weather-card/simple-weather-card.js # bundle replace?
+# - url: /hacsfiles/lovelace-card-mod/card-mod.js
 #   type: module
 - url: /hacsfiles/simple-weather-card/simple-weather-card-bundle.js
   type: module
-# - url: /hacsfiles/mini-graph-card/mini-graph-card.js# bundle replace?
-#   type: module
 - url: /hacsfiles/mini-graph-card/mini-graph-card-bundle.js
   type: module
-- url: /hacsfiles/swipe-card/swipe-card.js
-  type: module
-- url: /hacsfiles/lovelace-state-switch/state-switch.js
-  type: module
+# - url: /hacsfiles/swipe-card/swipe-card.js
+#   type: module
+# - url: /hacsfiles/lovelace-state-switch/state-switch.js
+#   type: module
 - url: /hacsfiles/deep-press/deep-press.js
   type: module
 - url: /hacsfiles/weather-card/weather-card.js
   type: module
 - url: /hacsfiles/lovelace-more-info-card/more-info-card.js
   type: module
-- url: /hacsfiles/lovelace-auto-entities/auto-entities.js
-  type: module
-# - url: /hacsfiles/ha-card-waze-travel-time/ha-card-waze-travel-time.js
+# - url: /hacsfiles/lovelace-auto-entities/auto-entities.js
 #   type: module
 - url: /hacsfiles/lovelace-gui-sandbox/gui-sandbox.js
   type: module
@@ -66,8 +50,8 @@
 
 - url: /hacsfiles/thermostat-card/thermostat-card.js
   type: module
-- url: /hacsfiles/compact-custom-header/compact-custom-header.js
-  type: module
+# - url: /hacsfiles/compact-custom-header/compact-custom-header.js
+#   type: module
 
 - type: module
   url: /local/custom_ui/tracker-card.js?v=0

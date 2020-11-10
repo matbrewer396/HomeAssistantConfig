@@ -1,0 +1,451 @@
+title: Controls
+path: controls
+popup_cards:
+  !include ../jimz011/popup-cards/device-popup.yaml
+cards:
+  - type: vertical-stack
+    cards:
+      - type: custom:decluttering-card
+        template: quick-access-menu 
+      - type: custom:decluttering-card
+        template: header 
+        variables:
+          - content: '## Room Controls'
+      - type: custom:decluttering-card
+        template: header 
+        variables:
+          - content: '##### Living Room'
+      - type: horizontal-stack
+        cards:
+          - !include ../jimz011/includes/blank-card.yaml
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: group.livingroom_main_lights
+              - name: Main
+              - icon: ceiling-light
+              - label: !include ../jimz011/includes/brightness-label.yaml
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: light.bed_room_lamp
+              - name: Lamp
+              - icon: lamp
+              - label: !include ../jimz011/includes/brightness-label.yaml
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: switch.plug_03
+              - name: Plug
+              - icon: power-socket-uk
+              - label: "[[[ if (states['sensor.plug_03_energy_power'].state > 0) return `${states['sensor.plug_03_energy_power'].state} W`; else return '&nbsp;' ]]]"
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: switch.tv
+              - name: Tv
+              - icon: television-box
+              - label: "[[[ if (states['sensor.plug_07_energy_power'].state > 0) return `${states['sensor.plug_07_energy_power'].state} W ${states['input_select.tv_state'].state}`; else return `${states['input_select.tv_state'].state}` ]]]"
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+          - !include ../jimz011/includes/blank-card.yaml
+
+
+      - type: horizontal-stack
+        cards:
+          - !include ../jimz011/includes/blank-card.yaml
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: group.livingroom_led
+              - name: LEDs
+              - icon: led-strip-variant
+              - label: !include ../jimz011/includes/brightness-label.yaml
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: light.wled_understairs
+              - name: Under Stairs
+              - icon: stairs
+              - label: !include ../jimz011/includes/brightness-label.yaml
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: light.sofa_1_light_rgb
+              - name: Sofa - 1 
+              - icon: sofa
+              - label: !include ../jimz011/includes/brightness-label.yaml
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: light.wled_sofa2
+              - name: Sofa-2
+              - icon: Sofa
+              - label: !include ../jimz011/includes/brightness-label.yaml
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+          - !include ../jimz011/includes/blank-card.yaml
+      - type: horizontal-stack
+        cards:
+          - !include ../jimz011/includes/blank-card.yaml
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: light.living_room_light_1
+              - name: Main - 1 
+              - icon: ceiling-light
+              - label: !include ../jimz011/includes/brightness-label.yaml
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+      
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: light.living_room_light_2
+              - name: Main - 2
+              - icon: ceiling-light
+              - label: !include ../jimz011/includes/brightness-label.yaml
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: light.living_room_light_3
+              - name: Main - 3
+              - icon: ceiling-light
+              - label: !include ../jimz011/includes/brightness-label.yaml
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: light.wled_undertv
+              - name: Under TV
+              - icon: ceiling-light
+              - label: !include ../jimz011/includes/brightness-label.yaml
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+          - !include ../jimz011/includes/blank-card.yaml
+      
+
+      - type: custom:decluttering-card
+        template: header 
+        variables:
+          - content: '##### Bed Room'
+      - type: horizontal-stack
+        cards:
+          - !include ../jimz011/includes/blank-card.yaml
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - size: 25%
+              - entity: light.bed_room_light
+              - name: Main
+              - icon: ceiling-light
+              - label: !include ../jimz011/includes/brightness-label.yaml
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: light.hue_lightstrip_plus_1
+              - name: LEDs
+              - icon: led-strip
+              - label: !include ../jimz011/includes/brightness-label.yaml
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+              - lock: true
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: switch.plug_08
+              - name: Bedside
+              - icon: power-socket-uk
+              - label: "[[[ if (states['sensor.plug_08_energy_power'].state > 0) return `${states['sensor.plug_08_energy_power'].state} W`; else return '&nbsp;' ]]]"
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+              - lock: true
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: switch.plug_04
+              - name: Fan
+              - icon: power-socket-uk
+              - label: "[[[ if (states['sensor.plug_04_energy_power'].state > 0) return `${states['sensor.plug_04_energy_power'].state} W`; else return '&nbsp;' ]]]"
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+              - lock: true
+          
+             # - ambient_temperature: sensor.temperature_158d00020ed06c
+          - !include ../jimz011/includes/blank-card.yaml
+
+      # - type: horizontal-stack
+      #   cards:
+      #     - !include ../jimz011/includes/blank-card.yaml
+      #     - entity: climate.bedroom
+      #       name: Bed Room
+      #       type: thermostat
+      #     - !include ../jimz011/includes/blank-card.yaml
+
+      
+
+### The following piece is for tablets only, You can leave this out if not needed.
+  - type: custom:state-switch
+    entity: user
+    states:
+      Home Assistant:
+        type: vertical-stack
+        cards:
+          - type: markdown 
+            style: |
+              ha-card {
+                background: none;
+                color: white;
+                box-shadow: none;
+                text-align: end;
+                font-size: 45px;
+                height: 155px;
+              }
+            content: '# [[ sensor.time.state ]]'
+### End of tablet code.
+
+  - type: vertical-stack
+    cards:
+      - type: custom:decluttering-card
+        template: header 
+        variables:
+          - content: '##### Office'
+      - type: horizontal-stack
+        cards:
+          - !include ../jimz011/includes/blank-card.yaml
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: light.office_light
+              - name: Main
+              - icon: ceiling-light
+              - label: !include ../jimz011/includes/brightness-label.yaml
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: light.hue_lightstrip_plus_1_2
+              - name: On Desk
+              - icon: led-strip
+              - label: !include ../jimz011/includes/brightness-label.yaml
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: light.office_light_rgb
+              - name: Below Desk
+              - icon: led-strip
+              - label: !include ../jimz011/includes/brightness-label.yaml
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: switch.plug_05
+              - name: Matt PC
+              - icon: desktop-classic
+              - label: "[[[ if (states['sensor.plug_05_energy_power'].state > 0) return `${states['sensor.plug_05_energy_power'].state} W`; else return '&nbsp;' ]]]"
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+          - !include ../jimz011/includes/blank-card.yaml
+      - type: custom:decluttering-card
+        template: header 
+        variables:
+          - content: '##### Library'
+      - type: horizontal-stack
+        cards:
+          - !include ../jimz011/includes/blank-card.yaml
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: light.library_lights
+              - name: Main
+              - icon: ceiling-light
+              - label: !include ../jimz011/includes/brightness-label.yaml
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: switch.plug_06
+              - name: Plug
+              - icon: power-socket-uk
+              - label: "[[[ if (states['sensor.plug_06_energy_power'].state > 0) return `${states['sensor.plug_06_energy_power'].state} W`; else return '&nbsp;' ]]]"
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: light.hue_white_lamp_1
+              - name: Main - 1
+              - icon: ceiling-light
+              - label: !include ../jimz011/includes/brightness-label.yaml
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: light.hue_white_lamp_2
+              - name: Main - 2
+              - icon: ceiling-light
+              - label: !include ../jimz011/includes/brightness-label.yaml
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+          - !include ../jimz011/includes/blank-card.yaml
+
+      - type: custom:decluttering-card
+        template: header 
+        variables:
+          - content: '##### Kitchen'
+      - type: horizontal-stack
+        cards:
+          - !include ../jimz011/includes/blank-card.yaml
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: switch.kitchen_light
+              - name: "Kitchen Light"
+              - icon: stove
+              # - label: "[[[ if (states['sensor.plug_02_energy_power'].state > 0) return `${states['sensor.plug_02_energy_power'].state} W`; else return '&nbsp;' ]]]"
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: switch.plug_010
+              - name: Plug
+              - icon: microwave
+              - label: "[[[ if (states['sensor.plug_010_energy_power'].state > 0) return `${states['sensor.plug_010_energy_power'].state} W`; else return '&nbsp;' ]]]"
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: switch.plug_01
+              - name: Dishwasher
+              - icon: dishwasher
+              - label: "[[[ if (states['sensor.plug_01_energy_power'].state > 0) return `${states['sensor.plug_01_energy_power'].state} W`; else return '&nbsp;' ]]]"
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: switch.plug_011
+              - name: Plug
+              - icon: power-socket-uk
+              - label: "[[[ if (states['sensor.plug_011_energy_power'].state > 0) return `${states['sensor.plug_011_energy_power'].state} W`; else return '&nbsp;' ]]]"
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+          
+          
+          - !include ../jimz011/includes/blank-card.yaml
+
+      - type: horizontal-stack
+        cards:
+          - !include ../jimz011/includes/blank-card.yaml
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: switch.plug_012
+              - name: Plug
+              - icon: power-socket-uk
+              - label: "[[[ if (states['sensor.plug_012_energy_power'].state > 0) return `${states['sensor.plug_012_energy_power'].state} W`; else return '&nbsp;' ]]]"
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: switch.plug_013
+              - name: Plug
+              - icon: power-socket-uk
+              - label: "[[[ if (states['sensor.plug_013_energy_power'].state > 0) return `${states['sensor.plug_013_energy_power'].state} W`; else return '&nbsp;' ]]]"
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+          - type: custom:button-card
+            color_type: blank-card
+            aspect_ratio: 1/1
+          - type: custom:button-card
+            color_type: blank-card
+            aspect_ratio: 1/1
+          - !include ../jimz011/includes/blank-card.yaml
+   
+      - type: custom:decluttering-card
+        template: header 
+        variables:
+          - content: '##### Others'
+      - type: horizontal-stack
+        cards:
+          - !include ../jimz011/includes/blank-card.yaml
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: light.hallway_light
+              - name: Hallway
+              - icon: ceiling-light
+              - size: 30%
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+              - label: !include ../jimz011/includes/brightness-label.yaml
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: light.bathroom_light
+              - name: Bath room
+              - icon: ceiling-light
+              - size: 30%
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+              - label: !include ../jimz011/includes/brightness-label.yaml
+          
+          - type: custom:decluttering-card
+            template: button  
+            variables:
+              - entity: switch.plug_02
+              - name: "[[[ return `Hot-tub - ${states['sensor.hot_tub_status'].state}`; ]]]"
+              - icon: hot-tub
+              - label: "[[[ if (states['sensor.plug_02_energy_power'].state > 0) return `${states['sensor.plug_02_energy_power'].state} W`; else return '&nbsp;' ]]]"
+              - grid:
+                  !include ../jimz011/includes/light-devices-grid.yaml
+              - lock: true
+          - type: custom:button-card
+            color_type: blank-card
+            aspect_ratio: 1/1
+          - !include ../jimz011/includes/blank-card.yaml
+      - type: horizontal-stack
+        cards:
+          - !include ../jimz011/includes/blank-card.yaml
+          - type: custom:button-card
+            color_type: blank-card
+            aspect_ratio: 1/1
+          - type: custom:button-card
+            color_type: blank-card
+            aspect_ratio: 1/1
+          - type: custom:button-card
+            color_type: blank-card
+            aspect_ratio: 1/1
+          
+          - !include ../jimz011/includes/blank-card.yaml
+           
+      
+     
+      
+      - !include ../jimz011/includes/bottom-card.yaml   

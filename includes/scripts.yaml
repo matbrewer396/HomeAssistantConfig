@@ -29,13 +29,3 @@ toggle_tv:
       data:
         entity_id: media_player.fire_tv
         command: 'POWER'
-motionlivingroom:
-  alias: motionlivingroom
-  sequence:
-  - data:
-      entity_id: input_boolean.motionlivingroom
-    service: input_boolean.turn_on
-  - delay: 00:01:00
-  - data:
-      entity_id: input_boolean.motionlivingroom
-    service: input_boolean.turn_off

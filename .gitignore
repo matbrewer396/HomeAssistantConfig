@@ -47,8 +47,13 @@ lovelace/jimz011/*
 packages/hki_icons/*
 packages/hki_languages/*
 packages/homekit_infused/*
-
-
+homekit-infused/base/*
+**dummy.yaml
+homekit-infused/user/views/DO_NOT_DELETE_ANY_OF_THESE_FOLDERS.txt
+themes/*
+homekit-infused/user/templates/readme.txt
+homekit-infused.yaml
+homekit-infused/base.yaml
 esphome/
 tmp*
 

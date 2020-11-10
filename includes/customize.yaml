@@ -1,2 +1,232 @@
-switch.1274756684f3ebb8900b:
-  friendly_name: Living Room Plug
+######################################
+## Lights
+######################################
+light.living_room_front_main:
+  type: light-rgb
+  room: living_room
+  friendly_name: Front Main
+  sort_order: 10
+  icon: mdi:ceiling-light
+light.living_room_back_main:
+  type: light-rgb
+  room: living_room
+  friendly_name: Back Main
+  sort_order: 20
+  icon: mdi:ceiling-light
+light.living_room_back_left:
+  type: light-rgb
+  room: living_room
+  friendly_name: Back Left
+  sort_order: 30
+light.living_room_back_right:
+  type: light-rgb
+  room: living_room
+  friendly_name: Back Right
+  sort_order: 30
+switch.plug_011:
+  type: switch
+  room: living_room
+  friendly_name: Owl & Tree
+  sort_order: 110
+  icon: mdi:owl
+switch.wled_livingroomtv:
+  type: light-rgb
+  room: living_room
+  friendly_name: Tv LED
+  sort_order: 150
+  icon: mdi:television
+
+
+######################################
+
+light.bedroom_font:
+  type: light-standard 
+  room: bedroom
+  friendly_name: Font
+  sort_order: 20
+light.bedroom_back:
+  type: light-standard 
+  room: bedroom
+  friendly_name: Back
+  sort_order: 21
+light.bedroom_lamp:
+  type: light-standard 
+  room: bedroom
+  friendly_name: Lamp
+  sort_order: 10
+light.hue_lightstrip_underbed:
+  type: light-standard 
+  room: bedroom
+  friendly_name: Underbed
+  sort_order: 30
+switch.plug_07:
+  type: switch
+  room: bedroom
+  friendly_name: TV
+  sort_order: 110
+  icon: mdi:television
+switch.plug_03:
+  type: switch
+  room: bedroom
+  friendly_name: Back
+  sort_order: 150
+
+
+######################################
+
+light.spare_room:
+  type: light-standard 
+  room: spare_room
+  friendly_name: Main
+  sort_order: 10
+
+######################################
+
+light.kitchen:
+  type: light-standard 
+  room: kitchen
+  friendly_name: Main
+  sort_order: 10
+cover.kitchen_blind:
+  type: light-standard 
+  room: kitchen
+  friendly_name: Blind
+  sort_order: 11
+######################################
+
+light.ground_floor_hallway:
+  type: light-standard 
+  room: hallways
+  friendly_name: Ground
+  lock: true
+  sort_order: 10
+light.middle_floor_hallway:
+  type: light-standard 
+  room: hallways
+  friendly_name: Middle
+  sort_order: 20
+light.top_floor_hallway:
+  type: light-standard 
+  room: hallways
+  friendly_name: Top
+  sort_order: 30
+
+
+######################################
+light.ground_floor_toilet:
+  type: light-standard 
+  room: bath_rooms
+  friendly_name: Ground
+  lock: true
+  sort_order: 10
+light.middle_floor_bathroom:
+  type: light-standard 
+  room: bath_rooms
+  friendly_name: Middle
+  lock: true
+  sort_order: 20
+light.top_floor_shower:
+  type: light-standard 
+  room: bath_rooms
+  friendly_name: Top
+  lock: true
+  sort_order: 30
+
+
+######################################
+light.office_light:
+  type: light-standard 
+  room: office
+  friendly_name: Main
+  sort_order: 150
+switch.plug_08:
+  type: switch
+  room: office
+  friendly_name: Computer
+  lock: false
+  sort_order: 100
+  icon: mdi:desktop-classic
+switch.plug_09:
+  type: switch
+  room: office
+  friendly_name: Lamp
+  lock: false
+  sort_order: 5
+  icon: mdi:floor-lamp-variant
+switch.plug_05:
+  type: switch
+  room: office
+  friendly_name: 3d Printer
+  lock: false
+  sort_order: 110
+  icon: mdi:printer-3d
+cover.office_blind_r:
+  type: light-standard 
+  room: office
+  friendly_name: Right Blind
+  sort_order: 170
+cover.office_blind_l:
+  type: light-standard 
+  room: office
+  friendly_name: Right Blind
+  sort_order: 170
+  
+
+
+######################################
+## cameras
+######################################
+
+camera.living_room_cam_stills:
+  friendly_name: Living Room
+  type: camera
+
+camera.front_door:
+  friendly_name: Font Door
+  type: camera
+
+camera.kitchen_cam_stills:
+  friendly_name: Kitchen
+  type: camera
+camera.back_garden_cam_stills:
+  friendly_name: Back Garden
+  type: camera
+camera.landing_cam_stills:
+  friendly_name: Landing
+  type: camera
+camera.office_cam_stills:
+  friendly_name: Office
+  type: camera
+
+######################################
+## Motion Detector
+######################################
+
+binary_sensor.living_room_motion:
+  type: motion
+  friendly_name: Living Room
+
+binary_sensor.bathroom_motion:
+  type: motion
+  friendly_name: Bathroom
+binary_sensor.lower_stair_montion:
+  type: motion
+  friendly_name: Ground Floor Staris
+binary_sensor.shower_room_motion:
+  type: motion
+  friendly_name: Shower Room
+binary_sensor.office_motion:
+  type: motion
+  friendly_name: Office
+binary_sensor.front_door_motion:
+  type: motion
+  friendly_name: Font Door
+
+######################################
+## Motion Detector
+######################################
+
+sensor.living_room_light_level:
+  type: light_level
+sensor.office_doorbell_light_level:
+  type: light_level
