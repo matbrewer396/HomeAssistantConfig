@@ -13,10 +13,10 @@ homeassistant:
   time_zone: UTC
   # Customization file
   customize: !include includes/customize.yaml
-  whitelist_external_dirs:
-    - /config/tmp
-  media_dirs:
-    camera: /share/camera
+  # allowlist_external_dirs:
+  #   - /config/tmp
+  # media_dirs:
+  #   camera: /share/camera
       
 
 # Enables the frontend
@@ -26,7 +26,7 @@ frontend:
 config:
 
 http:
-  base_url: !secret base_url
+  # base_url: !secret base_url
   # api_password: !secret api_password
   ssl_certificate: /ssl/fullchain.pem
   ssl_key: /ssl/privkey.pem
@@ -44,7 +44,7 @@ map:
 ffmpeg:
 stream:
 
-
+scene: !include scenes.yaml
 
 # includes
 sensor: !include_dir_merge_list includes/sensor/
@@ -70,6 +70,12 @@ weather:
   - platform: darksky
     api_key: !secret darksky_apikey
 
+ecovacs:
+  username: !secret ecovacs_username
+  password: !secret ecovacs_password
+  country: gb
+  continent: eu
+
 
 notify:
   # - platform: ios
@@ -81,6 +87,8 @@ notify:
   - platform: nfandroidtv
     name: Living Room Tv
     host: 192.168.1.216
+
+
   - platform: group
     name: all_ios_devices
     services:
@@ -96,22 +104,12 @@ mqtt:
   discovery: true
   discovery_prefix: homeassistant
 
-tuya:
-  username: !secret tuya_username
-  password: !secret tuya_password
-  country_code: 44
-  platform: smart_life
+# tuya:
+#   username: !secret tuya_username
+#   password: !secret tuya_password
+#   country_code: 44
+#   platform: smart_life
 
-# alexa_media:
-#   accounts:
-#    - email: !secret alexa_username
-#      password: !secret alexa_password
-#      url: "amazon.co.uk"
-
-# emulated_hue:
-#   expose_by_default: true
-#   exposed_domains:
-#     - switch
 
 
 influxdb:
@@ -134,16 +132,11 @@ alarm_control_panel:
       delay_time: 0
 
 
-
-
-# recorder:
-#   purge_keep_days: 5
-
-octoprint:
-  host: 192.168.30.204
-  api_key: !secret octoprint_apikey
-  bed: true
-  number_of_tools: 1 
+# octoprint:
+#   host: 192.168.30.204
+#   api_key: !secret octoprint_apikey
+#   bed: true
+#   number_of_tools: 1 
 
 speedtestdotnet:
   scan_interval:
@@ -177,7 +170,7 @@ climate:
 
 
 lovelace:
-  mode: yaml
+  mode: storage
   resources: 
     # !include_dir_merge_list dashboards/resources/
     !include lovelace/resources.yaml
@@ -187,18 +180,6 @@ lovelace:
       title: Home
       show_in_sidebar: true
       filename: ui-lovelace.yaml
-    homekit-infused:
-      mode: yaml
-      title: HKI
-      icon: mdi:cellphone
-      show_in_sidebar: true
-      filename: homekit_infused.yaml
-    hki-settings:
-      mode: yaml
-      title: HKI Settings
-      icon: mdi:tools
-      show_in_sidebar: true
-      filename: homekit_infused_settings.yaml
 
 
 life360:
@@ -233,7 +214,9 @@ media_player:
   - platform: androidtv
     host: 192.168.1.216
     name: "Living Room Fire Tv"
-
+  - platform: androidtv
+    name: Sharp Tv
+    host: 192.168.1.128
 
 # image_processing:
 #   - platform: tensorflow
