@@ -1,0 +1,3 @@
+- !include
+  - '../../../base/templates/other/remote-control.yaml'
+  - entity_media_player: media_player.sharp_tv

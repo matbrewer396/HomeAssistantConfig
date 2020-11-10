@@ -1,0 +1,124 @@
+- type: vertical-stack
+  cards:
+    - type: horizontal-stack
+      cards:
+        - !include
+          - '../../../user/templates/frontpage-photo.yaml'
+          - person: person.matt
+            image_path: /local/images/matt.jpg
+            navigation_path: person_1
+            alignment: left
+            text_color: white
+            phone_battery_sensor: sensor.matt_phone_battery
+            # travel_time_to_home: sensor.travel_time_to_home_jimmy
+            # travel_time_to_work: sensor.travel_time_to_work_jimmy
+        - !include
+          - '../../../user/templates/frontpage-photo.yaml'
+          - person: person.danni
+            image_path: /local/images/danni7.jpg
+            navigation_path: person_2
+            alignment: right
+            text_color: white
+            phone_battery_sensor: sensor.danni_phone_battery
+            # travel_time_to_home: sensor.travel_time_to_home_stephanie
+            # travel_time_to_work: sensor.travel_time_to_work_stephanie
+            
+    - type: custom:layout-card
+      column_num: 4
+      justify_content: start
+      layout: horizontal
+      cards:  
+        - !include
+          - '../../../base/templates/button/button-badge.yaml'
+          - name: Main
+            label: Control
+            icon: mdi:biohazard
+            navigation_path: /homekit-infused/lights
+            notification: "[[[ if (states['input_number.empty'].state == 0) return '&nbsp'; else return `${states['input_number.empty'].state}`; ]]]"
+            background_color: "[[[ if (states['input_number.empty'].state == 0) return 'rgba(0,0,0,0.0)'; else return 'var(--paper-item-icon-color)'; ]]]"   
+        - !include
+          - '../../../base/templates/button/button-badge.yaml'
+          - name: Scenes
+            label: Overview
+            icon: mdi:arrange-send-backward
+            navigation_path: /homekit-infused/devices
+            notification: "[[[ if (states['input_number.empty'].state == 0) return '&nbsp'; else return `${states['input_number.empty'].state}`; ]]]"
+            background_color: "[[[ if (states['input_number.empty'].state == 0) return 'rgba(0,0,0,0.0)'; else return 'var(--paper-item-icon-color)'; ]]]"                                             
+        - !include
+          - '../../../base/templates/button/button-badge.yaml'
+          - name: Climate
+            label: Control
+            icon: mdi:thermometer
+            navigation_path: /homekit-infused/climate
+            notification: "[[[ if (states['input_number.empty'].state == 0) return '&nbsp'; else return `${states['input_number.empty'].state}`; ]]]"
+            background_color: "[[[ if (states['input_number.empty'].state == 0) return 'rgba(0,0,0,0.0)'; else return 'var(--paper-item-icon-color)'; ]]]"   
+        - !include
+          - '../../../base/templates/button/button-badge.yaml'
+          - name: Security
+            label: Panel
+            icon: mdi:cctv
+            navigation_path: /homekit-infused/security
+            notification: "[[[ if (states['input_number.empty'].state == 0) return '&nbsp'; else return `${states['input_number.empty'].state}`; ]]]"
+            background_color: "[[[ if (states['input_number.empty'].state == 0) return 'rgba(0,0,0,0.0)'; else return 'var(--paper-item-icon-color)'; ]]]" 
+        - !include
+          - '../../../base/templates/button/button-badge.yaml'
+          - name: Settings
+            label: Panel
+            icon: mdi:cog
+            navigation_path: /homekit-infused/custom_1
+            notification: "[[[ if (states['input_number.empty'].state == 0) return '&nbsp'; else return `${states['input_number.empty'].state}`; ]]]"
+            background_color: "[[[ if (states['input_number.empty'].state == 0) return 'rgba(0,0,0,0.0)'; else return 'var(--paper-item-icon-color)'; ]]]" 
+        - !include
+          - '../../../base/templates/button/button-badge.yaml'
+          - name: Automations
+            label: Panel
+            icon: mdi:home-automation
+            navigation_path: /homekit-infused/automations
+            notification: "[[[ if (states['input_number.empty'].state == 0) return '&nbsp'; else return `${states['input_number.empty'].state}`; ]]]"
+            background_color: "[[[ if (states['input_number.empty'].state == 0) return 'rgba(0,0,0,0.0)'; else return 'var(--paper-item-icon-color)'; ]]]" 
+        - !include
+          - '../../../base/templates/button/button-badge.yaml'
+          - name: Media
+            label: Center
+            icon: mdi:plex
+            navigation_path: /homekit-infused/media
+            notification: "[[[ if (states['input_number.empty'].state == 0) return '&nbsp'; else return `${states['input_number.empty'].state}`; ]]]"
+            background_color: "[[[ if (states['input_number.empty'].state == 0) return 'rgba(0,0,0,0.0)'; else return 'var(--paper-item-icon-color)'; ]]]"     
+
+
+            
+        # - !include
+      
+        #   - '../../../base/templates/button/button-badge.yaml'
+        #   - name: Energy
+        #     label: Overview
+        #     icon: mdi:chart-line
+        #     navigation_path: /homekit-infused/energy
+        #     notification: "[[[ if (states['input_number.empty'].state == 0) return '&nbsp'; else return `${states['input_number.empty'].state}`; ]]]"
+        #     background_color: "[[[ if (states['input_number.empty'].state == 0) return 'rgba(0,0,0,0.0)'; else return 'var(--paper-item-icon-color)'; ]]]" 
+    
+    
+        # - !include
+        #   - '../../../base/templates/button/button-badge.yaml'
+        #   - name: s
+        #     label: Overview
+        #     icon: mdi:arrange-send-backward
+        #     navigation_path: /homekit-infused/scenes
+        #     notification: "[[[ if (states['input_number.empty'].state == 0) return '&nbsp'; else return `${states['input_number.empty'].state}`; ]]]"
+        #     background_color: "[[[ if (states['input_number.empty'].state == 0) return 'rgba(0,0,0,0.0)'; else return 'var(--paper-item-icon-color)'; ]]]"  
+        # - !include
+        #   - '../../../base/templates/button/button-badge.yaml'
+        #   - name: Media
+        #     label: Center
+        #     icon: mdi:plex
+        #     navigation_path: /homekit-infused/media
+        #     notification: "[[[ if (states['input_number.empty'].state == 0) return '&nbsp'; else return `${states['input_number.empty'].state}`; ]]]"
+        #     background_color: "[[[ if (states['input_number.empty'].state == 0) return 'rgba(0,0,0,0.0)'; else return 'var(--paper-item-icon-color)'; ]]]"     
+        # - !include
+        #   - '../../../base/templates/button/button-badge.yaml'
+        #   - name: Vacuum
+        #     label: Control
+        #     icon: mdi:robot-vacuum
+        #     navigation_path: /homekit-infused/vacuum
+        #     notification: "[[[ if (states['input_number.empty'].state == 0) return '&nbsp'; else return `${states['input_number.empty'].state}`; ]]]"
+        #     background_color: "[[[ if (states['input_number.empty'].state == 0) return 'rgba(0,0,0,0.0)'; else return 'var(--paper-item-icon-color)'; ]]]"    

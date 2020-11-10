@@ -1,0 +1,14 @@
+- type: custom:auto-entities
+  filter:
+    include:
+      - entity_id: "input_boolean.automation*"
+  sort:
+    method: name
+    numeric: true
+  card:
+    type: entities
+    style: |
+      ha-card {
+        border-radius: var(--border-radius);
+        box-shadow: var(--box-shadow);
+      }

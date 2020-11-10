@@ -1,0 +1,45 @@
+# lovelace_gen
+- type: custom:layout-card
+  max_columns: 4
+  cards:
+    {% for rooms in _global.lights_rooms_floor_0 %}
+    - !include
+      - '../../templates/auto-fill-control-template.yaml'
+      - rooms: {{ rooms }}
+        columns: 4
+    {% endfor %}
+### The following piece is for tablets only, You can leave this out if not needed.
+- type: custom:mod-card
+  style: |
+    ha-card {
+      margin-left: 7px;
+      margin-right: 7px;
+    }
+  card:
+    type: custom:state-switch
+    entity: user
+    states:
+      Home Assistant:
+        type: vertical-stack
+        cards:
+          - type: markdown 
+            style: |
+              ha-card {
+                background: none;
+                color: white;
+                box-shadow: none;
+                text-align: end;
+                font-size: 45px;
+                height: 155px;
+              }
+            content: '# [[ sensor.time.state ]]'
+### End of tablet code.
+- type: custom:layout-card
+  max_columns: 4
+  cards:
+    {% for rooms in _global.lights_rooms_floor_1 %}
+    - !include
+      - '../../templates/auto-fill-control-template.yaml'
+      - rooms: {{ rooms }}
+        columns: 4
+    {% endfor %}

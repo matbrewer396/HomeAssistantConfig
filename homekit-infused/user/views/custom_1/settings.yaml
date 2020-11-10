@@ -1,0 +1,32 @@
+
+- type: vertical-stack
+  cards:  
+    - type: vertical-stack
+      cards:
+        - !include
+          - '../../../base/templates/other/title-text.yaml'
+          - name: Power
+        - type: entities
+          entities:
+            - entity: input_number.kwh_rate
+  
+
+    - type: vertical-stack
+      cards:
+        - !include
+          - '../../../base/templates/other/title-text.yaml'
+          - name: Bed Settings
+        - type: entities
+          entities:
+            - entity: input_number.both_in_bed_weight
+            - entity: input_number.danni_bed_weight
+            - entity: input_number.matt_bed_weight
+    - type: vertical-stack
+      cards:
+        - !include
+          - '../../../base/templates/other/title-text.yaml'
+          - name: Light Level
+        - type: entities
+          entities:
+            - entity: input_number.is_dark_living_room
+
